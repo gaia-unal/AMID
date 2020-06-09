@@ -1,0 +1,49 @@
+/*!
+ * Start Bootstrap - Shop Item (https://startbootstrap.com/template-overviews/shop-item)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-shop-item/blob/master/LICENSE)
+ */
+body {
+  padding-top: 56px;
+}
+
+.inactive{
+  color: black;
+}
+
+.inactive:hover{
+  color: black;
+}
+
+.pagination .complete{
+  z-index: 1;
+  color: #fff;
+  background-color: #057D1F;
+  border-color: #057D1F;
+}
+/*
+.pagination > li > a
+{
+background-color: white;
+color: purple;
+}
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+color: purple;
+background-color: #eee;
+border-color: #ddd;
+}
+.pagination > .active > a
+{
+color: white;
+background-color: purple;
+border: solid 1px purple;
+}
+.pagination > .active > a:hover
+{
+background-color: purple;
+border: solid 1px purple;
+}*/
