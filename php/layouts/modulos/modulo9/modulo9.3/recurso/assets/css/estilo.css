@@ -1,0 +1,56 @@
+#imagen{
+	margin-left: 5%;
+	width: auto;
+	height: auto;
+}
+
+#referencia{
+	margin-left: 10%;
+	font-size: 50%
+}
+
+#botonActividad{
+	font-family: Arial; 
+	font-size: 14pt;
+	border-radius: 5%;
+	background-color: white;
+	color:blue;
+	border-color: purple;
+	height: 8%;
+	width: 15%;
+}
+
+#botonEncuesta{
+	font-family: Arial; 
+	font-size: 14pt;
+	border-radius: 5%;
+	margin-left: 45%;
+	background-color: white;
+	color:blue;
+	border-color: purple;
+	height: 8%;
+	width: 15%;
+}
+
+#botonRegresar{
+	font-family: Arial; font-size: 14pt;
+	border-radius: 5%;
+	margin-left: 20%;
+	background-color: white;
+	color:blue;
+	border-color: purple;
+	height: 8%;
+	width: 15%;
+}
+
+#botonResultado{
+	font-family: Arial; 
+	font-size: 14pt;
+	border-radius: 5%;
+	margin-left: 20%;
+	background-color: white;
+	color:blue;
+	border-color: purple;
+	height: 8%;
+	width: 15%;
+}

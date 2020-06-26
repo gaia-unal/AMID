@@ -1,0 +1,33 @@
+#etapa1{
+    display: block;
+}
+
+#etapa2{
+    display: none;
+}
+
+#etapa3{
+    display: none;
+}
+
+#etapa4{
+    display: none;
+}
+
+#etapa5{
+    display: none;
+}
+
+#etapa6{
+    display: none;
+}
+
+#antEt{
+    display: none;
+    width: 20%;
+}
+
+#sigEt{
+    display: block;
+    width: 20%;
+}
