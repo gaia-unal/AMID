@@ -24,7 +24,7 @@
     
     require '../../../queries/activeSession.php';
     $rutaSession="../../../queries/"; include '../../header.php'; 
-    include '../../../queries/estadoMod.php'; estadoMod(11,1);
+    include '../../../queries/estadoMod.php'; estadoMod(10,1);
   ?>
 
 	<!-- Page Content -->
@@ -102,7 +102,6 @@
 <script src="../../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- script unidad/evaluación inactiva -->
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<script src="../../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="../../../../assets/js/sweetalert/sweetalert2.js"></script>
 <script src="../../../../assets/js/script.js"></script>
 <script src="assets/js/script.js"></script>

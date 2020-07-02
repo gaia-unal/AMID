@@ -14,7 +14,6 @@
   <link href="../../../../../assets/css/shop-item.css" rel="stylesheet">
   <link href="../../../../../assets/css/style.css" rel="stylesheet">
   <link href="assets/css/estilos.css" rel="stylesheet">
-  
 </head>
 
 <body>
@@ -58,6 +57,9 @@ $newConn->connectionDB(); ?>
             <div class="col-lg-9">
                 <br>
                 <h1>Unidad 1: Los jóvenes en el mundo virtual</h1>
+
+                <form action="../../../../queries/evaluacion.php?id_und=m7u12" method="post">
+
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Evaluación Unidad 1</h4>
@@ -74,6 +76,9 @@ $newConn->connectionDB(); ?>
                         <input class="respuesta" id="resp5" type="text" autofocus />
                         <input class="respuesta" id="resp6" type="text" autofocus />
                         <br>
+
+                        <input type="text" name="preg" id="preg" value="" style="display: none">
+
                         <center>
                             <button class="btn btn-outline-success" onclick="termino()">Validar</button>
                         </center>
@@ -83,9 +88,10 @@ $newConn->connectionDB(); ?>
                 <br>
                 <center>
                     <a href="mod7.1_eval.php" class="btn btn-success">Anterior</a>
-                    <a href="../modulo7.2/mod7.2_inicio.php" class="btn btn-success btnSig retraso3">Siguiente</a>
-                    
+                    <!--<a href="../modulo7.2/mod7.2_inicio.php" class="btn btn-success btnSig retraso3">Siguiente</a>-->
+                    <button id="btn-siguiente"  class="btn btn-success" type="submit" onclick="evaluacion()">Siguiente</button>                    
                 </center>
+                </form>
                 <?php
                     include '../../../../functions/paginacion.php';
                     pag(2);

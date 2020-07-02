@@ -8,33 +8,24 @@
   <meta name="author" content="">
   <title>AMID</title>
   <!-- Bootstrap core CSS -->
-  <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom styles for this template -->
-  <link href="../../assets/css/shop-item.css" rel="stylesheet">
-  <link rel="stylesheet" href="../../assets/css/animated.css">
-  <link rel="stylesheet" href="../../assets/css/sweetalert/sweetalert2.css">
+  <link href="../../../../assets/css/shop-item.css" rel="stylesheet">
+  <link href="../../../../assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../../../assets/css/sweetalert/sweetalert2.css">
+  <link rel="stylesheet" href="../../../../assets/css/animated.css">
 </head>
 
 <body>
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="../../index.php">AMID</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <!--
-              <li class="nav-item active">
-                  <a class="nav-link" href="../index.php">Home</a>
-              </li>
-              -->
-        </ul>
-      </div>
-    </div>
-  </nav>
+<?php 
+    require "../../../queries/connectionDB.php";
+$newConn= new Connection;
+$newConn->connectionDB();
+    require '../../../queries/activeSession.php';
+    $rutaSession="../../../queries/"; include '../../header.php'; 
+    include '../../../queries/estadoMod.php'; estadoMod(9,1);
+?>
+
   <!-- Page Content -->
   <div class="container">
     <div class="row">
@@ -74,7 +65,7 @@
               <div class="imgF">
                 <center>
                   <a href="#" onclick="opc1();">
-                    <img class="animated bounceIn" src="../../assets/img/flecha.png" alt="Inicio">
+                    <img class="animated bounceIn" src="../../../../assets/img/flecha.png" alt="Inicio">
                   </a>
                 </center>
               </div>

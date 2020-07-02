@@ -24,7 +24,6 @@
     
     require '../../../queries/activeSession.php';
     $rutaSession="../../../queries/"; include '../../header.php'; 
-    include '../../../queries/estadoMod.php'; estadoMod(11,1);
   ?>
 
 	

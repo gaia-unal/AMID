@@ -297,6 +297,23 @@ function iniciarCanvas() {
 					'de metacognición son las diferentes maneras en que puedes hacer METACOGNICIÓN'
 				});
 			}
+			punt(puntos);
 		}
+	}
+
+	function punt(a){
+		switch(a){
+			case 1:
+				a = 1.66;
+				break;
+			case 2:
+				a = a * 1.66;
+				break;
+			case 3:
+				a = 5;
+				break;
+		}
+		var inp = document.getElementById('preg');
+		inp.value = a;
 	}
 }

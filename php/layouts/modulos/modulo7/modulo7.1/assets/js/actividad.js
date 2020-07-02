@@ -1,6 +1,5 @@
 var r1, r2, r3, r4, r5, r6;
-var puntos = 0;
-var equiv = 0;
+var puntos = 0, equiv = 0, punt = 0;
 var respuesta = ['d', 'b', 'c', 'f', 'a', 'e'];
 var respMay = ['D', 'B', 'C', 'F', 'A', 'E'];
 
@@ -38,6 +37,7 @@ function validar() {
 
 function Correcto() {
     puntos += 1;
+    punt += 0.83;
     imp();
 }
 
@@ -54,14 +54,19 @@ function imp() {
             button: "Continuar",
             text: "Respondiste correctamente =)"
         });
+        enviar();
     } else if (puntos + equiv == 6) {
         swal({
             type: 'error',
             title: 'Oops...',
             button: "Continuar",
-            text: "Te equivocaste en algunas :c pero puedes volver a intentarlo"
-        }).then(function () {
-            location.reload();
+            text: "Te equivocaste en algunas :c"
         });
+        enviar();
     }
+}
+
+function enviar(){
+    var inp = document.getElementById('preg');
+    inp.value = punt;
 }

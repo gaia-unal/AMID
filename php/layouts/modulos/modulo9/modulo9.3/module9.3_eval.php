@@ -8,35 +8,20 @@
 	<meta name="author" content="">
 	<title>AMID</title>
 	<!-- Bootstrap core CSS -->
-	<link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<!-- Custom styles for this template -->
-	<link href="../../../assets/css/shop-item.css" rel="stylesheet">
-	<link rel="stylesheet" href="../../../assets/css/sweetalert/sweetalert2.css">
-	<link rel="stylesheet" href="../../../assets/css/animated.css">
+    <link href="../../../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../../../../../assets/css/shop-item.css" rel="stylesheet">
+    <link href="../../../../../assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../assets/css/animated.css">
+    <link rel="stylesheet" href="../../../../../assets/css/sweetalert/sweetalert2.css">
 </head>
 
 <body>
-	<!-- Navigation -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-		<div class="container">
-			<a class="navbar-brand" href="../../../index.php">AMID</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-				aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav ml-auto">
-					<!--
-                    <li class="nav-item active">
-                        <a class="nav-link" href="../../index.php">Home
-                        <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    -->
-				</ul>
-			</div>
-		</div>
-	</nav>
+  <?php require "../../../../queries/connectionDB.php";
+    $newConn= new Connection;
+    $newConn->connectionDB(); ?>
+  <?php require '../../../../queries/activeSession.php'; ?>  
+  <?php $rutaSession="../../../../queries/"; include '../../../header.php'; ?>
 
 	<!-- Page Content -->
 	<div class="container">
@@ -74,6 +59,9 @@
 			<div class="col-lg-9">
 				<h1><br>Unidad 3: Manejando el Cambio Para Fomentar un Medio Ambiente Propicio para las Escuelas AMI
 				</h1>
+
+				<form action="../../../../queries/evaluacion.php?id_und=m9u3" method="post">
+
 				<div class="card mt-4">
 					<div class="card-body">
 						<h4>Evaluación</h4>
@@ -90,6 +78,8 @@
 							<input type="checkbox" name="opc5" id="opc5" onclick="incorrecto()">e. Desarrollar un
 							cronograma de acción <br>
 							<a href="#" class="btn btn-outline-success" onclick="validar();">Validar</a>
+
+							<input type="text" name="preg" id="preg" value="" style="display: none">
 						</p>
 					</div>
 				</div>
@@ -97,41 +87,30 @@
 				<br>
 				<center>
 					<a href="recurso/actividad.php" class="btn btn-success">Anterior</a>
-					<a href="../../modulo10/module10.php" class="btn btn-success">Siguiente</a>
-					<p>Obra publicada con <a href="https://creativecommons.org/licenses/by-sa/4.0/"> Licencia Creative
-							Commons Reconocimiento Compartir igual 4.0</a></p>
+					<!--<a href="../../modulo10/module10.php" class="btn btn-success">Siguiente</a>-->
+					<button id="btn-siguiente"  class="btn btn-success" type="submit" onclick="evaluacion()">Siguiente</button>
 				</center>
-				<br><br>
+				</form>	
+                <?php
+                    include '../../../../functions/paginacion.php';
+                    pag(2);
+                ?>
+                <p>Obra publicada con <a href="https://creativecommons.org/licenses/by-sa/4.0/"> Licencia Creative
+                            Commons Reconocimiento Compartir igual 4.0</a></p>
+							<br><br>
 			</div>
 			<!-- /.col-lg-9 -->
 		</div>
 	</div>
-	<!-- /.container -->
-	<!-- Footer -->
-	<footer class="py-5 bg-dark">
-		<div class="container">
-			<a href="https://www.manizales.unal.edu.co/" target="_blank"><img class="logo1 logos"
-					src="../../../assets/img/Logo_UN.png" alt="logo Universidad Nacional"></a>
-			<a href="http://www.ucaldas.edu.co/portal/" target="_blank"><img class="logo1 logos"
-					src="../../../assets/img/Logo_UCaldas.png" alt="logo Universidad de Caldas"></a>
-			<a href="https://unisucre.edu.co/index.php/es/" target="_blank"><img class="logo1 logos"
-					src="../../../assets/img/Logo_USucre.png" alt="logo Universidad de Sucre"></a>
-			<a href="https://www.utch.edu.co/portal/es/" target="_blank"><img class="logo1 logos"
-					src="../../../assets/img/Logo_UChoco.png" alt="logo Universidad Tecnológica del Chocó"></a>
-			<a href="https://www.autonoma.edu.co/" target="_blank"><img class="logo1 logos"
-					src="../../../assets/img/Logo_UAM.png" alt="logo Universidad Autónoma de Manizales"></a>
-			<a href="https://www.cinde.org.co/sitio/" target="_blank"><img class="logo1 logos"
-					src="../../../assets/img/Logo_CINDE.png" alt="logo CINDE"></a>
-		</div>
-		<!-- /.container -->
-	</footer>
+	<!-- /.container -->  
+	<?php $ruta="../../../../../assets"; include '../../../footer.php';?>
 
 	<!-- Bootstrap core JavaScript -->
 	<script src="assets/js/script.js"></script>
-	<script src="../../../assets/js/sweetalert/sweetalert2.js"></script>
-	<script src="../../../vendor/jquery/jquery.min.js"></script>
-	<script src="../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script src="../../../assets/js/script.js"></script>
+	<script src="../../../../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="../../../../../assets/js/script.js"></script>
 </body>
 
 </html>

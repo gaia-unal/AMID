@@ -1,9 +1,6 @@
-var valor1 = 0;
-var valor2 = 0;
-var turno = 0;
-var i = 0;
-var cont = 0;
+var valor1 = 0, valor2 = 0, turno = 0, i = 0, cont = 0;
 var im;
+var punt = 0;
 
 var imagen1 = "No olvides que se refiere a la fuente del mensaje (quien lo origina)";
 var imagen7 = "No olvides que se refiere a la fuente del mensaje (quien lo origina)";
@@ -41,9 +38,8 @@ function espera1() {
             title: "¡Correcto!",
             type: "success",
             button: "Continuar",
-           
         });
-
+        cont++;
         setTimeout("espera4()", 1000);
     } else {
         swal({
@@ -52,6 +48,7 @@ function espera1() {
             button: "Continuar",
             text: 'Intentalo de nuevo; ' + imagenes[valor1 - 1]
         });
+        punt++;
         setTimeout("espera3()", 1000);
     }
 }
@@ -69,6 +66,16 @@ function espera4() {
 }
 
 function final() {
+
+    if (punt - cont == 12){
+        punt = 5;
+    } else if(punt - cont < 0){
+        punt = 1;
+    } else {
+        punt = 3;
+    }
+    var inp = document.getElementById('preg');
+    inp.value = punt;
     swal({
         title: "¡Correcto!",
         icon: "success",

@@ -58,6 +58,9 @@ $newConn->connectionDB(); ?>
             <div class="col-lg-9">
                 <br>
                 <h1>Unidad 2: Retos y riesgos en el mundo virtual</h1>
+
+                <form action="../../../../queries/evaluacion.php?id_und=m7u22" method="post">
+
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Evaluación Unidad 2</h4>
@@ -68,16 +71,18 @@ $newConn->connectionDB(); ?>
                         <img id="imagen3" src="assets/img/frase/violacion.png">
                         <canvas id="lienzo" width="800" height="450"></canvas>
 
+                        <input type="text" name="preg" id="preg" value="" style="display: none">
                     </div>
                 </div>
                 <!-- /.card -->
                 <br>
                 <center>
                     <a href="mod7.2_eval.php" class="btn btn-success">Anterior</a>
-                    <a href="../../modulo8/module8.php" class="btn btn-success btnSig retraso3"
-                        onclick="term(7)">Siguiente</a>
-                    
+                    <!--<a href="../../modulo8/module8.php" class="btn btn-success btnSig retraso3"
+                        onclick="term(7)">Siguiente</a>-->
+                    <button id="btn-siguiente"  class="btn btn-success" type="submit" onclick="evaluacion()">Siguiente</button>
                 </center>
+                </form>
                 <?php
                     include '../../../../functions/paginacion.php';
                     pag(2);

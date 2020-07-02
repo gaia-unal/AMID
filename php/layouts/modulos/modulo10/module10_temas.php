@@ -23,8 +23,7 @@
     $newConn->connectionDB();
     
     require '../../../queries/activeSession.php';
-    $rutaSession="../../../queries/"; include '../../header.php'; 
-    include '../../../queries/estadoMod.php'; estadoMod(11,1);
+    $rutaSession="../../../queries/"; include '../../header.php';
   ?>
 
 	
@@ -74,7 +73,6 @@
 				<center>
 					<a href="module10_inicio.php" class="btn btn-success">Anterior</a>
 					<a href="module10_act.php" class="btn btn-success btnSig retraso3">Siguiente</a>
-					
 				</center>
                 <?php
                     include '../../../functions/paginacion.php';

@@ -334,6 +334,12 @@ function iniciarCanvas() {
                     'crear y utilizar la información utilizando la tecnología digital'
                 });
             }
+            punt (puntos);
         }
+    }
+
+    function punt(a){
+        var inp = document.getElementById('preg');
+        inp.value = a;
     }
 }

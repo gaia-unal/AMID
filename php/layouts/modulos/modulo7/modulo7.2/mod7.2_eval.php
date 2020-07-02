@@ -19,8 +19,8 @@
 
 <body>
   <?php require "../../../../queries/connectionDB.php";
-$newConn= new Connection;
-$newConn->connectionDB(); ?>
+    $newConn= new Connection;
+    $newConn->connectionDB(); ?>
   <?php require '../../../../queries/activeSession.php'; ?>  
   <?php $rutaSession="../../../../queries/"; include '../../../header.php'; ?>
 
@@ -58,6 +58,9 @@ $newConn->connectionDB(); ?>
             <div class="col-lg-9">
                 <br>
                 <h1>Unidad 2: Retos y riesgos en el mundo virtual</h1>
+
+                <form action="../../../../queries/evaluacion.php?id_und=m7u21" method="post">
+
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Evaluación Unidad 2</h4>
@@ -65,14 +68,14 @@ $newConn->connectionDB(); ?>
                             <!-- Pregunta 1 -->
                             <h4> 1. ¿Qué es el Phishing?</h4>
                             <label class="container" id="p1-r1">
-                                <input type="radio" name="preg1" id="opc1" onclick="incorrecto(1);">
+                                <input type="radio" name="preg1" id="opc1" onclick="incorrecto(1);" value = "0">
                                 <span class="checkmark"></span>
                                 <p>&nbsp&nbsp a. Es un estafador que intenta acceder a los correos electrónicos para
                                     enviar
                                     mensajes spam.</p>
                             </label>
                             <label class="container" id="p1-r2">
-                                <input type="radio" name="preg1" id="opc2" onclick="correcto(1);">
+                                <input type="radio" name="preg1" id="opc2" onclick="correcto(1);" value = "0.83">
                                 <span class="checkmark"></span>
                                 <p>&nbsp&nbsp b. Es un delito cibernético en el que intentan adquirir información
                                     confidencial
@@ -81,7 +84,7 @@ $newConn->connectionDB(); ?>
                                 </p>
                             </label>
                             <label class="container" id="p1-r3">
-                                <input type="radio" name="preg1" id="opc3" onclick="incorrecto(1);">
+                                <input type="radio" name="preg1" id="opc3" onclick="incorrecto(1);" value = "0">
                                 <span class="checkmark"></span>
                                 <p>&nbsp&nbsp c. Es un delito cibernético en el que un estafador vende productos
                                     engañosos.</p>
@@ -90,7 +93,7 @@ $newConn->connectionDB(); ?>
                             <h4> 2. ¿ Los delincuentes pueden hacer Phishing por mensajes de texto o llamadas?
                             </h4>
                             <label class="container" id="p2-r1">
-                                <input type="radio" name="preg2" id="opc1" onclick="correcto(2);">
+                                <input type="radio" name="preg2" id="opc1" onclick="correcto(2);" value = "0.83">
                                 <span class="checkmark"></span>
                                 <p>&nbsp&nbsp a. Sí, la intención de los delincuentes es robar información personal,
                                     por lo
@@ -99,14 +102,14 @@ $newConn->connectionDB(); ?>
                                     web.</p>
                             </label>
                             <label class="container" id="p2-r2">
-                                <input type="radio" name="preg2" id="opc2" onclick="incorrecto(2);">
+                                <input type="radio" name="preg2" id="opc2" onclick="incorrecto(2);" value = "0">
                                 <span class="checkmark"></span>
                                 <p>&nbsp&nbsp b. No porque las personas no suelen contestar llamadas de números
                                     desconocidos.
                                 </p>
                             </label>
                             <label class="container" id="p2-r3">
-                                <input type="radio" name="preg2" id="opc3" onclick="incorrecto(2);">
+                                <input type="radio" name="preg2" id="opc3" onclick="incorrecto(2);" value = "0">
                                 <span class="checkmark"></span>
                                 <p>&nbsp&nbsp c. No, porque el Phishing solo es por internet y llega únicamente a
                                     los correos
@@ -117,19 +120,19 @@ $newConn->connectionDB(); ?>
                                 reemplazar la consulta
                                 con un médico si encuentra la información que está buscando?</h4>
                             <label class="container" id="p3-r1">
-                                <input type="radio" name="preg3" id="opc1" onclick="incorrecto(3);">
+                                <input type="radio" name="preg3" id="opc1" onclick="incorrecto(3);" value = "0">
                                 <span class="checkmark"></span>
                                 <p>&nbsp&nbsp a. Sí, siempre y cuando indiquen los medicamentos que debo tomar con
                                     sus dosis.
                                 </p>
                             </label>
                             <label class="container" id="p3-r2">
-                                <input type="radio" name="preg3" id="opc2" onclick="incorrecto(3);">
+                                <input type="radio" name="preg3" id="opc2" onclick="incorrecto(3);" value = "0">
                                 <span class="checkmark"></span>
                                 <p>&nbsp&nbsp b. No porque de pronto la información no está actualizada.</p>
                             </label>
                             <label class="container" id="p3-r3">
-                                <input type="radio" name="preg3" id="opc3" onclick="correcto(3);">
+                                <input type="radio" name="preg3" id="opc3" onclick="correcto(3);" value = "0.83">
                                 <span class="checkmark"></span>
                                 <p>&nbsp&nbsp c. No, ninguna información debe reemplazar la consulta con un médico
                                     que lo puede
@@ -141,21 +144,21 @@ $newConn->connectionDB(); ?>
                                 salud y promete curas
                                 milagrosas ¿debe confiar en ella?</h4>
                             <label class="container" id="p4-r1">
-                                <input type="radio" name="preg4" id="opc1" onclick="incorrecto(4);">
+                                <input type="radio" name="preg4" id="opc1" onclick="incorrecto(4);" value = "0">
                                 <span class="checkmark"></span>
                                 <p>&nbsp&nbsp a. Sí, siempre y cuando tenga buenas referencias y buenos comentarios
                                     de las
                                     personas.</p>
                             </label>
                             <label class="container" id="p4-r2">
-                                <input type="radio" name="preg4" id="opc2" onclick="correcto(4);">
+                                <input type="radio" name="preg4" id="opc2" onclick="correcto(4);" value = "0.83">
                                 <span class="checkmark"></span>
                                 <p>&nbsp&nbsp b. No, se debe desconfiar de los sitios web que proclaman la cura a
                                     muchas
                                     enfermedades.</p>
                             </label>
                             <label class="container" id="p4-r3">
-                                <input type="radio" name="preg4" id="opc3" onclick="incorrecto(4);">
+                                <input type="radio" name="preg4" id="opc3" onclick="incorrecto(4);" value = "0">
                                 <span class="checkmark"></span>
                                 <p>&nbsp&nbsp c. Sí porque es muy bueno encontrar tanta información en un solo
                                     lugar.</p>
@@ -163,7 +166,7 @@ $newConn->connectionDB(); ?>
                             <!-- Pregunta 5 -->
                             <h4> 5. ¿Qué es la violación del derecho de autor?</h4>
                             <label class="container" id="p5-r1">
-                                <input type="radio" name="preg5" id="opc1" onclick="incorrecto(5);">
+                                <input type="radio" name="preg5" id="opc1" onclick="incorrecto(5);" value = "0">
                                 <span class="checkmark"></span>
                                 <p>&nbsp&nbsp a. Es un conjunto de normas jurídicas que plantean los derechos
                                     morales y
@@ -171,14 +174,14 @@ $newConn->connectionDB(); ?>
                                     los autores</p>
                             </label>
                             <label class="container" id="p5-r2">
-                                <input type="radio" name="preg5" id="opc2" onclick="incorrecto(5);">
+                                <input type="radio" name="preg5" id="opc2" onclick="incorrecto(5);" value = "0">
                                 <span class="checkmark"></span>
                                 <p>&nbsp&nbsp b. Se da cuando una persona copia y pega un texto de otra sin cambiar
                                     absolutamente nada y no le da
                                     los créditos.</p>
                             </label>
                             <label class="container" id="p5-r3">
-                                <input type="radio" name="preg5" id="opc3" onclick="correcto(5);">
+                                <input type="radio" name="preg5" id="opc3" onclick="correcto(5);" value = "0.83">
                                 <span class="checkmark"></span>
                                 <p>&nbsp&nbsp c. Es un fraude relacionado con la conducta de los usuarios que no
                                     tienen en
@@ -191,7 +194,7 @@ $newConn->connectionDB(); ?>
                                 los derechos de
                                 autor?</h4>
                             <label class="container" id="p6-r1">
-                                <input type="radio" name="preg6" id="opc1" onclick="correcto(6);">
+                                <input type="radio" name="preg6" id="opc1" onclick="correcto(6);" value = "0.83">
                                 <span class="checkmark"></span>
                                 <p>&nbsp&nbsp a. Inscribir en el registro de autor el nombre del autor real, con el
                                     título
@@ -199,7 +202,7 @@ $newConn->connectionDB(); ?>
                                     el texto. </p>
                             </label>
                             <label class="container" id="p6-r2">
-                                <input type="radio" name="preg6" id="opc2" onclick="incorrecto(6);">
+                                <input type="radio" name="preg6" id="opc2" onclick="incorrecto(6);" value = "0">
                                 <span class="checkmark"></span>
                                 <p>&nbsp&nbsp b. Publicar, total o parcialmente, sin autorización previa del titular
                                     del
@@ -207,7 +210,7 @@ $newConn->connectionDB(); ?>
                                 </p>
                             </label>
                             <label class="container" id="p6-r3">
-                                <input type="radio" name="preg6" id="opc3" onclick="incorrecto(6);">
+                                <input type="radio" name="preg6" id="opc3" onclick="incorrecto(6);" value = "0">
                                 <span class="checkmark"></span>
                                 <p>&nbsp&nbsp c. Suprimir o alterar la información esencial para la gestión
                                     electrónica de
@@ -215,18 +218,19 @@ $newConn->connectionDB(); ?>
                                     distribuya o comunique ejemplares con la información suprimida o alterada.</p>
                             </label>
                         </p>
-                        <center>
+                        <!--<center>
                             <a href="#" class="btn btn-outline-success" onclick="validar();">Validar</a>
-                        </center>
+                        </center>-->
                     </div>
                 </div>
                 <!-- /.card -->
                 <br>
                 <center>
                     <a href="../modulo7.2/3derechosAutor/index.php" class="btn btn-success">Anterior</a>
-                    <a href="mod7.2_eval2.php" class="btn btn-success btnSig retraso3">Siguiente</a>
-                    
+                    <!--<a href="mod7.2_eval2.php" class="btn btn-success btnSig retraso3">Siguiente</a>-->
+                    <button id="btn-siguiente"  class="btn btn-success" type="submit" onclick="validar(); evaluacion()">Siguiente</button>
                 </center>
+                </form>
                 <?php
                     include '../../../../functions/paginacion.php';
                     pag(2);

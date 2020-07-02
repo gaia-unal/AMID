@@ -18,8 +18,8 @@
 
 <body>
   <?php require "../../../../queries/connectionDB.php";
-$newConn= new Connection;
-$newConn->connectionDB(); ?>
+    $newConn= new Connection;
+    $newConn->connectionDB(); ?>
   <?php require '../../../../queries/activeSession.php'; ?>  
   <?php $rutaSession="../../../../queries/"; include '../../../header.php'; ?>
 
@@ -58,6 +58,9 @@ $newConn->connectionDB(); ?>
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 1: Conceptos y Aplicación de la Alfabetización Informacional</h1>
+
+                <form action="../../../../queries/evaluacion.php?id_und=m8u1" method="post">
+
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Evaluación</h4>
@@ -65,6 +68,8 @@ $newConn->connectionDB(); ?>
                             Definiciones. Ubica en cada recuadro la imagen que corresponde a la definición de los
                             términos.
                             <canvas id="lienzo1" width="800" height="400"></canvas>
+
+                            <input type="text" name="preg" id="preg" value="" style="display: none">
                         </p>
                     </div>
                 </div>
@@ -72,8 +77,8 @@ $newConn->connectionDB(); ?>
                 <br>
                 <center>
                     <a href="module8.1_act2.php" class="btn btn-success">Anterior</a>
-                    <a href="../modulo8.2/module8.2_inicio.php" class="btn btn-success btnSig retraso3">Siguiente</a>
-                    
+                    <!--<a href="../modulo8.2/module8.2_inicio.php" class="btn btn-success btnSig retraso3">Siguiente</a>-->
+                    <button id="btn-siguiente"  class="btn btn-success" type="submit" onclick="evaluacion()">Siguiente</button>                    
                 </center>
                 <?php
                     include '../../../../functions/paginacion.php';

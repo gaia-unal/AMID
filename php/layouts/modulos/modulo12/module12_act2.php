@@ -54,6 +54,9 @@
             <div class="col-lg-9">
                 <br>
                 <h1>Módulo 12: Libertad de expresión</h1>
+
+                <form action="../../../../queries/evaluacion.php?id_und=m12" method="post">
+
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Actividad</h4>
@@ -85,9 +88,10 @@
                 <br>
                 <center>
                     <a href="module12_act.php" class="btn btn-success">Anterior</a>
-                    <a href="../../inicio.php" class="btn btn-success btnSig retraso3">Siguiente</a>
-                    
+                    <!--<a href="../../inicio.php" class="btn btn-success btnSig retraso3">Siguiente</a>-->
+					<button id="btn-siguiente"  class="btn btn-success" type="submit" onclick="evaluacion()">Siguiente</button>
                 </center>
+                </form>	
                 <?php
                     include '../../../functions/paginacion.php';
                     pag(1);

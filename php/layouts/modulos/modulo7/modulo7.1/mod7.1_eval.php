@@ -19,8 +19,8 @@
 
 <body>
   <?php require "../../../../queries/connectionDB.php";
-$newConn= new Connection;
-$newConn->connectionDB(); ?>
+    $newConn= new Connection;
+    $newConn->connectionDB(); ?>
   <?php require '../../../../queries/activeSession.php'; ?>  
   <?php $rutaSession="../../../../queries/"; include '../../../header.php'; ?>
 
@@ -61,6 +61,7 @@ $newConn->connectionDB(); ?>
                 <br>
                 <h1>Unidad 1: Los jóvenes en el mundo virtual</h1>
 
+                <form action="../../../../queries/evaluacion.php?id_und=m7u11" method="post">
                 
                 <div class="card mt-4">
                     <div class="card-body">
@@ -70,17 +71,17 @@ $newConn->connectionDB(); ?>
                             <h4> 1. ¿Cuáles son los principales intereses de los niños y adolescentes en
                                 Internet?</h4>
                             <label class="container" id="p1-r1">
-                                <input type="radio" name="preg1" id="opc1" onclick="incorrecto(1);">
+                                <input type="radio" name="preg1" id="opc1" onclick="incorrecto(1);" value="0">
                                 <span class="checkmark"></span>
                                 <p>&nbsp&nbsp a. Jugar, usar redes sociales y ver vídeos.</p>
                             </label>
                             <label class="container" id="p1-r2">
-                                <input type="radio" name="preg1" id="opc2" onclick="correcto(1);">
+                                <input type="radio" name="preg1" id="opc2" onclick="correcto(1);" value="0.85">
                                 <span class="checkmark"></span>
                                 <p>&nbsp&nbsp b. Trabajos del colegio, escuchar musica y usar redes sociales.</p>
                             </label>
                             <label class="container" id="p1-r3">
-                                <input type="radio" name="preg1" id="opc3" onclick="incorrecto(1);">
+                                <input type="radio" name="preg1" id="opc3" onclick="incorrecto(1);" value="0">
                                 <span class="checkmark"></span>
                                 <p>&nbsp&nbsp c. Pasar tiempo en la un mundo virtual, usar redes sociales, hacer
                                     trabajos del colegio.</p>
@@ -88,18 +89,18 @@ $newConn->connectionDB(); ?>
                             <!-- Pregunta 2 -->
                             <h4> 2. ¿Qué conductas se pueden pasar por alto en aquellos que usan Internet?</h4>
                             <label class="container" id="p2-r1">
-                                <input type="radio" name="preg2" id="opc1" onclick="incorrecto(2);">
+                                <input type="radio" name="preg2" id="opc1" onclick="incorrecto(2);" value="0">
                                 <span class="checkmark"></span>
                                 <p>&nbsp&nbsp a. Tolerancia, diversión y buen juicio.</p>
                             </label>
                             <label class="container" id="p2-r2">
-                                <input type="radio" name="preg2" id="opc2" onclick="incorrecto(2);">
+                                <input type="radio" name="preg2" id="opc2" onclick="incorrecto(2);" value="0">
                                 <span class="checkmark"></span>
                                 <p>&nbsp&nbsp b. Síndrome de abstinencia, perdida de control y cambios de
                                     comportamiento.</p>
                             </label>
                             <label class="container" id="p2-r3">
-                                <input type="radio" name="preg2" id="opc3" onclick="correcto(2);">
+                                <input type="radio" name="preg2" id="opc3" onclick="correcto(2);" value="0.83">
                                 <span class="checkmark"></span>
                                 <p>&nbsp&nbsp c. Buen comportamiento, obediencia y acato de las normas y reglas.</p>
                             </label>
@@ -107,17 +108,17 @@ $newConn->connectionDB(); ?>
                             <h4> 3. ¿Qué herramientas puede utilizar para inculcar un buen comportamiento en
                                 Internet?</h4>
                             <label class="container" id="p3-r1">
-                                <input type="radio" name="preg3" id="opc1" onclick="incorrecto(3);">
+                                <input type="radio" name="preg3" id="opc1" onclick="incorrecto(3);" value="0">
                                 <span class="checkmark"></span>
                                 <p>&nbsp&nbsp a. Wikis, redes sociales y dispositivos moviles.</p>
                             </label>
                             <label class="container" id="p3-r2">
-                                <input type="radio" name="preg3" id="opc2" onclick="incorrecto(3);">
+                                <input type="radio" name="preg3" id="opc2" onclick="incorrecto(3);" value="0">
                                 <span class="checkmark"></span>
                                 <p>&nbsp&nbsp b. Facebook, wikis y correo electrónico.</p>
                             </label>
                             <label class="container" id="p3-r3">
-                                <input type="radio" name="preg3" id="opc3" onclick="correcto(3);">
+                                <input type="radio" name="preg3" id="opc3" onclick="correcto(3);" value="0.83">
                                 <span class="checkmark"></span>
                                 <p>&nbsp&nbsp c. Wikis.</p>
                             </label>
@@ -125,17 +126,17 @@ $newConn->connectionDB(); ?>
                             <h4> 4. ¿Cuál corresponde al lugar más usado por los jóvenes para navegar en
                                 Internet?</h4>
                             <label class="container" id="p4-r1">
-                                <input type="radio" name="preg4" id="opc1" onclick="correcto(4);">
+                                <input type="radio" name="preg4" id="opc1" onclick="correcto(4);" value="0.83">
                                 <span class="checkmark"></span>
                                 <p>&nbsp&nbsp a. Sala u otra habitación común.</p>
                             </label>
                             <label class="container" id="p4-r2">
-                                <input type="radio" name="preg4" id="opc2" onclick="incorrecto(4);">
+                                <input type="radio" name="preg4" id="opc2" onclick="incorrecto(4);" value="0">
                                 <span class="checkmark"></span>
                                 <p>&nbsp&nbsp b. Habitación privada.</p>
                             </label>
                             <label class="container" id="p4-r3">
-                                <input type="radio" name="preg4" id="opc3" onclick="incorrecto(4);">
+                                <input type="radio" name="preg4" id="opc3" onclick="incorrecto(4);" value="0">
                                 <span class="checkmark"></span>
                                 <p>&nbsp&nbsp c. Cualquier lugar que permita conexión a través de una plataforma
                                     movil.</p>
@@ -145,17 +146,17 @@ $newConn->connectionDB(); ?>
                                 en Redes sociales?
                             </h4>
                             <label class="container" id="p5-r1">
-                                <input type="radio" name="preg5" id="opc1" onclick="incorrecto(5);">
+                                <input type="radio" name="preg5" id="opc1" onclick="incorrecto(5);" value="0">
                                 <span class="checkmark"></span>
                                 <p>&nbsp&nbsp a. 11 años.</p>
                             </label>
                             <label class="container" id="p5-r2">
-                                <input type="radio" name="preg5" id="opc2" onclick="incorrecto(5);">
+                                <input type="radio" name="preg5" id="opc2" onclick="incorrecto(5);" value="0">
                                 <span class="checkmark"></span>
                                 <p>&nbsp&nbsp b. 12 años.</p>
                             </label>
                             <label class="container" id="p5-r3">
-                                <input type="radio" name="preg5" id="opc3" onclick="correcto(5);">
+                                <input type="radio" name="preg5" id="opc3" onclick="correcto(5);" value="0.83">
                                 <span class="checkmark"></span>
                                 <p>&nbsp&nbsp c. 13 años.</p>
                             </label>
@@ -163,33 +164,34 @@ $newConn->connectionDB(); ?>
                             <h4> 6. ¿Cuáles son los principales riesgos que se pueden encontrar en Internet?
                             </h4>
                             <label class="container" id="p6-r1">
-                                <input type="radio" name="preg6" id="opc1" onclick="incorrecto(6);">
+                                <input type="radio" name="preg6" id="opc1" onclick="incorrecto(6);" value="0">
                                 <span class="checkmark"></span>
                                 <p>&nbsp&nbsp a. Ciberbullying, Sexting y Grooming</p>
                             </label>
                             <label class="container" id="p6-r2">
-                                <input type="radio" name="preg6" id="opc2" onclick="correcto(6);">
+                                <input type="radio" name="preg6" id="opc2" onclick="correcto(6);" value="0.83">
                                 <span class="checkmark"></span>
                                 <p>&nbsp;&nbsp; b. Sexting, Sextorsión, Ciberbullying y Grooming.</p>
                             </label>
                             <label class="container" id="p6-r3">
-                                <input type="radio" name="preg6" id="opc3" onclick="incorrecto(6);">
+                                <input type="radio" name="preg6" id="opc3" onclick="incorrecto(6);" value="0">
                                 <span class="checkmark"></span>
                                 <p>&nbsp&nbsp c. Sexting y Sextorsión.</p>
                             </label>
                         </p>
-                        <center>
+                        <!--<center>
                             <a href="#" class="btn btn-outline-success" onclick="validar();">Validar</a>
-                        </center>
+                        </center>-->
                     </div>
                 </div>
                 <!-- /.card -->
                 <br>
                 <center>
                     <a href="4Conducta/actividades.php" class="btn btn-success">Anterior</a>
-                    <a href="mod7.1_eval2.php" class="btn btn-success btnSig retraso3">Siguiente</a>
-                    
+                    <!--<a href="mod7.1_eval2.php" class="btn btn-success btnSig retraso3">Siguiente</a>-->
+                    <button id="btn-siguiente"  class="btn btn-success" type="submit" onclick="validar(); evaluacion()">Siguiente</button>
                 </center>
+                </form>
                 <?php
                     include '../../../../functions/paginacion.php';
                     pag(2);

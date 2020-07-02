@@ -23,7 +23,7 @@ $newConn= new Connection;
 $newConn->connectionDB();
     require '../../../queries/activeSession.php';
     $rutaSession="../../../queries/"; include '../../header.php'; 
-    include '../../../queries/estadoMod.php'; estadoMod(7,1);
+    include '../../../queries/estadoMod.php'; estadoMod(8,1);
 ?>
 
     <!-- Page Content -->

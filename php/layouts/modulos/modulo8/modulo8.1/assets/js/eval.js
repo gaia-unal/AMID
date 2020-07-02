@@ -4,7 +4,6 @@
 });
 
 function iniciarCanvas() {
-
     var canvas = document.getElementById('lienzo1');
     var ctx = canvas.getContext('2d');
 
@@ -305,8 +304,20 @@ function iniciarCanvas() {
                     title: 'Oops...',
                     text: 'Te equivocaste en algunas pero puedes volverlo a internar'
                 });
-                iniciarCanvas();
             }
+            punt(puntos);
         }
+    }
+    function punt(a){
+        if(a == 3)
+            a = 5;
+        else if(a >= 2)
+            a = 3;
+        else if( a >= 1)
+            a = 1;
+        else 
+            a = 0;
+        var inp = document.getElementById('preg');
+        inp.value = a;
     }
 }
