@@ -55,8 +55,8 @@
                 <br>
                 <h1>Módulo 12: Libertad de expresión</h1>
 
-                <form action="../../../../queries/evaluacion.php?id_und=m12" method="post">
-
+                <form action="../../../queries/evaluacion.php?id_und=m12" method="post">
+                
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Actividad</h4>

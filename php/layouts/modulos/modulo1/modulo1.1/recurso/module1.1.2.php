@@ -75,15 +75,10 @@
                 </div>
                 <!-- /.card -->
                 <br>
-                <form action="../../../../../queries/actividad.php?id_act=m1u1a1" method="post">
-                    <input type="text" class="sr-only" id="pointsCanvas" name="pointsCanvas" value="1">
-                    <input type="text" class="sr-only" id="pointsGood" name="pointsGood" value="0">
                 <center>
                     <a href="module1.1.1.php" class="btn btn-success">Anterior</a>
-                    <!-- <a href="module1.1.3.php" class="btn btn-success">Siguiente</a> -->
-                    <button id="btn-siguiente"  class="btn btn-success" type="submit">Siguiente</button>
+                    <a href="module1.1.3.php" class="btn btn-success">Siguiente</a>
                 </center>
-                </form>
                 <?php
                     include '../../../../../functions/paginacion.php';
                     pag(3);

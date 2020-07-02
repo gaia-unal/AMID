@@ -1,5 +1,4 @@
 <?php
-    //1: Iniciado. 2: Finalizado
     function estadoMod($idmod, $est){
     
         $id_profe=$_SESSION['id'];

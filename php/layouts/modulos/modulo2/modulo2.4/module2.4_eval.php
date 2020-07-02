@@ -19,7 +19,7 @@
   <?php require "../../../../queries/connectionDB.php";
 $newConn= new Connection;
 $newConn->connectionDB(); ?>
-  <?php require '../../../../queries/activeSession.php'; ?>  
+  <?php require '../../../../queries/activeSession.php'; ?>
   <?php $rutaSession="../../../../queries/"; include '../../../header.php'; ?>
 
     <!-- Page Content -->
@@ -61,34 +61,38 @@ $newConn->connectionDB(); ?>
                     inglés)</h1>
                 <div class="card mt-4">
                     <div class="card-body">
-                        <h4>Evaluación</h4>
-                        <p class="card-text">
-                            Investigue y responda
-                            <ul>
-                                <li>¿Qué es el registro de medios?</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
-                                <li>¿A qué se refiere la producción?</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
-                                <li>¿Considera importante enseñar a los estudiantes sobre los Informes de las visitas de
-                                    estudio, inmersión, análisis de texto? ¿Por qué?</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
-                                <li>¿Qué estrategias puede utilizar en el aula de clase para enseñarle a los estudiantes
-                                    la importancia de la alfabetización mediática?</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
-                            </ul>
-                        </p>
+                      <form action="../../../../queries/evaluacion.php?id_und=m2u4" method="post">
+                          <div class="card-body">
+                            <p class="card-text">
+                              <strong>1. ¿Qué es el registro de medios?  </strong><br> <br>
+                              <input class="space" type="radio" name="pre1" id="resp1" value="5" required>
+                              <label for="resp1">Es registrar los medios de comunicación para su correcto funcionamiento </label> <br>
+
+                              <input class="space" type="radio" name="pre1" id="resp2" value="1" required>
+                              <label for="resp2">Son los medios que cuentan con instalaciones, equipo, estructura organizacional y una variedad de medios de comunicación.  </label> <br>
+
+                              <input class="space" type="radio" name="pre1" id="resp3" value="1" required>
+                              <label for="resp3">Es registrar el nombre de los medios de comunicación ante una entidad superior.</label> <br>
+
+                              <strong>2. ¿A qué se refiere la producción?</strong><br> <br>
+                              <label for="resp4">
+                              <input class="space" type="radio" name="pre2" id="resp4" value="1" required>La cantidad de dinero que produce el medio de comunicación en un tiempo determinado.</label> <br>
+
+                              <input class="space" type="radio" name="pre2" id="resp5" value="1" required>
+                              <label for="resp5">Son las instalaciones propias del medio de comunicación para realizar producciones.</label> <br>
+
+                              <input class="space" type="radio" name="pre2" id="resp6" value="5" required>
+                              <label for="resp6">La producción es a lo que se dedica el medio de comunicación, por ejemplo, radio, televisión, periódico, revista, producción de documental, etc.</label> <br>
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <!-- /.card -->
-                <br>
-                <center>
-                    <a href="module2.4_act2.php" class="btn btn-success">Anterior</a>
-                    <a href="../../modulo3/module3.php" class="btn btn-success">Siguiente</a>
-                </center>
+                     <!-- /.card -->
+                     <br>
+                      <center>
+                          <a href="module2.4_act2.php" class="btn btn-success">Anterior</a>
+                          <button id="btn-siguiente"  class="btn btn-success" type="submit">Siguiente</button>
+                      </center>
+                    </form>
                 <?php
                     include '../../../../functions/paginacion.php';
                     pag(2);

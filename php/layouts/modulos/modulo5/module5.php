@@ -34,14 +34,14 @@ $newConn->connectionDB();
                     <a href="../modulo1/module1.php" class="list-group-item">Módulo 1</a>
                     <a href="../modulo2/module2.php" class="list-group-item">Módulo 2</a>
                     <a href="../modulo3/module3.php" class="list-group-item">Módulo 3</a>
-                    <a href="../modulo4/module4.php" class="list-group-item">Módulo 5</a>
+                    <a href="../modulo4/module4.php" class="list-group-item">Módulo 4</a>
                     <a href="#" class="list-group-item active">Módulo 5</a>
                     <ul class="list-group-item">
                         <a href="modulo5.1/module5.1_inicio.php" class="list-group-item">Unidad 1</a>
                         <a href="#" onclick="inactivo(1)" class="list-group-item inactive">Unidad 2</a>
                         <a href="#" onclick="inactivo(1)" class="list-group-item inactive">Unidad 3</a>
                         <a href="#" onclick="inactivo(1)" class="list-group-item inactive">Unidad 4</a>
-                        <a href="#" onclick="inactivo(1)" class="list-group-item inactive">Unidad 4</a>
+                        <a href="#" onclick="inactivo(1)" class="list-group-item inactive">Unidad 5</a>
                     </ul>
                     <a href="../modulo6/module6.php" class="list-group-item">Módulo 6</a>
                     <a href="../modulo7/module7.php" class="list-group-item">Módulo 7</a>

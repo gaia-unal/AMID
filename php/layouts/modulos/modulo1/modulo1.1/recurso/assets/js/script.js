@@ -424,28 +424,20 @@ function iniciarCanvas() {
             }
         }
         if (comple) {
-            if (puntos >= 9) {
+            if (puntos >= 8) {
                 swal({
-                    title: "¡Correcto! "+puntos+" de 16",
+                    title: "¡Correcto!",
                     icon: "success",
                     text: "Da clic en el botón siguiente para continuar con la siguiente actividad.",
                 });
-                printNote(puntos);
             } else {
                 swal({
                     icon: 'error',
-                    title: "incorrecto "+puntos+" de 16",
+                    title: 'Oops...',
                     text: 'Te equivocaste pero puedes volver a intentarlo'
                 });
                 iniciarCanvas();
             }
         }
     }
-}
-
-function printNote(puntos){
-    var nota=parseFloat(puntos*5/16);
-    if(nota<1){nota=1;}
-    document.getElementById("pointsCanvas").value=nota;
-    document.getElementById("pointsGood").value=puntos;
 }

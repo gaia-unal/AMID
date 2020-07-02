@@ -61,8 +61,8 @@
 				<br>
 				<h1>Módulo 10: Audiencia</h1>
 
-				<form action="../../../../queries/evaluacion.php?id_und=m10" method="post">
-
+				<form action="../../../queries/evaluacion.php?id_und=m10" method="post">
+					
 				<div class="card mt-4">
 					<div class="card-body">
 						<p class="card-text">

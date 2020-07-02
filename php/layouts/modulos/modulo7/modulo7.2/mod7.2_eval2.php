@@ -78,8 +78,6 @@ $newConn->connectionDB(); ?>
                 <br>
                 <center>
                     <a href="mod7.2_eval.php" class="btn btn-success">Anterior</a>
-                    <!--<a href="../../modulo8/module8.php" class="btn btn-success btnSig retraso3"
-                        onclick="term(7)">Siguiente</a>-->
                     <button id="btn-siguiente"  class="btn btn-success" type="submit" onclick="evaluacion()">Siguiente</button>
                 </center>
                 </form>

@@ -19,7 +19,7 @@
   <?php require "../../../../queries/connectionDB.php";
 $newConn= new Connection;
 $newConn->connectionDB(); ?>
-  <?php require '../../../../queries/activeSession.php'; ?>  
+  <?php require '../../../../queries/activeSession.php'; ?>
   <?php $rutaSession="../../../../queries/"; include '../../../header.php'; ?>
 
     <!-- Page Content -->
@@ -58,23 +58,31 @@ $newConn->connectionDB(); ?>
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 2: Libertad, ética y responsabilidad</h1>
+              <form action="../../../../queries/evaluacion.php?id_und=m2u2" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Evaluación</h4>
                         <p class="card-text">
-                            De acuerdo a las investigaciones realizadas, responda:
-                            <ul>
-                                <li>¿Está de acuerdo con la calificación de libertad de prensa?</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
-                                <li>¿Cuál es su opinión respecto a los códigos de ética?</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
-                                <li>¿Qué opinión le merecen las entrevistas y los programas de TV respecto al periodismo
-                                    y la sociedad?</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
-                            </ul>
+                          <strong> ¿Qué es código de ética?  </strong><br> <br>
+                          <input class="space" type="radio" name="pre1" id="resp1" value="1" required>
+                          <label for="resp1">Mantener una línea de comportamiento uniforme </label> <br>
+
+                          <input class="space" type="radio" name="pre1" id="resp2" value="1" required>
+                          <label for="resp2">Tomar las decisiones más acertadas, dentro de lo que cabe en su profesión.</label> <br>
+
+                          <input class="space" type="radio" name="pre1" id="resp3" value="5" required>
+                          <label for="resp3"> Normas que regulan los comportamientos de las personas dentro de una empresa u organización</label> <br>
+
+                          <strong> ¿Qué es actuar con libertad?  </strong><br> <br>
+                          <label for="resp4">
+                          <input class="space" type="radio" name="pre2" id="resp4" value="5" required>Actuar con libertad implica asumir la responsabilidad de nuestros actos, es decir estar comprometidos ante las consecuencias que surjan de las decisiones tomadas. </label> <br>
+
+
+                          <input class="space" type="radio" name="pre2" id="resp5" value="1" required>
+                          <label for="resp5">Es ser responsable para manifestar una respuesta ante cualquier circunstancia.</label> <br>
+
+                          <input class="space" type="radio" name="pre2" id="resp6" value="1" required>
+                          <label for="resp6">Es ser autónomos y conscientes de nuestras acciones.</label> <br>
                         </p>
                     </div>
                 </div>
@@ -82,8 +90,10 @@ $newConn->connectionDB(); ?>
                 <br>
                 <center>
                     <a href="module2.2_act2.php" class="btn btn-success">Anterior</a>
-                    <a href="../modulo2.3/module2.3_inicio.php" class="btn btn-success">Siguiente</a>
+                    <!--a href="../modulo2.3/module2.3_inicio.php" class="btn btn-success">Siguiente</a-->
+                    <button id="btn-siguiente"  class="btn btn-success" type="submit">Siguiente</button>
                 </center>
+              </form>
                 <?php
                     include '../../../../functions/paginacion.php';
                     pag(2);

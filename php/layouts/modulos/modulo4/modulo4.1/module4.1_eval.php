@@ -59,7 +59,6 @@ $newConn->connectionDB(); ?>
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 1: Lectura de medios y textos de información</h1>
-                
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Evaluación</h4>
@@ -79,7 +78,6 @@ $newConn->connectionDB(); ?>
                     <a href="recurso/module4.1.7.php" class="btn btn-success">Anterior</a>
                     <a href="../modulo4.2/module4.2_inicio.php" class="btn btn-success">Siguiente</a>
                 </center>
-                
                 <?php
                     include '../../../../functions/paginacion.php';
                     pag(2);

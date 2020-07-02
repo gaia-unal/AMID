@@ -23,6 +23,7 @@ $newConn->connectionDB(); ?>
   <?php require '../../../../queries/activeSession.php'; ?>
   <?php $rutaSession="../../../../queries/"; include '../../../header.php'; ?>
 
+
     <!-- Page Content -->
     <div class="container">
         <div class="row">
@@ -33,16 +34,16 @@ $newConn->connectionDB(); ?>
                     <a href="../../modulo2/module2.php" class="list-group-item">Módulo 2</a>
                     <a href="../module3.php" class="list-group-item active">Módulo 3</a>
                     <ul class="list-group-item">
-                        <a href="../modulo3.1/module3.1_inicio.php" class="list-group-item">Unidad 1</a>
-                        <a href="module3.2_inicio.php" class="list-group-item active">Unidad 2</a>
+                        <a href="module3.1_inicio.php" class="list-group-item active">Unidad 1</a>
                         <ul class="list-group-item">
-                            <a href="module3.2_temas.php" class="list-group-item">Temas</a>
-                            <a href="module3.2.1_act.php" class="list-group-item">Actividad</a>
+                            <a href="module3.1_temas.php" class="list-group-item">Temas</a>
+                            <a href="module3.1.1_act.php" class="list-group-item">Actividad</a>
                             <a href="#" class="list-group-item active">Evaluación</a>
                         </ul>
-                        <a href="../modulo3.3/module3.3_inicio.php" class="list-group-item">Unidad 3</a>
-                        <a href="#" onclick="inactivo(2)" class="list-group-item inactive">Unidad 4</a>
-                        <a href="#" onclick="inactivo(2)" class="list-group-item inactive">Unidad 5</a>
+                        <a href="../modulo3.2/module3.2_inicio.php" class="list-group-item">Unidad 2</a>
+                        <a href="#" onclick="inactivo(1)" class="list-group-item inactive">Unidad 3</a>
+                        <a href="#" onclick="inactivo(1)" class="list-group-item inactive">Unidad 4</a>
+                        <a href="#" onclick="inactivo(1)" class="list-group-item inactive">Unidad 5</a>
                     </ul>
                     <a href="../../modulo4/module4.php" class="list-group-item">Módulo 4</a>
                     <a href="../../modulo5/module5.php" class="list-group-item">Módulo 5</a>
@@ -59,25 +60,28 @@ $newConn->connectionDB(); ?>
             </div>
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
-                <h1><br>Unidad 2: Códigos de la industria sobre la diversidad y la representación</h1>
-                <form action="../../../../queries/evaluacion.php?id_und=m3u2" method="post">
+                <h1><br>Unidad 1: Informes de noticias y el poder de las imágenes</h1>
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Evaluación</h4>
                         <p class="card-text">
                             <ul>
-                                <li><strong> ¿Cuáles son las principales áreas de códigos de diversidad o ética?</strong></li>
-                                    <label><input type="radio" name="pre1" class="space" onclick="incorrecto()" value="1" required>Únicamente en la conducta de las personas.</label> <br />
-                                    <label><input type="radio" name="pre1" class="space" onclick="incorrecto()" value="1" required>Animal y humana.</label><br />
-                                    <label><input type="radio" name="pre1" class="space" onclick="correcto()" value="5" required>Empresarial, institucional, en profesiones como la Medicina, Sistemas informáticos, Auditorías.
-                                        </label><br />
-                                <br>
-                                <li><strong>¿Quién regula en primera instancia el ejercicio ético en un periodista?</strong></li>
-
-                                    <label><input type="radio" name="pre2" class="space" onclick="incorrecto()" value="1" required>La ley es la encargada de observar la conducta del periodista.</label><br />
-                                    <label><input type="radio" name="pre2" class="space" onclick="correcto()" value="5" required>La conciencia personal del periodista.</label><br />
-                                    <label><input type="radio" name="pre2" class="space" onclick="incorrecto()" value="1" required>Los encargados de administrar los manuales de estilos.</label><br />
-                                <br>
+                                <li>Debido a nuestra dependencia en los medios visuales, algunos críticos de los medios
+                                    han expresado su preocupación sobre ciertos eventos que se presentan en los medios,
+                                    en especial los desastres. Examine la cobertura de los medios de los eventos diarios
+                                    y temas. ¿Hasta qué punto estas preocupaciones son válidas?</li>
+                                <textarea name="" id="" cols="80" rows="5"
+                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <li>¿Considera que las imágenes son de gran impacto en los estudiantes?</li>
+                                <textarea name="" id="" cols="80" rows="5"
+                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <li>¿Cómo puede usar las imágenes en el aula de clase?</li>
+                                <textarea name="" id="" cols="80" rows="5"
+                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <li>¿De qué manera afectan las imágenes en los informes de noticias?¿Traen consigo un
+                                    efecto sobre el receptor?</li>
+                                <textarea name="" id="" cols="80" rows="5"
+                                    placeholder="Escriba aquí su respuesta"></textarea>
                             </ul>
                         </p>
                     </div>
@@ -85,11 +89,9 @@ $newConn->connectionDB(); ?>
                 <!-- /.card -->
                 <br>
                 <center>
-                    <a href="module3.2.1_act.php" class="btn btn-success">Anterior</a>
-                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
-                    <!-- <a href="../modulo2.2/module2.2_inicio.php" class="btn btn-success">Siguiente</a> -->
+                    <a href="module3.1.1_act2.php" class="btn btn-success">Anterior</a>
+                    <a href="../modulo3.2/module3.2_inicio.php" class="btn btn-success">Siguiente</a>
                 </center>
-                </form>
                 <?php
                     include '../../../../functions/paginacion.php';
                     pag(2);

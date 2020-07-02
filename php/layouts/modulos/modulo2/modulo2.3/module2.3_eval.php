@@ -19,7 +19,7 @@
   <?php require "../../../../queries/connectionDB.php";
 $newConn= new Connection;
 $newConn->connectionDB(); ?>
-  <?php require '../../../../queries/activeSession.php'; ?>  
+  <?php require '../../../../queries/activeSession.php'; ?>
   <?php $rutaSession="../../../../queries/"; include '../../../header.php'; ?>
 
     <!-- Page Content -->
@@ -61,20 +61,38 @@ $newConn->connectionDB(); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Evaluación</h4>
-                        <p class="card-text">
-                            Seleccioné una noticia relacionada al contexto donde se encuentra y haga una reflexión basada en
-                            el análisis del texto, análisis de contexto y análisis de las noticias
-                            <textarea name="" id="" cols="80" rows="5"
-                                placeholder="Escriba aquí su respuesta"></textarea>
-                        </p>
-                    </div>
-                </div>
-                <!-- /.card -->
-                <br>
-                <center>
-                    <a href="module2.3_act3.php" class="btn btn-success">Anterior</a>
-                    <a href="../modulo2.4/module2.4_inicio.php" class="btn btn-success">Siguiente</a>
-                </center>
+            <form action="../../../../queries/evaluacion.php?id_und=m2u3" method="post">
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong> ¿Una oportunidad es?  </strong><br> <br>
+                    <input class="space" type="radio" name="pre1" id="resp1" value="1" required>
+                    <label for="resp1">Idea inesperada para realizar algo de manera repentina. </label> <br>
+
+                    <input class="space" type="radio" name="pre1" id="resp2" value="5" required>
+                    <label for="resp2">Momento oportuno para realizar una acción determinada.  </label> <br>
+
+                    <input class="space" type="radio" name="pre1" id="resp3" value="1" required>
+                    <label for="resp3">Acuerdo al que llegan dos personas en un momento determinado.</label> <br>
+
+                    <strong>¿Qué es un conflicto?</strong><br> <br>
+                    <label for="resp4">
+                    <input class="space" type="radio" name="pre2" id="resp4" value="5" required>Posición contraria entre 2 o más personas.</label> <br>
+
+                    <input class="space" type="radio" name="pre2" id="resp5" value="1" required>
+                    <label for="resp5">Discusión que está basada en elementos de la misma naturaleza pero con características diferentes.</label> <br>
+
+                    <input class="space" type="radio" name="pre2" id="resp6" value="1" required>
+                    <label for="resp6">Necesidad que tiene un grupo de personas de generar un ambiente de bienestar.</label> <br>
+                  </p>
+              </div>
+          </div>
+           <!-- /.card -->
+           <br>
+            <center>
+                <a href="module2.3_act2.php" class="btn btn-success">Anterior</a>
+                <button id="btn-siguiente"  class="btn btn-success" type="submit">Siguiente</button>
+            </center>
+          </form>
                 <?php
                     include '../../../../functions/paginacion.php';
                     pag(2);

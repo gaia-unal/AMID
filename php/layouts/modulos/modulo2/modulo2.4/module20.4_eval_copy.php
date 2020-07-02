@@ -13,14 +13,13 @@
   <!-- Custom styles for this template -->
   <link href="../../../../../assets/css/shop-item.css" rel="stylesheet">
   <link href="../../../../../assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/estilo.css" rel="stylesheet">
 </head>
 
 <body>
   <?php require "../../../../queries/connectionDB.php";
 $newConn= new Connection;
 $newConn->connectionDB(); ?>
-  <?php require '../../../../queries/activeSession.php'; ?>
+  <?php require '../../../../queries/activeSession.php'; ?>  
   <?php $rutaSession="../../../../queries/"; include '../../../header.php'; ?>
 
     <!-- Page Content -->
@@ -30,20 +29,19 @@ $newConn->connectionDB(); ?>
                 <h1 class="my-4">Módulos AMID</h1>
                 <div class="list-group">
                     <a href="../../modulo1/module1.php" class="list-group-item">Módulo 1</a>
-                    <a href="../../modulo2/module2.php" class="list-group-item">Módulo 2</a>
-                    <a href="../module3.php" class="list-group-item active">Módulo 3</a>
+                    <a href="../module2.php" class="list-group-item active">Módulo 2</a>
                     <ul class="list-group-item">
-                        <a href="../modulo3.1/module3.1_inicio.php" class="list-group-item">Unidad 1</a>
-                        <a href="module3.2_inicio.php" class="list-group-item active">Unidad 2</a>
+                        <a href="../modulo2.1/module2.1_inicio.php" class="list-group-item">Unidad 1</a>
+                        <a href="../modulo2.2/module2.2_inicio.php" class="list-group-item">Unidad 2</a>
+                        <a href="../modulo2.3/module2.3_inicio.php" class="list-group-item">Unidad 3</a>
+                        <a href="module2.4_inicio.php" class="list-group-item active">Unidad 4</a>
                         <ul class="list-group-item">
-                            <a href="module3.2_temas.php" class="list-group-item">Temas</a>
-                            <a href="module3.2.1_act.php" class="list-group-item">Actividad</a>
+                            <a href="module2.4_temas.php" class="list-group-item">Temas</a>
+                            <a href="module2.4_act.php" class="list-group-item">Actividad</a>
                             <a href="#" class="list-group-item active">Evaluación</a>
                         </ul>
-                        <a href="../modulo3.3/module3.3_inicio.php" class="list-group-item">Unidad 3</a>
-                        <a href="#" onclick="inactivo(2)" class="list-group-item inactive">Unidad 4</a>
-                        <a href="#" onclick="inactivo(2)" class="list-group-item inactive">Unidad 5</a>
                     </ul>
+                    <a href="../../modulo3/module3.php" class="list-group-item">Módulo 3</a>
                     <a href="../../modulo4/module4.php" class="list-group-item">Módulo 4</a>
                     <a href="../../modulo5/module5.php" class="list-group-item">Módulo 5</a>
                     <a href="../../modulo6/module6.php" class="list-group-item">Módulo 6</a>
@@ -59,25 +57,28 @@ $newConn->connectionDB(); ?>
             </div>
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
-                <h1><br>Unidad 2: Códigos de la industria sobre la diversidad y la representación</h1>
-                <form action="../../../../queries/evaluacion.php?id_und=m3u2" method="post">
+                <h1><br>Unidad 4: El proceso de desarrollo de las noticias: más allá de 5 por qués y 1 cómo (5ws y 1h en
+                    inglés)</h1>
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Evaluación</h4>
                         <p class="card-text">
+                            Investigue y responda
                             <ul>
-                                <li><strong> ¿Cuáles son las principales áreas de códigos de diversidad o ética?</strong></li>
-                                    <label><input type="radio" name="pre1" class="space" onclick="incorrecto()" value="1" required>Únicamente en la conducta de las personas.</label> <br />
-                                    <label><input type="radio" name="pre1" class="space" onclick="incorrecto()" value="1" required>Animal y humana.</label><br />
-                                    <label><input type="radio" name="pre1" class="space" onclick="correcto()" value="5" required>Empresarial, institucional, en profesiones como la Medicina, Sistemas informáticos, Auditorías.
-                                        </label><br />
-                                <br>
-                                <li><strong>¿Quién regula en primera instancia el ejercicio ético en un periodista?</strong></li>
-
-                                    <label><input type="radio" name="pre2" class="space" onclick="incorrecto()" value="1" required>La ley es la encargada de observar la conducta del periodista.</label><br />
-                                    <label><input type="radio" name="pre2" class="space" onclick="correcto()" value="5" required>La conciencia personal del periodista.</label><br />
-                                    <label><input type="radio" name="pre2" class="space" onclick="incorrecto()" value="1" required>Los encargados de administrar los manuales de estilos.</label><br />
-                                <br>
+                                <li>¿Qué es el registro de medios?</li>
+                                <textarea name="" id="" cols="80" rows="5"
+                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <li>¿A qué se refiere la producción?</li>
+                                <textarea name="" id="" cols="80" rows="5"
+                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <li>¿Considera importante enseñar a los estudiantes sobre los Informes de las visitas de
+                                    estudio, inmersión, análisis de texto? ¿Por qué?</li>
+                                <textarea name="" id="" cols="80" rows="5"
+                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <li>¿Qué estrategias puede utilizar en el aula de clase para enseñarle a los estudiantes
+                                    la importancia de la alfabetización mediática?</li>
+                                <textarea name="" id="" cols="80" rows="5"
+                                    placeholder="Escriba aquí su respuesta"></textarea>
                             </ul>
                         </p>
                     </div>
@@ -85,11 +86,9 @@ $newConn->connectionDB(); ?>
                 <!-- /.card -->
                 <br>
                 <center>
-                    <a href="module3.2.1_act.php" class="btn btn-success">Anterior</a>
-                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
-                    <!-- <a href="../modulo2.2/module2.2_inicio.php" class="btn btn-success">Siguiente</a> -->
+                    <a href="module2.4_act2.php" class="btn btn-success">Anterior</a>
+                    <a href="../../modulo3/module3.php" class="btn btn-success">Siguiente</a>
                 </center>
-                </form>
                 <?php
                     include '../../../../functions/paginacion.php';
                     pag(2);
@@ -108,7 +107,7 @@ $newConn->connectionDB(); ?>
   <!-- Bootstrap core JavaScript -->
   <script src="../../../../../vendor/jquery/jquery.min.js"></script>
   <script src="../../../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
   <script src="../../../../../assets/js/script.js"></script>
 </body>
 

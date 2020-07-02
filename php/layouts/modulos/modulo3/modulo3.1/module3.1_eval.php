@@ -20,7 +20,7 @@
   <?php require "../../../../queries/connectionDB.php";
 $newConn= new Connection;
 $newConn->connectionDB(); ?>
-  <?php require '../../../../queries/activeSession.php'; ?>  
+  <?php require '../../../../queries/activeSession.php'; ?>
   <?php $rutaSession="../../../../queries/"; include '../../../header.php'; ?>
 
 
@@ -61,27 +61,26 @@ $newConn->connectionDB(); ?>
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 1: Informes de noticias y el poder de las imágenes</h1>
+                <form action="../../../../queries/evaluacion.php?id_und=m3u1" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Evaluación</h4>
                         <p class="card-text">
                             <ul>
-                                <li>Debido a nuestra dependencia en los medios visuales, algunos críticos de los medios
-                                    han expresado su preocupación sobre ciertos eventos que se presentan en los medios,
-                                    en especial los desastres. Examine la cobertura de los medios de los eventos diarios
-                                    y temas. ¿Hasta qué punto estas preocupaciones son válidas?</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
-                                <li>¿Considera que las imágenes son de gran impacto en los estudiantes?</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
-                                <li>¿Cómo puede usar las imágenes en el aula de clase?</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
-                                <li>¿De qué manera afectan las imágenes en los informes de noticias?¿Traen consigo un
-                                    efecto sobre el receptor?</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <li><strong> ¿Qué impacto podrían tener estas imágenes sobre las audiencias?</strong></li>
+
+                                    <label><input type="radio" name="pre1" class="space" onclick="correcto()" value="5" required>Positivo porque permite que se genere conciencia sobre lo que pasa actualmente.</label> <br />
+                                    <label><input type="radio" name="pre1" class="space" onclick="incorrecto()" value="1" required>Negativo porque nos induce a tener miedo.
+                                        medio y sin importar las fronteras.</label><br />
+                                    <label><input type="radio" name="pre1" class="space" onclick="incorrecto()" value="1" required>No se genera ningún tipo de impacto.
+                                      </label><br />
+                                <br>
+                                <li><strong>¿Qué se intenta transmitir por medio de estas imágenes?</strong></li>
+
+                                    <label><input type="radio" name="pre2" class="space" onclick="incorrecto()" value="1" required>Sentimientos asociados al dolor humano.</label><br />
+                                    <label><input type="radio" name="pre2" class="space" onclick="correcto()" value="5" required>El enfoque y la cobertura de las noticias de una tragedia.</label><br />
+                                    <label><input type="radio" name="pre2" class="space" onclick="incorrecto()" value="1" required>La desigualdad y olvido por parte del gobierno.</label><br />
+                                <br>
                             </ul>
                         </p>
                     </div>
@@ -90,8 +89,10 @@ $newConn->connectionDB(); ?>
                 <br>
                 <center>
                     <a href="module3.1.1_act2.php" class="btn btn-success">Anterior</a>
-                    <a href="../modulo3.2/module3.2_inicio.php" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <!-- <a href="../modulo2.2/module2.2_inicio.php" class="btn btn-success">Siguiente</a> -->
                 </center>
+                </form>
                 <?php
                     include '../../../../functions/paginacion.php';
                     pag(2);
