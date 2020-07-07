@@ -1,0 +1,178 @@
+/*!
+ * Start Bootstrap - Shop Item (https://startbootstrap.com/template-overviews/shop-item)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-shop-item/blob/master/LICENSE)
+ */
+body {
+  padding-top: 56px;
+}
+
+.inactive{
+  color: black;
+}
+
+.inactive:hover{
+  color: black;
+}
+
+.pagination .estado_1{
+  z-index: 1;
+  color: #fff;
+  background-color: #f5a91bd3;
+  border-color: #f5a81b;
+}
+.pagination .estado_1:hover{
+  background-color: #e99700;
+  border-color: #e99700;
+}
+
+.pagination .estado_2{
+  z-index: 1;
+  color: #fff;
+  background-color: #099226;
+  border-color: #099226;
+}
+.pagination .estado_2:hover{
+  background-color: #057D1F;
+  border-color: #057D1F;
+}
+
+.pagination .estado_3{
+  z-index: 1;
+  color: #007bff;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+}
+.pagination .estado_3:hover{
+  color: #006ce0;
+  background-color: #dbdbdb;
+  border: 1px solid #dee2e6;
+}
+
+/*.AMID{
+  position: relative;
+  width: 100px;
+  height: 10%;
+}*/
+
+.logo1{
+  /* width: 8em; */
+  /* border: #adadad 1px solid; */
+  margin:0px 15px 10px 15px;
+  border-radius: 10px;
+  padding: 5px;
+  width:auto;
+  height: 100px;
+}
+
+.logoAMID{
+  
+  position: relative;
+  margin:0px 15px 10px 15px;
+  padding: 5px;
+  width:auto;
+  /* left: 38%; */
+  height: 150px;
+}
+
+.logos:hover{
+  /* opacity: 0.8; */
+  /* border: #adadad 0.5px solid; */
+  background-color: rgb(42, 42, 42);
+}
+
+.btn-self{
+  background-color: rgb(31, 78, 121);
+  color: white;
+}
+
+.btn-self:hover{
+  background-color: rgb(24, 60, 92);
+  color: white;
+
+}
+
+.clr-blue{
+  color: rgb(31, 78, 121);
+}
+
+.title-self{
+  margin: 10px 0px;
+}
+
+.content{
+  columns: 2;
+}
+
+/* ------------------------------------------ */
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalDialog_two {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:1;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: auto;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+.contentmodal {
+	width: 400px;
+	position: relative;
+	margin: 4% auto;
+	/* padding: 5px 20px 13px 20px; */
+	border-radius: 14px;
+  background: #fff;
+  /* border: solid; */
+}
+.close {
+	background: rgb(233, 65, 65);
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: 2px;
+	text-align: center;
+	top: 2px;
+	width: 25px;
+	text-decoration: none;
+  font-weight: bold;
+  font-size: .8em;
+  border-radius: 10px 10px 10px 10px;
+
+}
+.close:hover {
+  background: rgb(221, 55, 55);
+  color: white;
+}
+.modal-head{
+  background-color: rgb(31, 78, 121);
+  border-radius: 10px 10px 0px 0px;
+  padding: 10px;
+  font-weight: bold;
+  color: white;
+}
+.space{margin-right: 20px;}
+.mb-10{margin-bottom: 10px;}

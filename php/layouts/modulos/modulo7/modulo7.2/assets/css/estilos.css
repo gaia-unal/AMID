@@ -1,0 +1,40 @@
+.fondo{
+    width: 100%;
+    position: relative;
+}
+
+.respuesta{
+    position: relative;
+    width: 5%;
+}
+
+#resp1{
+    position: absolute;
+    top: 18%;
+    left: 44%;
+}
+#resp2{
+    position: absolute;
+    top: 29%;
+    left: 44%;
+}
+#resp3{
+    position: absolute;
+    top: 41%;
+    left: 44%;
+}
+#resp4{
+    position: absolute;
+    top: 54%;
+    left: 44%;
+}
+#resp5{
+    position: absolute;
+    top: 67%;
+    left: 44%;
+}
+#resp6{
+    position: absolute;
+    top: 78%;
+    left: 44%;
+}
