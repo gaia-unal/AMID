@@ -85,7 +85,7 @@
           include '../../../../functions/paginacion.php';
           pag(2);
           include '../../../../queries/estadoUnd.php';
-          estadoUnd('m1u1','Iniciado');
+          
         ?>
         <p>Obra publicada con <a href="https://creativecommons.org/licenses/by-sa/4.0/"> Licencia Creative Commons
             Reconocimiento Compartir igual 4.0</a></p>

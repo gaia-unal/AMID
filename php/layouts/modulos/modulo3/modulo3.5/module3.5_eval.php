@@ -16,11 +16,13 @@
 </head>
 
 <body>
-  <?php require "../../../../queries/connectionDB.php";
-$newConn= new Connection;
-$newConn->connectionDB(); ?>
-  <?php require '../../../../queries/activeSession.php'; ?>  
-  <?php $rutaSession="../../../../queries/"; include '../../../header.php'; ?>
+<?php
+    require "../../../../queries/connectionDB.php";
+    $newConn= new Connection;
+    $newConn->connectionDB();
+    require '../../../../queries/activeSession.php';
+    $rutaSession="../../../../queries/"; include '../../../header.php'; 
+?>
 
     <!-- Page Content -->
     <div class="container">
@@ -59,28 +61,25 @@ $newConn->connectionDB(); ?>
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 5: Edición digital y retoque en computadora</h1>
+                <form action="../../../../queries/evaluacion.php?id_und=m3u5" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Evaluación</h4>
                         <p class="card-text">
                             <ul>
-                                <li>¿Qué elementos comunes se pueden encontrar en las imágenes manipuladas en los medios
-                                    impresos y electrónicos?</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
-                                <li>¿Qué impacto tiene la manipulación de las imágenes en el reporte de noticias?</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
-                                <li>¿Qué es el fotoperiodismo?</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
-                                <li>¿Qué estrategia usaría en el aula de clase para enseñar a identificar las imágenes
-                                    manipuladas?</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
-                                <li>¿Qué aspectos éticos se ven afectados por la manipulación de imágenes?</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <li><strong> ¿Qué es el fotoperiodismo?</strong></li>
+
+                                    <label><input type="radio" name="pre1" class="space"  value="1" required>Tomar fotos y publicarlas en un periódico.</label> <br />
+                                    <label><input type="radio" name="pre1" class="space"  value="1" required>Es leer el periódico a través de fotografías</label><br />
+                                    <label><input type="radio" name="pre1" class="space"  value="5" required>Es un género del periodismo que tiene que ver directamente con la fotografía, el diseño gráfico y el vídeo.
+                                      </label><br />
+                                <br>
+                                <li><strong>¿Qué aspectos éticos se ven afectados por la manipulación de imágenes?</strong></li>
+
+                                    <label><input type="radio" name="pre2" class="space"  value="5" required>El honor, la intimidad, la propia imagen.</label><br />
+                                    <label><input type="radio" name="pre2" class="space"  value="1" required>El engaño, la calumnia, el respeto.</label><br />
+                                    <label><input type="radio" name="pre2" class="space"  value="1" required>La tolerancia, la buena imagen, la vanidad.</label><br />
+                                <br>
                             </ul>
                         </p>
                     </div>
@@ -89,8 +88,10 @@ $newConn->connectionDB(); ?>
                 <br>
                 <center>
                     <a href="module3.5.1_act2.php" class="btn btn-success">Anterior</a>
-                    <a href="../../modulo4/module4.php" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <!-- <a href="../../modulo4/module4.php" class="btn btn-success">Siguiente</a> -->
                 </center>
+                </form>
                 <?php
                     include '../../../../functions/paginacion.php';
                     pag(2);

@@ -14,7 +14,8 @@
     <link href="../../../../../assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="../../../../../assets/css/animated.css">
     <link rel="stylesheet" href="../../../../../assets/css/sweetalert/sweetalert2.css">
-	<link rel="stylesheet" href="assets/css/estilo.css">
+	<link rel="stylesheet" href="assets/estilo.css">
+	<link rel="stylesheet" href="../assets/css/estilo.css">
 </head>
 
 <body>
@@ -328,7 +329,7 @@
 				<br>
 				<center>
 					<a href="module11.1_act.php" class="btn btn-success">Anterior</a>
-					<a href="../../modulo12/module12.php" class="btn btn-success btnSig retraso3">Siguiente</a>
+					<a href="../modulo11.2/module11.2_inicio.php" class="btn btn-success btnSig retraso3">Siguiente</a>
 				</center>
                 <?php
                     include '../../../../functions/paginacion.php';
@@ -345,11 +346,12 @@
 	<?php $ruta="../../../../../assets"; include '../../../footer.php';?>
 
 	<!-- Bootstrap core JavaScript -->
-	<script src="assets/js/crucigrama.js"></script>
+	<script src="../assets/js/crucigrama.js"></script>
 	<script src="../../../../../vendor/jquery/jquery.min.js"></script>
 	<script src="../../../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<script src="../../../../../assets/js/script.js"></script>
+	<script src="../assets/js/script.js"></script>
 </body>
 
 </html>

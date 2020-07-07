@@ -151,15 +151,6 @@
 
   <?php $ruta="../../../../../assets"; include '../../../footer.php';?>
 
-  
-
-<!-- <script>
-  function algo(){
-    <?php 
-      // 
-      ?>
-  }
-</script>   -->
 
   <!-- Bootstrap core JavaScript -->
   <script src="../../../../../vendor/jquery/jquery.min.js"></script>

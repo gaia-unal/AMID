@@ -78,7 +78,7 @@
           pag(0);
         ?>
         <p>Obra publicada con <a href="https://creativecommons.org/licenses/by-sa/4.0/"> Licencia Creative Commons
-            Reconocimiento Compartir igual 4.0<a /></p>
+            Reconocimiento Compartir igual 4.0</a></p>
         <br>
         <center><a href="modulos/modulo1/module1.php" class="btn btn-success">Siguiente</a></center>
         <!-- /.card -->

@@ -7,13 +7,11 @@ $newConn->connectionDB();
 
 $email_user=$_POST['email'];
 $pass_user=$_POST['pass'];
-
 $_SESSION['email']=$email_user;
 
 $sql="SELECT id_profesor,correo, contraseña, nombre FROM profesor WHERE correo = '$email_user'";
 
 $ejecutar_sql= pg_query($sql);
-
 
 $extraer=pg_fetch_array($ejecutar_sql);
 

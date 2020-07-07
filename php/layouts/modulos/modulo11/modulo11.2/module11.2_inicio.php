@@ -17,12 +17,11 @@
 </head>
 
 <body>
-<link href="../../../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="../../../../../assets/css/shop-item.css" rel="stylesheet">
-    <link href="../../../../../assets/css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../../../../assets/css/animated.css">
-    <link rel="stylesheet" href="../../../../../assets/css/sweetalert/sweetalert2.css">
+<?php require "../../../../queries/connectionDB.php";
+    $newConn= new Connection;
+    $newConn->connectionDB(); ?>
+  <?php require '../../../../queries/activeSession.php'; ?>  
+  <?php $rutaSession="../../../../queries/"; include '../../../header.php'; ?>
 
 	<!-- Page Content -->
 	<div class="container">

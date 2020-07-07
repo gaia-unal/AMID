@@ -2,6 +2,7 @@
     function estadoUnd($idu, $est){
 
         $id_profe=$_SESSION['id'];
+        date_default_timezone_set('America/Bogota');
         $dateNow = date("d-m-Y",time());
 
         $sql_consult= "SELECT id_unidad,id_profesor,desempeñounidad FROM profesorunidad 

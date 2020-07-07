@@ -11,7 +11,6 @@ $pass=$_POST["pass1_r"];
 $qt=$_POST["question_r"];
 $ans=$_POST["answer_r"];
 
-
 $passHash = password_hash($pass,PASSWORD_DEFAULT);
 
 $sqlprev="SELECT correo FROM profesor WHERE nombre='".$name."' AND apellido='".$lastName."' AND correo='".$email."' AND question='".$qt."' AND answer='".$ans."'";
@@ -21,7 +20,6 @@ $executeprev = pg_query($sqlprev);
 if (pg_num_rows($executeprev) != 0) {
 
     $sql = "UPDATE profesor SET contraseña= '".$passHash."' WHERE correo = '".$email."'";
-    
     $execute = pg_query($sql);
 
     if(!$execute){
@@ -30,7 +28,6 @@ if (pg_num_rows($executeprev) != 0) {
         $mensaje='cambio';
     	header("Location: ../../index.php?mensaje=$mensaje");
     }
-    
 }else{
     $mensaje='noCreden';
     header("Location: ../../index.php?mensaje=$mensaje");

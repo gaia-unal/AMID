@@ -12,7 +12,7 @@ $pass=$_POST["pass1"];
 $inst=$_POST["institucion"];
 $qt=$_POST["question"];
 $ans=$_POST["answer"];
-$dateNow=(new DateTime("now", new DateTimeZone('America/Lima')))->format('d-m-y, H:i:s');
+$dateNow=(new DateTime("now", new DateTimeZone('America/Bogota')))->format('d-m-y, H:i:s');
 
 $passHash = password_hash($pass,PASSWORD_DEFAULT);
 

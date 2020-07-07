@@ -94,7 +94,7 @@
 				<br>
 				<center>
 					<a href="module11.3_act.php" class="btn btn-success">Anterior</a>
-					<a href="../modulo11.4/module11.3_inicio.php" class="btn btn-success btnSig retraso3">Siguiente</a>
+					<a href="../modulo11.4/module11.4_inicio.php" class="btn btn-success btnSig retraso3">Siguiente</a>
 				</center>
                 <?php
                     include '../../../../functions/paginacion.php';

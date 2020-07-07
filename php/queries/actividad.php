@@ -6,6 +6,8 @@
     $newConn= new Connection;
     $newConn->connectionDB();
     require_once 'activeSession.php';
+
+    date_default_timezone_set('America/Bogota');
     
     if($_GET["id_act"]=='m1u1a1'){
         $id_act=$_GET["id_act"];

@@ -9,6 +9,8 @@
     require_once 'activeSession.php';
     include_once 'estadoMod.php'; 
 
+    date_default_timezone_set('America/Bogota');
+
     switch($_GET["id_und"]){
         case "m1u1":
             $id_und=$_GET["id_und"];
@@ -96,20 +98,27 @@
             nota($id_und,$nota,$des);
             header ("Location: $ruta/modulo3/modulo3.3/module3.3_inicio.php");
             break;
-        case "m3u3":
+        // case "m3u3":
+        //     $id_und=$_GET["id_und"];
+        //     // $nota= (double)$_POST['pregunta_1'];
+        //     $des=asigDes($nota);
+        //     nota($id_und,$nota,$des);
+        //     // header ("Location: $ruta/modulo2/module2.php");
+        //     break;
+        // case "m3u4":
+        //     $id_und=$_GET["id_und"];
+        //     // $nota= (double)$_POST['pregunta_1'];
+        //     $des=asigDes($nota);
+        //     nota($id_und,$nota,$des);
+        //     // header ("Location: $ruta/modulo2/module2.php");
+        //     break;
+        case "m3u5":
             $id_und=$_GET["id_und"];
-            // $nota= (double)$_POST['pregunta_1'];
-            $des=asigDes($nota);
-            nota($id_und,$nota,$des);
-            // header ("Location: $ruta/modulo2/module2.php");
-            break;
-        case "m3u4":
-            $id_und=$_GET["id_und"];
-            // $nota= (double)$_POST['pregunta_1'];
+            $nota= round(((double)$_POST['pre1']+(double)$_POST['pre2'])/2.0,2);
             $des=asigDes($nota);
             nota($id_und,$nota,$des);
             estadoMod(3,2);
-            // header ("Location: $ruta/modulo2/module2.php");
+            header ("Location: $ruta/modulo4/module4.php");
             break;
         case "m4u1":
             $id_und=$_GET["id_und"];
@@ -199,7 +208,7 @@
             }
             $rt = '/modulo7/modulo7.1/mod7.1_eval2.php';
             $des = asigDes($nota);
-            if($nota <= 0){
+            if($nota < 1){
                 $nota = 1;
             }
             nota($id_und,$nota,$des);
@@ -211,7 +220,7 @@
             $nota = round(($nota + prom($id_und))/2,2);
             $rt = '/modulo7/modulo7.2/mod7.2_inicio.php';
             $des = asigDes($nota);
-            if($nota <= 0){
+            if($nota < 1){
                 $nota = 1;
             }
             nota($id_und,$nota,$des);
@@ -225,7 +234,7 @@
             }
             $rt = '/modulo7/modulo7.2/mod7.2_eval2.php';
             $des = asigDes($nota);
-            if($nota <= 0){
+            if($nota < 1){
                 $nota = 1;
             }
             nota($id_und,$nota,$des);
@@ -237,7 +246,7 @@
             $nota = ($nota + prom($id_und))/2;
             $rt = '/modulo8/module8.php';
             $des = asigDes($nota);
-            if($nota <= 0){
+            if($nota < 1){
                 $nota = 1;
             }
             nota($id_und,$nota,$des);
@@ -248,7 +257,7 @@
             $id_und = $_GET["id_und"];
             $nota = (double)$_POST['preg'];
             $des = asigDes($nota);
-            if($nota <= 0){
+            if($nota < 1){
                 $nota = 1;
             }
             nota ($id_und,$nota,$des);
@@ -258,7 +267,7 @@
             $id_und = $_GET["id_und"];
             $nota = (double)($_POST['preg1'] + $_POST['preg2'] + $_POST['preg3']);
             $des = asigDes($nota);
-            if($nota <= 0)
+            if($nota < 1)
                 $nota = 1;
             nota ($id_und, $nota, $des);
             header ("Location: $ruta/modulo8/modulo8.3/module8.3_inicio.php");
@@ -267,7 +276,7 @@
             $id_und = $_GET["id_und"];
             $nota = (double)$_POST['preg'];
             $des = asigDes($nota);
-            if($nota <= 0)
+            if($nota < 1)
                 $nota = 1;
             nota ($id_und, $nota, $des);
             estadoMod(8,2);
@@ -277,7 +286,7 @@
             $id_und = $_GET["id_und"];
             $nota = (double)$_POST['preg'];
             $des = asigDes($nota);
-            if($nota <= 0)
+            if($nota < 1)
                 $nota = 1;
             nota ($id_und, $nota, $des);
             header ("Location: $ruta/modulo9/modulo9.2/module9.2_inicio.php");
@@ -286,7 +295,7 @@
             $id_und = $_GET["id_und"];
             $nota = (double)$_POST['preg'];
             $des = asigDes($nota);
-            if($nota <= 0)
+            if($nota < 1)
                 $nota = 1;
             nota ($id_und, $nota, $des);
             header ("Location: $ruta/modulo9/modulo9.3/module9.3_inicio.php");
@@ -295,7 +304,7 @@
             $id_und = $_GET["id_und"];
             $nota = (double)$_POST['preg'];
             $des = asigDes($nota);
-            if($nota <= 0)
+            if($nota < 1)
                 $nota = 1;
             nota ($id_und, $nota, $des);
             estadoMod(9,2);
@@ -326,7 +335,6 @@
             return $estado[0];
         } else 
             return -1; //No ha realizado la primera evaluación
-            
     }
 
     function asigDes($nota){
@@ -341,6 +349,7 @@
     function nota($id, $nota,$des){
 
         $id_profe=$_SESSION['id'];
+        date_default_timezone_set('America/Bogota');
         $time = date("d-m-Y",time());
 
         $sql_consult= "SELECT id_unidad,id_profesor,desempeñounidad,notaevaluacion FROM profesorunidad 

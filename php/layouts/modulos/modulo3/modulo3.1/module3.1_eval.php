@@ -17,11 +17,13 @@
 </head>
 
 <body>
-  <?php require "../../../../queries/connectionDB.php";
-$newConn= new Connection;
-$newConn->connectionDB(); ?>
-  <?php require '../../../../queries/activeSession.php'; ?>
-  <?php $rutaSession="../../../../queries/"; include '../../../header.php'; ?>
+<?php 
+    require "../../../../queries/connectionDB.php";
+    $newConn= new Connection;
+    $newConn->connectionDB();
+    require '../../../../queries/activeSession.php';
+    $rutaSession="../../../../queries/"; include '../../../header.php'; 
+?>
 
 
     <!-- Page Content -->
