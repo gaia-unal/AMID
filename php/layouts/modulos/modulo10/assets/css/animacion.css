@@ -1,0 +1,15 @@
+.flip3D {
+    display: relative;
+    align-items: flex-end;
+    transform: perspective(1000px) rotateY(180deg);
+    backface-visibility: hidden;
+    transition: transform 0.5s linear 0s;
+    background-image: url(assets/img/imagen.png);
+}
+.flip3D2 {
+    display: relative;
+    align-items: flex-end;
+    transform: perspective(1000px) rotateY(0deg);
+    backface-visibility: hidden;
+    transition: transform 0.5s linear 0s;
+}

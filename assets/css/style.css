@@ -1,0 +1,30 @@
+.center{
+    align-items: center;    
+}
+.cl-label{
+    color: #666565;
+}
+
+.navbar-brand-p{
+    margin: 0;
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    color: white;
+}
+
+.space_between{
+    margin-right: 5px;
+}
+.min_ad{
+    font-size: small;
+    color: blue;
+}
+.passBad{
+    font-size: small;
+    color: red;
+}
