@@ -58,13 +58,17 @@ $newConn->connectionDB(); ?>
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 2: El medio y el mensaje: noticias impresas y difundidas</h1>
+                <form action="../../../../queries/evaluacion.php?id_und=m4u2" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Evaluación</h4>
                         <p class="card-text">
-                            ¿Cuáles son los tipos de cobertura de noticias?
-                            <textarea name="" id="" cols="80" rows="5"
-                                placeholder="Escriba aquí su respuesta"></textarea>
+                        <br />
+                        <strong> ¿Cuáles son los tipos de cobertura adquirida?</strong></li>
+                        <br /><br />
+                        <label><input type="radio" name="pre1" class="space"  value="1" required>Cobertura básica y cobertura compleja.</label> <br />
+                        <label><input type="radio" name="pre1" class="space"  value="5" required>Cobertura adquirida y cobertura ganada.</label><br />
+                        <label><input type="radio" name="pre1" class="space"  value="1" required>Cobertura parcial y cobertura imparcial.</label><br />
                         </p>
                     </div>
                 </div>
@@ -72,8 +76,10 @@ $newConn->connectionDB(); ?>
                 <br>
                 <center>
                     <a href="recurso/module4.2.3.php" class="btn btn-success">Anterior</a>
-                    <a href="../modulo4.3/module4.3_inicio.php" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <!-- <a href="../modulo4.3/module4.3_inicio.php" class="btn btn-success">Siguiente</a> -->
                 </center>
+                </form>
                 <?php
                     include '../../../../functions/paginacion.php';
                     pag(2);

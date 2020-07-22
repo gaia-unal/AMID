@@ -1,6 +1,9 @@
 .center{
     align-items: center;    
 }
+.center-2{
+    text-align: center;
+}
 .cl-label{
     color: #666565;
 }

@@ -276,12 +276,20 @@ function iniciarCanvas() {
             ) {
                 if (objeto.tipo == contenedores[i].tipo) {
                     objeto.valor = 1;
+                    alert(" 1 perro");
                     break;
                 } else {
                     objeto.valor = 0;
+                    // alert(" 0 perro");
                     break;
                 }
             }
+        }
+    }
+
+    function restablecer(){
+        for (var i = 0; i < objetos.length; i++) {
+            objetos[i].valor = null;
         }
     }
 
@@ -304,12 +312,14 @@ function iniciarCanvas() {
                     icon: "success",
                     button: "Continuar",
                 });
+                restablecer();
             } else {
                 swal({
                     icon: 'error',
                     title: 'Oops...',
                     text: 'Te equivocaste pero puedes volver a intentarlo'
                 });
+                restablecer();
                 iniciarCanvas();
             }
         }

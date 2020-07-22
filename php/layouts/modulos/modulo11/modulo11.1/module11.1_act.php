@@ -14,7 +14,7 @@
     <link href="../../../../../assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="../../../../../assets/css/animated.css">
     <link rel="stylesheet" href="../../../../../assets/css/sweetalert/sweetalert2.css">
-	<link rel="stylesheet" href="assets/css/estilo.css">
+	<link rel="stylesheet" href="../assets/css/estilo.css">
 </head>
 
 <body>
@@ -119,11 +119,11 @@
 								<h4>Cómo las convenciones internacionales existentes y las leyes/políticas nacionales
 									dan forma o regulan la estructura de la propiedad de medios </h4>
 								Da clic en las imagenes para verla más grande.
-								<div><a href="assets/img/2-img1.png" target="_blank" rel="noopener noreferrer"><img
-											src="assets/img/2-img1.png" alt="" class="noti"></a></div>
+								<div><a href="../assets/img/2-img1.png" target="_blank" rel="noopener noreferrer"><img
+											src="../assets/img/2-img1.png" alt="" class="noti"></a></div>
 								<br>
-								<div><a href="assets/img/2-img2.png" target="_blank" rel="noopener noreferrer"><img
-											src="assets/img/2-img2.png" alt="" class="noti"></a></div>
+								<div><a href="../assets/img/2-img2.png" target="_blank" rel="noopener noreferrer"><img
+											src="../assets/img/2-img2.png" alt="" class="noti"></a></div>
 							</p>
 						</div>
 						<div id="parte4">
@@ -197,7 +197,7 @@
 	<script src="../../../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<script src="../../../../../assets/js/script.js"></script>	
-	<script src="assets/js/script.js"></script>
+	<script src="../assets/js/script.js"></script>
 
 </body>
 

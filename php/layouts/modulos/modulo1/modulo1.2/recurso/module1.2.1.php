@@ -108,14 +108,14 @@
                   <br>
                   <table width="80%" border="1" bordercolor="#0000FF" cellspacing="10" cellpadding="10">
                     <tr>
-                      <img class=mySlides src="assets/img/accesoInformacion.png">
-                      <img class=mySlides src="assets/img/foroCritica.png">
-                      <img class=mySlides src="assets/img/independencia.png">
-                      <img class=mySlides src="assets/img/interesPublico.png">
-                      <img class=mySlides src="assets/img/noticias.png">
-                      <img class=mySlides src="assets/img/organizarConocimiento.png">
-                      <img class=mySlides src="assets/img/rendicionCuentas.png">
-                      <img class=mySlides src="assets/img/verdad.png">
+                      <img class="mySlides" src="assets/img/accesoInformacion.png">
+                      <img class="mySlides" src="assets/img/foroCritica.png">
+                      <img class="mySlides" src="assets/img/independencia.png">
+                      <img class="mySlides" src="assets/img/interesPublico.png">
+                      <img class="mySlides" src="assets/img/noticias.png">
+                      <img class="mySlides" src="assets/img/organizarConocimiento.png">
+                      <img class="mySlides" src="assets/img/rendicionCuentas.png">
+                      <img class="mySlides" src="assets/img/verdad.png">
                     </tr>
                   </table>
                 </center>

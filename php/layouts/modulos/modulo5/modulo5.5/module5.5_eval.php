@@ -60,6 +60,7 @@ $newConn->connectionDB(); ?>
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 5: Publicidad transnacional y "marcas super"</h1>
+                <form action="../../../../queries/evaluacion.php?id_und=m5u5" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Evaluación</h4>
@@ -97,8 +98,10 @@ $newConn->connectionDB(); ?>
                 <br>
                 <center>
                     <a href="module5.5_act.php" class="btn btn-success">Anterior</a>
-                    <a href="../../modulo6/module6.php" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <!-- <a href="../../modulo6/module6.php" class="btn btn-success">Siguiente</a> -->
                 </center>
+                </form>
                 <?php
                     include '../../../../functions/paginacion.php';
                     pag(2);

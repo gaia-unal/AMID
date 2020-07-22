@@ -59,35 +59,17 @@ $newConn->connectionDB(); ?>
             <div class="col-lg-9">
                 <h1><br>Unidad 3: Usos de las Herramientas Interactivas de Multimedia, incluyendo los Juegos Digitales
                     en las Aulas</h1>
+                <form action="../../../../queries/evaluacion.php?id_und=m6u3" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Evaluación</h4>
                         <p class="card-text">
-                            <ol>
-                                <li>Haga un estudio de caso de juegos electrónicos en materias específicas (por Ej.
-                                    lenguaje, matemáticas, geografía, etc.) y haga un piloto sobre el uso de uno o dos
-                                    juegos de contenido de aprendizaje específico. Escriba cómo se utilizó el juego y
-                                    cómo ayudó a alcanzar los objetivos de la lección </li>
-                                <textarea name="preg1" id="p1-r" cols="80" rows="5"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
-                                <li>Planifique una lección utilizando un juego electrónico como parte de la enseñanza
-                                    y el aprendizaje, para crear conciencia sobre temas globales, tales como el hambre,
-                                    el conflicto y la paz. Dicte esta lección y escriba un pequeño informe anotando las
-                                    preguntas que se hicieron y cómo los juegos ayudaron a abordar los temas Recursos
-                                    educativos abiertos (REAs) </li>
-                                <textarea name="preg2" id="p2-r" cols="80" rows="5"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
-                                <li>Analice cómo se crean los REAs, se utilizan, se distribuyen y se adaptan a los
-                                    distintos tipos de enseñanza, a los ambientes de aprendizaje y a las necesidades
-                                </li>
-                                <textarea name="preg3" id="p3-r" cols="80" rows="5"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
-                                <li>Analizar cómo, por ejemplo, se puede transformar los juegos digitales en REA, y
-                                    entender lo que se debe hacer para cumplir con los requisitos REA, incluyendo leyes
-                                    de propiedad intelectual, Investigación bibliotecaria y discusión de clase</li>
-                                <textarea name="preg4" id="p4-r" cols="80" rows="5"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
-                            </ol>
+                        <br />
+                        <strong> ¿Cuáles son los principios básicos en la publicación abierta?</strong></li>
+                        <br /><br />
+                        <label><input type="radio" name="pre1" class="space"  value="5" required>Reutilizable, redistribuible, revisable, remixable, retenible.</label> <br/>
+                        <label><input type="radio" name="pre1" class="space"  value="1" required>Repetible, universalidad, reversible.</label><br/>
+                        <label><input type="radio" name="pre1" class="space"  value="1" required>Irrepetible, sostenible, responsable.</label><br/>
                         </p>
                     </div>
                 </div>
@@ -95,8 +77,10 @@ $newConn->connectionDB(); ?>
                 <br>
                 <center>
                     <a href="module6.3.1_act.php" class="btn btn-success">Anterior</a>
-                    <a href="../../modulo7/module7.php" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <!-- <a href="../../modulo7/module7.php" class="btn btn-success">Siguiente</a> -->
                 </center>
+                </form>
                 <?php
                     include '../../../../functions/paginacion.php';
                     pag(2);

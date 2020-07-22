@@ -64,25 +64,25 @@ $newConn->connectionDB(); ?>
                       <form action="../../../../queries/evaluacion.php?id_und=m2u4" method="post">
                           <div class="card-body">
                             <p class="card-text">
-                              <strong>1. ¿Qué es el registro de medios?  </strong><br> <br>
+                              <strong>¿Qué es el registro de medios?  </strong><br> <br>
                               <input class="space" type="radio" name="pre1" id="resp1" value="5" required>
                               <label for="resp1">Es registrar los medios de comunicación para su correcto funcionamiento </label> <br>
 
-                              <input class="space" type="radio" name="pre1" id="resp2" value="1" required>
-                              <label for="resp2">Son los medios que cuentan con instalaciones, equipo, estructura organizacional y una variedad de medios de comunicación.  </label> <br>
+                              <label for="resp2"><input class="space" type="radio" name="pre1" id="resp2" value="1" required>
+                              Son los medios que cuentan con instalaciones, equipo, estructura organizacional y una variedad de medios de comunicación.  </label> <br>
 
                               <input class="space" type="radio" name="pre1" id="resp3" value="1" required>
                               <label for="resp3">Es registrar el nombre de los medios de comunicación ante una entidad superior.</label> <br>
 
-                              <strong>2. ¿A qué se refiere la producción?</strong><br> <br>
+                              <strong>¿A qué se refiere la producción?</strong><br> <br>
                               <label for="resp4">
                               <input class="space" type="radio" name="pre2" id="resp4" value="1" required>La cantidad de dinero que produce el medio de comunicación en un tiempo determinado.</label> <br>
 
                               <input class="space" type="radio" name="pre2" id="resp5" value="1" required>
                               <label for="resp5">Son las instalaciones propias del medio de comunicación para realizar producciones.</label> <br>
 
-                              <input class="space" type="radio" name="pre2" id="resp6" value="5" required>
-                              <label for="resp6">La producción es a lo que se dedica el medio de comunicación, por ejemplo, radio, televisión, periódico, revista, producción de documental, etc.</label> <br>
+                              <label for="resp6"><input class="space" type="radio" name="pre2" id="resp6" value="5" required>
+                              La producción es a lo que se dedica el medio de comunicación, por ejemplo, radio, televisión, periódico, revista, producción de documental, etc.</label> <br>
                             </p>
                         </div>
                     </div>

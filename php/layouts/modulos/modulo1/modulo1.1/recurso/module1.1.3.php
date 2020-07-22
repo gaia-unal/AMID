@@ -89,148 +89,100 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
+                                <tr >
                                     <td>Canal de información</td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="" id="">
                                     </td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="" id="">
                                     </td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="" id="">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Facilitador debates informados</td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="" id="">
                                     </td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="" id="">
                                     </td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="" id="">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Canal de conocimiento</td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="" id="">
                                     </td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="" id="">
                                     </td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="" id="">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Autoconocimiento y construcción de sentido de comunidad</td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="" id="">
                                     </td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="" id="">
                                     </td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="" id="">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Fiscalización del gobierno</td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="" id="">
                                     </td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="" id="">
                                     </td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="" id="">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Facilitador de los procesos democráticos</td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="" id="">
                                     </td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="" id="">
                                     </td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="" id="">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Vehículos para la expresión y la cohesión cultural</td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="" id="">
                                     </td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="" id="">
                                     </td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="" id="">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Defensor o actor social de su propio derecho</td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="" id="">
                                     </td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="" id="">
                                     </td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="" id="">
                                     </td>
                                 </tr>
                             </tbody>

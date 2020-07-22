@@ -89,7 +89,8 @@ $newConn->connectionDB(); ?>
                 <center>
                     <a href="mod7.1_eval.php" class="btn btn-success">Anterior</a>
                     <!--<a href="../modulo7.2/mod7.2_inicio.php" class="btn btn-success btnSig retraso3">Siguiente</a>-->
-                    <button id="btn-siguiente"  class="btn btn-success" type="submit" onclick="evaluacion()">Siguiente</button>                    
+                    <button id="btn-siguiente"  class="btn btn-success" type="submit">Siguiente</button>                    
+                    <!-- onclick="evaluacion()" -->
                 </center>
                 </form>
                 <?php
@@ -114,7 +115,7 @@ $newConn->connectionDB(); ?>
   <script src="../../../../../assets/js/script.js"></script>
   <!-- <script src="assets/js/preguntas.js"></script> -->
   <script src="assets/js/actividad.js"></script>
-
+  
 </body>
 
 </html>

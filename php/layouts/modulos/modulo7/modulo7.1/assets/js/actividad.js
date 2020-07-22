@@ -8,7 +8,7 @@ function termino() {
     r2 = document.getElementById('resp2').value;
     r3 = document.getElementById('resp3').value;
     r4 = document.getElementById('resp4').value;
-    r5 = document.getElementById('resp5').value;
+    r5 = document.getElementById('resp5').value;    
     r6 = document.getElementById('resp6').value;
 
     validar();

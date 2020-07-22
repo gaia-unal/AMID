@@ -74,7 +74,7 @@
 				<!-- /.card -->
 				<br>
 				<center>
-					<a href="../modulo9.2/Recurso/actividad2.php" class="btn btn-success">Anterior</a>
+					<a href="../modulo9.2/Recurso/actividad.php" class="btn btn-success">Anterior</a>
 					<a href="module9.3_temas.php" class="btn btn-success btnSig retraso3">Siguiente</a>
 				</center>
                 <?php

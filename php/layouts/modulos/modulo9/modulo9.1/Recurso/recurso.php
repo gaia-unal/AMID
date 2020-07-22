@@ -96,7 +96,7 @@
 				</center>
                 <?php
                     include '../../../../../functions/paginacion.php';
-                    pag(2);
+                    pag(3);
                 ?>
 				<p>Obra publicada con <a href="https://creativecommons.org/licenses/by-sa/4.0/"> Licencia Creative
 						Commons Reconocimiento Compartir igual 4.0</a></p>
