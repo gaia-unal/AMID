@@ -98,23 +98,6 @@
             nota($id_und,$nota,$des);
             header ("Location: $ruta/modulo3/modulo3.3/module3.3_inicio.php");
             break;
-<<<<<<< HEAD
-=======
-        // case "m3u3":
-        //     $id_und=$_GET["id_und"];
-        //     // $nota= (double)$_POST['pregunta_1'];
-        //     $des=asigDes($nota);
-        //     nota($id_und,$nota,$des);
-        //     // header ("Location: $ruta/modulo2/module2.php");
-        //     break;
-        // case "m3u4":
-        //     $id_und=$_GET["id_und"];
-        //     // $nota= (double)$_POST['pregunta_1'];
-        //     $des=asigDes($nota);
-        //     nota($id_und,$nota,$des);
-        //     // header ("Location: $ruta/modulo2/module2.php");
-        //     break;
->>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
         case "m3u5":
             $id_und=$_GET["id_und"];
             $nota= round(((double)$_POST['pre1']+(double)$_POST['pre2'])/2.0,2);
@@ -123,7 +106,6 @@
             estadoMod(3,2);
             header ("Location: $ruta/modulo4/module4.php");
             break;
-<<<<<<< HEAD
         case "m4u2":
             $id_und=$_GET["id_und"];
             $nota= (double)$_POST['pre1'];
@@ -146,87 +128,6 @@
             nota($id_und,$nota,$des);
             estadoMod(6,2);
             header ("Location: $ruta/modulo7/module7.php");
-=======
-        case "m4u1":
-            $id_und=$_GET["id_und"];
-            // $nota= (double)$_POST['pregunta_1'];
-            $des=asigDes($nota);
-            nota($id_und,$nota,$des);
-            // header ("Location: $ruta/modulo2/module2.php");
-            break;
-        case "m4u2":
-            $id_und=$_GET["id_und"];
-            // $nota= (double)$_POST['pregunta_1'];
-            $des=asigDes($nota);
-            nota($id_und,$nota,$des);
-            // header ("Location: $ruta/modulo2/module2.php");
-            break;
-        case "m4u3":
-            $id_und=$_GET["id_und"];
-            // $nota= (double)$_POST['pregunta_1'];
-            $des=asigDes($nota);
-            nota($id_und,$nota,$des);
-            // header ("Location: $ruta/modulo2/module2.php");
-            break;
-        case "m4u4":
-            $id_und=$_GET["id_und"];
-            // $nota= (double)$_POST['pregunta_1'];
-            $des=asigDes($nota);
-            nota($id_und,$nota,$des);
-            estadoMod(4,2);
-            // header ("Location: $ruta/modulo2/module2.php");
-            break;
-        case "m5u1":
-            $id_und=$_GET["id_und"];
-            // $nota= (double)$_POST['pregunta_1'];
-            $des=asigDes($nota);
-            nota($id_und,$nota,$des);
-            // header ("Location: $ruta/modulo2/module2.php");
-            break;
-        case "m5u2":
-            $id_und=$_GET["id_und"];
-            // $nota= (double)$_POST['pregunta_1'];
-            $des=asigDes($nota);
-            nota($id_und,$nota,$des);
-            // header ("Location: $ruta/modulo2/module2.php");
-            break;
-        case "m5u3":
-            $id_und=$_GET["id_und"];
-            // $nota= (double)$_POST['pregunta_1'];
-            $des=asigDes($nota);
-            nota($id_und,$nota,$des);
-            // header ("Location: $ruta/modulo2/module2.php");
-            break;
-        case "m5u4":
-            $id_und=$_GET["id_und"];
-            // $nota= (double)$_POST['pregunta_1'];
-            $des=asigDes($nota);
-            nota($id_und,$nota,$des);
-            estadoMod(5,2);
-            // header ("Location: $ruta/modulo2/module2.php");
-            break;
-        case "m6u1":
-            $id_und=$_GET["id_und"];
-            // $nota= (double)$_POST['pregunta_1'];
-            $des=asigDes($nota);
-            nota($id_und,$nota,$des);
-            // header ("Location: $ruta/modulo2/module2.php");
-            break;
-        case "m6u2":
-            $id_und=$_GET["id_und"];
-            // $nota= (double)$_POST['pregunta_1'];
-            $des=asigDes($nota);
-            nota($id_und,$nota,$des);
-            // header ("Location: $ruta/modulo2/module2.php");
-            break;
-        case "m6u3":
-            $id_und=$_GET["id_und"];
-            // $nota= (double)$_POST['pregunta_1'];
-            $des=asigDes($nota);
-            nota($id_und,$nota,$des);
-            estadoMod(6,2);
-            // header ("Location: $ruta/modulo2/module2.php");
->>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
             break;
         case "m7u11":
             $id_und = 'm7u1';
@@ -234,42 +135,26 @@
             for($i = 1; $i <= 6; $i++){
                 $nota = $nota + (double)$_POST['preg'. $i];
             }
-<<<<<<< HEAD
             $rt = 'modulo7/modulo7.1/mod7.1_eval2.php';
 
-=======
-            $rt = '/modulo7/modulo7.1/mod7.1_eval2.php';
->>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
             $des = asigDes($nota);
             if($nota < 1){
                 $nota = 1;
             }
             nota($id_und,$nota,$des);
-<<<<<<< HEAD
             header ("Location: $ruta/$rt");
-=======
-            header ("Location: $ruta.$rt");
->>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
             break;
         case "m7u12":
             $id_und = 'm7u1';
             $nota = $_POST['preg'];
             $nota = round(($nota + prom($id_und))/2,2);
-<<<<<<< HEAD
             $rt = 'modulo7/modulo7.2/mod7.2_inicio.php';
-=======
-            $rt = '/modulo7/modulo7.2/mod7.2_inicio.php';
->>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
             $des = asigDes($nota);
             if($nota < 1){
                 $nota = 1;
             }
             nota($id_und,$nota,$des);
-<<<<<<< HEAD
             header ("Location: $ruta/$rt");
-=======
-            header ("Location: $ruta.$rt");
->>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
             break;
         case "m7u21":
             $id_und = 'm7u2';
@@ -277,42 +162,26 @@
             for($i = 1; $i <= 6; $i++){
                 $nota = $nota + (double)$_POST['preg'. $i];
             }
-<<<<<<< HEAD
             $rt = 'modulo7/modulo7.2/mod7.2_eval2.php';
-=======
-            $rt = '/modulo7/modulo7.2/mod7.2_eval2.php';
->>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
             $des = asigDes($nota);
             if($nota < 1){
                 $nota = 1;
             }
             nota($id_und,$nota,$des);
-<<<<<<< HEAD
             header ("Location: $ruta/$rt");
-=======
-            header ("Location: $ruta.$rt");
->>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
             break;
         case "m7u22":
             $id_und = 'm7u2';
             $nota = $_POST['preg'];
             $nota = ($nota + prom($id_und))/2;
-<<<<<<< HEAD
             $rt = 'modulo8/module8.php';
-=======
-            $rt = '/modulo8/module8.php';
->>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
             $des = asigDes($nota);
             if($nota < 1){
                 $nota = 1;
             }
             nota($id_und,$nota,$des);
             estadoMod(7,2);
-<<<<<<< HEAD
             header ("Location: $ruta/$rt");
-=======
-            header ("Location: $ruta.$rt");
->>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
             break;
         case "m8u1":
             $id_und = $_GET["id_und"];
