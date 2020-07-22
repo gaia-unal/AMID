@@ -73,7 +73,11 @@
                                     <label><input type="radio" name="pre1" class="space"  value="1" required>Es leer el periódico a través de fotografías</label><br />
                                     <label><input type="radio" name="pre1" class="space"  value="5" required>Es un género del periodismo que tiene que ver directamente con la fotografía, el diseño gráfico y el vídeo.
                                       </label><br />
+<<<<<<< HEAD
                                 <br />
+=======
+                                <br>
+>>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
                                 <li><strong>¿Qué aspectos éticos se ven afectados por la manipulación de imágenes?</strong></li>
 
                                     <label><input type="radio" name="pre2" class="space"  value="5" required>El honor, la intimidad, la propia imagen.</label><br />

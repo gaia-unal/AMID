@@ -77,7 +77,11 @@ $newConn->connectionDB(); ?>
         <!-- /.card -->
         <br>
         <center>
+<<<<<<< HEAD
           <a href="../modulo7.1/mod7.1_eval2.php" class="btn btn-success">Anterior</a>
+=======
+          <a href="../modulo7.1/4Conducta/actividades.php" class="btn btn-success">Anterior</a>
+>>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
           <a href="mod7.2_temas.php" class="btn btn-success btnSig retraso3">Siguiente</a>
          
         </center>

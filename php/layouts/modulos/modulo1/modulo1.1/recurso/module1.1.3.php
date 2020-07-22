@@ -89,6 +89,7 @@
                                 </tr>
                             </thead>
                             <tbody>
+<<<<<<< HEAD
                                 <tr >
                                     <td>Canal de información</td>
                                     <td class="center-2">
@@ -99,10 +100,29 @@
                                     </td>
                                     <td class="center-2">
                                         <input type="checkbox"  name="" id="">
+=======
+                                <tr>
+                                    <td>Canal de información</td>
+                                    <td>
+                                        <center>
+                                            <input type="radio" class="form-check-input" name="" id="">
+                                        </center>
+                                    </td>
+                                    <td>
+                                        <center>
+                                            <input type="radio" class="form-check-input" name="" id="">
+                                        </center>
+                                    </td>
+                                    <td>
+                                        <center>
+                                            <input type="radio" class="form-check-input" name="" id="">
+                                        </center>
+>>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Facilitador debates informados</td>
+<<<<<<< HEAD
                                     <td class="center-2">
                                         <input type="checkbox"  name="" id="">
                                     </td>
@@ -111,10 +131,27 @@
                                     </td>
                                     <td class="center-2">
                                         <input type="checkbox"  name="" id="">
+=======
+                                    <td>
+                                        <center>
+                                            <input type="radio" class="form-check-input" name="" id="">
+                                        </center>
+                                    </td>
+                                    <td>
+                                        <center>
+                                            <input type="radio" class="form-check-input" name="" id="">
+                                        </center>
+                                    </td>
+                                    <td>
+                                        <center>
+                                            <input type="radio" class="form-check-input" name="" id="">
+                                        </center>
+>>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Canal de conocimiento</td>
+<<<<<<< HEAD
                                     <td class="center-2">
                                         <input type="checkbox"  name="" id="">
                                     </td>
@@ -123,10 +160,27 @@
                                     </td>
                                     <td class="center-2">
                                         <input type="checkbox"  name="" id="">
+=======
+                                    <td>
+                                        <center>
+                                            <input type="radio" class="form-check-input" name="" id="">
+                                        </center>
+                                    </td>
+                                    <td>
+                                        <center>
+                                            <input type="radio" class="form-check-input" name="" id="">
+                                        </center>
+                                    </td>
+                                    <td>
+                                        <center>
+                                            <input type="radio" class="form-check-input" name="" id="">
+                                        </center>
+>>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Autoconocimiento y construcción de sentido de comunidad</td>
+<<<<<<< HEAD
                                     <td class="center-2">
                                         <input type="checkbox"  name="" id="">
                                     </td>
@@ -135,10 +189,27 @@
                                     </td>
                                     <td class="center-2">
                                         <input type="checkbox"  name="" id="">
+=======
+                                    <td>
+                                        <center>
+                                            <input type="radio" class="form-check-input" name="" id="">
+                                        </center>
+                                    </td>
+                                    <td>
+                                        <center>
+                                            <input type="radio" class="form-check-input" name="" id="">
+                                        </center>
+                                    </td>
+                                    <td>
+                                        <center>
+                                            <input type="radio" class="form-check-input" name="" id="">
+                                        </center>
+>>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Fiscalización del gobierno</td>
+<<<<<<< HEAD
                                     <td class="center-2">
                                         <input type="checkbox"  name="" id="">
                                     </td>
@@ -147,10 +218,27 @@
                                     </td>
                                     <td class="center-2">
                                         <input type="checkbox"  name="" id="">
+=======
+                                    <td>
+                                        <center>
+                                            <input type="radio" class="form-check-input" name="" id="">
+                                        </center>
+                                    </td>
+                                    <td>
+                                        <center>
+                                            <input type="radio" class="form-check-input" name="" id="">
+                                        </center>
+                                    </td>
+                                    <td>
+                                        <center>
+                                            <input type="radio" class="form-check-input" name="" id="">
+                                        </center>
+>>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Facilitador de los procesos democráticos</td>
+<<<<<<< HEAD
                                     <td class="center-2">
                                         <input type="checkbox"  name="" id="">
                                     </td>
@@ -159,10 +247,27 @@
                                     </td>
                                     <td class="center-2">
                                         <input type="checkbox"  name="" id="">
+=======
+                                    <td>
+                                        <center>
+                                            <input type="radio" class="form-check-input" name="" id="">
+                                        </center>
+                                    </td>
+                                    <td>
+                                        <center>
+                                            <input type="radio" class="form-check-input" name="" id="">
+                                        </center>
+                                    </td>
+                                    <td>
+                                        <center>
+                                            <input type="radio" class="form-check-input" name="" id="">
+                                        </center>
+>>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Vehículos para la expresión y la cohesión cultural</td>
+<<<<<<< HEAD
                                     <td class="center-2">
                                         <input type="checkbox"  name="" id="">
                                     </td>
@@ -171,10 +276,27 @@
                                     </td>
                                     <td class="center-2">
                                         <input type="checkbox"  name="" id="">
+=======
+                                    <td>
+                                        <center>
+                                            <input type="radio" class="form-check-input" name="" id="">
+                                        </center>
+                                    </td>
+                                    <td>
+                                        <center>
+                                            <input type="radio" class="form-check-input" name="" id="">
+                                        </center>
+                                    </td>
+                                    <td>
+                                        <center>
+                                            <input type="radio" class="form-check-input" name="" id="">
+                                        </center>
+>>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Defensor o actor social de su propio derecho</td>
+<<<<<<< HEAD
                                     <td class="center-2">
                                         <input type="checkbox"  name="" id="">
                                     </td>
@@ -183,6 +305,22 @@
                                     </td>
                                     <td class="center-2">
                                         <input type="checkbox"  name="" id="">
+=======
+                                    <td>
+                                        <center>
+                                            <input type="radio" class="form-check-input" name="" id="">
+                                        </center>
+                                    </td>
+                                    <td>
+                                        <center>
+                                            <input type="radio" class="form-check-input" name="" id="">
+                                        </center>
+                                    </td>
+                                    <td>
+                                        <center>
+                                            <input type="radio" class="form-check-input" name="" id="">
+                                        </center>
+>>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
                                     </td>
                                 </tr>
                             </tbody>

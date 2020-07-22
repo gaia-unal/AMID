@@ -103,8 +103,18 @@
 								por: Montse Tesouro. Universitat de Girona. Departamento de Pedagogia
 							</div>
 							<center>
+<<<<<<< HEAD
 								<button class="btn btn-self mg-5" id="ant" onclick="anterior();">Anterior</button>
 								<button class="btn btn-self mg-5" id="sig" onclick="siguiente();">Siguiente</button>
+=======
+								<div>
+									<a href="#" class="btn btn-outline-success" id="ant" onclick="anterior();">Anterior</a>
+								</div>
+								<br>
+								<div>
+									<a href="#" class="btn btn-outline-success" id="sig" onclick="siguiente();">Siguiente</a>
+								</div>
+>>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
 							</center>
 						</p>
 					</div>
@@ -117,7 +127,11 @@
 				</center>
                 <?php
                     include '../../../../../functions/paginacion.php';
+<<<<<<< HEAD
                     pag(3);
+=======
+                    pag(2);
+>>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
                 ?>
 				<p>Obra publicada con <a href="https://creativecommons.org/licenses/by-sa/4.0/"> Licencia Creative
 						Commons Reconocimiento Compartir igual 4.0</a></p>

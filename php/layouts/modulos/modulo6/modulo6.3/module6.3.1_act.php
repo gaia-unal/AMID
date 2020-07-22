@@ -92,12 +92,19 @@ $newConn->connectionDB(); ?>
                                         target="_blank">Link</a> </li>
                             </ul>
                         </p>
+<<<<<<< HEAD
                         <p >
                             <h4> Objetivo:</h4>
                             Identificar el valor de las herramientas interactivas de multimedia, incluyendo sitios
                             interactivos en la red, presentaciones, discusiones en línea, blogs, Wiki, wikilibros,
                             libros electrónicos, podcasting, videocasting, vodcasting y juegos de enseñanza y
                             aprendizaje. </p>
+=======
+                        <h4>Identificar el valor de las herramientas interactivas de multimedia, incluyendo sitios
+                            interactivos en la red, presentaciones, discusiones en línea, blogs, Wiki, wikilibros,
+                            libros electrónicos, podcasting, videocasting, vodcasting y juegos de enseñanza y
+                            aprendizaje. </h4>
+>>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
                         <p class="card-text">
                             <strong>Herramientas interactivas de multimedia:</strong> Piense en la materia que usted
                             enseña. Utilizando un motor de búsqueda, identifique y haga una lista de las herramientas
@@ -134,8 +141,12 @@ $newConn->connectionDB(); ?>
                             </ul>
                         </p>
                         <p class="card-text">
+<<<<<<< HEAD
                             <p>
                                  <h4> Objetivos:</h4>
+=======
+                            <h4>
+>>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
                                 <ol>
                                     <li>Desarrollar habilidades sociales, intelectuales y espacio-temporales utilizando
                                         herramientas interactivas de multimedia, especialmente juegos</li>
@@ -145,7 +156,11 @@ $newConn->connectionDB(); ?>
                                         tecnología para exponer conceptos de temas académicos (por Ej. matemáticas,
                                         ciencias, estudios sociales, etc.)</li>
                                 </ol>
+<<<<<<< HEAD
                             </p>
+=======
+                            </h4>
+>>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
                             <ul>
                                 <li>¿De qué forma un juego de computadora le puede ayudar a pensar creativamente sobre
                                     temas globales?</li>

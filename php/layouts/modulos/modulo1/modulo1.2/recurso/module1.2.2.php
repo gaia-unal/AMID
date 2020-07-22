@@ -153,7 +153,11 @@
   <script src="../../../../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script src="../../../../../../assets/js/script.js"></script>
+<<<<<<< HEAD
   <script src="assets/js/script.2.js"></script>
+=======
+  <script src="assets/js/script.js"></script>
+>>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
 </body>
 
 </html>

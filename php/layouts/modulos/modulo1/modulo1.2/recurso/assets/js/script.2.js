@@ -7,7 +7,11 @@ function termino() {
     r3 = document.getElementById('resp3').value;
     r4 = document.getElementById('resp4').value;
     r5 = document.getElementById('resp5').value;
+<<<<<<< HEAD
     r6 = document.getElementById('resp6').value;        
+=======
+    r6 = document.getElementById('resp6').value;
+>>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
     r7 = document.getElementById('resp7').value;
     r8 = document.getElementById('resp8').value;
 

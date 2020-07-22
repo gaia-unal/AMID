@@ -96,7 +96,11 @@
 				</center>
                 <?php
                     include '../../../../../functions/paginacion.php';
+<<<<<<< HEAD
                     pag(3);
+=======
+                    pag(2);
+>>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
                 ?>
 				<p>Obra publicada con <a href="https://creativecommons.org/licenses/by-sa/4.0/"> Licencia Creative
 						Commons Reconocimiento Compartir igual 4.0</a></p>

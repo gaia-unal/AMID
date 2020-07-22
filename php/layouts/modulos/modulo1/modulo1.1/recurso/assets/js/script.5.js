@@ -276,23 +276,32 @@ function iniciarCanvas() {
             ) {
                 if (objeto.tipo == contenedores[i].tipo) {
                     objeto.valor = 1;
+<<<<<<< HEAD
                     alert(" 1 perro");
                     break;
                 } else {
                     objeto.valor = 0;
                     // alert(" 0 perro");
+=======
+                    break;
+                } else {
+                    objeto.valor = 0;
+>>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
                     break;
                 }
             }
         }
     }
 
+<<<<<<< HEAD
     function restablecer(){
         for (var i = 0; i < objetos.length; i++) {
             objetos[i].valor = null;
         }
     }
 
+=======
+>>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
     function completo() {
         var comple = true;
         var puntos = 0;
@@ -312,14 +321,20 @@ function iniciarCanvas() {
                     icon: "success",
                     button: "Continuar",
                 });
+<<<<<<< HEAD
                 restablecer();
+=======
+>>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
             } else {
                 swal({
                     icon: 'error',
                     title: 'Oops...',
                     text: 'Te equivocaste pero puedes volver a intentarlo'
                 });
+<<<<<<< HEAD
                 restablecer();
+=======
+>>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
                 iniciarCanvas();
             }
         }
