@@ -63,7 +63,6 @@ $newConn->connectionDB(); ?>
                 <form action="../../../../queries/evaluacion.php?id_und=m3u2" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
-<<<<<<< HEAD
                         <h4>Evaluación</h4><br />
                         <p class="card-text">
                             <strong> ¿Cuáles son las principales áreas de códigos de diversidad o ética?</strong><br /><br />
@@ -76,23 +75,6 @@ $newConn->connectionDB(); ?>
                                 <label><input type="radio" name="pre2" class="space" onclick="correcto()" value="5" required>La conciencia personal del periodista.</label><br />
                                 <label><input type="radio" name="pre2" class="space" onclick="incorrecto()" value="1" required>Los encargados de administrar los manuales de estilos.</label><br />
                             <br>
-=======
-                        <h4>Evaluación</h4>
-                        <p class="card-text">
-                            <ul>
-                                <li><strong> ¿Cuáles son las principales áreas de códigos de diversidad o ética?</strong></li>
-                                    <label><input type="radio" name="pre1" class="space" onclick="incorrecto()" value="1" required>Únicamente en la conducta de las personas.</label> <br />
-                                    <label><input type="radio" name="pre1" class="space" onclick="incorrecto()" value="1" required>Animal y humana.</label><br />
-                                    <label><input type="radio" name="pre1" class="space" onclick="correcto()" value="5" required>Empresarial, institucional, en profesiones como la Medicina, Sistemas informáticos, Auditorías.
-                                        </label><br />
-                                <br>
-                                <li><strong>¿Quién regula en primera instancia el ejercicio ético en un periodista?</strong></li>
-
-                                    <label><input type="radio" name="pre2" class="space" onclick="incorrecto()" value="1" required>La ley es la encargada de observar la conducta del periodista.</label><br />
-                                    <label><input type="radio" name="pre2" class="space" onclick="correcto()" value="5" required>La conciencia personal del periodista.</label><br />
-                                    <label><input type="radio" name="pre2" class="space" onclick="incorrecto()" value="1" required>Los encargados de administrar los manuales de estilos.</label><br />
-                                <br>
->>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
                             </ul>
                         </p>
                     </div>

@@ -59,6 +59,7 @@
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 2: AMI y la participación cívica</h1>
+                <form action="../../../../../queries/actividad.php?id_act=m1u2a2" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Acceso a la información</h4>
@@ -77,62 +78,66 @@
                                 <tbody>
                                     <tr>
                                         <td>1) Organizar el conocimiento</td>
-                                        <td><input class="respuesta" type="number" name="resp1" id="resp1">Brindar un
+                                        <td><input class="respuesta" type="number" name="resp1" id="resp1" min="1" max="8">Brindar un
                                             conocimiento oportuno de los temas importantes y tendencias.</td>
                                     </tr>
                                     <tr>
                                         <td>2) Verdad</td>
-                                        <td><input class="respuesta" type="number" name="resp2" id="resp2">Dotar a los
+                                        <td><input class="respuesta" type="number" name="resp2" id="resp2" min="1" max="8">Dotar a los
                                             ciudadanos de la información necesaria para que puedan tomar parte en los
                                             asuntos públicos.
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>3) Interés público</td>
-                                        <td><input class="respuesta" type="number" name="resp3" id="resp3">Estar más
+                                        <td><input class="respuesta" type="number" name="resp3" id="resp3" min="1" max="8">Estar más
                                             allá de los sesgos personales.</td>
                                     </tr>
                                     <tr>
                                         <td>4) Independencia</td>
-                                        <td><input class="respuesta" type="number" name="resp4" id="resp4">Hacer que la
+                                        <td><input class="respuesta" type="number" name="resp4" id="resp4" min="1" max="8">Hacer que la
                                             información esté organizada y sea comprensible.</td>
                                     </tr>
                                     <tr>
                                         <td>5) Foro para la crítica pública y la resolución de problemas</td>
-                                        <td><input class="respuesta" type="number" name="resp5" id="resp5">Monitorear
+                                        <td><input class="respuesta" type="number" name="resp5" id="resp5" min="1" max="8">Monitorear
                                             todos los ejercicios de poder</td>
                                     </tr>
                                     <tr>
                                         <td>6) Rendición de cuentas</td>
-                                        <td><input class="respuesta" type="number" name="resp6" id="resp6">Ofrecer
+                                        <td><input class="respuesta" type="number" name="resp6" id="resp6" min="1" max="8">Ofrecer
                                             varios canales para la interacción del público y amplia representación de
                                             las visiones y valores en la cobertura de las noticias.</td>
                                     </tr>
                                     <tr>
                                         <td>7) Noticias proporcionales y relevantes</td>
-                                        <td><input class="respuesta" type="number" name="resp7" id="resp7">Procurar un
+                                        <td><input class="respuesta" type="number" name="resp7" id="resp7" min="1" max="8">Procurar un
                                             equilibrio entre el derecho público a saber y el derecho personal a la
                                             privacidad.</td>
                                     </tr>
                                     <tr>
                                         <td>8) Equilibrando la privacidad y el derecho a saber</td>
-                                        <td><input class="respuesta" type="number" name="resp8" id="resp8">Que las
+                                        <td><input class="respuesta" type="number" name="resp8" id="resp8" min="1" max="8">Que las
                                             fuentes de información estén claramente identificadas.</td>
                                     </tr>
                                 </tbody>
                             </table>
                             <center>
-                                <button class="btn btn-outline-success" onclick="termino()">Validar</button>
+                                <a class="btn btn-outline-success" onclick="termino()">Validar</a>
                             </center>
                         </p>
                     </div>
                 </div>
                 <!-- /.card -->
                 <br>
+                <input type="text" class="sr-only" id="pointsNota" name="pointsNota" value="1">
+                <input type="text" class="sr-only" id="pointsGood" name="pointsGood" value="0">
                 <center>
                     <a href="module1.2.1.php" class="btn btn-success">Anterior</a>
-                    <a href="module1.2.3.php" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente"  class="btn btn-success" type="submit">Siguiente</button>
+                    <!-- <a href="module1.2.3.php" class="btn btn-success">Siguiente</a> -->
                 </center>
+                </form>
                 <?php
                     include '../../../../../functions/paginacion.php';
                     pag(3);
@@ -153,11 +158,7 @@
   <script src="../../../../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script src="../../../../../../assets/js/script.js"></script>
-<<<<<<< HEAD
   <script src="assets/js/script.2.js"></script>
-=======
-  <script src="assets/js/script.js"></script>
->>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
 </body>
 
 </html>

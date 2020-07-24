@@ -1,84 +1,54 @@
-var puntos = 0;
-var equiv = 0;
+var puntos;
+
+var r1,r2,r3,r4,r5,r6,r7,r8;
 
 function termino() {
-    r1 = document.getElementById('resp1').value;
-    r2 = document.getElementById('resp2').value;
-    r3 = document.getElementById('resp3').value;
-    r4 = document.getElementById('resp4').value;
-    r5 = document.getElementById('resp5').value;
-<<<<<<< HEAD
-    r6 = document.getElementById('resp6').value;        
-=======
-    r6 = document.getElementById('resp6').value;
->>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
-    r7 = document.getElementById('resp7').value;
-    r8 = document.getElementById('resp8').value;
 
-    validar();
-}
+    puntos=0;
 
-function validar() {
-    if (r1 == 7)
-        Correcto();
-    else
-        Incorrecto();
-    if (r2 == 3)
-        Correcto();
-    else
-        Incorrecto();
-    if (r3 == 4)
-        Correcto();
-    else
-        Incorrecto();
-    if (r4 == 1)
-        Correcto();
-    else
-        Incorrecto();
-    if (r5 == 6)
-        Correcto();
-    else
-        Incorrecto();
-    if (r6 == 5)
-        Correcto();
-    else
-        Incorrecto();
-    if (r7 == 8)
-        Correcto();
-    else
-        Incorrecto();
-    if (r8 == 9)
-        Correcto();
-    else
-        Incorrecto();
-}
+    r1 = document.getElementById('resp1');
+    r2 = document.getElementById('resp2');
+    r3 = document.getElementById('resp3');
+    r4 = document.getElementById('resp4');
+    r5 = document.getElementById('resp5');
+    r6 = document.getElementById('resp6');
+    r7 = document.getElementById('resp7');
+    r8 = document.getElementById('resp8');
 
-function Correcto() {
-    puntos += 1;
-    imp();
-}
+    var pre=[r1.value,r2.value,r3.value,r4.value,r5.value,r6.value,r7.value,r8.value];
+    var res=[7,3,4,1,6,5,8,9];
 
-function Incorrecto() {
-    equiv += 1;
+    for (let i = 0; i <8; i++) {
+        if(res[i]==pre[i])
+            puntos ++;
+    }
+
     imp();
 }
 
 function imp() {
-    if (puntos == 8) {
+    if (puntos >= 6) {
         swal({
-            title: "¡Correcto!",
+            title: "¡Correcto! "+puntos+" de 8",
             icon: "success",
             button: "Continuar",
             text: "Respondiste correctamente =)"
         });
-    } else if (puntos + equiv == 8) {
+        printNote(puntos);
+    } else {
         swal({
+            title: "Incorrecto "+puntos+" de 8",
             icon: 'error',
-            title: 'Oops...',
             button: "Continuar",
             text: "Te equivocaste en algunas :c pero puedes volver a intentarlo"
-        }).then(function () {
-            location.reload();
         });
+        r1.value=r2.value=r3.value=r4.value=r5.value=r6.value=r7.value=r8.value=null;
     }
+}
+
+function printNote(puntos){
+    var nota=parseFloat(puntos*5/8);
+    if(nota<1){nota=1;}
+    document.getElementById("pointsNota").value=nota;
+    document.getElementById("pointsGood").value=puntos;
 }

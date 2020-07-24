@@ -66,7 +66,6 @@
                 <form action="../../../../queries/evaluacion.php?id_und=m3u1" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
-<<<<<<< HEAD
                         <h4>Evaluación</h4><br />
                         <p class="card-text">
                         
@@ -81,26 +80,6 @@
                                 <label><input type="radio" name="pre2" class="space" onclick="correcto()" value="5" required>El enfoque y la cobertura de las noticias de una tragedia.</label><br />
                                 <label><input type="radio" name="pre2" class="space" onclick="incorrecto()" value="1" required>La desigualdad y olvido por parte del gobierno.</label><br />
                             <br />
-=======
-                        <h4>Evaluación</h4>
-                        <p class="card-text">
-                            <ul>
-                                <li><strong> ¿Qué impacto podrían tener estas imágenes sobre las audiencias?</strong></li>
-
-                                    <label><input type="radio" name="pre1" class="space" onclick="correcto()" value="5" required>Positivo porque permite que se genere conciencia sobre lo que pasa actualmente.</label> <br />
-                                    <label><input type="radio" name="pre1" class="space" onclick="incorrecto()" value="1" required>Negativo porque nos induce a tener miedo.
-                                        medio y sin importar las fronteras.</label><br />
-                                    <label><input type="radio" name="pre1" class="space" onclick="incorrecto()" value="1" required>No se genera ningún tipo de impacto.
-                                      </label><br />
-                                <br>
-                                <li><strong>¿Qué se intenta transmitir por medio de estas imágenes?</strong></li>
-
-                                    <label><input type="radio" name="pre2" class="space" onclick="incorrecto()" value="1" required>Sentimientos asociados al dolor humano.</label><br />
-                                    <label><input type="radio" name="pre2" class="space" onclick="correcto()" value="5" required>El enfoque y la cobertura de las noticias de una tragedia.</label><br />
-                                    <label><input type="radio" name="pre2" class="space" onclick="incorrecto()" value="1" required>La desigualdad y olvido por parte del gobierno.</label><br />
-                                <br>
-                            </ul>
->>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
                         </p>
                     </div>
                 </div>

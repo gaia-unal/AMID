@@ -66,7 +66,7 @@ function pag($nivel){
     
     
 
-    <button class="btn-min" id="btn-min" onclick="maxi()">
+    <!-- <button class="btn-min" id="btn-min" onclick="maxi()">
         <i class="fas fa-window-maximize" title="Maximizar"></i>
     </button>
         
@@ -77,13 +77,13 @@ function pag($nivel){
 
     <script SameSite="None; Secure"
     src="https://static.landbot.io/landbot-widget/landbot-widget-1.0.0.js">
-    </script>
+    </script> -->
 
-    <script>
+    <!-- <script>
     var myLandbot = new LandbotLivechat({index:'https://landbot.io/u/H-522836-587OF6XJ6GX06EVP/index.html',});
-    </script>
+    </script> -->
 
-    <script>
+    <!-- <script>
         var mini=true
         function maxi(){
             if (mini){
@@ -100,7 +100,7 @@ function pag($nivel){
                 mini=true;
             }
         }
-    </script>
+    </script> -->
     <?php  
 }
 ?>

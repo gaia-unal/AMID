@@ -58,32 +58,35 @@ $newConn->connectionDB(); ?>
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 5: Edición digital y retoque en computadora</h1>
+                <form action="../../../../queries/actividad.php?id_act=m3u5a2" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
                         <p class="card-text">1. Describa el tipo de cambios que esta tecnología puede hacer posible.</p>
-                        <textarea name="preg1" id="p1-r" cols="100" rows="10" placeholder="Escriba su respuesta aquí"
-                            spellcheck="true"></textarea><br>
+                        <textarea name="preg1" style="width: 90%;" rows="6" minlength="1" maxlength="500" onkeypress="return check(event)"
+                            required placeholder="Escriba su respuesta aquí" spellcheck="true" autofocus></textarea>
                         <p class="card-text">2. Identifique y describa los ejemplos dónde se ha utilizado esta
                             tecnología en el mundo de la moda y en el reportaje de noticias. Explore la controversia que
                             existe en relación al uso de esta tecnología para las personas que trabajan en la industria
                             de la moda y de las noticias.</p>
-                        <textarea name="preg2" id="p2-r" cols="100" rows="10" placeholder="Escriba su respuesta aquí"
-                            spellcheck="true"></textarea> <br>
+                        <textarea name="preg2" style="width: 90%;" rows="6" minlength="1" maxlength="500" onkeypress="return check(event)"
+                            required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                         <p class="card-text">3. Discuta hasta qué punto el conocimiento de esta tecnología afecta la
                             forma en la que las personas responden a las fotos en los editoriales de moda y
                             fotoperiodismo. Describa los beneficios y responsabilidades de esta tecnología para las
                             personas y los eventos que se retratan y para las audiencias que ven estas imágenes
                         </p>
-                        <textarea name="preg3" id="p3-r" cols="100" rows="10" placeholder="Escriba su respuesta aquí"
-                            spellcheck="true"></textarea> <br>
+                        <textarea name="preg3" style="width: 90%;" rows="6" minlength="1" maxlength="500" onkeypress="return check(event)"
+                            required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea> <br>
                     </div>
                 </div>
                 <!-- /.card -->
                 <br>
                 <center>
                     <a href="module3.5.1_act.php" class="btn btn-success">Anterior</a>
-                    <a href="module3.5_eval.php" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <!-- <a href="module3.5_eval.php" class="btn btn-success">Siguiente</a> -->
                 </center>
+                </form>
                 <?php
                     include '../../../../functions/paginacion.php';
                     pag(2);

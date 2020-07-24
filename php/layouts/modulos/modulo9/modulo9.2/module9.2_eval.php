@@ -46,7 +46,7 @@
 							<a href="Recurso/recurso.php" class="list-group-item">Actividades</a>
 							<a href="#" class="list-group-item active">Evaluación</a>
 						</ul>
-						<a href="../../modulo9.3/module9.3_inicio.php" class="list-group-item">Unidad 3</a>
+						<a href="../modulo9.3/module9.3_inicio.php" class="list-group-item">Unidad 3</a>
 					</ul>
 					<a href="../../modulo10/module10.php" class="list-group-item">Módulo 10</a>
 					<a href="../../modulo11/module11.php" class="list-group-item">Módulo 11</a>

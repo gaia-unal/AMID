@@ -58,6 +58,7 @@ $newConn->connectionDB(); ?>
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br> Unidad 2: Códigos de la industria sobre la diversidad y la representación</h1>
+                <form action="../../../../queries/actividad.php?id_act=m3u2a1" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
                         <p class="card-text">
@@ -85,14 +86,14 @@ $newConn->connectionDB(); ?>
                             en cuenta el texto y contexto de su evaluación. De ejemplos específicos de la
                             cobertura que sustenten su respuesta. Si existen casos en los cuales los reportajes
                             violan estas regulaciones, ¿qué recurso tienen disponible los individuos?
-                            <textarea name="preg1" id="p1-r" cols="100" rows="10"
-                                placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea> <br>
+                            <textarea name="preg1" style="width: 90%;" rows="5" minlength="1" maxlength="500" onkeypress="return check(event)"
+                            required placeholder="Escriba su respuesta aquí" spellcheck="true" autofocus></textarea>
                             2. Examine otras áreas donde los medios están cubiertos por estos códigos
                             (por Ej. imágenes de género en la publicidad). Evalúe hasta qué punto se siguen
                             estas regulaciones. Detalle la retroalimentación que usted daría a los entes
                             reguladores y/o productores de estos textos mediáticos
-                            <textarea name="preg2" id="p2-r" cols="100" rows="10"
-                                placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                            <textarea name="preg2" style="width: 90%;" rows="5" minlength="1" maxlength="500" onkeypress="return check(event)"
+                            required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                         </p>
                     </div>
                 </div>
@@ -100,8 +101,10 @@ $newConn->connectionDB(); ?>
                 <br>
                 <center>
                     <a href="module3.2_temas.php" class="btn btn-success">Anterior</a>
-                    <a href="module3.2_eval.php" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <!-- <a href="module3.2_eval.php" class="btn btn-success">Siguiente</a> -->
                 </center>
+                </form>
                 <?php
                     include '../../../../functions/paginacion.php';
                     pag(2);

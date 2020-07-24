@@ -58,6 +58,7 @@ $newConn->connectionDB(); ?>
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 3: Lo que genera noticias – explorando los criterios</h1>
+                <form action="../../../../queries/actividad.php?id_act=m2u3a3" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Retroalimentación</h4>
@@ -74,14 +75,14 @@ $newConn->connectionDB(); ?>
                             </ul>
                             <ol>
                                 <li>¿Cuál de las dos noticias tiene más fuerza? ¿por qué?</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg1" style="width: 80%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" autofocus></textarea>
                                 <li>¿Cuál de las dos noticias es más informativa?</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg2" style="width: 80%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                                 <li>¿Cómo se podrían mejorar otros artículos noticiosos?</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg3" style="width: 80%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                             </ol>
                         </p>
                     </div>
@@ -90,8 +91,10 @@ $newConn->connectionDB(); ?>
                 <br>
                 <center>
                     <a href="module2.3_act2.php" class="btn btn-success">Anterior</a>
-                    <a href="module2.3_eval.php" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <!-- <a href="module2.3_eval.php" class="btn btn-success">Siguiente</a> -->
                 </center>
+                </form>
                 <?php
                     include '../../../../functions/paginacion.php';
                     pag(2);

@@ -60,6 +60,7 @@ $newConn->connectionDB(); ?>
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 3: Lo que genera noticias – explorando los criterios</h1>
+                <form action="../../../../queries/actividad.php?id_act=m2u3a2" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Refuerzo</h4>
@@ -82,10 +83,14 @@ $newConn->connectionDB(); ?>
                 </div>
                 <!-- /.card -->
                 <br>
+                <input type="text" class="sr-only" id="pointsNota" name="pointsNota" value="1">
+                <input type="text" class="sr-only" id="pointsGood" name="pointsGood" value="0">
                 <center>
                     <a href="module2.3_act.php" class="btn btn-success">Anterior</a>
-                    <a href="module2.3_act3.php" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente"  class="btn btn-success" type="submit">Siguiente</button>
+                    <!-- <a href="module2.3_act3.php" class="btn btn-success">Siguiente</a> -->
                 </center>
+                </form>
                 <?php
                     include '../../../../functions/paginacion.php';
                     pag(2);

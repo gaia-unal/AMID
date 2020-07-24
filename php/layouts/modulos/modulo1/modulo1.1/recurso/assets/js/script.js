@@ -402,9 +402,12 @@ function iniciarCanvas() {
             ) {
                 if (objeto.tipo == zonas[i].tipo) {
                     objeto.valor = 1;
+                    // alert("Good");
+                    console.log("Good");
                     break;
                 } else {
                     objeto.valor = 0;
+                    // alert("Bad");
                     break;
                 }
             }
@@ -424,20 +427,28 @@ function iniciarCanvas() {
             }
         }
         if (comple) {
-            if (puntos >= 8) {
+            if (puntos >= 9) {
                 swal({
-                    title: "¡Correcto!",
+                    title: "¡Correcto! "+puntos+" de 16",
                     icon: "success",
                     text: "Da clic en el botón siguiente para continuar con la siguiente actividad.",
                 });
+                printNote(puntos);
             } else {
                 swal({
                     icon: 'error',
-                    title: 'Oops...',
+                    title: "incorrecto "+puntos+" de 16",
                     text: 'Te equivocaste pero puedes volver a intentarlo'
                 });
                 iniciarCanvas();
             }
         }
     }
+}
+
+function printNote(puntos){
+    var nota=parseFloat(puntos*5/16);
+    if(nota<1){nota=1;}
+    document.getElementById("pointsCanvas").value=nota;
+    document.getElementById("pointsGood").value=puntos;
 }

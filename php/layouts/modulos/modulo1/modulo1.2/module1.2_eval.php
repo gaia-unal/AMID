@@ -70,9 +70,9 @@
                                 neutralidad de la información, manteniendo una mentalidad abierta con el fin de que el
                                 ciudadano de bien tome buenas decisiones evitando las conveniencias particulares"</em>
                             <br> <br>
-                            ¿Cuál de las siguientes afirmaciones apoya en mejor medida lo expresado por la frase
-                            anterior? <br> <br>
-
+                            <strong>
+                            ¿Cuál de las siguientes afirmaciones apoya en mejor medida lo expresado por la anterior frase? <br> <br>
+                            </strong>
                             <label><input type="radio" name="opc1" id="op1" onclick="incorrecto()" value="1" required>
                             La información debe ser un medio a través del cual los ciudadanos deben ser influidos a actuar de una mejor manera...
                             </label>

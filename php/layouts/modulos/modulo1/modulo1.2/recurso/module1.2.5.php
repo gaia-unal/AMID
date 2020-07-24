@@ -59,6 +59,7 @@
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 2: AMI y la participación cívica</h1>
+                <form action="../../../../../queries/actividad.php?id_act=m1u2a5" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Libertad de expresión, independencia editorial, pluralidad y diversidad</h4>
@@ -71,14 +72,15 @@
                             las siguientes preguntas:
                             <ul>
                                 <li>¿Qué es lo que hace a este medio independiente?</li>
-                                <textarea name="" id="" cols="100" rows="10"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg1" style="width: 100%;" rows="5" minlength="1" maxlength="200"
+                                    required placeholder="Escriba su respuesta aquí" spellcheck="true"
+                                    autofocus></textarea>
                                 <li>¿De qué forma permite que las personas participen en el proceso democratico?</li>
-                                <textarea name="" id="" cols="100" rows="10"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg2" style="width: 100%;" rows="5" minlength="1" maxlength="200"
+                                    required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>¿Qué hace a este medio diferente de losmedios principales o no independientes?</li>
-                                <textarea name="" id="" cols="100" rows="10"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg3" style="width: 100%;" rows="5" minlength="1" maxlength="200"
+                                    required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                             </ul>
                             Aspi mismo identifique un medio que usted no considere alternativo o independiente en su
                             ámbito local o regional y conteste preguntas equivalentes a las anteriores, utilizando los
@@ -86,27 +88,26 @@
                                 pluralidad y diversidad</em> de esta unidad:
                             <ul>
                                 <li>¿Qué considera usted que hace a este medio no independiente</li>
-                                <textarea name="" id="" cols="100" rows="10"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg4" style="width: 100%;" rows="5" minlength="1" maxlength="200"
+                                    required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>¿De qué forma impide que las personas participen en el proceso democrático?</li>
-                                <textarea name="" id="" cols="100" rows="10"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg5" style="width: 100%;" rows="5" minlength="1" maxlength="200"
+                                    required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>¿Qué hace a este medio diferente de los medios alternativos o independientes?</li>
-                                <textarea name="" id="" cols="100" rows="10"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg6" style="width: 100%;" rows="5" minlength="1" maxlength="200"
+                                    required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                             </ul>
                             <strong>Segunda parte</strong> <br>
                             <ul>
                                 <li>Escriba un pequeño texto argumentando sobre la obligación de los líderes respecto a
                                     enfocar las noticias con una mentalidad abierta y no solo con el deseo de que las
                                     noticias sirvan para reforzar las opiniones existentes.</li>
-                                <textarea name="" id="" cols="100" rows="10"
-                                    placeholder="Escriba su respuesta aquí"></textarea>
+                                    <textarea name="preg7" style="width: 100%;" rows="5" minlength="1" maxlength="200"
+                                    required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>¿Esta usted de acuerdo con que un ciudadano bien informado está mejor preparado para
-                                    tomar decisiones y para participar en una sociedad democrática y por qué? Escriba un
-                                    editorial expresando su opinión.</li>
-                                <textarea name="" id="" cols="100" rows="10"
-                                    placeholder="Escriba su respuesta aquí"></textarea>
+                                    tomar decisiones y para participar en una sociedad democrática y por qué?</li>
+                                    <textarea name="preg8" style="width: 100%;" rows="5" minlength="1" maxlength="200"
+                                    required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                             </ul>
                             Comparta sus escritos con otra persona que esté realizando las actividades de este Objeto
                             Virtual. Pídale que le evalúe su escrito considerando la fuerza con la que argumenta las
@@ -124,8 +125,10 @@
                 <br>
                 <center>
                     <a href="module1.2.4.php" class="btn btn-success">Anterior</a>
-                    <a href="../module1.2_eval.php" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <!-- <a href="../module1.2_eval.php" class="btn btn-success">Siguiente</a> -->
                 </center>
+                </form>
                 <?php
                     include '../../../../../functions/paginacion.php';
                     pag(3);

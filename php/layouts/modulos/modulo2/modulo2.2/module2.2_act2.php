@@ -58,6 +58,7 @@ $newConn->connectionDB(); ?>
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 2: Libertad, ética y responsabilidad</h1>
+                <form action="../../../../queries/actividad.php?id_act=m2u2a2" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
                         <p class="card-text">
@@ -66,24 +67,24 @@ $newConn->connectionDB(); ?>
                                 <li>¿Por qué razón considera usted se debe desarrollar un código de ética que tiene
                                     que recibir la aprobación de todos los miembros de la profesión y que no debe ser
                                     impuesto por agentes o autoridades externas?</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg1" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" autofocus></textarea>
                                 <li>¿De qué manera la ética de información se relaciona con temas como propiedad,
                                     acceso, privacidad, seguridad y comunidad?</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg2" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>¿Cómo la ética de la información puede influir en las decisiones personales, la
                                     práctica profesional y las políticas públicas?</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg3" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>¿Cómo los nuevos formatos de información evolucionan y las necesidades influyen en
                                     los principios éticos, y cómo se aplican estos códigos?</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg4" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>¿Existen organizaciones de libertad de prensa activas en su país? ¿Cómo estas han
                                     contribuido a la protección de la libertad de prensa y libertad de expresión?</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg5" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                             </ul>
                         </p>
                     </div>
@@ -92,8 +93,10 @@ $newConn->connectionDB(); ?>
                 <br>
                 <center>
                     <a href="module2.2_temas.php" class="btn btn-success">Anterior</a>
-                    <a href="module2.2_eval.php" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <!-- <a href="module2.2_eval.php" class="btn btn-success">Siguiente</a> -->
                 </center>
+                </form>
                 <?php
                     include '../../../../functions/paginacion.php';
                     pag(2);
@@ -114,6 +117,8 @@ $newConn->connectionDB(); ?>
   <script src="../../../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
   <script src="../../../../../assets/js/script.js"></script>
+
+
 </body>
 
 </html>

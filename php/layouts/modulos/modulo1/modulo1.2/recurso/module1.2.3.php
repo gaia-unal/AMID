@@ -2,27 +2,27 @@
 <html lang="es">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <title>AMID</title>
-  <!-- Bootstrap core CSS -->
-  <link href="../../../../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom styles for this template -->
-  <link href="../../../../../../assets/css/shop-item.css" rel="stylesheet">
-  <link href="../../../../../../assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/estilo.css" rel="stylesheet">
+    <title>AMID</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../../../../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../../../../../../assets/css/shop-item.css" rel="stylesheet">
+    <link href="../../../../../../assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/estilo.css" rel="stylesheet">
 </head>
 
 <body>
-  <?php require_once "../../../../../queries/connectionDB.php"; 
+    <?php require_once "../../../../../queries/connectionDB.php"; 
   $newConn= new Connection;
   $newConn->connectionDB();
   ?>
-  <?php require '../../../../../queries/activeSession.php'; ?>  
-  <?php $rutaSession="../../../../../queries/"; include '../../../../header.php'; ?>
+    <?php require '../../../../../queries/activeSession.php'; ?>
+    <?php $rutaSession="../../../../../queries/"; include '../../../../header.php'; ?>
 
 
 
@@ -60,6 +60,7 @@
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 2: AMI y la participación cívica</h1>
+                <form action="../../../../../queries/actividad.php?id_act=m1u2a3" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
                         <p class="card-text">
@@ -69,27 +70,31 @@
                             información, al lector, etc.)?
                             <ul>
                                 <li>Proteger la privacidad</li>
-                                <textarea name="" id="" cols="100" rows="10"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg1" style="width: 100%;" rows="5" minlength="1" maxlength="200"
+                                    required placeholder="Escriba su respuesta aquí" spellcheck="true"
+                                    autofocus></textarea>
                                 <li>Recolección y preservación</li>
-                                <textarea name="" id="" cols="100" rows="10"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg2" style="width: 100%;" rows="5" minlength="1" maxlength="200"
+                                    required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>Proveer acceso sin sesgos</li>
-                                <textarea name="" id="" cols="100" rows="10"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg3" style="width: 100%;" rows="5" minlength="1" maxlength="200"
+                                    required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>Proveer acceso abierto</li>
-                                <textarea name="" id="" cols="100" rows="10"
-                                    placeholder="Esccriba aquí su respuesta"></textarea>
+                                <textarea name="preg4" style="width: 100%;" rows="5" minlength="1" maxlength="200"
+                                    required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                             </ul>
                         </p>
                     </div>
                 </div>
+
                 <!-- /.card -->
                 <br>
                 <center>
                     <a href="module1.2.2.php" class="btn btn-success">Anterior</a>
-                    <a href="module1.2.4.php" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <!-- <a href="module1.2.4.php" class="btn btn-success">Siguiente</a> -->
                 </center>
+                </form>
                 <?php
                     include '../../../../../functions/paginacion.php';
                     pag(3);
@@ -101,16 +106,16 @@
             <!-- /.col-lg-9 -->
         </div>
     </div>
-  <!-- /.container -->
+    <!-- /.container -->
 
-  <?php $ruta="../../../../../../assets"; include '../../../../footer.php';?>
+    <?php $ruta="../../../../../../assets"; include '../../../../footer.php';?>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="../../../../../../vendor/jquery/jquery.min.js"></script>
-  <script src="../../../../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <script src="../../../../../../assets/js/script.js"></script>
-  <script src="assets/js/script.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../../../../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../../../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../../../../../../assets/js/script.js"></script>
+    <!-- <script src="assets/js/script.js"></script> -->
 </body>
 
 </html>

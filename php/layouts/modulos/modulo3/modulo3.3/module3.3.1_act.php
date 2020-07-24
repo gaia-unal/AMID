@@ -57,6 +57,7 @@ $newConn->connectionDB(); ?>
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 3: Televisión, películas y publicación de libros</h1>
+                <form action="../../../../queries/actividad.php?id_act=m3u3a1" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
                         <p class="card-text">
@@ -89,8 +90,8 @@ $newConn->connectionDB(); ?>
                             Discuta sobre las posibles implicaciones de algunas de estas representaciones. Algunas
                             representaciones son vistas de diferente manera por algunos miembros del grupo. ¿Por qué
                             cree que esto sucede?</p>
-                        <textarea name="preg1" id="p1-r" cols="100" rows="10" placeholder="Escriba su respuesta aquí"
-                            spellcheck="true"></textarea>
+                        <textarea name="preg1" style="width: 90%;" rows="8" minlength="1" maxlength="300" onkeypress="return check(event)"
+                            required placeholder="Escriba su respuesta aquí" spellcheck="true" autofocus></textarea>
                         <h4>Examinar el éxito de los programas actuales de televisión y de las películas destacadas</h4>
                         <p class="card-text">2. Haga una lista de cinco películas que tienen éxito de taquilla local o
                             internacional. Si
@@ -99,30 +100,33 @@ $newConn->connectionDB(); ?>
                             representa como parte central de la historia. Explique por qué cree que esta representación
                             pueda gustar a las audiencias?
                         </p>
-                        <textarea name="preg2" id="p2-r" cols="100" rows="10" placeholder="Escriba su respuesta aquí"
-                            spellcheck="true"></textarea>
-                        <h4>Una fórmula popular de película se enfoca en el mito arquetípico del “viaje del héroe”. Los
-                            mitos representan sistemas de creencias implícitos que expresan los miedos, los deseos y las
+                        <textarea name="preg2" style="width: 90%;" rows="8" minlength="1" maxlength="300" onkeypress="return check(event)"
+                            required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
+                        <h4>Una fórmula popular de película se enfoca en el mito arquetípico del “viaje del héroe”.</h4>
+                        <p>
+                            Los mitos representan sistemas de creencias implícitos que expresan los miedos, los deseos y las
                             aspiraciones de una cultura. En estas historias, el héroe – desconocedor de su destino – es
                             llamado a realizar una importante búsqueda. Usualmente el héroe atraviesa por una serie de
                             etapas como parte de esta búsqueda, incluyendo: su “nacimiento” o inicios, llega a ser
                             consciente de su “llamado” o destino, experimenta el romance, se enfrenta con sus
-                            adversarios, recibe consejos de un anciano sabio, y finalmente regresa a casa.</h4>
+                            adversarios, recibe consejos de un anciano sabio, y finalmente regresa a casa.</p>
                         <p class="card-text">3. Cree una lista de películas que se basen en la fórmula mencionada. Haga
                             un
                             recuento, describa al héroe, explique hasta qué punto el héroe representa los deseos
                             y los valores del individuo en la sociedad.</p>
-                        <br>
-                        <textarea name="preg3" id="p3-r" cols="100" rows="10" placeholder="Escriba su respuesta aquí"
-                            spellcheck="true"></textarea>
+                        <!-- <br> -->
+                        <textarea name="preg3" style="width: 90%;" rows="8" minlength="1" maxlength="300" onkeypress="return check(event)"
+                            required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                     </div>
                 </div>
                 <!-- /.card -->
                 <br>
                 <center>
                     <a href="module3.3_temas.php" class="btn btn-success">Anterior</a>
-                    <a href="module3.3_eval.php" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <!-- <a href="module3.3_eval.php" class="btn btn-success">Siguiente</a> -->
                 </center>
+                </form>
                 <?php
                     include '../../../../functions/paginacion.php';
                     pag(2);

@@ -1,5 +1,4 @@
 <?php
-    
     $ruta = '../layouts/modulos';
     
     require_once "connectionDB.php"; 

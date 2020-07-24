@@ -59,6 +59,7 @@
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 1: Comprender la alfabetización mediática e informacional: una orientación</h1>
+                <form action="../../../../../queries/actividad.php?id_act=m1u1a5" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Comprobación de lectura</h4>
@@ -75,10 +76,14 @@
                 </div>
                 <!-- /.card -->
                 <br>
+                    <input type="text" class="sr-only" id="pointsCanvas" name="pointsCanvas" value="1">
+                    <input type="text" class="sr-only" id="pointsGood" name="pointsGood" value="0">
                 <center>
                     <a href="module1.1.4.php" class="btn btn-success">Anterior</a>
-                    <a href="module1.1.6.php" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente"  class="btn btn-success" type="submit">Siguiente</button>
+                    <!-- <a href="module1.1.6.php" class="btn btn-success">Siguiente</a> -->
                 </center>
+                </form>
                 <?php
                     include '../../../../../functions/paginacion.php';
                     pag(3);

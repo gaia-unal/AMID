@@ -59,14 +59,15 @@ $newConn->connectionDB(); ?>
             <div class="col-lg-9">
                 <h1><br>Unidad 4: El proceso de desarrollo de las noticias: más allá de 5 por qués y 1 cómo (5ws y 1h en
                     inglés)</h1>
+                <form action="../../../../queries/actividad.php?id_act=m2u4a2" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Retroalimentación</h4>
                         <p class="card-text">
                             Investigue y mencione a continuación qué técnicas de verificación existen y en qué
                             consisten.
-                            <textarea name="" id="" cols="80" rows="5"
-                                placeholder="Escriba aquí su respuesta"></textarea>
+                            <textarea name="preg1" style="width: 90%;" rows="5" minlength="1" maxlength="1000" onkeypress="return check(event)"
+                            required placeholder="Escriba su respuesta aquí" spellcheck="true" autofocus></textarea>
                         </p>
                     </div>
                 </div>
@@ -74,8 +75,10 @@ $newConn->connectionDB(); ?>
                 <br>
                 <center>
                     <a href="module2.4_act.php" class="btn btn-success">Anterior</a>
-                    <a href="module2.4_eval.php" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <!-- <a href="module2.4_eval.php" class="btn btn-success">Siguiente</a> -->
                 </center>
+                </form>
                 <?php
                     include '../../../../functions/paginacion.php';
                     pag(2);

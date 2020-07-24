@@ -60,6 +60,7 @@
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 4: AMI, enseñanza y aprendizaje</h1>
+                <form action="../../../../../queries/actividad.php?id_act=m1u4a3" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Reflexión</h4>
@@ -67,20 +68,20 @@
                             De los enfoques mencionados anteriormente liste 5 con los cuales se sienta más
                             familiarizados. <br>
                             <center>
-                                1. <input type="text" name="" id="1"> &nbsp &nbsp
-                                2. <input type="text" name="" id="2"> &nbsp &nbsp
-                                3. <input type="text" name="" id="3"> <br><br>
-                                4. <input type="text" name="" id="4"> &nbsp &nbsp
-                                5. <input type="text" name="" id="5"> <br><br>
+                                1. <input type="text" name="e1" id="1" maxlength="40" required autofocus><br /><br />
+                                2. <input type="text" name="e2" id="2" maxlength="40" required><br /><br />
+                                3. <input type="text" name="e3" id="3" maxlength="40" required><br /><br />
+                                4. <input type="text" name="e4" id="4" maxlength="40" required><br /><br />
+                                5. <input type="text" name="e5" id="5" maxlength="40" required><br /><br />
                             </center>
                             A continuación identifique los componentes claves que hacen que la enseñanza y el
                             aprendizaje de AMI sean eficaces <br>
-                            <textarea name="" id="" cols="100" rows="10"
-                                placeholder="Escriba aquí su respuesta"></textarea> <br>
+                            <textarea name="preg1" style="width: 100%;" rows="5" minlength="1" maxlength="200"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea><br><br>
                             Indique que actividades puede desarrollar que ilustren estas estrategias en su propio
                             trabajo <br>
-                            <textarea name="" id="" cols="100" rows="10"
-                                placeholder="Escriba aquí su respuesta"></textarea>
+                            <textarea name="preg2" style="width: 100%;" rows="5" minlength="1" maxlength="200"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                         </p>
                     </div>
                 </div>
@@ -88,8 +89,10 @@
                 <br>
                 <center>
                     <a href="module1.4.2.php" class="btn btn-success">Anterior</a>
-                    <a href="../module1.4_eval.php" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <!-- <a href="../module1.4_eval.php" class="btn btn-success">Siguiente</a> -->
                 </center>
+                </form>
                 <?php
                     include '../../../../../functions/paginacion.php';
                     pag(3);

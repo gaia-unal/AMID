@@ -58,6 +58,7 @@ $newConn->connectionDB(); ?>
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 1: Periodismo y sociedad</h1>
+                <form action="../../../../queries/actividad.php?id_act=m2u1a1" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Investigue</h4>
@@ -87,24 +88,24 @@ $newConn->connectionDB(); ?>
                             <ul>
                                 <li>¿Cómo fue la evolución de la teoría y práctica de “libertad de palabra” y “libertad
                                     de prensa”?</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg1" style="width: 100%;" rows="5" minlength="1" maxlength="300"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" autofocus></textarea>
                                 <li>¿Qué periodistas y/o agencias de los medios han hecho contribuciones específicas a
                                     la libertad de prensa y a la democracia?</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg2" style="width: 100%;" rows="5" minlength="1" maxlength="200"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>Investigue y describa un evento de movimientos democráticos, en Colombia, en donde
                                     los medios y los reportes de noticias han tenido un papel significante</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg3" style="width: 100%;" rows="5" minlength="1" maxlength="300"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>Realice una reflexión sobre los resultados de las lecturas que realizó en sus
                                     investigaciones</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg4" style="width: 100%;" rows="5" minlength="1" maxlength="300"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>Realice un ensayo sobre temas relacionados con los medios y la democracia, y como
                                     abordar estos temas en el aula de clase</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg5" style="width: 100%;" rows="6" minlength="1" maxlength="600"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                             </ul>
                         </p>
                     </div>
@@ -113,8 +114,10 @@ $newConn->connectionDB(); ?>
                 <br>
                 <center>
                     <a href="module2.1_temas.php" class="btn btn-success">Anterior</a>
-                    <a href="module2.1_eval.php" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <!-- <a href="module2.1_eval.php" class="btn btn-success">Siguiente</a> -->
                 </center>
+                </form>
                 <?php
                     include '../../../../functions/paginacion.php';
                     pag(2);

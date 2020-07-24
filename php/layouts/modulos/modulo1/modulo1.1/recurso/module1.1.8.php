@@ -59,6 +59,7 @@
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 1: Comprender la alfabetización mediática e informacional: una orientación</h1>
+                <form action="../../../../../queries/actividad.php?id_act=m1u1a8" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Información de los proveedores</h4>
@@ -69,11 +70,11 @@
                             que se expone en la lectura <strong>Información sobre los proveedores</strong> y a partir de
                             ella escriba a continuación una lista de su elección <br>
                            <center>
-                                <label class="space" for="p1">1.</label><input type="text" name="proveedor" id="p1" autofocus><br><br>
-                                <label class="space" for="p2">2.</label><input type="text" name="proveedor" id="p2"><br><br>
-                                <label class="space" for="p3">3.</label><input type="text" name="proveedor" id="p3"><br><br>
-                                <label class="space" for="p4">4.</label><input type="text" name="proveedor" id="p4"><br><br>
-                                <label class="space" for="p5">5.</label><input type="text" name="proveedor" id="p5"><br><br>
+                                <label class="space" for="p1">1.</label><input type="text" name="proveedor1" id="p1" required autofocus><br><br>
+                                <label class="space" for="p2">2.</label><input type="text" name="proveedor2" id="p2" required><br><br>
+                                <label class="space" for="p3">3.</label><input type="text" name="proveedor3" id="p3" required><br><br>
+                                <label class="space" for="p4">4.</label><input type="text" name="proveedor4" id="p4" required><br><br>
+                                <label class="space" for="p5">5.</label><input type="text" name="proveedor5" id="p5" required><br><br>
                             </center>
                             De los proveedores que se presentarán a continuación, determine que papel cumple. Por
                             ejemplo: Si uno de los proveedores de información es un Youtuber (proveedores de videos
@@ -93,184 +94,124 @@
                             <tbody>
                                 <tr>
                                     <td>Informar</td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="11">
                                     </td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="12">
                                     </td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="13">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Educar</td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="21">
                                     </td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="22">
                                     </td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="23">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Facilitar los procesos de enseñanza y aprendizaje</td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="31">
                                     </td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="32">
                                     </td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="33">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Proveer acceso a todos los tipos de información (a menudo libre de costos,
                                         plural, confiable y sin restricciones)</td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="41">
                                     </td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="42">
                                     </td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="43">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Servir como una puerta hacia la información</td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="51">
                                     </td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="52">
                                     </td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="53">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Promover los valores universales y los derechos civiles tales como libertad de
                                         expresión e información</td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                        <td class="center-2">
+                                        <input type="checkbox"  name="61">
                                     </td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="62">
                                     </td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="63">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Servir como memoria colectiva de la sociedad</td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="71">
                                     </td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="72">
                                     </td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="73">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Recolectar información</td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="81">
                                     </td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="82">
                                     </td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="83">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Conservar el patrimonio cultural</td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="91">
                                     </td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="92">
                                     </td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="93">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Entretener</td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="101">
                                     </td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="102">
                                     </td>
-                                    <td>
-                                        <center>
-                                            <input type="radio" class="form-check-input" name="" id="">
-                                        </center>
+                                    <td class="center-2">
+                                        <input type="checkbox"  name="103">
                                     </td>
                                 </tr>
                             </tbody>
@@ -281,8 +222,10 @@
                 <br>
                 <center>
                     <a href="module1.1.7.php" class="btn btn-success">Anterior</a>
-                    <a href="module1.1.9.php" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente"  class="btn btn-success" type="submit">Siguiente</button>
+                    <!-- <a href="module1.1.9.php" class="btn btn-success">Siguiente</a> -->
                 </center>    
+                </form>
                 <?php
                     include '../../../../../functions/paginacion.php';
                     pag(3);

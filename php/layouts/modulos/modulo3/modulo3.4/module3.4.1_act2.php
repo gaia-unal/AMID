@@ -57,29 +57,30 @@ $newConn->connectionDB(); ?>
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 4: Videos musicales y su representación</h1>
+                <form action="../../../../queries/actividad.php?id_act=m3u4a2" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Teniendo en cuenta lo leído anteriormente, responda las siguientes preguntas:</h4>
                         <p class="card-text">
                             1. Presenta el video las creencias de un grupo en particular?
-                            <textarea name="preg1" id="p1-r" cols="100" rows="10"
-                                placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                            <textarea name="preg1" style="width: 90%;" rows="6" minlength="1" maxlength="300" onkeypress="return check(event)"
+                            required placeholder="Escriba su respuesta aquí" spellcheck="true" autofocus></textarea>
                             <br>2. Describa las representaciones de hombres y mujeres en el video.</h4>
-                            <textarea name="preg2" id="p2-r" cols="100" rows="10"
-                                placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                            <textarea name="preg2" style="width: 90%;" rows="6" minlength="1" maxlength="300" onkeypress="return check(event)"
+                            required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                             <br>3. ¿Se usa alguna clase de estereotipo? ¿Si es así, con qué propósito?</h4>
-                            <textarea name="preg3" id="p3-r" cols="100" rows="10"
-                                placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                            <textarea name="preg3" style="width: 90%;" rows="6" minlength="1" maxlength="300" onkeypress="return check(event)"
+                            required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                             <br>4. ¿Quién está en la posición de poder? ¿Quién no? ¿Quién se beneficia como
                             resultado?
-                            <textarea name="preg4" id="p4-r" cols="100" rows="10"
-                                placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                            <textarea name="preg4" style="width: 90%;" rows="6" minlength="1" maxlength="300" onkeypress="return check(event)"
+                            required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                             <br>5. ¿El video excluye a algún grupo de personas o a sus creencias?</h4>
-                            <textarea name="preg5" id="p5-r" cols="100" rows="10"
-                                placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                            <textarea name="preg5" style="width: 90%;" rows="6" minlength="1" maxlength="300" onkeypress="return check(event)"
+                            required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                             <br>6. ¿Qué definiciones de felicidad, éxito o moralidad están implícitas?</h4>
-                            <textarea name="preg6" id="p6-r" cols="100" rows="10"
-                                placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                            <textarea name="preg6" style="width: 90%;" rows="6" minlength="1" maxlength="300" onkeypress="return check(event)"
+                            required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                         </p>
                     </div>
                 </div>
@@ -87,8 +88,10 @@ $newConn->connectionDB(); ?>
                 <br>
                 <center>
                     <a href="module3.4.1_act.php" class="btn btn-success">Anterior</a>
-                    <a href="module3.4_eval.php" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <!-- <a href="module3.4_eval.php" class="btn btn-success">Siguiente</a> -->
                 </center>
+                </form>
                 <?php
                     include '../../../../functions/paginacion.php';
                     pag(2);

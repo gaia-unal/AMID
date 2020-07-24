@@ -58,30 +58,32 @@ $newConn->connectionDB(); ?>
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 1: Informes de noticias y el poder de las imágenes</h1>
+                <form action="../../../../queries/actividad.php?id_act=m3u1a2" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
                         <p class="card-text">
                             Identifique las imágenes que se utilizaron más a menudo y responda las siguientes preguntas.
                         </p>
                         <p>1. ¿Qué mensaje se transmite a través del uso de estas imágenes?</p>
-                        <textarea name="preg1" id="p1-r" cols="100" rows="10" placeholder="Escriba su respuesta aquí"
-                            spellcheck="true"></textarea>
+                        <textarea name="preg1" style="width: 90%;" rows="5" minlength="1" maxlength="300" onkeypress="return check(event)"
+                            required placeholder="Escriba su respuesta aquí" spellcheck="true" autofocus></textarea>
                         <p>2. ¿Qué historia cuentan las imágenes?</p>
-                        <textarea name="preg2" id="p2-r" cols="100" rows="10" placeholder="Escriba su respuesta aquí"
-                            spellcheck="true"></textarea>
+                        <textarea name="preg2" style="width: 90%;" rows="5" minlength="1" maxlength="300" onkeypress="return check(event)"
+                            required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                         <p>3. Evalúe el potencial que estas imágenes puedan tener para que se conviertan en
                             íconos. ¿Qué impacto podrían tener estas imágenes sobre las audiencias?</p>
-
-                        <textarea name="preg3" id="p3-r" cols="100" rows="10" placeholder="Escriba su respuesta aquí"
-                            spellcheck="true"></textarea>
+                        <textarea name="preg3" style="width: 90%;" rows="5" minlength="1" maxlength="300" onkeypress="return check(event)"
+                        required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                     </div>
                 </div>
                 <!-- /.card -->
                 <br>
                 <center>
                     <a href="module3.1.1_act.php" class="btn btn-success">Anterior</a>
-                    <a href="module3.1_eval.php" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <!-- <a href="module3.1_eval.php" class="btn btn-success">Siguiente</a> -->
                 </center>
+                </form>
                 <?php
                     include '../../../../functions/paginacion.php';
                     pag(2);

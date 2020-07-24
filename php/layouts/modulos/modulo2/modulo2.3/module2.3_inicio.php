@@ -36,7 +36,7 @@ $newConn->connectionDB(); ?>
                         <a href="#" class="list-group-item active">Unidad 3</a>
                         <ul class="list-group-item">
                             <a href="module2.3_temas.php" class="list-group-item">Temas</a>
-                            <a href="module2.3_act2.php" class="list-group-item">Actividad</a>
+                            <a href="module2.3_act.php" class="list-group-item">Actividad</a>
                             <a href="#" onclick="inactivoEva()" class="list-group-item">Evaluación</a>
                         </ul>
                         <a href="#" onclick="inactivo(3)" class="list-group-item inactive">Unidad 4</a>

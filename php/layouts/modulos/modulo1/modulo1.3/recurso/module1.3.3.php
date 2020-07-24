@@ -58,6 +58,7 @@
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 3: Interactuando con los medios y otros proveedores de información</h1>
+                <form action="../../../../../queries/actividad.php?id_act=m1u3a3" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Reflexión</h4>
@@ -67,51 +68,52 @@
                                     claves enumeradas anteriormente. ¿Qué es lo que puede aprender sobre la producción
                                     de medios e industrias, los mensajes que se transmiten, así como la audiencia
                                     seleccionada?</li>
-                                <textarea name="" id="" cols="100" rows="10"
-                                    placeholder="Escriba su respuesta aquí"></textarea> <br>
+                                <textarea name="preg1" style="width: 100%;" rows="5" minlength="1" maxlength="200"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"
+                                autofocus></textarea><br>
                                 Piense sobre una actividad personal o económica que a usted le gustaría emprender y
                                 responda:
                                 <li>¿Cuáles son mis necesidades de información?</li>
-                                <textarea name="" id="" cols="100" rows="10"
-                                    placeholder="Escriba su respuesta aquí"></textarea>
+                                <textarea name="preg2" style="width: 100%;" rows="5" minlength="1" maxlength="150"
+                                    required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>¿Cómo puedo identificar y definir esta necesidad?</li>
-                                <textarea name="" id="" cols="100" rows="10"
-                                    placeholder="Escriba su respuesta aquí"></textarea>
+                                <textarea name="preg3" style="width: 100%;" rows="5" minlength="1" maxlength="150"
+                                    required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>¿Acaso la información que yo necesito existe de la manera en que la necesito? ¿De lo
                                     contrario, que acción puedo tomar?</li>
-                                <textarea name="" id="" cols="100" rows="10"
-                                    placeholder="Escriba su respuesta aquí"></textarea>
+                                <textarea name="preg4" style="width: 100%;" rows="5" minlength="1" maxlength="150"
+                                    required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>¿Cómo entender, organizar y valorar la información hallada?</li>
-                                <textarea name="" id="" cols="100" rows="10"
-                                    placeholder="Escriba su respuesta aquí"></textarea>
+                                <textarea name="preg5" style="width: 100%;" rows="5" minlength="1" maxlength="200"
+                                    required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>¿Cómo puedo presentar esta información en formatos que se puedan utilizar?</li>
-                                <textarea name="" id="" cols="100" rows="10"
-                                    placeholder="Escriba su respuesta aquí"></textarea>
+                                <textarea name="preg6" style="width: 100%;" rows="5" minlength="1" maxlength="150"
+                                    required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>¿Cómo puedo preservar, almacenar y reutilizar, grabar y archivar la información?
                                 </li>
-                                <textarea name="" id="" cols="100" rows="10"
-                                    placeholder="Escriba su respuesta aquí"></textarea>
+                                <textarea name="preg7" style="width: 100%;" rows="5" minlength="1" maxlength="200"
+                                    required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 Liste actividades que usted hace durante el día, desde el momento en que se despierta en
                                 la mañana hasta cuando se acuesta por la noche. <br>
-                                1. <input type="text" name="medios" id="m1"><br><br>
-                                2. <input type="text" name="medios" id="m2"><br><br>
-                                3. <input type="text" name="medios" id="m3"><br><br>
-                                4. <input type="text" name="medios" id="m4"><br><br>
-                                5. <input type="text" name="medios" id="m5"><br><br>
+                                1. <input type="text" name="m1" id="m1" maxlength="40" required><br><br>
+                                2. <input type="text" name="m2" id="m2" maxlength="40" required><br><br>
+                                3. <input type="text" name="m3" id="m3" maxlength="40" required><br><br>
+                                4. <input type="text" name="m4" id="m4" maxlength="40" required><br><br>
+                                5. <input type="text" name="m5" id="m5" maxlength="40" required><br><br>
                                 Con base en la lista, responda:
                                 <li>¿Necesita información para participar en estas actividades?</li>
-                                <textarea name="" id="" cols="100" rows="10"
-                                    placeholder="Escriba su respuesta aquí"></textarea>
-                                <li>Seleccione una de las actividades listads, ¿qué información necesita para su
+                                <textarea name="preg8" style="width: 100%;" rows="5" minlength="1" maxlength="150"
+                                    required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                <li>Seleccione una de las actividades listadas, ¿qué información necesita para su
                                     realización? Por ejemplo, necesita saber a qué temperatura está afuera para poder
                                     vestirse; necesita saber la situación del tránsito antes de tomar el bus; necesita
                                     saber acerca de la economía si es que va a solicitar un préstamo.</li>
-                                <textarea name="" id="" cols="100" rows="10"
-                                    placeholder="Escriba su respuesta aquí"></textarea>
+                                <textarea name="preg9" style="width: 100%;" rows="5" minlength="1" maxlength="200"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>¿Qué tan importante es la información en su vida diaria? ¿Cuántas decisiones serían
                                     difíciles de tomar sin tener la información?</li>
-                                <textarea name="" id="" cols="100" rows="10"
-                                    placeholder="Escriba su respuesta aquí"></textarea>
+                                <textarea name="preg10" style="width: 100%;" rows="5" minlength="1" maxlength="150"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                             </ul>
                         </p>
                     </div>
@@ -120,8 +122,10 @@
                 <br>
                 <center>
                     <a href="module1.3.2.php" class="btn btn-success">Anterior</a>
-                    <a href="../module1.3_eval.php" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <!-- <a href="../module1.3_eval.php" class="btn btn-success">Siguiente</a> -->
                 </center>
+                </form>
                 <?php
                     include '../../../../../functions/paginacion.php';
                     pag(3);

@@ -58,6 +58,7 @@
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 1: Comprender la alfabetización mediática e informacional: una orientación</h1>
+                <form action="../../../../../queries/actividad.php?id_act=m1u1a3" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
                         <p class="card-text">
@@ -68,11 +69,11 @@
                             continuación una lista de los medios presentes en la vida de los estudiantes y profesores en
                             la actualidad. <br>
                             <center>
-                                <label class="space" for="m1">1.</label><input type="text" name="medios" id="m1" autofocus><br><br>
-                                <label class="space" for="m2">2.</label><input type="text" name="medios" id="m2"><br><br>
-                                <label class="space" for="m3">3.</label><input type="text" name="medios" id="m3"><br><br>
-                                <label class="space" for="m4">4.</label><input type="text" name="medios" id="m4"><br><br>
-                                <label class="space" for="m5">5.</label><input type="text" name="medios" id="m5"><br><br>
+                                <label class="space" for="m1">1.</label><input type="text" name="medios1" id="m1" autofocus required><br><br>
+                                <label class="space" for="m2">2.</label><input type="text" name="medios2" id="m2" required><br><br>
+                                <label class="space" for="m3">3.</label><input type="text" name="medios3" id="m3" required><br><br>
+                                <label class="space" for="m4">4.</label><input type="text" name="medios4" id="m4" required><br><br>
+                                <label class="space" for="m5">5.</label><input type="text" name="medios5" id="m5" required><br><br>
                             </center>
                             De los medios que se presentarán a continuación, determine cuáles son los roles y funciones
                             claves que estos desempeñan. Por ejemplo: Si el primer medio es un periódico cultural de su
@@ -92,97 +93,97 @@
                                 <tr >
                                     <td>Canal de información</td>
                                     <td class="center-2">
-                                        <input type="checkbox"  name="" id="">
+                                        <input type="checkbox"  name="11">
                                     </td>
                                     <td class="center-2">
-                                        <input type="checkbox"  name="" id="">
+                                        <input type="checkbox"  name="12">
                                     </td>
                                     <td class="center-2">
-                                        <input type="checkbox"  name="" id="">
+                                        <input type="checkbox"  name="13">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Facilitador debates informados</td>
                                     <td class="center-2">
-                                        <input type="checkbox"  name="" id="">
+                                        <input type="checkbox"  name="21">
                                     </td>
                                     <td class="center-2">
-                                        <input type="checkbox"  name="" id="">
+                                        <input type="checkbox"  name="22">
                                     </td>
                                     <td class="center-2">
-                                        <input type="checkbox"  name="" id="">
+                                        <input type="checkbox"  name="23">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Canal de conocimiento</td>
                                     <td class="center-2">
-                                        <input type="checkbox"  name="" id="">
+                                        <input type="checkbox"  name="31">
                                     </td>
                                     <td class="center-2">
-                                        <input type="checkbox"  name="" id="">
+                                        <input type="checkbox"  name="32">
                                     </td>
                                     <td class="center-2">
-                                        <input type="checkbox"  name="" id="">
+                                        <input type="checkbox"  name="33">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Autoconocimiento y construcción de sentido de comunidad</td>
                                     <td class="center-2">
-                                        <input type="checkbox"  name="" id="">
+                                        <input type="checkbox"  name="41">
                                     </td>
                                     <td class="center-2">
-                                        <input type="checkbox"  name="" id="">
+                                        <input type="checkbox"  name="42">
                                     </td>
                                     <td class="center-2">
-                                        <input type="checkbox"  name="" id="">
+                                        <input type="checkbox"  name="43">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Fiscalización del gobierno</td>
                                     <td class="center-2">
-                                        <input type="checkbox"  name="" id="">
+                                        <input type="checkbox"  name="51">
                                     </td>
                                     <td class="center-2">
-                                        <input type="checkbox"  name="" id="">
+                                        <input type="checkbox"  name="52">
                                     </td>
                                     <td class="center-2">
-                                        <input type="checkbox"  name="" id="">
+                                        <input type="checkbox"  name="53">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Facilitador de los procesos democráticos</td>
                                     <td class="center-2">
-                                        <input type="checkbox"  name="" id="">
+                                        <input type="checkbox"  name="61">
                                     </td>
                                     <td class="center-2">
-                                        <input type="checkbox"  name="" id="">
+                                        <input type="checkbox"  name="62">
                                     </td>
                                     <td class="center-2">
-                                        <input type="checkbox"  name="" id="">
+                                        <input type="checkbox"  name="63">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Vehículos para la expresión y la cohesión cultural</td>
                                     <td class="center-2">
-                                        <input type="checkbox"  name="" id="">
+                                        <input type="checkbox"  name="71">
                                     </td>
                                     <td class="center-2">
-                                        <input type="checkbox"  name="" id="">
+                                        <input type="checkbox"  name="72">
                                     </td>
                                     <td class="center-2">
-                                        <input type="checkbox"  name="" id="">
+                                        <input type="checkbox"  name="73">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Defensor o actor social de su propio derecho</td>
                                     <td class="center-2">
-                                        <input type="checkbox"  name="" id="">
+                                        <input type="checkbox"  name="81">
                                     </td>
                                     <td class="center-2">
-                                        <input type="checkbox"  name="" id="">
+                                        <input type="checkbox"  name="82">
                                     </td>
                                     <td class="center-2">
-                                        <input type="checkbox"  name="" id="">
+                                        <input type="checkbox"  name="83">
                                     </td>
                                 </tr>
                             </tbody>
@@ -193,8 +194,10 @@
                 <br>
                 <center>
                     <a href="module1.1.2.php" class="btn btn-success">Anterior</a>
-                    <a href="module1.1.4.php" class="btn btn-success">Siguiente</a>
+                    <!-- <a href="module1.1.4.php" class="btn btn-success">Siguiente</a> -->
+                    <button id="btn-siguiente"  class="btn btn-success" type="submit">Siguiente</button>
                 </center>
+                </form>
                 <?php
                     include '../../../../../functions/paginacion.php';
                     pag(3);

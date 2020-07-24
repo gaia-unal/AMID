@@ -58,6 +58,7 @@
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 1: Comprender la alfabetización mediática e informacional: una orientación</h1>
+                <form action="../../../../../queries/actividad.php?id_act=m1u1a6" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Reflexión</h4>
@@ -72,16 +73,16 @@
                             </center>
                             <ul>
                                 <li>¿Qué es <em>'Alfabetización'</em>?</li>
-                                <textarea name="preg1" id="p1-r" cols="100" rows="10"
+                                <textarea name="preg1" id="p1-r" cols="100" rows="5" minlength ="1" maxlength ="200" required
                                     placeholder="Escriba su respuesta aquí" spellcheck="true" autofocus></textarea>
                                 <li>¿Qué podría significar <em>'Alfabetización mediática'</em>?</li>
-                                <textarea name="preg1" id="p1-r" cols="100" rows="10"
+                                <textarea name="preg2" id="p1-r" cols="100" rows="5" minlength ="1" maxlength ="200" required
                                     placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>¿Qué podría significar <em>'Alfabetización informacional'</em>?</li>
-                                <textarea name="preg1" id="p1-r" cols="100" rows="10"
+                                <textarea name="preg3" id="p1-r" cols="100" rows="5" minlength ="1" maxlength ="200" required
                                     placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>¿Qué podría significar <em>'Alfabetización digital'</em>?</li>
-                                <textarea name="preg1" id="p1-r" cols="100" rows="10"
+                                <textarea name="preg4" id="p1-r" cols="100" rows="5" minlength ="1" maxlength ="200" required
                                     placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                             </ul>
                         </p>
@@ -91,8 +92,10 @@
                 <br>
                 <center>
                     <a href="module1.1.5.php" class="btn btn-success">Anterior</a>
-                    <a href="module1.1.7.php" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente"  class="btn btn-success" type="submit">Siguiente</button>
+                    <!-- <a href="module1.1.7.php" class="btn btn-success">Siguiente</a> -->
                 </center>
+                </form>
                 <?php
                     include '../../../../../functions/paginacion.php';
                     pag(3);

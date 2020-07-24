@@ -58,6 +58,7 @@
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 1: Comprender la alfabetización mediática e informacional: una orientación</h1>
+                <form action="../../../../../queries/actividad.php?id_act=m1u1a9" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Reflexión</h4>
@@ -73,18 +74,18 @@
                             <ul>
                                 <li>¿Quién decide qué libros deben ser incluidos en la bibliteca y cuáles deben ser
                                     excluidos?</li>
-                                <textarea name="respuesta" id="" cols="100" rows="10"
-                                    placeholder="Escriba su respuesta aquí" autofocus></textarea>
+                                <textarea name="preg1" style="width: 100%;" rows="5" minlength ="1" maxlength ="200" required
+                                    placeholder="Escriba su respuesta aquí"  spellcheck="true" autofocus></textarea>
                                 <li>¿Quién decide que recursos y con qué nivel deben ser asignados a las bibliotecas?
                                 </li>
-                                <textarea name="respuesta" id="" cols="100" rows="10"
-                                    placeholder="Escriba su respuesta aquí"></textarea>
-                                <li>¿Quién decie qué libros son más importantes que otros?</li>
-                                <textarea name="respuesta" id="" cols="100" rows="10"
-                                    placeholder="Escriba su respuesta aquí"></textarea>
+                                <textarea name="preg2" style="width: 100%;" rows="5" minlength ="1" maxlength ="200" required
+                                    placeholder="Escriba su respuesta aquí"  spellcheck="true"></textarea>
+                                <li>¿Quién decide qué libros son más importantes que otros?</li>
+                                <textarea name="preg3" style="width: 100%;" rows="5" minlength ="1" maxlength ="200" required
+                                    placeholder="Escriba su respuesta aquí"  spellcheck="true"></textarea>
                                 <li>¿Las bibliotecas cumplen sus propositos?</li>
-                                <textarea name="respuesta" id="" cols="100" rows="10"
-                                    placeholder="Escriba su respuesta aquí"></textarea>
+                                <textarea name="preg4" style="width: 100%;" rows="5" minlength ="1" maxlength ="200" required
+                                    placeholder="Escriba su respuesta aquí"  spellcheck="true"></textarea>
                             </ul>
                             Note que se podría organizar una actividad de inspección similar para sitios de
                             Internet, museos, archivos, etc.
@@ -95,8 +96,10 @@
                 <br>
                 <center>
                     <a href="module1.1.8.php" class="btn btn-success">Anterior</a>
-                    <a href="module1.1.10.php" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente"  class="btn btn-success" type="submit">Siguiente</button>
+                    <!-- <a href="module1.1.10.php" class="btn btn-success">Siguiente</a> -->
                 </center>
+                </form>
                 <?php
                     include '../../../../../functions/paginacion.php';
                     pag(3);

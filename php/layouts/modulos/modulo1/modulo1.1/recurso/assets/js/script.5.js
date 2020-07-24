@@ -276,32 +276,24 @@ function iniciarCanvas() {
             ) {
                 if (objeto.tipo == contenedores[i].tipo) {
                     objeto.valor = 1;
-<<<<<<< HEAD
-                    alert(" 1 perro");
+                    // alert("Good");
+                    console.log("Good");
                     break;
                 } else {
                     objeto.valor = 0;
-                    // alert(" 0 perro");
-=======
-                    break;
-                } else {
-                    objeto.valor = 0;
->>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
+                    // alert("Bad");
                     break;
                 }
             }
         }
     }
 
-<<<<<<< HEAD
     function restablecer(){
         for (var i = 0; i < objetos.length; i++) {
             objetos[i].valor = null;
         }
     }
 
-=======
->>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
     function completo() {
         var comple = true;
         var puntos = 0;
@@ -317,26 +309,28 @@ function iniciarCanvas() {
         if (comple) {
             if (puntos == 4) {
                 swal({
-                    title: "¡Correcto!",
+                    title: "¡Correcto! "+puntos+" de 4",
                     icon: "success",
                     button: "Continuar",
                 });
-<<<<<<< HEAD
+                printNote(puntos);
                 restablecer();
-=======
->>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
             } else {
                 swal({
+                    title: "Incorrecto "+puntos+" de 4",
                     icon: 'error',
-                    title: 'Oops...',
                     text: 'Te equivocaste pero puedes volver a intentarlo'
                 });
-<<<<<<< HEAD
                 restablecer();
-=======
->>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
                 iniciarCanvas();
             }
         }
     }
+}
+
+function printNote(puntos){
+    var nota=parseFloat(puntos*5/4);
+    if(nota<1){nota=1;}
+    document.getElementById("pointsCanvas").value=nota;
+    document.getElementById("pointsGood").value=puntos;
 }
