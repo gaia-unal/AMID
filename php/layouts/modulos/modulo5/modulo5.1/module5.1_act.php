@@ -59,6 +59,7 @@ $newConn->connectionDB(); ?>
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 1: Publicidad, ingresos y regulaciones</h1>
+                <form action="../../../../queries/actividad.php?id_act=m5u1a1" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Examine y evalúe el objetivo y eficacia de las regulaciones en la industria de la publicidad
@@ -70,8 +71,8 @@ $newConn->connectionDB(); ?>
                             grupos han creado estas regulaciones. <br> Identifique dónde se colocan estás regulaciones
                             para los ciudadanos que necesitan tener acceso a esta información. Identifique qué
                             individuos o grupos han creado estas regulaciones.
-                            <textarea name="preg1" id="p1-r" cols="80" rows="5" placeholder="Escriba su respuesta aquí"
-                                spellcheck="true"></textarea>
+                            <textarea name="preg1" style="width: 80%;" rows="6" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" autofocus></textarea>
                         </p>
                         <h4>Aplique las regulaciones existentes a los ejemplos actuales de publicidad</h4>
                         <p class="card-text">
@@ -79,8 +80,8 @@ $newConn->connectionDB(); ?>
                             En instancias en las cuales la publicidad viola las regulaciones, investigue qué recursos
                             tienen disponibles los consumidores. <br> Investigue qué recursos tienen disponibles los
                             consumidores.
-                            <textarea name="preg2" id="p2-r" cols="100" rows="10"
-                                placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                            <textarea name="preg2" style="width: 90%;" rows="6" minlength="1" maxlength="200" onkeypress="return check(event)"
+                            required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                         </p>
                         <h4>Investigar la publicidad como una fuente importante de ingresos para la televisión</h4>
                         <p class="card-text">
@@ -91,14 +92,14 @@ $newConn->connectionDB(); ?>
                                     específicos. También anote cualquier anuncio o colocación de productos que ocurra
                                     durante los programas en si. Evalúe la eficacia de las estrategias de publicidad que
                                     se utilizan en este marco de tiempo para llegar a las audiencias seleccionadas</li>
-                                <textarea name="preg3" id="p3-r" cols="80" rows="5"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                <textarea name="preg3" style="width: 80%;" rows="6" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                                 <li>¿Dado que la publicidad es la principal fuente de ingresos de los medios: se debería
                                     sacrificar la libertad de expresión, la libertad de prensa y la libertad de acceso a
                                     la información para satisfacer a los publicistas, grandes compañías o al gobierno?
                                 </li>
-                                <textarea name="preg4" id="p4-r" cols="100" rows="10"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                <textarea name="preg4" style="width: 90%;" rows="6" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                             </ul>
                         </p>
                     </div>
@@ -107,8 +108,10 @@ $newConn->connectionDB(); ?>
                 <br>
                 <center>
                     <a href="module5.1_temas.php" class="btn btn-success">Anterior</a>
-                    <a href="module5.1_eval.php" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <!-- <a href="module5.1_eval.php" class="btn btn-success">Siguiente</a> -->
                 </center>
+                </form>
                 <?php
                     include '../../../../functions/paginacion.php';
                     pag(2);

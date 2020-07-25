@@ -60,6 +60,7 @@ $newConn->connectionDB(); ?>
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 3: Publicidad: El proceso creativo</h1>
+                <form action="../../../../queries/actividad.php?id_act=m5u3a1" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>La publicidad y el auspicio – ubicación, mensajes y audiencia</h4>
@@ -69,16 +70,16 @@ $newConn->connectionDB(); ?>
                             por qué los negocios e instituciones pueden escoger tener sus nombres, productos o logos
                             expuestos ahí. Explique en qué formas estos patrocinios/promociones difieren de la
                             publicidad “tradicional. <br>
-                            <textarea name="preg1" id="p1-r" cols="80" rows="5" placeholder="Escriba su respuesta aquí"
-                                spellcheck="true"></textarea> <br>
+                            <textarea name="preg1" style="width: 80%;" rows="6" minlength="1" maxlength="300" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" autofocus></textarea><br/>
                             Haga una inspección de una colección de revistas, vea anuncios de televisión y visite un
                             número de sitos en la red de compañías importantes. Describa las estrategias de publicidad
                             que se usan en los ejemplos actuales. Elija un número de anuncios para examinar de cerca.
                             Describa la “personalidad” del producto que se presenta en cada anuncio e identifique las
                             emociones que el publicista trata de alcanzar. <br> ¿Qué promesas o soluciones ofrece el
                             anuncio o el ASP? ¿Cómo son de realistas? ¿Qué visiones de alegría o éxito comunican? <br>
-                            <textarea name="preg2" id="p2-r" cols="80" rows="5" placeholder="Escriba su respuesta aquí"
-                                spellcheck="true"></textarea> <br>
+                            <textarea name="preg2" style="width: 80%;" rows="6" minlength="1" maxlength="300" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea> <br>
                             Identifique la información, los mensajes y los valores que se transmiten en cada anuncio.
                             Hable sobre la necesidad de una clara distinción entre el contenido editorial y
                             publicitario. <br> ¿Qué tipo de afirmaciones se hacen en estos anuncios? ¿Quizá algún tipo
@@ -86,8 +87,8 @@ $newConn->connectionDB(); ?>
                             haría usted a la audiencia de este anuncio? En otras palabras, ¿aceptaría usted la
                             información que se presenta en este anuncio? ¿Por qué o por qué no? ¿Haría usted algún
                             cambio para que la información o el mensaje fueran más exactos o completos? <br>
-                            <textarea name="preg3" id="p3-r" cols="80" rows="5" placeholder="Escriba su respuesta aquí"
-                                spellcheck="true"></textarea> <br>
+                            <textarea name="preg3" style="width: 80%;" rows="6" minlength="1" maxlength="300" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" autofocus></textarea><br/>
                             La colocación de un producto quiere decir el poner un producto comercial prominente en un
                             programa de radio o televisión en particular o en un libro, y también cada vez más en
                             Internet, sin identificarlo como publicidad, para satisfacer al fabricante del producto que
@@ -100,8 +101,8 @@ $newConn->connectionDB(); ?>
                             en relación al contexto? ¿Qué mensajes se transmiten a través del producto en sí, así como
                             en el contexto en el que está? ¿Acaso un contexto diferente o colocación cambiaría la imagen
                             del producto y su mensaje? <br>
-                            <textarea name="preg4" id="p4-r" cols="80" rows="5" placeholder="Escriba su respuesta aquí"
-                                spellcheck="true"></textarea>
+                            <textarea name="preg4" style="width: 80%;" rows="6" minlength="1" maxlength="300" onkeypress="return check(event)"
+                            required placeholder="Escriba su respuesta aquí" spellcheck="true" autofocus></textarea><br/>
                         </p>
                     </div>
                 </div>
@@ -109,8 +110,10 @@ $newConn->connectionDB(); ?>
                 <br>
                 <center>
                     <a href="module5.3_temas.php" class="btn btn-success">Anterior</a>
-                    <a href="module5.3_eval.php" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <!-- <a href="module5.3_eval.php" class="btn btn-success">Siguiente</a> -->
                 </center>
+                </form>
                 <?php
                     include '../../../../functions/paginacion.php';
                     pag(2);

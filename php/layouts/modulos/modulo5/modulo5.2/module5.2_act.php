@@ -59,6 +59,7 @@ $newConn->connectionDB(); ?>
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 2: Anuncios de bien público (ABP)</h1>
+                <form action="../../../../queries/actividad.php?id_act=m5u2a1" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
                         <p class="card-text">
@@ -111,15 +112,15 @@ $newConn->connectionDB(); ?>
                                 <li>Explique los efectos que se crean a través del uso de la toma de cámara y los
                                     ángulos. Explique cómo se puede utilizar el sonido para transmitir un significado
                                 </li>
-                                <textarea name="preg1" id="p1-r" cols="80" rows="5"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                <textarea name="preg1" style="width: 80%;" rows="6" minlength="1" maxlength="300" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                                 <li>Desarrolle un plan original de un ASP para un tema social o cultural importante.
                                     Haga una lluvia de ideas de los posibles temas y utilícelo como la base para un ASP.
                                     Hable sobre el propósito y la audiencia. Esta discusión a su vez, ayudará a dar
                                     forma al mensaje que se quiere transmitir. Tome en cuenta la información importante
                                     y el mensaje principal que tienen que transmitir</li>
-                                <textarea name="preg2" id="p2-r" cols="80" rows="5"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                <textarea name="preg2" style="width: 80%;" rows="6" minlength="1" maxlength="300" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                             </ol>
                             Ahora tome en cuenta a quién usted quiere llegar y cómo. La información y el mensaje deben
                             estar dirigidos a una audiencia específica En un papel, describa un concepto y desarrolle
@@ -129,8 +130,8 @@ $newConn->connectionDB(); ?>
                             <ol>
                                 <li value="3">Haga un diseño preliminar de un ASP, incluyendo una oración que describa
                                     el concepto, las estrategias técnicas y creativas y la audiencia.</li>
-                                <textarea name="preg3" id="p3-r" cols="80" rows="5"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                <textarea name="preg3" style="width: 80%;" rows="6" minlength="1" maxlength="300" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                             </ol>
                         </p>
                     </div>
@@ -139,8 +140,10 @@ $newConn->connectionDB(); ?>
                 <br>
                 <center>
                     <a href="module5.2_temas.php" class="btn btn-success">Anterior</a>
-                    <a href="module5.2_eval.php" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <!-- <a href="module5.2_eval.php" class="btn btn-success">Siguiente</a> -->
                 </center>
+                </form>
                 <?php
                     include '../../../../functions/paginacion.php';
                     pag(2);

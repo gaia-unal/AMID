@@ -38,10 +38,10 @@ $newConn->connectionDB(); ?>
                     <ul class="list-group-item">
                         <a href="../../modulo4.1/module4.1_inicio.php" class="list-group-item">Unidad 1</a>
                         <a href="../../modulo4.2/module4.2_inicio.php" class="list-group-item">Unidad 2</a>
-                        <a href="../module4.3_inicio.php" class="list-group-item">Unidad 3</a>
+                        <a href="../module4.3_inicio.php" class="list-group-item active">Unidad 3</a>
                         <ul class="list-group-item">
                             <a href="../module4.3_temas.php" class="list-group-item">Temas</a>
-                            <a href="#" class="list-group-item">Actividad</a>
+                            <a href="#" class="list-group-item active">Actividad</a>
                             <a href="../module4.3_eval.php" class="list-group-item">Evaluación</a>
                         </ul>
                         <a href="#" onclick="inactivo(3)" class="list-group-item inactive">Unidad 4</a>

@@ -58,6 +58,7 @@ $newConn->connectionDB(); ?>
             <div class="col-lg-9">
                 <h1><br>Unidad 3: Usos de las Herramientas Interactivas de Multimedia, incluyendo los Juegos Digitales en las
                     Aulas</h1>
+                    <form action="../../../../queries/actividad.php?id_act=m6u3a1" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
                         <p class="card-text">
@@ -92,19 +93,12 @@ $newConn->connectionDB(); ?>
                                         target="_blank">Link</a> </li>
                             </ul>
                         </p>
-<<<<<<< HEAD
                         <p >
                             <h4> Objetivo:</h4>
                             Identificar el valor de las herramientas interactivas de multimedia, incluyendo sitios
                             interactivos en la red, presentaciones, discusiones en línea, blogs, Wiki, wikilibros,
                             libros electrónicos, podcasting, videocasting, vodcasting y juegos de enseñanza y
                             aprendizaje. </p>
-=======
-                        <h4>Identificar el valor de las herramientas interactivas de multimedia, incluyendo sitios
-                            interactivos en la red, presentaciones, discusiones en línea, blogs, Wiki, wikilibros,
-                            libros electrónicos, podcasting, videocasting, vodcasting y juegos de enseñanza y
-                            aprendizaje. </h4>
->>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
                         <p class="card-text">
                             <strong>Herramientas interactivas de multimedia:</strong> Piense en la materia que usted
                             enseña. Utilizando un motor de búsqueda, identifique y haga una lista de las herramientas
@@ -114,39 +108,35 @@ $newConn->connectionDB(); ?>
                             para sus necesidades específicas.
                             <ul>
                                 <li>¿Qué criterio utilizó?</li>
-                                <textarea name="preg1" id="p1-r" cols="100" rows="10"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                <textarea name="preg1" style="width: 90%;" rows="8" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea><br/>
                             </ul>
                             Investigue acerca de los criterios utilizados por expertos en el uso de herramientas
                             interactivas de multimedia en la educación. Ahora compare su criterio con aquel de los
                             expertos.
                             <ul>
                                 <li>¿Cuáles son sus observaciones?</li>
-                                <textarea name="preg2" id="p2-r" cols="100" rows="10"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                <textarea name="preg2" style="width: 90%;" rows="8" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea><br/>
                                 <li>¿Está de acuerdo con el criterio de los expertos?</li>
-                                <textarea name="preg3" id="p3-r" cols="100" rows="10"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                <textarea name="preg3" style="width: 90%;" rows="8" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea><br/>
                                 <li>En su lista de herramientas interactivas de multimedia, ¿puede identificar
                                     herramientas que podrían alterar o facilitar de una manera importante la cooperación
                                     y discusión en el proceso de enseñanza-aprendizaje? ¿Por qué escogió esas
                                     herramientas?</li>
-                                <textarea name="preg4" id="p4-r" cols="100" rows="10"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                <textarea name="preg4" style="width: 90%;" rows="8" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea><br/>
                                 <li>¿Cómo cree usted que las tecnologías de multimedia podrían permitir a los
                                     estudiantes y profesores interactuar con la información de una nueva forma,
                                     cambiar el contenido, y crear su propio conocimiento?</li>
-                                <textarea name="preg5" id="p5-r" cols="100" rows="10"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                <textarea name="preg5" style="width: 90%;" rows="8" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea><br/>
                             </ul>
                         </p>
                         <p class="card-text">
-<<<<<<< HEAD
                             <p>
                                  <h4> Objetivos:</h4>
-=======
-                            <h4>
->>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
                                 <ol>
                                     <li>Desarrollar habilidades sociales, intelectuales y espacio-temporales utilizando
                                         herramientas interactivas de multimedia, especialmente juegos</li>
@@ -156,19 +146,15 @@ $newConn->connectionDB(); ?>
                                         tecnología para exponer conceptos de temas académicos (por Ej. matemáticas,
                                         ciencias, estudios sociales, etc.)</li>
                                 </ol>
-<<<<<<< HEAD
                             </p>
-=======
-                            </h4>
->>>>>>> 2ef1147925e598054693ff02b58bf2938d33532c
                             <ul>
                                 <li>¿De qué forma un juego de computadora le puede ayudar a pensar creativamente sobre
                                     temas globales?</li>
-                                <textarea name="preg1" id="p1-r" cols="100" rows="10"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                <textarea name="preg6" style="width: 90%;" rows="8" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea><br/>
                                 <li>¿Cuáles son los resultados de aprendizaje con estos juegos?</li>
-                                <textarea name="preg1" id="p1-r" cols="100" rows="10"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                <textarea name="preg7" style="width: 90%;" rows="8" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea><br/>
                             </ul>
                         </p>
                     </div>
@@ -177,8 +163,10 @@ $newConn->connectionDB(); ?>
                 <br>
                 <center>
                     <a href="module6.3_temas.php" class="btn btn-success">Anterior</a>
-                    <a href="module6.3_eval.php" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <!-- <a href="module6.3_eval.php" class="btn btn-success">Siguiente</a> -->
                 </center>
+                </form>
                 <?php
                     include '../../../../functions/paginacion.php';
                     pag(2);

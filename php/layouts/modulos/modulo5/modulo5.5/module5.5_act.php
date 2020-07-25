@@ -60,6 +60,7 @@ $newConn->connectionDB(); ?>
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 5: Publicidad transnacional y "marcas super"</h1>
+                <form action="../../../../queries/actividad.php?id_act=m5u5a1" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
                         <p class="card-text">
@@ -78,8 +79,8 @@ $newConn->connectionDB(); ?>
                             Identifique las diversas estrategias que utilizan las principales compañías para promover
                             sus productos y “vender” una cultura. Hable lo que está implícito – directa o indirectamente
                             – sobre la cultura tradicional vs. la contemporánea <br>
-                            <textarea name="preg1" id="p1-r" cols="80" rows="5" placeholder="Escriba su respuesta aquí"
-                                spellcheck="true"></textarea>
+                            <textarea name="preg1" style="width: 80%;" rows="6" minlength="1" maxlength="300" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea><br/>
                         </p>
                         <h4>Estrategias que se usan para crear las súper marcas</h4>
                         <p class="card-text">
@@ -91,8 +92,8 @@ $newConn->connectionDB(); ?>
                             Explore hasta qué punto es posible que una persona entienda el anuncio, incluso aún si él o
                             ella no entienden el idioma que se usa. (tome en cuenta lo que puede hacer que un anuncio y
                             sus imágenes sean “universales”) <br>
-                            <textarea name="preg2" id="p2-r" cols="80" rows="5" placeholder="Escriba su respuesta aquí"
-                                spellcheck="true"></textarea>
+                            <textarea name="preg2" style="width: 80%;" rows="6" minlength="1" maxlength="300" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea><br/>
                         </p>
                         <h4>Temas claves y mensajes que se transmiten a través de las campañas globales de publicidad
                         </h4>
@@ -106,21 +107,23 @@ $newConn->connectionDB(); ?>
                             Muchos críticos dicen que los anuncios transnacionales están centrados en
                             “vender” una cultura. Analice las maneras en las cuales se lleva a cabo esta “venta”.
                             Identifique los mensajes o los valores que se transmiten y escríbalos a continuación: <br>
-                            <textarea name="preg3" id="p3-r" cols="80" rows="5" placeholder="Escriba su respuesta aquí"
-                                spellcheck="true"></textarea> <br>
+                            <textarea name="preg3" style="width: 80%;" rows="6" minlength="1" maxlength="300" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea><br/>
                             Investigue los ejemplos actuales de publicidad que ilustran el poderoso papel de la
                             tecnología para comunicar y difundir el mensaje del anunciante. <br>
-                            Explique a continuación cómo la tecnología se utiliza para tal fin
-                            <textarea name="preg4" id="p4-r" cols="80" rows="5" placeholder="Escriba su respuesta aquí"
-                                spellcheck="true"></textarea>
+                            Explique a continuación cómo la tecnología se utiliza para tal fin <br/>
+                            <textarea name="preg4" style="width: 80%;" rows="6" minlength="1" maxlength="300" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea><br/>
                     </div>
                 </div>
                 <!-- /.card -->
                 <br>
                 <center>
                     <a href="module5.5_temas.php" class="btn btn-success">Anterior</a>
-                    <a href="module5.5_eval.php" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <!-- <a href="module5.5_eval.php" class="btn btn-success">Siguiente</a> -->
                 </center>
+                </form>
                 <?php
                     include '../../../../functions/paginacion.php';
                     pag(2);

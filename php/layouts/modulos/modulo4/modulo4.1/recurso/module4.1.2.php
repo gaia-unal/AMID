@@ -59,57 +59,69 @@ $newConn->connectionDB(); ?>
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 1: Lectura de medios y textos de información</h1>
+                <form action="../../../../../queries/actividad.php?id_act=m4u1a2" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
                         A continuación escriba una definición de cada palabra listada, dando un ejemplo cercano a su
                         contexto
                         <ul>
                             <li>Código</li>
-                            <textarea name="" id="" cols="80" rows="5"></textarea>
+                            <textarea name="preg1" style="width: 90%;" rows="6" minlength="1" maxlength="200" onkeypress="return check(event)"
+                            required placeholder="Escriba su respuesta aquí" spellcheck="true" autofocus></textarea>
                             <li>Gesto</li>
-                            <textarea name="" id="" cols="80" rows="5"></textarea>
+                            <textarea name="preg2" style="width: 90%;" rows="6" minlength="1" maxlength="200" onkeypress="return check(event)"
+                            required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                             <li>Lenguaje</li>
-                            <textarea name="" id="" cols="80" rows="5"></textarea>
+                            <textarea name="preg3" style="width: 90%;" rows="6" minlength="1" maxlength="200" onkeypress="return check(event)"
+                            required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                             <li>Semiótica</li>
-                            <textarea name="" id="" cols="80" rows="5"></textarea>
+                            <textarea name="preg4" style="width: 90%;" rows="6" minlength="1" maxlength="200" onkeypress="return check(event)"
+                            required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                             <li>Símbolo</li>
-                            <textarea name="" id="" cols="80" rows="5"></textarea>
+                            <textarea name="preg5" style="width: 90%;" rows="6" minlength="1" maxlength="200" onkeypress="return check(event)"
+                            required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                             <li>Paralingüistica</li>
-                            <textarea name="" id="" cols="80" rows="5"></textarea>
+                            <textarea name="preg6" style="width: 90%;" rows="6" minlength="1" maxlength="200" onkeypress="return check(event)"
+                            required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                             <li>Proxémica</li>
-                            <textarea name="" id="" cols="80" rows="5"></textarea>
+                            <textarea name="preg7" style="width: 90%;" rows="6" minlength="1" maxlength="200" onkeypress="return check(event)"
+                            required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                             <li>¿Cuáles son las 3 formas de comunicación que considera usted que los estudiantes
-                                utilizan más?</li>
-                            1. <input type="text" name="" id=""> &nbsp &nbsp
-                            2. <input type="text" name="" id=""> &nbsp &nbsp
-                            3. <input type="text" name="" id="">
+                                utilizan más?</li> <br/>
+                            <label>1. <input type="text" name="f1" required minlength="1" maxlength="50" onkeypress="return check(event)"></label> 
+                            <label>2. <input type="text" name="f2" required minlength="1" maxlength="50" onkeypress="return check(event)"></label> 
+                            <label>3. <input type="text" name="f3" required minlength="1" maxlength="50" onkeypress="return check(event)"></label> 
                         </ul>
                         <p class="card-text">
                             Seleccione aquellos elementos que <strong>no</strong> hacen parte de las formas de
                             comunicación virtual:
                             <ol>
-                                <li><input type="checkbox" name="opc1" id="opc1" onclick="incorrecto(0)">Redes sociales
-                                </li>
-                                <li><input type="checkbox" name="opc2" id="opc2" onclick="correcto(1)">Foros</li>
-                                <li><input type="checkbox" name="opc3" id="opc3" onclick="incorrecto(2)">Blogs</li>
-                                <li><input type="checkbox" name="opc4" id="opc4" onclick="incorrecto(3)">Correo Electrónico
-                                </li>
-                                <li><input type="checkbox" name="opc5" id="opc5" onclick="correcto(4)">Oral</li>
-                                <li><input type="checkbox" name="opc6" id="opc6" onclick="correcto(5)">Escrita</li>
-                                <li><input type="checkbox" name="opc7" id="opc7" onclick="incorrecto(6)">Juegos en línea
-                                </li>
-                                <li><input type="checkbox" name="opc8" id="opc8" onclick="correcto(7)">Gráfica</li>
+                                <label><li><input type="checkbox" name="opc1" id="opc1">Redes sociales
+                                </li></label> <br/>
+                                <label><li><input type="checkbox" name="opc2" id="opc2">Foros</li></label><br/>
+                                <label><li><input type="checkbox" name="opc3" id="opc3">Blogs</li></label><br/>
+                                <label><li><input type="checkbox" name="opc4" id="opc4">Correo Electrónico
+                                </li></label><br/>
+                                <label><li><input type="checkbox" name="opc5" id="opc5">Oral</li></label><br/>
+                                <label><li><input type="checkbox" name="opc6" id="opc6">Escrita</li></label><br/>
+                                <label><li><input type="checkbox" name="opc7" id="opc7">Juegos en línea
+                                </li></label><br/>
+                                <label><li><input type="checkbox" name="opc8" id="opc8">Gráfica</li></label><br/>
                             </ol>
-                            <button class="btn btn-outline-success" onclick="term()">Validar</button>
+                            <a class="btn btn-outline-success" onclick="term()">Validar</a>
                         </p>
+                        <input type="text" class="sr-only" id="pointsNota" name="pointsNota" value="1">
+                        <input type="text" class="sr-only" id="pointsGood" name="pointsGood" value="0">
                     </div>
                 </div>
                 <!-- /.card -->
                 <br>
                 <center>
                     <a href="module4.1.1.php" class="btn btn-success">Anterior</a>
-                    <a href="module4.1.3.php" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <!-- <a href="module4.1.3.php" class="btn btn-success">Siguiente</a> -->
                 </center>
+                </form>
                 <?php
                     include '../../../../../functions/paginacion.php';
                     pag(3);

@@ -57,6 +57,7 @@ $newConn->connectionDB(); ?>
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 2: Uso de las Nuevas Tecnologías Mediáticas en la Sociedad – Comunicación de Masas y Digital</h1>
+                <form action="../../../../queries/actividad.php?id_act=m6u2a1" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Describir el uso de una o dos formas de nuevos medios para compartir conocimientos e
@@ -84,8 +85,8 @@ $newConn->connectionDB(); ?>
                             <ol><br>
                                 <li>Según el texto anterior, ¿Qué tipo de proyecto de e-gobernanza usted
                                     recomendaría para su gobierno local? ¿Por qué?</li>
-                                <textarea name="preg1" id="p1-r" cols="100" rows="10"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                <textarea name="preg1" style="width: 90%;" rows="8" minlength="1" maxlength="300" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"  ></textarea><br/>
                             </ol>
                         </p>
                         <h4>Evaluar cómo se usan los nuevos medios en la comunicación de masas y el impacto en las
@@ -97,16 +98,16 @@ $newConn->connectionDB(); ?>
                             <ol>
                                 <li value="2">¿Cree usted que las mujeres tienen igual acceso a las tecnologías que los
                                     hombres?</li>
-                                <textarea name="preg1" id="p1-r" cols="100" rows="10"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                <textarea name="preg2" style="width: 90%;" rows="8" minlength="1" maxlength="300" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"  ></textarea><br/>
                                 <li>¿Hasta qué punto cree que las personas con discapacidades o personas que viven en
                                     comunidades remotas tienen acceso?</li>
-                                <textarea name="preg1" id="p1-r" cols="100" rows="10"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                <textarea name="preg3" style="width: 90%;" rows="8" minlength="1" maxlength="300" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"  ></textarea><br/>
                                 <li>¿Qué se debería hacer si ciertos grupos están marginalizados al acceso a las nuevas
                                     tecnologías?</li>
-                                <textarea name="preg1" id="p1-r" cols="100" rows="10"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                <textarea name="preg4" style="width: 90%;" rows="8" minlength="1" maxlength="300" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"  ></textarea><br/>
                             </ol>
                         </p>
                         <h4>Analizar los efectos de la comunicación digital en la vida social y política de la sociedad
@@ -115,12 +116,12 @@ $newConn->connectionDB(); ?>
                             <ol>
                                 <li value="5">¿Cómo cree usted que la tecnología de los teléfonos móviles ha ayudado a
                                     cerrar la brecha de comunicación entre los ricos y los pobres en la sociedad?</li>
-                                <textarea name="preg1" id="p1-r" cols="100" rows="10"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                <textarea name="preg5" style="width: 90%;" rows="8" minlength="1" maxlength="300" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"  ></textarea><br/>
                                 <li>¿Cuáles son los riesgos y desafíos que los profesores podrían encontrar al usar las
                                     redes sociales para propósitos educativos?</li>
-                                <textarea name="preg1" id="p1-r" cols="100" rows="10"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                <textarea name="preg6" style="width: 90%;" rows="8" minlength="1" maxlength="300" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"  ></textarea><br/>
                             </ol>
                         </p>
                     </div>
@@ -129,8 +130,10 @@ $newConn->connectionDB(); ?>
                 <br>
                 <center>
                     <a href="module6.2_temas.php" class="btn btn-success">Anterior</a>
-                    <a href="module6.2_eval.php" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <!-- <a href="module6.2_eval.php" class="btn btn-success">Siguiente</a> -->
                 </center>
+                </form>
                 <?php
                     include '../../../../functions/paginacion.php';
                     pag(2);

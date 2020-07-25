@@ -59,6 +59,7 @@ $newConn->connectionDB(); ?>
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 4: Planos de cámara y ángulos, transmitiendo un mensaje</h1>
+                <form action="../../../../../queries/actividad.php?id_act=m4u4a1" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Textos mediáticos e información</h4>
@@ -70,8 +71,8 @@ $newConn->connectionDB(); ?>
                             <ul>
                                 <li>Describa el significado que se transmite a través de los “lenguajes” de la cámara
                                     que se utilizan en cada texto</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg1" style="width: 90%;" rows="6" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" autofocus></textarea>
                             </ul>
                         </p>
                         <h4>Imagen o fotografía</h4>
@@ -80,18 +81,18 @@ $newConn->connectionDB(); ?>
                             televisión o un noticiero de televisión. Examínelo detenidamente.
                             <ul>
                                 <li>Describa cómo se coloca al sujeto en la foto o en el metraje</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg2" style="width: 90%;" rows="6" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>¿Cuál es la impresión que se transmite como resultado?</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg3" style="width: 90%;" rows="6" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>Describa cuál es la posición de la audiencia en relación al sujeto.</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg4" style="width: 90%;" rows="6" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>Si usted cambiara o sustituyera un ángulo distinto de la cámara o disparo, ¿cómo
                                     cambiaría el significado que se transmite a través de la foto o del metraje?</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg5" style="width: 90%;" rows="6" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                             </ul>
                         </p>
                         <h4>Comunidad</h4>
@@ -101,15 +102,15 @@ $newConn->connectionDB(); ?>
                             <ul>
                                 <li>¿Qué tipo de ángulos de cámara o qué tipos de disparos usted escogería para su
                                     cobertura y por qué? </li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg6" style="width: 90%;" rows="6" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>Desarrolle una pequeña lista de tomas para cubrir este evento</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg7" style="width: 90%;" rows="6" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>¿De qué forma este trabajo de cámara le ayudará a transmitir la información
                                     necesaria y la impresión que desea sobre el evento?</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg8" style="width: 90%;" rows="6" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                             </ul>
                         </p>
                     </div>
@@ -118,8 +119,10 @@ $newConn->connectionDB(); ?>
                 <br>
                 <center>
                     <a href="../module4.4_temas.php" class="btn btn-success">Anterior</a>
-                    <a href="../module4.4_eval.php" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <!-- <a href="../module4.4_eval.php" class="btn btn-success">Siguiente</a> -->
                 </center>
+                </form>
                 <?php
                     include '../../../../../functions/paginacion.php';
                     pag(3);
