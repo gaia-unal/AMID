@@ -208,95 +208,151 @@
             actividad($id_act,$nota,$answer);
             header ("Location: $ruta/modulo3/modulo3.5/module3.5_eval.php");
         break;
-        case "m2u2a1":
-            // $nota= $_POST[''];
-            // $answer=;
-            // actividad($id_act,$nota,$answer);
-            // header ("Location: $ruta/modulo1/modulo1.1/recurso/module1.1.3.php");
+        case "m4u1a2":
+            $nota="No Aplica";
+            $answer='{"Actividad 1":{"Pregunta 1": "'.$_POST['preg1'].'",
+            "Pregunta 2": "'.$_POST['preg2'].'",
+            "Pregunta 3": "'.$_POST['preg3'].'",
+            "Pregunta 4": "'.$_POST['preg4'].'",
+            "Pregunta 5": "'.$_POST['preg5'].'",
+            "Pregunta 6": "'.$_POST['preg6'].'",
+            "Pregunta 7": "'.$_POST['preg7'].'"},
+            "Actividad 2":{"fComuni1":"'.$_POST['f1'].'",
+                "fComuni2":"'.$_POST['f2'].'",
+                "fComuni3":"'.$_POST['f3'].'"},
+            "Actividad 3":"'.$_POST['pointsGood'].' correctos de 8"}';
+            actividad($id_act,$nota,$answer);
+            header ("Location: $ruta/modulo4/modulo4.1/recurso/module4.1.3.php");
         break;
-        case "m2u3a1":
-            // $nota= $_POST[''];
-            // $answer=;
-            // actividad($id_act,$nota,$answer);
-            // header ("Location: $ruta/modulo1/modulo1.1/recurso/module1.1.3.php");
+        case "m4u1a5":
+            $nota="No Aplica";
+            $answer='{"Actividad 1":"'.$_POST['pointsGood'].' correctos de 10",
+                "Actividad 2":{"Pregunta 1": "'.$_POST['preg1'].'",
+                "Pregunta 2": "'.$_POST['preg2'].'"}}';
+            actividad($id_act,$nota,$answer);
+            header ("Location: $ruta/modulo4/modulo4.1/recurso/module4.1.6.php");
         break;
-        case "m2u4a1":
-            // $nota= $_POST[''];
-            // $answer=;
-            // actividad($id_act,$nota,$answer);
-            // header ("Location: $ruta/modulo1/modulo1.1/recurso/module1.1.3.php");
+        case "m4u1a7":
+            $nota="No Aplica";
+            $answer='{"Actividad 1":{"Pregunta 1": "'.$_POST['preg1'].'",
+            "Pregunta 2": "'.$_POST['preg2'].'"}}';
+            actividad($id_act,$nota,$answer);
+            header ("Location: $ruta/modulo4/modulo4.1/module4.1_eval.php");
         break;
-        case "m2u1a1":
-            // $nota= $_POST[''];
-            // $answer=;
-            // actividad($id_act,$nota,$answer);
-            // header ("Location: $ruta/modulo1/modulo1.1/recurso/module1.1.3.php");
+        case "m4u2a2":
+            $nota="No Aplica";
+            $answer='{"Actividad 1":{"Pregunta 1": "'.$_POST['preg1'].'",
+            "Pregunta 2": "'.$_POST['preg2'].'",
+            "Pregunta 3": "'.$_POST['preg3'].'"}}';
+            actividad($id_act,$nota,$answer);
+            header ("Location: $ruta/modulo4/modulo4.2/recurso/module4.2.3.php");
         break;
-        case "m2u2a1":
-            // $nota= $_POST[''];
-            // $answer=;
-            // actividad($id_act,$nota,$answer);
-            // header ("Location: $ruta/modulo1/modulo1.1/recurso/module1.1.3.php");
+        case "m4u2a3":
+            $nota="No Aplica";
+            $answer='{"Actividad 1":{"Pregunta 1": "'.$_POST['preg1'].'",
+            "Pregunta 2": "'.$_POST['preg2'].'",
+            "Pregunta 3": "'.$_POST['preg3'].'"}}';
+            actividad($id_act,$nota,$answer);
+            header ("Location: $ruta/modulo4/modulo4.2/module4.2_eval.php");
         break;
-        case "m2u3a1":
-            // $nota= $_POST[''];
-            // $answer=;
-            // actividad($id_act,$nota,$answer);
-            // header ("Location: $ruta/modulo1/modulo1.1/recurso/module1.1.3.php");
+        case "m4u3a4":
+            $nota="No Aplica";
+            $answer='{"Actividad 1":{"Pregunta 1": "'.$_POST['preg1'].'",
+            "Pregunta 2": "'.$_POST['preg2'].'",
+            "Pregunta 3": "'.$_POST['preg3'].'",
+            "Pregunta 4": "'.$_POST['preg4'].'",
+            "Pregunta 5": "'.$_POST['preg5'].'",
+            "Pregunta 6": "'.$_POST['preg6'].'"}}';
+            actividad($id_act,$nota,$answer);
+            header ("Location: $ruta/modulo4/modulo4.3/module4.3_eval.php");
         break;
-        case "m2u4a1":
-            // $nota= $_POST[''];
-            // $answer=;
-            // actividad($id_act,$nota,$answer);
-            // header ("Location: $ruta/modulo1/modulo1.1/recurso/module1.1.3.php");
+        case "m4u4a1":
+            $nota="No Aplica";
+            $answer='{"Actividad 1":{"Pregunta 1": "'.$_POST['preg1'].'",
+            "Pregunta 2": "'.$_POST['preg2'].'",
+            "Pregunta 3": "'.$_POST['preg3'].'",
+            "Pregunta 4": "'.$_POST['preg4'].'",
+            "Pregunta 5": "'.$_POST['preg5'].'",
+            "Pregunta 6": "'.$_POST['preg6'].'",
+            "Pregunta 7": "'.$_POST['preg7'].'",
+            "Pregunta 8": "'.$_POST['preg8'].'"}}';
+            actividad($id_act,$nota,$answer);
+            header ("Location: $ruta/modulo4/modulo4.4/module4.4_eval.php");
         break;
-        case "m2u1a1":
-            // $nota= $_POST[''];
-            // $answer=;
-            // actividad($id_act,$nota,$answer);
-            // header ("Location: $ruta/modulo1/modulo1.1/recurso/module1.1.3.php");
+        case "m5u1a1":
+            $nota="No Aplica";
+            $answer='{"Actividad 1":{"Pregunta 1": "'.$_POST['preg1'].'",
+            "Pregunta 2": "'.$_POST['preg2'].'",
+            "Pregunta 3": "'.$_POST['preg3'].'",
+            "Pregunta 4": "'.$_POST['preg4'].'"}}';
+            actividad($id_act,$nota,$answer);
+            header ("Location: $ruta/modulo5/modulo5.1/module5.1_eval.php");
         break;
-        case "m2u2a1":
-            // $nota= $_POST[''];
-            // $answer=;
-            // actividad($id_act,$nota,$answer);
-            // header ("Location: $ruta/modulo1/modulo1.1/recurso/module1.1.3.php");
+        case "m5u2a1":
+            $nota="No Aplica";
+            $answer='{"Actividad 1":{"Pregunta 1": "'.$_POST['preg1'].'",
+            "Pregunta 2": "'.$_POST['preg2'].'",
+            "Pregunta 3": "'.$_POST['preg3'].'"}}';
+            actividad($id_act,$nota,$answer);
+            header ("Location: $ruta/modulo5/modulo5.2/module5.2_eval.php");
         break;
-        case "m2u3a1":
-            // $nota= $_POST[''];
-            // $answer=;
-            // actividad($id_act,$nota,$answer);
-            // header ("Location: $ruta/modulo1/modulo1.1/recurso/module1.1.3.php");
+        case "m5u3a1":
+            $nota="No Aplica";
+            $answer='{"Actividad 1":{"Pregunta 1": "'.$_POST['preg1'].'",
+            "Pregunta 2": "'.$_POST['preg2'].'",
+            "Pregunta 3": "'.$_POST['preg3'].'",
+            "Pregunta 4": "'.$_POST['preg4'].'"}}';
+            actividad($id_act,$nota,$answer);
+            header ("Location: $ruta/modulo5/modulo5.3/module5.3_eval.php");
         break;
-        case "m2u4a1":
-            // $nota= $_POST[''];
-            // $answer=;
-            // actividad($id_act,$nota,$answer);
-            // header ("Location: $ruta/modulo1/modulo1.1/recurso/module1.1.3.php");
+        case "m5u4a1":
+            $nota="No Aplica";
+            $answer='{"Actividad 1":{"Pregunta 1": "'.$_POST['preg1'].'",
+            "Pregunta 2": "'.$_POST['preg2'].'",
+            "Pregunta 3": "'.$_POST['preg3'].'",
+            "Pregunta 4": "'.$_POST['preg4'].'"}}';
+            actividad($id_act,$nota,$answer);
+            header ("Location: $ruta/modulo5/modulo5.4/module5.4_eval.php");
         break;
-        case "m2u1a1":
-            // $nota= $_POST[''];
-            // $answer=;
-            // actividad($id_act,$nota,$answer);
-            // header ("Location: $ruta/modulo1/modulo1.1/recurso/module1.1.3.php");
+        case "m5u5a1":
+            $nota="No Aplica";
+            $answer='{"Actividad 1":{"Pregunta 1": "'.$_POST['preg1'].'",
+            "Pregunta 2": "'.$_POST['preg2'].'",
+            "Pregunta 3": "'.$_POST['preg3'].'",
+            "Pregunta 4": "'.$_POST['preg4'].'"}}';
+            actividad($id_act,$nota,$answer);
+            header ("Location: $ruta/modulo5/modulo5.5/module5.5_eval.php");
         break;
-        case "m2u2a1":
-            // $nota= $_POST[''];
-            // $answer=;
-            // actividad($id_act,$nota,$answer);
-            // header ("Location: $ruta/modulo1/modulo1.1/recurso/module1.1.3.php");
+        case "m6u1a2":
+            $nota="No Aplica";
+            $answer='{"Actividad 1":{"Pregunta 1": "'.$_POST['preg1'].'",
+            "Pregunta 2": "'.$_POST['preg2'].'",
+            "Pregunta 3": "'.$_POST['preg3'].'"}}';
+            actividad($id_act,$nota,$answer);
+            header ("Location: $ruta/modulo6/modulo6.1/module6.1_eval.php");
         break;
-        case "m2u3a1":
-            // $nota= $_POST[''];
-            // $answer=;
-            // actividad($id_act,$nota,$answer);
-            // header ("Location: $ruta/modulo1/modulo1.1/recurso/module1.1.3.php");
+        case "m6u2a1":
+            $nota="No Aplica";
+            $answer='{"Actividad 1":{"Pregunta 1": "'.$_POST['preg1'].'",
+            "Pregunta 2": "'.$_POST['preg2'].'",
+            "Pregunta 3": "'.$_POST['preg3'].'",
+            "Pregunta 4": "'.$_POST['preg4'].'",
+            "Pregunta 5": "'.$_POST['preg5'].'",
+            "Pregunta 6": "'.$_POST['preg6'].'"}}';
+            actividad($id_act,$nota,$answer);
+            header ("Location: $ruta/modulo6/modulo6.2/module6.2_eval.php");
         break;
-        case "m2u4a1":
-            // $nota= $_POST[''];
-            // $answer=;
-            // actividad($id_act,$nota,$answer);
-            // header ("Location: $ruta/modulo1/modulo1.1/recurso/module1.1.3.php");
+        case "m6u3a1":
+            $nota="No Aplica";
+            $answer='{"Actividad 1":{"Pregunta 1": "'.$_POST['preg1'].'",
+            "Pregunta 2": "'.$_POST['preg2'].'",
+            "Pregunta 3": "'.$_POST['preg3'].'",
+            "Pregunta 4": "'.$_POST['preg4'].'",
+            "Pregunta 5": "'.$_POST['preg5'].'",
+            "Pregunta 6": "'.$_POST['preg6'].'",
+            "Pregunta 7": "'.$_POST['preg7'].'"}}';
+            actividad($id_act,$nota,$answer);
+            header ("Location: $ruta/modulo6/modulo6.3/module6.3_eval.php");
         break;
         case "m2u1a1":
             // $nota= $_POST[''];

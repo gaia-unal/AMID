@@ -59,16 +59,17 @@ $newConn->connectionDB(); ?>
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 2: El medio y el mensaje: noticias impresas y difundidas</h1>
+                <form action="../../../../../queries/actividad.php?id_act=m4u2a3" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Noticias Actuales</h4>
                         <p class="card-text">
                             Lea el siguiente artículo y responda:
-                            <div><img src="assets/noti1.png" alt="" class="noti"></div>
-                            <div><img src="assets/noti2.png" alt="" class="noti"></div>
-                            <div><img src="assets/noti3.png" alt="" class="noti"></div>
-                            <div><img src="assets/noti4.png" alt="" class="noti"></div>
-                            <div><img src="assets/noti5.png" alt="" class="noti"></div>
+                            <div><img src="assets/noti1.png" alt="Noticia 1" class="noti"></div>
+                            <div><img src="assets/noti2.png" alt="Noticia 2" class="noti"></div>
+                            <div><img src="assets/noti3.png" alt="Noticia 3" class="noti"></div>
+                            <div><img src="assets/noti4.png" alt="Noticia 4" class="noti"></div>
+                            <div><img src="assets/noti5.png" alt="Noticia 5" class="noti"></div>
                             <br>
                             Tomado de:
                             https://www.eltiempo.com/elecciones-colombia-2019/otras-ciudades/amenazas-a-dos-candidatos-a-la-alcaldia-en-la-guajira-426572
@@ -76,15 +77,15 @@ $newConn->connectionDB(); ?>
                             <ol>
                                 <li>¿Cómo los distintos medios afectan al tipo de cobertura y a la información que se
                                     puede dar?</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg1" style="width: 90%;" rows="6" minlength="1" maxlength="500" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>¿Qué códigos y convenciones se utilizan en el desarrollo de cada historia?</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg2" style="width: 90%;" rows="6" minlength="1" maxlength="500" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                                 <li>¿De qué forma este ejercicio es un ejemplo de la frase “el medio es el mensaje”?
                                 </li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg3" style="width: 90%;" rows="6" minlength="1" maxlength="500" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                             </ol>
                         </p>
                     </div>
@@ -93,8 +94,10 @@ $newConn->connectionDB(); ?>
                 <br>
                 <center>
                     <a href="module4.2.2.php" class="btn btn-success">Anterior</a>
-                    <a href="../module4.2_eval.php" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <!-- <a href="../module4.2_eval.php" class="btn btn-success">Siguiente</a> -->
                 </center>
+                </form>
                 <?php
                     include '../../../../../functions/paginacion.php';
                     pag(3);

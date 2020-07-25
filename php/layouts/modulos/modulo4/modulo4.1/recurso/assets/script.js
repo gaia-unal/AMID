@@ -1,30 +1,42 @@
-var respuesta = [0, 0, 0, 0, 0, 0, 0, 0];
 var totB = 0;
-
-function correcto(a) {
-    respuesta[a] = 1;
-}
-function incorrecto(a) {
-    respuesta[a] = 0;
-}
+var totM = 0;
 
 function term() {
-    for (var i = 0; i < 8; i++) {
-        if (respuesta[i] == 1) {
-            totB++;
+    for (let i = 1; i <= 8; i++) {
+        var select=document.getElementById("opc"+i+"").checked;    
+        if(i==2 || i==5 || i==6 || i==8){
+            if(select){
+                totB++;
+            }
+        }else{
+            if(select){
+                totM++;
+            }
         }
     }
-    if (totB == 7) {
+
+    if (totB == 4 && totM==0) {
         swal({
-            icon: 'success',
-            title: 'Oops',
-            text: 'Felicidades, respondiste correctamente',
+            title: "¡Correcto! 8 de 8",
+            icon: "success",
+            button: "Continuar",
+            text: "Respondiste correctamente =)"
         });
+        totB = totM= 0;
+        printNote(8);
     } else {
         swal({
+            title: "Incorrecto ",
             icon: 'error',
-            title: 'Oops',
-            text: 'Te equivocaste en algunas pero puedes volver a intentarlo',
+            button: "Continuar",
+            text: "Te equivocaste en algunas :c pero puedes volver a intentarlo"
         });
+        totB = totM= 0;
     }
+}
+function printNote(puntos){
+    var nota=parseFloat(puntos*5/8);
+    if(nota<1){nota=1;}
+    document.getElementById("pointsNota").value=nota;
+    document.getElementById("pointsGood").value=puntos;
 }

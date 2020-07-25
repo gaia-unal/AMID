@@ -59,6 +59,7 @@ $newConn->connectionDB(); ?>
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 2: El medio y el mensaje: noticias impresas y difundidas</h1>
+                <form action="../../../../../queries/actividad.php?id_act=m4u2a2" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Información pública</h4>
@@ -72,15 +73,15 @@ $newConn->connectionDB(); ?>
                             <ol>
                                 <li>¿Cómo este evento va a ser cubierto por un periódico, una estación de radio o una
                                     estación de televisión?</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg1" style="width: 90%;" rows="6" minlength="1" maxlength="500" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" autofocus></textarea>
                                 <li>¿Cómo cree usted que la cobertura diferirá y por qué? </li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg2" style="width: 90%;" rows="6" minlength="1" maxlength="500" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                                 <li>¿Cuántas de estas diferencias se basarían en las características particulares de
                                     cada medio?</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg3" style="width: 90%;" rows="6" minlength="1" maxlength="500" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                             </ol>
                         </p>
                     </div>
@@ -89,8 +90,10 @@ $newConn->connectionDB(); ?>
                 <br>
                 <center>
                     <a href="module4.2.1.php" class="btn btn-success">Anterior</a>
-                    <a href="module4.2.3.php" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <!-- <a href="module4.2.3.php" class="btn btn-success">Siguiente</a> -->
                 </center>
+                </form>
                 <?php
                     include '../../../../../functions/paginacion.php';
                     pag(3);

@@ -59,6 +59,7 @@ $newConn->connectionDB(); ?>
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 4: Publicidad y el campo político</h1>
+                <form action="../../../../queries/actividad.php?id_act=m5u4a1" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>La publicidad y el auspicio – ubicación, mensajes y audiencia</h4>
@@ -69,8 +70,8 @@ $newConn->connectionDB(); ?>
                             cada anuncio, tomando en cuenta el propósito, la información y el mensaje que se transmite,
                             y la audiencia seleccionada. <br>
                             Explique cómo el diseño/forma de los anuncios se utiliza para reforzar el contenido <br>
-                            <textarea name="preg1" id="p1-r" cols="80" rows="5" placeholder="Escriba su respuesta aquí"
-                                spellcheck="true"></textarea>
+                            <textarea name="preg1" style="width: 80%;" rows="6" minlength="1" maxlength="300" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" autofocus></textarea><br/>
                         </p>
                         <h4>Evaluación de los lineamientos para la propaganda política</h4>
                         <p class="card-text">Revise varios anuncios de la misma campaña política. Evalúe la eficacia de
@@ -80,8 +81,8 @@ $newConn->connectionDB(); ?>
                             para monitorear la publicidad que los candidatos han utilizado durante las elecciones. <br>
                             Evalúe hasta qué punto los anuncios elegidos se adhieren a estos lineamientos y escríbalo a
                             continuación <br>
-                            <textarea name="preg2" id="p2-r" cols="80" rows="5" placeholder="Escriba su respuesta aquí"
-                                spellcheck="true"></textarea>
+                            <textarea name="preg2" style="width: 80%;" rows="6" minlength="1" maxlength="300" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea><br/>
                         </p>
                         <h4>Evaluación de los entes reguladores para la propaganda en elecciones</h4>
                         <p class="card-text">
@@ -90,8 +91,8 @@ $newConn->connectionDB(); ?>
                             sea verdadera, justa y precisa <br>
                             Anote cualquier sugerencia que usted le haría al ente regulatorio en relación a la
                             propaganda política <br>
-                            <textarea name="preg3" id="p3-r" cols="80" rows="5" placeholder="Escriba su respuesta aquí"
-                                spellcheck="true"></textarea>
+                            <textarea name="preg3" style="width: 80%;" rows="6" minlength="1" maxlength="300" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea><br/>
                         </p>
                         <h4>Regulaciones aplicables a los medios durante elecciones nacionales</h4>
                         <p class="card-text">
@@ -107,8 +108,8 @@ $newConn->connectionDB(); ?>
                             se utiliza es preciso o engañoso. <br>
                             Dado el uso del recurso emocional en la propaganda política, sugiera estrategias para
                             mantener a la ciudadanía informada <br>
-                            <textarea name="preg4" id="p4-r" cols="80" rows="5" placeholder="Escriba su respuesta aquí"
-                                spellcheck="true"></textarea>
+                            <textarea name="preg4" style="width: 80%;" rows="6" minlength="1" maxlength="300" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea><br/>
                         </p>
                     </div>
                 </div>
@@ -116,8 +117,10 @@ $newConn->connectionDB(); ?>
                 <br>
                 <center>
                     <a href="module5.4_temas.php" class="btn btn-success">Anterior</a>
-                    <a href="module5.4_eval.php" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <!-- <a href="module5.4_eval.php" class="btn btn-success">Siguiente</a> -->
                 </center>
+                </form>
                 <?php
                     include '../../../../functions/paginacion.php';
                     pag(2);

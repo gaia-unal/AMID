@@ -57,6 +57,7 @@ $newConn->connectionDB(); ?>
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 1: De Los Medios Tradicionales a las Nuevas Tecnologías Mediáticas</h1>
+                <form action="../../../../queries/actividad.php?id_act=m6u1a2" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
                         <p class="card-text">
@@ -64,20 +65,20 @@ $newConn->connectionDB(); ?>
                             ¿Cuál considera usted que es la medida en la cual el conocimiento y la información
                             han cambiado o han permanecido iguales a medida que los nuevos medios y las nuevas
                             tecnologías mediáticas han emergido en nuestra sociedad?
-                            <textarea name="preg1" id="p1-r" cols="100" rows="10"
-                                placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea> <br>
+                            <textarea name="preg1" style="width: 90%;" rows="8" minlength="1" maxlength="500" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" autofocus ></textarea><br/>
                             2. ¿Cómo la emergencia de los nuevos medios ha tenido impacto sobre la forma en cómo
                             las personas interactúan y cómo esto las beneficia?
-                            <textarea name="preg2" id="p2-r" cols="100" rows="10"
-                                placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea> <br>
+                            <textarea name="preg2" style="width: 90%;" rows="8" minlength="1" maxlength="500" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea><br/>
                             3. Una característica de los medios tradicionales es que el contenido de los medios va a
                             través de un proceso editorial organizado, diseñado para autentificar las noticias y
                             entregarlas a una organización mediática de noticias en lugar de darlas a un individuo. El
                             periodista en línea no trabaja a través de este proceso. <br> Discuta sobre la diferencia
                             entre los temas de noticia de opinión de un bloguero individual y un reportaje noticioso que
                             aparece en la versión en línea de un periódico.
-                            <textarea name="preg3" id="p3-r" cols="100" rows="10"
-                                placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                            <textarea name="preg3" style="width: 90%;" rows="8" minlength="1" maxlength="500" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea><br/>
                         </p>
                     </div>
                 </div>
@@ -85,8 +86,10 @@ $newConn->connectionDB(); ?>
                 <br>
                 <center>
                     <a href="module6.1.1_act.php" class="btn btn-success">Anterior</a>
-                    <a href="module6.1_eval.php" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <!-- <a href="module6.1_eval.php" class="btn btn-success">Siguiente</a> -->
                 </center>
+                </form>
                 <?php
                     include '../../../../functions/paginacion.php';
                     pag(2);

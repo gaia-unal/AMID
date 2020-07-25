@@ -60,6 +60,7 @@ $newConn->connectionDB(); ?>
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 1: Lectura de medios y textos de información</h1>
+                <form action="../../../../../queries/actividad.php?id_act=m4u1a5" method="post">
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Refuerzo y reflexión</h4>
@@ -67,29 +68,32 @@ $newConn->connectionDB(); ?>
                             Seleccione aquellos que corresponden a un elemento, formato o característica del lenguaje
                             televisivo
                             <ul>
-                                <li><input type="checkbox" name="" id="" onclick="incorrecto(0)">No utilizar
-                                    repeticiones</li>
-                                <li><input type="checkbox" name="" id="" onclick="correcto(1)">Contiene grandes bloques
-                                    de publicidad</li>
-                                <li><input type="checkbox" name="" id="" onclick="correcto(2)">Estudio</li>
-                                <li><input type="checkbox" name="" id="" onclick="incorrecto(3)">Preparación y
-                                    planeación</li>
-                                <li><input type="checkbox" name="" id="" onclick="correcto(4)">Documental</li>
-                                <li><input type="checkbox" name="" id="" onclick="correcto(5)">Pocos decorados</li>
-                                <li><input type="checkbox" name="" id="" onclick="incorrecto(6)">Léxico avanzado</li>
-                                <li><input type="checkbox" name="" id="" onclick="incorrecto(7)">Poco superficial</li>
-                                <li><input type="checkbox" name="" id="" onclick="correcto(8)">Guión</li>
-                                <li><input type="checkbox" name="" id="" onclick="correcto(9)">Telenovelas</li>
+                            <label><li><input type="checkbox" name="opc1" id="opc1">No utilizar repeticiones</li></label> <br/>
+                                <label><li><input type="checkbox" name="opc2" id="opc2">Contiene grandes bloques
+                                    de publicidad</li></label> <br/>
+                                <label><li><input type="checkbox" name="opc3" id="opc3">Estudio</li></label> <br/>
+                                <label><li><input type="checkbox" name="opc4" id="opc4">Preparación y
+                                    planeación</li></label> <br/>
+                                <label><li><input type="checkbox" name="opc5" id="opc5">Documental</li></label> <br/>
+                                <label><li><input type="checkbox" name="opc6" id="opc6">Pocos decorados</li></label> <br/>
+                                <label><li><input type="checkbox" name="opc7" id="opc7">Léxico avanzado</li></label> <br/>
+                                <label><li><input type="checkbox" name="opc8" id="opc8">Poco superficial</li></label> <br/>
+                                <label><li><input type="checkbox" name="opc9" id="opc9">Guión</li></label> <br/>
+                                <label><li><input type="checkbox" name="opc10" id="opc10">Telenovelas</li></label>
                             </ul>
+                            <center>
+                                <a class="btn btn-outline-success" onclick="termino()">Validar</a>
+                            </center>
                             <ol>
                                 <li>¿Qué son los medios audiovisuales?</li>
-                                <textarea name="" id="" cols="80" rows="5"></textarea>
+                                <textarea name="preg1" style="width: 90%;" rows="6" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                                 <li>¿Cómo se pueden usar los medios audiovisuales en el aula de clase?</li>
-                                <textarea name="" id="" cols="80" rows="5"></textarea>
+                                <textarea name="preg2" style="width: 90%;" rows="6" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                             </ol>
-                            <center>
-                                <button class="btn btn-outline-success" onclick="termino()">Validar</button>
-                            </center>
+                            <input type="text" class="sr-only" id="pointsNota" name="pointsNota" value="1">
+                            <input type="text" class="sr-only" id="pointsGood" name="pointsGood" value="0">
                         </p>
                     </div>
                 </div>
@@ -97,8 +101,10 @@ $newConn->connectionDB(); ?>
                 <br>
                 <center>
                     <a href="module4.1.4.php" class="btn btn-success">Anterior</a>
-                    <a href="module4.1.6.php" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <!-- <a href="module4.1.6.php" class="btn btn-success">Siguiente</a> -->
                 </center>
+                </form>
                 <?php
                     include '../../../../../functions/paginacion.php';
                     pag(3);
