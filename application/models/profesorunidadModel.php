@@ -1,9 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class ProfesorunidadModel extends CI_Model{
+class profesorunidadModel extends CI_Model{
 
-	function __construct(){
+	public function __construct(){
 		parent::__construct();
 		$this->load->database();
     }

@@ -5,7 +5,7 @@ class Modulo10 extends CI_Controller {
 
 	public $time,$id;
 
-	function __construct(){
+	public function __construct(){
 		parent::__construct();
 		$this->load->model('institucionModel');
 		// $this->load->model('usuarioModel');
