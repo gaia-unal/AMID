@@ -42,6 +42,7 @@ class Modulo1 extends CI_Controller {
 
 			$submit=$this->input->post('submit');
 			if(!$seg['seg3']){
+				
 				$this->load->view('modulos/modulo1/unidad1/inicio',$data);
 			}
 			else if($seg['seg4'] && isset($submit)){
@@ -180,12 +181,12 @@ class Modulo1 extends CI_Controller {
 					break;
 				}
 			}
-			$seg['seg3']=(isset($seg['seg3']))?$seg['seg3']:'inicio';
-		
+			if($seg['seg3']){
+				
 			$this->session->unset_userdata('idAct');
 			$data['profesormodulo']=$this->profesormoduloModel->getOne();
 			$this->load->view("modulos/modulo1/unidad1/".$seg['seg3'],$data);
-		
+			}
 			
 		}else{
 			$this->logout();
@@ -202,7 +203,7 @@ class Modulo1 extends CI_Controller {
 			$data['profesormodulo']=$this->profesormoduloModel->getOne();
 
 			$submit=$this->input->post('submit');
-			if(!$seg['seg3'] && !isset($submit)){
+			if(!$seg['seg3']){/////////////////////////////////////////
 				$this->load->view('modulos/modulo1/unidad2/inicio',$data);
 			}
 			else if($seg['seg4'] && isset($submit)){
@@ -273,12 +274,12 @@ class Modulo1 extends CI_Controller {
 				}
 			}
 			
-			$seg['seg3']=(isset($seg['seg3']))?$seg['seg3']:'inicio';
+			if($seg['seg3']){
+				$this->session->unset_userdata('idAct');
+				$data['profesormodulo']=$this->profesormoduloModel->getOne();
+				$this->load->view("modulos/modulo1/unidad2/".$seg['seg3'],$data);
+			}
 			
-			$this->session->unset_userdata('idAct');
-			$data['profesormodulo']=$this->profesormoduloModel->getOne();
-			$this->load->view("modulos/modulo1/unidad2/".$seg['seg3'],$data);
-		
 			
 		}else{
 			$this->logout();

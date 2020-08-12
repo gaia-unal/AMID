@@ -10,7 +10,7 @@
                 $estado=($profmodul->id_modulo ==$i)? $profmodul->fkid_estado : 3;
                 echo "<li class='page-item'><a class='page-link estado_$estado' href='".base_url()."modulo$i'>Módulo $i</a></li>";   
                 
-                if($i == 7)
+                if($i == 6)
                     echo "</ul><ul class='pagination justify-content-center'>";
                 $i++;
             }

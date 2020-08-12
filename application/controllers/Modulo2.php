@@ -77,6 +77,7 @@ class Modulo2 extends CI_Controller {
 			if($seg['seg3']){
 				$this->session->unset_userdata('idAct');
 				$data['profesormodulo']=$this->profesormoduloModel->getOne();
+				//echo "hello";
 				$this->load->view("modulos/modulo2/unidad1/".$seg['seg3'],$data);
 			}
 			
