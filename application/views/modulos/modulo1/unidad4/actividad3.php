@@ -61,19 +61,19 @@
                             De los enfoques mencionados anteriormente liste 5 con los cuales se sienta más
                             familiarizados. <br>
                             <center>
-                                1. <input type="text" name="e1" id="1" maxlength="40" required autofocus><br /><br />
-                                2. <input type="text" name="e2" id="2" maxlength="40" required><br /><br />
-                                3. <input type="text" name="e3" id="3" maxlength="40" required><br /><br />
-                                4. <input type="text" name="e4" id="4" maxlength="40" required><br /><br />
-                                5. <input type="text" name="e5" id="5" maxlength="40" required><br /><br />
+                                1. <input type="text" name="e1" id="1" maxlength="40" required autofocus onkeypress="return check(event)"><br /><br />
+                                2. <input type="text" name="e2" id="2" maxlength="40" required onkeypress="return check(event)"><br /><br />
+                                3. <input type="text" name="e3" id="3" maxlength="40" required onkeypress="return check(event)"><br /><br />
+                                4. <input type="text" name="e4" id="4" maxlength="40" required onkeypress="return check(event)"><br /><br />
+                                5. <input type="text" name="e5" id="5" maxlength="40" required onkeypress="return check(event)"><br /><br />
                             </center>
                             A continuación identifique los componentes claves que hacen que la enseñanza y el
                             aprendizaje de AMI sean eficaces <br>
-                            <textarea name="preg1" style="width: 100%;" rows="5" minlength="1" maxlength="200"
+                            <textarea name="preg1" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
                                 required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea><br><br>
                             Indique que actividades puede desarrollar que ilustren estas estrategias en su propio
                             trabajo <br>
-                            <textarea name="preg2" style="width: 100%;" rows="5" minlength="1" maxlength="200"
+                            <textarea name="preg2" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
                                 required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                         </p>
                     </div>

@@ -31,6 +31,7 @@ class Modulo2 extends CI_Controller {
 			if($seg['seg4'] && isset($submit)){
 				$idAct=$seg['seg4'];
 				if($idAct=='m1u4'){
+					$this->profesormoduloModel->changeEstado(1,2);
 					$nota= (double)($this->input->post('pregunta_1'));
 					$this->insertUpdateE($idAct,$nota);
 				}
@@ -59,11 +60,22 @@ class Modulo2 extends CI_Controller {
 				
 				$idAct=$seg['seg4'];
 				switch ($idAct) {
-					case 'm1u1a1':
-						$points=$this->input->post('pointsGood');
-						$answer='{"Actividad 1":{"Pregunta 1": "'.$points.' correctos de 16"}}';
+					case 'm2u1a1':
+						$nota="No Aplica";
+
+						$p1 = $this->input->post('preg1');
+						$p2 = $this->input->post('preg2');
+						$p3 = $this->input->post('preg3');
+						$p4 = $this->input->post('preg4');
+						$p5 = $this->input->post('preg5');
 						
-						$nota=$this->input->post('pointsCanvas');
+						$answer='{"Actividad 1":{"Pregunta 1": "'.$p1.'",
+												"Pregunta 2": "'.$p2.'",
+												"Pregunta 3": "'.$p3.'",
+												"Pregunta 4": "'.$p4.'",
+												"Pregunta 5": "'.$p5.'"
+						   						}
+			 					}';
 						
 						$this->insertUpdate($idAct,$nota, $answer);
 
@@ -105,9 +117,25 @@ class Modulo2 extends CI_Controller {
 						$nota= (double)($this->input->post('pre1'));
 						$this->insertUpdateE($idAct,$nota);
 					break;
-					case "m1u2ax":
-					break;
-					case "m1u2ax":
+					case "m2u2a2":
+
+						$nota="No Aplica";
+
+						$p1 = $this->input->post('preg1');
+						$p2 = $this->input->post('preg2');
+						$p3 = $this->input->post('preg3');
+						$p4 = $this->input->post('preg4');
+						$p5 = $this->input->post('preg5');
+						
+						$answer='{"Actividad 1":{"Pregunta 1": "'.$p1.'",
+												"Pregunta 2": "'.$p2.'",
+												"Pregunta 3": "'.$p3.'",
+												"Pregunta 4": "'.$p4.'",
+												"Pregunta 5": "'.$p5.'"
+						   						}
+			 					}';
+						
+						$this->insertUpdate($idAct,$nota, $answer);
 					break;
 					
 					default:
@@ -147,9 +175,29 @@ class Modulo2 extends CI_Controller {
 						$nota= (double)($this->input->post('pre1'));
 						$this->insertUpdateE($idAct,$nota);
 					break;
-					case "m1u2ax":
+					case "m2u3a2":
+						$points=$this->input->post('pointsGood');
+						$answer='{"Actividad 1":{"Pregunta 1": "'.$points.' correctos de 6"}}';
+						
+						$nota=$this->input->post('pointsNota');
+						
+						$this->insertUpdate($idAct,$nota, $answer);
 					break;
-					case "m1u2ax":
+					case "m2u3a3":
+						$nota="No Aplica";
+
+						$p1 = $this->input->post('preg1');
+						$p2 = $this->input->post('preg2');
+						$p3 = $this->input->post('preg3');
+						
+						
+						$answer='{"Actividad 1":{"Pregunta 1": "'.$p1.'",
+												"Pregunta 2": "'.$p2.'",
+												"Pregunta 3": "'.$p3.'"
+						   						}
+			 					}';
+						
+						$this->insertUpdate($idAct,$nota, $answer);
 					break;
 					
 					default:
@@ -187,7 +235,16 @@ class Modulo2 extends CI_Controller {
 						$nota= (double)($this->input->post('pre1'));
 						$this->insertUpdateE($idAct,$nota);
 					break;
-					case "m1u2ax":
+					case "m2u4a2":
+						$nota="No Aplica";
+
+						$p1 = $this->input->post('preg1');
+						
+						$answer='{"Actividad 1":{"Pregunta 1": "'.$p1.'"
+						   						}
+			 					}';
+						
+						$this->insertUpdate($idAct,$nota, $answer);
 					break;
 					case "m1u2ax":
 					break;
@@ -211,7 +268,7 @@ class Modulo2 extends CI_Controller {
 	}
 
 	public function insertUpdate($idAct,$nota, $answer){
-		if($nota<=0){$nota=1;}
+		if($nota!="No Aplica" && $nota<=0){$nota=1;}
 		$data= array(
 			'id_actividad' 	   => $idAct,
 			'id_profesor' 	   => $this->id,
@@ -225,7 +282,7 @@ class Modulo2 extends CI_Controller {
 
 	public function insertUpdateE($idEval,$nota){
 
-		if($nota<=0){$nota=1;}
+		if($nota!="No Aplica" && $nota<=0){$nota=1;}
 		$des= $this->calculoDes($nota);
 
 		$data= array(
@@ -241,12 +298,15 @@ class Modulo2 extends CI_Controller {
 	}
 
 	public function calculoDes($nota){
-		if($nota<3){
-            return 'Malo';
-        }else if ($nota<=4){
-            return 'Regular';
-        }
-        return 'Bueno';
+		if($nota!="No Aplica"){
+			if($nota<3){
+				return 'Malo';
+			}else if ($nota<=4){
+				return 'Regular';
+			}
+			return 'Bueno';
+		}else
+			return $nota;
 	}
 
 	public function logout(){

@@ -52,6 +52,7 @@
 			<!-- /.col-lg-3 -->
 			<div class="col-lg-9">
 				<h1><br>Unidad 3: La información como un producto (Commodity)</h1>
+				<?php echo form_open('modulo11/unidad4/inicio');$this->session->set_userdata('idAct','m11u3a2'); ?>
 				<div class="card mt-4">
 					<div class="card-body">
 						<h4>Actividad</h4>
@@ -59,13 +60,13 @@
 							Completa la frase que define los productos de información usando las palabras que aparecen a
 							continuación: <br>
 						<ul>
-							<li>Entregados</li>
+							<li>entregados</li>
 							<li>proporcionan</li>
-							<li>Internet</li>
-							<li>Productos</li>
-							<li>Información</li>
-							<li>Pague</li>
-							<li>Interes</li>
+							<li>internet</li>
+							<li>productos</li>
+							<li>información</li>
+							<li>pague</li>
+							<li>interes</li>
 						</ul>
 						<div class="auto">
 						Son <input type="text" name="productos" id="opc1"> que pueden ser <input type="text"
@@ -82,17 +83,21 @@
 
 						</div>
 						</p>
+						
 						<center>
-							<button class="btn btn-outline-success" onclick="validar();">Validar</button>
+							<a class="btn btn-outline-success" onclick="validar();">Validar</a>
 						</center>
 					</div>
 				</div>
 				<!-- /.card -->
 				<br>
+				<input type="text" class="sr-only" id="pointsNota" name="pointsNota" value="1">
+                <input type="text" class="sr-only" id="pointsGood" name="pointsGood" value="0">
                 <center>
                     <a href="<?php echo base_url();?>modulo11/unidad3/actividad1" class="btn btn-success">Anterior</a>
-                    <a href="<?php echo base_url();?>modulo11/unidad4" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
                 </center>
+                <?php echo form_close(); ?>
 				<?php $this->load->view('initial/paginacion');?>
 
 <br />

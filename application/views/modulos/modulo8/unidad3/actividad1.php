@@ -38,7 +38,7 @@
                         <ul class="list-group-item">
                             <a href="<?php echo base_url();?>modulo8/unidad3/temas" class="list-group-item">Temas</a>
                             <a href="#" class="list-group-item active">Actividad</a>
-                            <a href="#" onclick="inactivoEva() class="list-group-item">Evaluación</a>
+                            <a href="#" onclick="inactivoEva()" class="list-group-item">Evaluación</a>
                         </ul>
                     </ul>
                     <a href="<?php echo base_url();?>modulo9" class="list-group-item">Módulo 9</a>
@@ -54,6 +54,7 @@
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Enfoques pedagógicos y actividades</h4>
+                        <?php echo form_open('modulo8/unidad3/actividad2');$this->session->set_userdata('idAct','m8u3a1'); ?>
                         <p class="card-text">
                             Almacenamiento de la información de formato digital, permitiendo que sea accesible
                             utilizando una amplia gama de dispositivos, no como en otras formas de información
@@ -69,8 +70,8 @@
                                     investigación. Reduzca las fuentes de información para que calcen en su propósito de
                                     investigación. <br> Busque palabras claves, operaciones lógicas (por Ej. “y”, “o”) y
                                     determine a continuación qué elementos trabajan mejor y por qué</li>
-                                <textarea name="preg1" id="p1-r" cols="80" rows="5"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                <textarea name="preg1" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                                 <li>Estudie un sitio en Internet que se utilice para dar cursos sobre educación a
                                     profesores o cualquier otro programa educativo. Revise cómo se organiza esta
                                     información y cómo se tiene acceso al sitio. <br> ¿Qué recursos de información
@@ -78,21 +79,21 @@
                                     curso? Practique hacer uso de este sitio y hable sobre lo útil que puede ser para el
                                     aprendizaje y cuáles son las limitaciones. Hable sobre las ventajas y desventajas.
                                 </li>
-                                <textarea name="preg2" id="p2-r" cols="80" rows="5"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                <textarea name="preg2" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                                 Visite varios “blogs” y “wikis” que han sido creados por individuos o en colaboración
                                 con otras personas.
                                 <li>¿Qué tipo de intercambio de información se da en estos medios en línea? ¿Para qué
                                     propósito sirve la información? ¿Quién provee la información? ¿Cuáles cree usted que
                                     son las motivaciones y los motivos?</li>
-                                <textarea name="preg3" id="p3-r" cols="80" rows="5"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                <textarea name="preg3" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                                 <li>Escriba a continuación, desde el punto de vista de los estudiantes, acerca de ¿qué
                                     información digital debería ser preservada? ¿Cuáles son los principales criterios de
                                     selección y las soluciones técnicas disponibles, y cómo se puede asegurar la
                                     sostenibilidad? ¿Cuáles son otros aspectos de este tema de preservación?</li>
-                                <textarea name="preg4" id="p4-r" cols="80" rows="5"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                <textarea name="preg4" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                             </ol>
                         </p>
                     </div>
@@ -101,8 +102,9 @@
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo8/unidad3/temas" class="btn btn-success">Anterior</a>
-                    <a href="<?php echo base_url();?>modulo8/unidad3/actividad2" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
                 </center>
+                <?php echo form_close(); ?>
                 <?php $this->load->view('initial/paginacion');?>
 
 <br />

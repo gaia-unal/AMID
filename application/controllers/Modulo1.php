@@ -117,7 +117,7 @@ class Modulo1 extends CI_Controller {
 												"Pregunta 2": "'.$p2.'",
 												"Pregunta 3": "'.$p3.'",
 												"Pregunta 4": "'.$p4.'"
-						   						},
+						   						}
 			 					}';
 						
 						$this->insertUpdate($idAct,$nota, $answer);
@@ -170,7 +170,7 @@ class Modulo1 extends CI_Controller {
 												"Pregunta 2": "'.$p2.'",
 												"Pregunta 3": "'.$p3.'",
 												"Pregunta 4": "'.$p4.'"
-						   						},
+						   						}
 			 					}';
 						
 						$this->insertUpdate($idAct,$nota, $answer);
@@ -201,14 +201,15 @@ class Modulo1 extends CI_Controller {
 		
 		if(isset($this->id)){
 			$data['profesormodulo']=$this->profesormoduloModel->getOne();
-
+			
 			$submit=$this->input->post('submit');
-			if(!$seg['seg3']){/////////////////////////////////////////
+			if(!$seg['seg3']){
 				$this->load->view('modulos/modulo1/unidad2/inicio',$data);
 			}
 			else if($seg['seg4'] && isset($submit)){
 				
 				$idAct=$seg['seg4'];
+				
 				switch ($idAct) {
 					case 'm1u1':
 						$nota= (double)($this->input->post('pre1'));
@@ -235,7 +236,7 @@ class Modulo1 extends CI_Controller {
 												"Pregunta 2": "'.$p2.'",
 												"Pregunta 3": "'.$p3.'",
 												"Pregunta 4": "'.$p4.'"
-						   						},
+						   						}
 			 					}';
 						
 						$this->insertUpdate($idAct,$nota, $answer);
@@ -261,7 +262,7 @@ class Modulo1 extends CI_Controller {
 												"Pregunta 6": "'.$p6.'",
 												"Pregunta 7": "'.$p7.'",
 												"Pregunta 8": "'.$p8.'"
-						   						},
+						   						}
 			 					}';
 						
 						$this->insertUpdate($idAct,$nota, $answer);
@@ -412,13 +413,13 @@ class Modulo1 extends CI_Controller {
 						$p1 = $this->input->post('preg1');
 						$p2 = $this->input->post('preg2');
 						
-						$answer='{"Actividad 2":{"1": "'.$e1.'",
+						$answer='{"Actividad 1":{"1": "'.$e1.'",
 												"2": "'.$e2.'",
 												"3": "'.$e3.'",
 												"4": "'.$e4.'",
 												"5": "'.$e5.'"
 												  },
-									"Actividad 3":{"Pregunta 1": "'.$p1.'",
+									"Actividad 2":{"Pregunta 1": "'.$p1.'",
 													"Pregunta 2": "'.$p2.'"
 												}
 			 					}';
@@ -447,7 +448,7 @@ class Modulo1 extends CI_Controller {
 
 	public function insertUpdate($idAct,$nota, $answer){
 
-		if($nota<=0){$nota=1;}
+		if($nota!="No Aplica" && $nota<=0){$nota=1;}
 		$data= array(
 			'id_actividad' 	   => $idAct,
 			'id_profesor' 	   => $this->id,
@@ -461,7 +462,7 @@ class Modulo1 extends CI_Controller {
 
 	public function insertUpdateE($idEval,$nota){
 
-		if($nota<=0){$nota=1;}
+		if($nota!="No Aplica" && $nota<=0){$nota=1;}
 		$des= $this->calculoDes($nota);
 
 		$data= array(
@@ -477,12 +478,16 @@ class Modulo1 extends CI_Controller {
 	}
 
 	public function calculoDes($nota){
-		if($nota<3){
-            return 'Malo';
-        }else if ($nota<=4){
-            return 'Regular';
-        }
-        return 'Bueno';
+
+		if($nota!="No Aplica"){
+			if($nota<3){
+				return 'Malo';
+			}else if ($nota<=4){
+				return 'Regular';
+			}
+			return 'Bueno';
+		}else
+			return $nota;
 	}
 
 	public function logout(){

@@ -59,21 +59,21 @@
                             align="justify"></blockquote>
                         <p class="card-text">
                             <ul class="content">
-                                <li><a href="#" onclick="preg1();">
-                                        <h4>¿Qué es Phishing?</h4>
-                                    </a></li>
-                                <li><a href="#" onclick="preg2();">
-                                        <h4>Phishing tradicional</h4>
-                                    </a></li>
-                                <li><a href="#" onclick="preg3();">
-                                        <h4>Spear phishing</h4>
-                                    </a></li>
-                                <li><a href="#" onclick="preg4();">
-                                        <h4>Smishing (SMS)</h4>
-                                    </a></li>
-                                <li><a href="#" onclick="preg5();">
-                                        <h4>Vishing</h4>
-                                    </a></li>
+                                <a href="#" onclick="preg1();">
+                                        <li><h4>¿Qué es Phishing?</h4></li>
+                                    </a>
+                                <a href="#" onclick="preg2();">
+                                        <li><h4>Phishing tradicional</h4></li>
+                                    </a>
+                                <a href="#" onclick="preg3();">
+                                        <li><h4>Spear phishing</h4></li>
+                                    </a>
+                                <a href="#" onclick="preg4();">
+                                        <li><h4>Smishing (SMS)</h4></li>
+                                    </a>
+                                <a href="#" onclick="preg5();">
+                                        <li><h4>Vishing</h4></li>
+                                    </a>
                             </ul>
                             <h4>Referencias</h4>
                             Fuente: Paus,L (2015). Phishing tradicional en Paypal [Imagen]. Recuperado de:

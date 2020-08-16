@@ -21,18 +21,34 @@ class Modulo12 extends CI_Controller {
 	
 	public function index(){
 		
-		$id=$this->session->userdata('id');
+		$seg['seg4']=$this->session->userdata('idAct');
 
-		if(isset($id)){
+		if(isset($this->id)){
 			$this->profesormoduloModel->changeEstado(12,1);
-
+			$submit=$this->input->post('submit');
+			
 			$data['profesormodulo']=$this->profesormoduloModel->getOne();
+			if($seg['seg4'] && isset($submit)){
+				$idAct=$seg['seg4'];
+				
+				if($idAct=='m11u4a2'){
+					$this->profesormoduloModel->changeEstado(11,2);
+					$nota= $this->input->post('pointsNota');
+						
+					$points=$this->input->post('pointsGood');
+					$answer='{"Actividad 1":{"Pregunta 1": "'.$points.' correctos de 15"}}';
+					
+					$this->insertUpdate($idAct,$nota, $answer);
+				}
+				
+			}
 			$this->load->view('modulos/modulo12/index',$data);
 
 		}else{
 			$this->logout();
 		}
 	}
+
 
 	public function unidad1(){
 
@@ -50,11 +66,26 @@ class Modulo12 extends CI_Controller {
 				
 				$idAct=$seg['seg4'];
 				switch ($idAct) {
-					case 'm1u1a1':
-						$points=$this->input->post('pointsGood');
-						$answer='{"Actividad 1":{"Pregunta 1": "'.$points.' correctos de 16"}}';
+					case 'm12u1a1':
+						$nota="No Aplica";
 						
-						$nota=$this->input->post('pointsCanvas');
+						$p1 = $this->input->post('preg1');
+						$p2 = $this->input->post('preg2');
+						$p3 = $this->input->post('preg3');
+						$p4 = $this->input->post('preg4');
+						$p5 = $this->input->post('preg5');
+						$p6 = $this->input->post('preg6');
+						$p7 = $this->input->post('preg7');
+						
+						$answer='{"Actividad 1":{"Pregunta 1": "'.$p1.'",
+												"Pregunta 2": "'.$p2.'",
+												"Pregunta 3": "'.$p3.'",
+												"Pregunta 4": "'.$p4.'",
+												"Pregunta 5": "'.$p5.'",
+												"Pregunta 6": "'.$p6.'",
+												"Pregunta 7": "'.$p7.'"
+												}
+			 					}';
 						
 						$this->insertUpdate($idAct,$nota, $answer);
 
@@ -77,6 +108,8 @@ class Modulo12 extends CI_Controller {
 	}
 
 	public function insertUpdate($idAct,$nota, $answer){
+		
+		if($nota!="No Aplica" && $nota<=0){$nota=1;}
 		$data= array(
 			'id_actividad' 	   => $idAct,
 			'id_profesor' 	   => $this->id,
@@ -90,6 +123,7 @@ class Modulo12 extends CI_Controller {
 
 	public function insertUpdateE($idEval,$nota){
 
+		if($nota!="No Aplica" && $nota<=0){$nota=1;}
 		$des= $this->calculoDes($nota);
 
 		$data= array(
@@ -105,12 +139,15 @@ class Modulo12 extends CI_Controller {
 	}
 
 	public function calculoDes($nota){
-		if($nota<3){
-            return 'Malo';
-        }else if ($nota<=4){
-            return 'Regular';
-        }
-        return 'Bueno';
+		if($nota!="No Aplica"){
+			if($nota<3){
+				return 'Malo';
+			}else if ($nota<=4){
+				return 'Regular';
+			}
+			return 'Bueno';
+		}else
+			return $nota;
 	}
 
 	public function logout(){

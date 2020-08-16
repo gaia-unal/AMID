@@ -46,7 +46,7 @@
                 <br>
                 <h1>Módulo 12: Libertad de expresión</h1>
 
-                <?php echo form_open('inicio/main');$this->session->set_userdata('idAc','m12'); ?>
+                <?php echo form_open('inicio/main');$this->session->set_userdata('idAct','m12u1a2'); ?>
                 
                 <div class="card mt-4">
                     <div class="card-body">
@@ -63,12 +63,12 @@
                         sin limitación de fronteras. <br><br>
                         <b>Las palabras son</b>
                         <ul>
-                            <li>Medio de difusión</li>
-                            <li>Interferencias</li>
-                            <li>Derecho universal</li>
-                            <li>Difundir</li>
-                            <li>Mantener una</li>
-                            <li>Recibir</li>
+                            <li>medio de difusión</li>
+                            <li>interferencias</li>
+                            <li>derecho universal</li>
+                            <li>difundir</li>
+                            <li>mantener una</li>
+                            <li>recibir</li>
                         </ul>
                         <center>
                             <a class="btn btn-outline-success" onclick="validar();">Validar</a>
@@ -77,11 +77,13 @@
                 </div>
                 <!-- /.card -->
                 <br>
+                <input type="text" class="sr-only" id="pointsNota" name="pointsNota" value="1">
+                <input type="text" class="sr-only" id="pointsGood" name="pointsGood" value="0">
                 <center>
                     <a href="<?php echo base_url();?>modulo12/unidad1/actividad1" class="btn btn-success">Anterior</a>
-                    <button id="btn-siguiente"  class="btn btn-success" type="submit">Siguiente</button>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
                 </center>
-                <?php echo form_close(); ?>	
+                <?php echo form_close(); ?>
                 <?php $this->load->view('initial/paginacion');?>
 
 <br />

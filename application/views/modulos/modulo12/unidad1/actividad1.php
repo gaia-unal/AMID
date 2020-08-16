@@ -51,28 +51,29 @@
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Retroalimentación y reflexión</h4>
+                        <?php echo form_open('modulo12/unidad1/actividad2');$this->session->set_userdata('idAct','m12u1a1'); ?>
                         <ol>
                             <li>¿Por qué importa la libertad de expresión?</li>
-                            <textarea name="preg1" id="p1-r" cols="80" rows="5" placeholder="Escriba su respuesta aquí"
-                                spellcheck="true"></textarea>
+                            <textarea name="preg1" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                             <li>¿Cuales son las condiciones para que prospere la libertad de expresión?</li>
-                            <textarea name="preg2" id="p2-r" cols="80" rows="5" placeholder="Escriba su respuesta aquí"
-                                spellcheck="true"></textarea>
+                            <textarea name="preg2" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                             <li>¿En qué momento se encuentra en riesgo la libertad de expresión?</li>
-                            <textarea name="preg3" id="p3-r" cols="80" rows="5" placeholder="Escriba su respuesta aquí"
-                                spellcheck="true"></textarea>
+                            <textarea name="preg3" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                             <li>¿Cual es el papel especial de los periodistas en la libertad de expresión?</li>
-                            <textarea name="preg4" id="p4-r" cols="80" rows="5" placeholder="Escriba su respuesta aquí"
-                                spellcheck="true"></textarea>
+                            <textarea name="preg4" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                             <li>¿Qué hay de la libertad de expresión en línea?</li>
-                            <textarea name="preg5" id="p5-r" cols="80" rows="5" placeholder="Escriba su respuesta aquí"
-                                spellcheck="true"></textarea>
+                            <textarea name="preg5" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                             <li>¿Qué podemos hacer?</li>
-                            <textarea name="preg4" id="p4-r" cols="80" rows="5" placeholder="Escriba su respuesta aquí"
-                                spellcheck="true"></textarea>
+                            <textarea name="preg6" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                             <li>¿Cuales son las limitaciones?</li>
-                            <textarea name="preg2" id="p2-r" cols="80" rows="5" placeholder="Escriba su respuesta aquí"
-                                spellcheck="true"></textarea>
+                            <textarea name="preg7" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                         </ol>
                     </div>
                 </div>
@@ -80,8 +81,9 @@
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo11/unidad4/actividad2" class="btn btn-success">Anterior</a>
-                    <a href="<?php echo base_url();?>modulo12/unidad1/actividad2" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
                 </center>
+                <?php echo form_close(); ?>
                 <?php $this->load->view('initial/paginacion');?>
 
 <br />

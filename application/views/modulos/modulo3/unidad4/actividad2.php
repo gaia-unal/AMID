@@ -52,7 +52,7 @@
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 4: Videos musicales y su representación</h1>
-                <?php echo form_open('modulo3/unidad4/evaluacion');$this->session->set_userdata('idAc','m3u4a2'); ?>
+                <?php echo form_open('modulo3/unidad4/evaluacion');$this->session->set_userdata('idAct','m3u4a2'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Teniendo en cuenta lo leído anteriormente, responda las siguientes preguntas:</h4>
@@ -83,7 +83,7 @@
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo3/unidad4/actividad1" class="btn btn-success">Anterior</a>
-                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
                     <!-- <a href="module3.4_eval.php" class="btn btn-success">Siguiente</a> -->
                 </center>
                 <?php echo form_close(); ?>

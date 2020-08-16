@@ -45,6 +45,7 @@ function espera3() {
 
 function espera4() {
     i++;
+    printNote(i);
     if (i == 6) {
         setTimeout("final()", 600);
     }
@@ -54,8 +55,16 @@ function final() {
     swal({
         title: "¡Correcto!",
         type: "success",
-        button: "Continuar",
+        // button: "Continuar",
         text: "Has terminado, ¡FELICITACIONES!, ya puedes continuar con el siguiente modulo"
     });
-    activar();
+}
+
+function printNote(puntos){
+        
+    var nota=parseFloat(puntos*5/6);
+    if(nota<1){nota=1;}
+    
+    document.getElementById("pointsNota").value=nota;
+    document.getElementById("pointsGood").value=puntos;
 }

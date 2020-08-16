@@ -14,6 +14,7 @@ function validar() {
         correctas++;
     if (resp4.value == 2)
         correctas++;
+
     if (correctas == 4){
         swal({
             type: 'success',
@@ -27,4 +28,15 @@ function validar() {
             text: 'Te equivocaste en algunas, te recomendamos repasar los temas y volverlo a intentar'
         });
     }
+    printNote(correctas);
+    correctas=0;
+
+}
+
+function printNote(puntos){
+    var nota=parseFloat(puntos*5/4);
+    if(nota<1){nota=1;}
+    
+    document.getElementById("pointsNota").value=nota;
+    document.getElementById("pointsGood").value=puntos;
 }

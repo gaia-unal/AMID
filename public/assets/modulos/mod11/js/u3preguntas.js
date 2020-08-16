@@ -32,5 +32,14 @@ function respuesta(){
             text: 'Te equivocaste en algunas, puedes volverlo a intentar'
         });
     }
+    printNote(correctas);
     correctas = 0;
+}
+
+function printNote(puntos){
+    var nota=parseFloat(puntos*5/11);
+    if(nota<1){nota=1;}
+    
+    document.getElementById("pointsNota").value=nota.toFixed(2);
+    document.getElementById("pointsGood").value=puntos;
 }

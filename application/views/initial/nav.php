@@ -6,7 +6,7 @@
 		<?php 
     $name=$this->session->userdata('name');
     if(isset($name)){ ?>
-		<p class="navbar-brand-p">Bienvenido <?php echo $this->session->userdata('name');?> !!!</p>
+		<p class="navbar-brand-p">Bienvenid@ <?php echo $this->session->userdata('name');?> !!!</p>
 
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
 			aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">

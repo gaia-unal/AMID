@@ -34,7 +34,6 @@ function imp() {
             button: "Continuar",
             text: "Respondiste correctamente =)"
         });
-        printNote(puntos);
     } else {
         swal({
             title: "Incorrecto "+puntos+" de 8",
@@ -44,11 +43,13 @@ function imp() {
         });
         // r1.value=r2.value=r3.value=r4.value=r5.value=r6.value=r7.value=r8.value=null;
     }
+    printNote(puntos);
 }
 
 function printNote(puntos){
     var nota=parseFloat(puntos*5/8);
     if(nota<1){nota=1;}
+    
     document.getElementById("pointsNota").value=nota;
     document.getElementById("pointsGood").value=puntos;
 }

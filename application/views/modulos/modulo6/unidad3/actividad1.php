@@ -51,7 +51,7 @@
             <div class="col-lg-9">
                 <h1><br>Unidad 3: Usos de las Herramientas Interactivas de Multimedia, incluyendo los Juegos Digitales en las
                     Aulas</h1>
-                    <?php echo form_open('modulo6/unidad3/evaluacion');$this->session->set_userdata('idAc','m6u3a1'); ?>
+                    <?php echo form_open('modulo6/unidad3/evaluacion');$this->session->set_userdata('idAct','m6u3a1'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <p class="card-text">
@@ -156,7 +156,7 @@
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo6/unidad3/temas" class="btn btn-success">Anterior</a>
-                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
                 </center>
                 <?php echo form_close(); ?>
                 <?php $this->load->view('initial/paginacion');?>

@@ -35,8 +35,8 @@
                         <a href="module8.1_inicio.php" class="list-group-item">Unidad 1</a>
                         <ul class="list-group-item">
                             <a href="<?php echo base_url();?>modulo8/unidad1/temas" class="list-group-item">Temas</a>
-                            <a href="<?php echo base_url();?>modulo8/unidad1/actividad1" class="list-group-item">Actividad</a>
-                            <a href="<?php echo base_url();?>modulo8/unidad1/evaluacion1" class="list-group-item active">Evaluación</a>
+                            <a href="<?php echo base_url();?>modulo8/unidad1/actividad1" class="list-group-item active">Actividad</a>
+                            <a href="<?php echo base_url();?>modulo8/unidad1/evaluacion1" class="list-group-item ">Evaluación</a>
                         </ul>
                         <a href="#" onclick="inactivo(1)" class="list-group-item">Unidad 2</a>
                         <a href="#" onclick="inactivo(1)" class="list-group-item inactive">Unidad 3</a>
@@ -51,6 +51,7 @@
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 1: Conceptos y Aplicación de la Alfabetización Informacional</h1>
+                <?php echo form_open('modulo8/unidad1/evaluacion1');$this->session->set_userdata('idAct','m8u1a2'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Retroalimentación</h4>
@@ -58,37 +59,37 @@
                             <ol>
                                 <li>Hable sobre las actitudes culturales hacia la información. ¿Cómo se ve y se valora
                                     la información en su sociedad? </li>
-                                <textarea name="preg1" id="p1-r" cols="80" rows="5"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                    <textarea name="preg1" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" autofocus></textarea>
                                 <li>¿Cómo los puntos de vista de la información impresa (por Ej. de los principales
                                     periódicos) se comparan con la información generada por los medios electrónicos?
                                 </li>
-                                <textarea name="preg2" id="p2-r" cols="80" rows="5"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                <textarea name="preg2" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                                 <li>¿Cuál es la relación entre la información y el poder y entre los medios impresos
                                     y los medios digitales? ¿Cuál es la identidad de la(s) persona(s) detrás de la
                                     información generada? </li>
-                                <textarea name="preg3" id="p3-r" cols="80" rows="5"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                <textarea name="preg3" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                                 <li>Usando Internet o la biblioteca de la escuela/colegio o ambos, identifique un
                                     problema o un tema para investigar en una de las siguientes áreas: educación cívica,
                                     ciencias, estudios sociales, historia o geografía. Presente los resultados de su
                                     investigación en un texto escrito a continuación. </li>
-                                <textarea name="preg4" id="p4-r" cols="80" rows="5"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                <textarea name="preg4" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                                 <li>Después del texto, reflexione sobre lo siguiente: ¿De qué forma usted seleccionó
                                     lo que quería presentar de entre una gran variedad de información disponible sobre
                                     el tema? </li>
-                                <textarea name="preg5" id="p5-r" cols="80" rows="5"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                    <textarea name="preg5" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                                 <li>¿De qué quería usted tener más información que no pudo tener acceso, o cómo
                                     afectó esto a su presentación? </li>
-                                <textarea name="preg4" id="p4-r" cols="80" rows="5"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                    <textarea name="preg6" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                                 <li>Finalmente, ¿transformó usted la información que recopiló para aplicar su
                                     contexto particular? ¿Cómo y por qué? </li>
-                                <textarea name="preg2" id="p2-r" cols="80" rows="5"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                    <textarea name="preg7" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                             </ol>
                         </p>
                     </div>
@@ -97,8 +98,9 @@
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo8/unidad1/actividad1" class="btn btn-success">Anterior</a>
-                    <a href="<?php echo base_url();?>modulo8/unidad1/evaluacion1" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
                 </center>
+                <?php echo form_close(); ?>
                 <?php $this->load->view('initial/paginacion');?>
 
 <br />

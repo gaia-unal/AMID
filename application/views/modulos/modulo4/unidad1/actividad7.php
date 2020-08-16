@@ -53,7 +53,7 @@
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 1: Lectura de medios y textos de información</h1>
-                <?php echo form_open('modulo4/unidad1/evaluacion');$this->session->set_userdata('idAc','m4u1a7'); ?>
+                <?php echo form_open('modulo4/unidad1/evaluacion');$this->session->set_userdata('idAct','m4u1a7'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Reflexión</h4>
@@ -73,7 +73,7 @@
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo4/unidad1/actividad6" class="btn btn-success">Anterior</a>
-                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
                 </center>
                 <?php echo form_close(); ?>
                 <?php $this->load->view('initial/paginacion');?>

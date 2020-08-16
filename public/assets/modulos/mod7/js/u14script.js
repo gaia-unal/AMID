@@ -75,11 +75,13 @@ function final() {
         button: "Continuar",
         text: "Has terminado, ¡FELICITACIONES!"
     });
-    activar();
+    printNote(6);
 }
 
-function activar() {
-    document.getElementById('btn-sgte').href = "../../modulo7.2/mod7.2_inicio.html";
-    var unid = document.getElementById('unid-sgte');
-    unid.href = "../../modulo7.2/mod7.2_inicio.html";
+function printNote(puntos){
+    var nota=parseFloat(puntos*5/6);
+    if(nota<1){nota=1;}
+    
+    document.getElementById("pointsNota").value=nota;
+    document.getElementById("pointsGood").value=puntos;
 }

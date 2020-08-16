@@ -52,6 +52,7 @@
 			<div class="col-lg-9">
 				<br>
 				<h1>Unidad 3: Manejando el Cambio Para Fomentar un Medio Ambiente Propicio para las Escuelas AMI</h1>
+				<?php echo form_open('modulo9/unidad3/evaluacion');$this->session->set_userdata('idAct','m9u3a2'); ?>
 				<div class="card mt-4">
 					<div class="card-body">
 						<p class="card-text">
@@ -59,18 +60,18 @@
 								<li>Desarrolle un plan para promover AMI entre los hacedores de políticas, directores de
 									programas y profesores de su institución. ¿Cuáles son las principales prioridades o
 									necesidades para cada grupo?</li>
-								<textarea name="preg1" id="p1-r" cols="80" rows="5"
-									placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+									<textarea name="preg1" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
 								<li>Explique cómo este Curriculum AMI puede ayudar a enfrentar aquellas necesidades.
 								</li>
-								<textarea name="preg2" id="p2-r" cols="80" rows="5"
-									placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+								<textarea name="preg2" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
 								<li>Identifique otros grupos de actores a quienes se podría incluir.</li>
-								<textarea name="preg3" id="p3-r" cols="80" rows="5"
-									placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+								<textarea name="preg3" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
 								<li>¿Qué papel jugarían ellos en la promoción de AMI?</li>
-								<textarea name="preg4" id="p4-r" cols="80" rows="5"
-									placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+								<textarea name="preg4" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
 							</ol>
 						</p>
 					</div>
@@ -79,8 +80,9 @@
 				<br>
                 <center>
                     <a href="<?php echo base_url();?>modulo9/unidad3/actividad1" class="btn btn-success">Anterior</a>
-                    <a href="<?php echo base_url();?>modulo9/unidad3/evaluacion" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
                 </center>
+                <?php echo form_close(); ?>
 				<?php $this->load->view('initial/paginacion');?>
 
 <br />

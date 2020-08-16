@@ -72,16 +72,18 @@ function espera4() {
 function final() {
     swal({
         title: "¡Correcto!",
-        icon: "success",
-        button: "Continuar",
+        // icon: "success",
+        // button: "Continuar",
         text: "Has terminado, ¡FELICITACIONES!"
     });
     printNote(6);
+    
 
 }
 function printNote(puntos){
     var nota=parseFloat(puntos*5/6);
     if(nota<1){nota=1;}
+    
     document.getElementById("pointsNota").value=nota;
     document.getElementById("pointsGood").value=puntos;
 }

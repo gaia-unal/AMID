@@ -62,24 +62,24 @@
                         </div>
                         <p class="card-text">
                             <ul class="content">
-                                <li><a href="#" onclick="preg1();">
-                                        <h4>¿Qué es?</h4>
-                                    </a></li>
-                                <li><a href="#" onclick="preg2();">
-                                        <h4>Web 2.0</h4>
-                                    </a></li>
-                                <li><a href="#" onclick="preg3();">
-                                        <h4>Ventajas</h4>
-                                    </a></li>
-                                <li><a href="#" onclick="preg4();">
-                                        <h4>Ejemplos Web 2.0</h4>
-                                    </a></li>
-                                <li><a href="#" onclick="preg5();">
-                                        <h4>Usos</h4>
-                                    </a></li>
-                                <li><a href="#" onclick="preg6();">
-                                        <h4>Navegadores</h4>
-                                    </a></li>
+                                <a href="#" onclick="preg1();">
+                                        <li><h4>¿Qué es?</h4></li>
+                                    </a>
+                                <a href="#" onclick="preg2();">
+                                        <li><h4>Web 2.0</h4></li>
+                                    </a>
+                                <a href="#" onclick="preg3();">
+                                        <li><h4>Ventajas</h4></li>
+                                    </a>
+                                <a href="#" onclick="preg4();">
+                                        <li><h4>Ejemplos Web 2.0</h4></li>
+                                    </a>
+                                <a href="#" onclick="preg5();">
+                                        <li><h4>Usos</h4></li>
+                                    </a>
+                                <a href="#" onclick="preg6();">
+                                        <li><h4>Navegadores</h4></li>
+                                    </a>
                             </ul>
                             <h4>Diferencia entre Web e Internet</h4>
                             <p>Puedes dar clic a la imagen para verla más amplia</p>

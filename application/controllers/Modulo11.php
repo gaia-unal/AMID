@@ -21,12 +21,26 @@ class Modulo11 extends CI_Controller {
 	
 	public function index(){
 		
-		$id=$this->session->userdata('id');
+		$seg['seg4']=$this->session->userdata('idAct');
 
-		if(isset($id)){
+		if(isset($this->id)){
 			$this->profesormoduloModel->changeEstado(11,1);
+			$submit=$this->input->post('submit');
 
 			$data['profesormodulo']=$this->profesormoduloModel->getOne();
+			if($seg['seg4'] && isset($submit)){
+				$idAct=$seg['seg4'];
+				if($idAct=='m10u1a3'){
+					$this->profesormoduloModel->changeEstado(10,2);
+					$nota= $this->input->post('pointsNota');
+						
+					$points=$this->input->post('pointsGood');
+					$answer='{"Actividad 1":{"Pregunta 1": "'.$points.' correctos de 6"}}';
+					
+					$this->insertUpdate($idAct,$nota, $answer);
+				}
+				
+			}
 			$this->load->view('modulos/modulo11/index',$data);
 
 		}else{
@@ -50,14 +64,9 @@ class Modulo11 extends CI_Controller {
 				
 				$idAct=$seg['seg4'];
 				switch ($idAct) {
-					case 'm1u1a1':
-						$points=$this->input->post('pointsGood');
-						$answer='{"Actividad 1":{"Pregunta 1": "'.$points.' correctos de 16"}}';
+					case "m11u1a2":
+						echo "NADA";
 						
-						$nota=$this->input->post('pointsCanvas');
-						
-						$this->insertUpdate($idAct,$nota, $answer);
-
 					break;
 					
 					default:
@@ -92,13 +101,14 @@ class Modulo11 extends CI_Controller {
 				
 				$idAct=$seg['seg4'];
 				switch ($idAct) {
-					case 'm1u1':
-						$nota= (double)($this->input->post('pre1'));
-						$this->insertUpdateE($idAct,$nota);
-					break;
-					case "m1u2ax":
-					break;
-					case "m1u2ax":
+					case "m11u1a2":
+						$nota= $this->input->post('pointsNota');
+						
+						$points=$this->input->post('pointsGood');
+						$answer='{"Actividad 1":{"Pregunta 1": "'.$points.' correctos de 42"}}';
+						
+						$this->insertUpdate($idAct,$nota, $answer);
+						
 					break;
 					
 					default:
@@ -136,13 +146,14 @@ class Modulo11 extends CI_Controller {
 				
 				$idAct=$seg['seg4'];
 				switch ($idAct) {
-					case 'm1u1':
-						$nota= (double)($this->input->post('pre1'));
-						$this->insertUpdateE($idAct,$nota);
-					break;
-					case "m1u2ax":
-					break;
-					case "m1u2ax":
+					case "m11u2a2":
+						$nota= $this->input->post('pointsNota');
+						
+						$points=$this->input->post('pointsGood');
+						$answer='{"Actividad 1":{"Pregunta 1": "'.$points.' correctos de 7"}}';
+						
+						$this->insertUpdate($idAct,$nota, $answer);
+						
 					break;
 					
 					default:
@@ -180,13 +191,14 @@ class Modulo11 extends CI_Controller {
 				
 				$idAct=$seg['seg4'];
 				switch ($idAct) {
-					case 'm1u1':
-						$nota= (double)($this->input->post('pre1'));
-						$this->insertUpdateE($idAct,$nota);
-					break;
-					case "m1u2ax":
-					break;
-					case "m1u2ax":
+					case "m11u3a2":
+						$nota= $this->input->post('pointsNota');
+						
+						$points=$this->input->post('pointsGood');
+						$answer='{"Actividad 1":{"Pregunta 1": "'.$points.' correctos de 11"}}';
+						
+						$this->insertUpdate($idAct,$nota, $answer);
+						
 					break;
 					
 					default:
@@ -209,6 +221,8 @@ class Modulo11 extends CI_Controller {
 	}
 
 	public function insertUpdate($idAct,$nota, $answer){
+		
+		if($nota!="No Aplica" && $nota<=0){$nota=1;}
 		$data= array(
 			'id_actividad' 	   => $idAct,
 			'id_profesor' 	   => $this->id,
@@ -222,6 +236,7 @@ class Modulo11 extends CI_Controller {
 
 	public function insertUpdateE($idEval,$nota){
 
+		if($nota!="No Aplica" && $nota<=0){$nota=1;}
 		$des= $this->calculoDes($nota);
 
 		$data= array(
@@ -237,12 +252,15 @@ class Modulo11 extends CI_Controller {
 	}
 
 	public function calculoDes($nota){
-		if($nota<3){
-            return 'Malo';
-        }else if ($nota<=4){
-            return 'Regular';
-        }
-        return 'Bueno';
+		if($nota!="No Aplica"){
+			if($nota<3){
+				return 'Malo';
+			}else if ($nota<=4){
+				return 'Regular';
+			}
+			return 'Bueno';
+		}else
+			return $nota;
 	}
 
 	public function logout(){

@@ -93,18 +93,22 @@
                                 <div id="img8">
                                     <img class="imagen" src="<?php echo base_url();?>public/assets/modulos/mod7/img/img8.png">
                                 </div>
-                                <div id="btnAdelante">
-                                    <a href="#" onclick="avanzar();">
-                                        <img class="btnF" src="<?php echo base_url();?>public/assets/img/flecha.png">
-                                    </a>
-                                </div>
+                                <br>
+                                <center>
                                 <div id="btnAtras">
-                                    <a href="#" onclick="volver();">
-                                        <img class="btnA" src="<?php echo base_url();?>public/assets/img/flecha1.png">
+                                    <a onclick="volver();">
+                                        <img width=70 src="<?php echo base_url();?>public/assets/img/arrow_l.jpg">
                                     </a>
                                 </div>
+                                <div id="btnAdelante">
+                                    <a onclick="avanzar();">
+                                        <img width=70 src="<?php echo base_url();?>public/assets/img/arrow_r.jpg">
+                                    </a>
+                                </div>
+                                </center>
+                                
                             </div>
-                            <h4>Referencias</h4>
+                            <h4 >Referencias</h4>
                             César Gamboa-Peñaranda Antón Zamora-Ilarionov Edén Galán-Rodas Acta Médica Costarricense
                             vol. 56 issue 4 (2014) pp: 186-187 Published by
                             http://creativecommons.org/licenses/by-nc-nd/3.0/

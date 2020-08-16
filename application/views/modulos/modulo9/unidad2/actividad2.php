@@ -53,38 +53,40 @@
 			<div class="col-lg-9">
 				<br>
 				<h1>Unidad 2: Teorías de aprendizaje y AMI</h1>
+				<?php echo form_open('modulo9/unidad2/evaluacion');$this->session->set_userdata('idAct','m9u2a2'); ?>
 				<div class="card mt-4">
 					<div class="card-body">
 						<h4>Retroalimentación</h4>
 						<p>1. ¿Qué papel puede tener la meta cognición en la transferencia de aprendizaje de las
 							actividades que usted propone a sus estudiantes?</p>
-						<textarea name="preg1" id="p1-r" cols="100" rows="10" placeholder="Escriba su respuesta aquí"
-							spellcheck="true"></textarea>
+							<textarea name="preg1" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
 						<p>2. Considere el papel de las bibliotecas y de los museos en el desarrollo de las destrezas
 							AMI. Diseñe una actividad en la que ilustre cómo una actividad estratégica específica puede
 							utilizarse en uno de estos medios. Considere las características únicas que son parte de
 							estos ambientes y que pueden influir en la experiencia de enseñanza o aprendizaje de una
 							manera positiva y escriba su respuesta.</p>
-						<textarea name="preg2" id="p2-r" cols="100" rows="10" placeholder="Escriba su respuesta aquí"
-							spellcheck="true"></textarea>
+							<textarea name="preg2" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
 						<p>3. Basado en su propio trabajo, explique las formas en las cuales el Curriculum AMI provee
 							las oportunidades para una instrucción y aprendizaje diferenciado (es decir: aprendizaje
 							cinestético, aprendizaje visual, aprendizaje auditivo, etc.)</p>
-						<textarea name="preg3" id="p3-r" cols="100" rows="10" placeholder="Escriba su respuesta aquí"
-							spellcheck="true"></textarea>
+							<textarea name="preg3" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
 						<p>4. Para que los estudiantes tengan éxito como aprendices, es importante conocer la meta
 							cognición y las estrategias de meta cognición. ¿Cónsidera usted que esta frase es cierta?
 							¿Por qué?</p>
-						<textarea name="preg4" id="p4-r" cols="100" rows="10" placeholder="Escriba su respuesta aquí"
-							spellcheck="true"></textarea>
+							<textarea name="preg4" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
 					</div>
 				</div>
 				<!-- /.card -->
 				<br>
                 <center>
                     <a href="<?php echo base_url();?>modulo9/unidad2/actividad1" class="btn btn-success">Anterior</a>
-                    <a href="<?php echo base_url();?>modulo9/unidad2/evaluacion" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
                 </center>
+                <?php echo form_close(); ?>
 				<?php $this->load->view('initial/paginacion');?>
 
 <br />

@@ -51,6 +51,7 @@
             <div class="col-lg-9">
                 <br>
                 <h1>Unidad 1: Los jóvenes en el mundo virtual</h1>
+                <?php echo form_open('modulo7/unidad1/actividad3');$this->session->set_userdata('idAct','m7u1a2'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Preguntas de opción múltiple</h4>
@@ -123,7 +124,8 @@
                             <!--Pregunta 5 -->
                             <h4>Teniendo en cuenta la población a la que va dirigida y la materia que dicta, ¿qué
                                 contenido agregaría a la wiki?</h4>
-                            <textarea name="preg5" id="p5-r" cols="90" rows="10" placeholder="..."></textarea>
+                            <textarea name="preg5" style="width: 100%;" rows="7" minlength="1" maxlength="500" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                             <br>
                         </div>
                     </div>
@@ -132,8 +134,9 @@
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo7/unidad1/actividad1" class="btn btn-success">Anterior</a>
-                    <a href="<?php echo base_url();?>modulo7/unidad1/actividad3" class="btn btn-success btnSig Retraso5">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
                 </center>
+                <?php echo form_close(); ?>
                 <?php $this->load->view('initial/paginacion');?>
 
 <br />

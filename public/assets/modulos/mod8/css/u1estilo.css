@@ -2,14 +2,15 @@
     display: block;
 }
 
-#parte2{
+#parte2, #parte3{
     display: none;
 }
 
-#parte3{
-    display: none;
+#btnAdelante{
+	display: inline-block;
+    cursor: pointer;
 }
-
-#btnS{
-    display: block;
+#btnAtras{
+	display: none;
+	cursor: pointer;
 }

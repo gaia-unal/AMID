@@ -50,7 +50,7 @@
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 2: Uso de las Nuevas Tecnologías Mediáticas en la Sociedad – Comunicación de Masas y Digital</h1>
-                <?php echo form_open('modulo6/unidad2/evaluacion');$this->session->set_userdata('idAc','m6u2a1'); ?>
+                <?php echo form_open('modulo6/unidad2/evaluacion');$this->session->set_userdata('idAct','m6u2a1'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Describir el uso de una o dos formas de nuevos medios para compartir conocimientos e
@@ -123,7 +123,7 @@
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo6/unidad2/temas" class="btn btn-success">Anterior</a>
-                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
                 </center>
                 <?php echo form_close(); ?>
                 <?php $this->load->view('initial/paginacion');?>

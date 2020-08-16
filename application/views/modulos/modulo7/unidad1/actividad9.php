@@ -55,24 +55,24 @@
                     <div class="card-body">
                         <p class="card-text">
                             <ul class="content">
-                                <li><a href="#" onclick="preg1();">
-                                        <h4>Tolerancia</h4>
-                                    </a></li>
-                                <li><a href="#" onclick="preg2();">
-                                        <h4>Pérdida de control</h4>
-                                    </a></li>
-                                <li><a href="#" onclick="preg3();">
-                                        <h4>Ocultación</h4>
-                                    </a></li>
-                                <li><a href="#" onclick="preg4();">
-                                        <h4>Abandono de actividades</h4>
-                                    </a></li>
-                                <li><a href="#" onclick="preg5();">
-                                        <h4>Cambios en el comportamiento</h4>
-                                    </a></li>
-                                <li><a href="#" onclick="preg6();">
-                                        <h4>Síndrome de abstinencia</h4>
-                                    </a></li>
+                                <a href="#" onclick="preg1();">
+                                        <li><h4>Tolerancia</h4></li>
+                                    </a>
+                                <a href="#" onclick="preg2();">
+                                        <li><h4>Pérdida de control</h4></li>
+                                    </a>
+                                <a href="#" onclick="preg3();">
+                                        <li><h4>Ocultación</h4></li>
+                                    </a>
+                                <a href="#" onclick="preg4();">
+                                        <li><h4>Abandono de actividades</h4></li>
+                                    </a>
+                                <a href="#" onclick="preg5();">
+                                        <li><h4>Cambios en el comportamiento</h4></li>
+                                    </a>
+                                <a href="#" onclick="preg6();">
+                                        <li><h4>Síndrome de abstinencia</h4></li>
+                                    </a>
                             </ul>
                             <h4>Referencias y Fuente de Imágenes</h4>
                             [1] Labrador Encinas, F., Requesens Moll, A., & Requesens Moll, M. (2015). Guía para

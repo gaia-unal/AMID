@@ -53,7 +53,7 @@
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 2: El medio y el mensaje: noticias impresas y difundidas</h1>
-                <?php echo form_open('modulo4/unidad2/evaluacion');$this->session->set_userdata('idAc','m4u2a3'); ?>
+                <?php echo form_open('modulo4/unidad2/evaluacion');$this->session->set_userdata('idAct','m4u2a3'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Noticias Actuales</h4>
@@ -88,7 +88,7 @@
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo4/unidad2/actividad2" class="btn btn-success">Anterior</a>
-                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
                     <!-- <a href="../module4.2_eval.php" class="btn btn-success">Siguiente</a> -->
                 </center>
                 <?php echo form_close(); ?>

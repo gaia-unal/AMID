@@ -51,6 +51,7 @@
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 3: Alfabetización Informacional Digital</h1>
+                <?php echo form_open('modulo8/unidad3/evaluacion');$this->session->set_userdata('idAct','m8u3a2'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Reflexión</h4>
@@ -60,8 +61,8 @@
                             sobre las características que las nuevas tecnologías brindan a las personas con discapacidad
                             para que tengan acceso a la información digital (por Ej. acceso a la red y la creación de
                             documentos digitales en formatos accesibles). <br> Escriba su plan a continuación <br>
-                            <textarea name="preg1" id="p1-r" cols="80" rows="5" placeholder="Escriba su respuesta aquí"
-                                spellcheck="true"></textarea> <br>
+                            <textarea name="preg1" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea><br>
                             Experimente creando un blog sobre un tema relacionado con la educación en su país. Debería
                             ser un tema de actualidad que atraiga el interés y la capacidad de respuesta (por Ej.
                             mejorar el acceso a la educación primaria y secundaria para los más pobres de la sociedad,
@@ -73,16 +74,16 @@
                                     preservación de la información digital (por Ej. La Carta de la UNESCO sobre la
                                     Preservación del Patrimonio Digital, archivo digital y lineamientos de preservación)
                                 </li>
-                                <textarea name="preg2" id="p2-r" cols="80" rows="5"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                <textarea name="preg2" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                             </ul>
                             Visite el sitio en red de una Biblioteca Patrimonio de la Humanidad. Hable sobre la
                             importancia de la preservación y la promoción del patrimonio documental dentro del contexto
                             de un desastre natural, como el terremoto de Haití, y hable sobre el trabajo realizado por
                             los archivistas del Archivo Nacional de Haití. Encuentre el artículo que ilustra la
                             situación de Haití después del terremoto en enero del 2010. <br>
-                            <textarea name="preg3" id="p3-r" cols="80" rows="5" placeholder="Escriba su respuesta aquí"
-                                spellcheck="true"></textarea>
+                            <textarea name="preg3" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                         </p>
                     </div>
                 </div>
@@ -90,8 +91,10 @@
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo8/unidad3/actividad1" class="btn btn-success">Anterior</a>
-                    <a href="<?php echo base_url();?>modulo8/unidad3/evaluacion" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
                 </center>
+                <?php echo form_close(); ?>
+
                 <?php $this->load->view('initial/paginacion');?>
 
 <br />

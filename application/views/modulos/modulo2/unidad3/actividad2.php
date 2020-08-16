@@ -54,7 +54,7 @@
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 3: Lo que genera noticias – explorando los criterios</h1>
-                <?php echo form_open('modulo2/unidad3/actividad3');$this->session->set_userdata('idAc','m2u3a2'); ?>
+                <?php echo form_open('modulo2/unidad3/actividad3');$this->session->set_userdata('idAct','m2u3a2'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Refuerzo</h4>
@@ -81,7 +81,7 @@
                 <input type="text" class="sr-only" id="pointsGood" name="pointsGood" value="0">
                 <center>
                     <a href="<?php echo base_url();?>modulo2/unidad3/actividad1" class="btn btn-success">Anterior</a>
-                    <button id="btn-siguiente"  class="btn btn-success" type="submit">Siguiente</button>
+                    <button id="btn-siguiente"  class="btn btn-success" name="submit" type="submit">Siguiente</button>
                     <!-- <a href="module2.3_act3.php" class="btn btn-success">Siguiente</a> -->
                 </center>
                 <?php echo form_close(); ?>

@@ -18,10 +18,20 @@ function validar(){
 
 function resultado(){
     var temp = (correctas*100)/42;
+    printNote(correctas);
     correctas = 0;
     swal({
         type: 'success',
         title: 'Terminaste',
         text: 'Tu resultado fue del ' + temp.toFixed(2) + '%'
     });
+    
+}
+
+function printNote(puntos){
+    var nota=parseFloat(puntos*5/42);
+    if(nota<1){nota=1;}
+    
+    document.getElementById("pointsNota").value=nota.toFixed(2);
+    document.getElementById("pointsGood").value=puntos;
 }

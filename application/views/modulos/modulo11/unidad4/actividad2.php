@@ -53,7 +53,7 @@
 			<div class="col-lg-9">
 				<h1><br>Unidad 4: El nacimiento de medios alternativos</h1>
 
-				<?php echo form_open('modulo12');$this->session->set_userdata('idAc','m11u4'); ?>
+				<?php echo form_open('modulo12');$this->session->set_userdata('idAct','m11u4a2'); ?>
 
 				<div class="card mt-4">
 					<div class="card-body">
@@ -101,11 +101,13 @@
 				</div>
 				<!-- /.card -->
 				<br>
+				<input type="text" class="sr-only" id="pointsNota" name="pointsNota" value="1">
+                <input type="text" class="sr-only" id="pointsGood" name="pointsGood" value="0">
 				<center>
 					<a href="<?php echo base_url();?>modulo11/unidad4/actividad1" class="btn btn-success">Anterior</a>
-					<button id="btn-siguiente"  class="btn btn-success" type="submit">Siguiente</button>
-				</center>
-				<?php echo form_close(); ?>
+					<button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
+                </center>
+                <?php echo form_close(); ?>
 				<?php $this->load->view('initial/paginacion');?>
 
 <br />

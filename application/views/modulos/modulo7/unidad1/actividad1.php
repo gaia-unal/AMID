@@ -61,36 +61,36 @@
                         <p class="card-text">
                             Da clic en los títulos para navegar en el contenido.
                             <ul class="content">
-                                <li>
+                                
                                     <a href="#" onclick="preg1();">
-                                        <h4>¿Qué es?</h4>
+                                    <li> <h4>¿Qué es?</h4></li>                                
                                     </a>
-                                </li>
-                                <li>
+
+                                
                                     <a href="#" onclick="preg2();">
-                                        <h4>¿Cómo editar?</h4>
+                                        <li><h4>¿Cómo editar?</h4></li>
                                     </a>
-                                </li>
-                                <li>
+                                
+                                
                                     <a href="#" onclick="preg3();">
-                                        <h4>Tipos</h4>
+                                        <li><h4>Tipos</h4></li>
                                     </a>
-                                </li>
-                                <li>
+                                
+                                
                                     <a href="#" onclick="preg4();">
-                                        <h4>Ventajas</h4>
+                                        <li><h4>Ventajas</h4></li>
                                     </a>
-                                </li>
-                                <li>
+                                
+                                
                                     <a href="#" onclick="preg5();">
-                                        <h4>Desventajas</h4>
+                                        <li><h4>Desventajas</h4></li>
                                     </a>
-                                </li>
-                                <li>
+                                
+                                
                                     <a href="#" onclick="preg6();">
-                                        <h4>Ejemplos</h4>
+                                        <li><h4>Ejemplos</h4></li>
                                     </a>
-                                </li>
+                                
                             </ul>
                             <h4>Referencias</h4>
                             [1] Autores: Julián Pérez Porto y Ana Gardey. Publicado: 2010. Actualizado: 2013.

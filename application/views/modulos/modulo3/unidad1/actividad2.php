@@ -52,7 +52,7 @@
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 1: Informes de noticias y el poder de las imágenes</h1>
-                <?php echo form_open('modulo3/unidad1/evaluacion');$this->session->set_userdata('idAc','m3u1a2'); ?>
+                <?php echo form_open('modulo3/unidad1/evaluacion');$this->session->set_userdata('idAct','m3u1a2'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <p class="card-text">
@@ -74,7 +74,7 @@
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo3/unidad1/actividad1" class="btn btn-success">Anterior</a>
-                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
                     <!-- <a href="module3.1_eval.php" class="btn btn-success">Siguiente</a> -->
                 </center>
                 <?php echo form_close(); ?>

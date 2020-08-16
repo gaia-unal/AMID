@@ -53,30 +53,31 @@
 			<div class="col-lg-9">
 				<br>
 				<h1>Unidad 1: Comunicación, enseñanza y aprendizaje</h1>
+				<?php echo form_open('modulo9/unidad1/evaluacion');$this->session->set_userdata('idAct','m9u1a2'); ?>
 				<div class="card mt-4">
 					<div class="card-body">
 						<h4>Reflexión</h4>
 						<div>
 							<p>1. Según los roles identificados (Emisor, receptor...) ¿Qué rol asume usted como
 								profesor?</p>
-							<textarea name="preg1" required id="p1-r" cols="90" rows="10"
-								placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+								<textarea name="preg1" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" autofocus></textarea>
 						</div>
 						<div>
 							<p>2. ¿Qué roles están disponibles para sus estudiantes?</p>
-							<textarea name="preg2" required id="p2-r" cols="90" rows="10"
-								placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+							<textarea name="preg2" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
 						</div>
 						<div>
 							<p>3. ¿Cómo se da forma a la experiencia de aprendizaje a través de estos roles?</p>
-							<textarea name="preg3" required id="p3-r" cols="90" rows="10"
-								placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+							<textarea name="preg3" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
 						</div>
 						<div>
 							<p>4. ¿Cómo se administra el proceso de retroalimentación en el proceso de
 								enseñanza-aprendizaje?</p>
-							<textarea name="preg4" required id="p4-r" cols="90" rows="10"
-								placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+								<textarea name="preg4" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
 						</div>
 						<div>
 							<p>5. El enseñar a través de los medios y los otros proveedores de información requiere un
@@ -86,8 +87,8 @@
 								¿Existe un tema en especial o materia que se enseña a través del uso de la tecnología o
 								los medios? ¿Cómo se administra el proceso de retroalimentación en el proceso de
 								enseñanza-aprendizaje?</p>
-							<textarea name="preg5" required id="p5-r" cols="90" rows="10"
-								placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+								<textarea name="preg5" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
 						</div>
 					</div>
 				</div>
@@ -95,8 +96,10 @@
 				<br>
                 <center>
                     <a href="<?php echo base_url();?>modulo9/unidad1/actividad1" class="btn btn-success">Anterior</a>
-                    <a href="<?php echo base_url();?>modulo9/unidad1/evaluacion" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
                 </center>
+                <?php echo form_close(); ?>
+
 				<?php $this->load->view('initial/paginacion');?>
 
 <br />

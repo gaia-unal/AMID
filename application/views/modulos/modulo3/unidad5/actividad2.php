@@ -52,7 +52,7 @@
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 5: Edición digital y retoque en computadora</h1>
-                <?php echo form_open('modulo3/unidad5/evaluacion');$this->session->set_userdata('idAc','m3u5a2'); ?>
+                <?php echo form_open('modulo3/unidad5/evaluacion');$this->session->set_userdata('idAct','m3u5a2'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <p class="card-text">1. Describa el tipo de cambios que esta tecnología puede hacer posible.</p>
@@ -77,7 +77,7 @@
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo3/unidad5/actividad1" class="btn btn-success">Anterior</a>
-                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
                     <!-- <a href="module3.5_eval.php" class="btn btn-success">Siguiente</a> -->
                 </center>
                 <?php echo form_close(); ?>

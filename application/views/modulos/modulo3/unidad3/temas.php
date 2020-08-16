@@ -26,7 +26,7 @@
                     <ul class="list-group-item">
                         <a href="<?php echo base_url();?>modulo3/unidad1" class="list-group-item">Unidad 1</a>
                         <a href="<?php echo base_url();?>modulo3/unidad2" class="list-group-item">Unidad 2</a>
-                        <a href="<?php echo base_url();?>modulo3/unidad3 class="list-group-item active">Unidad 3</a>
+                        <a href="<?php echo base_url();?>modulo3/unidad3" class="list-group-item active">Unidad 3</a>
                         <ul class="list-group-item">
                             <a href="#" class="list-group-item active">Temas</a>
                             <a href="<?php echo base_url();?>modulo3/unidad3/actividad1" class="list-group-item">Actividad</a>

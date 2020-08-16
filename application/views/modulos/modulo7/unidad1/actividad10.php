@@ -54,6 +54,7 @@
             <div class="col-lg-9">
                 <br>
                 <h1>Unidad 1: Los jóvenes en el mundo virtual</h1>
+                <?php echo form_open('modulo7/unidad1/evaluacion1');$this->session->set_userdata('idAct','m7u1a10'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Empareja cada palabra con su significado</h4>
@@ -85,10 +86,13 @@
                 </div>
                 <!-- /.card -->
                 <br>
+                <input type="text" class="sr-only" id="pointsNota" name="pointsNota" value="1">
+                <input type="text" class="sr-only" id="pointsGood" name="pointsGood" value="0">
                 <center>
                     <a href="<?php echo base_url();?>modulo7/unidad1/actividad9" class="btn btn-success">Anterior</a>
-                    <a href="<?php echo base_url();?>modulo7/unidad1/evaluacion1" class="btn btn-success btnSig Retraso5">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
                 </center>
+                <?php echo form_close(); ?>
                 <?php $this->load->view('initial/paginacion');?>
 
 <br />

@@ -51,22 +51,26 @@
             <div class="col-lg-9">
                 <br>
                 <h1>Unidad 1: Los jóvenes en el mundo virtual</h1>
+                <?php echo form_open('modulo7/unidad1/actividad7');$this->session->set_userdata('idAct','m7u1a6'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4> <strong> Reflexión</strong></h4>
                         <div class="p1">
                             <b>1. ¿Qué relación tiene el derecho de la libre expresión con el derecho a la información
                                 y la protección de los datos?</b> <br>
-                            <textarea name="preg1" id="p1-r" cols="90" rows="10" placeholder="..."></textarea>
+                            <textarea name="preg1" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" autofocus></textarea>
                         </div>
                         <div class="p2">
                         <b>2. ¿Deberían los niños y niñas tener igual acceso a la información, internet y nuevas
                                 tecnologías?</b> <br>
-                            <textarea name="preg2" id="p2-r" cols="90" rows="10" placeholder="..."></textarea>
+                            <textarea name="preg2" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                         </div>
                         <div class="p3">
                         <b>3. ¿Qué modelo de conducta propondría para niños y jóvenes con acceso a internet?</b> <br>
-                            <textarea name="preg3" id="p3-r" cols="90" rows="10" placeholder="..."></textarea>
+                            <textarea name="preg3" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                         </div>
                     </div>
                 </div>
@@ -74,8 +78,9 @@
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo7/unidad1/actividad5" class="btn btn-success">Anterior</a>
-                    <a href="<?php echo base_url();?>modulo7/unidad1/actividad7" class="btn btn-success btnSig Retraso5">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
                 </center>
+                <?php echo form_close(); ?>
                 <?php $this->load->view('initial/paginacion');?>
 
 <br />

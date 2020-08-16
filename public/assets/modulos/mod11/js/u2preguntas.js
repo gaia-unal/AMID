@@ -24,5 +24,14 @@ function resultado() {
         title: 'Terminaste',
         text: 'Tu resultado fue del ' + temp.toFixed(2) + '%'
     });
+    printNote(correctas);
     correctas = 0;
+}
+
+function printNote(puntos){
+    var nota=parseFloat(puntos*5/7);
+    if(nota<1){nota=1;}
+    
+    document.getElementById("pointsNota").value=nota.toFixed(2);
+    document.getElementById("pointsGood").value=puntos;
 }

@@ -52,6 +52,7 @@
 			<!-- /.col-lg-3 -->
 			<div class="col-lg-9">
 				<h1><br>Unidad 1: Propiedad de los medios en el mundo global actual</h1>
+				<?php echo form_open('modulo11/unidad2/inicio');$this->session->set_userdata('idAct','m11u1a2'); ?>
 				<div class="card mt-4">
 					<div class="card-body">
 						<h4>Retroalimentación</h4>
@@ -313,16 +314,19 @@
 						</ol>
 						</p>
 						<center>
-							<button class="btn btn-outline-success" onclick="validar();">Validar</button>
+							<a class="btn btn-outline-success" onclick="validar();">Validar</a>
 						</center>
 					</div>
 				</div>
 				<!-- /.card -->
 				<br>
+				<input type="text" class="sr-only" id="pointsNota" name="pointsNota" value="1">
+                <input type="text" class="sr-only" id="pointsGood" name="pointsGood" value="0">
                 <center>
                     <a href="<?php echo base_url();?>modulo11/unidad1/actividad1" class="btn btn-success">Anterior</a>
-                    <a href="<?php echo base_url();?>modulo11/unidad2" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
                 </center>
+                <?php echo form_close(); ?>
 				<?php $this->load->view('initial/paginacion');?>
 
 <br />

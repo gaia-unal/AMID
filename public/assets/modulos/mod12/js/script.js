@@ -25,8 +25,10 @@ function validar() {
     if (opc3.value == 'interferencias') {
         opc3.classList.add('green');
         correctas++;
-    }else
+    }else{
         opc3.classList.add('red');
+        
+    }
     if (opc4.value == 'recibir') {
         opc4.classList.add('green');
         correctas++;
@@ -59,5 +61,14 @@ function respuesta(){
             text: 'Te equivocaste en algunas, puedes volverlo a intentar'
         });
     }
+    printNote(correctas);
     correctas = 0;
+}
+
+function printNote(puntos){
+    var nota=parseFloat(puntos*5/6);
+    if(nota<1){nota=1;}
+    
+    document.getElementById("pointsNota").value=nota.toFixed(2);
+    document.getElementById("pointsGood").value=puntos;
 }

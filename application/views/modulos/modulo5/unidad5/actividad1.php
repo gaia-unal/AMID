@@ -54,7 +54,7 @@
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 5: Publicidad transnacional y "marcas super"</h1>
-                <?php echo form_open('modulo5/unidad5/evaluacion');$this->session->set_userdata('idAc','m5u5a1'); ?>
+                <?php echo form_open('modulo5/unidad5/evaluacion');$this->session->set_userdata('idAct','m5u5a1'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <p class="card-text">
@@ -114,7 +114,7 @@
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo5/unidad5/temas" class="btn btn-success">Anterior</a>
-                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
                 </center>
                 <?php echo form_close(); ?>
                 <?php $this->load->view('initial/paginacion');?>

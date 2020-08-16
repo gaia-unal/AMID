@@ -54,7 +54,7 @@
             <div class="col-lg-9">
                 <h1><br>Unidad 4: El proceso de desarrollo de las noticias: más allá de 5 por qués y 1 cómo (5ws y 1h en
                     inglés)</h1>
-                <?php echo form_open('modulo2/unidad4/evaluacion');$this->session->set_userdata('idAc','m2u4a2'); ?>
+                <?php echo form_open('modulo2/unidad4/evaluacion');$this->session->set_userdata('idAct','m2u4a2'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Retroalimentación</h4>
@@ -70,7 +70,7 @@
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo2/unidad4/actividad1" class="btn btn-success">Anterior</a>
-                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
                     <!-- <a href="module2.4_eval.php" class="btn btn-success">Siguiente</a> -->
                 </center>
                 <?php echo form_close(); ?>

@@ -21,7 +21,10 @@ class usuarioModel extends CI_Model{
 						->get('usuario')
 						->result();
 
-		return (password_verify($pass, $query[0]->pass))? $query[0] : false;
+		if(isset($query[0]))
+			return (password_verify($pass, $query[0]->pass))? $query[0] : false;
+		else
+			return false;
 	
 	}
 

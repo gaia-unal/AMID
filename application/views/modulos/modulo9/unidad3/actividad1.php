@@ -52,6 +52,7 @@
             <div class="col-lg-9">
                 <br>
                 <h1>Unidad 3: Manejando el Cambio Para Fomentar un Medio Ambiente Propicio para las Escuelas AMI</h1>
+                <?php echo form_open('modulo9/unidad3/actividad2');$this->session->set_userdata('idAct','m9u3a1'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <p class="card-text">
@@ -71,19 +72,19 @@
                         <p>1. Identifique cómo se puede aplicar esta lista dentro de su situación
                             particular. Identifique cualquier recomendación adicional que usted haría
                             para garantizar el éxito de AMI en su departamento o institución</p>
-                        <textarea name="preg1" id="p1-r" cols="100" rows="10" placeholder="Escriba su respuesta aquí"
-                            spellcheck="true"></textarea>
+                            <textarea name="preg1" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                         <p>2. Cambiaría esta lista si uno toma en cuenta los criterios de un programa
                             exitoso para los estudiantes? Identifique aquí cualquier consideración adicional.
                         </p>
-                        <textarea name="preg2" id="p2-r" cols="100" rows="10" placeholder="Escriba su respuesta aquí"
-                            spellcheck="true"></textarea>
+                        <textarea name="preg2" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                         <p>3. Tomando en cuenta las necesidades de su propia comunidad educativa, ¿de qué
                             manera se podría integrar AMI a los programas existentes para profesores, o desarrollarse
                             como un programa en sí? ¿Cuáles son las ventajas y desventajas de cada uno? Cite módulos
                             específicos como ejemplos</p>
-                        <textarea name="preg3" id="p3-r" cols="100" rows="10" placeholder="Escriba su respuesta aquí"
-                            spellcheck="true"></textarea>
+                            <textarea name="preg3" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                         <br>
                     </div>
                 </div>
@@ -91,8 +92,10 @@
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo9/unidad3/temas" class="btn btn-success">Anterior</a>
-                    <a href="<?php echo base_url();?>modulo9/unidad3/actividad2" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
                 </center>
+                <?php echo form_close(); ?>
+
                 <?php $this->load->view('initial/paginacion');?>
 
 <br />

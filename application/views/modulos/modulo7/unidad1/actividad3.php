@@ -61,27 +61,27 @@
                         <p class="card-text">
                             Haz clic en los títulos para navegar por el contenido.
                             <ul class="content">
-                                <li><a href="#" onclick="preg1();">
-                                        <h4>¿Qué es?</h4>
-                                    </a></li>
-                                <li><a href="#" onclick="preg2();">
-                                        <h4>Características</h4>
-                                    </a></li>
-                                <li><a href="#" onclick="preg3();">
-                                        <h4>Usos</h4>
-                                    </a></li>
-                                <li><a href="#" onclick="preg4();">
-                                        <h4>Navegadores</h4>
-                                    </a></li>
-                                <li><a href="#" onclick="preg5();">
-                                        <h4>Estadísticas de Uso</h4>
-                                    </a></li>
-                                <li><a href="#" onclick="preg6();">
-                                        <h4>Comportamiento</h4>
-                                    </a></li>
-                                <li><a href="#" onclick="preg7();">
-                                        <h4>Peligros</h4>
-                                    </a></li>
+                                <a href="#" onclick="preg1();">
+                                        <li><h4>¿Qué es?</h4></li>
+                                    </a>
+                                <a href="#" onclick="preg2();">
+                                        <li><h4>Características</h4></li>
+                                    </a>
+                                <a href="#" onclick="preg3();">
+                                        <li><h4>Usos</h4></li>
+                                    </a>
+                                <a href="#" onclick="preg4();">
+                                        <li><h4>Navegadores</h4></li>
+                                    </a>
+                                <a href="#" onclick="preg5();">
+                                        <li><h4>Estadísticas de Uso</h4></li>
+                                    </a>
+                                <a href="#" onclick="preg6();">
+                                        <li><h4>Comportamiento</h4></li>
+                                    </a>
+                                <a href="#" onclick="preg7();">
+                                        <li><h4>Peligros</h4></li>
+                                    </a>
                             </ul>
                             <div class="img">
                                 <a href="#" target="_blank">

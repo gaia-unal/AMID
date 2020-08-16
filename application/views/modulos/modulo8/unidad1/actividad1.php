@@ -52,6 +52,7 @@
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 1: Conceptos y Aplicación de la Alfabetización Informacional</h1>
+                <?php echo form_open('modulo8/unidad1/actividad2');$this->session->set_userdata('idAct','m8u1a1'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <p class="card-text">
@@ -69,8 +70,8 @@
                                 ¿Qué tienen estas definiciones en común? ¿Cree usted que son relevantes en el siglo XXI?
                                 Busque otras definiciones de información. ¿Puede encontrar otras definiciones que dan
                                 una descripción más amplia del término? <br>
-                                <textarea name="preg1" id="p1-r" cols="80" rows="5"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                <textarea name="preg1" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                             </div>
                             <div id="parte2">
                                 <h4>Definición de alfabetización informacional</h4>
@@ -108,8 +109,8 @@
                                 necesita para resolver un problema o tomar una decisión? (por Ej. un consejo financiero
                                 para
                                 manejar un problema financiero) <br>
-                                <textarea name="preg2" id="p2-r" cols="80" rows="5"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                <textarea name="preg2" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                 placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                             </div>
                             <div id="parte3">
                                 <h4>Sociedad de la información y el conocimiento</h4>
@@ -130,8 +131,8 @@
                                 ¿Cuáles son las similitudes que se perciben entre los dos términos, puede observar
                                 alguna
                                 similitud? <br>
-                                <textarea name="preg3" id="p3-r" cols="80" rows="5"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea> <br><br>
+                                <textarea name="preg3" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                 placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea> <br><br>
                                 ¿Cómo el nivel de la alfabetización informacional se ha cambiado/incrementado en
                                 nuestras
                                 vidas, particularmente en los niveles universitarios hasta los niveles de post-grado y
@@ -142,16 +143,16 @@
                                 responsabilidades de los proveedores de información en la sociedad. <br>Escriba sobre
                                 cómo
                                 se desarrollan las destrezas de alfabetización informacional utilizando las TICs <br>
-                                <textarea name="preg4" id="p4-r" cols="80" rows="5"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea> <br><br>
+                                <textarea name="preg4" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                 placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                                 Describa qué es lo que hace que un estudiante sea alfabetizado en informática <br>
-                                <textarea name="preg5" id="p5-r" cols="80" rows="5"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea> <br><br>
+                                <textarea name="preg5" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                 placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                                 ¿La alfabetización informacional requiere destrezas distintas a las de las TICs? Por
                                 ejemplo, ¿pueden las personas ser alfabetizadas en información en ausencia de las TICs?
                                 <br>
-                                <textarea name="preg4" id="p4-r" cols="80" rows="5"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea> <br><br>
+                                <textarea name="preg6" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                 placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                                 Evalúe el valor de la información de los medios impresos (por Ej. periódicos, revistas,
                                 etc.) y los costos asociados con su almacenamiento, recuperación y uso. La investigación
                                 también debe tomar en cuenta los siguientes puntos: el valor de la información basada en
@@ -164,11 +165,22 @@
                                 las enfermedades, mejorar las oportunidades de empleo y mejorar las prácticas
                                 pedagógicas de
                                 los profesores en las clases? <br>
-                                <textarea name="preg2" id="p2-r" cols="80" rows="5"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                <textarea name="preg7" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                 placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                             </div>
-                            <center>
+                            <!-- <center>
                                 <a href="#" id="btnS" class="btn btn-outline-success" onclick="sig();">Siguiente</a>
+                            </center> -->
+
+                            <center>
+                                <div id="btnAtras" onclick="atr();">
+                                    <img width=70 src="<?php echo base_url();?>public/assets/img/arrow_l.jpg">
+                                </div>
+
+                                <div id="btnAdelante" onclick="sig();">
+                                    <img width=70 src="<?php echo base_url();?>public/assets/img/arrow_r.jpg">
+                                </div>
+
                             </center>
                         </p>
                     </div>
@@ -177,8 +189,9 @@
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo8/unidad1/temas" class="btn btn-success">Anterior</a>
-                    <a href="<?php echo base_url();?>modulo8/unidad1/actividad2" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
                 </center>
+                <?php echo form_close(); ?>
                 <?php $this->load->view('initial/paginacion');?>
 
 <br />

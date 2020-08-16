@@ -67,40 +67,41 @@ function avanzar() {
     con++;
     switch (con) {
         case 1: {
-            btnF.style.display = (btnF.style.display == "none") ? "inline" : "block";
-            img1.style.display = (img1.style.display == "none") ? "inline" : "none";
-            img2.style.display = (img2.style.display == "none") ? "inline" : "block";
+            // btnF.style.display = (btnF.style.display == "none") ? "block-inline" : "none";
+            btnF.style.display = "inline-block";
+            img1.style.display = "none";
+            img2.style.display = "block";
             break;
         }
         case 2: {
-            img2.style.display = (img2.style.display == "none") ? "inline" : "none";
-            img3.style.display = (img3.style.display == "none") ? "inline" : "block";
+            img2.style.display = "none";
+            img3.style.display = "block";
             break;
         }
         case 3: {
-            img3.style.display = (img3.style.display == "none") ? "inline" : "none";
-            img4.style.display = (img4.style.display == "none") ? "inline" : "block";
+            img3.style.display = "none";
+            img4.style.display = "block";
             break;
         }
         case 4: {
-            img4.style.display = (img4.style.display == "none") ? "inline" : "none";
-            img5.style.display = (img5.style.display == "none") ? "inline" : "block";
+            img4.style.display = "none";
+            img5.style.display = "block";
             break;
         }
         case 5: {
-            img5.style.display = (img5.style.display == "none") ? "inline" : "none";
-            img6.style.display = (img6.style.display == "none") ? "inline" : "block";
+            img5.style.display = "none";
+            img6.style.display = "block";
             break;
         }
         case 6: {
-            img6.style.display = (img6.style.display == "none") ? "inline" : "none";
-            img7.style.display = (img7.style.display == "none") ? "inline" : "block";
+            img6.style.display = "none";
+            img7.style.display = "block";
             break;
         }
         case 7: {
-            img7.style.display = (img7.style.display == "none") ? "inline" : "none";
-            img8.style.display = (img8.style.display == "none") ? "inline" : "block";
-            btn.style.display = (btn.style.display == "none") ? "inline" : "none";
+            img7.style.display = "none";
+            img8.style.display = "block";
+            btn.style.display = "none";
             break;
         }
     }
@@ -109,40 +110,44 @@ function volver() {
     if (con > 8) {
         con = 8;
     }
+    
+
     switch (con) {
         case 1: {
-            img1.style.display = (img1.style.display == "none") ? "inline" : "block";
-            img2.style.display = (img2.style.display == "none") ? "inline" : "none";
+            btnF.style.display = "none";
+            img1.style.display =   "block";
+            img2.style.display =  "none";
             break;
         }
         case 2: {
-            img2.style.display = (img2.style.display == "none") ? "inline" : "block";
-            img3.style.display = (img3.style.display == "none") ? "inline" : "none";
+            img2.style.display =  "block";
+            img3.style.display = "none";
             break;
         }
         case 3: {
-            img3.style.display = (img3.style.display == "none") ? "inline" : "block";
-            img4.style.display = (img4.style.display == "none") ? "inline" : "none";
+            img3.style.display = "block";
+            img4.style.display = "none";
             break;
         }
         case 4: {
-            img4.style.display = (img4.style.display == "none") ? "inline" : "block";
-            img5.style.display = (img5.style.display == "none") ? "inline" : "none";
+            img4.style.display = "block";
+            img5.style.display = "none";
             break;
         }
         case 5: {
-            img5.style.display = (img5.style.display == "none") ? "inline" : "block";
-            img6.style.display = (img6.style.display == "none") ? "inline" : "none";
+            img5.style.display = "block";
+            img6.style.display = "none";
             break;
         }
         case 6: {
-            img6.style.display = (img6.style.display == "none") ? "inline" : "block";
-            img7.style.display = (img7.style.display == "none") ? "inline" : "none";
+            img6.style.display = "block";
+            img7.style.display = "none";
             break;
         }
         case 7: {
-            img7.style.display = (img7.style.display == "none") ? "inline" : "block";
-            img8.style.display = (img8.style.display == "none") ? "inline" : "none";
+            btn.style.display = "inline-block";
+            img7.style.display = "block";
+            img8.style.display = "none";
             break;
         }
     }

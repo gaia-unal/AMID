@@ -3,30 +3,37 @@
 	top: 115%;
 	left: 10%;
 	position: relative;
+	clear: both;
 }
-.btnF{
-	width: 100%;
-}
-.btnA{
-	width: 100%;
-}
+
 #flecha{
 	display: block;
 }
 #btnAdelante{
-	position:absolute;
-	top: 15%;
-	left: 95%;
-	display: block;
+	
+	position: relative;
+	/* float: right; */
+	
+	top: 40%;
+	/* left: 90%; */
+	display: inline-block;
+	/* border: 1px solid blue; */
+	cursor: pointer;
 }
 #btnAtras{
-	position:absolute;
-	top: 15%;
-	left: 1%;
+	position:relative;
+	/* float: right; */
+	top: 40%;
+	/* left: 2%; */
+	/* display: none; */
 	display: none;
+	/* border: 1px solid red; */
+	cursor: pointer;
 }
 
+
 #texto{
+	
 	display: block;
 }
 

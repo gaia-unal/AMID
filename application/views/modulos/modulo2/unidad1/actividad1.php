@@ -53,7 +53,7 @@
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 1: Periodismo y sociedad</h1>
-                <?php echo form_open('modulo2/unidad1/evaluacion');$this->session->set_userdata('idAc','m2u1a1'); ?>
+                <?php echo form_open('modulo2/unidad1/evaluacion');$this->session->set_userdata('idAct','m2u1a1'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Investigue</h4>
@@ -83,23 +83,23 @@
                             <ul>
                                 <li>¿Cómo fue la evolución de la teoría y práctica de “libertad de palabra” y “libertad
                                     de prensa”?</li>
-                                <textarea name="preg1" style="width: 100%;" rows="5" minlength="1" maxlength="300"
+                                <textarea name="preg1" style="width: 100%;" rows="5" minlength="1" maxlength="300" onkeypress="return check(event)"
                                 required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>¿Qué periodistas y/o agencias de los medios han hecho contribuciones específicas a
                                     la libertad de prensa y a la democracia?</li>
-                                <textarea name="preg2" style="width: 100%;" rows="5" minlength="1" maxlength="200"
+                                <textarea name="preg2" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
                                 required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>Investigue y describa un evento de movimientos democráticos, en Colombia, en donde
                                     los medios y los reportes de noticias han tenido un papel significante</li>
-                                <textarea name="preg3" style="width: 100%;" rows="5" minlength="1" maxlength="300"
+                                <textarea name="preg3" style="width: 100%;" rows="5" minlength="1" maxlength="300" onkeypress="return check(event)"
                                 required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>Realice una reflexión sobre los resultados de las lecturas que realizó en sus
                                     investigaciones</li>
-                                <textarea name="preg4" style="width: 100%;" rows="5" minlength="1" maxlength="300"
+                                <textarea name="preg4" style="width: 100%;" rows="5" minlength="1" maxlength="300" onkeypress="return check(event)"
                                 required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>Realice un ensayo sobre temas relacionados con los medios y la democracia, y como
                                     abordar estos temas en el aula de clase</li>
-                                <textarea name="preg5" style="width: 100%;" rows="6" minlength="1" maxlength="600"
+                                <textarea name="preg5" style="width: 100%;" rows="6" minlength="1" maxlength="600" onkeypress="return check(event)"
                                 required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                             </ul>
                         </p>
@@ -109,7 +109,7 @@
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo2/unidad1/temas" class="btn btn-success">Anterior</a>
-                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
                     <!-- <a href="module2.1_eval.php" class="btn btn-success">Siguiente</a> -->
                 </center>
                 <?php echo form_close(); ?>

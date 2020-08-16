@@ -61,51 +61,51 @@
 									claves enumeradas anteriormente. ¿Qué es lo que puede aprender sobre la producción
 									de medios e industrias, los mensajes que se transmiten, así como la audiencia
 									seleccionada?</li>
-								<textarea name="preg1" style="width: 100%;" rows="5" minlength="1" maxlength="200"
-									required placeholder="Escriba su respuesta aquí" spellcheck="true"
-									autofocus></textarea><br>
+									<textarea name="preg1" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" autofocus></textarea>
+									<br>
 								Piense sobre una actividad personal o económica que a usted le gustaría emprender y
 								responda:
 								<li>¿Cuáles son mis necesidades de información?</li>
-								<textarea name="preg2" style="width: 100%;" rows="5" minlength="1" maxlength="150"
+								<textarea name="preg2" style="width: 100%;" rows="5" minlength="1" maxlength="150" onkeypress="return check(event)"
 									required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
 								<li>¿Cómo puedo identificar y definir esta necesidad?</li>
-								<textarea name="preg3" style="width: 100%;" rows="5" minlength="1" maxlength="150"
+								<textarea name="preg3" style="width: 100%;" rows="5" minlength="1" maxlength="150" onkeypress="return check(event)"
 									required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
 								<li>¿Acaso la información que yo necesito existe de la manera en que la necesito? ¿De lo
 									contrario, que acción puedo tomar?</li>
-								<textarea name="preg4" style="width: 100%;" rows="5" minlength="1" maxlength="150"
+								<textarea name="preg4" style="width: 100%;" rows="5" minlength="1" maxlength="150" onkeypress="return check(event)"
 									required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
 								<li>¿Cómo entender, organizar y valorar la información hallada?</li>
-								<textarea name="preg5" style="width: 100%;" rows="5" minlength="1" maxlength="200"
+								<textarea name="preg5" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
 									required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
 								<li>¿Cómo puedo presentar esta información en formatos que se puedan utilizar?</li>
-								<textarea name="preg6" style="width: 100%;" rows="5" minlength="1" maxlength="150"
+								<textarea name="preg6" style="width: 100%;" rows="5" minlength="1" maxlength="150" onkeypress="return check(event)"
 									required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
 								<li>¿Cómo puedo preservar, almacenar y reutilizar, grabar y archivar la información?
 								</li>
-								<textarea name="preg7" style="width: 100%;" rows="5" minlength="1" maxlength="200"
+								<textarea name="preg7" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
 									required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
 								Liste actividades que usted hace durante el día, desde el momento en que se despierta en
 								la mañana hasta cuando se acuesta por la noche. <br>
-								1. <input type="text" name="m1" id="m1" maxlength="40" required><br><br>
-								2. <input type="text" name="m2" id="m2" maxlength="40" required><br><br>
-								3. <input type="text" name="m3" id="m3" maxlength="40" required><br><br>
-								4. <input type="text" name="m4" id="m4" maxlength="40" required><br><br>
-								5. <input type="text" name="m5" id="m5" maxlength="40" required><br><br>
+								1. <input type="text" name="m1" id="m1" maxlength="40" required onkeypress="return check(event)"><br><br>
+								2. <input type="text" name="m2" id="m2" maxlength="40" required onkeypress="return check(event)"><br><br>
+								3. <input type="text" name="m3" id="m3" maxlength="40" required onkeypress="return check(event)"><br><br>
+								4. <input type="text" name="m4" id="m4" maxlength="40" required onkeypress="return check(event)"><br><br>
+								5. <input type="text" name="m5" id="m5" maxlength="40" required onkeypress="return check(event)"><br><br>
 								Con base en la lista, responda:
 								<li>¿Necesita información para participar en estas actividades?</li>
-								<textarea name="preg8" style="width: 100%;" rows="5" minlength="1" maxlength="150"
+								<textarea name="preg8" style="width: 100%;" rows="5" minlength="1" maxlength="150" onkeypress="return check(event)"
 									required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
 								<li>Seleccione una de las actividades listadas, ¿qué información necesita para su
 									realización? Por ejemplo, necesita saber a qué temperatura está afuera para poder
 									vestirse; necesita saber la situación del tránsito antes de tomar el bus; necesita
 									saber acerca de la economía si es que va a solicitar un préstamo.</li>
-								<textarea name="preg9" style="width: 100%;" rows="5" minlength="1" maxlength="200"
+								<textarea name="preg9" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
 									required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
 								<li>¿Qué tan importante es la información en su vida diaria? ¿Cuántas decisiones serían
 									difíciles de tomar sin tener la información?</li>
-								<textarea name="preg10" style="width: 100%;" rows="5" minlength="1" maxlength="150"
+								<textarea name="preg10" style="width: 100%;" rows="5" minlength="1" maxlength="150" onkeypress="return check(event)"
 									required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
 							</ul>
 						</p>

@@ -50,14 +50,57 @@ class Modulo7 extends CI_Controller {
 				
 				$idAct=$seg['seg4'];
 				switch ($idAct) {
-					case 'm1u1a1':
-						$points=$this->input->post('pointsGood');
-						$answer='{"Actividad 1":{"Pregunta 1": "'.$points.' correctos de 16"}}';
+					case 'm7u1a2':
+						$nota="No Aplica";
 						
-						$nota=$this->input->post('pointsCanvas');
+						$p1 = $this->input->post('preg5');
+						
+						
+						$answer='{"Actividad 1":{"Pregunta 1": "'.$p1.'"
+												}
+			 					}';
 						
 						$this->insertUpdate($idAct,$nota, $answer);
 
+					break;
+
+					case 'm7u1a6':
+						$nota="No Aplica";
+						
+						$p1 = $this->input->post('preg1');
+						$p2 = $this->input->post('preg2');
+						$p3 = $this->input->post('preg3');
+						
+						$answer='{"Actividad 1":{"Pregunta 1": "'.$p1.'",
+												"Pregunta 2": "'.$p2.'",
+												"Pregunta 3": "'.$p3.'"
+												}
+			 					}';
+						
+						$this->insertUpdate($idAct,$nota, $answer);
+
+					break;
+
+					case 'm7u1a8':
+						$nota="No Aplica";
+						
+						$p1 = $this->input->post('preg2');
+						
+						
+						$answer='{"Actividad 1":{"Pregunta 1": "'.$p1.'"
+												}
+			 					}';
+						
+						$this->insertUpdate($idAct,$nota, $answer);
+
+					break;
+					case "m7u1a10":
+						$points=$this->input->post('pointsGood');
+						$answer='{"Actividad 1":{"Pregunta 1": "'.$points.' correctos de 6"}}';
+						
+						$nota=$this->input->post('pointsNota');
+						
+						$this->insertUpdate($idAct,$nota, $answer);
 					break;
 					
 					default:
@@ -120,6 +163,8 @@ class Modulo7 extends CI_Controller {
 	}
 
 	public function insertUpdate($idAct,$nota, $answer){
+		
+		if($nota!="No Aplica" && $nota<=0){$nota=1;}
 		$data= array(
 			'id_actividad' 	   => $idAct,
 			'id_profesor' 	   => $this->id,
@@ -133,6 +178,7 @@ class Modulo7 extends CI_Controller {
 
 	public function insertUpdateE($idEval,$nota){
 
+		if($nota!="No Aplica" && $nota<=0){$nota=1;}
 		$des= $this->calculoDes($nota);
 
 		$data= array(
@@ -148,12 +194,15 @@ class Modulo7 extends CI_Controller {
 	}
 
 	public function calculoDes($nota){
-		if($nota<3){
-            return 'Malo';
-        }else if ($nota<=4){
-            return 'Regular';
-        }
-        return 'Bueno';
+		if($nota!="No Aplica"){
+			if($nota<3){
+				return 'Malo';
+			}else if ($nota<=4){
+				return 'Regular';
+			}
+			return 'Bueno';
+		}else
+			return $nota;
 	}
 
 	public function logout(){
