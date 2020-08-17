@@ -52,7 +52,7 @@
             <div class="col-lg-9">
                 <h1><br>Unidad 1: Conceptos y Aplicación de la Alfabetización Informacional</h1>
 
-                <?php echo form_open('modulo8/unidad2');$this->session->set_userdata('idAc','m8u1'); ?>
+                <?php echo form_open('modulo8/unidad2/inicio');$this->session->set_userdata('idAct','m8u1'); ?>
             
                 <div class="card mt-4">
                     <div class="card-body">
@@ -62,7 +62,7 @@
                             términos.
                             <canvas id="lienzo1" width="800" height="400"></canvas>
 
-                            <input type="text" name="preg" id="preg" value="" style="display: none">
+                            <input type="text" name="preg" id="preg" value = 1 style="display: none">
                         </p>
                     </div>
                 </div>
@@ -70,7 +70,7 @@
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo8/unidad1/actividad2" class="btn btn-success">Anterior</a>
-                    <button id="btn-siguiente"  class="btn btn-success" type="submit">Siguiente</button>                    
+                    <button id="btn-siguiente"  class="btn btn-success" name="submit" type="submit">Siguiente</button>                    
                 </center>
                 <?php echo form_close(); ?>
                 <?php $this->load->view('initial/paginacion');?>

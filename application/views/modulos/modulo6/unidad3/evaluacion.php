@@ -53,7 +53,7 @@
             <div class="col-lg-9">
                 <h1><br>Unidad 3: Usos de las Herramientas Interactivas de Multimedia, incluyendo los Juegos Digitales
                     en las Aulas</h1>
-                <?php echo form_open('modulo7');$this->session->set_userdata('idAc','m6u3'); ?>
+                <?php echo form_open('modulo7');$this->session->set_userdata('idAct','m6u3'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Evaluación</h4>
@@ -61,9 +61,9 @@
                         <br />
                         <strong> ¿Cuáles son los principios básicos en la publicación abierta?</strong></li>
                         <br /><br />
-                        <label><input type="radio" name="pre1" class="space"  value="5" required>Reutilizable, redistribuible, revisable, remixable, retenible.</label> <br/>
-                        <label><input type="radio" name="pre1" class="space"  value="1" required>Repetible, universalidad, reversible.</label><br/>
-                        <label><input type="radio" name="pre1" class="space"  value="1" required>Irrepetible, sostenible, responsable.</label><br/>
+                        <label><input type="radio" name="pre1" class="space"  value = 5 required>Reutilizable, redistribuible, revisable, remixable, retenible.</label> <br/>
+                        <label><input type="radio" name="pre1" class="space"  value = 1 required>Repetible, universalidad, reversible.</label><br/>
+                        <label><input type="radio" name="pre1" class="space"  value = 1 required>Irrepetible, sostenible, responsable.</label><br/>
                         </p>
                     </div>
                 </div>
@@ -71,7 +71,7 @@
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo6/unidad3/actividad1" class="btn btn-success">Anterior</a>
-                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <button id="btn-siguiente" class="btn btn-success"  name="submit" type="submit">Siguiente</button>
                 </center>
                 <?php echo form_close(); ?>
         <?php $this->load->view('initial/paginacion');?>

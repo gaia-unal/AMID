@@ -53,7 +53,7 @@
             <div class="col-lg-9">
                 <h1><br>Unidad 2: AMI y la participación cívica</h1>
                 
-                <?php echo form_open('modulo1/unidad3');$this->session->set_userdata('idAct','m1u2'); ?>
+                <?php echo form_open('modulo1/unidad3/inicio');$this->session->set_userdata('idAct','m1u2'); ?>
 
                 <div class="card mt-4">
                     <div class="card-body">

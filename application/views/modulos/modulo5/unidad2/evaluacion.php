@@ -54,6 +54,7 @@
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 2: Anuncios de bien público (ABP)</h1>
+                <?php echo form_open('modulo5/unidad3/inicio');$this->session->set_userdata('idAct','m5u2a2'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Evaluación</h4>
@@ -63,20 +64,20 @@
                                     objetivo de los ASP. Explique cómo los ASP se diferencian de los anuncios públicos:
                                     Haga una lluvia de ideas sobre los temas que se tratan en los ASP que usted haya
                                     visto. Identifique diversos usos para los ASPs en su región</li>
-                                <textarea name="preg1" id="p1-r" cols="80" rows="5"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                    <textarea name="preg1" style="width: 80%;" rows="6" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>Examine un número de ASP – impresos y en video – y hable sobre las principales
                                     características de cada uno. Identifique la información más importante y el
                                     principal mensaje que se transmite y analice cómo se lo presenta. Tomen en cuenta
                                     las estrategias técnicas y creativas.</li>
-                                <textarea name="preg2" id="p2-r" cols="80" rows="5"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                    <textarea name="preg2" style="width: 80%;" rows="6" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>Analice el uso del recurso emocional en varios de los ASPs. Identifique si algunos
                                     de estos ASP hacen algún tipo de afirmaciones y si éstas, están o no basadas en
                                     hechos. Analice cómo los elementos técnicos de los ASP refuerzan su significado y
                                     mensaje</li>
-                                <textarea name="preg1" id="p1-r" cols="80" rows="5"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                    <textarea name="preg1" style="width: 80%;" rows="6" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                             </ul>
                         </p>
                     </div>
@@ -85,8 +86,9 @@
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo5/unidad2/actividad1" class="btn btn-success">Anterior</a>
-                    <a href="<?php echo base_url();?>modulo5/unidad3" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
                 </center>
+                <?php echo form_close(); ?>
                 <?php $this->load->view('initial/paginacion');?>
 
 <br />

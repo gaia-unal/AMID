@@ -52,7 +52,7 @@
                 <br>
                 <h1>Unidad 2: Retos y riesgos en el mundo virtual</h1>
 
-                <?php echo form_open('modulo7/unidad2/evaluacion2');$this->session->set_userdata('idAc','m7u21'); ?>
+                <?php echo form_open('modulo7/unidad2/evaluacion2');$this->session->set_userdata('idAct','m7u21'); ?>
 
                 <div class="card mt-4">
                     <div class="card-body">
@@ -61,14 +61,14 @@
                             <!-- Pregunta 1 -->
                             <h4> 1. ¿Qué es el Phishing?</h4>
                             <label class="container" id="p1-r1">
-                                <input type="radio" name="preg1" id="opc1" onclick="incorrecto(1);" value = "0">
+                                <input type="radio" name="preg1" id="opc1" value = 1 required>
                                 
                                 a. Es un estafador que intenta acceder a los correos electrónicos para
                                     enviar
                                     mensajes spam.
                             </label>
                             <label class="container" id="p1-r2">
-                                <input type="radio" name="preg1" id="opc2" onclick="correcto(1);" value = "0.83">
+                                <input type="radio" name="preg1" id="opc2" value = 5 required>
                                 
                                 b. Es un delito cibernético en el que intentan adquirir información
                                     confidencial
@@ -77,7 +77,7 @@
                                 
                             </label>
                             <label class="container" id="p1-r3">
-                                <input type="radio" name="preg1" id="opc3" onclick="incorrecto(1);" value = "0">
+                                <input type="radio" name="preg1" id="opc3" value = 1 required>
                                 
                                 c. Es un delito cibernético en el que un estafador vende productos
                                     engañosos.
@@ -86,7 +86,7 @@
                             <h4> 2. ¿ Los delincuentes pueden hacer Phishing por mensajes de texto o llamadas?
                             </h4>
                             <label class="container" id="p2-r1">
-                                <input type="radio" name="preg2" id="opc1" onclick="correcto(2);" value = "0.83">
+                                <input type="radio" name="preg2" id="opc1" value = 5 required>
                                 
                                 a. Sí, la intención de los delincuentes es robar información personal,
                                     por lo
@@ -95,14 +95,14 @@
                                     web.
                             </label>
                             <label class="container" id="p2-r2">
-                                <input type="radio" name="preg2" id="opc2" onclick="incorrecto(2);" value = "0">
+                                <input type="radio" name="preg2" id="opc2" value = 1 required>
                                 
                                 b. No porque las personas no suelen contestar llamadas de números
                                     desconocidos.
                                 
                             </label>
                             <label class="container" id="p2-r3">
-                                <input type="radio" name="preg2" id="opc3" onclick="incorrecto(2);" value = "0">
+                                <input type="radio" name="preg2" id="opc3" value = 1 required>
                                 
                                 c. No, porque el Phishing solo es por internet y llega únicamente a
                                     los correos
@@ -113,19 +113,19 @@
                                 reemplazar la consulta
                                 con un médico si encuentra la información que está buscando?</h4>
                             <label class="container" id="p3-r1">
-                                <input type="radio" name="preg3" id="opc1" onclick="incorrecto(3);" value = "0">
+                                <input type="radio" name="preg3" id="opc1" value = 1 required>
                                 
                                 a. Sí, siempre y cuando indiquen los medicamentos que debo tomar con
                                     sus dosis.
                                 
                             </label>
                             <label class="container" id="p3-r2">
-                                <input type="radio" name="preg3" id="opc2" onclick="incorrecto(3);" value = "0">
+                                <input type="radio" name="preg3" id="opc2" value = 1 required>
                                 
                                 b. No porque de pronto la información no está actualizada.
                             </label>
                             <label class="container" id="p3-r3">
-                                <input type="radio" name="preg3" id="opc3" onclick="correcto(3);" value = "0.83">
+                                <input type="radio" name="preg3" id="opc3" value = 5 required>
                                 
                                 c. No, ninguna información debe reemplazar la consulta con un médico
                                     que lo puede
@@ -137,21 +137,21 @@
                                 salud y promete curas
                                 milagrosas ¿debe confiar en ella?</h4>
                             <label class="container" id="p4-r1">
-                                <input type="radio" name="preg4" id="opc1" onclick="incorrecto(4);" value = "0">
+                                <input type="radio" name="preg4" id="opc1" value = 1 required>
                                 
                                 a. Sí, siempre y cuando tenga buenas referencias y buenos comentarios
                                     de las
                                     personas.
                             </label>
                             <label class="container" id="p4-r2">
-                                <input type="radio" name="preg4" id="opc2" onclick="correcto(4);" value = "0.83">
+                                <input type="radio" name="preg4" id="opc2" value = 5 required>
                                 
                                 b. No, se debe desconfiar de los sitios web que proclaman la cura a
                                     muchas
                                     enfermedades.
                             </label>
                             <label class="container" id="p4-r3">
-                                <input type="radio" name="preg4" id="opc3" onclick="incorrecto(4);" value = "0">
+                                <input type="radio" name="preg4" id="opc3" value = 1 required>
                                 
                                 c. Sí porque es muy bueno encontrar tanta información en un solo
                                     lugar.
@@ -159,7 +159,7 @@
                             <!-- Pregunta 5 -->
                             <h4> 5. ¿Qué es la violación del derecho de autor?</h4>
                             <label class="container" id="p5-r1">
-                                <input type="radio" name="preg5" id="opc1" onclick="incorrecto(5);" value = "0">
+                                <input type="radio" name="preg5" id="opc1" value = 1 required>
                                 
                                 a. Es un conjunto de normas jurídicas que plantean los derechos
                                     morales y
@@ -167,14 +167,14 @@
                                     los autores
                             </label>
                             <label class="container" id="p5-r2">
-                                <input type="radio" name="preg5" id="opc2" onclick="incorrecto(5);" value = "0">
+                                <input type="radio" name="preg5" id="opc2" value = 1 required>
                                 
                                 b. Se da cuando una persona copia y pega un texto de otra sin cambiar
                                     absolutamente nada y no le da
                                     los créditos.
                             </label>
                             <label class="container" id="p5-r3">
-                                <input type="radio" name="preg5" id="opc3" onclick="correcto(5);" value = "0.83">
+                                <input type="radio" name="preg5" id="opc3" value = 5 required>
                                 
                                 c. Es un fraude relacionado con la conducta de los usuarios que no
                                     tienen en
@@ -187,7 +187,7 @@
                                 los derechos de
                                 autor?</h4>
                             <label class="container" id="p6-r1">
-                                <input type="radio" name="preg6" id="opc1" onclick="correcto(6);" value = "0.83">
+                                <input type="radio" name="preg6" id="opc1" value = 5 required>
                                 
                                 a. Inscribir en el registro de autor el nombre del autor real, con el
                                     título
@@ -195,7 +195,7 @@
                                     el texto.
                             </label>
                             <label class="container" id="p6-r2">
-                                <input type="radio" name="preg6" id="opc2" onclick="incorrecto(6);" value = "0">
+                                <input type="radio" name="preg6" id="opc2" value = 1 required>
                                 
                                 b. Publicar, total o parcialmente, sin autorización previa del titular
                                     del
@@ -203,7 +203,7 @@
                                 
                             </label>
                             <label class="container" id="p6-r3">
-                                <input type="radio" name="preg6" id="opc3" onclick="incorrecto(6);" value = "0">
+                                <input type="radio" name="preg6" id="opc3" value = 1 required>
                                 
                                 c. Suprimir o alterar la información esencial para la gestión
                                     electrónica de
@@ -211,16 +211,16 @@
                                     distribuya o comunique ejemplares con la información suprimida o alterada.
                             </label>
                         </p>
-                        <center>
+                        <!-- <center>
                             <a href="#" class="btn btn-outline-success" onclick="validar();">Validar</a>
-                        </center>
+                        </center> -->
                     </div>
                 </div>
                 <!-- /.card -->
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo7/unidad2/actividad6" class="btn btn-success">Anterior</a>
-                    <button id="btn-siguiente"  class="btn btn-success" type="submit">Siguiente</button>
+                    <button id="btn-siguiente"  class="btn btn-success" name="submit" type="submit">Siguiente</button>
                 </center>
                 <?php echo form_close(); ?>
                 <?php $this->load->view('initial/paginacion');?>

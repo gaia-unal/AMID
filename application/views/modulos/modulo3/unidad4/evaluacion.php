@@ -54,6 +54,7 @@
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 4: Videos musicales y su representación</h1>
+                <?php echo form_open('modulo3/unidad5/inicio');$this->session->set_userdata('idAct','m3u4a3'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Evaluación</h4>
@@ -62,11 +63,11 @@
                             <ul>
                                 <li>¿Qué representaciones, elementos técnicos, ideología y mensajes de valor puede
                                     encontrar en la canción?</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg1" style="width: 95%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>De acuerdo a la letra de la canción, ¿Cómo desarrollaría un storyboard?</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg2" style="width: 95%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                             </ul>
                         </p>
                     </div>
@@ -75,8 +76,9 @@
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo3/unidad4/actividad2" class="btn btn-success">Anterior</a>
-                    <a href="<?php echo base_url();?>modulo3/unidad5" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
                 </center>
+                <?php echo form_close(); ?>
                 <?php $this->load->view('initial/paginacion');?>
 
 <br />

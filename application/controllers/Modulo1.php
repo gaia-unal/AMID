@@ -212,6 +212,7 @@ class Modulo1 extends CI_Controller {
 				
 				switch ($idAct) {
 					case 'm1u1':
+						
 						$nota= (double)($this->input->post('pre1'));
 						$this->insertUpdateE($idAct,$nota);
 					break;
@@ -388,7 +389,7 @@ class Modulo1 extends CI_Controller {
 						$t2=$this->input->post('temas_2');
 						$t3=$this->input->post('temas_3');
 						$t4=$this->input->post('temas_4');
-						
+					
 						$nota=0;
 						if(isset($t1))
 							$nota=$nota+2.5;
@@ -398,7 +399,7 @@ class Modulo1 extends CI_Controller {
 							$nota=$nota-2.5;
 						if(isset($t4))
 							$nota=$nota-2.5;
-						
+
 						$this->insertUpdateE($idAct,$nota);
 					break;
 					case "m1u4a3":
@@ -461,8 +462,9 @@ class Modulo1 extends CI_Controller {
 	}
 
 	public function insertUpdateE($idEval,$nota){
-
-		if($nota!="No Aplica" && $nota<=0){$nota=1;}
+		
+		if($nota<=0){$nota=1;}
+		
 		$des= $this->calculoDes($nota);
 
 		$data= array(

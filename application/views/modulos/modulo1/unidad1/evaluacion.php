@@ -52,7 +52,7 @@
       <div class="col-lg-9">
         <h1><br>Unidad 1: Comprender la alfabetización mediática e informacional: una orientación</h1>
         
-        <?php echo form_open('modulo1/unidad2');$this->session->set_userdata('idAct','m1u1');?>
+        <?php echo form_open('modulo1/unidad2/inicio');$this->session->set_userdata('idAct','m1u1');?>
         
         <div class="card mt-4">
           <div class="card-body">

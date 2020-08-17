@@ -21,12 +21,23 @@ class Modulo10 extends CI_Controller {
 	
 	public function index(){
 		
-		$id=$this->session->userdata('id');
+		$seg['seg4']=$this->session->userdata('idAct');
 
-		if(isset($id)){
+		if(isset($this->id)){
 			$this->profesormoduloModel->changeEstado(10,1);
+			$submit=$this->input->post('submit');
 
 			$data['profesormodulo']=$this->profesormoduloModel->getOne();
+			if($seg['seg4'] && isset($submit)){
+				$idAct=$seg['seg4'];
+				
+				if($idAct=='m9u3'){
+					$this->profesormoduloModel->changeEstado(9,2);
+					$nota = $this->input->post('preg');
+					$this->insertUpdateE($idAct,$nota);
+				}
+				
+			}
 			$this->load->view('modulos/modulo10/index',$data);
 
 		}else{

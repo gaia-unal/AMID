@@ -21,12 +21,39 @@ class Modulo6 extends CI_Controller {
 	
 	public function index(){
 		
-		$id=$this->session->userdata('id');
+		$seg['seg4']=$this->session->userdata('idAct');
 
-		if(isset($id)){
+		if(isset($this->id)){
 			$this->profesormoduloModel->changeEstado(6,1);
+			$submit=$this->input->post('submit');
 
 			$data['profesormodulo']=$this->profesormoduloModel->getOne();
+			if($seg['seg4'] && isset($submit)){
+				$idAct=$seg['seg4'];
+				
+				if($idAct=='m5u5a2'){
+					
+					$this->profesormoduloModel->changeEstado(5,2);
+					$nota="No Aplica";
+						
+					$p1 = $this->input->post('preg1');
+					$p2 = $this->input->post('preg2');
+					$p3 = $this->input->post('preg3');
+					$p4 = $this->input->post('preg4');
+					$p5 = $this->input->post('preg5');
+					
+					$answer='{"Actividad 1":{"Pregunta 1": "'.$p1.'",
+											"Pregunta 2": "'.$p2.'",
+											"Pregunta 3": "'.$p3.'",
+											"Pregunta 4": "'.$p4.'",
+											"Pregunta 5": "'.$p5.'"
+											}
+							}';
+					
+					$this->insertUpdate($idAct,$nota, $answer);
+				}
+				
+			}
 			$this->load->view('modulos/modulo6/index',$data);
 
 		}else{
@@ -99,9 +126,26 @@ class Modulo6 extends CI_Controller {
 				
 				$idAct=$seg['seg4'];
 				switch ($idAct) {
-					case 'm1u1':
-						$nota= (double)($this->input->post('pre1'));
-						$this->insertUpdateE($idAct,$nota);
+					case 'm6u1a3':
+					
+						$nota="No Aplica";
+						
+						$p1 = $this->input->post('preg1');
+						$p2 = $this->input->post('preg2');
+						$p3 = $this->input->post('preg3');
+						$p4 = $this->input->post('preg4');
+						$p5 = $this->input->post('preg5');
+						
+						$answer='{"Actividad 1":{"Pregunta 1": "'.$p1.'",
+												"Pregunta 2": "'.$p2.'",
+												"Pregunta 3": "'.$p3.'",
+												"Pregunta 4": "'.$p4.'",
+												"Pregunta 5": "'.$p5.'"
+												}
+			 					}';
+						
+						$this->insertUpdate($idAct,$nota, $answer);
+
 					break;
 					case 'm6u2a1':
 						$nota="No Aplica";
@@ -163,9 +207,24 @@ class Modulo6 extends CI_Controller {
 				
 				$idAct=$seg['seg4'];
 				switch ($idAct) {
-					case 'm1u1':
-						$nota= (double)($this->input->post('pre1'));
-						$this->insertUpdateE($idAct,$nota);
+					case 'm6u2a2':
+					
+						$nota="No Aplica";
+						
+						$p1 = $this->input->post('preg1');
+						$p2 = $this->input->post('preg2');
+						$p3 = $this->input->post('preg3');
+						$p4 = $this->input->post('preg4');
+						
+						$answer='{"Actividad 1":{"Pregunta 1": "'.$p1.'",
+												"Pregunta 2": "'.$p2.'",
+												"Pregunta 3": "'.$p3.'",
+												"Pregunta 4": "'.$p4.'"
+												}
+			 					}';
+						
+						$this->insertUpdate($idAct,$nota, $answer);
+
 					break;
 					case 'm6u3a1':
 						$nota="No Aplica";

@@ -56,7 +56,7 @@
         <div class="card mt-4">
           <div class="card-body">
             <h4>Evaluación</h4>
-            <?php echo form_open('modulo2/unidad4');$this->session->set_userdata('idAc','m2u3'); ?>
+            <?php echo form_open('modulo2/unidad4/inicio');$this->session->set_userdata('idAct','m2u3'); ?>
               <div class="card-body">
                 <p class="card-text">
                   <strong> ¿Una oportunidad es? </strong><br> <br>
@@ -74,12 +74,12 @@
                     <input class="space" type="radio" name="pre2" id="resp4" value="5" required>Posición contraria entre
                     2 o más personas.</label> <br>
 
-                  <input class="space" type="radio" name="pre2" id="resp5" value="1" required>
-                  <label for="resp5">Discusión que está basada en elementos de la misma naturaleza pero con
+                    <label><input class="space" type="radio" name="pre2" id="resp5" value="1" required>
+                  Discusión que está basada en elementos de la misma naturaleza pero con
                     características diferentes.</label> <br>
 
-                  <input class="space" type="radio" name="pre2" id="resp6" value="1" required>
-                  <label for="resp6">Necesidad que tiene un grupo de personas de generar un ambiente de
+                    <label><input class="space" type="radio" name="pre2" id="resp6" value="1" required>
+                  Necesidad que tiene un grupo de personas de generar un ambiente de
                     bienestar.</label> <br>
                 </p>
               </div>
@@ -88,7 +88,7 @@
           <br>
           <center>
             <a href="<?php echo base_url();?>modulo2/unidad3/actividad3" class="btn btn-success">Anterior</a>
-            <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+            <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
           </center>
           <?php echo form_close(); ?>
           <?php $this->load->view('initial/paginacion');?>

@@ -53,30 +53,30 @@
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 2: Libertad, ética y responsabilidad</h1>
-              <?php echo form_open('modulo2/unidad3');$this->session->set_userdata('idAc','m2u2'); ?>
+              <?php echo form_open('modulo2/unidad3/inicio');$this->session->set_userdata('idAct','m2u2'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Evaluación</h4>
                         <p class="card-text">
                           <strong> ¿Qué es código de ética?  </strong><br> <br>
-                          <input class="space" type="radio" name="pre1" id="resp1" value="1" required>
+                          <input class="space" type="radio" name="pre1" id="resp1" value = 1 required>
                           <label for="resp1">Mantener una línea de comportamiento uniforme </label> <br>
 
-                          <input class="space" type="radio" name="pre1" id="resp2" value="1" required>
+                          <input class="space" type="radio" name="pre1" id="resp2" value = 1 required>
                           <label for="resp2">Tomar las decisiones más acertadas, dentro de lo que cabe en su profesión.</label> <br>
 
-                          <input class="space" type="radio" name="pre1" id="resp3" value="5" required>
+                          <input class="space" type="radio" name="pre1" id="resp3" value = 5 required>
                           <label for="resp3"> Normas que regulan los comportamientos de las personas dentro de una empresa u organización</label> <br>
 
                           <strong> ¿Qué es actuar con libertad?  </strong><br> <br>
                           <label for="resp4">
-                          <input class="space" type="radio" name="pre2" id="resp4" value="5" required>Actuar con libertad implica asumir la responsabilidad de nuestros actos, es decir estar comprometidos ante las consecuencias que surjan de las decisiones tomadas. </label> <br>
+                          <input class="space" type="radio" name="pre2" id="resp4" value = 5 required>Actuar con libertad implica asumir la responsabilidad de nuestros actos, es decir estar comprometidos ante las consecuencias que surjan de las decisiones tomadas. </label> <br>
 
 
-                          <input class="space" type="radio" name="pre2" id="resp5" value="1" required>
+                          <input class="space" type="radio" name="pre2" id="resp5" value = 1 required>
                           <label for="resp5">Es ser responsable para manifestar una respuesta ante cualquier circunstancia.</label> <br>
 
-                          <input class="space" type="radio" name="pre2" id="resp6" value="1" required>
+                          <input class="space" type="radio" name="pre2" id="resp6" value = 1 required>
                           <label for="resp6">Es ser autónomos y conscientes de nuestras acciones.</label> <br>
                         </p>
                     </div>
@@ -86,7 +86,7 @@
                 <center>
                     <a href="<?php echo base_url();?>modulo2/unidad2/actividad2" class="btn btn-success">Anterior</a>
                     <!--a href="../modulo2.3/module2.3_inicio.php" class="btn btn-success">Siguiente</a-->
-                    <button id="btn-siguiente"  class="btn btn-success" type="submit">Siguiente</button>
+                    <button id="btn-siguiente"  class="btn btn-success" name="submit" type="submit">Siguiente</button>
                 </center>
               <?php echo form_close(); ?>
               <?php $this->load->view('initial/paginacion');?>

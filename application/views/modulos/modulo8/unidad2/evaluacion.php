@@ -52,7 +52,7 @@
             <div class="col-lg-9">
                 <h1><br>Unidad 2: Ambiente de Aprendizaje y Alfabetización Informacional</h1>
 
-                <?php echo form_open('modulo8/unidad3');$this->session->set_userdata('idAc','m8u2'); ?>
+                <?php echo form_open('modulo8/unidad3/inicio');$this->session->set_userdata('idAct','m8u2'); ?>
 
                 <div class="card mt-4">
                     <div class="card-body">
@@ -61,45 +61,45 @@
                             <ol>
                                 <b><li>¿Cuál de las siguientes es una etapa del Big6?</li></b>
                                 <label>
-                                <input type="radio" name="preg1" id="opc1" onclick="incorrecto(1);" value = "0"> a. Alfabetización
+                                <input type="radio" name="preg1" id="opc1" value = 1 required> a. Alfabetización
                                 informacional.
                                 </label>
                                 <br>
                                 <label>
-                                <input type="radio" name="preg1" id="opc2" onclick="correcto(1);" value = "1.67"> b. Definición de las
+                                <input type="radio" name="preg1" id="opc2" value = 5 required> b. Definición de las
                                 necesidad o problemas de información.
                                 </label>
                                 <br>
                                 <label>
-                                <input type="radio" name="preg1" id="opc3" onclick="incorrecto(1);" value = "0"> c. Compartir
+                                <input type="radio" name="preg1" id="opc3" value = 1 required> c. Compartir
                                 información de fuentes confliables.
                                 </label>
                                 <br>
                                 <b><li>¿En qué consiste la etapa 4 del Big6?</li></b>
                                 <label>
-                                <input type="radio" name="preg2" id="opc1" onclick="correcto(2);" value = "1.67"> a. Evaluación crítica
+                                <input type="radio" name="preg2" id="opc1" value = 5 required> a. Evaluación crítica
                                 de la información.
                                 </label>
                                 <br>
                                 <label>
-                                <input type="radio" name="preg2" id="opc2" onclick="incorrecto(2);" value = "0"> b. Busqueda de la
+                                <input type="radio" name="preg2" id="opc2" value = 1 required> b. Busqueda de la
                                 información.
                                 </label>
                                 <br>
                                 <label>
-                                <input type="radio" name="preg2" id="opc3" onclick="incorrecto(2);" value ="0"> c. Estrategias para
+                                <input type="radio" name="preg2" id="opc3" value = 1 required> c. Estrategias para
                                 buscar información.
                                 <b><li>¿Cuál corresponde a correcta fuente de información?</li></b>
                                 <label>
-                                <input type="radio" name="preg3" id="opc1" onclick="incorrecto(3);" value = "0"> a. Wikipedia
+                                <input type="radio" name="preg3" id="opc1" value = 1 required> a. Wikipedia
                                 </label>
                                 <br>
                                 <label>
-                                <input type="radio" name="preg3" id="opc2" onclick="incorrecto(3);" value = "0"> b. Slash
+                                <input type="radio" name="preg3" id="opc2" value = 1 required> b. Slash
                                 </label>
                                 <br>
                                 <label>
-                                <input type="radio" name="preg3" id="opc3" onclick="correcto(3);" value = "1.67"> c. Asap
+                                <input type="radio" name="preg3" id="opc3" value = 5 required> c. Asap
                                 </label>
                                 <br>
                                 
@@ -114,7 +114,7 @@
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo8/unidad2/actividad2" class="btn btn-success">Anterior</a>
-                    <button id="btn-siguiente"  class="btn btn-success" type="submit" onclick="validar();evaluacion()">Siguiente</button>                    
+                    <button id="btn-siguiente"  class="btn btn-success" name="submit" type="submit">Siguiente</button>                    
                 </center>
                 <?php echo form_close(); ?>
                 <?php $this->load->view('initial/paginacion');?>

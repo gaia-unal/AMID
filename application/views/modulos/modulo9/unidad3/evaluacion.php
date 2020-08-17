@@ -55,26 +55,26 @@
 				<h1><br>Unidad 3: Manejando el Cambio Para Fomentar un Medio Ambiente Propicio para las Escuelas AMI
 				</h1>
 
-				<?php echo form_open('modulo10');$this->session->set_userdata('idAc','m9u3'); ?>
+				<?php echo form_open('modulo10');$this->session->set_userdata('idAct','m9u3'); ?>
 
 				<div class="card mt-4">
 					<div class="card-body">
 						<h4>Evaluación</h4>
 						<p class="card-text">
 							Selecciona las opciones que correspondan a recomendaciones para los cursos AMI <br>
-							<input type="checkbox" name="opc1" id="opc1" onclick="correcto()">a. Identificar el
+							<input type="checkbox" name="opc1" id="opc1" onclick="validar(1)">a. Identificar el
 							contexto <br>
-							<input type="checkbox" name="opc2" id="opc2" onclick="incorrecto()">b. Buscar
+							<input type="checkbox" name="opc2" id="opc2" onclick="validar(2)">b. Buscar
 							información antes de comenzar el curso <br>
-							<input type="checkbox" name="opc3" id="opc3" onclick="correcto()">c. Desarrolle un plan
+							<input type="checkbox" name="opc3" id="opc3" onclick="validar(3)">c. Desarrolle un plan
 							para promover AMI <br>
-							<input type="checkbox" name="opc4" id="opc4" onclick="correcto()">d. Identifique los
+							<input type="checkbox" name="opc4" id="opc4" onclick="validar(4)">d. Identifique los
 							recursos disponibles y los que se requieren <br>
-							<input type="checkbox" name="opc5" id="opc5" onclick="incorrecto()">e. Desarrollar un
+							<input type="checkbox" name="opc5" id="opc5" onclick="validar(5)">e. Desarrollar un
 							cronograma de acción <br>
-							<a href="#" class="btn btn-outline-success" onclick="validar();">Validar</a>
+							<!-- <a href="#" class="btn btn-outline-success" onclick="validar();">Validar</a> -->
 
-							<input type="text" name="preg" id="preg" value="" style="display: none">
+							<input type="text" name="preg" id="preg" value = 1 style="display:none;">
 						</p>
 					</div>
 				</div>
@@ -82,7 +82,7 @@
 				<br>
 				<center>
 					<a href="<?php echo base_url();?>modulo9/unidad3/actividad2" class="btn btn-success">Anterior</a>
-					<button id="btn-siguiente"  class="btn btn-success" type="submit" >Siguiente</button>
+					<button id="btn-siguiente"  class="btn btn-success" name="submit" type="submit" >Siguiente</button>
 				</center>
 				<?php echo form_close(); ?>	
 				<?php $this->load->view('initial/paginacion');?>

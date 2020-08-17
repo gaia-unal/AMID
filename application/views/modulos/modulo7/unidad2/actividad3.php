@@ -51,6 +51,7 @@
             <div class="col-lg-9">
                 <br>
                 <h1>Phishing</h1>
+                <?php echo form_open('modulo7/unidad2/actividad4');$this->session->set_userdata('idAct','m7u2a3'); ?>
                 <br />
                 <div class="card mt-4">
                     <div class="card-body">
@@ -59,7 +60,7 @@
                             <!-- Pregunta 1 -->
                             <h4>1) ¿Qué es el <em>Phishing</em>?</h4>
                             <label class="container" id="p1-r1">
-                                <input type="radio" name="preg1" id="opc1" onclick="correcto();">
+                                <input type="radio" name="preg1" id="opc1" value = 5 required>
                                 
                                 a. Es un delito cibernético en el que intentan adquirir información
                                     confidencial como números de tarjetas de crédito, contraseñas y otros datos
@@ -67,13 +68,13 @@
                                 
                             </label>
                             <label class="container" id="p1-r2">
-                                <input type="radio" name="preg1" id="opc2" onclick="incorrecto('a');">
+                                <input type="radio" name="preg1" id="opc2" value = 1 required>
                                 
                                 b. Es un estafador que intenta acceder a los correos electrónicos para
                                     enviar mensajes spam.
                             </label>
                             <label class="container" id="p1-r3">
-                                <input type="radio" name="preg1" id="opc3" onclick="incorrecto('a');">
+                                <input type="radio" name="preg1" id="opc3" value = 1 required>
                                 
                                 c. Es un delito cibernético en el que un estafador vende productos
                                     engañosos.
@@ -82,22 +83,22 @@
                             <h4>¿Cuál de las siguientes opciones <strong>NO</strong> es un tipo de <em>Phishing</em>?
                             </h4>
                             <label class="container" id="p2-r1">
-                                <input type="radio" name="preg2" id="opc1" onclick="incorrecto('b');">
+                                <input type="radio" name="preg2" id="opc1" value = 1 required>
                                 
                                 a. Phishing tradicional.
                             </label>
                             <label class="container" id="p2-r2">
-                                <input type="radio" name="preg2" id="opc2" onclick="correcto('b');">
+                                <input type="radio" name="preg2" id="opc2" value = 5 required>
                                 
                                 b. Phishing steal. 
                             </label>
                             <label class="container" id="p2-r3">
-                                <input type="radio" name="preg2" id="opc3" onclick="incorrecto('b');">
+                                <input type="radio" name="preg2" id="opc3" value = 1 required>
                                 
                                 c. Spear Phishing.
                             </label>
                             <label class="container" id="p2-r4">
-                                <input type="radio" name="preg2" id="opc4" onclick="incorrecto('b');">
+                                <input type="radio" name="preg2" id="opc4" value = 1 required>
                                 
                                 d. Vishing.
                             </label>
@@ -105,17 +106,17 @@
                             <!-- Pregunta 3 -->
                             <h4>¿Es posible que realicen <em>Phishing</em> por medio de correos electrónicos?</h4>
                             <label class="container" id="p3-r1">
-                                <input type="radio" name="preg3" id="opc1" onclick="incorrecto('b');">
+                                <input type="radio" name="preg3" id="opc1" value = 1 required>
                                 
                                 a. Sí, pero solo a las personas que tienen cuentas bancarias.
                             </label>
                             <label class="container" id="p3-r2">
-                                <input type="radio" name="preg3" id="opc2" onclick="correcto('b');">
+                                <input type="radio" name="preg3" id="opc2" value = 5 required>
                                 
                                 b. Sí, y es un método muy usado por los delincuentes.
                             </label>
                             <label class="container" id="p3-r3">
-                                <input type="radio" name="preg3" id="opc3" onclick="incorrecto('b');">
+                                <input type="radio" name="preg3" id="opc3" value = 1 required>
                                 
                                 c. No porque el correo electrónico es muy seguro y no permite que lleguen
                                     correos engañosos.
@@ -123,18 +124,18 @@
                             <!--Pregunta 4 -->
                             <h4>Los delincuentes pueden hacer <em>Phishing</em> por mensajes de texto o llamadas?</h4>
                             <label class="container" id="p4-r1">
-                                <input type="radio" name="preg4" id="opc1" onclick="incorrecto('c');">
+                                <input type="radio" name="preg4" id="opc1" value = 1 required>
                                 
                                 a. No, el Phishing sólo se refiere al robo de identidad por medio de
                                     correo electrónico.
                             </label>
                             <label class="container" id="p4-r2">
-                                <input type="radio" name="preg4" id="opc2" onclick="incorrecto('c');">
+                                <input type="radio" name="preg4" id="opc2" value = 1 required>
                                 
                                 b. No porque el Phishing solo es por internet
                             </label>
                             <label class="container" id="p4-r3">
-                                <input type="radio" name="preg4" id="opc3" onclick="correcto('c');">
+                                <input type="radio" name="preg4" id="opc3" value = 5 required>
                                 
                                 c. Sí, la intención de los delincuentes es robar información personal, por
                                     lo tanto, es posible que lo hagan por medio de mensajes, llamadas, correos y
@@ -147,8 +148,9 @@
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo7/unidad2/actividad2" class="btn btn-success">Anterior</a>
-                    <a href="<?php echo base_url();?>modulo7/unidad2/actividad4" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
                 </center>
+                <?php echo form_close(); ?>
                 <?php $this->load->view('initial/paginacion');?>
 
 <br />

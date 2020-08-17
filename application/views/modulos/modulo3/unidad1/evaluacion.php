@@ -54,22 +54,22 @@
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 1: Informes de noticias y el poder de las imágenes</h1>
-                <?php echo form_open('modulo3/unidad2');$this->session->set_userdata('idAc','m3u1'); ?>
+                <?php echo form_open('modulo3/unidad2/inicio');$this->session->set_userdata('idAct','m3u1'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Evaluación</h4><br />
                         <p class="card-text">
                         
                             <strong> ¿Qué impacto podrían tener estas imágenes sobre las audiencias?</strong><br /><br />
-                                <label><input type="radio" name="pre1" class="space" onclick="correcto()" value="5" required>Positivo porque permite que se genere conciencia sobre lo que pasa actualmente.</label> <br />
-                                <label><input type="radio" name="pre1" class="space" onclick="incorrecto()" value="1" required>Negativo porque nos induce a tener miedo.</label><br />
-                                <label><input type="radio" name="pre1" class="space" onclick="incorrecto()" value="1" required>No se genera ningún tipo de impacto.
+                                <label><input type="radio" name="pre1" class="space"  value = 5 required>Positivo porque permite que se genere conciencia sobre lo que pasa actualmente.</label> <br />
+                                <label><input type="radio" name="pre1" class="space"  value = 1 required>Negativo porque nos induce a tener miedo.</label><br />
+                                <label><input type="radio" name="pre1" class="space"  value = 1 required>No se genera ningún tipo de impacto.
                                     </label><br />
                             <br />
                             <strong>¿Qué se intenta transmitir por medio de estas imágenes?</strong><br /><br />
-                                <label><input type="radio" name="pre2" class="space" onclick="incorrecto()" value="1" required>Sentimientos asociados al dolor humano.</label><br />
-                                <label><input type="radio" name="pre2" class="space" onclick="correcto()" value="5" required>El enfoque y la cobertura de las noticias de una tragedia.</label><br />
-                                <label><input type="radio" name="pre2" class="space" onclick="incorrecto()" value="1" required>La desigualdad y olvido por parte del gobierno.</label><br />
+                                <label><input type="radio" name="pre2" class="space"  value = 1 required>Sentimientos asociados al dolor humano.</label><br />
+                                <label><input type="radio" name="pre2" class="space"  value = 5 required>El enfoque y la cobertura de las noticias de una tragedia.</label><br />
+                                <label><input type="radio" name="pre2" class="space"  value = 1 required>La desigualdad y olvido por parte del gobierno.</label><br />
                             <br />
                         </p>
                     </div>
@@ -78,7 +78,7 @@
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo3/unidad1/actividad2" class="btn btn-success">Anterior</a>
-                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
                     <!-- <a href="../modulo2.2/module2.2_inicio.php" class="btn btn-success">Siguiente</a> -->
                 </center>
                 <?php echo form_close(); ?>

@@ -54,6 +54,7 @@
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 3: Televisión, películas y publicación de libros</h1>
+                <?php echo form_open('modulo3/unidad4/inicio');$this->session->set_userdata('idAct','m3u3a2'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Evaluación</h4>
@@ -61,13 +62,13 @@
                             <ul>
                                 <li>¿Qué impacto presentan las estrategias técnicas y de forma sobre el contenido y
                                     representaciones?</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                    <textarea name="preg1" style="width: 95%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>Realice un análisis sobre las organizaciones de filmación nacionales y las compañías
                                     de producción independiente para ofrecer historias alternativas, indígenas u
                                     originarias, destacando su influencia en la audiencia</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                    <textarea name="preg2" style="width: 95%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                             </ul>
                         </p>
                     </div>
@@ -76,8 +77,9 @@
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo3/unidad3/actividad1" class="btn btn-success">Anterior</a>
-                    <a href="<?php echo base_url();?>modulo3/unidad4" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
                 </center>
+                <?php echo form_close(); ?>
                 <?php $this->load->view('initial/paginacion');?>
 
 <br />

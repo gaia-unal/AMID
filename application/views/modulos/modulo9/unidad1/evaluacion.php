@@ -53,7 +53,7 @@
 				<br>
 				<h1>Unidad 1: Comunicación, enseñanza y aprendizaje</h1>
 
-				<?php echo form_open('modulo9/unidad2');$this->session->set_userdata('idAc','m9u1'); ?>
+				<?php echo form_open('modulo9/unidad2/inicio');$this->session->set_userdata('idAct','m9u1'); ?>
 
 				<div class="card mt-4">
 					<div class="card-body">
@@ -73,7 +73,7 @@
 							<img id="imagen2" src="<?php echo base_url();?>public/assets/modulos/mod9/img/palabra/2.png"     alt="p2" onclick="validar('2')">
 							<img id="imagen9" src="<?php echo base_url();?>public/assets/modulos/mod9/img/definicion/3.png"  alt="d3" onclick="validar('9')">
 
-							<input type="text" name="preg" id="preg" value="" style="display: none">
+							<input type="text" name="preg" id="preg" value = 1 style="display:none;">
 						</p>
 					</div>
 				</div>
@@ -81,7 +81,7 @@
 				<br>
 				<center>
 					<a href="<?php echo base_url();?>modulo9/unidad1/actividad2" class="btn btn-success">Anterior</a>
-					<button id="btn-siguiente"  class="btn btn-success" type="submit"">Siguiente</button>                    
+					<button id="btn-siguiente"  class="btn btn-success" name="submit" type="submit">Siguiente</button>                    
 				</center>
 				<?php echo form_close(); ?>
 				<?php $this->load->view('initial/paginacion');?>

@@ -54,6 +54,7 @@
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 3: Publicidad: El proceso creativo</h1>
+                <?php echo form_open('modulo5/unidad4/inicio');$this->session->set_userdata('idAct','m5u3a2'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Evaluación</h4>
@@ -64,24 +65,24 @@
                             creada a través de cada ejemplo y evalúe su eficacia en transmitir la información necesaria.
                             Identifique la fuente de cada ejemplo (es decir: quién lo creó y quien se beneficia/ saca
                             provecho de eso) <br>
-                            <textarea name="preg1" id="p1-r" cols="80" rows="5" placeholder="Escriba su respuesta aquí"
-                                spellcheck="true"></textarea> <br>
+                            <textarea name="preg1" style="width: 95%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea> <br>
                             A menudo las comunidades consideran si es conveniente o no el vender los derechos de los
                             nombres de áreas, sedes o edificios. Hable sobre los beneficios y desventajas de dichas
                             formas de estrategias de publicidad para el publicista, la comunidad y el individuo.<br>
-                            <textarea name="preg2" id="p2-r" cols="80" rows="5" placeholder="Escriba su respuesta aquí"
-                                spellcheck="true"></textarea> <br>
+                            <textarea name="preg2" style="width: 95%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea> <br>
                             Haga una lista de los jugadores que están en la industria de la publicidad. Esto debería
                             tomar en cuenta a los individuos e instituciones/organizaciones. Describa sus respectivos
                             roles. Tome en cuenta cualquier anuncio audiovisual. ¿Cree usted que el papel de cada uno de
                             los jugadores claves que usted anotó se halla explícitamente reflejado en el anuncio? <br>
-                            <textarea name="preg3" id="p3-r" cols="80" rows="5" placeholder="Escriba su respuesta aquí"
-                                spellcheck="true"></textarea> <br>
+                            <textarea name="preg3" style="width: 95%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea> <br>
                             ¿Cómo cree usted que su conocimiento acerca de aquellos que se encuentran involucrados en la
                             creación y difusión de este anuncio le ayuda a usted a interactuar de una mejor manera o
                             evaluar la utilidad de dar la información que usted necesita? <br>
-                            <textarea name="preg4" id="p4-r" cols="80" rows="5" placeholder="Escriba su respuesta aquí"
-                                spellcheck="true"></textarea>
+                            <textarea name="preg4" style="width: 95%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                         </p>
                     </div>
                 </div>
@@ -89,8 +90,9 @@
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo5/unidad3/actividad1" class="btn btn-success">Anterior</a>
-                    <a href="<?php echo base_url();?>modulo5/unidad4" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
                 </center>
+                <?php echo form_close(); ?>
                 <?php $this->load->view('initial/paginacion');?>
 
 <br />

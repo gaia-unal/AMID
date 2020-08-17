@@ -54,7 +54,7 @@
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 5: Edición digital y retoque en computadora</h1>
-                <?php echo form_open('modulo4');$this->session->set_userdata('idAc','m3u5'); ?>
+                <?php echo form_open('modulo4');$this->session->set_userdata('idAct','m3u5'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Evaluación</h4>
@@ -62,16 +62,16 @@
                             <ul>
                                 <li><strong> ¿Qué es el fotoperiodismo?</strong></li>
 
-                                    <label><input type="radio" name="pre1" class="space"  value="1" required>Tomar fotos y publicarlas en un periódico.</label> <br />
-                                    <label><input type="radio" name="pre1" class="space"  value="1" required>Es leer el periódico a través de fotografías</label><br />
-                                    <label><input type="radio" name="pre1" class="space"  value="5" required>Es un género del periodismo que tiene que ver directamente con la fotografía, el diseño gráfico y el vídeo.
+                                    <label><input type="radio" name="pre1" class="space"  value = 1 required>Tomar fotos y publicarlas en un periódico.</label> <br />
+                                    <label><input type="radio" name="pre1" class="space"  value = 1 required>Es leer el periódico a través de fotografías</label><br />
+                                    <label><input type="radio" name="pre1" class="space"  value = 5 required>Es un género del periodismo que tiene que ver directamente con la fotografía, el diseño gráfico y el vídeo.
                                       </label><br />
                                 <br />
                                 <li><strong>¿Qué aspectos éticos se ven afectados por la manipulación de imágenes?</strong></li>
 
-                                    <label><input type="radio" name="pre2" class="space"  value="5" required>El honor, la intimidad, la propia imagen.</label><br />
-                                    <label><input type="radio" name="pre2" class="space"  value="1" required>El engaño, la calumnia, el respeto.</label><br />
-                                    <label><input type="radio" name="pre2" class="space"  value="1" required>La tolerancia, la buena imagen, la vanidad.</label><br />
+                                    <label><input type="radio" name="pre2" class="space"  value = 5 required>El honor, la intimidad, la propia imagen.</label><br />
+                                    <label><input type="radio" name="pre2" class="space"  value = 1 required>El engaño, la calumnia, el respeto.</label><br />
+                                    <label><input type="radio" name="pre2" class="space"  value = 1 required>La tolerancia, la buena imagen, la vanidad.</label><br />
                                 <br>
                             </ul>
                         </p>
@@ -81,7 +81,7 @@
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo3/unidad5/actividad2" class="btn btn-success">Anterior</a>
-                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
                     <!-- <a href="../../modulo4/module4.php" class="btn btn-success">Siguiente</a> -->
                 </center>
                 <?php echo form_close(); ?>

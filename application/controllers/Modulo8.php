@@ -21,12 +21,23 @@ class Modulo8 extends CI_Controller {
 	
 	public function index(){
 		
-		$id=$this->session->userdata('id');
+		$seg['seg4']=$this->session->userdata('idAct');
 
-		if(isset($id)){
+		if(isset($this->id)){
 			$this->profesormoduloModel->changeEstado(8,1);
+			$submit=$this->input->post('submit');
 
 			$data['profesormodulo']=$this->profesormoduloModel->getOne();
+			if($seg['seg4'] && isset($submit)){
+				$idAct=$seg['seg4'];
+				
+				if($idAct=='m7u22'){
+					$this->profesormoduloModel->changeEstado(7,2);
+					$nota = $this->input->post('preg');
+					$this->insertUpdateE($idAct,$nota);
+				}
+				
+			}
 			$this->load->view('modulos/modulo8/index',$data);
 
 		}else{
@@ -130,8 +141,8 @@ class Modulo8 extends CI_Controller {
 				
 				$idAct=$seg['seg4'];
 				switch ($idAct) {
-					case 'm1u1':
-						$nota= (double)($this->input->post('pre1'));
+					case 'm8u1':
+						$nota = $this->input->post('preg');
 						$this->insertUpdateE($idAct,$nota);
 					break;
 					case 'm8u2a2':
@@ -194,8 +205,14 @@ class Modulo8 extends CI_Controller {
 				
 				$idAct=$seg['seg4'];
 				switch ($idAct) {
-					case 'm1u1':
-						$nota= (double)($this->input->post('pre1'));
+					case 'm8u2':
+
+						$p1 = $this->input->post('preg1');
+						$p2 = $this->input->post('preg2');
+						$p3 = $this->input->post('preg3');
+						
+						$nota= round(($p1+$p2+$p3)/3,2);
+						
 						$this->insertUpdateE($idAct,$nota);
 					break;
 					case 'm8u3a1':

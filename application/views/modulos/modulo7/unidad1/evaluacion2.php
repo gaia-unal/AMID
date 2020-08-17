@@ -52,7 +52,7 @@
                 <br>
                 <h1>Unidad 1: Los jóvenes en el mundo virtual</h1>
 
-                <?php echo form_open('modulo7/unidad2');$this->session->set_userdata('idAc','m7u12'); ?>
+                <?php echo form_open('modulo7/unidad2/inicio');$this->session->set_userdata('idAct','m7u12'); ?>
 
                 <div class="card mt-4">
                     <div class="card-body">
@@ -62,27 +62,27 @@
                         <div>
                             <img class="fondo" src="<?php echo base_url();?>public/assets/modulos/mod7/img/fondo.png" alt="fondo">
                         </div>
-                        </center>
-                        <input class="respuesta" id="resp1" type="text" autofocus />
-                        <input class="respuesta" id="resp2" type="text" autofocus />
-                        <input class="respuesta" id="resp3" type="text" autofocus />
-                        <input class="respuesta" id="resp4" type="text" autofocus />
-                        <input class="respuesta" id="resp5" type="text" autofocus />
-                        <input class="respuesta" id="resp6" type="text" autofocus />
+                        <!-- </center> -->
+                        <input class="respuesta" name="preg1" id="resp1" type="text" autofocus required/>
+                        <input class="respuesta" name="preg2" id="resp2" type="text" required/>
+                        <input class="respuesta" name="preg3" id="resp3" type="text" required/>
+                        <input class="respuesta" name="preg4" id="resp4" type="text" required/>
+                        <input class="respuesta" name="preg5" id="resp5" type="text" required/>
+                        <input class="respuesta" name="preg6" id="resp6" type="text" required/>
                         <br>
 
-                        <input type="text" name="preg" id="preg" value="" style="display: none">
+                        <!-- <input type="text" name="preg" id="preg" value="" style="display: none"> -->
 
-                        <center>
+                        <!-- <center>
                             <a href="#"  class="btn btn-outline-success" onclick="termino()">Validar</a>
-                        </center>
+                        </center> -->
                     </div>
                 </div>
                 <!-- /.card -->
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo7/unidad1/evaluacion1" class="btn btn-success">Anterior</a>
-                    <button id="btn-siguiente"  class="btn btn-success" type="submit">Siguiente</button>                    
+                    <button id="btn-siguiente"  class="btn btn-success" name="submit" type="submit">Siguiente</button>                    
                 </center>
                 <?php echo form_close(); ?>
                 <?php $this->load->view('initial/paginacion');?>

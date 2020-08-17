@@ -53,6 +53,7 @@
             <div class="col-lg-9">
                 <h1><br>Unidad 2: Uso de las Nuevas Tecnologías Mediáticas en la Sociedad – Comunicación de Masas y
                     Digital</h1>
+                    <?php echo form_open('modulo6/unidad3/inicio');$this->session->set_userdata('idAct','m6u2a2'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Evaluación</h4>
@@ -64,27 +65,27 @@
                                     ¿cómo la tecnología de los teléfonos móviles ha ayudado a cerrar la brecha de
                                     comunicación entre los ricos y los pobres en la sociedad?
                                 </li>
-                                <textarea name="preg1" id="p1-r" cols="80" rows="5"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                <textarea name="preg1" style="width: 95%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>Explore cómo la comunicación digital está cambiando la forma en la que las personas
                                     interactúan en la sociedad, comparten el conocimiento e intercambian información.
                                 </li>
-                                <textarea name="preg2" id="p2-r" cols="80" rows="5"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                <textarea name="preg2" style="width: 95%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>Desarrolle una estrategia para utilizar un sito de red social para promover la
                                     interacción sobre un tema en particular que usted quiera enseñar. ¿Cuáles son los
                                     riesgos y desafíos que los profesores podrían encontrar al usar las redes sociales
                                     para propósitos educativos? Identifique los riesgos y sugiera formas para reducir
                                     su impacto. </li>
-                                <textarea name="preg3" id="p3-r" cols="80" rows="5"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                <textarea name="preg3" style="width: 95%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>Utilice Internet para investigar el grado de gobierno electrónico que existe en su
                                     país. Debe elegir dos ejemplos como evidencia de que dichas actividades existen e
                                     indicar hasta qué punto ellos están involucrados o se les consulta en el proceso.
                                     ¿Se les consultó a los ciudadanos en general? Hable sobre la eficacia de estos
                                     proyectos de e-gobernanza. ¿Cuáles son los beneficios y las desventajas?</li>
-                                <textarea name="preg4" id="p4-r" cols="80" rows="5"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                <textarea name="preg4" style="width: 95%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                             </ol>
                         </p>
                     </div>
@@ -93,8 +94,9 @@
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo6/unidad2/actividad1" class="btn btn-success">Anterior</a>
-                    <a href="<?php echo base_url();?>modulo6/unidad3" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
                 </center>
+                <?php echo form_close(); ?>
                 <?php $this->load->view('initial/paginacion');?>
 
 <br />

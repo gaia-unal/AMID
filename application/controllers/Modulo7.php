@@ -21,12 +21,25 @@ class Modulo7 extends CI_Controller {
 	
 	public function index(){
 		
-		$id=$this->session->userdata('id');
+		$seg['seg4']=$this->session->userdata('idAct');
 
-		if(isset($id)){
+		if(isset($this->id)){
 			$this->profesormoduloModel->changeEstado(7,1);
+			$submit=$this->input->post('submit');
 
 			$data['profesormodulo']=$this->profesormoduloModel->getOne();
+			if($seg['seg4'] && isset($submit)){
+				$idAct=$seg['seg4'];
+				
+				if($idAct=='m6u3'){
+					$this->profesormoduloModel->changeEstado(6,2);
+					$p1 = $this->input->post('pre1');
+					$nota= round($p1,2);
+					
+					$this->insertUpdateE($idAct,$nota);
+				}
+				
+			}
 			$this->load->view('modulos/modulo7/index',$data);
 
 		}else{
@@ -50,6 +63,19 @@ class Modulo7 extends CI_Controller {
 				
 				$idAct=$seg['seg4'];
 				switch ($idAct) {
+					case 'm7u11':
+
+						$p1 = $this->input->post('preg1');
+						$p2 = $this->input->post('preg2');
+						$p3 = $this->input->post('preg3');
+						$p4 = $this->input->post('preg4');
+						$p5 = $this->input->post('preg5');
+						$p6 = $this->input->post('preg6');
+						
+						$nota= round(($p1+$p2+$p3+$p4+$p5+$p6)/6,2);
+						
+						$this->insertUpdateE($idAct,$nota);
+					break;
 					case 'm7u1a2':
 						$nota="No Aplica";
 						
@@ -134,13 +160,101 @@ class Modulo7 extends CI_Controller {
 				
 				$idAct=$seg['seg4'];
 				switch ($idAct) {
-					case 'm1u1':
-						$nota= (double)($this->input->post('pre1'));
+					case 'm7u12':
+
+						$nota=0;
+						$p1 = $this->input->post('preg1');
+						$p2 = $this->input->post('preg2');
+						$p3 = $this->input->post('preg3');
+						$p4 = $this->input->post('preg4');
+						$p5 = $this->input->post('preg5');
+						$p6 = $this->input->post('preg6');
+
+						if($p1=='d')
+							$nota++;
+						if($p2=='b')
+							$nota++;
+						if($p3=='c')
+							$nota++;
+						if($p4=='f')
+							$nota++;
+						if($p5=='a')
+							$nota++;
+						if($p6=='e')
+							$nota++;
+						
+						$nota= round(($nota*5)/6,2);
+						
 						$this->insertUpdateE($idAct,$nota);
 					break;
-					case "m1u2ax":
+					case 'm7u21':
+
+						$p1 = $this->input->post('preg1');
+						$p2 = $this->input->post('preg2');
+						$p3 = $this->input->post('preg3');
+						$p4 = $this->input->post('preg4');
+						$p5 = $this->input->post('preg5');
+						$p6 = $this->input->post('preg6');
+						
+						$nota= round(($p1+$p2+$p3+$p4+$p5+$p6)/6,2);
+						
+						$this->insertUpdateE($idAct,$nota);
 					break;
-					case "m1u2ax":
+					case 'm7u2a3':
+					
+						$p1 = $this->input->post('preg1');
+						$p2 = $this->input->post('preg2');
+						$p3 = $this->input->post('preg3');
+						$p4 = $this->input->post('preg4');
+
+						$nota= round(($p1+$p2+$p3+$p4)*5/20,2);
+
+						if($p1==1) $p1='Incorrecto';
+						else $p1='Correcto';
+						if($p2==1) $p2='Incorrecto';
+						else $p2='Correcto';
+						if($p3==1) $p3='Incorrecto';
+						else $p3='Correcto';
+						if($p4==1) $p4='Incorrecto';
+						else $p4='Correcto';
+
+						$answer='{"Actividad 1":{"Pregunta 1": "'.$p1.'",
+												"Pregunta 2": "'.$p2.'",
+												"Pregunta 3": "'.$p3.'",
+												"Pregunta 4": "'.$p4.'"
+												}
+			 					}';
+						
+						$this->insertUpdate($idAct,$nota, $answer);
+
+					break;
+					case 'm7u2a5':
+					
+						$p1 = $this->input->post('preg1');
+						$p2 = $this->input->post('preg2');
+						$p3 = $this->input->post('preg3');
+						$p4 = $this->input->post('preg4');
+
+						$nota= round(($p1+$p2+$p3+$p4)*5/20,2);
+
+						if($p1==1) $p1='Incorrecto';
+						else $p1='Correcto';
+						if($p2==1) $p2='Incorrecto';
+						else $p2='Correcto';
+						if($p3==1) $p3='Incorrecto';
+						else $p3='Correcto';
+						if($p4==1) $p4='Incorrecto';
+						else $p4='Correcto';
+
+						$answer='{"Actividad 1":{"Pregunta 1": "'.$p1.'",
+												"Pregunta 2": "'.$p2.'",
+												"Pregunta 3": "'.$p3.'",
+												"Pregunta 4": "'.$p4.'"
+												}
+			 					}';
+						
+						$this->insertUpdate($idAct,$nota, $answer);
+
 					break;
 					
 					default:

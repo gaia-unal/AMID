@@ -56,27 +56,27 @@
                     inglés)</h1>
                 <div class="card mt-4">
                     <div class="card-body">
-                    <?php echo form_open('modulo3');$this->session->set_userdata('idAc','m2u4'); ?>
+                    <?php echo form_open('modulo3');$this->session->set_userdata('idAct','m2u4'); ?>
                           <div class="card-body">
                             <p class="card-text">
                               <strong>¿Qué es el registro de medios?  </strong><br> <br>
-                              <input class="space" type="radio" name="pre1" id="resp1" value="5" required>
+                              <input class="space" type="radio" name="pre1" id="resp1" value= 5 required>
                               <label for="resp1">Es registrar los medios de comunicación para su correcto funcionamiento </label> <br>
 
-                              <label for="resp2"><input class="space" type="radio" name="pre1" id="resp2" value="1" required>
+                              <label for="resp2"><input class="space" type="radio" name="pre1" id="resp2" value= 1 required>
                               Son los medios que cuentan con instalaciones, equipo, estructura organizacional y una variedad de medios de comunicación.  </label> <br>
 
-                              <input class="space" type="radio" name="pre1" id="resp3" value="1" required>
+                              <input class="space" type="radio" name="pre1" id="resp3" value= 1 required>
                               <label for="resp3">Es registrar el nombre de los medios de comunicación ante una entidad superior.</label> <br>
 
                               <strong>¿A qué se refiere la producción?</strong><br> <br>
                               <label for="resp4">
-                              <input class="space" type="radio" name="pre2" id="resp4" value="1" required>La cantidad de dinero que produce el medio de comunicación en un tiempo determinado.</label> <br>
+                              <input class="space" type="radio" name="pre2" id="resp4" value= 1 required>La cantidad de dinero que produce el medio de comunicación en un tiempo determinado.</label> <br>
 
-                              <input class="space" type="radio" name="pre2" id="resp5" value="1" required>
+                              <input class="space" type="radio" name="pre2" id="resp5" value= 1 required>
                               <label for="resp5">Son las instalaciones propias del medio de comunicación para realizar producciones.</label> <br>
 
-                              <label for="resp6"><input class="space" type="radio" name="pre2" id="resp6" value="5" required>
+                              <label for="resp6"><input class="space" type="radio" name="pre2" id="resp6" value= 5 required>
                               La producción es a lo que se dedica el medio de comunicación, por ejemplo, radio, televisión, periódico, revista, producción de documental, etc.</label> <br>
                             </p>
                         </div>
@@ -85,7 +85,7 @@
                      <br>
                       <center>
                           <a href="<?php echo base_url();?>modulo2/unidad4/actividad2" class="btn btn-success">Anterior</a>
-                          <button id="btn-siguiente"  class="btn btn-success" type="submit">Siguiente</button>
+                          <button id="btn-siguiente"  class="btn btn-success" name="submit" type="submit">Siguiente</button>
                       </center>
                     <?php echo form_close(); ?>
                     <?php $this->load->view('initial/paginacion');?>

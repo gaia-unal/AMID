@@ -53,7 +53,7 @@
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 1: Periodismo y sociedad</h1>
-                <?php echo form_open('modulo2/unidad2');$this->session->set_userdata('idAc','m2u1'); ?>
+                <?php echo form_open('modulo2/unidad2/inicio');$this->session->set_userdata('idAct','m2u1'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Evaluación</h4>
@@ -61,22 +61,22 @@
                             <ul>
                                 <li><strong> ¿Qué es la libertad de expresión?</strong></li>
                                 
-                                    <label><input type="radio" name="p1" class="space" onclick="correcto()" value="5" required>Es el derecho
+                                    <label><input type="radio" name="p1" class="space" value= 5 required>Es el derecho
                                         internacional de los derechos humanos en el Pacto Internacional de Derechos
                                         Civiles y Políticos.</label> <br />
-                                    <label><input type="radio" name="p1" class="space" onclick="incorrecto()" value="1" required>Es la libertad de
+                                    <label><input type="radio" name="p1" class="space"  value= 1 required>Es la libertad de
                                         mantener opiniones como difamación, calumnia, obscenidad, a través de cualquier
                                         medio y sin importar las fronteras.</label><br />
-                                    <label><input type="radio" name="p1" class="space" onclick="incorrecto()" value="1" required>Es el deber más preciado
+                                    <label><input type="radio" name="p1" class="space"  value= 1 required>Es el deber más preciado
                                         del hombre.</label><br />
                                 <br>
                                 <li><strong>¿Qué es la libertad de prensa?</strong></li>
                                 
-                                    <label><input type="radio" name="p2" class="space" onclick="incorrecto()" value="1" required>Es la celebración que se
+                                    <label><input type="radio" name="p2" class="space"  value= 1 required>Es la celebración que se
                                         realiza el día 3 de mayo en Colombia.</label><br />
-                                    <label><input type="radio" name="p2" class="space" onclick="correcto()" value="5" required>Es el derecho a que toda
+                                    <label><input type="radio" name="p2" class="space" value= 5 required>Es el derecho a que toda
                                         persona pueda publicar sus ideas libremente y sin censura previa.</label><br />
-                                    <label><input type="radio" name="p2" class="space" onclick="incorrecto()" value="1" required>Es la propaganda crítica
+                                    <label><input type="radio" name="p2" class="space"  value= 1 required>Es la propaganda crítica
                                         para mantener la base de poder político actual y suprimir cualquier intento
                                         significativo de los medios de desafiar el gobierno.</label><br />
                                 <br>
@@ -84,11 +84,11 @@
                                     democráticos en Colombia en donde los medios y los reportes de noticias han tenido
                                     un papel significante?</strong></li>
                                 
-                                    <label><input type="radio" name="p3" class="space" onclick="correcto()" value="5" required>Partidos firmaron pacto
+                                    <label><input type="radio" name="p3" class="space" value= 5 required>Partidos firmaron pacto
                                         político en favor de la libertad de prensa para las elecciones de octubre - El
                                         Espectador</label><br />
-                                    <label><input type="radio" name="p3" class="space" onclick="incorrecto()" value="1" required>Colombia Ley 130-94</label><br />
-                                    <label><input type="radio" name="p3" class="space" onclick="incorrecto()" value="1" required>Separación de poderes -
+                                    <label><input type="radio" name="p3" class="space"  value= 1 required>Colombia Ley 130-94</label><br />
+                                    <label><input type="radio" name="p3" class="space"  value= 1 required>Separación de poderes -
                                         Revista Semana</label><br />
                                 
                             </ul>
@@ -99,7 +99,7 @@
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo2/unidad1/actividad1" class="btn btn-success">Anterior</a>
-                    <button id="btn-siguiente" class="btn btn-success" type="submit" >Siguiente</button>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit" >Siguiente</button>
                     <!-- <a href="../modulo2.2/module2.2_inicio.php" class="btn btn-success">Siguiente</a> -->
                 </center>
                 <?php echo form_close(); ?>

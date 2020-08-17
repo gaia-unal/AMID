@@ -52,7 +52,7 @@
             <div class="col-lg-9">
                 <h1><br>Unidad 3: Alfabetización Informacional Digital</h1>
 
-                <?php echo form_open('modulo9');$this->session->set_userdata('idAc','m8u3'); ?>
+                <?php echo form_open('modulo9');$this->session->set_userdata('idAct','m8u3'); ?>
 
                 <div class="card mt-4">
                     <div class="card-body">
@@ -65,7 +65,7 @@
                                 <!--Analizar, localizar, organizar, evaluar, crear y utilizar la información utilizando la tecnología digital.-->
                                 <canvas id="lienzo" width="800" height="230"></canvas>
 
-                                <input type="text" name="preg" id="preg" value="" style="display: none">
+                                <input type="text" name="preg" id="preg" value = 1 style="display: none">
                             </div>
                         </p>
                     </div>
@@ -74,7 +74,7 @@
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo8/unidad3/actividad2" class="btn btn-success">Anterior</a>
-                    <button id="btn-siguiente"  class="btn btn-success" type="submit">Siguiente</button>                    
+                    <button id="btn-siguiente"  class="btn btn-success" name="submit" type="submit">Siguiente</button>                    
                 </center>
                 <?php echo form_close(); ?>
                 <?php $this->load->view('initial/paginacion');?>

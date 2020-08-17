@@ -67,19 +67,21 @@ function espera4() {
 
 function final() {
 
-    if (punt - cont == 12){
-        punt = 5;
-    } else if(punt - cont < 0){
-        punt = 1;
-    } else {
-        punt = 3;
-    }
+    
+    punt = cont - punt;
+    
+    punt = parseFloat(punt*5/6);
+    
+    if(punt<=0)
+        punt=1;
+    
+   
     var inp = document.getElementById('preg');
-    inp.value = punt;
+    inp.value = punt.toFixed(2);
     swal({
         title: "¡Correcto!",
         icon: "success",
-        button: "Continuar",
+        // button: "Continuar",
         text: "Has terminado, ¡FELICITACIONES!, ya puedes continuar con la siguiente unidad"
     });
 }

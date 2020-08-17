@@ -52,39 +52,40 @@
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 1: De Los Medios Tradicionales a las Nuevas Tecnologías Mediáticas</h1>
+                <?php echo form_open('modulo6/unidad2/inicio');$this->session->set_userdata('idAct','m6u1a3'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Evaluación</h4>
                         <p class="card-text">
                             <ul>
                                 <li>1. Cómo se utilizó Internet en sus inicios y cómo se ha ido utilizando ahora?</li>
-                                <textarea name="preg1" id="p1-r" cols="80" rows="5"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                <textarea name="preg1" style="width: 95%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>2. Evalúe las aplicaciones y beneficios del uso de los medios en la educación, la
                                     sociedad cívica y la gobernabilidad</li>
-                                <textarea name="preg2" id="p2-r" cols="80" rows="5"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                <textarea name="preg2" style="width: 95%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>3. Investigue cómo los medios digitales presentan oportunidades para la libertad de
                                     palabra en su sociedad y su alcance. Preste atención a cómo las personas utilizan
                                     los nuevos medios para la auto-expresión. También debe anotar cómo los medios
                                     tradicionales (periódicos, radio y televisión) convergen con los nuevos medios (por
                                     Ej. sitios de noticias en línea con acceso de multimedia) en sus sociedades. </li>
-                                <textarea name="preg3" id="p3-r" cols="80" rows="5"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                <textarea name="preg3" style="width: 95%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>4. Investigue hasta qué punto los nuevos medios son un reto para los medios
                                     tradicionales de noticias en su sociedad, los distintos tipos de medios que las
                                     personas en su sociedad están utilizando para expresar sus propios puntos de vista
                                     en temas de noticias importantes, y los usuarios de las diferentes plataformas
                                     mediáticas, junto con los temas/tópicos que están discutiendo. </li>
-                                <textarea name="preg4" id="p4-r" cols="80" rows="5"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                <textarea name="preg4" style="width: 95%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>5. Escriba párrafo sobre las principales diferencias entre los medios tradicionales
                                     y los nuevos, discutiendo hasta qué punto las diferencias son reales o artificiales.
                                     En el párrafo, evalúe las similitudes y diferencias entre los medios tradicionales y
                                     los electrónicos o digitales. Se deberán resaltar temas como responsabilidad
                                     editorial, verificación y otros principios del periodismo. </li>
-                                <textarea name="preg5" id="p5-r" cols="80" rows="5"
-                                    placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
+                                <textarea name="preg5" style="width: 95%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                             </ul>
                         </p>
                     </div>
@@ -93,8 +94,9 @@
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo6/unidad1/actividad2" class="btn btn-success">Anterior</a>
-                    <a href="<?php echo base_url();?>modulo6/unidad2" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
                 </center>
+                <?php echo form_close(); ?>
                 <?php $this->load->view('initial/paginacion');?>
 
 <br />

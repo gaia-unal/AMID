@@ -54,20 +54,20 @@
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 2: Códigos de la industria sobre la diversidad y la representación</h1>
-                <?php echo form_open('modulo3/unidad3');$this->session->set_userdata('idAc','m3u2'); ?>
+                <?php echo form_open('modulo3/unidad3/inicio');$this->session->set_userdata('idAct','m3u2'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Evaluación</h4><br />
                         <p class="card-text">
                             <strong> ¿Cuáles son las principales áreas de códigos de diversidad o ética?</strong><br /><br />
-                                <label><input type="radio" name="pre1" class="space" onclick="incorrecto()" value="1" required>Únicamente en la conducta de las personas.</label> <br />
-                                <label><input type="radio" name="pre1" class="space" onclick="incorrecto()" value="1" required>Animal y humana.</label><br />
-                                <label><input type="radio" name="pre1" class="space" onclick="correcto()" value="5" required>Empresarial, institucional, en profesiones como la Medicina, Sistemas informáticos, Auditorías.</label><br />
+                                <label><input type="radio" name="pre1" class="space"  value = 1 required>Únicamente en la conducta de las personas.</label> <br />
+                                <label><input type="radio" name="pre1" class="space"  value = 1 required>Animal y humana.</label><br />
+                                <label><input type="radio" name="pre1" class="space"  value = 5 required>Empresarial, institucional, en profesiones como la Medicina, Sistemas informáticos, Auditorías.</label><br />
                             <br>
                             <strong>¿Quién regula en primera instancia el ejercicio ético en un periodista?</strong><br /><br />
-                                <label><input type="radio" name="pre2" class="space" onclick="incorrecto()" value="1" required>La ley es la encargada de observar la conducta del periodista.</label><br />
-                                <label><input type="radio" name="pre2" class="space" onclick="correcto()" value="5" required>La conciencia personal del periodista.</label><br />
-                                <label><input type="radio" name="pre2" class="space" onclick="incorrecto()" value="1" required>Los encargados de administrar los manuales de estilos.</label><br />
+                                <label><input type="radio" name="pre2" class="space"  value = 1 required>La ley es la encargada de observar la conducta del periodista.</label><br />
+                                <label><input type="radio" name="pre2" class="space"  value = 5 required>La conciencia personal del periodista.</label><br />
+                                <label><input type="radio" name="pre2" class="space"  value = 1 required>Los encargados de administrar los manuales de estilos.</label><br />
                             <br>
                             </ul>
                         </p>
@@ -77,7 +77,7 @@
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo3/unidad2/actividad1" class="btn btn-success">Anterior</a>
-                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
                     <!-- <a href="../modulo2.2/module2.2_inicio.php" class="btn btn-success">Siguiente</a> -->
                 </center>
                 <?php echo form_close(); ?>

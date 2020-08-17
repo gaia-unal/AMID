@@ -53,7 +53,7 @@
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 2: El medio y el mensaje: noticias impresas y difundidas</h1>
-                <?php echo form_open('modulo4/unidad3');$this->session->set_userdata('idAc','m4u2'); ?>
+                <?php echo form_open('modulo4/unidad3/inicio');$this->session->set_userdata('idAct','m4u2'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Evaluación</h4>
@@ -61,9 +61,9 @@
                         <br />
                         <strong> ¿Cuáles son los tipos de cobertura adquirida?</strong></li>
                         <br /><br />
-                        <label><input type="radio" name="pre1" class="space"  value="1" required>Cobertura básica y cobertura compleja.</label> <br />
-                        <label><input type="radio" name="pre1" class="space"  value="5" required>Cobertura adquirida y cobertura ganada.</label><br />
-                        <label><input type="radio" name="pre1" class="space"  value="1" required>Cobertura parcial y cobertura imparcial.</label><br />
+                        <label><input type="radio" name="pre1" class="space"  value= 1 required>Cobertura básica y cobertura compleja.</label> <br />
+                        <label><input type="radio" name="pre1" class="space"  value= 5 required>Cobertura adquirida y cobertura ganada.</label><br />
+                        <label><input type="radio" name="pre1" class="space"  value= 1 required>Cobertura parcial y cobertura imparcial.</label><br />
                         </p>
                     </div>
                 </div>
@@ -71,7 +71,7 @@
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo4/unidad2/actividad3" class="btn btn-success">Anterior</a>
-                    <button id="btn-siguiente" class="btn btn-success" type="submit">Siguiente</button>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
                 </center>
                 <?php echo form_close(); ?>
                 <?php $this->load->view('initial/paginacion');?>

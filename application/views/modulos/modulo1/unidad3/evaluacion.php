@@ -55,7 +55,7 @@
 			<div class="col-lg-9">
 				<h1><br>Unidad 3: Interactuándo con los medios y otros proveedores de información</h1>
 
-				<?php echo form_open('modulo1/unidad4');$this->session->set_userdata('idAct','m1u3'); ?>
+				<?php echo form_open('modulo1/unidad4/inicio');$this->session->set_userdata('idAct','m1u3'); ?>
 				<div class="card mt-4">
 					<div class="card-body">
 						<h4>Evaluación<br></h4>

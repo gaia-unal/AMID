@@ -52,7 +52,7 @@
                 <br>
                 <h1>Unidad 2: Retos y riesgos en el mundo virtual</h1>
 
-                <?php echo form_open('modulo8');$this->session->set_userdata('idAc','m7u22'); ?>
+                <?php echo form_open('modulo8');$this->session->set_userdata('idAct','m7u22'); ?>
 
                 <div class="card mt-4">
                     <div class="card-body">
@@ -64,14 +64,14 @@
                         <img id="imagen3" src="<?php echo base_url();?>public/assets/modulos/mod7/img/frase/violacion.png">
                         <canvas id="lienzo" width="800" height="450"></canvas>
 
-                        <input type="text" name="preg" id="preg" value="" style="display: none">
+                        <input type="text" name="preg" value= 1 id="preg" style="display: none">
                     </div>
                 </div>
                 <!-- /.card -->
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo7/unidad2/evaluacion1" class="btn btn-success">Anterior</a>
-                    <button id="btn-siguiente"  class="btn btn-success" type="submit">Siguiente</button>
+                    <button id="btn-siguiente"  class="btn btn-success" name="submit" type="submit">Siguiente</button>
                 </center>
                 <?php echo form_close(); ?>
                 <?php $this->load->view('initial/paginacion');?>

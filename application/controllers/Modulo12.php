@@ -49,7 +49,6 @@ class Modulo12 extends CI_Controller {
 		}
 	}
 
-
 	public function unidad1(){
 
 		$seg['seg3']=$this->uri->segment(3);

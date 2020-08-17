@@ -53,6 +53,7 @@
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 3: Géneros de películas y de cuentos</h1>
+                <?php echo form_open('modulo4/unidad4/inicio');$this->session->set_userdata('idAct','m4u3a5'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Evaluación</h4>
@@ -60,15 +61,15 @@
                             <ul>
                                 <li>¿Qué análisis puede realizar a partir de la modificación de los carteles de las
                                     películas?</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg1" style="width: 95%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>¿Considera que las películas pueden hacer parte de los medios audiovisuales usados
                                     en el aula?¿Por qué?</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg2" style="width: 95%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>¿Cómo cree que las películas influyen en la vida de los estudiantes?</li>
-                                <textarea name="" id="" cols="80" rows="5"
-                                    placeholder="Escriba aquí su respuesta"></textarea>
+                                <textarea name="preg3" style="width: 95%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                                 <li>¿Cuáles de los siguientes no hacen parte de los géneros de las películas?</li>
                                 1. <input type="checkbox" name="" id="opc1" onclick="correcto(0)"> Infantil <br>
                                 2. <input type="checkbox" name="" id="opc2" onclick="incorrecto(1)"> De canciones <br>
@@ -85,8 +86,9 @@
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo4/unidad3/actividad4" class="btn btn-success">Anterior</a>
-                    <a href="<?php echo base_url();?>modulo4/unidad4" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
                 </center>
+                <?php echo form_close(); ?>
                 <?php $this->load->view('initial/paginacion');?>
 
 <br />

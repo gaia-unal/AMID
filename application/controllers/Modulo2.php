@@ -113,8 +113,14 @@ class Modulo2 extends CI_Controller {
 				
 				$idAct=$seg['seg4'];
 				switch ($idAct) {
-					case 'm1u1':
-						$nota= (double)($this->input->post('pre1'));
+					case 'm2u1':
+
+						$p1 = $this->input->post('p1');
+						$p2 = $this->input->post('p2');
+						$p3 = $this->input->post('p3');
+
+						$nota= round(($p1+$p2+$p3)/3,2);
+						
 						$this->insertUpdateE($idAct,$nota);
 					break;
 					case "m2u2a2":
@@ -171,8 +177,13 @@ class Modulo2 extends CI_Controller {
 				
 				$idAct=$seg['seg4'];
 				switch ($idAct) {
-					case 'm1u1':
-						$nota= (double)($this->input->post('pre1'));
+					case 'm2u2':
+
+						$p1 = $this->input->post('pre1');
+						$p2 = $this->input->post('pre2');
+						
+						$nota= round(($p1+$p2)/2,2);
+						
 						$this->insertUpdateE($idAct,$nota);
 					break;
 					case "m2u3a2":
@@ -231,8 +242,13 @@ class Modulo2 extends CI_Controller {
 				
 				$idAct=$seg['seg4'];
 				switch ($idAct) {
-					case 'm1u1':
-						$nota= (double)($this->input->post('pre1'));
+					case 'm2u3':
+
+						$p1 = $this->input->post('pre1');
+						$p2 = $this->input->post('pre2');
+						
+						$nota= round(($p1+$p2)/2,2);
+						
 						$this->insertUpdateE($idAct,$nota);
 					break;
 					case "m2u4a2":
@@ -282,7 +298,7 @@ class Modulo2 extends CI_Controller {
 
 	public function insertUpdateE($idEval,$nota){
 
-		if($nota!="No Aplica" && $nota<=0){$nota=1;}
+		if($nota<=0){$nota=1;}
 		$des= $this->calculoDes($nota);
 
 		$data= array(

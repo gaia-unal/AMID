@@ -51,6 +51,7 @@
             <div class="col-lg-9">
                 <br>
                 <h1>Unidad 2: Retos y riesgos en el mundo virtual</h1>
+                <?php echo form_open('modulo7/unidad2/actividad6');$this->session->set_userdata('idAct','m7u2a5'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <div class="preguntas">
@@ -58,33 +59,33 @@
                             <h4>1) ¿Cuál es la herramienta que implementó <em>Google</em> que está orientada a la
                                 búsqueda de referencias científicas?</h4>
                             <label class="container" id="p1-r1">
-                                <input type="radio" name="preg1" id="opc1" onclick="incorrecto('c');">
+                                <input type="radio" name="preg1" id="opc1" value = 1 required>
                                 a. Google tools
                             </label>
                             <label class="container" id="p1-r2">
-                                <input type="radio" name="preg1" id="opc2" onclick="incorrecto('c');">
+                                <input type="radio" name="preg1" id="opc2" value = 1 required>
                                 b. Google maps
                             </label>
                             <label class="container" id="p1-r3">
-                                <input type="radio" name="preg1" id="opc3" onclick="correcto();">
+                                <input type="radio" name="preg1" id="opc3" value = 5 required>
                                 c. Google Scholar (Google académico).
                             </label>
                             <!-- Pregunta 2 -->
                             <h4>2) ¿Cómo se puede identificar quién administra un sitio web?</h4>
                             <label class="container" id="p2-r1">
-                                <input type="radio" name="preg2" id="opc1" onclick="correcto();">
+                                <input type="radio" name="preg2" id="opc1" value = 5 required>
                                 a. En algunas ocasiones, por medio de la dirección del sitio web (URL).
                             </label>
                             <label class="container" id="p2-r2">
-                                <input type="radio" name="preg2" id="opc2" onclick="incorrecto('a');">
+                                <input type="radio" name="preg2" id="opc2" value = 1 required>
                                 b. Por medio del título de la página. 
                             </label>
                             <label class="container" id="p2-r3">
-                                <input type="radio" name="preg2" id="opc3" onclick="incorrecto('a');">
+                                <input type="radio" name="preg2" id="opc3" value = 1 required>
                                 c. Llamando al número que aparece en la página web.
                             </label>
                             <label class="container" id="p2-r4">
-                                <input type="radio" name="preg2" id="opc4" onclick="incorrecto('a');">
+                                <input type="radio" name="preg2" id="opc4" value = 1 required>
                                 d. Ninguna de las anteriores.
                             </label>
 
@@ -92,34 +93,34 @@
                             <h4>3) ¿Puede usted reemplazar la consulta con un médico si encuentra la información que
                                 estaba buscando?</h4>
                             <label class="container" id="p3-r1">
-                                <input type="radio" name="preg3" id="opc1" onclick="incorrecto('b');">
+                                <input type="radio" name="preg3" id="opc1" value = 1 required>
                                 a. Sí, siempre y cuando indiquen los medicamentos que debo tomar con
                                     dosis.
                             </label>
                             <label class="container" id="p3-r2">
-                                <input type="radio" name="preg3" id="opc2" onclick="correcto();">
+                                <input type="radio" name="preg3" id="opc2" value = 5 required>
                                 b. No, ninguna información debe reemplazar la consulta con un médico
                                     lo puede asesorar de acuerdo con su situación específica.
                             </label>
                             <label class="container" id="p3-r3">
-                                <input type="radio" name="preg3" id="opc3" onclick="incorrecto('b');">
+                                <input type="radio" name="preg3" id="opc3" value = 1 required>
                                 c. No porque de pronto la información no está actualizada.
                             </label>
                             <!--Pregunta 4 -->
-                            <h4>Seleccione cuál <strong>NO</strong> es una precaución que puede ayudarle a proteger
+                            <h4>4) Seleccione cuál <strong>NO</strong> es una precaución que puede ayudarle a proteger
                                 mejor su información</h4>
                             <label class="container" id="p4-r1">
-                                <input type="radio" name="preg4" id="opc1" onclick="incorrecto('c');">
+                                <input type="radio" name="preg4" id="opc1" value = 1 required>
                                 a. No abra enlaces inesperados. Use el sentido común al navegar
                                     Internet.
                             </label>
                             <label class="container" id="p4-r2">
-                                <input type="radio" name="preg4" id="opc2" onclick="incorrecto('c');">
+                                <input type="radio" name="preg4" id="opc2" value = 1 required>
                                 b. Utilice contraseñas seguras. Incluya números, letras y símbol
                                     cámbiela frecuentemente.
                             </label>
                             <label class="container" id="p4-r3">
-                                <input type="radio" name="preg4" id="opc3" onclick="correcto();">
+                                <input type="radio" name="preg4" id="opc3" value = 5 required>
                                 c. Si todas las personas recomiendan una página, entonces esa e
                                     indicada.
                             </label>
@@ -130,8 +131,9 @@
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo7/unidad2/actividad4" class="btn btn-success">Anterior</a>
-                    <a href="<?php echo base_url();?>modulo7/unidad2/actividad6" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
                 </center>
+                <?php echo form_close(); ?>
                 <?php $this->load->view('initial/paginacion');?>
 
 <br />

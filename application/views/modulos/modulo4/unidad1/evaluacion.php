@@ -54,16 +54,20 @@
             <!-- /.col-lg-3 -->
             <div class="col-lg-9">
                 <h1><br>Unidad 1: Lectura de medios y textos de información</h1>
+                <?php echo form_open('modulo4/unidad2/inicio');$this->session->set_userdata('idAct','m4u1a8'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4>Evaluación</h4>
                         <ol>
                             <li>¿Qué son los códigos?</li>
-                            <textarea name="" id="" cols="80" rows="5"></textarea>
+                            <textarea name="preg1" style="width: 95%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" autofocus></textarea>
                             <li>¿Qué símbolos puede encontrar en la comunidad?</li>
-                            <textarea name="" id="" cols="80" rows="5"></textarea>
+                            <textarea name="preg2" style="width: 95%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                             <li>¿Qué elementos componen un collage?</li>
-                            <textarea name="" id="" cols="80" rows="5"></textarea>
+                            <textarea name="preg3" style="width: 95%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true"></textarea>
                         </ol>
                     </div>
                 </div>
@@ -71,8 +75,9 @@
                 <br>
                 <center>
                     <a href="<?php echo base_url();?>modulo4/unidad1/actividad7" class="btn btn-success">Anterior</a>
-                    <a href="<?php echo base_url();?>modulo4/unidad2" class="btn btn-success">Siguiente</a>
+                    <button id="btn-siguiente" class="btn btn-success" name="submit" type="submit">Siguiente</button>
                 </center>
+                <?php echo form_close(); ?>
                 <?php $this->load->view('initial/paginacion');?>
 
 <br />
