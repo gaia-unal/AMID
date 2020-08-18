@@ -62,16 +62,16 @@
 						<h4>Evaluación</h4>
 						<p class="card-text">
 							Selecciona las opciones que correspondan a recomendaciones para los cursos AMI <br>
-							<input type="checkbox" name="opc1" id="opc1" onclick="validar(1)">a. Identificar el
-							contexto <br>
-							<input type="checkbox" name="opc2" id="opc2" onclick="validar(2)">b. Buscar
-							información antes de comenzar el curso <br>
-							<input type="checkbox" name="opc3" id="opc3" onclick="validar(3)">c. Desarrolle un plan
-							para promover AMI <br>
-							<input type="checkbox" name="opc4" id="opc4" onclick="validar(4)">d. Identifique los
-							recursos disponibles y los que se requieren <br>
-							<input type="checkbox" name="opc5" id="opc5" onclick="validar(5)">e. Desarrollar un
-							cronograma de acción <br>
+							<label><input type="checkbox" name="opc1" id="opc1" onclick="validar(1)">a. Identificar el
+							contexto</label><br>
+							<label><input type="checkbox" name="opc2" id="opc2" onclick="validar(2)">b. Buscar
+							información antes de comenzar el curso</label><br>
+							<label><input type="checkbox" name="opc3" id="opc3" onclick="validar(3)">c. Desarrolle un plan
+							para promover AMI</label><br>
+							<label><input type="checkbox" name="opc4" id="opc4" onclick="validar(4)">d. Identifique los
+							recursos disponibles y los que se requieren</label><br>
+							<label><input type="checkbox" name="opc5" id="opc5" onclick="validar(5)">e. Desarrollar un
+							cronograma de acción</label><br>
 							<!-- <a href="#" class="btn btn-outline-success" onclick="validar();">Validar</a> -->
 
 							<input type="text" name="preg" id="preg" value = 1 style="display:none;">

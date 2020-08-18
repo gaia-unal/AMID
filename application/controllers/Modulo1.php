@@ -175,10 +175,6 @@ class Modulo1 extends CI_Controller {
 						
 						$this->insertUpdate($idAct,$nota, $answer);
 					break;
-					
-					default:
-						echo "Url invalida (Esto pasa alguna vez????)";
-					break;
 				}
 			}
 			if($seg['seg3']){
@@ -268,11 +264,6 @@ class Modulo1 extends CI_Controller {
 						
 						$this->insertUpdate($idAct,$nota, $answer);
 					break;
-
-					default:
-					echo $idAct;
-						echo "Url invalida (Esto pasa alguna vez????)";
-					break;
 				}
 			}
 			
@@ -352,9 +343,6 @@ class Modulo1 extends CI_Controller {
 						$this->insertUpdate($idAct,$nota, $answer);
 					break;
 					
-					default:
-						echo "Url invalida (Esto pasa alguna vez????)";
-					break;
 				}
 			}
 
@@ -426,10 +414,6 @@ class Modulo1 extends CI_Controller {
 			 					}';
 						
 						$this->insertUpdate($idAct,$nota, $answer);
-					break;
-					
-					default:
-						echo "Url invalida (Esto pasa alguna vez????)";
 					break;
 				}
 			}

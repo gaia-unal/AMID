@@ -10,7 +10,7 @@
 	<title>AMID</title>
   
   <?php $this->load->view('initial/linkGenerico');?>
-  <link href="<?php echo base_url();?>public/assets/modulos/mod9/css/u2estilo.css" rel="stylesheet">
+  <link href="<?php echo base_url();?>public/assets/modulos/mod1/css/partes.css" rel="stylesheet">
 
 </head>
 
@@ -57,7 +57,7 @@
 					<div class="card-body">
 						<h4>Teorías de Aprendizaje</h4>
 						<p class="card-text">
-							<div id="parte1">
+							<div id="parte1" style="display:block;">
 								<h4>Meta-cognición</h4>
 								Se puede definir la meta cognición como “la cognición sobre la cognición” o “el
 								conocimiento
@@ -69,7 +69,7 @@
 								maximizar nuestro propio potencial para pensar y aprender, y para evaluar las reglas
 								adecuadas de ética/moral (adaptado de la Wikipedia).
 							</div>
-							<div id="parte2">
+							<div id="parte2" style="display:none;">
 								<h4>Estrategias de meta-cognición</h4>
 								Son una serie de pasos y procedimientos que nos permiten acceder, procesar e
 								interiorizar
@@ -80,7 +80,7 @@
 								más importante, en otras ocasiones hacemos esquemas o tratamos de asociar los nuevos
 								conocimientos con algo que ya sabemos para que así no se nos olvide.
 							</div>
-							<div id="parte3">
+							<div id="parte3" style="display:none;">
 								<h4>¿Qué papel tiene la meta-cognición en la transferencia de aprendizaje? </h4>
 								«El objetivo de enseñar las habilidades del pensamiento no se tendría que considerar
 								como
@@ -98,10 +98,19 @@
 								transferencia y la perdurabilidad de sus efectos en el aprendizaje»<br> Escrito
 								por: Montse Tesouro. Universitat de Girona. Departamento de Pedagogia
 							</div>
+							<br>
 							<center>
-								<button class="btn btn-self mg-5" id="ant" onclick="anterior();">Anterior</button>
-								<button class="btn btn-self mg-5" id="sig" onclick="siguiente();">Siguiente</button>
-							</center>
+                                <div id="btnAtras">
+                                    <a onclick="volver();">
+                                        <img width=70 src="<?php echo base_url();?>public/assets/img/arrow_l.jpg">
+                                    </a>
+                                </div>
+                                <div id="btnAdelante">
+                                    <a onclick="avanzar();">
+                                        <img width=70 src="<?php echo base_url();?>public/assets/img/arrow_r.jpg">
+                                    </a>
+                                </div>
+                            </center>
 						</p>
 					</div>
 				</div>
@@ -126,7 +135,7 @@
 
 <?php $this->load->view('initial/footer');?>
 <?php $this->load->view('initial/scriptGenerico');?>
-<script src="<?php echo base_url();?>public/assets/modulos/mod9/js/2script.js"></script>
+<script src="<?php echo base_url();?>public/assets/modulos/mod9/js/arrows.js"></script>
 </body>
 
 </html>

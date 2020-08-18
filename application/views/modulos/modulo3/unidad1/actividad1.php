@@ -11,6 +11,7 @@
   
   <?php $this->load->view('initial/linkGenerico');?>
   <link href="<?php echo base_url();?>public/assets/modulos/mod3/css/u1estilo.css" rel="stylesheet">
+  <link href="<?php echo base_url();?>public/assets/modulos/mod1/css/partes.css" rel="stylesheet">
 
 </head>
 
@@ -63,24 +64,57 @@
 							imágenes de la cobertura de noticias y las representaciones de las personas y los temas
 							que se vinculan con estos eventos.<br> Observe detenidamente las siguientes imágenes y luego
 							responda las preguntas de la actividad.</p>
-						<div>
+						<div id="parte1" style="display:block;">
 							<img class="imagen" src="<?php echo base_url();?>public/assets/modulos/mod3/img/img1.png">
-							<img class="imagen" src="<?php echo base_url();?>public/assets/modulos/mod3/img/img2.png">
-							<img class="imagen" src="<?php echo base_url();?>public/assets/modulos/mod3/img/img3.png">
-							<img class="imagen" src="<?php echo base_url();?>public/assets/modulos/mod3/img/img4.png">
-							<img class="imagen" src="<?php echo base_url();?>public/assets/modulos/mod3/img/img5.png">
-							<img class="imagen" src="<?php echo base_url();?>public/assets/modulos/mod3/img/img6.png">
-							<img class="imagen" src="<?php echo base_url();?>public/assets/modulos/mod3/img/img7.png">
-							<img class="imagen" src="<?php echo base_url();?>public/assets/modulos/mod3/img/img8.png">
-							<img class="imagen" src="<?php echo base_url();?>public/assets/modulos/mod3/img/img9.png">
-							<img class="imagen" src="<?php echo base_url();?>public/assets/modulos/mod3/img/img10.png">
-							<img class="imagen" src="<?php echo base_url();?>public/assets/modulos/mod3/img/img11.png">
-							<img class="imagen" src="<?php echo base_url();?>public/assets/modulos/mod3/img/img12.png">
-							<img class="imagen" src="<?php echo base_url();?>public/assets/modulos/mod3/img/img13.png">
-
-
-
 						</div>
+						<div id="parte2" style="display:none;">
+							<img class="imagen" src="<?php echo base_url();?>public/assets/modulos/mod3/img/img2.png">
+						</div>
+						<div id="parte3" style="display:none;">
+							<img class="imagen" src="<?php echo base_url();?>public/assets/modulos/mod3/img/img3.png">
+						</div>
+						<div id="parte4" style="display:none;">
+							<img class="imagen" src="<?php echo base_url();?>public/assets/modulos/mod3/img/img4.png">
+						</div>
+						<div id="parte5" style="display:none;">
+							<img class="imagen" src="<?php echo base_url();?>public/assets/modulos/mod3/img/img5.png">							
+						</div>
+						<div id="parte6" style="display:none;">	
+							<img class="imagen" src="<?php echo base_url();?>public/assets/modulos/mod3/img/img6.png">
+						</div>
+						<div id="parte7" style="display:none;">	
+							<img class="imagen" src="<?php echo base_url();?>public/assets/modulos/mod3/img/img7.png">
+						</div>
+						<div id="parte8" style="display:none;">	
+							<img class="imagen" src="<?php echo base_url();?>public/assets/modulos/mod3/img/img8.png">
+						</div>
+						<div id="parte9" style="display:none;">	
+							<img class="imagen" src="<?php echo base_url();?>public/assets/modulos/mod3/img/img9.png">
+						</div>
+						<div id="parte10" style="display:none;">	
+							<img class="imagen" src="<?php echo base_url();?>public/assets/modulos/mod3/img/img10.png">
+						</div>
+						<div id="parte11" style="display:none;">	
+							<img class="imagen" src="<?php echo base_url();?>public/assets/modulos/mod3/img/img11.png">
+						</div>
+						<div id="parte12" style="display:none;">	
+							<img class="imagen" src="<?php echo base_url();?>public/assets/modulos/mod3/img/img12.png">
+						</div>
+						<div id="parte13" style="display:none;">	
+							<img class="imagen" src="<?php echo base_url();?>public/assets/modulos/mod3/img/img13.png">
+						</div>
+						<center>
+							<div id="btnAtras">
+								<a onclick="volver();">
+									<img width=70 src="<?php echo base_url();?>public/assets/img/arrow_l.jpg">
+								</a>
+							</div>
+							<div id="btnAdelante">
+								<a onclick="avanzar();">
+									<img width=70 src="<?php echo base_url();?>public/assets/img/arrow_r.jpg">
+								</a>
+							</div>
+						</center>
 					</div>
 				</div>
 				<!-- /.card -->
@@ -104,7 +138,7 @@
 
 <?php $this->load->view('initial/footer');?>
 <?php $this->load->view('initial/scriptGenerico');?>
-<script src="<?php echo base_url();?>public/assets/modulos/mod"></script>
+<script src="<?php echo base_url();?>public/assets/modulos/mod3/js/arrows.js"></script>
 </body>
 
 </html>

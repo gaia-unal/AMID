@@ -53,7 +53,7 @@
                 <div class="imgF">
                   <center>
                     <a href="#" onclick="opc1();">
-                      <img class="animated bounceIn" src="<?php echo base_url();?>public/assets/img/flecha.png" alt="Inicio">
+                      <img src="<?php echo base_url();?>public/assets/img/flecha.png" alt="Inicio">
                     </a>
                   </center>
                 </div>

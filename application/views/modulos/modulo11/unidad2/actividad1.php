@@ -10,7 +10,7 @@
 	<title>AMID</title>
   
   <?php $this->load->view('initial/linkGenerico');?>
-  <link href="<?php echo base_url();?>public/assets/modulos/mod11/css/estilo.css" rel="stylesheet">
+  <link href="<?php echo base_url();?>public/assets/modulos/mod1/css/partes.css" rel="stylesheet">
 
 </head>
 
@@ -54,7 +54,7 @@
 				<h1><br>Unidad 2: Dimensiones Socio-Culturales y Políticas de los Medios Globalizados</h1>
 				<div class="card mt-4">
 					<div class="card-body">
-						<div id="parte1">
+					<div id="parte1" style="display:block;">
 							<p class="card-text">
 							<h4>Cultura</h4>
 							La cultura según UNESCO « ...la cultura puede considerarse actualmente como el
@@ -72,7 +72,7 @@
 							www.unesco.org
 							</p>
 						</div>
-						<div id="parte2">
+						<div id="parte2" style="display:none;">
 							<p class="card-text">
 							<h4>Influencia</h4>
 							Si dejamos de lado algunas definiciones y conceptos (...) sobre la cultura, podemos
@@ -89,7 +89,7 @@
 							https://critica.cl/ciencias-sociales/los-medios-de-comunicacion-y-la-cultura
 							</p>
 						</div>
-						<div id="parte3">
+						<div id="parte3" style="display:none;">
 							<p class="card-text">
 							<h4>Retroalimentación</h4>
 							Le recomendamos realizar las siguientes actividades para que pueda reforzar los conceptos
@@ -119,7 +119,7 @@
 							</ul>
 							</p>
 						</div>
-						<div id="parte4">
+						<div id="parte4" style="display:none;">
 							<p class="card-text">
 							<h4>Estudio de Caso</h4>
 							Visite un sito en la red, u otro sitio en línea como un blog, una red social o un video de
@@ -144,7 +144,16 @@
 						</div>
 						<br>
 						<center>
-							<button id="btnSig" class="btn btn-outline-success" onclick="sig();">Siguiente</button>
+							<div id="btnAtras">
+								<a onclick="volver();">
+									<img width=70 src="<?php echo base_url();?>public/assets/img/arrow_l.jpg">
+								</a>
+							</div>
+							<div id="btnAdelante">
+								<a onclick="avanzar();">
+									<img width=70 src="<?php echo base_url();?>public/assets/img/arrow_r.jpg">
+								</a>
+							</div>
 						</center>
 					</div>
 				</div>
@@ -169,7 +178,7 @@
 
 <?php $this->load->view('initial/footer');?>
 <?php $this->load->view('initial/scriptGenerico');?>
-<script src="<?php echo base_url();?>public/assets/modulos/mod11/js/u2script.js"></script>
+<script src="<?php echo base_url();?>public/assets/modulos/mod11/js/arrows.js"></script>
 </body>
 
 </html>

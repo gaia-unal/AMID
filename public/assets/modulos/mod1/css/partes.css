@@ -1,0 +1,10 @@
+#btnAdelante{
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+#btnAtras{
+	position:relative;
+	display: none;
+	cursor: pointer;
+}

@@ -14,6 +14,15 @@ class profesoractividadModel extends CI_Model{
         return ($query->num_rows()>0)?$query: false;
 	}
 	
+	public function getAllWhere($id){ 
+
+		$query=$this->db->select('*')
+					    ->where('id_profesor',$id)
+					    ->get('profesoractividad');
+        
+        return ($query->num_rows()>0)?$query: false;
+	}
+	
 	public function consult($data){
 		
 		$query=$this->db->select('*')

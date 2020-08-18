@@ -10,7 +10,7 @@
   <title>AMID</title>
   
   <?php $this->load->view('initial/linkGenerico');?>
-  <link href="<?php echo base_url();?>public/assets/modulos/mod1/css/estilo.css" rel="stylesheet">
+  <link href="<?php echo base_url();?>public/assets/modulos/mod1/css/partes.css" rel="stylesheet">
 
 </head>
 
@@ -55,6 +55,7 @@
                 <h1><br>Unidad 3: Lo que genera noticias – explorando los criterios</h1>
                 <div class="card mt-4">
                     <div class="card-body">
+                    <div id="parte1" style="display:block;">
                         <h4>Análisis</h4>
                         <p class="card-text">
                             <blockquote>
@@ -73,6 +74,9 @@
                             la perspectiva del periodista. Es importante que la audiencia entienda estos enmarques y que
                             piense de una manera crítica.
                         </p>
+                    </div>
+
+                    <div id="parte2" style="display:none;">
                         <h4>Análisis de textos</h4>
                         <p class="card-text">
                             analizar el interés periodístico de los artículos de cada primera página de los principales
@@ -102,6 +106,9 @@
                             También se debe prestar atención a cómo se ubican los artículos, los titulares y el tamaño
                             de letra utilizada, las fotografías y las leyendas que incluyen.
                         </p>
+                    </div>
+
+                    <div id="parte3" style="display:none;">
                         <h4>Análisis de contexto</h4>
                         <p class="card-text">
                             CNN y Al Jazeera (al igual que otras organizaciones de medios de elección/relevancia)
@@ -111,11 +118,27 @@
                             citadas, entrevistas dadas y cualquier apoyo visual de las noticias). Cada uno lo hace de
                             manera diferente y haciendo énfasis en unas cosas más que otras.
                         </p>
+                    </div>
+
+                    <div id="parte4" style="display:none;">
                         <h4>Análisis de noticias</h4>
                         <p class="card-text">
                             Aunque dos medios u organizaciones tomen una misma noticia y la transmitan, es de resaltar
                             que una puede tener más fuerza que la otra, al igual que contener más información.
                         </p>
+                    </div>
+                    <center>
+                        <div id="btnAtras">
+                            <a onclick="volver();">
+                                <img width=70 src="<?php echo base_url();?>public/assets/img/arrow_l.jpg">
+                            </a>
+                        </div>
+                        <div id="btnAdelante">
+                            <a onclick="avanzar();">
+                                <img width=70 src="<?php echo base_url();?>public/assets/img/arrow_r.jpg">
+                            </a>
+                        </div>
+                    </center>
                     </div>
                 </div>
                 <!-- /.card -->
@@ -139,7 +162,7 @@
 
 <?php $this->load->view('initial/footer');?>
 <?php $this->load->view('initial/scriptGenerico');?>
-<script src="<?php echo base_url();?>public/assets/modulos/mod"></script>
+<script src="<?php echo base_url();?>public/assets/modulos/mod2/js/arrows.js"></script>
 </body>
 
 </html>

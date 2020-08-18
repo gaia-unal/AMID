@@ -27,7 +27,7 @@ class Modulo8 extends CI_Controller {
 			$this->profesormoduloModel->changeEstado(8,1);
 			$submit=$this->input->post('submit');
 
-			$data['profesormodulo']=$this->profesormoduloModel->getOne();
+			
 			if($seg['seg4'] && isset($submit)){
 				$idAct=$seg['seg4'];
 				
@@ -38,6 +38,7 @@ class Modulo8 extends CI_Controller {
 				}
 				
 			}
+			$data['profesormodulo']=$this->profesormoduloModel->getOne();
 			$this->load->view('modulos/modulo8/index',$data);
 
 		}else{
@@ -109,10 +110,6 @@ class Modulo8 extends CI_Controller {
 						$this->insertUpdate($idAct,$nota, $answer);
 
 					break;
-					
-					default:
-						echo "Url invalida (Esto pasa alguna vez????)";
-					break;
 				}
 			}
 			if($seg['seg3']){
@@ -166,12 +163,6 @@ class Modulo8 extends CI_Controller {
 						
 						$this->insertUpdate($idAct,$nota, $answer);
 
-					break;
-					case "m1u2ax":
-					break;
-					
-					default:
-						echo "Url invalida (Esto pasa alguna vez????)";
 					break;
 				}
 			}
@@ -248,10 +239,6 @@ class Modulo8 extends CI_Controller {
 						
 						$this->insertUpdate($idAct,$nota, $answer);
 
-					break;
-					
-					default:
-						echo "Url invalida (Esto pasa alguna vez????)";
 					break;
 				}
 			}

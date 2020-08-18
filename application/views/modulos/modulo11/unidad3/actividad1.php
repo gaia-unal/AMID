@@ -10,7 +10,7 @@
 	<title>AMID</title>
   
   <?php $this->load->view('initial/linkGenerico');?>
-  <link href="<?php echo base_url();?>public/assets/modulos/mod11/css/estilo.css" rel="stylesheet">
+  <link href="<?php echo base_url();?>public/assets/modulos/mod1/css/partes.css" rel="stylesheet">
 
 </head>
 
@@ -54,7 +54,7 @@
 				<h1><br>Unidad 3: La información como un producto (Commodity)</h1>
 				<div class="card mt-4">
 					<div class="card-body">
-						<div id="parte1">
+					<div id="parte1" style="display:block;">
 							<h4>Productos de Información</h4>
 							<p class="card-text">
 								El producto es una de las herramientas más importantes de la mezcla de mercadotecnia
@@ -77,7 +77,7 @@
 							<i>Qué es un producto de información</i> (2007).
 							</p>
 						</div>
-						<div id="parte2">
+						<div id="parte2" style="display:none;">
 							<p class="card-text">
 							<h4>La cultura de consumo</h4>
 							García Canclini define al consumo cultural como "el conjunto de procesos de apropiación y
@@ -95,7 +95,7 @@
 							Zamora, Jose Antonio (2012)- <i>El consumo como cultura</i>
 							</p>
 						</div>
-						<div id="parte3">
+						<div id="parte3" style="display:none;">
 							<h4>Profundización</h4>
 							<p class="card-text">
 								También te recomendamos leer los siguientes artículos para profundizar en el tema. <br>
@@ -109,7 +109,7 @@
 								<a target="_blank" rel="noopener noreferrer" href="http://www.revista-critica.com/la-revista/monografico/analisis/51-el-consumo-como-cultura">El consumo como cultura</a>
 							</p>
 						</div>
-						<div id="parte4">
+						<div id="parte4" style="display:none;">
 							<p class="card-text">
 							<h4>Adicional</h4>
 							<ul>
@@ -128,7 +128,16 @@
 						</div>
 						<br>
 						<center>
-							<button id="btnSig" class="btn btn-outline-success" onclick="sig();">Siguiente</button>
+							<div id="btnAtras">
+								<a onclick="volver();">
+									<img width=70 src="<?php echo base_url();?>public/assets/img/arrow_l.jpg">
+								</a>
+							</div>
+							<div id="btnAdelante">
+								<a onclick="avanzar();">
+									<img width=70 src="<?php echo base_url();?>public/assets/img/arrow_r.jpg">
+								</a>
+							</div>
 						</center>
 					</div>
 				</div>
@@ -153,7 +162,7 @@
 
 <?php $this->load->view('initial/footer');?>
 <?php $this->load->view('initial/scriptGenerico');?>
-<script src="<?php echo base_url();?>public/assets/modulos/mod11/js/u3script.js"></script>
+<script src="<?php echo base_url();?>public/assets/modulos/mod11/js/arrows.js"></script>
 </body>
 
 </html>

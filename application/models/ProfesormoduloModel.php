@@ -31,12 +31,24 @@ class profesormoduloModel extends CI_Model{
 
 		$id=$this->session->userdata('id');
 
-		$this->db->set('fkid_estado',$estado)
+		$query=$this->db->select('*')
+						->where('id_profesor',$id)
+						->where('id_modulo',$modulo)
+						->get('profesormodulo')
+						->result();
+
+		if(isset($query[0])){
+			$estadoActual=$query[0]->fkid_estado;
+
+			if($estadoActual<$estado){
+				$this->db->set('fkid_estado',$estado)
 				 ->where('id_profesor',$id)
 				 ->where('id_modulo',$modulo)
 				 ->update('profesormodulo');
 		
-		return ($this->db->affected_rows() > 0);
-	
+				return ($this->db->affected_rows() > 0);
+			}
+		}
+		return false;
 	}
 }

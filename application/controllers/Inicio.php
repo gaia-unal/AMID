@@ -31,7 +31,6 @@ class Inicio extends CI_Controller {
 		
 		if(isset($this->id)){
 			$submit=$this->input->post('submit');
-			$data['profesormodulo']=$this->profesormoduloModel->getOne();
 			if($seg['seg4'] && isset($submit)){
 				$idAct=$seg['seg4'];
 				
@@ -46,6 +45,7 @@ class Inicio extends CI_Controller {
 				}
 				
 			}
+			$data['profesormodulo']=$this->profesormoduloModel->getOne();
 			$this->load->view('inicio',$data);
 		}else{
 			$this->logout();
@@ -87,8 +87,9 @@ class Inicio extends CI_Controller {
 	public function reportes(){
 
 		if(isset($this->id)){
-			// echo "Reporte";
-			$this->load->view('inicio');
+			$data['actividad']=$this->profesoractividadModel->getAllWhere($this->id);
+			$data['evaluacion']=$this->profesorunidadModel->getAllWhere($this->id);
+			$this->load->view('reportes',$data);
 		}else{
 			$this->logout();
 

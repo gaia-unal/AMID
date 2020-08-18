@@ -6,7 +6,7 @@
 		<?php 
     $name=$this->session->userdata('name');
     if(isset($name)){ ?>
-		<p class="navbar-brand-p">Bienvenid@ <?php echo $this->session->userdata('name');?> !!!</p>
+		<p class="navbar-brand-p">Te damos la bienvenida <?php echo $this->session->userdata('name');?> </p>
 
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
 			aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,12 +18,12 @@
 					<a class="nav-link" href="<?php echo base_url();?>inicio/main">Inicio</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link"  href="<?php echo base_url();?>inicio/perfil">Perfil</a>
+					<a class="nav-link" href="<?php echo base_url();?>inicio/perfil">Perfil</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link"  href="<?php echo base_url();?>inicio/reportes">Reportes</a>
+					<a class="nav-link" href="<?php echo base_url();?>inicio/reportes">Reportes</a>
 				</li>
-        <li class="nav-item">
+				<li class="nav-item">
 					<a class="bt btn btn-danger" href="<?php echo base_url();?>inicio">Cerrar sesión</a></button>
 				</li>
 				<?php } ?>

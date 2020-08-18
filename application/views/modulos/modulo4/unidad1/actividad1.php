@@ -10,7 +10,7 @@
   <title>AMID</title>
   
   <?php $this->load->view('initial/linkGenerico');?>
-  <link href="<?php echo base_url();?>public/assets/modulos/mod1/css/estilo.css" rel="stylesheet">
+  <link href="<?php echo base_url();?>public/assets/modulos/mod1/css/partes.css" rel="stylesheet">
 
 </head>
 
@@ -71,12 +71,16 @@
                             de códigos técnicos y simbólicos (Cañaveral & Morales, 2009, pp. 7–9):
                             <em>
                                 <ul>
+                                <div id="parte1" style="display:block;">
                                     <li><strong>Código:</strong> Sistema de señales o de signos, o de símbolos, que, por
                                         una convención previa está destinada a representar a transmitir la información
                                         entre la fuente- o emisor- de las señales y el punto de destino- o receptor. Por
                                         lo que un código puede estar formado por señales de naturaleza diferente, bien
                                         por sonidos (código lingüístico), bien por signos escritos (código gráfico), o
                                         por señales gestuales (movimientos).</li>
+                                </div>
+
+                                <div id="parte2" style="display:none;">
                                     <li><strong>Gesto: </strong>Movimiento de la cara o del cuerpo que comunica un
                                         significado; a modo de ejemplo asentar la cabeza para expresar acuerdo. Muchos
                                         enunciados se emiten acompañados de gestos que apoyan o completan sus
@@ -84,13 +88,18 @@
                                         El lenguaje de signos es un sistema de comunicación basado enteramente en los
                                         gestos. El estudio del papel de los gestos en la comunicación forma parte del
                                         estudio de la comunicación no verbal.</li>
+                                </div>
+
+                                <div id="parte3" style="display:none;">
                                     <li><strong>Lenguaje: </strong>Capacidad propia de la especie humana para
                                         comunicarse por medio de un sistema de signos vocales, que pone en juego una
                                         técnica corporal compleja y supone la existencia de una función simbólica y de
                                         centros nerviosos genéticamente especializados. Este sistema de signos vocales
                                         empleados por un grupo social (o comunidad lingüística) determinado constituye
-                                        una lengua particular.
-                                    </li>
+                                        una lengua particular.</li>
+                                </div>
+
+                                <div id="parte4" style="display:none;">
                                     <li><strong>Semiótica: </strong>Disciplina que tiene como objeto de estudio los
                                         signos en el seno de la vida social. Sin embargo, a diferencia de la semiología,
                                         nacida de la enseñanza de Ferdinand de Saussure se niega considerar como objeto
@@ -98,11 +107,17 @@
                                         general de los modos de significar. Abarca un campo de estudio muy amplio desde
                                         los sistemas de comunicación más naturales, como serían los lenguajes de los
                                         animales, hasta los procesos culturales más complejos. </li>
+                                </div>
+
+                                <div id="parte5" style="display:none;">    
                                     <li><strong>Símbolo: </strong>Signo intencionado, como el ícono, pero a diferencia
                                         de este, sus relaciones con el objeto representado no son de semejanza, sino que
                                         se basan en la convención. Se trata, pues, de un signo arbitrario. Una realidad
                                         inmaterial y abstracta puede ser representada por un signo material y concreto y
                                         exige un interprete que lo asocie a un significado. </li>
+                                </div>
+
+                                <div id="parte6" style="display:none;">    
                                     <li><strong>Paralingüistica:</strong>Este término ampliamente tratado en el presente
                                         proyecto será concebido como el estudio o uso de fenómenos no verbales,
                                         verbigracia, las expresiones faciales, los movimientos de la cabeza o de los
@@ -110,11 +125,27 @@
                                         a lo que se está diciendo, estos fenómenos se conocen como rasgos
                                         paralingüísticos. El uso de los rasgos paralingüísticos en este sentido se
                                         domina también: Cinésica. </li>
+                                </div>
+
+                                <div id="parte7" style="display:none;">
                                     <li><strong>Proxémica: </strong>Estudio de la distancia física entre las personas
                                         cuando hablan entre sí, así como de posturas y de si se da o no contacto físico
                                         durante la conversación. Estos factores pueden observarse en relación con el
                                         sexo, la edad, y la procedencia social y cultural de las personas, así como las
                                         actitudes hacia los otros y los estados mentales. </li>
+                                </div>
+                                <center>
+                                <div id="btnAtras">
+                                    <a onclick="volver();">
+                                        <img width=70 src="<?php echo base_url();?>public/assets/img/arrow_l.jpg">
+                                    </a>
+                                </div>
+                                <div id="btnAdelante">
+                                    <a onclick="avanzar();">
+                                        <img width=70 src="<?php echo base_url();?>public/assets/img/arrow_r.jpg">
+                                    </a>
+                                </div>
+                                </center>
                                 </ul>
                             </em>
                         </p>
@@ -171,7 +202,7 @@
 
 <?php $this->load->view('initial/footer');?>
 <?php $this->load->view('initial/scriptGenerico');?>
-<script src="<?php echo base_url();?>public/assets/modulos/mod"></script>
+<script src="<?php echo base_url();?>public/assets/modulos/mod4/js/arrows.js"></script>
 </body>
 
 </html>

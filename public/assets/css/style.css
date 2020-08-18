@@ -1,96 +1,230 @@
-.center{
-    align-items: center;    
-}
-.center-2{
-    text-align: center;
-}
-.cl-label{
-    color: #666565;
+.center {
+	align-items: center;
 }
 
-.navbar-brand-p{
-    margin: 0;
-    display: inline-block;
-    padding-top: .3125rem;
-    padding-bottom: .3125rem;
-    margin-right: 1rem;
-    font-size: 1.25rem;
-    line-height: inherit;
-    white-space: nowrap;
-    color: white;
+.center-2 {
+	text-align: center;
 }
 
-.space_between{
-    margin-right: 5px;
-}
-.min_ad{
-    font-size: small;
-    color: blue;
-}
-.passBad{
-    font-size: small;
-    color: red;
+.cl-label {
+	color: #666565;
 }
 
-.title{
-    background-color: #007bff;
-    color: white;
-    border-radius: 10px;
-    padding: 5px;
+.navbar-brand-p {
+	margin: 0;
+	display: inline-block;
+	padding-top: .3125rem;
+	padding-bottom: .3125rem;
+	margin-right: 1rem;
+	font-size: 1.25rem;
+	line-height: inherit;
+	white-space: nowrap;
+	color: white;
+}
+
+.space_between {
+	margin-right: 5px;
+}
+
+.min_ad {
+	font-size: small;
+	color: blue;
+}
+
+.passBad {
+	font-size: small;
+	color: red;
+}
+
+.title {
+	background-color: #007bff;
+	color: white;
+	border-radius: 10px;
+	padding: 5px;
 }
 
 
-.icon-self{
-    border: 1px solid #007bff;
-    border-radius: 10px 0px 0px 10px;
-    color: #007bff;
-    padding: 5px 10px;
-    float: left;
+.icon-self {
+	border: 1px solid #007bff;
+	border-radius: 10px 0px 0px 10px;
+	color: #007bff;
+	padding: 5px 10px;
+	float: left;
 }
 
-.ft{
-    float: left;
-    padding: 0px;
+.ft {
+	float: left;
+	padding: 0px;
+
+
+}
+
+.not-ft {
+	clear: both;
+}
+
+.wh {
+	/* border: 1px solid #007bff; */
+
+	display: inline-block;
+	margin: 0px;
+
+}
+
+.formulario {
+	/* border: 1px solid #007bff; */
+	text-align: center;
+
+}
+
+.title-form {
+	background-color: #007bff;
+	color: white;
+	width: 235px;
+	text-align: left;
+	border-radius: 8px;
+	font-weight: 15px;
+	padding: 5px 5px 5px 10px;
+}
+
+.mensaje {
+	background-color: rgb(84, 179, 84);
+	color: white;
+	border: 2px solid green;
+	/* font-weight: 20px; */
+	font-size: 20px;
+	border-radius: 10px;
+	padding: 8px;
+	margin: 5px;
+	text-align: center;
+}
+
+.option_pdf {
+	width: 40%;
+	transition: all 0.2s;
+}
+
+.option_pdf:hover {
+	padding-bottom: 2.5%;
+	padding-top: 2.5%;
+	width: 35%;
+}
+
+.evaluacion_pdf {
+	border: 2px solid #0077ff;
+	/* background-color: #007bff56; */
+	border-radius: 10px;
+	text-align: center;
+	margin: 10px;
+	/* width: 45%; */
+}
+
+.evaluacion_grafico {
+	border: 2px solid #0077ff;
+	border-radius: 10px;
+	text-align: center;
+	margin: 10px;
+	/* width: 45%; */
+}
+
+/* ----------------------- */
+
+ul.tabs {
+
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style: none;
+	height: 1%;
+	/*--Define el ancho de las tabs--*/
+	/* border-bottom: 1px solid #408ff5; */
+	/* border-left: 1px solid #888888; */
+	width: 100%;
+	font-size: small;
+	/* font-family: ; */
+}
+
+ul.tabs li {
+
+	float: left;
+
+	margin: 0;
+
+	padding: 0;
+
+	height: 31px;
+	/*--Sustrae 1px de la altura de la lista desordenada--*/
+
+	line-height: 31px;
+	/*--Alineamiento vertical del texto dentro de la tabla--*/
+
+	/* border: 1px solid #999; */
+
+	border-left: none;
+
+	margin-bottom: -1px;
+	/*--Desplaza los item de la lista abajo 1px--*/
+
+	overflow: hidden;
+
+	position: relative;
+
+    background: #2f7de2;
+    border-radius: 15px 15px 0px 0px;
+
+}
+
+ul.tabs li a {
+
+	text-decoration: none;
+color: white;
+display: block;
+font-size: 1.2em;
+padding: 0 20px;
+/* border-radius: 15px 15px 0px 0px; */
+border: 1px solid #ffffff;
+width: 60px;
+text-align: center;
+
+}
+
+ul.tabs li a:hover {
+
+	background: #408ff5;
+	/* color: white; */
+
+}
+
+html ul.tabs li.active,
+html ul.tabs li.active a:hover {
+	/*--Estate seguro de que a la tab activa no se le aplicarán estas propiedades hover--*/
+
+    background: #5c9cf0;
+    font-weight: bold;
     
-    
-}
-
-.not-ft{
-    clear: both;
-}
-
-.wh{
-    /* border: 1px solid #007bff; */
-  
-    display: inline-block;
-    margin: 0px;
-    
-}
-
-.formulario{
-    /* border: 1px solid #007bff; */
-    text-align: center;
+	border-bottom: 1px solid #fff;
+	/*--Esto hace que la tab activa esté conectada con respecto a su contenido--*/
 
 }
 
-.title-form{
-    background-color: #007bff;
-    color: white;
-    width: 235px;
-    text-align: left;
-    border-radius: 8px;
-    font-weight: 15px;
-    padding: 5px 5px 5px 10px;
+
+
+.tab_container {
+
+	border: 2px solid #408ff5;
+    /* border-top: none; */
+    border-radius: 0px 0px 10px 10px;
+	overflow: hidden;
+	clear: both;
+	float: left;
+	width: 100%;
+	/* background: #fff; */
+
 }
 
-.mensaje{
-    background-color: rgb(84, 179, 84);
-    color: white;
-    border: 2px solid green;
-    /* font-weight: 20px; */
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 8px;
-    margin: 5px;
-    text-align: center;
+.tab_content {
+
+	padding: 20px;
+	font-size: 1.2em;
+
 }

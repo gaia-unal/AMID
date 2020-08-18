@@ -10,7 +10,7 @@
   <title>AMID</title>
   
   <?php $this->load->view('initial/linkGenerico');?>
-  <link href="<?php echo base_url();?>public/assets/modulos/mod1/css/estilo.css" rel="stylesheet">
+  <link href="<?php echo base_url();?>public/assets/modulos/mod1/css/partes.css" rel="stylesheet">
 
 </head>
 
@@ -57,6 +57,8 @@
                     <div class="card-body">
                         <p class="card-text">
                             <em>
+
+                            <div id="parte1" style="display:block;">
                                 Una parte clave de la alfabetización mediática es entender cómo los medios construyen
                                 diferentes tipos de historias, cómo le dan forma a la información al presentarla, y qué
                                 técnicas utilizan para organizar el material que de otra forma sería caótico y difícil
@@ -69,7 +71,11 @@
                                 para poder comprender como los medios y los otros proveedores de información operan,
                                 cómo presentan el significado, cómo se puede utilizar, y cómo se puede evaluar la
                                 información presentada. Las áreas a continuación también apuntalan los siguientes
-                                módulos de este documento del Curriculum AMI: <br>
+                                módulos de este documento del Curriculum AMI: 
+                                <br>
+                            </div>
+
+                            <div id="parte2" style="display:none;">
                                 <h4>Lenguaje en los medios de información</h4>
                                 <ul>
                                     <li>¿Cómo los productores de textos mediáticos utilizan diferentes técnicas o
@@ -83,6 +89,9 @@
                                         influir en el tipo de información que recibimos? ¿Cómo esto da forma al mensaje
                                         transmitido por los medios?</li>
                                 </ul>
+                            
+                            </div>
+                            <div id="parte3" style="display:none;">
                                 <h4>Representación en los medios e información</h4>
                                 <ul>
                                     <li>Examine las imágenes o representaciones en los medios</li>
@@ -100,6 +109,9 @@
                                     <li>Examine hasta qué punto la independencia editorial se refleja en los textos
                                         mediático</li>
                                 </ul>
+                            
+                            </div>
+                            <div id="parte4" style="display:none;">
                                 <h4>Producción/contenido generado por usuarios</h4>
                                 <ul>
                                     <li>Aquí es importante la noción de una agencia humana – ¿Quién crea los textos de
@@ -111,6 +123,8 @@
                                     <li>Aquí se toman en cuenta los recursos (humanos, financieros, tecnológicos, etc.)
                                         y las regulaciones</li>
                                 </ul>
+                            </div>
+                            <div id="parte5" style="display:none;">
                                 <h4>La audiencia como ciudadanos y usuarios/consumidores</h4>
                                 <ul>
                                     <li>Audiencias seleccionadas y activas</li>
@@ -121,6 +135,8 @@
                                     <li>Los usuarios/consumidores tiene necesidades de información personales,
                                         económicas, sociales y culturales</li>
                                 </ul>
+                            </div>
+                            <div id="parte6" style="display:none;">
                                 <h4>Los ciudadanos como usuarios/consumidores de los servicios de los proveedores de
                                     información</h4>
                                 <ul>
@@ -134,6 +150,20 @@
                                     <li>¿Cómo los proveedores de información generan sus ingresos provenientes de los
                                         servicios de información?</li>
                                 </ul>
+                            </div>
+                            <center>
+                                <div id="btnAtras">
+                                    <a onclick="volver();">
+                                        <img width=70 src="<?php echo base_url();?>public/assets/img/arrow_l.jpg">
+                                    </a>
+                                </div>
+                                <div id="btnAdelante">
+                                    <a onclick="avanzar();">
+                                        <img width=70 src="<?php echo base_url();?>public/assets/img/arrow_r.jpg">
+                                    </a>
+                                </div>
+                            </center>
+
                             </em>
                         </p>
                     </div>
@@ -159,7 +189,7 @@
 
 <?php $this->load->view('initial/footer');?>
 <?php $this->load->view('initial/scriptGenerico');?>
-<script src="<?php echo base_url();?>public/assets/modulos/mod"></script>
+<script src="<?php echo base_url();?>public/assets/modulos/mod1/js/arrows.js"></script>
 </body>
 
 </html>

@@ -10,7 +10,7 @@
   <title>AMID</title>
   
   <?php $this->load->view('initial/linkGenerico');?>
-  <link href="<?php echo base_url();?>public/assets/modulos/mod1/css/estilo.css" rel="stylesheet">
+  <link href="<?php echo base_url();?>public/assets/modulos/mod1/css/partes.css" rel="stylesheet">
 
 </head>
 
@@ -58,6 +58,7 @@
                         <p class="card-text">
                             A continuación se exponen enfoques pedagógicos para enseñar AMI: <br>
                             <em>
+                            <div id="parte1" style="display:block;">
                                 <h4>Enfoque de enseñanza reflexiva</h4>
                                 El aprendizaje de enseñanza reflexiva es un enfoque centrado en el estudiante donde la
                                 investigación se enfoca en los temas relacionados con la alfabetización mediática e
@@ -74,6 +75,9 @@
                                 a través de un análisis de los medios; explorar la privacidad y los medios a través de
                                 un análisis primario y secundario de documentos, explorar el cyber-bullying
                                 (ciber-acoso) a través de una investigación etnográfica. <br><br>
+                            </div>
+
+                            <div id="parte2" style="display:none;">   
                                 <h4>Aprendizaje basado en problemas</h4>
                                 El aprendizaje basado en problemas es un desarrollo curricular y un sistema de
                                 instrucción que desarrolla simultáneamente las bases y habilidades de un conocimiento
@@ -86,6 +90,9 @@
                                 interrogación y los métodos, así como los resultados. Un ejemplo de un aprendizaje
                                 basado en problemas en AMI sería el diseño de una campaña social de mercadeo para una
                                 audiencia en particular. <br><br>
+                            </div>
+
+                            <div id="parte3" style="display:none;"> 
                                 <h4>Interrogación científica</h4>
                                 La interrogación científica se refiere a una variedad de técnicas que los científicos
                                 utilizan para explorar el mundo natural y proponen explicaciones basadas en las
@@ -98,6 +105,9 @@
                                 incorporar dentro de la enseñanza de AMI. Ejemplos de esta interrogación científica en
                                 AMI incluyen: investigar el impacto de la violencia en los medios; o investigar los
                                 roles de las comunidades en línea. <br><br>
+                            </div>
+
+                            <div id="parte4" style="display:none;">                             
                                 <h4>Estudio de caso</h4>
                                 El método de estudio de caso conlleva un examen profundo de una sola instancia o evento.
                                 Esto se originó en la escuela de Negocios de Harvard donde los estudiantes
@@ -112,6 +122,9 @@
                                 generación y validación de hipótesis. Por ejemplo, los estudiantes podrían llevar a cabo
                                 un estudio de caso de una estrategia de una campaña de mercadeo y lanzamiento de una
                                 película muy exitosa, u otro producto de alto perfil en los medios <br><br>
+                            </div>
+
+                            <div id="parte5" style="display:none;"> 
                                 <h4>Aprendizaje cooperativo</h4>
                                 El aprendizaje cooperativo tiene que ver con el enfoque de enseñanza que coloca a los
                                 estudiantes a trabajar juntos para alcanzar metas compartidas. El aprendizaje
@@ -125,6 +138,9 @@
                                 método apropiado en la enseñanza y aprendizaje de AMI ya que requiere que se compartan
                                 las ideas de uno a otro. Un ejemplo de este aprendizaje cooperativo en AMI podría ser
                                 trabajar en conjunto en un espacio Wiki (Wiki space). <br><br>
+                            </div>
+
+                            <div id="parte6" style="display:none;"> 
                                 <h4>Análisis de textos</h4>
                                 Los estudiantes aprenden a realizar análisis de textos al identificar los códigos y
                                 convenciones de los varios géneros de medios. Con este tipo de análisis semiótico, se
@@ -139,6 +155,9 @@
                                 clip de una noticia de una fuente en línea. Se distribuye a los estudiantes en grupos y
                                 se los guía para que analicen la audiencia, el propósito, el autor, la
                                 técnica/características del texto y contexto. <br><br>
+                            </div>
+
+                            <div id="parte7" style="display:none;"> 
                                 <h4>Análisis contextual</h4>
                                 Se enseña a los estudiantes a realizar un análisis contextual básico, especialmente en
                                 relación a los conceptos claves de los medios y otros proveedores de información, y
@@ -147,6 +166,9 @@
                                 sistemas por películas, televisión y juegos de video que operan en su país, o como la
                                 propiedad de los medios y la concentración se relaciona con temas de democracia y
                                 libertad de expresión. <br><br>
+                            </div>
+
+                            <div id="parte8" style="display:none;"> 
                                 <h4>Traducciones</h4>
                                 Con este enfoque los estudiantes pueden tomar un artículo que se presenta en un medio y
                                 convertirlo o “traducirlo” a otro medio. Por ejemplo:
@@ -162,6 +184,9 @@
                                         vida de una persona y utilizar esto como un punto de partida para hacer un
                                         documental corto sobre dicha persona.</li>
                                 </ul>
+                            </div>
+
+                            <div id="parte9" style="display:none;"> 
                                 <h4>Simulaciones</h4>
                                 A menudo se utiliza la simulación como una estrategia en una película y unidades de un
                                 Curriculum sobre medios. Como ya se ha mencionado, los tutores usan la simulación para
@@ -180,6 +205,9 @@
                                         está haciendo un video promocional para enseñar a los futuros estudiantes la
                                         vida de la universidad</li>
                                 </ul>
+                            </div>
+
+                            <div id="parte10" style="display:none;"> 
                                 <h4>Producción</h4>
                                 Este enfoque implica aprender haciendo que es un aspecto importante de la adquisición de
                                 conocimientos en el siglo XXI. Se incentiva a los estudiantes para que exploren el
@@ -191,7 +219,20 @@
                                 ejemplos incluyen: los estudiantes utilizan software como el iMovie o Moviemaker (o
                                 cualquier otra fuente similar libre y abierta de software) para hacer una historia
                                 digital de un minuto sobre un tema ambiental o cualquier otro tema de interés.
+                            </div>
                             </em>
+                            <center>
+                                <div id="btnAtras">
+                                    <a onclick="volver();">
+                                        <img width=70 src="<?php echo base_url();?>public/assets/img/arrow_l.jpg">
+                                    </a>
+                                </div>
+                                <div id="btnAdelante">
+                                    <a onclick="avanzar();">
+                                        <img width=70 src="<?php echo base_url();?>public/assets/img/arrow_r.jpg">
+                                    </a>
+                                </div>
+                            </center>
                         </p>
                     </div>
                 </div>
@@ -216,7 +257,7 @@
 
 <?php $this->load->view('initial/footer');?>
 <?php $this->load->view('initial/scriptGenerico');?>
-<script src="<?php echo base_url();?>public/assets/modulos/mod"></script>
+<script src="<?php echo base_url();?>public/assets/modulos/mod1/js/arrows2.js"></script>
 </body>
 
 </html>

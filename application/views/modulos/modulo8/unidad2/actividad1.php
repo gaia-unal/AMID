@@ -10,7 +10,7 @@
   <title>AMID</title>
   
   <?php $this->load->view('initial/linkGenerico');?>
-  <link href="<?php echo base_url();?>public/assets/modulos/mod8/css/u2estilo.css" rel="stylesheet">
+  <link href="<?php echo base_url();?>public/assets/modulos/mod1/css/partes.css" rel="stylesheet">
 
 </head>
 
@@ -56,7 +56,7 @@
                         <h4>El Big6 (Gran6): Marco de seis etapas para la alfabetización informacional y la resolución
                             de problemas de información</h4>
                         <p class="card-text">
-                            <div id="etapa1">
+                        <div id="parte1" style="display:block;">
                                 <dt>Etapa 1</dt>
                                 <dd>Definición de las necesidades o problemas de información ¿Qué es lo
                                     que quiero conocer? ¿Qué problema estoy tratando de resolver? ¿Entiendo la
@@ -64,7 +64,7 @@
                                     mis necesidades de información o el problema? ¿Qué conocimiento previo tengo sobre
                                     el tema? ¿Cuánta información quiero sobre el tema?</dd>
                             </div>
-                            <div id="etapa2">
+                            <div id="parte2" style="display:none;">
                                 <dt>Etapa 2</dt>
                                 <dd>Estrategias para buscar información ¿Cuánto tiempo tengo para encontrar esta
                                     información? ¿Dónde debo buscar la información? Se debe guiar a los profesores hacia
@@ -87,7 +87,7 @@
                                     </ul>
                                 </dd>
                             </div>
-                            <div id="etapa3">
+                            <div id="parte3" style="display:none;">
                                 <dt>Etapa 3</dt>
                                 <dd>Localización y acceso Aquí se debe guiar a los profesores a buscar la información de
                                     una manera eficiente en las fuentes antes mencionadas en la Etapa 2. Esto debería
@@ -115,20 +115,20 @@
                                     </ol>
                                 </dd>
                             </div>
-                            <div id="etapa4">
+                            <div id="parte4" style="display:none;">
                                 <dt>Etapa 4</dt>
                                 <dd>Evaluación crítica Criterio de evaluación necesario para valorar/validar la
                                     confiabilidad, autenticidad o calidad de la información en los libros, sitios en
                                     red, otros recursos en línea, etc.</dd>
                             </div>
-                            <div id="etapa5">
+                            <div id="parte5" style="display:none;">
                                 <dt>Etapa 5</dt>
                                 <dd>Síntesis ¿Qué es una tesis? ¿Cuál es mi tesis? ¿De qué forma se relaciona con el
                                     problema que quiero resolver? ¿Cómo puedo organizar la información relevante que
                                     proviene de múltiples fuentes de una manera eficaz? ¿Cómo presento la información?
                                     ¿Qué herramientas están disponibles? ¿Qué herramientas necesito?</dd>
                             </div>
-                            <div id="etapa6">
+                            <div id="parte6" style="display:none;">
                                 <dt>Etapa 6</dt>
                                 <dd>Uso de la información, compartir y distribución Aplicar la información que he
                                     localizado para resolver mi problema. Fuentes de referencia/rastreo, uso de la
@@ -138,10 +138,18 @@
                                     Documents, Wikis, Slash, etc.) Entendimiento de los derechos de autor y el plagio
                                 </dd>
                             </div>
-                            <a href="#" id="antEt" class="btn btn-outline-success btnSig" onclick="ant();">Etapa
-                                Anterior</a> <br />
-                            <a href="#" id="sigEt" class="btn btn-outline-success btnSig" onclick="sig();">Etapa
-                                Siguiente</a>
+                            <center>
+                                <div id="btnAtras">
+                                    <a onclick="volver();">
+                                        <img width=70 src="<?php echo base_url();?>public/assets/img/arrow_l.jpg">
+                                    </a>
+                                </div>
+                                <div id="btnAdelante">
+                                    <a onclick="avanzar();">
+                                        <img width=70 src="<?php echo base_url();?>public/assets/img/arrow_r.jpg">
+                                    </a>
+                                </div>
+                                </center>
                         </p>
                     </div>
                 </div>
@@ -166,7 +174,7 @@
 
 <?php $this->load->view('initial/footer');?>
 <?php $this->load->view('initial/scriptGenerico');?>
-<script src="<?php echo base_url();?>public/assets/modulos/mod8/js/u2info.js"></script>
+<script src="<?php echo base_url();?>public/assets/modulos/mod8/js/arrows.js"></script>
 </body>
 
 </html>

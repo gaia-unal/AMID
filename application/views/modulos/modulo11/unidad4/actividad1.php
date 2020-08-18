@@ -10,7 +10,7 @@
 	<title>AMID</title>
   
   <?php $this->load->view('initial/linkGenerico');?>
-  <link href="<?php echo base_url();?>public/assets/modulos/mod11/css/estilo.css" rel="stylesheet">
+  <link href="<?php echo base_url();?>public/assets/modulos/mod1/css/partes.css" rel="stylesheet">
 
 </head>
 
@@ -54,7 +54,7 @@
 				<h1><br>Unidad 4: El nacimiento de medios alternativos</h1>
 				<div class="card mt-4">
 					<div class="card-body">
-						<div id="parte1">
+					<div id="parte1" style="display:block;">
 							<h4>Medios Alternativos</h4>
 							<p class="card-text">
 								Un medio alternativo de información, medio de comunicación alternativo o medio
@@ -71,7 +71,7 @@
 							<i>Definición de medios alternativos</i> (2011).
 							</p>
 						</div>
-						<div id="parte2">
+						<div id="parte2" style="display:none;">
 							<p class="card-text">
 							<h4>Características</h4>
 							"Las características de la comunicación alternativa están intrínsecamente ligadas a la
@@ -126,7 +126,7 @@
 								alternativos e internet: un ánalisis cualitativo del sistema mediático español</i>
 							</p>
 						</div>
-						<div id="parte3">
+						<div id="parte3" style="display:none;">
 							<h4>Tipos</h4>
 							<p class="card-text">
 								A continuación se presentan los tipos de medios alternativos expuestos por Lamb, Hair y
@@ -148,7 +148,7 @@
 							Thomson Editores, 2002, Págs. 512 al 516.
 							</p>
 						</div>
-						<div id="parte4">
+						<div id="parte4" style="display:none;">
 							<h4>Profundización</h4>
 							<p class="card-text">
 								También te recomendamos leer el siguiente artículo para profundizar en el tema. <br>
@@ -160,7 +160,16 @@
 						</div>
 						<br>
 						<center>
-							<button id="btnSig" class="btn btn-outline-success" onclick="sig();">Siguiente</button>
+							<div id="btnAtras">
+								<a onclick="volver();">
+									<img width=70 src="<?php echo base_url();?>public/assets/img/arrow_l.jpg">
+								</a>
+							</div>
+							<div id="btnAdelante">
+								<a onclick="avanzar();">
+									<img width=70 src="<?php echo base_url();?>public/assets/img/arrow_r.jpg">
+								</a>
+							</div>
 						</center>
 					</div>
 				</div>
@@ -185,7 +194,7 @@
 
 <?php $this->load->view('initial/footer');?>
 <?php $this->load->view('initial/scriptGenerico');?>
-<script src="<?php echo base_url();?>public/assets/modulos/mod11/js/u4script.js"></script>
+<script src="<?php echo base_url();?>public/assets/modulos/mod11/js/arrows.js"></script>
 </body>
 
 </html>

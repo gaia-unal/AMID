@@ -27,7 +27,6 @@ class Modulo10 extends CI_Controller {
 			$this->profesormoduloModel->changeEstado(10,1);
 			$submit=$this->input->post('submit');
 
-			$data['profesormodulo']=$this->profesormoduloModel->getOne();
 			if($seg['seg4'] && isset($submit)){
 				$idAct=$seg['seg4'];
 				
@@ -36,8 +35,8 @@ class Modulo10 extends CI_Controller {
 					$nota = $this->input->post('preg');
 					$this->insertUpdateE($idAct,$nota);
 				}
-				
 			}
+			$data['profesormodulo']=$this->profesormoduloModel->getOne();
 			$this->load->view('modulos/modulo10/index',$data);
 
 		}else{
@@ -99,9 +98,6 @@ class Modulo10 extends CI_Controller {
 						
 						$this->insertUpdate($idAct,$nota, $answer);
 						
-					break;
-					default:
-						echo "Url invalida (Esto pasa alguna vez????)";
 					break;
 				}
 			}

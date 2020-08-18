@@ -173,7 +173,10 @@
   
           <div class="input-group center  mb-10">
             <label for="pass1_r" class="sr-only">Pass</label>
-            <input type="password" name="pass1_r" id="pass1_r" class="form-control mb-10 space_between" value="" placeholder="Nueva contraseña"required>
+            <input type="password" name="pass1_r" id="pass1_r" class="form-control mb-10 space_between" 
+            pattern="(?=.*\d)(?=.*[A-Za-z])(?=.*[@#$%]).{8,}" 
+            title="Debe contener al menos un número, una letra, uno de estos símbolos '@', '#', '$' o '%' y al menos 8 caracteres"
+            placeholder="Nueva contraseña"required>
   
             <label for="pass2_r" class="sr-only">confirmpass</label>
             <input type="password" name="pass2_r" id="pass2_r" class="form-control " value="" placeholder="Confirmar contraseña" required>
@@ -252,7 +255,10 @@
         
         <div class="input-group center  mb-10">
           <label for="pass1" class="sr-only">Pass</label>
-          <input type="password" name="pass1" id="pass1" class="form-control mb-10 space_between" value="" placeholder="Contraseña"required>
+          <input type="password" name="pass1" id="pass1" class="form-control mb-10 space_between" 
+          pattern="(?=.*\d)(?=.*[A-Za-z])(?=.*[@#$%]).{8,}" 
+          title="Debe contener al menos un número, una letra, uno de estos símbolos '@', '#', '$' o '%' y al menos 8 caracteres"
+          placeholder="Contraseña"required>
 
           <label for="pass2" class="sr-only">confirmpass</label>
           <input type="password" name="pass2" id="pass2" class="form-control " value="" placeholder="Confirmar contraseña" required>

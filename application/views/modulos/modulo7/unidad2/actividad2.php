@@ -11,6 +11,7 @@
   
   <?php $this->load->view('initial/linkGenerico');?>
   <link href="<?php echo base_url();?>public/assets/modulos/mod7/css/u22estilo.css" rel="stylesheet">
+  <link href="<?php echo base_url();?>public/assets/modulos/mod1/css/partes.css" rel="stylesheet">
 
 </head>
 
@@ -55,35 +56,48 @@
                     <div class="card-body">
                         <h4>Lea el siguiente caso real de <em>Phishing</em> para realizar la actividad.</h4>
                         <br>
-                        <div>
+                        <div id="parte1" style="display:block;">
                             <img class="img" id="imagen" src="<?php echo base_url();?>public/assets/modulos/mod7/img/bancolombia1.png">
                         </div>
-                        <div>
+                        <div id="parte2" style="display:none;">
                             <img class="img" id="imagen" src="<?php echo base_url();?>public/assets/modulos/mod7/img/bancolombia2.png">
                         </div>
-                        <div>
+                        <div id="parte3" style="display:none;">
                             <img class="img" id="imagen" src="<?php echo base_url();?>public/assets/modulos/mod7/img/bancolombia3.png">
                         </div>
-                        <div>
+                        <div id="parte4" style="display:none;">
                             <img class="img" id="imagen" src="<?php echo base_url();?>public/assets/modulos/mod7/img/bancolombia4.png">
                         </div>
-                        <div>
+                        <div id="parte5" style="display:none;">
                             <img class="img" id="imagen" src="<?php echo base_url();?>public/assets/modulos/mod7/img/bancolombia5.png">
                         </div>
-                        <div>
+                        <div id="parte6" style="display:none;">
                             <img class="img" id="imagen" src="<?php echo base_url();?>public/assets/modulos/mod7/img/bancolombia6.png">
                         </div>
-                        <div>
+                        <div id="parte7" style="display:none;">
                             <img class="img" id="imagen" src="<?php echo base_url();?>public/assets/modulos/mod7/img/bancolombia7.png">
                         </div>
-                        <div>
+                        <div id="parte8" style="display:none;">
                             <img class="img" id="imagen" src="<?php echo base_url();?>public/assets/modulos/mod7/img/bancolombia8.png">
                         </div>
-                        <div>
+                        <div id="parte9" style="display:none;">
                             <img class="img" id="imagen" src="<?php echo base_url();?>public/assets/modulos/mod7/img/bancolombia9.png">
                         </div>
                     </div>
                 </div>
+                <br>
+                <center>
+                    <div id="btnAtras">
+                        <a onclick="volver();">
+                            <img width=70 src="<?php echo base_url();?>public/assets/img/arrow_l.jpg">
+                        </a>
+                    </div>
+                    <div id="btnAdelante">
+                        <a onclick="avanzar();">
+                            <img width=70 src="<?php echo base_url();?>public/assets/img/arrow_r.jpg">
+                        </a>
+                    </div>
+                </center>
                 <!-- /.card -->
                 <br>
                 <center>
@@ -105,7 +119,7 @@
 
 <?php $this->load->view('initial/footer');?>
 <?php $this->load->view('initial/scriptGenerico');?>
-<script src="<?php echo base_url();?>public/assets/modulos/mod"></script>
+<script src="<?php echo base_url();?>public/assets/modulos/mod7/js/arrows.js"></script>
 </body>
 
 </html>

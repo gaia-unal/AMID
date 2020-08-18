@@ -11,6 +11,7 @@
   
   <?php $this->load->view('initial/linkGenerico');?>
   <link href="<?php echo base_url();?>public/assets/modulos/mod4/css/estilo.css" rel="stylesheet">
+  <link href="<?php echo base_url();?>public/assets/modulos/mod1/css/partes.css" rel="stylesheet">
 
 </head>
 
@@ -59,15 +60,28 @@
                         <h4>Noticias Actuales</h4>
                         <p class="card-text">
                             Lea el siguiente artículo y responda:
-                            <div><img src="<?php echo base_url();?>public/assets/modulos/mod4/img/noti1.png" alt="Noticia 1" class="noti"></div>
-                            <div><img src="<?php echo base_url();?>public/assets/modulos/mod4/img/noti2.png" alt="Noticia 2" class="noti"></div>
-                            <div><img src="<?php echo base_url();?>public/assets/modulos/mod4/img/noti3.png" alt="Noticia 3" class="noti"></div>
-                            <div><img src="<?php echo base_url();?>public/assets/modulos/mod4/img/noti4.png" alt="Noticia 4" class="noti"></div>
-                            <div><img src="<?php echo base_url();?>public/assets/modulos/mod4/img/noti5.png" alt="Noticia 5" class="noti"></div>
+                            <div id="parte1" style="display:block;"><img src="<?php echo base_url();?>public/assets/modulos/mod4/img/noti1.png" alt="Noticia 1" class="noti"></div>
+                            <div id="parte2" style="display:none;"><img src="<?php echo base_url();?>public/assets/modulos/mod4/img/noti2.png" alt="Noticia 2" class="noti"></div>
+                            <div id="parte3" style="display:none;"><img src="<?php echo base_url();?>public/assets/modulos/mod4/img/noti3.png" alt="Noticia 3" class="noti"></div>
+                            <div id="parte4" style="display:none;"><img src="<?php echo base_url();?>public/assets/modulos/mod4/img/noti4.png" alt="Noticia 4" class="noti"></div>
+                            <div id="parte5" style="display:none;"><img src="<?php echo base_url();?>public/assets/modulos/mod4/img/noti5.png" alt="Noticia 5" class="noti"></div>
                             <br>
                             Tomado de:
                             https://www.eltiempo.com/elecciones-colombia-2019/otras-ciudades/amenazas-a-dos-candidatos-a-la-alcaldia-en-la-guajira-426572
-                            <br> <br>
+                            <br> 
+                            <center>
+                                <div id="btnAtras">
+                                    <a onclick="volver();">
+                                        <img width=70 src="<?php echo base_url();?>public/assets/img/arrow_l.jpg">
+                                    </a>
+                                </div>
+                                <div id="btnAdelante">
+                                    <a onclick="avanzar();">
+                                        <img width=70 src="<?php echo base_url();?>public/assets/img/arrow_r.jpg">
+                                    </a>
+                                </div>
+                            </center>
+                            <br>
                             <ol>
                                 <li>¿Cómo los distintos medios afectan al tipo de cobertura y a la información que se
                                     puede dar?</li>
@@ -107,7 +121,7 @@
 
 <?php $this->load->view('initial/footer');?>
 <?php $this->load->view('initial/scriptGenerico');?>
-<script src="<?php echo base_url();?>public/assets/modulos/mod"></script>
+<script src="<?php echo base_url();?>public/assets/modulos/mod4/js/arrows2.js"></script>
 </body>
 
 </html>

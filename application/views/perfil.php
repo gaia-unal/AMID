@@ -153,8 +153,11 @@
 								<div class="text-center">
 									<span class="icon-self "><i class="fas fa-unlock"></i></span>
 									<div class="ft">
-										<input id="pass" name="passNew" type="password" placeholder="Contraseña nueva"
-											class="form-control">
+										<input id="pass" name="passNew" type="password" 
+										placeholder="Contraseña nueva"class="form-control"
+										pattern="(?=.*\d)(?=.*[A-Za-z])(?=.*[@#$%]).{8,}" 
+            							title="Debe contener al menos un número, una letra, uno de estos símbolos '@', '#', '$' o '%' y al menos 8 caracteres"
+										>
 									</div>
 								</div>
 							</div>
