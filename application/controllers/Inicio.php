@@ -96,6 +96,18 @@ class Inicio extends CI_Controller {
 		}
 	}
 
+	public function reportePDF(){
+		if(isset($this->id)){
+			$data['evaluacion']=$this->profesorunidadModel->getAllWhere($this->id);
+			$data['nombre']=$this->session->userdata('name');
+			$data['apellido']=$this->session->userdata('lastname');
+			$this->load->view('initial/pdf',$data);
+		}else{
+			$this->logout();
+
+		}
+	}
+
 	public function login(){
 
 		$data= array(

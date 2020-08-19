@@ -41,6 +41,7 @@ class Usuario extends CI_Controller {
 							// echo "entro";
 							$this->usuarioModel->update2($data);
 							$this->session->set_userdata('name',$data['nombre']);
+							
 							$data['mensaje']="Datos actualizados correctamente";
 						}else{
 							$data['mensaje']="Las contraseñas no son iguales";
@@ -49,6 +50,7 @@ class Usuario extends CI_Controller {
 						//actulizar sin contrseñas
 						$this->usuarioModel->update3($data);
 						$this->session->set_userdata('name',$data['nombre']);
+						$this->session->set_userdata('lastname',$data['apellido']);
 						$data['mensaje']="Datos actualizados correctamente";
 					}
 				}else{

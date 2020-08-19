@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -10,22 +11,11 @@
 	<?php $this->load->view('initial/linkGenerico');?>
 	<link href="<?php echo base_url();?>public/assets/css/style.css" rel="stylesheet">
 	<link href="<?php echo base_url();?>public/assets/css/hc.css" rel="stylesheet">
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="<?php echo base_url();?>public/vendor/bootstrap/css/bt2.css">
-
-
+	
 	<script src="<?php echo base_url();?>public/vendor/code/highcharts.js"></script>
 	<script src="<?php echo base_url();?>public/vendor/code/modules/data.js"></script>
 	<script src="<?php echo base_url();?>public/vendor/code/modules/series-label.js"></script>
-	<!-- <script src=" -->
-	<?php 
-	// echo base_url();
-	?>
-	<!-- public/vendor/code/modules/exporting.js"></script> -->
-	<!-- <script src=" -->
-	<?php 
-	// echo base_url();
-	?>
+
 	<!-- public/vendor/code/modules/export-data.js"></script> -->
 	<script src="<?php echo base_url();?>public/vendor/code/modules/accessibility.js"></script>
 
@@ -43,24 +33,20 @@
 		<h1>Reportes de evaluaciones y actividades</h1>
 		<p>
 			A continuación puedes consultar las calificaciones de las evaluaciones,
-			las calificaciones se pueden consultar en formato PDF o en grafico.
+			las calificaciones se pueden consultar en formato PDF o en gráfico.
 			<br>
 			Tambien puedes ver tus respuestas de las actividades.
 		</p>
-		<?php 
-			// if(isset($usuario)){
-			// 	echo "<p class='mensaje'>¡".$usuario."!</p>";
-			// }
-		?>
+		
 		<div class="card p-4">
 			<h2>Evaluaciones</h2>
 
 			<div class="row ">
 
 				<div class="col-md-6">
-
+				<!-- $this->load->view('initial/footer') -->
 					<div class="evaluacion_pdf  p-2">
-						<a href="#" target="_blank">
+						<a href="<?php echo base_url();?>inicio/reportePDF" target="_blank">
 							<img class="option_pdf" src="<?php echo base_url();?>public/assets/img/pdf.png"
 								alt="Archivo PDF">
 						</a>
@@ -76,13 +62,13 @@
 				<div class="col-md-6">
 
 					<div class="evaluacion_grafico p-2">
-						<a href="#" target="_blank">
-							<img class="option_pdf" src="<?php echo base_url();?>public/assets/img/pdf.png"
+						<a href="#grafico">
+							<img class="option_pdf" src="<?php echo base_url();?>public/assets/img/grafico.png"
 								alt="Archivo PDF">
 						</a>
 						<br>
-						<a href="#" target="_blank">
-							Calificaciones en Grafico
+						<a href="#grafico">
+							Calificaciones en Gráfico
 							
 						</a>
 						
@@ -91,41 +77,6 @@
 
 			</div>
 		</div>
-
-		<?php 
-            // if(isset($evaluacion)){
-            //   foreach($evaluacion->result() as $eva){
-			// 	  echo $eva->notaevaluacion,'<br>';
-			// 	//   json_decode($eva->notaevaluacion);
-            //   }
-            // }else{
-            //   echo "No hay instituciones registradas";
-            // }
-            ?>
-		<figure class="highcharts-figure" style="display:none;">
-    <div id="container"></div>
-    <!-- <p class="highcharts-description">
-        Basic line chart showing trends in a dataset. This chart includes the
-        <code>series-label</code> module, which adds a label to each line for
-        enhanced readability.
-    </p> -->
-</figure>
-<?php 
-            // if(isset($actividad)){
-            //   foreach($actividad->result() as $act){
-			// 	//   echo $act->respuesta,'<br>';
-			// 	$answer=json_decode($act->respuesta);
-			// 	if($act->id_actividad!="m1u4a3"){
-			// 		echo 'ID= ',$act->id_actividad,' Res= ',$answer->{"Actividad 1"}->{"Pregunta 1"},'<br>';
-			// 	}else{
-			// 		echo 'ID= ',$act->id_actividad,' Res= ',$answer->{"Actividad 1"}->{"1"},'<br>';
-			// 	}
-			// 	// var_dump($answer);
-            //   }
-            // }else{
-            //   echo "No hay instituciones registradas";
-            // }
-            ?>
 
 		<div class="row">
 			<!-- ------------------------------------------------------------ -->
@@ -155,9 +106,75 @@
 						</ul>
 
 						<div class="tab_container">
+
+						
+
 							<div id="tab1" class="tab_content">
-								<!--Contenido del bloque de texto-->
-								Hola1
+								<h3>Módulo 1</h3> 
+							<?php 
+							if(isset($actividad)){
+								$titleMod=true;
+								$uno=$dos=$tres=$cuatro=true;
+							foreach($actividad->result() as $act){
+								
+								
+								$mod=$act->id_actividad;
+								// echo $mod,"<br>";
+								$answer=json_decode($act->respuesta,true);
+
+								$mod1=[
+										['m1u1a1','m1u1a3','m1u1a5','m1u1a6','m1u1a8','m1u1a9',
+										 'm1u2a2','m1u2a3','m1u2a5',
+										 'm1u3a3',
+										 'm1u4a3'],
+										['m1u1a1','m1u1a3','m1u1a5','m1u1a6','m1u1a8','m1u1a9'],
+										['m1u2a2','m1u2a3','m1u2a5'],
+										['m1u3a3'],
+										['m1u4a3']
+									];
+								
+								
+								
+								if (in_array($mod, $mod1[0])) {
+									if (in_array($mod, $mod1[1])) {
+										if($uno){
+											echo "<br>Unidad 1<br>";
+											$uno=false;
+										}
+										if($mod=='m1u1a1'){
+											echo "<br>Actividad 1<br>";
+											echo "<br>Fecha de realización: ",$act->fecharealizacion," <br>";
+											echo "Nota: ",$act->nota," <br>";
+											echo "<br>Observación: ",$answer['Actividad 1']['Pregunta 1']," <br>";
+										}
+									}
+									// else if(in_array($mod, $mod1[2])) {
+									// 	if($dos){
+									// 		echo "<br>Unidad 2<br>";
+									// 		$dos=false;
+									// 	}
+									// 	echo $mod,"<br>";
+									// }else if(in_array($mod, $mod1[3])) {
+									// 	if($tres){
+									// 		echo "<br>Unidad 3<br>";
+									// 		$tres=false;
+									// 	}
+									// 	echo $mod,"<br>";
+									// }else if(in_array($mod, $mod1[4])) {
+									// 	if($cuatro){
+									// 		echo "<br>Unidad 4<br>";
+									// 		$cuatro=false;
+									// 	}
+									// 	echo $mod,"<br>";
+									// }
+								}
+			
+							}
+							}else{
+								echo "No hay datos de actividades";
+							}
+							?>
+								
 							</div>
 							<div id="tab2" class="tab_content">
 								<!--Contenido del bloque de texto-->
@@ -213,6 +230,24 @@
 		</div>
 	</div>
 	<br>
+
+	<div id="grafico" class="modalDialog">
+		<div class="contentmodal" style="width: 90%;">
+			<a href="#close" title="Close" class="close">X</a>
+			<div class="modal-head">
+				<center><h2>Gráfico</h2></center>
+			</div>
+			<figure class="highcharts-figure" style="display:block;">
+				<div id="container"></div>
+				<!-- <p class="highcharts-description">
+					Basic line chart showing trends in a dataset. This chart includes the
+					<code>series-label</code> module, which adds a label to each line for
+					enhanced readability.
+				</p> -->
+			</figure>
+			<hr>
+		</div>
+	</div>
 
 	<?php $this->load->view('initial/footer');?>
 

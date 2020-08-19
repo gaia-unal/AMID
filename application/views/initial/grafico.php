@@ -1,5 +1,32 @@
 <script type="text/javascript">
+
+var dataEval=  <?php echo json_encode($evaluacion->result()); ?>;
+var eval=[];
+var desc=[];
+var mod,und,men,dese,parte;
+
+for (let i in dataEval) {
+    eval.push( parseFloat(dataEval[i]['notaevaluacion']) );
+    mod=dataEval[i]['id_unidad'][1];
+    und=dataEval[i]['id_unidad'][3];
+    dese=dataEval[i]['desempeñounidad']
+
+    if(mod=='7'){
+        parte=dataEval[i]['id_unidad'][4];
+        men="<b>Módulo:</b> "+mod+"<br><b>Unidad:</b> "+und+" Parte "+parte+"<br><b>Desempeño:</b> "+dese;
+    }else{
+        men="<b>Módulo:</b> "+mod+"<br><b>Unidad:</b> "+und+"<br><b>Desempeño:</b> "+dese;
+    }
+    desc.push( men );
+}
+
 Highcharts.chart('container', {
+
+    tooltip: {
+        formatter: function () {
+            return desc[this.x-1]+'<br><b>Nota:</b> '+this.y;
+        }
+    },
 
     title: {
         text: 'Calificaciones de las evaluaciones'
@@ -16,9 +43,13 @@ Highcharts.chart('container', {
     },
 
     xAxis: {
-        accessibility: {
-            rangeDescription: 'Range: 1 to 12'
-        }
+        // accessibility: {
+        //     rangeDescription: 'Range: 1 to 12'
+        // }
+        title: {
+            text: 'Evaluación'
+        },
+        tickInterval: 1
     },
 
     legend: {
@@ -38,7 +69,7 @@ Highcharts.chart('container', {
 
     series: [{
         name: 'Calificación',
-        data: [1, 2, 3, 4, 5, 1, 2, 3]
+        data: eval
     }
     // , {
     //     name: 'Manufacturing',
@@ -71,4 +102,4 @@ Highcharts.chart('container', {
     }
 
 });
-		</script>
+</script>

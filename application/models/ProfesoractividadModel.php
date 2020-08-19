@@ -17,7 +17,8 @@ class profesoractividadModel extends CI_Model{
 	public function getAllWhere($id){ 
 
 		$query=$this->db->select('*')
-					    ->where('id_profesor',$id)
+						->where('id_profesor',$id)
+						->order_by('id_actividad', 'ASD')
 					    ->get('profesoractividad');
         
         return ($query->num_rows()>0)?$query: false;
