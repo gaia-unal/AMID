@@ -42,17 +42,16 @@
     </script>
 
     <script>
-        var mini=true
+        var mini=true;
         function maxi(){
+            var btn= document.getElementById("btn-min");
             if (mini){
                 document.getElementById("chatbot").style.bottom="0px";
-                var btn= document.getElementById("btn-min");
                 btn.style.bottom="391px";
                 btn.innerHTML="<i class='fas fa-minus-square' title='Minimizar'></i>";
                 mini=false;
             }else{
                 document.getElementById("chatbot").style.bottom="-348px";
-                var btn= document.getElementById("btn-min");
                 btn.style.bottom="43px";
                 btn.innerHTML="<i class='fas fa-window-maximize' title='Maximizar'></i>";
                 mini=true;

@@ -328,11 +328,11 @@ class Modulo1 extends CI_Controller {
 												"Pregunta 6": "'.$p6.'",
 												"Pregunta 7": "'.$p7.'"
 												},
-								  "Actividad 2":{"1": "'.$m1.'",
-												"2": "'.$m2.'",
-												"3": "'.$m3.'",
-												"4": "'.$m4.'",
-												"5": "'.$m5.'"
+								  "Actividad 2":{"Pregunta 1": "'.$m1.'",
+												"Pregunta 2": "'.$m2.'",
+												"Pregunta 3": "'.$m3.'",
+												"Pregunta 4": "'.$m4.'",
+												"Pregunta 5": "'.$m5.'"
 												  },
 									"Actividad 3":{"Pregunta 8": "'.$p8.'",
 													"Pregunta 9": "'.$p9.'",
@@ -402,11 +402,11 @@ class Modulo1 extends CI_Controller {
 						$p1 = $this->input->post('preg1');
 						$p2 = $this->input->post('preg2');
 						
-						$answer='{"Actividad 1":{"1": "'.$e1.'",
-												"2": "'.$e2.'",
-												"3": "'.$e3.'",
-												"4": "'.$e4.'",
-												"5": "'.$e5.'"
+						$answer='{"Actividad 1":{"Pregunta 1": "'.$e1.'",
+												"Pregunta 2": "'.$e2.'",
+												"Pregunta 3": "'.$e3.'",
+												"Pregunta 4": "'.$e4.'",
+												"Pregunta 5": "'.$e5.'"
 												  },
 									"Actividad 2":{"Pregunta 1": "'.$p1.'",
 													"Pregunta 2": "'.$p2.'"
