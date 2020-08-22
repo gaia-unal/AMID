@@ -62,8 +62,8 @@
           </p>
 
           <p>
-          Debajo de estos botones encontrar nuevamente un menú de módulos pero esta vez te indicaran tu avance en cada uno de ellos, 
-          si son de color blanco es porque no has empezado el módulo, amarillo es para indicar que has empezado el modulo pero no lo 
+          Debajo de estos botones encontraras nuevamente un menú de módulos pero esta vez te indicaran tu avance en cada uno de ellos, 
+          si son de color blanco es porque no has empezado el módulo, amarillo es para indicar que has empezado el módulo pero no lo 
           has terminado aun y verde significa que el módulo ya se ha completado.
           </p>
           <p>
