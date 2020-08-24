@@ -51,12 +51,12 @@ $i=1;
 
  // Salto de línea
  $pdf->Ln(5);
-$pdf->SetFont('Arial','B',12);
-    $pdf->Cell(44,10,'Nombre:',0,1,'C');
-    $pdf->SetFont('Arial','',12);
-    $pdf->Cell(84,10,utf8_decode($nombre.' '.$apellido),0,0,'C');
+// $pdf->SetFont('Arial','B',12);
+    // $pdf->Cell(44,10,'Nombre:',0,1,'C');
+    // $pdf->SetFont('Arial','',12);
+    // $pdf->Cell(84,10,utf8_decode($nombre.' '.$apellido),0,0,'C');
     // Salto de línea
-    $pdf->Ln(20);
+    $pdf->Ln(10);
 
     $pdf->SetFont('Times','B',12);
     $pdf->Cell(15);
