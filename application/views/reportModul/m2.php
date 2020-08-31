@@ -31,7 +31,17 @@ if(isset($actividad)){
                     <b class="m2act">Actividad 1</b> <br>
                     <b>Fecha de realización: </b><?php echo $act->fecharealizacion ?><br>
                     <b>Nota: </b><?php echo $act->nota ?><br>
-              
+                    <b>Respuestas: </b> <br>
+                    <b>Pregunta 1: </b>¿Cómo fue la evolución de la teoría y práctica de “libertad de palabra” y “libertad de prensa”?<br>
+                    <?php echo $answer['Actividad 1']['Pregunta 1'] ?><br>
+                    <b>Pregunta 2: </b>¿Qué periodistas y/o agencias de los medios han hecho contribuciones específicas a la libertad de prensa y a la democracia?<br>
+                    <?php echo $answer['Actividad 1']['Pregunta 2'] ?><br>
+                    <b>Pregunta 3: </b>Investigue y describa un evento de movimientos democráticos, en Colombia, en donde los medios y los reportes de noticias han tenido un papel significante.<br>
+                    <?php echo $answer['Actividad 1']['Pregunta 3'] ?><br>
+                    <b>Pregunta 4: </b>Realice una reflexión sobre los resultados de las lecturas que realizó en sus investigaciones.<br>
+                    <?php echo $answer['Actividad 1']['Pregunta 4'] ?><br>
+                    <b>Pregunta 5: </b>Realice un ensayo sobre temas relacionados con los medios y la democracia, y como abordar estos temas en el aula de clase.<br>
+                    <?php echo $answer['Actividad 1']['Pregunta 5'] ?><br>
                     <hr class="hr_2_color">
                 <?php
                 }
@@ -51,6 +61,17 @@ if(isset($actividad)){
                     <b class="m2act">Actividad 1</b> <br>
                     <b>Fecha de realización: </b><?php echo $act->fecharealizacion ?><br>
                     <b>Nota: </b><?php echo $act->nota ?><br>
+                    <b>Respuestas: </b> <br>
+                    <b>Pregunta 1: </b>¿Por qué razón considera usted se debe desarrollar un código de ética que tiene que recibir la aprobación de todos los miembros de la profesión y que no debe ser impuesto por agentes o autoridades externas?<br>
+                    <?php echo $answer['Actividad 1']['Pregunta 1'] ?><br>
+                    <b>Pregunta 2: </b>¿De qué manera la ética de información se relaciona con temas como propiedad, acceso, privacidad, seguridad y comunidad?<br>
+                    <?php echo $answer['Actividad 1']['Pregunta 2'] ?><br>
+                    <b>Pregunta 3: </b>¿Cómo la ética de la información puede influir en las decisiones personales, la práctica profesional y las políticas públicas?<br>
+                    <?php echo $answer['Actividad 1']['Pregunta 3'] ?><br>
+                    <b>Pregunta 4: </b>¿Cómo los nuevos formatos de información evolucionan y las necesidades influyen en los principios éticos, y cómo se aplican estos códigos?<br>
+                    <?php echo $answer['Actividad 1']['Pregunta 4'] ?><br>
+                    <b>Pregunta 5: </b>¿Existen organizaciones de libertad de prensa activas en su país? ¿Cómo estas han contribuido a la protección de la libertad de prensa y libertad de expresión?<br>
+                    <?php echo $answer['Actividad 1']['Pregunta 5'] ?><br>
                     
                     <hr class="hr_2_color">
                 <?php
@@ -71,7 +92,7 @@ if(isset($actividad)){
                     <b class="m2act">Actividad 1</b> <br>
                     <b>Fecha de realización: </b><?php echo $act->fecharealizacion ?><br>
                     <b>Nota: </b><?php echo $act->nota ?><br>
-                  
+                    <b>Observación: </b><?php echo $answer['Actividad 1']['Pregunta 1'] ?><br>
                     <hr class="hr_2_color">
 
                 <?php
@@ -79,6 +100,13 @@ if(isset($actividad)){
                     <b class="m2act">Actividad 2</b> <br>
                     <b>Fecha de realización: </b><?php echo $act->fecharealizacion ?><br>
                     <b>Nota: </b><?php echo $act->nota ?><br>
+                    <b>Respuestas: </b> <br>
+                    <b>Pregunta 1: </b>¿Cuál de las dos noticias tiene más fuerza? ¿por qué?<br>
+                    <?php echo $answer['Actividad 1']['Pregunta 1'] ?><br>
+                    <b>Pregunta 2: </b>¿Cuál de las dos noticias es más informativa?<br>
+                    <?php echo $answer['Actividad 1']['Pregunta 2'] ?><br>
+                    <b>Pregunta 3: </b>¿Cómo se podrían mejorar otros artículos noticiosos?<br>
+                    <?php echo $answer['Actividad 1']['Pregunta 3'] ?><br>
                   
                     <hr class="hr_2_color">
 
@@ -100,6 +128,9 @@ if(isset($actividad)){
                     <b class="m2act">Actividad 1</b> <br>
                     <b>Fecha de realización: </b><?php echo $act->fecharealizacion ?><br>
                     <b>Nota: </b><?php echo $act->nota ?><br>
+                    <b>Respuestas: </b> <br>
+                    <b>Pregunta 1: </b>¿Cuál de las dos noticias tiene más fuerza? ¿por qué?<br>
+                    <?php echo $answer['Actividad 1']['Pregunta 1'] ?><br>
                    
                     <hr class="hr_2_color">	
 
