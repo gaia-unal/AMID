@@ -9,7 +9,8 @@ class usuarioModel extends CI_Model{
     }
 	public function getAll(){ 
 
-		$query=$this->db->get('usuario');
+		$query=$this->db->order_by('id_usuario', 'ASD')
+						->get('usuario');
         
         return ($query->num_rows()>0)? $query : false;
 	}

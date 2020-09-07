@@ -9,6 +9,7 @@ class Inicio extends CI_Controller {
 		parent::__construct();
 		$this->load->model('institucionModel');
 		$this->load->model('usuarioModel');
+		$this->load->model('ubicacionModel');
 		$this->load->model('profesormoduloModel');
 		$this->load->model('profesoractividadModel');
 		$this->load->model('profesorunidadModel');
@@ -102,6 +103,19 @@ class Inicio extends CI_Controller {
 			$data['nombre']=$this->session->userdata('name');
 			$data['apellido']=$this->session->userdata('lastname');
 			$this->load->view('initial/pdf',$data);
+		}else{
+			$this->logout();
+
+		}
+	}
+
+	public function gestion(){
+
+		if(isset($this->id)){
+			$data['usuarios']=$this->usuarioModel->getAll();
+			$data['ubicaciones']=$this->ubicacionModel->getAll();
+			$data['instituciones']= $this->institucionModel->getAll();
+			$this->load->view('gestion',$data);
 		}else{
 			$this->logout();
 

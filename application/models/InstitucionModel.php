@@ -9,7 +9,8 @@ class institucionModel extends CI_Model{
     }
 	public function getAll(){ 
 
-		$query=$this->db->get('institucion');
+		$query=$this->db->order_by('id_institucion', 'ASD')
+						->get('institucion');
         
         return ($query->num_rows()>0)?$query: false;
 	}
