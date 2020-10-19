@@ -19,19 +19,20 @@
         color: cadetblue;
         cursor: pointer;
         transition: all 0.2s;
+        
     }
 </style>
     
     
 
-    <button class="btn-min" id="btn-min" onclick="maxi()">
+    <!--<button class="btn-min" id="btn-min" onclick="maxi()">
         <i class="fas fa-window-maximize" title="Maximizar"></i>
     </button>
         
     <iframe 
     id="chatbot" class="chatbot" allow="microphone;"
     src="https://console.dialogflow.com/api-client/demo/embedded/28e6bbd4-8559-47d2-aeab-5724bee86ac0">
-    </iframe>
+    </iframe> -->
 
     <script SameSite="None; Secure"
     src="https://static.landbot.io/landbot-widget/landbot-widget-1.0.0.js">

@@ -13,11 +13,11 @@
 </head>
 
 <body id="body">
-<?php $this->load->view('initial/nav');?>
+
 
 <!-- Page Content -->
 <div class="container">
-    <h1 class="title-self">AMID - Formulario de inicio se sesión</h1>
+  
     <div class="row">
       
       <div class="col-lg-12">

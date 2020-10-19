@@ -17,8 +17,19 @@
         }
     ?>
 </ul>
-    <h4>Avance de la metodología</h4>
+    <h4 class="style_avance">Avance de la metodología</h4>
 </div>
 <?php 
     $this->load->view('initial/chatbot');
 ?>
+
+<style>
+
+.style_avance{
+    font-size: 1.2em;
+    
+    font-family: 'Anton', sans-serif;
+
+}
+
+</style>

@@ -64,13 +64,13 @@ function iniciarCanvas() {
             {
                 nombre: 'frase1',
                 src: '../../public/assets/modulos/mod1/img/5.png',
-                largo: 256,
-                alto: 50,
+                largo: 318,
+                alto: 52,
                 img: null,
                 posX: 0,
                 posY: 450,
                 tipo: 'S',
-                valor: null
+                valor: null 
             },
             {
                 nombre: 'frase2',
@@ -97,8 +97,8 @@ function iniciarCanvas() {
             {
                 nombre: 'frase4',
                 src: '../../public/assets/modulos/mod1/img/4n.png',
-                largo: 200,
-                alto: 28,
+                largo: 256,
+                alto: 50,
                 img: null,
                 posX: 523,
                 posY: 480,
@@ -108,7 +108,7 @@ function iniciarCanvas() {
             {
                 nombre: 'frase5',
                 src: '../../public/assets/modulos/mod1/img/5.png',
-                largo: 310,
+                largo: 318,
                 alto: 52,
                 img: null,
                 posX: 0,
@@ -119,7 +119,7 @@ function iniciarCanvas() {
             {
                 nombre: 'frase6',
                 src: '../../public/assets/modulos/mod1/img/6n.png',
-                largo: 287,
+                largo: 318,
                 alto: 52,
                 img: null,
                 posX: 315,
@@ -130,8 +130,8 @@ function iniciarCanvas() {
             {
                 nombre: 'frase7',
                 src: '../../public/assets/modulos/mod1/img/7.png',
-                largo: 289,
-                alto: 51,
+                largo: 318,
+                alto: 52,
                 img: null,
                 posX: 0,
                 posY: 615,
@@ -141,7 +141,7 @@ function iniciarCanvas() {
             {
                 nombre: 'frase8',
                 src: '../../public/assets/modulos/mod1/img/7n.png',
-                largo: 290,
+                largo: 318,
                 alto: 52,
                 img: null,
                 posX: 292,
@@ -152,8 +152,8 @@ function iniciarCanvas() {
             {
                 nombre: 'frase9',
                 src: '../../public/assets/modulos/mod1/img/8.png',
-                largo: 289,
-                alto: 28,
+                largo: 256,
+                alto: 70,
                 img: null,
                 posX: 470,
                 posY: 510,
@@ -163,8 +163,8 @@ function iniciarCanvas() {
             {
                 nombre: 'frase10',
                 src: '../../public/assets/modulos/mod1/img/9n.png',
-                largo: 290,
-                alto: 53,
+                largo: 318,
+                alto: 52,
                 img: null,
                 posX: 292,
                 posY: 670,
@@ -185,7 +185,7 @@ function iniciarCanvas() {
             {
                 nombre: 'frase12',
                 src: '../../public/assets/modulos/mod1/img/11n.png',
-                largo: 250,
+                largo: 318,
                 alto: 52,
                 img: null,
                 posX: 0,
@@ -196,8 +196,8 @@ function iniciarCanvas() {
             {
                 nombre: 'frase13',
                 src: '../../public/assets/modulos/mod1/img/12.png',
-                largo: 263,
-                alto: 68,
+                largo: 318,
+                alto: 52,
                 img: null,
                 posX: 0,
                 posY: 810,
@@ -207,8 +207,8 @@ function iniciarCanvas() {
             {
                 nombre: 'frase14',
                 src: '../../public/assets/modulos/mod1/img/13n.png',
-                largo: 211,
-                alto: 31,
+                largo: 256,
+                alto: 50,
                 img: null,
                 posX: 520,
                 posY: 448,
@@ -218,8 +218,8 @@ function iniciarCanvas() {
             {
                 nombre: 'frase15',
                 src: '../../public/assets/modulos/mod1/img/14.png',
-                largo: 205,
-                alto: 52,
+                largo: 256,
+                alto: 50,
                 img: null,
                 posX: 260,
                 posY: 505,
@@ -229,7 +229,7 @@ function iniciarCanvas() {
             {
                 nombre: 'frase16',
                 src: '../../public/assets/modulos/mod1/img/15n.png',
-                largo: 270,
+                largo: 313,
                 alto: 78,
                 img: null,
                 posX: 317,

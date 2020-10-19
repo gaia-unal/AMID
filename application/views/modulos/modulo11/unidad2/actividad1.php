@@ -2,61 +2,134 @@
 <html lang="es">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="">
-	<meta name="author" content="">
-	
-	<title>AMID</title>
-  
-  <?php $this->load->view('initial/linkGenerico');?>
-  <link href="<?php echo base_url();?>public/assets/modulos/mod1/css/partes.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>AMID</title>
+
+    <?php $this->load->view('initial/linkGenerico');?>
+	<link href="<?php echo base_url();?>public/assets/modulos/mod1/css/partes.css" rel="stylesheet">
 
 </head>
 
 <body>
-  <?php $this->load->view('initial/nav');?>
+    <link href="<?php echo base_url();?>public/assets/css/style.css" rel="stylesheet">
+    <?php $this->load->view('initial/nav');?>
 
-  <!-- Page Content -->
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-3">
-				<h1 class="my-4">Módulos AMID</h1>
-				<div class="list-group">
-				<a href="<?php echo base_url();?>modulo1" class="list-group-item">Módulo 1</a>
-				<a href="<?php echo base_url();?>modulo2" class="list-group-item">Módulo 2</a>
-				<a href="<?php echo base_url();?>modulo3" class="list-group-item">Módulo 3</a>
-				<a href="<?php echo base_url();?>modulo4" class="list-group-item">Módulo 4</a>
-				<a href="<?php echo base_url();?>modulo5" class="list-group-item">Módulo 5</a>
-				<a href="<?php echo base_url();?>modulo6" class="list-group-item">Módulo 6</a>
-				<a href="<?php echo base_url();?>modulo7" class="list-group-item">Módulo 7</a>
-				<a href="<?php echo base_url();?>modulo8" class="list-group-item">Módulo 8</a>
-				<a href="<?php echo base_url();?>modulo9" class="list-group-item">Módulo 9</a>
-				<a href="<?php echo base_url();?>modulo10" class="list-group-item">Módulo 10</a>
-					<a href="<?php echo base_url();?>modulo11" class="list-group-item active">Módulo 11</a>
-					<ul class="list-group-item">
-						<a href="<?php echo base_url();?>modulo11/unidad1" class="list-group-item">Unidad 1</a>
-						<a href="<?php echo base_url();?>modulo11/unidad2" class="list-group-item active">Unidad 2</a>
-						<ul class="list-group-item">
-							<a href="<?php echo base_url();?>modulo11/unidad2/temas" class="list-group-item">Temas</a>
-							<a href="#" class="list-group-item active">Actividad</a>
-						</ul>
-						<a href="#" onclick="inactivo(2)" class="list-group-item">Unidad 3</a>
-						<a href="#" onclick="inactivo(2)" class="list-group-item">Unidad 4</a>
-					</ul>
-					<a href="<?php echo base_url();?>modulo12" class="list-group-item">Módulo 12</a>
-				</div>
-				<br />
-				<br />
-			</div>
-			<!-- /.col-lg-3 -->
-			<div class="col-lg-9">
-				<h1><br>Unidad 2: Dimensiones Socio-Culturales y Políticas de los Medios Globalizados</h1>
-				<div class="card mt-4">
-					<div class="card-body">
-					<div id="parte1" style="display:block;">
+
+
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="bg-light border-right" id="sidebar-wrapper">
+
+            <div class="list-group list-group-flush">
+
+                <a href="<?php echo base_url();?>modulo1" class="list-group-item list-group-item-action bg-light"><i
+                        class="dropdown-menu"></i>Módulo 1<span class="arrow"></span></a>
+
+
+                <a href="<?php echo base_url();?>modulo2" class="list-group-item list-group-item-action bg-light">
+                    Módulo 2</a>
+
+                <a href="<?php echo base_url();?>modulo3" class="list-group-item list-group-item-action bg-light">
+                    Módulo 3</a>
+
+                <a href="<?php echo base_url();?>modulo4" class="list-group-item list-group-item-action bg-light">
+                    Módulo 4</a>
+
+                <a href="<?php echo base_url();?>modulo5" class="list-group-item list-group-item-action bg-light">
+                    Módulo 5</a>
+
+                <a href="<?php echo base_url();?>modulo6" class="list-group-item list-group-item-action bg-light">
+                    Módulo 6</a>
+
+                <a href="<?php echo base_url();?>modulo7" class="list-group-item list-group-item-action bg-light">
+                    Módulo 7</a>
+
+                <a href="<?php echo base_url();?>modulo8" class="list-group-item list-group-item-action bg-light">
+                    Módulo 8</a>
+                <a href="<?php echo base_url();?>modulo9" class="list-group-item list-group-item-action bg-light">
+                    Módulo 9</a>
+                <a href="<?php echo base_url();?>modulo10" class="list-group-item list-group-item-action bg-light">
+                    Módulo 10</a>
+                <a href="<?php echo base_url();?>modulo11" class="list-group-item list-group-item-action bg-light">
+                    Módulo 11</a>
+
+                <ul class="list-group-item">
+
+				<a href="<?php echo base_url();?>modulo11/unidad1"
+                            class="list-group-item list-group-item-action bg-light">Unidad 1</a>
+
+                    <div class="btn-group dropright">
+                        
+
+							<a href="<?php echo base_url();?>modulo11/unidad2"  class="list-group-item inactive">Unidad 2</a>
+
+                        <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+
+                        </button>
+                        <div class="dropdown-menu">
+                            <ul class="list-group-item">
+                                <a href="<?php echo base_url();?>modulo11/unidad2/temas"
+                                    class="list-group-item">Temas</a>
+                                <a href="<?php echo base_url();?>modulo11/unidad2/actividad1"
+                                    class="list-group-item">Actividades</a>
+                               
+                            </ul>
+                        </div>
+                    </div>
+
+                    
+                    <a href="#" onclick="inactivo(2)" class="list-group-item inactive">Unidad 3</a>
+                    <a href="#" onclick="inactivo(2)" class="list-group-item inactive">Unidad 4</a>
+                </ul>
+
+
+                <a href="<?php echo base_url();?>modulo12" class="list-group-item list-group-item-action bg-light">
+                    Módulo 12</a>
+
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom d-lg-none">
+                <button class="btn " id="menu-toggle"><i class="fas fa-align-justify"></i></button>
+
+            </nav>
+
+
+            <!--breadcrumbs-->
+
+            <nav class="bread-style" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="<?php echo base_url();?>inicio/main">Inicio</a></li>
+                    <li class="breadcrumb-item"><a href="<?php echo base_url();?>modulo11">Módulo 11</a></li>
+					<li class="breadcrumb-item"><a href="<?php echo base_url();?>modulo11/unidad2">Unidad 2</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Actividad 1</li>
+                </ol>
+            </nav>
+
+            <!--fin breadcrumbs-->
+
+            <div class="contenedor">
+
+                <!-- contenido -->
+                <center>
+                    <h1 class="first_title"><br>Unidad 2: Dimensiones Socio-Culturales y Políticas de los Medios Globalizados</h1>
+
+                </center><br>
+                <div class="card mt-4">
+                    <div class="card-body">
+                        <div class="contenido">
+						<div id="parte1" style="display:block;">
 							<p class="card-text">
-							<h4>Cultura</h4>
+							<h4 class="subtitle">Cultura</h4>
 							La cultura según UNESCO « ...la cultura puede considerarse actualmente como el
 							conjunto de los rasgos distintivos, espirituales y materiales, intelectuales y afectivos
 							que caracterizan a una sociedad o un grupo social. Ella engloba, además de las artes y
@@ -74,7 +147,7 @@
 						</div>
 						<div id="parte2" style="display:none;">
 							<p class="card-text">
-							<h4>Influencia</h4>
+							<h4 class="subtitle">Influencia</h4>
 							Si dejamos de lado algunas definiciones y conceptos (...) sobre la cultura, podemos
 							decir que no hay nada en la actividad humana que no tenga una connotación cultural,
 							incluso la producción de bienes destinados a la satisfacción de las necesidades
@@ -91,7 +164,7 @@
 						</div>
 						<div id="parte3" style="display:none;">
 							<p class="card-text">
-							<h4>Retroalimentación</h4>
+							<h4 class="subtitle">Retroalimentación</h4>
 							Le recomendamos realizar las siguientes actividades para que pueda reforzar los conceptos
 							aprendidos.
 							<ul>
@@ -121,14 +194,14 @@
 						</div>
 						<div id="parte4" style="display:none;">
 							<p class="card-text">
-							<h4>Estudio de Caso</h4>
+							<h4 class="subtitle">Estudio de Caso</h4>
 							Visite un sito en la red, u otro sitio en línea como un blog, una red social o un video de
 							una organización internacional de defensoría (por Ej. WWF, Plan Internacional, etc.) que
 							haya subido a la red un asunto dedicado a los temas trans-fronterizos, como el medio
 							ambiente o el desarrollo sostenible, los derechos humanos, etc. Examine cómo se crea el
 							diálogo y la construcción de consenso entre los ciudadanos del mundo y cómo se promueve a
 							través de características interactivas. <br>
-							<h4>Recomendación</h4>
+							<h4 class="subtitle">Recomendación</h4>
 							Le recomendamos entrevistar a miembros de una comunidad de migrantes acerca de los
 							siguientes temas:
 							<ol>
@@ -155,30 +228,42 @@
 								</a>
 							</div>
 						</center>
-					</div>
-				</div>
-				<!-- /.card -->
-				<br>
-                <center>
-                    <a href="<?php echo base_url();?>modulo11/unidad2/temas" class="btn btn-success">Anterior</a>
-                    <a href="<?php echo base_url();?>modulo11/unidad2/actividad2" class="btn btn-success">Siguiente</a>
-                </center>
-				<?php $this->load->view('initial/paginacion');?>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-<br />
-<p>Obra publicada con <a href="https://creativecommons.org/licenses/by-sa/4.0/"> Licencia Creative Commons
-	Reconocimiento Compartir igual 4.0</a></p>
-<br><br>
-<!-- /.card -->
-</div>
-<!-- /.col-lg-9 -->
-</div>
-</div>
-<!-- /.container -->
+            <br>
+            <center>
+                <a href="<?php echo base_url();?>modulo11/unidad2/temas" class="btn btn_navegacion">Anterior</a>
+                <a href="<?php echo base_url();?>modulo11/unidad2/actividad2" class="btn btn_navegacion">Siguiente</a>
+            </center>
+            <?php $this->load->view('initial/paginacion');?>
 
-<?php $this->load->view('initial/footer');?>
-<?php $this->load->view('initial/scriptGenerico');?>
-<script src="<?php echo base_url();?>public/assets/modulos/mod11/js/arrows.js"></script>
+
+            <p class="final_contenido">Obra publicada con <a href="https://creativecommons.org/licenses/by-sa/4.0/">
+                    Licencia Creative
+                    Commons
+                    Reconocimiento Compartir igual 4.0</a></p>
+            <br>
+            <!-- /#page-content-wrapper -->
+        </div>
+
+    </div>
+
+
+    <?php $this->load->view('initial/footer');?>
+    <?php $this->load->view('initial/scriptGenerico');?>
+	<script src="<?php echo base_url();?>public/assets/modulos/mod11/js/arrows.js"></script>
+
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+
 </body>
 
 </html>

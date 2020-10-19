@@ -2,65 +2,120 @@
 <html lang="es">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <title>AMID</title>
-  
-  <?php $this->load->view('initial/linkGenerico');?>
-
-
+    <title>AMID</title>
+    <?php $this->load->view('initial/linkGenerico');?>
 </head>
 
 <body>
-  <?php $this->load->view('initial/nav');?>
+    <?php $this->load->view('initial/nav');?>
 
-  <!-- Page Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3">
-                <h1 class="my-4">Módulos AMID</h1>
-                <div class="list-group">
-                    <a href="<?php echo base_url();?>modulo1" class="list-group-item active"><i class="dropdown-menu"></i>Módulo 1<span
-                        class="arrow"></span></a>
-                    <ul class="list-group-item">
-                        <a href="<?php echo base_url();?>modulo1/unidad1" class="list-group-item">Unidad 1</a>
-                        <a href="<?php echo base_url();?>modulo1/unidad2" class="list-group-item active">Unidad 2</a>
-                        <ul class="list-group-item">
-                        <a href="<?php echo base_url();?>modulo1/unidad2/temas" class="list-group-item">Temas</a>
-                        <a href="<?php echo base_url();?>modulo1/unidad2/actividad1" class="list-group-item active">Actividades</a>
-                        <a href="#" onclick="inactivoEva()" class="list-group-item">Evaluación</a>
-                        </ul>
-                        <a href="#" onclick="inactivo(2)" class="list-group-item inactive">Unidad 3</a>
-                        <a href="#" onclick="inactivo(2)" class="list-group-item inactive">Unidad 4</a>
-                    </ul>
-                    <a href="<?php echo base_url();?>modulo2" class="list-group-item">Módulo 2</a>
-                    <a href="<?php echo base_url();?>modulo3" class="list-group-item">Módulo 3</a>
-                    <a href="<?php echo base_url();?>modulo4" class="list-group-item">Módulo 4</a>
-                    <a href="<?php echo base_url();?>modulo5" class="list-group-item">Módulo 5</a>
-                    <a href="<?php echo base_url();?>modulo6" class="list-group-item">Módulo 6</a>
-                    <a href="<?php echo base_url();?>modulo7" class="list-group-item">Módulo 7</a>
-                    <a href="<?php echo base_url();?>modulo8" class="list-group-item">Módulo 8</a>
-                    <a href="<?php echo base_url();?>modulo9" class="list-group-item">Módulo 9</a>
-                    <a href="<?php echo base_url();?>modulo10" class="list-group-item">Módulo 10</a>
-                    <a href="<?php echo base_url();?>modulo11" class="list-group-item">Módulo 11</a>
-                    <a href="<?php echo base_url();?>modulo12" class="list-group-item">Módulo 12</a>
-                </div>
+
+
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="bg-light border-right" id="sidebar-wrapper">
+
+            <div class="list-group list-group-flush">
+
+                <a href="<?php echo base_url();?>modulo1" class="list-group-item list-group-item-action bg-light"><i
+                        class="dropdown-menu"></i>Módulo 1<span class="arrow"></span></a>
+                <ul class="list-group-item">
+                    <a href="<?php echo base_url();?>modulo1/unidad1"
+                        class="list-group-item list-group-item-action bg-light">Unidad 1</a>
+
+                    <div class="btn-group dropright">
+                        <a href="<?php echo base_url();?>modulo1/unidad2" class="list-group-item list-group-item-action bg-light">Unidad 2</a>
+                        <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+
+                        </button>
+                        <div class="dropdown-menu">
+                            <ul class="list-group-item">
+                                <a href="<?php echo base_url();?>modulo1/unidad2/temas"
+                                    class="list-group-item">Temas</a>
+                                <a href="<?php echo base_url();?>modulo1/unidad2/actividad1"
+                                    class="list-group-item">Actividades</a>
+                                <a href="#" onclick="inactivoEva()" class="list-group-item">Evaluación</a>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+                    <a href="#" onclick="inactivo(2)" class="list-group-item inactive">Unidad 3</a>
+                    <a href="#" onclick="inactivo(2)" class="list-group-item inactive">Unidad 4</a>
+                </ul>
+
+
+                <a href="<?php echo base_url();?>modulo2" class="list-group-item list-group-item-action bg-light">
+                    Módulo 2</a>
+                <a href="<?php echo base_url();?>modulo3" class="list-group-item list-group-item-action bg-light">
+                    Módulo 3</a>
+                <a href="<?php echo base_url();?>modulo4" class="list-group-item list-group-item-action bg-light">
+                    Módulo 4</a>
+                <a href="<?php echo base_url();?>modulo5" class="list-group-item list-group-item-action bg-light">
+                    Módulo 5</a>
+                <a href="<?php echo base_url();?>modulo6" class="list-group-item list-group-item-action bg-light">
+                    Módulo 6</a>
+                <a href="<?php echo base_url();?>modulo7" class="list-group-item list-group-item-action bg-light">
+                    Módulo 7</a>
+                <a href="<?php echo base_url();?>modulo8" class="list-group-item list-group-item-action bg-light">
+                    Módulo 8</a>
+                <a href="<?php echo base_url();?>modulo9" class="list-group-item list-group-item-action bg-light">
+                    Módulo 9</a>
+                <a href="<?php echo base_url();?>modulo10" class="list-group-item list-group-item-action bg-light">
+                    Módulo 10</a>
+                <a href="<?php echo base_url();?>modulo11" class="list-group-item list-group-item-action bg-light">
+                    Módulo 11</a>
+                <a href="<?php echo base_url();?>modulo12" class="list-group-item list-group-item-action bg-light">
+                    Módulo 12</a>
+
             </div>
-            <!-- /.col-lg-3 -->
-            <div class="col-lg-9">
-                <h1><br>Unidad 2: AMI y la participación cívica</h1>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom d-lg-none">
+            <button class="btn " id="menu-toggle"><i class="fas fa-align-justify"></i></button>
+
+            </nav>
+
+
+            <!--breadcrumbs-->
+
+            <nav class="bread-style" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="<?php echo base_url();?>inicio/main">Inicio</a></li>
+                    <li class="breadcrumb-item"><a href="<?php echo base_url();?>modulo1">Módulo 1</a></li>
+                    <li class="breadcrumb-item"><a href="<?php echo base_url();?>modulo1/unidad2">Unidad 2</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Actividad 4</li>
+                </ol>
+            </nav>
+
+            <!--fin breadcrumbs-->
+
+            <div class="contenedor">
+
+                <!-- contenido -->
+                <center>
+                    <h1 class="first_title"><br>Unidad 2: AMI y la participación cívica</h1>
+                </center>
+                
                 <div class="card mt-4">
-                    <div class="card-body">
-                        <center>
-                            <em>
-                                <h4>Libertad de expresión, independencia editorial, pluralidad y diversidad</h4>
-                            </em>
-                        </center>
-                        <p class="card-text">
-                            <em>
+                    <div class="card-body"><br>
+                    <center> <h4 class="subtitle">Libertad de expresión, independencia editorial, pluralidad y diversidad</h4><center>
+                        <div class="contenido">
+
+                            <p class="card-text">
+                            
+                            <p class="parf">
                                 La libertad de información y expresión apuntalan a la alfabetización mediática e
                                 informacional. En este contexto, el uso del término relacionado con libertad de
                                 información se refiere al acceso a la información pública. “La información es clave para
@@ -71,9 +126,11 @@
                                 para evaluar decisiones. Un medio ético y pluralista puede garantizar la transparencia,
                                 la rendición de cuentas y el estado de derecho” (Paquete de Herramientas para la
                                 Libertad de Expresión de UNESCO) Los medios independientes obtienen su poder al informar
-                                con responsabilidad a las comunidades que sirven. <br>
-                                <ul>
-                                    <li><strong>La libertad de expresión y la prensa</strong></li>
+                                con responsabilidad a las comunidades que sirven. <br><br> </p>
+                              
+                                <h3 class="subt">La libertad de expresión y la prensa</h3>
+                                    <p class="parf">
+                                    
                                     La libertad de expresión es la libertad de expresar e intercambiar visones y
                                     opiniones sin miedo a amenazas o acciones punitivas. La libertad de expresión es un
                                     derecho fundamental de los seres humanos. La libertad de expresión protege no sólo a
@@ -89,8 +146,10 @@
                                     de expresión se permiten sólo cuando dichas restricciones son necesarias para
                                     proteger la libertad de otros. Limitaciones, tales como las leyes que impiden el
                                     “discurso de odio” deberían ser definidas con precisión para evitar su mal
-                                    uso.<br><br>
-                                    <li><strong>El pluralismo en los medios</strong></li>
+                                    uso.<br><br></p>
+
+                                    <h3 class="subt">El pluralismo en los medios</h3>
+                                    <p class="parf">
                                     Un sector de medios pluralistas – uno que atraviesa plataformas mediáticas
                                     (imprenta, transmisión, en línea) local (nacional, provincial y comunitario) y
                                     perspectivas políticas – ayuda a las sociedades a reflexionar de una mejor manera
@@ -102,40 +161,60 @@
                                     bienestar de las personas. Mientras los periódicos y transmisiones que son de
                                     distintos propietarios generalmente critican el contenido de otros, la concentración
                                     de los medios bajo una propiedad común está lejos de ofrecer una crítica mutua y
-                                    podría terminar en medios promocionales o de defensoría. <br><br>
-                                    <li><strong>Independencia editorial</strong></li>
+                                    podría terminar en medios promocionales o de defensoría. <br><br></p>
+
+                                    <h3 class="subt">Independencia editorial</h3>
+                                    <p class="parf">
+                                    
                                     La independencia editorial se refiere a la libertad profesional que se da a los
                                     editores para que realicen decisiones editoriales sin interferencia de los
                                     propietarios de los medios o cualquier otro estado o actores no estatales. La
                                     independencia editorial se prueba, por ejemplo, cuando una organización de medios
-                                    saca artículos que pueden ser impopulares para sus propietarios o anunciantes.
-                                </ul>
-                            </em>
-                        </p>
+                                    saca artículos que pueden ser impopulares para sus propietarios o anunciantes.</p>
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <!-- /.card -->
-                <br>
-                <center>
-                    <a href="<?php echo base_url();?>modulo1/unidad2/actividad3" class="btn btn-success">Anterior</a>
-                    <a href="<?php echo base_url();?>modulo1/unidad2/actividad5" class="btn btn-success">Siguiente</a>
-                </center>
-        <?php $this->load->view('initial/paginacion');?>
+            </div>
 
-        <br />
-        <p>Obra publicada con <a href="https://creativecommons.org/licenses/by-sa/4.0/"> Licencia Creative Commons
-            Reconocimiento Compartir igual 4.0</a></p>
-        <br><br>
-        <!-- /.card -->
-      </div>
-      <!-- /.col-lg-9 -->
+            <br>
+            <center>
+                <a href="<?php echo base_url();?>modulo1/unidad2/actividad3" class="btn btn_navegacion">Anterior</a>
+                <a href="<?php echo base_url();?>modulo1/unidad2/actividad5" class="btn btn_navegacion">Siguiente</a>
+                
+            </center>
+            
+            <?php $this->load->view('initial/paginacion');?>
+
+
+            <p class="final_contenido">Obra publicada con <a href="https://creativecommons.org/licenses/by-sa/4.0/">
+                    Licencia Creative
+                    Commons
+                    Reconocimiento Compartir igual 4.0</a></p>
+            <br>
+            <!-- /#page-content-wrapper -->
+        </div>
+
     </div>
-  </div>
-  <!-- /.container -->
 
-  <?php $this->load->view('initial/footer');?>
-  <?php $this->load->view('initial/scriptGenerico');?>
-  
+
+    <?php $this->load->view('initial/footer');?>
+    <?php $this->load->view('initial/scriptGenerico');?>
+    
+
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+
 </body>
 
 </html>
+
+<style>
+
+
+</style>

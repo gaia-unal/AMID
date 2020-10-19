@@ -70,41 +70,41 @@ function iniciarCanvas() {
             {
                 nombre: 'concepto3',
                 src: '../../public/assets/modulos/mod1/img/3p.png',
-                largo: 314,
-                alto: 80,
+                largo: 256,
+                alto: 50,
                 img: null,
                 posX: 0,
-                posY: 510,
+                posY: 530,
                 tipo: 'C',
-                valor: null
+                valor: null 
             },
             {
                 nombre: 'concepto1',
                 src: '../../public/assets/modulos/mod1/img/1p.png',
-                largo: 305,
-                alto: 74,
+                largo: 256,
+                alto: 50,
                 img: null,
                 posX: 316,
-                posY: 513,
+                posY: 530,
                 tipo: 'A',
                 valor: null
             },
             {
                 nombre: 'concepto2',
                 src: '../../public/assets/modulos/mod1/img/2p.png',
-                largo: 309,
-                alto: 78,
+                largo: 256,
+                alto: 50,
                 img: null,
                 posX: 0,
                 posY: 590,
                 tipo: 'B',
-                valor: null
+                valor: null 
             },
             {
                 nombre: 'concepto4',
                 src: '../../public/assets/modulos/mod1/img/4p.png',
-                largo: 314,
-                alto: 75,
+                largo: 256,
+                alto: 50,
                 img: null,
                 posX: 314,
                 posY: 592,

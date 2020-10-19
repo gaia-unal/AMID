@@ -55,15 +55,6 @@ body {
   height: 10%;
 }*/
 
-.logo1{
-  /* width: 8em; */
-  /* border: #adadad 1px solid; */
-  margin:0px 15px 10px 15px;
-  border-radius: 10px;
-  padding: 5px;
-  width:auto;
-  height: 100px;
-}
 
 .logoAMID{
   
@@ -75,11 +66,7 @@ body {
   height: 150px;
 }
 
-.logos:hover{
-  /* opacity: 0.8; */
-  /* border: #adadad 0.5px solid; */
-  background-color: rgb(42, 42, 42);
-}
+
 
 .btn-self{
   background-color: rgb(31, 78, 121);
@@ -169,7 +156,7 @@ body {
   color: white;
 }
 .modal-head{
-  background-color: rgb(31, 78, 121);
+  background-color:#105963;
   border-radius: 10px 10px 0px 0px;
   padding: 10px;
   font-weight: bold;
@@ -177,3 +164,4 @@ body {
 }
 .space{margin-right: 20px;}
 .mb-10{margin-bottom: 10px;}
+
