@@ -36,7 +36,7 @@
                       <span class="input-group-text" title="Your username is your email"><i class="fas fa-user"></i></span>
                     </div>
                     <label for="email_log" class="sr-only">User</label>
-                    <input type="email" name="email" id="email_log" class="form-control" value="" placeholder="Username" required>
+                    <input type="email" name="email" id="email_log" class="form-control" value="" placeholder="Correo electrónico" required>
                     
                   </div>
                   <div class="input-group mb-2">
@@ -44,7 +44,7 @@
                       <span class="input-group-text"><i class="fas fa-key"></i></span>
                     </div>
                     <label for="pass_log" class="sr-only">Pass</label>
-                    <input type="password" name="pass" id="pass_log" class="form-control input_pass" value="" placeholder="Password" required>
+                    <input type="password" name="pass" id="pass_log" class="form-control input_pass" value="" placeholder="Contraseña" required>
                   </div>
                   <?php
                   if(isset($badUserPass)){
