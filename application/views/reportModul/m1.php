@@ -22,7 +22,8 @@ if(isset($actividad)){
         if (in_array($mod, $mod1[0])) {
             if (in_array($mod, $mod1[1])) { $modulo1=false;
                 if($uno){ $uno=false;?>
-                    <button type="button" id="Bm1u1" class="m-all-u m1u" onclick="expandir('Bm1u1','m1u1Content',1)"><b> <i class="fas fa-chevron-circle-right" title="Expandir"></i> Unidad 1</b> </button> <br> 
+                    <button type="button" id="Bm1u1" class="m-all-u m1u" onclick="expandir('Bm1u1','m1u1Content',1)"><b> 
+                        <i class="fas fa-chevron-circle-right" title="Expandir"></i> Unidad 1</b> </button> <br> 
                     <div class="show" id="m1u1Content" style="visibility: hidden;opacity: 0;height: 0px;transition: all 0.5s;">
                 <?php }
 
