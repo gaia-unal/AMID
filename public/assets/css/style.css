@@ -831,13 +831,29 @@ height: 100%;
     padding-top: 2px;
     padding-bottom: 0;
     height: 30px;
-    width: 80px;
+    width: 150px;
+    font-size: 1em;
+    margin-top: 25px;
+    margin-right: 50px;
+}
+
+.btn-inicio:hover{
+    color: #FFFFFF;
+}
+
+.btn-principal {
+    background-color: #627D05;
+    color: #FFFFFF;
+    padding-top: 2px;
+    padding-bottom: 0;
+    height: 30px;
+    width: 150px;
     font-size: 1em;
     margin-top: 15px;
     margin-right: 25px;
 }
 
-.btn-inicio:hover{
+.btn-principal:hover{
     color: #FFFFFF;
 }
 
@@ -941,3 +957,5 @@ h3.title_welcome {
     margin-left:50px;
     margin-right:50px;
 }
+
+

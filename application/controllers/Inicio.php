@@ -122,6 +122,9 @@ class Inicio extends CI_Controller {
 		}
 	}
 
+	public function principal(){
+		$this->load->view('principal');
+	}
 	public function login(){
 
 		$data= array(
@@ -180,7 +183,7 @@ class Inicio extends CI_Controller {
 		
 
 		$data['instituciones']= $this->institucionModel->getAll();
-		$this->load->view('login',$data);
+		$this->load->view('principal');
 		
 	}
 

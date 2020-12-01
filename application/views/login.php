@@ -25,7 +25,10 @@
         <div class="card mt-4">
           
           <div class="card-body">
-            <center><img class="logoAMID" src="<?php echo base_url();?>public/assets/img/Logo_AMID.png" alt="Logo AMID"></center>
+
+            <center><a href="<?php echo base_url('inicio/principal');?>">
+            <img class="logoAMID" src="<?php echo base_url();?>public/assets/img/Logo_AMID.png" alt="Logo AMID">
+            </a></center>
             <div class="user_card">
               
               <div class="d-flex justify-content-center form_container">

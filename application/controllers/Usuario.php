@@ -83,7 +83,7 @@ class Usuario extends CI_Controller {
 		$this->session->unset_userdata('idAct');
 
 		$data['instituciones']= $this->institucionModel->getAll();
-		$this->load->view('login',$data);
+		$this->load->view('principal',$data);
 		
 	}
 
