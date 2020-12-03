@@ -707,7 +707,7 @@ var vennOptions = {
      * @ignore-option
      * @private
      */
-    inactiveOtherPoints: true,
+   OtherPoints: true,
     marker: false,
     opacity: 0.75,
     showInLegend: false,

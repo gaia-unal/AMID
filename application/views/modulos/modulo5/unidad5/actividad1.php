@@ -55,7 +55,7 @@
 
                     <div class="btn-group dropright">
 
-                         <a href="<?php echo base_url();?>modulo5/unidad5" class="list-group-item inactive">Unidad 5</a>
+                         <a href="<?php echo base_url();?>modulo5/unidad5" class="list-group-item">Unidad 5</a>
 
                         <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">

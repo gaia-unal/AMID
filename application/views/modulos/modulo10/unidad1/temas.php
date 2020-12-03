@@ -72,7 +72,7 @@
                                     class="list-group-item">Temas</a>
                                 <a href="<?php echo base_url();?>modulo10/unidad1/actividad1"
                                     class="list-group-item">Actividades</a>
-                                <a href="#" onclick="inactivoEva()" class="list-group-item">Evaluación</a>
+                                <a href="#" class="list-group-item">Evaluación</a>
                             </ul>
                         </div>
                     </div>

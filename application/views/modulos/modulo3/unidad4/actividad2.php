@@ -36,7 +36,7 @@
                             </ul>
                         </div>
                     </div>
-                    <a href="<?php echo base_url();?>modulo3/unidad5" class="list-group-item inactive">Unidad 5</a>
+                    <a href="<?php echo base_url();?>modulo3/unidad5" class="list-group-item">Unidad 5</a>
                 </ul>
                 <a href="<?php echo base_url();?>modulo4" class="list-group-item list-group-item-action bg-light">Módulo 4</a>
                 <a href="<?php echo base_url();?>modulo5" class="list-group-item list-group-item-action bg-light">Módulo 5</a>

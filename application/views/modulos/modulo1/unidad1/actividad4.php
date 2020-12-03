@@ -31,11 +31,11 @@
                         </div>
                     </div>
                     <a href="<?php echo base_url();?>modulo1/unidad2"
-                        class="list-group-item list-group-item-action bg-light inactive">Unidad 2</a>
+                        class="list-group-item list-group-item-action bg-light">Unidad 2</a>
                     <a href="<?php echo base_url();?>modulo1/unidad3"
-                        class="list-group-item list-group-item-action bg-light inactive">Unidad 3</a>
+                        class="list-group-item list-group-item-action bg-light">Unidad 3</a>
                     <a href="<?php echo base_url();?>modulo1/unidad4"
-                        class="list-group-item list-group-item-action bg-light inactive">Unidad 4</a>
+                        class="list-group-item list-group-item-action bg-light">Unidad 4</a>
                 </ul>
                 <a href="<?php echo base_url();?>modulo2" class="list-group-item list-group-item-action bg-light">Módulo 2</a>
                 <a href="<?php echo base_url();?>modulo3" class="list-group-item list-group-item-action bg-light">Módulo 3</a>

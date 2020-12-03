@@ -47,11 +47,11 @@
                     <a href="<?php echo base_url();?>modulo6/unidad1"
                         class="list-group-item list-group-item-action bg-light">Unidad 1</a>
 
-                    <a href="<?php echo base_url();?>modulo6/unidad2" class="list-group-item inactive">Unidad 2</a>
+                    <a href="<?php echo base_url();?>modulo6/unidad2" class="list-group-item">Unidad 2</a>
 
                     <div class="btn-group dropright">
 
-                        <a href="<?php echo base_url();?>modulo6/unidad3"  class="list-group-item inactive">Unidad 3</a>
+                        <a href="<?php echo base_url();?>modulo6/unidad3"  class="list-group-item">Unidad 3</a>
 
                         <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
