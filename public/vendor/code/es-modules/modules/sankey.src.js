@@ -209,7 +209,7 @@ seriesType('sankey', 'column',
      *
      * @private
      */
-    inactiveOtherPoints: true,
+   OtherPoints: true,
     /**
      * Set options on specific levels. Takes precedence over series options,
      * but not node and link options.
@@ -325,14 +325,14 @@ seriesType('sankey', 'column',
          *
          * @declare Highcharts.SeriesStatesInactiveOptionsObject
          */
-        inactive: {
+        inactive : {
             /**
              * Opacity for the links between nodes in the sankey diagram in
-             * inactive mode.
+             * mode.
              */
             linkOpacity: 0.1,
             /**
-             * Opacity of inactive markers.
+             * Opacity of markers.
              *
              * @type      {number}
              * @apioption plotOptions.series.states.inactive.opacity

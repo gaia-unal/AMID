@@ -51,7 +51,7 @@
 
                     <div class="btn-group dropright">
 
-                        <a href="<?php echo base_url();?>modulo5/unidad3"  class="list-group-item inactive">Unidad 3</a>
+                        <a href="<?php echo base_url();?>modulo5/unidad3"  class="list-group-item">Unidad 3</a>
 
                         <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
@@ -59,17 +59,15 @@
                         </button>
                         <div class="dropdown-menu">
                             <ul class="list-group-item">
-                                <a href="<?php echo base_url();?>modulo5/unidad3/temas"
-                                    class="list-group-item">Temas</a>
-                                <a href="<?php echo base_url();?>modulo5/unidad3/actividad1"
-                                    class="list-group-item">Actividades</a>
+                                <a href="<?php echo base_url();?>modulo5/unidad3/contenidos"
+                                    class="list-group-item">Contenidos</a>
                                 <a href="<?php echo base_url();?>modulo5/unidad3/evaluacion" class="list-group-item">Evaluación</a>
                             </ul>
                         </div>
                     </div>
 
-                    <a href="#" onclick="inactivo(3)" class="list-group-item inactive">Unidad 4</a>
-                    <a href="#" onclick="inactivo(3)" class="list-group-item inactive">Unidad 5</a>
+                    <a href="#" class="list-group-item">Unidad 4</a>
+                    <a href="#" class="list-group-item">Unidad 5</a>
 
                 </ul>
 
@@ -177,7 +175,7 @@
 
             <br>
             <center>
-                <a href="<?php echo base_url();?>modulo5/unidad3/temas" class="btn btn_navegacion">Anterior</a>
+                <a href="<?php echo base_url();?>modulo5/unidad3/contenidos" class="btn btn_navegacion">Anterior</a>
                 <button id="btn-siguiente" class="btn btn_navegacion" name="submit" type="submit">Siguiente</button>
             </center>
             <?php echo form_close(); ?>

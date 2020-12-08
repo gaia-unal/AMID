@@ -111,31 +111,7 @@
                 <p>
                     Espero que sea de gran utilidad este contenido y muchos éxitos.
                 </p>
-               
-
-
-                <a href="https://www.youtube.com/watch?v=baJ4FDVgCbU">Introducción al programa AMI (Sugerido
-                    video)</a>
-                <ul>
-                    <li>Audiencia </li>
-                    <li>Características del programa</li>
-                    <li>Adaptación del programa</li>
-                    <li>Integración</li>
-                </ul>
-                <a href="https://www.youtube.com/watch?v=baJ4FDVgCbU">Presentación del Objeto Virtual (Sugerido
-                    video)</a>
-                <ul>
-                    <li>Texto y video de presentación </li>
-                    <li>Descripción del Objeto Virtual</li>
-                    <li>Vínculos a los módulos de Contenido</li>
-                </ul>
                 </div>
-                <center>
-                    <h3 class="final_title">Textos de Créditos y reconocimiento a las instituciones y entidades aportantes ||
-                        licencias || Otros
-                    </h3>
-                </center>
-
             </div>
 
             <center><a href="<?php echo base_url();?>modulo1" class="btn btn_navegacion">Siguiente</a></center>

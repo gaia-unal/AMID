@@ -6,7 +6,7 @@ function opc1() {
         progressSteps: ['1', '2', '3', '4']
     }).queue([
         {
-            text: 'La representación en los medios puede tomar muchas formas. Vivimos en una cultura llena de'+
+            html: 'Segun UNESCO[1]: <br> La representación en los medios puede tomar muchas formas. Vivimos en una cultura llena de'+
             'imágenes y diariamente estamos rodeados de representaciones mediáticas en los sitios de la'+
             'red, en la televisión, en las películas, en el reportaje de noticias y en los libros. Los'+
             'periodistas, autores, camarógrafos, anunciantes, publicistas y productores de películas'+

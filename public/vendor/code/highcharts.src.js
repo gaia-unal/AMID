@@ -12256,10 +12256,10 @@
                      */
                     activeColor: '#003399',
                     /**
-                     * The color of the inactive up or down arrow in the legend page
+                     * The color of the up or down arrow in the legend page
                      * navigation. .
                      *
-                     * @see In styled mode, the inactive arrow be styled with the
+                     * @see In styled mode, the arrow be styled with the
                      *      `.highcharts-legend-nav-inactive` class.
                      *
                      * @sample {highcharts} highcharts/legend/navigation/
@@ -12270,7 +12270,7 @@
                      * @type  {Highcharts.ColorString|Highcharts.GradientColorObject|Highcharts.PatternObject}
                      * @since 2.2.4
                      */
-                    inactiveColor: '#cccccc'
+                   Color: '#cccccc'
                 },
                 /**
                  * The inner padding of the legend box.
@@ -16234,7 +16234,7 @@
                 // Reset
                 axis.labelEdge.length = 0;
                 axis.overlap = false;
-                // Mark all elements inActive before we go over and mark the active ones
+                // Mark all elements before we go over and mark the active ones
                 [ticks, minorTicks, alternateBands].forEach(function (coll) {
                     objectEach(coll, function (tick) {
                         tick.isActive = false;
@@ -16302,7 +16302,7 @@
                         axis._addedPlotLB = true;
                     }
                 } // end if hasData
-                // Remove inactive ticks
+                // Remove ticks
                 [ticks, minorTicks, alternateBands].forEach(function (coll) {
                     var i, forDestruction = [], delay = animation.duration, destroyInactiveItems = function () {
                         i = forDestruction.length;
@@ -22304,8 +22304,8 @@
              *
              * */
             /**
-             * Set inactive state to all series that are not currently hovered,
-             * or, if `inactiveOtherPoints` is set to true, set inactive state to
+             * Set state to all series that are not currently hovered,
+             * or, if `inactiveOtherPoints` is set to true, set state to
              * all points within that series.
              *
              * @private
@@ -22336,12 +22336,12 @@
                 // Now loop over all series, filtering out active series
                 this.chart.series.forEach(function (inactiveSeries) {
                     if (activeSeries.indexOf(inactiveSeries) === -1) {
-                        // Inactive series
-                        inactiveSeries.setState('inactive', true);
+                        // series
+                       Series.setState('inactive', true);
                     }
                     else if (inactiveSeries.options.inactiveOtherPoints) {
                         // Active series, but other points should be inactivated
-                        inactiveSeries.setAllPointsToState('inactive');
+                       Series.setAllPointsToState('inactive');
                     }
                 });
             };
@@ -30811,23 +30811,23 @@
                  * The opposite state of a hover for series.
                  *
                  * @sample highcharts/plotoptions/series-states-inactive-disabled
-                 *         Disabled inactive state
+                 *         Disabled state
                  *
                  * @declare Highcharts.SeriesStatesInactiveOptionsObject
                  */
                 inactive: {
                     /**
-                     * Enable or disable the inactive state for a series
+                     * Enable or disable the state for a series
                      *
                      * @sample highcharts/plotoptions/series-states-inactive-disabled
-                     *         Disabled inactive state
+                     *         Disabled state
                      *
                      * @type {boolean}
                      * @default true
                      * @apioption plotOptions.series.states.inactive.enabled
                      */
                     /**
-                     * The animation for entering the inactive state.
+                     * The animation for entering the state.
                      *
                      * @type {boolean|Highcharts.AnimationOptionsObject}
                      */
@@ -38469,7 +38469,7 @@
              *
              * @private
              */
-            inactiveOtherPoints: true,
+           OtherPoints: true,
             /**
              * The size of the inner diameter for the pie. A size greater than 0
              * renders a donut chart. Can be a percentage or pixel value.
@@ -40964,8 +40964,8 @@
                             .on('mouseover', function () {
                             if (item.visible) {
                                 legend.allItems.forEach(function (inactiveItem) {
-                                    if (item !== inactiveItem) {
-                                        inactiveItem.setState('inactive', !isPoint);
+                                    if (item !==Item) {
+                                       Item.setState('inactive', !isPoint);
                                     }
                                 });
                             }
@@ -40987,8 +40987,8 @@
                                     legend.itemHiddenStyle));
                             }
                             legend.allItems.forEach(function (inactiveItem) {
-                                if (item !== inactiveItem) {
-                                    inactiveItem.setState('', !isPoint);
+                                if (item !==Item) {
+                                   Item.setState('', !isPoint);
                                 }
                             });
                             // A CSS class to dim or hide other than the hovered
@@ -41001,10 +41001,10 @@
                                 if (item.setVisible) {
                                     item.setVisible();
                                 }
-                                // Reset inactive state
+                                // Reset state
                                 legend.allItems.forEach(function (inactiveItem) {
-                                    if (item !== inactiveItem) {
-                                        inactiveItem.setState(item.visible ? 'inactive' : '', !isPoint);
+                                    if (item !==Item) {
+                                       Item.setState(item.visible ? 'inactive' : '', !isPoint);
                                     }
                                 });
                             };
@@ -41331,7 +41331,7 @@
                                 loopSeries.options.data[loopSeries.data.indexOf(loopPoint)] = loopPoint.options;
                                 // Programatically selecting a point should restore
                                 // normal state, but when click happened on other
-                                // point, set inactive state to match other points
+                                // point, set state to match other points
                                 loopPoint.setState(chart.hoverPoints &&
                                     loopSeries.options.inactiveOtherPoints ?
                                     'inactive' : '');
@@ -41450,7 +41450,7 @@
                     if (!chart.styledMode) {
                         pointAttribs = series.pointAttribs(point, state);
                         pointAttribsAnimation = pick(chart.options.chart.animation, stateOptions.animation);
-                        // Some inactive points (e.g. slices in pie) should apply
+                        // Some points (e.g. slices in pie) should apply
                         // oppacity also for it's labels
                         if (series.options.inactiveOtherPoints && pointAttribs.opacity) {
                             (point.dataLabels || []).forEach(function (label) {
@@ -41631,7 +41631,7 @@
                     (!tooltip.shared || series.noSharedTooltip)) {
                     tooltip.hide();
                 }
-                // Reset all inactive states
+                // Reset all states
                 chart.series.forEach(function (s) {
                     s.setState('', true);
                 });
@@ -41651,7 +41651,7 @@
              *        Determines if state should be inherited by points too.
              */
             setState: function (state, inherit) {
-                var series = this, options = series.options, graph = series.graph, inactiveOtherPoints = options.inactiveOtherPoints, stateOptions = options.states, lineWidth = options.lineWidth, opacity = options.opacity, 
+                var series = this, options = series.options, graph = series.graph,OtherPoints = options.inactiveOtherPoints, stateOptions = options.states, lineWidth = options.lineWidth, opacity = options.opacity, 
                 // By default a quick animation to hover/inactive,
                 // slower to un-hover
                 stateAnimation = pick((stateOptions[state || 'normal'] &&
@@ -41715,9 +41715,9 @@
                         }
                     }
                 }
-                // Don't loop over points on a series that doesn't apply inactive state
+                // Don't loop over points on a series that doesn't apply state
                 // to siblings markers (e.g. line, column)
-                if (inherit && inactiveOtherPoints && series.points) {
+                if (inherit &&OtherPoints && series.points) {
                     series.setAllPointsToState(state);
                 }
             },

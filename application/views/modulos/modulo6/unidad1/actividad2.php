@@ -63,8 +63,8 @@
                         </div>
                     </div>
 
-                    <a href="#" onclick="inactivo(1)" class="list-group-item inactive">Unidad 2</a>
-                    <a href="#" onclick="inactivo(1)" class="list-group-item inactive">Unidad 3</a>
+                    <a href="#" class="list-group-item">Unidad 2</a>
+                    <a href="#" class="list-group-item">Unidad 3</a>
 
 
                 </ul>

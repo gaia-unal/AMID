@@ -55,7 +55,7 @@
 
                     <div class="btn-group dropright">
 
-                         <a href="<?php echo base_url();?>modulo5/unidad5" class="list-group-item inactive">Unidad 5</a>
+                         <a href="<?php echo base_url();?>modulo5/unidad5" class="list-group-item">Unidad 5</a>
 
                         <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
@@ -63,10 +63,8 @@
                         </button>
                         <div class="dropdown-menu">
                             <ul class="list-group-item">
-                                <a href="<?php echo base_url();?>modulo5/unidad5/temas"
-                                    class="list-group-item">Temas</a>
-                                <a href="<?php echo base_url();?>modulo5/unidad5/actividad1"
-                                    class="list-group-item">Actividades</a>
+                                <a href="<?php echo base_url();?>modulo5/unidad5/contenidos"
+                                    class="list-group-item">Contenidos</a>
                                 <a href="#" class="list-group-item">Evaluación</a>
                             </ul>
                         </div>

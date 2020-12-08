@@ -58,7 +58,7 @@
                     <div class="dropdown-menu">
                         <ul class="list-group-item">
                             <a href="<?php echo base_url();?>modulo7/unidad1" class="list-group-item">Unidad 1</a>
-                            <a href="#" onclick="inactivo(1)" class="list-group-item inactive">Unidad 2</a>
+                            <a href="#" class="list-group-item">Unidad 2</a>
                             
                             
                         </ul>

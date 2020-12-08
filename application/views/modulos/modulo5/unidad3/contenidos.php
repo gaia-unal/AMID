@@ -22,63 +22,67 @@
         <div class="bg-light border-right" id="sidebar-wrapper">
 
             <div class="list-group list-group-flush">
-                <a href="<?php echo base_url(); ?>modulo1" class="list-group-item list-group-item-action bg-light"><i class="dropdown-menu"></i>Módulo 1<span class="arrow"></span></a>
+            <a href="<?php echo base_url();?>modulo1" class="list-group-item list-group-item-action bg-light"><i
+                        class="dropdown-menu"></i>Módulo 1<span class="arrow"></span></a>
 
 
-                <a href="<?php echo base_url(); ?>modulo2" class="list-group-item list-group-item-action bg-light">
+                <a href="<?php echo base_url();?>modulo2" class="list-group-item list-group-item-action bg-light">
                     Módulo 2</a>
 
-                <a href="<?php echo base_url(); ?>modulo3" class="list-group-item list-group-item-action bg-light">
+                <a href="<?php echo base_url();?>modulo3" class="list-group-item list-group-item-action bg-light">
                     Módulo 3</a>
 
-                <a href="<?php echo base_url(); ?>modulo4" class="list-group-item list-group-item-action bg-light">
+                <a href="<?php echo base_url();?>modulo4" class="list-group-item list-group-item-action bg-light">
                     Módulo 4</a>
 
-                <a href="<?php echo base_url(); ?>modulo5" class="list-group-item list-group-item-action bg-light">
+                <a href="<?php echo base_url();?>modulo5" class="list-group-item list-group-item-action bg-light">
                     Módulo 5</a>
 
                 <ul class="list-group-item">
 
-                    <a href="<?php echo base_url(); ?>modulo5/unidad1" class="list-group-item list-group-item-action bg-light">Unidad 1</a>
+                    <a href="<?php echo base_url();?>modulo5/unidad1"
+                        class="list-group-item list-group-item-action bg-light">Unidad 1</a>
+
+                    <a href="<?php echo base_url();?>modulo5/unidad2"
+                        class="list-group-item list-group-item-action bg-light">Unidad 2</a>
+
 
                     <div class="btn-group dropright">
 
+                        <a href="<?php echo base_url();?>modulo5/unidad3"  class="list-group-item">Unidad 3</a>
 
-                        <a href="<?php echo base_url(); ?>modulo5/unidad2" class="list-group-item list-group-item-action bg-light">Unidad 2</a>
-
-                        <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
 
                         </button>
                         <div class="dropdown-menu">
                             <ul class="list-group-item">
-                                <a href="<?php echo base_url(); ?>modulo5/unidad2/contenidos" class="list-group-item">Contenidos</a>
-                                <a href="#" onclick="inactivoEva()" class="list-group-item">Evaluación</a>
+                                <a href="<?php echo base_url();?>modulo5/unidad3/contenidos"
+                                    class="list-group-item">Contenidos</a>
+                                <a href="<?php echo base_url();?>modulo5/unidad3/evaluacion" class="list-group-item">Evaluación</a>
                             </ul>
                         </div>
                     </div>
 
-
-
-                    <a href="#" onclick="inactivo(2)" class="list-group-item inactive">Unidad 3</a>
-                    <a href="#" onclick="inactivo(2)" class="list-group-item inactive">Unidad 4</a>
-                    <a href="#" onclick="inactivo(2)" class="list-group-item inactive">Unidad 5</a>
+                    <a href="#" class="list-group-item">Unidad 4</a>
+                    <a href="#" class="list-group-item">Unidad 5</a>
 
                 </ul>
 
 
-                <a href="<?php echo base_url(); ?>modulo6" class="list-group-item list-group-item-action bg-light">
+                <a href="<?php echo base_url();?>modulo6" class="list-group-item list-group-item-action bg-light">
                     Módulo 6</a>
-                <a href="<?php echo base_url(); ?>modulo7" class="list-group-item list-group-item-action bg-light">
+                <a href="<?php echo base_url();?>modulo7" class="list-group-item list-group-item-action bg-light">
                     Módulo 7</a>
-                <a href="<?php echo base_url(); ?>modulo8" class="list-group-item list-group-item-action bg-light">
+                <a href="<?php echo base_url();?>modulo8" class="list-group-item list-group-item-action bg-light">
                     Módulo 8</a>
-                <a href="<?php echo base_url(); ?>modulo9" class="list-group-item list-group-item-action bg-light">
+                <a href="<?php echo base_url();?>modulo9" class="list-group-item list-group-item-action bg-light">
                     Módulo 9</a>
-                <a href="<?php echo base_url(); ?>modulo10" class="list-group-item list-group-item-action bg-light">
+                <a href="<?php echo base_url();?>modulo10" class="list-group-item list-group-item-action bg-light">
                     Módulo 10</a>
-                <a href="<?php echo base_url(); ?>modulo11" class="list-group-item list-group-item-action bg-light">
+                <a href="<?php echo base_url();?>modulo11" class="list-group-item list-group-item-action bg-light">
                     Módulo 11</a>
-                <a href="<?php echo base_url(); ?>modulo12" class="list-group-item list-group-item-action bg-light">
+                <a href="<?php echo base_url();?>modulo12" class="list-group-item list-group-item-action bg-light">
                     Módulo 12</a>
 
             </div>
@@ -100,7 +104,7 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="<?php echo base_url(); ?>inicio/main">Inicio</a></li>
                     <li class="breadcrumb-item"><a href="<?php echo base_url(); ?>modulo5">Módulo 5</a></li>
-                    <li class="breadcrumb-item"><a href="<?php echo base_url(); ?>modulo5/unidad2">Unidad 2</a></li>
+                    <li class="breadcrumb-item"><a href="<?php echo base_url(); ?>modulo5/unidad3">Unidad 3</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Contenidos</li>
                 </ol>
             </nav>
@@ -115,7 +119,7 @@
                 <div class="card mt-4">
                     <div class="card-body">
                         <div class="contenido ">
-                            <h1 class="first_title"><br>Contenidos unidad 2. Anuncios de bien público (ABP)</h1>
+                            <h1 class="first_title"><br>Contenidos unidad 3.Publicidad: El proceso creativo</h1>
                             <br>
                             <p class="m-b-10">
                                 A continuación encuentras los enlaces para acceder a los diferentes contenidos y al frente
@@ -131,10 +135,9 @@
                             </div>
                             <div class="row">
                                 <div class="col-6">
-                                    <a href="<?php echo base_url(); ?>modulo5/unidad2/actividad1" type="button" class="btn btn-info" style="width: 100%;">Anuncios de bien público (ABP)</a><br><br>
                                 </div>
                                 <div class="col-6">
-                                    <a href="<?php echo base_url(); ?>modulo5/unidad2/actividad1" type="button" class="btn btn-info" style="width: 100%;">Actividad: Anuncios de bien público (ABP)</a><br><br>
+                                    <a href="<?php echo base_url(); ?>modulo5/unidad3/actividad1" type="button" class="btn btn-info" style="width: 100%;">Actividad 1: La publicidad y el auspicio – ubicación, mensajes y audiencia</a><br><br>
                                 </div>
                             </div>
 
@@ -168,8 +171,8 @@
 
             <br>
             <center>
-                <a href="<?php echo base_url(); ?>modulo5/unidad2/inicio" class="btn btn_navegacion">Anterior</a>
-                <a href="<?php echo base_url(); ?>modulo5/unidad2/actividad1" class="btn btn_navegacion">Siguiente</a>
+                <a href="<?php echo base_url(); ?>modulo5/unidad3/inicio" class="btn btn_navegacion">Anterior</a>
+                <a href="<?php echo base_url(); ?>modulo5/unidad3/actividad1" class="btn btn_navegacion">Siguiente</a>
             </center>
             <?php $this->load->view('initial/paginacion'); ?>
 

@@ -746,16 +746,22 @@ nav.main-menu li.active>a,
     color: #188D8F;
 }
 
+<<<<<<< HEAD
 .total {
     width: 900px;
     height: 500px;
     margin-left: auto;
     margin-right: auto;
+=======
+.total{
+    width: 100% !important;
+    margin-left:auto;
+    margin-right:auto;
+>>>>>>> cce934eac5e4d7bf76b66d4fb0b946114b797ba3
 }
 
 .noticia {
-    width: 800px;
-    height: 500px;
+    width: 100%;
     margin-left: 0;
     margin-right: 0;
     align-self: center;
@@ -937,7 +943,25 @@ h3.title_welcome {
     height: 40px;
 }
 
+<<<<<<< HEAD
 #table_container {
     margin-left: 50px;
     margin-right: 50px;
+=======
+#table_container{
+    margin-left:50px;
+    margin-right:50px;
+}
+
+blockquote{
+    margin-block-start: 1em !important;
+    margin-block-end: 1em !important;
+    margin-inline-start: 40px !important;
+    margin-inline-end: 40px !important;
+    text-align: justify;
+}
+
+.titImg{
+    font-size: 0.8em !important;
+>>>>>>> cce934eac5e4d7bf76b66d4fb0b946114b797ba3
 }

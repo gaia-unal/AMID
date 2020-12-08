@@ -87,7 +87,7 @@ seriesType('networkgraph', 'line',
      * @ignore-option
      * @private
      */
-    inactiveOtherPoints: true,
+   OtherPoints: true,
     marker: {
         enabled: true,
         states: {
@@ -97,9 +97,9 @@ seriesType('networkgraph', 'line',
              *
              * @declare Highcharts.PointStatesInactiveOptionsObject
              */
-            inactive: {
+                inactive : {
                 /**
-                 * Opacity of inactive markers.
+                 * Opacity of markers.
                  */
                 opacity: 0.3,
                 /**
@@ -121,9 +121,9 @@ seriesType('networkgraph', 'line',
          *
          * @declare Highcharts.SeriesStatesInactiveOptionsObject
          */
-        inactive: {
+        inactive : {
             /**
-             * Opacity of inactive links.
+             * Opacity of links.
              */
             linkOpacity: 0.3,
             /**

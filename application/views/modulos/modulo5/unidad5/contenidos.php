@@ -39,28 +39,30 @@
 
                 <ul class="list-group-item">
 
+                    <a href="<?php echo base_url(); ?>modulo5/unidad1" class="list-group-item list-group-item-action bg-light">Unidad 1</a>
+
+                    <a href="<?php echo base_url(); ?>modulo5/unidad2" class="list-group-item list-group-item-action bg-light">Unidad 2</a>
+
+                    <a href="<?php echo base_url(); ?>modulo5/unidad3" class="list-group-item list-group-item-action bg-light">Unidad 3</a>
+
+                    <a href="<?php echo base_url(); ?>modulo5/unidad4" class="list-group-item list-group-item-action bg-light">Unidad 4</a>
+
+
                     <div class="btn-group dropright">
-                        <a href="<?php echo base_url(); ?>modulo5/unidad1" class="list-group-item list-group-item-action bg-light">Unidad 1</a>
+
+                        <a href="<?php echo base_url(); ?>modulo5/unidad5" class="list-group-item">Unidad 5</a>
 
                         <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
                         </button>
                         <div class="dropdown-menu">
                             <ul class="list-group-item">
-                                <a href="<?php echo base_url(); ?>modulo5/unidad1/contenidos" class="list-group-item">Contenidos</a>
-                                <a href="<?php echo base_url(); ?>modulo5/unidad1/evaluacion" class="list-group-item">Evaluación</a>
+                                <a href="<?php echo base_url(); ?>modulo5/unidad5/contenidos" class="list-group-item">Contenidos</a>
+                                <a href="<?php echo base_url(); ?>modulo5/unidad5/evaluacion" class="list-group-item">Evaluación</a>
                             </ul>
                         </div>
                     </div>
-
-
-                    <a href="#" onclick="inactivo(1)" class="list-group-item inactive">Unidad 2</a>
-                    <a href="#" onclick="inactivo(1)" class="list-group-item inactive">Unidad 3</a>
-                    <a href="#" onclick="inactivo(1)" class="list-group-item inactive">Unidad 4</a>
-                    <a href="#" onclick="inactivo(1)" class="list-group-item inactive">Unidad 5</a>
-
                 </ul>
-
 
                 <a href="<?php echo base_url(); ?>modulo6" class="list-group-item list-group-item-action bg-light">
                     Módulo 6</a>
@@ -96,7 +98,7 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="<?php echo base_url(); ?>inicio/main">Inicio</a></li>
                     <li class="breadcrumb-item"><a href="<?php echo base_url(); ?>modulo5">Módulo 5</a></li>
-                    <li class="breadcrumb-item"><a href="<?php echo base_url(); ?>modulo5/unidad1">Unidad 1</a></li>
+                    <li class="breadcrumb-item"><a href="<?php echo base_url(); ?>modulo5/unidad5">Unidad 5</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Contenidos</li>
                 </ol>
             </nav>
@@ -111,7 +113,7 @@
                 <div class="card mt-4">
                     <div class="card-body">
                         <div class="contenido ">
-                            <h1 class="first_title"><br>Contenidos unidad 1. Publicidad, ingresos y regulaciones</h1>
+                            <h1 class="first_title"><br>Contenidos unidad 5. Publicidad transnacional y "marcas super"</h1>
                             <br>
                             <p class="m-b-10">
                                 A continuación encuentras los enlaces para acceder a los diferentes contenidos y al frente
@@ -129,7 +131,8 @@
                                 <div class="col-6">
                                 </div>
                                 <div class="col-6">
-                                    <a href="<?php echo base_url(); ?>modulo5/unidad1/actividad1" type="button" class="btn btn-info" style="width: 100%;">Publicidad, ingresos y regulaciones</a><br><br>
+                                    <a href="<?php echo base_url(); ?>modulo5/unidad5/actividad1" type="button" class="btn btn-info" style="width: 100%;">Actividad 1 : Publicidad y el campo político
+  </a><br><br>
                                 </div>
                             </div>
 
@@ -163,8 +166,8 @@
 
             <br>
             <center>
-                <a href="<?php echo base_url(); ?>modulo5/unidad1/inicio" class="btn btn_navegacion">Anterior</a>
-                <a href="<?php echo base_url(); ?>modulo5/unidad1/actividad1" class="btn btn_navegacion">Siguiente</a>
+                <a href="<?php echo base_url(); ?>modulo5/unidad5/inicio" class="btn btn_navegacion">Anterior</a>
+                <a href="<?php echo base_url(); ?>modulo5/unidad5/actividad1" class="btn btn_navegacion">Siguiente</a>
             </center>
             <?php $this->load->view('initial/paginacion'); ?>
 

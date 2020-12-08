@@ -57,7 +57,7 @@
 
                     <div class="btn-group dropright">
                         
-							<a href="<?php echo base_url();?>modulo9/unidad2" class="list-group-item inactive">Unidad 2</a>
+							<a href="<?php echo base_url();?>modulo9/unidad2" class="list-group-item">Unidad 2</a>
 
                         <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
@@ -69,13 +69,13 @@
                                     class="list-group-item">Temas</a>
                                 <a href="<?php echo base_url();?>modulo9/unidad2/actividad1"
                                     class="list-group-item">Actividades</a>
-                                <a href="#" onclick="inactivoEva()" class="list-group-item">Evaluación</a>
+                                <a href="#" class="list-group-item">Evaluación</a>
                             </ul>
                         </div>
                     </div>
 
                    
-                    <a href="#" onclick="inactivo(2)" class="list-group-item inactive">Unidad 3</a>
+                    <a href="#" class="list-group-item">Unidad 3</a>
                 </ul>
 
                 <a href="<?php echo base_url();?>modulo9" class="list-group-item list-group-item-action bg-light">

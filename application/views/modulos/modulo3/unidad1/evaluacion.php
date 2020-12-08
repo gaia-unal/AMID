@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>AMID</title>
     <?php $this->load->view('initial/linkGenerico');?>
     <link href="<?php echo base_url();?>public/assets/modulos/mod1/css/estilo.css" rel="stylesheet">
@@ -14,34 +13,18 @@
 
 <body>
     <?php $this->load->view('initial/nav');?>
-
-
-
     <div class="d-flex" id="wrapper">
-        <!-- Sidebar -->
         <div class="bg-light border-right" id="sidebar-wrapper">
-
             <div class="list-group list-group-flush">
-
                 <a href="<?php echo base_url();?>modulo1" class="list-group-item list-group-item-action bg-light"><i
-                        class="dropdown-menu"></i>Módulo 1<span class="arrow"></span></a>
-
-
-                <a href="<?php echo base_url();?>modulo2" class="list-group-item list-group-item-action bg-light">
-                    Módulo 2</a>
-
-                <a href="<?php echo base_url();?>modulo3" class="list-group-item list-group-item-action bg-light">
-                    Módulo 3</a>
-
+                    class="dropdown-menu"></i>Módulo 1<span class="arrow"></span></a>
+                <a href="<?php echo base_url();?>modulo2" class="list-group-item list-group-item-action bg-light">Módulo 2</a>
+                <a href="<?php echo base_url();?>modulo3" class="list-group-item list-group-item-action bg-light">Módulo 3</a>
                 <ul class="list-group-item">
-
                     <div class="btn-group dropright">
-                        <a href="<?php echo base_url();?>modulo3/unidad1"
-                            class="list-group-item list-group-item-action bg-light">Unidad 1</a>
-
+                        <a href="<?php echo base_url();?>modulo3/unidad1" class="list-group-item list-group-item-action bg-light">Unidad 1</a>
                         <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
-
                         </button>
                         <div class="dropdown-menu">
                             <ul class="list-group-item">
@@ -51,51 +34,26 @@
                             </ul>
                         </div>
                     </div>
-
-
-                    <a href="#" onclick="inactivo(1)" class="list-group-item inactive">Unidad 2</a>
-                    <a href="#" onclick="inactivo(1)" class="list-group-item inactive">Unidad 3</a>
-                    <a href="#" onclick="inactivo(1)" class="list-group-item inactive">Unidad 4</a>
-                    <a href="#" onclick="inactivo(1)" class="list-group-item inactive">Unidad 5</a>
+                    <a href="<?php echo base_url();?>modulo3/unidad2" class="list-group-item">Unidad 2</a>
+                    <a href="<?php echo base_url();?>modulo3/unidad3" class="list-group-item">Unidad 3</a>
+                    <a href="<?php echo base_url();?>modulo3/unidad4" class="list-group-item">Unidad 4</a>
+                    <a href="<?php echo base_url();?>modulo3/unidad5" class="list-group-item">Unidad 5</a>
                 </ul>
-
-
-
-
-                <a href="<?php echo base_url();?>modulo4" class="list-group-item list-group-item-action bg-light">
-                    Módulo 4</a>
-                <a href="<?php echo base_url();?>modulo5" class="list-group-item list-group-item-action bg-light">
-                    Módulo 5</a>
-                <a href="<?php echo base_url();?>modulo6" class="list-group-item list-group-item-action bg-light">
-                    Módulo 6</a>
-                <a href="<?php echo base_url();?>modulo7" class="list-group-item list-group-item-action bg-light">
-                    Módulo 7</a>
-                <a href="<?php echo base_url();?>modulo8" class="list-group-item list-group-item-action bg-light">
-                    Módulo 8</a>
-                <a href="<?php echo base_url();?>modulo9" class="list-group-item list-group-item-action bg-light">
-                    Módulo 9</a>
-                <a href="<?php echo base_url();?>modulo10" class="list-group-item list-group-item-action bg-light">
-                    Módulo 10</a>
-                <a href="<?php echo base_url();?>modulo11" class="list-group-item list-group-item-action bg-light">
-                    Módulo 11</a>
-                <a href="<?php echo base_url();?>modulo12" class="list-group-item list-group-item-action bg-light">
-                    Módulo 12</a>
-
+                <a href="<?php echo base_url();?>modulo4" class="list-group-item list-group-item-action bg-light">Módulo 4</a>
+                <a href="<?php echo base_url();?>modulo5" class="list-group-item list-group-item-action bg-light">Módulo 5</a>
+                <a href="<?php echo base_url();?>modulo6" class="list-group-item list-group-item-action bg-light">Módulo 6</a>
+                <a href="<?php echo base_url();?>modulo7" class="list-group-item list-group-item-action bg-light">Módulo 7</a>
+                <a href="<?php echo base_url();?>modulo8" class="list-group-item list-group-item-action bg-light">Módulo 8</a>
+                <a href="<?php echo base_url();?>modulo9" class="list-group-item list-group-item-action bg-light">Módulo 9</a>
+                <a href="<?php echo base_url();?>modulo10" class="list-group-item list-group-item-action bg-light">Módulo 10</a>
+                <a href="<?php echo base_url();?>modulo11" class="list-group-item list-group-item-action bg-light">Módulo 11</a>
+                <a href="<?php echo base_url();?>modulo12" class="list-group-item list-group-item-action bg-light">Módulo 12</a>
             </div>
         </div>
-        <!-- /#sidebar-wrapper -->
-
-        <!-- Page Content -->
         <div id="page-content-wrapper">
-
             <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom d-lg-none">
                 <button class="btn " id="menu-toggle"><i class="fas fa-align-justify"></i></button>
-
             </nav>
-
-
-            <!--breadcrumbs-->
-
             <nav class="bread-style" aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="<?php echo base_url();?>inicio/main">Inicio</a></li>
@@ -104,50 +62,38 @@
                     <li class="breadcrumb-item active" aria-current="page">Evaluación</li>
                 </ol>
             </nav>
-
-            <!--fin breadcrumbs-->
-
             <div class="contenedor">
-
-                <!-- contenido -->
                 <center>
                     <h1 class="first_title"><br>Unidad 1: Informes de noticias y el poder de las imágenes</h1>
                     <?php echo form_open('modulo3/unidad2/inicio');$this->session->set_userdata('idAct','m3u1'); ?>
-                </center><br>
+                </center>
                 <div class="card mt-4">
                     <div class="card-body">
-                        <br>
-                        <h4 class="subtitle">Evaluación</h4><br>
+                        <h4 class="subtitle">Evaluación</h4>
                         <div class="contenido">
                             <p class="card-text">
-
                                 <strong> ¿Qué impacto podrían tener estas imágenes sobre las
                                     audiencias?</strong><br /><br />
-                                <label><input type="radio" name="pre1" class="space" value=5 required>Positivo porque
+                                <label><input type="radio" name="pre1" class="space" value=5>Positivo porque
                                     permite que se genere conciencia sobre lo que pasa actualmente.</label> <br />
-                                <label><input type="radio" name="pre1" class="space" value=1 required>Negativo porque
+                                <label><input type="radio" name="pre1" class="space" value=1>Negativo porque
                                     nos induce a tener miedo.</label><br />
-                                <label><input type="radio" name="pre1" class="space" value=1 required>No se genera
+                                <label><input type="radio" name="pre1" class="space" value=1>No se genera
                                     ningún tipo de impacto.
-                                </label><br />
-                                <br />
+                                </label><br /><br />
                                 <strong>¿Qué se intenta transmitir por medio de estas imágenes?</strong><br /><br />
-                                <label><input type="radio" name="pre2" class="space" value=1 required>Sentimientos
+                                <label><input type="radio" name="pre2" class="space" value=1>Sentimientos
                                     asociados al dolor humano.</label><br />
-                                <label><input type="radio" name="pre2" class="space" value=5 required>El enfoque y la
+                                <label><input type="radio" name="pre2" class="space" value=5>El enfoque y la
                                     cobertura de las noticias de una tragedia.</label><br />
-                                <label><input type="radio" name="pre2" class="space" value=1 required>La desigualdad y
+                                <label><input type="radio" name="pre2" class="space" value=1>La desigualdad y
                                     olvido por parte del gobierno.</label><br />
                                 <br />
                             </p>
                         </div>
                     </div>
                 </div>
-
-
-
             </div>
-
             <br>
             <center>
                 <a href="<?php echo base_url();?>modulo3/unidad1/actividad2" class="btn btn_navegacion">Anterior</a>
@@ -155,31 +101,19 @@
             </center>
             <?php echo form_close(); ?>
             <?php $this->load->view('initial/paginacion');?>
-
-
             <p class="final_contenido">Obra publicada con <a href="https://creativecommons.org/licenses/by-sa/4.0/">
-                    Licencia Creative
-                    Commons
-                    Reconocimiento Compartir igual 4.0</a></p>
+                Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
             <br>
-            <!-- /#page-content-wrapper -->
         </div>
-
     </div>
-
-
     <?php $this->load->view('initial/footer');?>
     <?php $this->load->view('initial/scriptGenerico');?>
     <script src="<?php echo base_url();?>public/assets/modulos/mod"></script>
-
     <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
     </script>
-
-
 </body>
-
 </html>

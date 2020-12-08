@@ -48,12 +48,12 @@
                     <a href="<?php echo base_url();?>modulo5/unidad2"
                         class="list-group-item list-group-item-action bg-light">Unidad 2</a>
                     
-                    <a href="<?php echo base_url();?>modulo5/unidad3"  class="list-group-item inactive">Unidad 3</a>
+                    <a href="<?php echo base_url();?>modulo5/unidad3"  class="list-group-item">Unidad 3</a>
 
 
                     <div class="btn-group dropright">
 
-                         <a href="<?php echo base_url();?>modulo5/unidad4"  class="list-group-item inactive">Unidad 4</a>
+                         <a href="<?php echo base_url();?>modulo5/unidad4"  class="list-group-item">Unidad 4</a>
                          
 
                         <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
@@ -62,17 +62,15 @@
                         </button>
                         <div class="dropdown-menu">
                             <ul class="list-group-item">
-                                <a href="<?php echo base_url();?>modulo5/unidad4/temas"
-                                    class="list-group-item">Temas</a>
-                                <a href="<?php echo base_url();?>modulo5/unidad4/actividad1"
-                                    class="list-group-item">Actividades</a>
+                                <a href="<?php echo base_url();?>modulo5/unidad4/contenidos"
+                                    class="list-group-item">Contenidos</a>
                                 <a href="#" class="list-group-item">Evaluación</a>
                             </ul>
                         </div>
                     </div>
 
                    
-                    <a href="#" onclick="inactivo(4)" class="list-group-item inactive">Unidad 5</a>
+                    <a href="#" onclick="inactivo(4)" class="list-group-item">Unidad 5</a>
 
                 </ul>
 
