@@ -32,10 +32,8 @@
                         </button>
                         <div class="dropdown-menu">
                             <ul class="list-group-item ">
-                                <a href="<?php echo base_url(); ?>modulo1/unidad1/temas" class="list-group-item">Temas</a>
                                 <a href="<?php echo base_url(); ?>modulo1/unidad1/contenidos" class="list-group-item">Contenidos</a>
-                                <a href="<?php echo base_url(); ?>modulo1/unidad1/actividad2" class="list-group-item">Actividades</a>
-                                <a href="#" onclick="inactivoEva()" class="list-group-item">Evaluación</a>
+                                <a href="<?php echo base_url(); ?>modulo1/unidad1/evaluacion" onclick="inactivoEva()" class="list-group-item">Evaluación</a>
                             </ul>
                         </div>
                     </div>
@@ -107,17 +105,64 @@
                             <h1 class="first_title"><br>Contenidos unidad 1. Comprender la alfabetización mediática e informacional: Una
                                 orientación</h1>
                             <br>
-                            <p class="m-b-100">
-                                A continuación encuentras los enlaces que te llevan a los contenidos de esta
-                                unidad con sus respectivas actividades.
+                            <p class="m-b-10">
+                                A continuación encuentras los enlaces para acceder a los diferentes contenidos y al frente
+                                se encuentra su respectiva actividades
                             </p>
-                            <a href="<?php echo base_url(); ?>modulo1/unidad1/actividad1" type="button" class="btn btn-info" style="width: 100%;">Parte 1: Los múltiples papeles de los medios
-                            </a> <br><br>
-                            <a href="<?php echo base_url(); ?>modulo1/unidad1/actividad4" type="button" class="btn btn-info" style="width: 100%;">Parte 2: Los múltiples papeles de los medios </a>
-                            <br><br>
-                            <a  href="<?php echo base_url(); ?>modulo1/unidad1/actividad7" type="button" class="btn btn-info" style="width: 100%;">Información sobre los proveedores</a>
-                            <br><br>
-                            <a type="button" class="btn btn-info" style="width: 100%;" href="<?php echo base_url(); ?>modulo1/unidad1/actividad10">La importancia que tiene AMI para los ciudadanos</a>
+                            <div class="row">
+                                <div class="col-6">
+                                    <h2 class="second_title">Contenidos</h2>
+                                </div>
+                                <div class="col-6">
+                                    <h2 class="second_title">Actividades</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <a href="<?php echo base_url(); ?>modulo1/unidad1/actividad1" type="button" class="btn btn-info" style="width: 100%;">Parte 1: Los múltiples papeles de los medios
+                                    </a> <br><br>
+                                </div>
+                                <div class="col-6">
+                                    <a href="<?php echo base_url(); ?>modulo1/unidad1/actividad2" type="button" class="btn btn-info" style="width: 100%;">Actividad 1: Definición de "información" y "medios".
+                                    </a> <br><br>
+                                    <a href="<?php echo base_url(); ?>modulo1/unidad1/actividad3" type="button" class="btn btn-info" style="width: 100%;">Actividad 2: Definición de "información" y "medios".
+                                    </a> <br><br>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <a href="<?php echo base_url(); ?>modulo1/unidad1/actividad4" type="button" class="btn btn-info" style="width: 100%;">Parte 2: Los múltiples papeles de los medios </a>
+                                    <br><br>
+                                </div>
+                                <div class="col-6">
+                                    <a href="<?php echo base_url(); ?>modulo1/unidad1/actividad5" type="button" class="btn btn-info" style="width: 100%;">Actividad 3: La Alfabetización mediática e informacional </a>
+                                    <br><br>
+                                    <a href="<?php echo base_url(); ?>modulo1/unidad1/actividad6" type="button" class="btn btn-info" style="width: 100%;">Actividad 4: La Alfabetización mediática e informacional </a>
+                                    <br><br>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <a href="<?php echo base_url(); ?>modulo1/unidad1/actividad7" type="button" class="btn btn-info" style="width: 100%;">Información sobre los proveedores</a>
+                                    <br><br>
+                                </div>
+                                <div class="col-6">
+                                    <a href="<?php echo base_url(); ?>modulo1/unidad1/actividad8" type="button" class="btn btn-info" style="width: 100%;">Actividad 5: Definición de "información" y "medios"</a>
+                                    <br><br>
+                                    <a href="<?php echo base_url(); ?>modulo1/unidad1/actividad9" type="button" class="btn btn-info" style="width: 100%;">Actividad 6: Importancia de los medios y otros proveedores de información.</a>
+                                    <br><br>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <a type="button" class="btn btn-info" style="width: 100%;" href="<?php echo base_url(); ?>modulo1/unidad1/actividad10">La importancia que tiene AMI para los ciudadanos</a>
+                                </div>
+                                <div class="col-6">
+                                </div>
+                            </div>
+
+
+
                         </div>
                     </div>
                 </div>
@@ -128,7 +173,7 @@
 
             <br>
             <center>
-                <a href="<?php echo base_url(); ?>modulo1/unidad1/temas" class="btn btn_navegacion">Anterior</a>
+                <a href="<?php echo base_url(); ?>modulo1/unidad1/inicio" class="btn btn_navegacion">Anterior</a>
                 <a href="<?php echo base_url(); ?>modulo1/unidad1/actividad1" class="btn btn_navegacion">Siguiente</a>
             </center>
             <?php $this->load->view('initial/paginacion'); ?>
@@ -164,5 +209,11 @@
 <style>
     .papeles_media {
         width: 800px;
+    }
+
+    .second_title {
+        font-size: 1.1em;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
     }
 </style>

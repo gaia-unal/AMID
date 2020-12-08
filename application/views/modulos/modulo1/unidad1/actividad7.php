@@ -33,8 +33,6 @@
                         </button>
                         <div class="dropdown-menu">
                             <ul class="list-group-item ">
-                                <a href="<?php echo base_url();?>modulo1/unidad1/temas"
-                                    class="list-group-item">Temas</a>
                                 <a href="<?php echo base_url();?>modulo1/unidad1/contenidos"
                                     class="list-group-item">Contenidos</a>
                                 <a href="#" onclick="inactivoEva()" class="list-group-item">Evaluación</a>

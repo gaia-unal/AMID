@@ -8,14 +8,14 @@
     <meta name="author" content="">
 
     <title>AMID</title>
-    <?php $this->load->view('initial/linkGenerico');?>
-    <link href="<?php echo base_url();?>public/assets/modulos/mod1/css/estilo.css" rel="stylesheet">
+
+    <?php $this->load->view('initial/linkGenerico'); ?>
+
 </head>
 
 <body>
-    <?php $this->load->view('initial/nav');?>
-
-
+    <?php $this->load->view('initial/nav'); ?>
+    <link href="<?php echo base_url(); ?>public/assets/css/style.css" rel="stylesheet">
 
     <div class="d-flex" id="wrapper">
         <!-- Sidebar -->
@@ -23,45 +23,41 @@
 
             <div class="list-group list-group-flush">
 
-                <a href="<?php echo base_url();?>modulo1" class="list-group-item list-group-item-action bg-light"><i
+            <a href="<?php echo base_url();?>modulo1" class="list-group-item list-group-item-action bg-light"><i
                         class="dropdown-menu"></i>Módulo 1<span class="arrow"></span></a>
 
 
                 <a href="<?php echo base_url();?>modulo2" class="list-group-item list-group-item-action bg-light">
                     Módulo 2</a>
 
-                <a href="<?php echo base_url();?>modulo3" class="list-group-item list-group-item-action bg-light">
-                    Módulo 3</a>
-
                 <ul class="list-group-item">
-
-                    <a href="<?php echo base_url();?>modulo3/unidad1"
-                        class="list-group-item list-group-item-action bg-light">Unidad 1</a>
-                    <a href="<?php echo base_url();?>modulo3/unidad2" class="list-group-item list-group-item-action bg-light ">Unidad 2</a>
-                    <a href="<?php echo base_url();?>modulo3/unidad3" class="list-group-item list-group-item-action bg-light ">Unidad 3</a>
+                    <a href="modulo2/unidad1" class="list-group-item list-group-item-action bg-light">Unidad 1</a>
                     <div class="btn-group dropright">
+                        <a href="modulo2/unidad2"  class="list-group-item list-group-item-action bg-light">Unidad 2</a>
 
-                        <a href="<?php echo base_url();?>modulo3/unidad4" class="list-group-item list-group-item-action bg-light ">Unidad 4</a>
                         <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
 
                         </button>
                         <div class="dropdown-menu">
                             <ul class="list-group-item">
-                                <a href="<?php echo base_url();?>modulo3/unidad4/temas"
-                                    class="list-group-item">Temas</a>
-                                <a href="<?php echo base_url();?>modulo3/unidad4/actividad1"
-                                    class="list-group-item">Actividades</a>
+                                <a href="<?php echo base_url();?>modulo2/unidad2/contenidos"
+                                    class="list-group-item">Contenidos</a>
                                 <a href="#" onclick="inactivoEva()" class="list-group-item">Evaluación</a>
                             </ul>
                         </div>
                     </div>
 
 
-                    <a href="#" onclick="inactivo(4)" class="list-group-item inactive">Unidad 5</a>
+
+                    <a href="#" onclick="inactivo(2)" class="list-group-item inactive">Unidad 3</a>
+                    <a href="#" onclick="inactivo(2)" class="list-group-item inactive">Unidad 4</a>
                 </ul>
 
 
+
+                <a href="<?php echo base_url();?>modulo3" class="list-group-item list-group-item-action bg-light">
+                    Módulo 3</a>
                 <a href="<?php echo base_url();?>modulo4" class="list-group-item list-group-item-action bg-light">
                     Módulo 4</a>
                 <a href="<?php echo base_url();?>modulo5" class="list-group-item list-group-item-action bg-light">
@@ -98,10 +94,10 @@
 
             <nav class="bread-style" aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="<?php echo base_url();?>inicio/main">Inicio</a></li>
-                    <li class="breadcrumb-item"><a href="<?php echo base_url();?>modulo3">Módulo 3</a></li>
-                    <li class="breadcrumb-item"><a href="<?php echo base_url();?>modulo3/unidad4">Unidad 4</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Temas</li>
+                    <li class="breadcrumb-item"><a href="<?php echo base_url(); ?>inicio/main">Inicio</a></li>
+                    <li class="breadcrumb-item"><a href="<?php echo base_url(); ?>modulo2">Módulo 2</a></li>
+                    <li class="breadcrumb-item"><a href="<?php echo base_url(); ?>modulo2/unidad2">Unidad 1</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Contenidos</li>
                 </ol>
             </nav>
 
@@ -110,21 +106,36 @@
             <div class="contenedor">
 
                 <!-- contenido -->
-                <center>
-                    <h1 class="first_title"><br>Unidad 4: Videos musicales y su representación</h1>
 
-                </center><br>
+                <br>
                 <div class="card mt-4">
                     <div class="card-body">
-                        <br>
-                        <h4 class="subtitle">Temas Claves</h4><br>
-                        <div class="contenido">
-                        <ul>
-                            <li>Análisis de los videos musicales</li>
-                            <li>Representación</li>
-                            <li>Música y cambio social</li>
-                            <li>Uso de los storyboards</li>
-                        </ul>
+                        <div class="contenido ">
+                            <h1 class="first_title"><br>Contenidos unidad 2. Libertad, ética y responsabilidad
+                            </h1>
+                            <br>
+                            <p class="m-b-10">
+                                A continuación encuentras los enlaces para acceder a los diferentes contenidos y al frente
+                                se encuentra su respectiva actividades
+                            </p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <h2 class="second_title">Contenidos</h2>
+                                </div>
+                                <div class="col-6">
+                                    <h2 class="second_title">Actividades</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <a href="<?php echo base_url(); ?>modulo2/unidad2/actividad1" type="button" class="btn btn-info" style="width: 100%;">Libertad, ética y responsabilidad
+                                    </a> <br><br>
+                                </div>
+                                <div class="col-6">
+                                    <a href="<?php echo base_url(); ?>modulo2/unidad2/actividad2" type="button" class="btn btn-info" style="width: 100%;">Actividad 1: Libertad, ética y responsabilidad
+                                    </a> <br><br>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -135,11 +146,10 @@
 
             <br>
             <center>
-                <a href="<?php echo base_url();?>modulo3/unidad4" class="btn btn_navegacion">Anterior</a>
-                <a href="<?php echo base_url();?>modulo3/unidad4/actividad1" class="btn btn_navegacion">Siguiente</a>
+                <a href="<?php echo base_url(); ?>modulo2/unidad2/inicio" class="btn btn_navegacion">Anterior</a>
+                <a href="<?php echo base_url(); ?>modulo2/unidad2/actividad1" class="btn btn_navegacion">Siguiente</a>
             </center>
-
-            <?php $this->load->view('initial/paginacion');?>
+            <?php $this->load->view('initial/paginacion'); ?>
 
 
             <p class="final_contenido">Obra publicada con <a href="https://creativecommons.org/licenses/by-sa/4.0/">
@@ -153,18 +163,30 @@
     </div>
 
 
-    <?php $this->load->view('initial/footer');?>
-    <?php $this->load->view('initial/scriptGenerico');?>
-
+    <?php $this->load->view('initial/footer'); ?>
+    <?php $this->load->view('initial/scriptGenerico'); ?>
 
     <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
     </script>
 
 
 </body>
 
 </html>
+
+
+<style>
+    .papeles_media {
+        width: 800px;
+    }
+
+    .second_title {
+        font-size: 1.1em;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+    }
+</style>

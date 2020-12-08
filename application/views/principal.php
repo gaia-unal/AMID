@@ -83,9 +83,9 @@
 
   <?php echo form_open('usuario/update'); ?>
   <div class="row">
-    <div class="col-md-12 button-container">
+    <div class="col-12 button-container">
       <center>
-        <img src="<?php echo base_url(); ?>public/assets/img/index.png" alt="figura1">
+        <img src="<?php echo base_url(); ?>public/assets/img/index.png" alt="figura1" style="width: 100%;">
       </center>
     </div>
 
@@ -98,13 +98,13 @@
           <h1>¿PARA QUÉ AMID?</h1>
         </center>
         <br>
-        Las siglas AMID significan alfabetización mediática informacional, esto según la UNESCO hace
+        Las siglas AMI significan alfabetización mediática informacional, esto según la UNESCO hace
         referencia a las capacidades criticas adquiridas por las personas, estas habilidades
         les permiten exigir un buen servicio con respecto a la forma en la que se pueden llevar a cabo
         las funciones de comunicación y el tipo de contenido mostrado en internet, bibliotecas,
         archivos y demás proveedores de información dentro de las sociedades democráticas.
         <br><br>
-        De acuerdo con esto, AMID es algo que nos involucra a todos y uno de los puntos claves es iniciar
+        De acuerdo con esto, AMI es algo que nos involucra a todos y uno de los puntos claves es iniciar
         esta alfabetización en los docentes ya que tienen el efecto multiplicador de pasar este
         conocimiento a sus estudiantes y eventualmente a la sociedad. Una de las principales motivos
         para que los docentes empiecen a trabajar AMID es que a futuro se va a permitir a los
@@ -116,16 +116,16 @@
           <div>
             <div class="Iam">
               <center>
-                <p>Aquí encontrarás</p>
+                <p>En este curso tienes acceso a </p>
                 <b>
                   <div class="innerIam">
                     Lecturas<br />
                     Imágenes<br />
-                    Test<br />
+                    Tests<br />
                     Actividades
                   </div>
                 </b>
-                <p> que te ayudaran a entender mejor el papel de los medios de comuncación y la tecnología
+                <p>  que te ayudaran a entender mejor el papel de los medios de comuncación y la tecnología
                   en la actualidad</p>
               </center>
 
@@ -134,6 +134,7 @@
         </div>
         <br><br>
         <p>
+        <br>
           Para darte una mejor idea de lo que esta herramienta quiere lograr te mostramos algunas temáticas que
           son útiles para la formación en AMID.
         </p>
@@ -143,8 +144,8 @@
     <div class="row">
       <div class="col-4 contenedor_tarjeta">
         <figure>
-          <img src="<?php echo base_url(); ?>public/assets/img/Libertad de expresión.png" clas='frontal' style="width: 100%; height: 255px">
-          <figcaption class="trasera text-justify pt-2" style="font-size: 1.4vw; width: 100%; height: 100%">
+          <img src="<?php echo base_url(); ?>public/assets/img/Libertad de expresión.png" class='frontal' style="width: 100%; height: 255px">
+          <figcaption class="trasera text-justify pt-2" style="font-size: 1.1vw; width: 100%; height: 100%">
           La libertad de expresión es visto como la base de los demás derechos.
           <br><br> ¿Cuál es el papel de los medios para promover la libertad de expresión?
           </figcaption>
@@ -152,8 +153,8 @@
       </div>
       <div class="col-4 contenedor_tarjeta">
         <figure>
-          <img src="<?php echo base_url(); ?>public/assets/img/formas de comunicacion.png" clas='frontal' style="width: 100%; height: 255px">
-          <figcaption class="trasera text-justify pt-2" style="font-size: 1.3vw; width: 100%; height: 100%">
+          <img src="<?php echo base_url(); ?>public/assets/img/formas de comunicacion.png" class='frontal' style="width: 100%; height: 255px">
+          <figcaption class="trasera text-justify pt-2" style="font-size: 1.1vw; width: 100%; height: 100%">
             Los medios utilizan diversas formas de comunicación como gráficas, códigos, blogs, redes sociales, etc.
             Por ello es importante reconocer y entender el contexto de cada una de tal forma que  la información
              puede ser asimilada de forma correcta.
@@ -162,8 +163,8 @@
       </div>
       <div class="col-4 contenedor_tarjeta">
         <figure>
-          <img src="<?php echo base_url(); ?>public/assets/img/oportunidades y retos.png" clas='frontal' style="width: 100%; height: 255px">
-          <figcaption class="trasera text-justify pt-2" style="font-size: 1.3vw; width: 100%; height: 100%">
+          <img src="<?php echo base_url(); ?>public/assets/img/oportunidades y retos.png" class='frontal' style="width: 100%; height: 255px">
+          <figcaption class="trasera text-justify pt-2" style="font-size: 1.1vw; width: 100%; height: 100%">
             Internet provee grandes cantidades de información para el aprendizaje de niños y jóvenes pero a su vez
             representa grandes amenazas para su desarrollo. De ahí que sea tan importante el acompañamiento
             de personas que sean capaces de empoderarlos y educarlos.

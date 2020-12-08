@@ -57,10 +57,8 @@
                         </button>
                         <div class="dropdown-menu">
                             <ul class="list-group-item">
-                                <a href="<?php echo base_url();?>modulo4/unidad4/temas"
-                                    class="list-group-item">Temas</a>
-                                <a href="<?php echo base_url();?>modulo4/unidad4/actividad1"
-                                    class="list-group-item">Actividades</a>
+                                <a href="<?php echo base_url();?>modulo4/unidad4/contenidos"
+                                    class="list-group-item">Contenidos</a>
                                 <a href="<?php echo base_url();?>modulo4/unidad4/evaluacion"
                                     class="list-group-item">Evaluación</a>
                             </ul>
@@ -193,7 +191,7 @@
 
             <br>
             <center>
-                <a href="<?php echo base_url();?>modulo4/unidad4/temas" class="btn btn_navegacion">Anterior</a>
+                <a href="<?php echo base_url();?>modulo4/unidad4/contenidos" class="btn btn_navegacion">Anterior</a>
                 <button id="btn-siguiente" class="btn btn_navegacion" name="submit" type="submit">Siguiente</button>
 
             </center>

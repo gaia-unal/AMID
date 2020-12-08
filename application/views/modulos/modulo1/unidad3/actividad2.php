@@ -38,10 +38,8 @@
                         </button>
                         <div class="dropdown-menu">
                             <ul class="list-group-item">
-                                <a href="<?php echo base_url();?>modulo1/unidad3/temas"
-                                    class="list-group-item">Temas</a>
-                                <a href="<?php echo base_url();?>modulo1/unidad3/actividad1"
-                                    class="list-group-item">Actividades</a>
+                                <a href="<?php echo base_url();?>modulo1/unidad3/contenidos"
+                                    class="list-group-item">Contenido</a>
                                 <a href="#" onclick="inactivoEva()" class="list-group-item">Evaluación</a>
                             </ul>
                         </div>
@@ -94,7 +92,7 @@
                     <li class="breadcrumb-item"><a href="<?php echo base_url();?>inicio/main">Inicio</a></li>
                     <li class="breadcrumb-item"><a href="<?php echo base_url();?>modulo1">Módulo 1</a></li>
                     <li class="breadcrumb-item"><a href="<?php echo base_url();?>modulo1/unidad3">Unidad 3</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Actividad 2</li>
+                    <li class="breadcrumb-item active" aria-current="page">Actividad 1</li>
                 </ol>
             </nav>
 

@@ -21,7 +21,6 @@
         <div class="bg-light border-right" id="sidebar-wrapper">
 
             <div class="list-group list-group-flush">
-
                 <a href="<?php echo base_url();?>modulo1" class="list-group-item list-group-item-action bg-light"><i
                         class="dropdown-menu"></i>Módulo 1<span class="arrow"></span></a>
                 <ul class="list-group-item">
@@ -38,16 +37,13 @@
                         </button>
                         <div class="dropdown-menu">
                             <ul class="list-group-item">
-                                <a href="<?php echo base_url();?>modulo1/unidad4/temas"
-                                    class="list-group-item">Temas</a>
-                                <a href="<?php echo base_url();?>modulo1/unidad4/actividad1"
-                                    class="list-group-item">Actividades</a>
+                                <a href="<?php echo base_url();?>modulo1/unidad4/contenidos"
+                                    class="list-group-item">Contenidos</a>
                                 <a href="#" onclick="inactivoEva()" class="list-group-item">Evaluación</a>
                             </ul>
                         </div>
                     </div>
                 </ul>
-
 
                 <a href="<?php echo base_url();?>modulo2" class="list-group-item list-group-item-action bg-light">
                     Módulo 2</a>
@@ -125,7 +121,7 @@
             <br>
             <center>
                 <a href="<?php echo base_url();?>modulo1/unidad3/evaluacion" class="btn btn_navegacion">Anterior</a>
-                <a href="<?php echo base_url();?>modulo1/unidad4/temas" class="btn btn_navegacion">Siguiente</a>
+                <a href="<?php echo base_url();?>modulo1/unidad4/contenidos" class="btn btn_navegacion">Siguiente</a>
             </center>
             <?php $this->load->view('initial/paginacion');?>
 

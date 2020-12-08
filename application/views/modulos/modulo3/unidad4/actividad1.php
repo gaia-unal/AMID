@@ -25,33 +25,24 @@
 
                 <a href="<?php echo base_url();?>modulo1" class="list-group-item list-group-item-action bg-light"><i
                         class="dropdown-menu"></i>Módulo 1<span class="arrow"></span></a>
-
-
                 <a href="<?php echo base_url();?>modulo2" class="list-group-item list-group-item-action bg-light">
                     Módulo 2</a>
-
                 <a href="<?php echo base_url();?>modulo3" class="list-group-item list-group-item-action bg-light">
                     Módulo 3</a>
-
                 <ul class="list-group-item">
-
                     <a href="<?php echo base_url();?>modulo3/unidad1"
                         class="list-group-item list-group-item-action bg-light">Unidad 1</a>
                     <a href="<?php echo base_url();?>modulo3/unidad2" class="list-group-item list-group-item-action bg-light ">Unidad 2</a>
                     <a href="<?php echo base_url();?>modulo3/unidad3" class="list-group-item list-group-item-action bg-light ">Unidad 3</a>
                     <div class="btn-group dropright">
-
                         <a href="<?php echo base_url();?>modulo3/unidad4" class="list-group-item list-group-item-action bg-light ">Unidad 4</a>
                         <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
-
                         </button>
                         <div class="dropdown-menu">
                             <ul class="list-group-item">
-                                <a href="<?php echo base_url();?>modulo3/unidad4/temas"
-                                    class="list-group-item">Temas</a>
-                                <a href="<?php echo base_url();?>modulo3/unidad4/actividad1"
-                                    class="list-group-item">Actividades</a>
+                                <a href="<?php echo base_url();?>modulo3/unidad4/contenidos"
+                                    class="list-group-item">Contenidos</a>
                                 <a href="#" onclick="inactivoEva()" class="list-group-item">Evaluación</a>
                             </ul>
                         </div>
@@ -101,7 +92,7 @@
                     <li class="breadcrumb-item"><a href="<?php echo base_url();?>inicio/main">Inicio</a></li>
                     <li class="breadcrumb-item"><a href="<?php echo base_url();?>modulo3">Módulo 3</a></li>
                     <li class="breadcrumb-item"><a href="<?php echo base_url();?>modulo3/unidad4">Unidad 4</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Actividad 1</li>
+                    <li class="breadcrumb-item active" aria-current="page">Contenido</li>
                 </ol>
             </nav>
 
@@ -182,7 +173,7 @@
 
             <br>
             <center>
-                <a href="<?php echo base_url();?>modulo3/unidad4/temas" class="btn btn_navegacion">Anterior</a>
+                <a href="<?php echo base_url();?>modulo3/unidad4/contenidos" class="btn btn_navegacion">Anterior</a>
                 <a href="<?php echo base_url();?>modulo3/unidad4/actividad2" class="btn btn_navegacion">Siguiente</a>
             </center>
 
