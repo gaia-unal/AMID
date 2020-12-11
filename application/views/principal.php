@@ -7,13 +7,15 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <link href="<?php echo base_url();?>public/assets/css/styleInicio.css" rel="stylesheet">
+  <link href="<?php echo base_url();?>public/assets/css/style.css" rel="stylesheet">
+
   <?php $this->load->view('initial/linkGenerico'); ?>
   <title>AMID</title>
 
 </head>
 
 <body id="body">
-  <nav class="navbar navbar-expand-lg navbar-dark  fixed-top nav-color">
+  <nav class="navbar navbar-expand-lg navbar-dark  fixed-top nav-color" >
     <?php
     $name = $this->session->userdata('name');
     $lastname = $this->session->userdata('lastname');

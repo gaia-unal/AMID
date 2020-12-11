@@ -131,8 +131,7 @@
                                 <div class="col-6">
                                 </div>
                                 <div class="col-6">
-                                    <a href="<?php echo base_url(); ?>modulo5/unidad5/actividad1" type="button" class="btn btn-info" style="width: 100%;">Actividad 1 : Publicidad y el campo político
-  </a><br><br>
+                                    <a href="<?php echo base_url(); ?>modulo5/unidad5/actividad1" type="button" class="btn btn-info" style="width: 100%;">Actividad 1 : Publicidad transnacional y "marcas super"</a><br><br>
                                 </div>
                             </div>
 

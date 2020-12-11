@@ -137,7 +137,7 @@
                                 <div class="col-6">
                                 </div>
                                 <div class="col-6">
-                                    <a href="<?php echo base_url(); ?>modulo5/unidad3/actividad1" type="button" class="btn btn-info" style="width: 100%;">Actividad 1: La publicidad y el auspicio – ubicación, mensajes y audiencia</a><br><br>
+                                    <a href="<?php echo base_url(); ?>modulo5/unidad3/actividad1" type="button" class="btn btn-info" style="width: 100%;">Actividad 1: Publicidad: El proceso creativo</a><br><br>
                                 </div>
                             </div>
 

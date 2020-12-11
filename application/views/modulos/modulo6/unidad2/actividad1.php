@@ -200,7 +200,7 @@
 
             <br>
             <center>
-                <a href="<?php echo base_url();?>modulo6/unidad2/temas" class="btn btn_navegacion">Anterior</a>
+                <a href="<?php echo base_url();?>modulo6/unidad2/contenidos" class="btn btn_navegacion">Anterior</a>
                 <button id="btn-siguiente" class="btn btn_navegacion" name="submit" type="submit">Siguiente</button>
             </center>
             <?php echo form_close(); ?>

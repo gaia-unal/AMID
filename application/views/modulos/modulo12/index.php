@@ -144,7 +144,7 @@
 
             <center>
                 <a href="<?php echo base_url();?>modulo11/unidad4/actividad2" class="btn btn_navegacion">Anterior</a>
-                <a href="<?php echo base_url();?>modulo12/unidad1/actividad1" class="btn btn_navegacion">Siguiente</a>
+                <a href="<?php echo base_url();?>modulo12/unidad1/contenidos" class="btn btn_navegacion">Siguiente</a>
             </center>
             <br>
 

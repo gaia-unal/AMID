@@ -149,7 +149,7 @@
             <br>
             <center>
                 <a href="<?php echo base_url();?>modulo7" class="btn btn_navegacion">Anterior</a>
-                <a href="<?php echo base_url();?>modulo7/unidad1/temas" class="btn btn_navegacion">Siguiente</a>
+                <a href="<?php echo base_url();?>modulo7/unidad1/contenidos" class="btn btn_navegacion">Siguiente</a>
             </center>
             <?php $this->load->view('initial/paginacion');?>
 

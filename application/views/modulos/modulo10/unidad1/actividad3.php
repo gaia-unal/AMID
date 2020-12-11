@@ -69,11 +69,8 @@
                         </button>
                         <div class="dropdown-menu">
                             <ul class="list-group-item">
-                                <a href="<?php echo base_url();?>modulo10/unidad1/temas"
-                                    class="list-group-item">Temas</a>
-                                <a href="<?php echo base_url();?>modulo10/unidad1/actividad1"
-                                    class="list-group-item">Actividades</a>
-                                
+                                <a href="<?php echo base_url();?>modulo10/unidad1/contenidos"
+                                    class="list-group-item">Conteidos</a>                                
                             </ul>
                         </div>
                     </div>

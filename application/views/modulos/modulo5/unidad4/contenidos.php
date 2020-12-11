@@ -124,7 +124,7 @@
                 <div class="card mt-4">
                     <div class="card-body">
                         <div class="contenido ">
-                            <h1 class="first_title"><br>Contenidos unidad 4. Anuncios de bien público (ABP)</h1>
+                            <h1 class="first_title"><br>Contenidos unidad 4. Publicidad y el campo político</h1>
                             <br>
                             <p class="m-b-10">
                                 A continuación encuentras los enlaces para acceder a los diferentes contenidos y al frente
@@ -140,7 +140,6 @@
                             </div>
                             <div class="row">
                                 <div class="col-6">
-                                    <a href="<?php echo base_url(); ?>modulo5/unidad4/actividad1" type="button" class="btn btn-info" style="width: 100%;">Anuncios de bien público (ABP)</a><br><br>
                                 </div>
                                 <div class="col-6">
                                     <a href="<?php echo base_url(); ?>modulo5/unidad4/actividad1" type="button" class="btn btn-info" style="width: 100%;">Actividad 1: La publicidad y el auspicio – ubicación, mensajes y audiencia

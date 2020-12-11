@@ -25,7 +25,7 @@
 
             <div class="list-group list-group-flush">
 
-                <a href="<?php echo base_url();?>modulo1" class="list-group-item list-group-item-action bg-light"><i
+            <a href="<?php echo base_url();?>modulo1" class="list-group-item list-group-item-action bg-light"><i
                         class="dropdown-menu"></i>Módulo 1<span class="arrow"></span></a>
 
 
@@ -49,6 +49,9 @@
 
                 <a href="<?php echo base_url();?>modulo8" class="list-group-item list-group-item-action bg-light">
                     Módulo 8</a>
+
+                <a href="<?php echo base_url();?>modulo9" class="list-group-item list-group-item-action bg-light">
+                    Módulo 9</a>
 
                 <ul class="list-group-item">
 
@@ -75,8 +78,7 @@
                     <a href="#" class="list-group-item">Unidad 3</a>
                 </ul>
 
-                <a href="<?php echo base_url();?>modulo9" class="list-group-item list-group-item-action bg-light">
-                    Módulo 9</a>
+
                 <a href="<?php echo base_url();?>modulo10" class="list-group-item list-group-item-action bg-light">
                     Módulo 10</a>
                 <a href="<?php echo base_url();?>modulo11" class="list-group-item list-group-item-action bg-light">
@@ -143,7 +145,7 @@
             <br>
             <center>
                 <a href="<?php echo base_url();?>modulo9" class="btn btn_navegacion">Anterior</a>
-                <a href="<?php echo base_url();?>modulo9/unidad1/temas" class="btn btn_navegacion">Siguiente</a>
+                <a href="<?php echo base_url();?>modulo9/unidad1/contenidos" class="btn btn_navegacion">Siguiente</a>
             </center>
             <?php $this->load->view('initial/paginacion');?>
 
