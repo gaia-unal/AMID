@@ -124,7 +124,7 @@
                                     <a href="<?php echo base_url(); ?>modulo1/unidad4/actividad1" type="button" class="btn btn-info" style="width: 100%;">AMI, enseñanza y aprendizaje</a> <br><br>
                                 </div>
                                 <div class="col-6">
-                                    <a href="<?php echo base_url(); ?>modulo1/unidad4/actividad1" type="button" class="btn btn-info" style="width: 100%;">Actividad 1: AMI, enseñanza y aprendizaje</a> <br><br>
+                                    <a href="<?php echo base_url(); ?>modulo1/unidad4/actividad3" type="button" class="btn btn-info" style="width: 100%;">Actividad 1: AMI, enseñanza y aprendizaje</a> <br><br>
                                 </div>
                             </div>
                         </div>

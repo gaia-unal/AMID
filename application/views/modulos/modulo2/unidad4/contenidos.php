@@ -125,7 +125,7 @@
                                     </a> <br><br>
                                 </div>
                                 <div class="col-6">
-                                    <a href="<?php echo base_url(); ?>modulo2/unidad4/actividad3" type="button" class="btn btn-info" style="width: 100%;">Actividad de retroalimentación: El proceso de desarrollo de las noticias: más allá de 5 por qués y 1 cómo (5ws y 1h en inglés) </a><br><br>
+                                    <a href="<?php echo base_url(); ?>modulo2/unidad4/actividad2" type="button" class="btn btn-info" style="width: 100%;">Actividad de retroalimentación: El proceso de desarrollo de las noticias: más allá de 5 por qués y 1 cómo (5ws y 1h en inglés) </a><br><br>
                                 </div>
                             </div>
                         </div>

@@ -129,10 +129,10 @@
                             </div>
                             <div class="row">
                                 <div class="col-6">
-                                    <a href="<?php echo base_url(); ?>modulo3/unidad1/actividad1" type="button" class="btn btn-info" style="width: 100%;">Códigos de la industria sobre la diversidad y la representación</a> <br><br>
+                                    <a href="<?php echo base_url(); ?>modulo3/unidad2/actividad1" type="button" class="btn btn-info" style="width: 100%;">Códigos de la industria sobre la diversidad y la representación</a> <br><br>
                                 </div>
                                 <div class="col-6">
-                                    <a href="<?php echo base_url(); ?>modulo3/unidad1/actividad1" type="button" class="btn btn-info" style="width: 100%;">Actividad: Códigos de la industria sobre la diversidad y la representación
+                                    <a href="<?php echo base_url(); ?>modulo3/unidad2/actividad1" type="button" class="btn btn-info" style="width: 100%;">Actividad: Códigos de la industria sobre la diversidad y la representación
   </a><br><br>
                                 </div>
                             </div>
