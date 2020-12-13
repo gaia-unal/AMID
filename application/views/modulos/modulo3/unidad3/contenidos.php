@@ -130,11 +130,11 @@
                             </div>
                             <div class="row">
                                 <div class="col-6">
-                                    <a href="<?php echo base_url(); ?>modulo3/unidad1/actividad1" type="button" class="btn btn-info" style="width: 100%;">Televisión, películas y publicación de libros
+                                    <a href="<?php echo base_url(); ?>modulo3/unidad3/actividad1" type="button" class="btn btn-info" style="width: 100%;">Televisión, películas y publicación de libros
 </a> <br><br>
                                 </div>
                                 <div class="col-6">
-                                    <a href="<?php echo base_url(); ?>modulo3/unidad1/actividad1" type="button" class="btn btn-info" style="width: 100%;">Actividad: Televisión, películas y publicación de libros
+                                    <a href="<?php echo base_url(); ?>modulo3/unidad3/actividad1" type="button" class="btn btn-info" style="width: 100%;">Actividad: Televisión, películas y publicación de libros
 </a><br><br>
                                 </div>
                             </div>
