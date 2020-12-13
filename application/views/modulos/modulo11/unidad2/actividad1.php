@@ -128,7 +128,7 @@
 						<div id="parte1" style="display:block;">
 							<p class="card-text">
 							<h4 class="subtitle">Cultura</h4>
-							La cultura según UNESCO « ...la cultura puede considerarse actualmente como el
+							La cultura según UNESCO [1] « ...la cultura puede considerarse actualmente como el
 							conjunto de los rasgos distintivos, espirituales y materiales, intelectuales y afectivos
 							que caracterizan a una sociedad o un grupo social. Ella engloba, además de las artes y
 							las letras, los modos de vida, los derechos fundamentales al ser humano, los sistemas de
@@ -146,6 +146,7 @@
 						<div id="parte2" style="display:none;">
 							<p class="card-text">
 							<h4 class="subtitle">Influencia</h4>
+							<br><p>Norton Robledo dice que [2]</p>
 							Si dejamos de lado algunas definiciones y conceptos (...) sobre la cultura, podemos
 							decir que no hay nada en la actividad humana que no tenga una connotación cultural,
 							incluso la producción de bienes destinados a la satisfacción de las necesidades
@@ -198,8 +199,8 @@
 							haya subido a la red un asunto dedicado a los temas trans-fronterizos, como el medio
 							ambiente o el desarrollo sostenible, los derechos humanos, etc. Examine cómo se crea el
 							diálogo y la construcción de consenso entre los ciudadanos del mundo y cómo se promueve a
-							través de características interactivas. <br>
-							<h4 class="subtitle">Recomendación</h4>
+							través de características interactivas. [3] <br>
+							<br><h4 class="subtitle">Recomendación</h4>
 							Le recomendamos entrevistar a miembros de una comunidad de migrantes acerca de los
 							siguientes temas:
 							<ol>
@@ -227,6 +228,16 @@
 							</div>
 						</center>
                         </div>
+						<h3 class="subtitle">Bibliografía</h3>
+							<p>[1] (Conferencia Mundial sobre las Políticas Culturales; México, 1982) Puede ampliarse en
+							www.unesco.org</p>
+							<p>[2] Robledo, Norton (2007). <i>Los medios de comunicación y la cultura.</i> Recuperado de:
+							https://critica.cl/ciencias-sociales/los-medios-de-comunicacion-y-la-cultura</p>
+							<p>[3] UNAOC,UNESCO,"Unidad 11: MEDIOS, TECNOLOGÍA Y EL MUNDO GLOBAL (GLOBAL VILLAGE), en
+                            <i>"Media Information Literacy for Teachers </i>, 2020"
+                            http://unesco.mil-for-teachers.unaoc.org/modules/module-11/?lang=es
+                        </p>
+
                     </div>
                 </div>
             </div>

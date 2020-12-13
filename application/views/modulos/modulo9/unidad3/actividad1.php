@@ -126,7 +126,7 @@
                         <p class="card-text">
                             Para garantizar el éxito de los cursos y programas de AMI, muchos expertos han
                             desarrollado un conjunto de recomendaciones. Varias de estas recomendaciones se enumeran a
-                            continuación. Recomendaciones sugeridas:
+                            continuación. Recomendaciones sugeridas: [1]
                             <ul>
                                 <li>Identificar el contexto</li>
                                 <li>Identificar los principales participantes y partidarios a nivel de programa y de
@@ -155,6 +155,12 @@
                                 required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                         <br>
                         </div>
+                        <br>
+                        <h4 class="subtitle">Bibliografía:</h4>
+                            <p>[1] UNAOC, UNESCO, "Módulo 9: Manejando el cambio para fomentar un medio ambiente propicio para las escualas AMI", en <em>Media Information Literacy for Teachers</em>, 2020.
+                                <a href="http://unesco.mil-for-teachers.unaoc.org/modules/modulo-9-comunicacion-ami-y-aprendizaje-modulo-final/unidad-3-manejando-el-cambio-para-fomentar-un-medio-ambiente-propicio-para-las-escuelas-ami/?lang=es" target="_blank" rel="noopener noreferrer">
+                                http://unesco.mil-for-teachers.unaoc.org/modules/modulo-9/?lang=es</a>
+                            </p>
                     </div>
                 </div>
 

@@ -183,7 +183,7 @@
                     </div>
                 </div>
 
-
+ 
 
             </div>
 
@@ -208,6 +208,7 @@
 
     <?php $this->load->view('initial/footer');?>
     <?php $this->load->view('initial/scriptGenerico');?>
+    <script src="<?php echo base_url();?>public/assets/modulos/mod7/js/u11infoWiki.js"></script>
 
 
     <script>

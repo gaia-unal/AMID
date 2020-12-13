@@ -130,48 +130,48 @@
 							lo que los productores esperaban? <br> Imagínese cómo una familia con un pasado totalmente
 							diferente o un período de tiempo distinto podría interpretar algunos de los programas
 							actuales de televisión o anuncios. ¿Qué dirían ellos sobre las audiencias de los medios hoy
-							en día?<br>
-							<textarea name="preg1" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+							en día? [1]<br>
+							<br><textarea name="preg1" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
                                 required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea><br><br>
 
 							Usando el Internet, investigue la respuesta de las audiencias a los programas populares de
 							televisión en una variedad de países. ¿Cómo las diferentes audiencias de estos programas,
 							“leen” o interpretan a los personajes principales?<br>
-							<textarea name="preg2" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+						<br>	<textarea name="preg2" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
                                 required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea><br><br>
 
 							Analice los mensajes y los valores que se transmiten a través de un texto mediático popular
 							como un programa de televisión. ¿Cómo los mensajes podrían cambiar si incluyeran personas de
 							diferentes grupos sociales (por Ej. edad, origen étnico), o si los personajes femeninos y
 							masculinos cambiaran de papeles? ¿Cómo podría impactar esto en la audiencia?<br>
-							<textarea name="preg3" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                            <br>	<textarea name="preg3" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
                                 required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea></textarea> <br><br>
 
 							Utilizando Internet, investigue acerca de las actuales estrategias que los anunciantes
 							utilizan para entender y seleccionar las audiencias, temas como psicografías o demografía
 							social. Describa a continuación el enfoque, identifique las categorías, y analice los
 							supuestos que se han hecho sobre las audiencias en la actualidad <br>
-							<textarea name="preg4" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                            <br>	<textarea name="preg4" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
                                 required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea></textarea> <br><br>
 
 							Haga dos lecturas opuestas de un texto mediático popular, como una película, un programa de
 							televisión o un artículo de periódico. Determine las características de la audiencia o
 							antecedentes que podrían contribuir a cada lectura crítica. ¿Cómo esto explica la variedad
 							de respuestas que los textos mediáticos populares pueden recibir de las audiencias? <br>
-							<textarea name="preg5" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                            <br>	<textarea name="preg5" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
                                 required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea></textarea> <br><br>
 
 							Escanee una serie de periódicos o utilice Internet para evaluar los títulos de las películas
 							actuales. Basado en los títulos y en los anuncios para estas películas, ¿qué es lo que usted
 							espera ver en cada película? ¿Cuál cree usted que es la audiencia seleccionada para cada una
 							de estas películas?<br>
-							<textarea name="preg6" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+							<br><textarea name="preg6" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
                                 required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea></textarea> <br><br>
 
 							Actualmente, en los cines, la audiencia mira anuncios antes de que inicie la película.
 							¿Tomando las películas del ejercicio anterior, qué tipo de anuncios antes de la película
 							esperaría usted que pasen a las audiencias?<br>
-							<textarea name="preg7" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                            <br>	<textarea name="preg7" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
                                 required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea></textarea> <br><br>
 
 							Examine el material promocional que está disponible para las universidades en su región. Si
@@ -181,7 +181,7 @@
 							estudiantes no aparecen, qué imágenes se han escogido y qué dicen acerca de la institución?
 							Basado en su análisis del material, ¿cuál es la audiencia seleccionada? ¿Cuál es el mensaje
 							que se transmite?<br>
-							<textarea name="preg8" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+							<br><textarea name="preg8" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
                                 required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea></textarea> <br><br>
 
 							Existen muchas marcas independientes, películas, programas de televisión y revistas
@@ -189,7 +189,7 @@
 							productos mediáticos para descubrir qué valor – social, artístico o comercial – tienen para
 							ofrecer a las audiencias. ¿Cómo estos productores o creadores pagan y mercadean sus
 							productos?<br>
-							<textarea name="preg9" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
+                            <br>	<textarea name="preg9" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
                                 required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea></textarea> <br><br>
 							Investigue sobre el trabajo realizado por Blumer y Kats (1974), quien dijo que las
 							audiencias podrían escoger y utilizar un texto mediático por una o varias de las siguientes
@@ -211,6 +211,14 @@
                                 required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea></textarea>
 						</p>
                         </div>
+                        <br>
+                                <h4 class="subtitle">Bibliografía:</h4>
+                                <p>[1] UNAOC, UNESCO, "Módulo 10: Audiencia", en <em>Media Information Literacy for
+                                        Teachers</em>, 2020.
+                                    <a href="http://unesco.mil-for-teachers.unaoc.org/modules/modulo-10-audiencia/?lang=es"
+                                        target="_blank" rel="noopener noreferrer">
+                                        http://unesco.mil-for-teachers.unaoc.org/modules/modulo-10/?lang=es</a>
+                                </p>
                     </div>
                 </div>
 

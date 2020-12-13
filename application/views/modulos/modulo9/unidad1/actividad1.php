@@ -126,6 +126,9 @@
 							<blockquote
 								cite="http://unesco.mil-for-teachers.unaoc.org/modules/modulo-9-comunicacion-ami-y-aprendizaje-modulo-final/unidad-1-comunicacion-ensenanza-y-aprendizaje/?lang=es"
 								align="justify">
+
+                                <p>Según la UNESCO [1]</p>
+
 								“Si utilizamos los medios, bibliotecas, archivos y otros proveedores de información
 								(incluyendo Internet o las nuevas tecnologías) en el aula, tenemos que tomar en
 								cuenta nuestra forma de enseñanza: ¿cómo utilizamos a los medios y a los otros
@@ -150,6 +153,11 @@
 							lacomunicación de vuelta en una comunicación efectiva.
 						</p>
                         </div>
+                        <h4 class="subtitle">Bibliografía:</h4>
+                            <p>[1] UNAOC, UNESCO, "Módulo 9: Comunicación, enseñanza y aprendizaje", en <em>Media Information Literacy for Teachers</em>, 2020.
+                                <a href="http://unesco.mil-for-teachers.unaoc.org/modules/modulo-9-comunicacion-ami-y-aprendizaje-modulo-final/unidad-1-comunicacion-ensenanza-y-aprendizaje/?lang=es" target="_blank" rel="noopener noreferrer">
+                                http://unesco.mil-for-teachers.unaoc.org/modules/modulo-9/?lang=es</a>
+                            </p>
                     </div>
                 </div>
 

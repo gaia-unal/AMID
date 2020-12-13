@@ -119,14 +119,13 @@
                                         </a>
                                     </center>
                                 </div>
-
-                                <br>Referencias: <a target="_blank"
-                                href="http://unesco.mil-for-teachers.unaoc.org/modules/modulo-7-oportunidades-y-retos-en-internet/?lang=es">AMID</a>
-                                <div class="animated bounceIn retraso5">
-                                    <h5 class="subtEv"><br> Ya estás listo para comenzar la temática, ¡da clic en el
-                                        botón siguiente!
-                                    </h5>
-                                </div>
+<br>
+                                <h4 class="subtitle">Bibliografía:</h4>
+                            <p>[1] UNAOC, UNESCO, "Módulo 9: Comunicación, AMI y aprendizaje", en <em>Media Information Literacy for Teachers</em>, 2020.
+                                <a href="http://unesco.mil-for-teachers.unaoc.org/modules/modulo-9-comunicacion-ami-y-aprendizaje-modulo-final/?lang=es" target="_blank" rel="noopener noreferrer">
+                                http://unesco.mil-for-teachers.unaoc.org/modules/modulo-9/?lang=es</a>
+                            </p>
+                                
                                 </p>
 
                     </div>

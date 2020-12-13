@@ -125,6 +125,7 @@
                         <?php echo form_open('modulo8/unidad3/actividad2');$this->session->set_userdata('idAct','m8u3a1'); ?>
                         <div class="contenido">
                         <p class="card-text">
+                        
                             Almacenamiento de la información de formato digital, permitiendo que sea accesible
                             utilizando una amplia gama de dispositivos, no como en otras formas de información
                             analógica. Este acceso flexible hace que la digitalización sea importante y también da
@@ -132,40 +133,46 @@
                             información. Esencialmente, la alfabetización digital incluye el analizar, localizar,
                             organizar, evaluar, crear y utilizar la información utilizando la tecnología digital. Hable
                             sobre las ventajas de tener la información en un formato digital (transmisión eficaz,
-                            almacenamiento, investigación, manipulación, compatibilidad, etc.)
+                            almacenamiento, investigación, manipulación, compatibilidad, etc.) [1]
                             <ol>
                                 <li>Investigue en Internet y en otros recursos en línea, tales como bases de datos y
                                     bibliotecas electrónicas y recolecte información sobre un tema específico de
                                     investigación. Reduzca las fuentes de información para que calcen en su propósito de
                                     investigación. <br> Busque palabras claves, operaciones lógicas (por Ej. “y”, “o”) y
-                                    determine a continuación qué elementos trabajan mejor y por qué</li>
+                                    determine a continuación qué elementos trabajan mejor y por qué</li><br>
                                 <textarea name="preg1" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
+                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea><br>
                                 <li>Estudie un sitio en Internet que se utilice para dar cursos sobre educación a
                                     profesores o cualquier otro programa educativo. Revise cómo se organiza esta
                                     información y cómo se tiene acceso al sitio. <br> ¿Qué recursos de información
                                     digital se utilizan? ¿Cómo se integran los recursos digitales a los materiales del
                                     curso? Practique hacer uso de este sitio y hable sobre lo útil que puede ser para el
                                     aprendizaje y cuáles son las limitaciones. Hable sobre las ventajas y desventajas.
-                                </li>
+                                </li><br>
                                 <textarea name="preg2" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
                                 required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
-                                Visite varios “blogs” y “wikis” que han sido creados por individuos o en colaboración
+                                <br>   Visite varios “blogs” y “wikis” que han sido creados por individuos o en colaboración
                                 con otras personas.
                                 <li>¿Qué tipo de intercambio de información se da en estos medios en línea? ¿Para qué
                                     propósito sirve la información? ¿Quién provee la información? ¿Cuáles cree usted que
-                                    son las motivaciones y los motivos?</li>
+                                    son las motivaciones y los motivos?</li><br>
                                 <textarea name="preg3" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
                                 required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
-                                <li>Escriba a continuación, desde el punto de vista de los estudiantes, acerca de ¿qué
+                                <br> <li>Escriba a continuación, desde el punto de vista de los estudiantes, acerca de ¿qué
                                     información digital debería ser preservada? ¿Cuáles son los principales criterios de
                                     selección y las soluciones técnicas disponibles, y cómo se puede asegurar la
-                                    sostenibilidad? ¿Cuáles son otros aspectos de este tema de preservación?</li>
+                                    sostenibilidad? ¿Cuáles son otros aspectos de este tema de preservación?</li><br>
                                 <textarea name="preg4" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
                                 required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                             </ol>
                         </p>
                         </div>
+
+                        <h4 class="subtitle">Bibliografía:</h4>
+                            <p>[1] UNAOC, UNESCO, "Módulo 8: Alfabetización informacional y destrezas bibliotecarias", en <em>Media Information Literacy for Teachers</em>, 2020.
+                                <a href="http://unesco.mil-for-teachers.unaoc.org/modules/modulo-8-alfabetizacion-informacional-y-destrezas-bibliotecarias/unidad-3-alfabetizacion-informacional-digital/?lang=es" target="_blank" rel="noopener noreferrer">
+                                http://unesco.mil-for-teachers.unaoc.org/modules/modulo-8/?lang=es</a>
+                            </p>
                     </div>
                 </div>
 

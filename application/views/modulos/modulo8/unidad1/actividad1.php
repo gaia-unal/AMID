@@ -123,6 +123,7 @@
                             <div id="parte1">
                                 <h4 class="subtitle">Definición de información</h4> <br>
                                 <ul>
+                                <p>La UNESCO [1] define</p>
                                     <li>La información son datos que han sido recolectados, procesados e interpretados
                                         de manera que puedan ser presentados de forma que puede ser utilizada</li>
                                     <li>Información es aquella conciencia del hombre y contribuye a su conocimiento”
@@ -255,6 +256,12 @@
                             </center>
                             </p>
                         </div>
+
+                        <h4 class="subtitle">Bibliografía:</h4>
+                            <p>[1] UNAOC, UNESCO, "Módulo 8: Alfabetización informacional y destrezas bibliotecarias", en <em>Media Information Literacy for Teachers</em>, 2020.
+                                <a href="http://unesco.mil-for-teachers.unaoc.org/modules/modulo-8-alfabetizacion-informacional-y-destrezas-bibliotecarias/unidad-1-conceptos-y-aplicacion-de-la-alfabetizacion-informacional/?lang=es" target="_blank" rel="noopener noreferrer">
+                                http://unesco.mil-for-teachers.unaoc.org/modules/modulo-8/?lang=es</a>
+                            </p>
                     </div>
                 </div>
             </div>

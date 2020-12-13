@@ -110,7 +110,10 @@
                 <div class="card mt-4 contenido">
                     <div class="card-body"><br>
                     <p class="card-text">
-                            Sabemos que la libertad de expresión es un elemento crítico para la democracia, el
+
+                            Según la UNESCO [1]: <br>
+
+                           <br> Sabemos que la libertad de expresión es un elemento crítico para la democracia, el
                             desarrollo y el diálogo – sin ella ninguna de estas palabras podría funcionar o prosperar.
                             La libertad de expresión es un derecho universal que todo el mundo debe gozar. Todos tienen
                             el derecho a la libertad de opinión y de expresión; este derecho incluye el derecho a
@@ -134,10 +137,13 @@
                             discernimiento en una democracia.
                         </p>
                     </div>
+                    <h4 class="subtitle">Bibliografía:</h4>
+                            <p>[1] UNAOC, UNESCO, "Módulo 12: Libertad de expresión", en <em>Media Information Literacy for Teachers</em>, 2020.
+                                <a href="http://unesco.mil-for-teachers.unaoc.org/modules/module-12/?lang=es" target="_blank" rel="noopener noreferrer">
+                                http://unesco.mil-for-teachers.unaoc.org/modules/modulo-12/?lang=es</a>
+                            </p>
                 </div>
-                <!-- /.card -->
-                <br>
-
+              
 
 
             </div>

@@ -129,7 +129,7 @@
                                 <a href="#" onclick="preg1();">
                                     <li>
                                         <h4 class="subtEv">¿Qué es Phishing?</h4>
-                                    </li>
+                                    </li> 
                                 </a>
                                 <a href="#" onclick="preg2();">
                                     <li>
@@ -152,11 +152,15 @@
                                     </li>
                                 </a>
                             </ul>
-                            <h4 class="subtEv">Referencias</h4>
-                            Fuente: Paus,L (2015). Phishing tradicional en Paypal [Imagen]. Recuperado de:
+                            <h4 class="subtitle">Bibliografía:</h4>
+                            [1] Fuente: Paus,L (2015). Phishing tradicional en Paypal [Imagen]. Recuperado de:
                             https://www.welivesecurity.com/la-es/2015/05/08/5-tipos-de-phishing/f <br>
-                            Fuente: Paus,L (2015). Mishing vía whatsapp [Imagen]. Recuperado de:
-                            https://www.welivesecurity.com/la-es/2015/05/08/5-tipos-de-phishing/
+                            
+                            [2]  GUDÍN RODRÍGUEZ-MAGARIÑOS, Artículo monográfico, 2008, 3, (versión online). Disponible en:
+http://web.icam.es/bucket/Faustino%20Gudín%20-%20Nuevos%20delitos%20informáticos.pdf y
+https://www.sepin.es/cronus4plus/documento/verDoc.asp?dist=43&referencia=SP%2FDOCT%2F3705&i
+mprimir=1&cod=0010fA0GS0GA2MV0/o0HG00A0GR0H601l01J09P1S%3D29C08U1FA1Cl0JP1De1i
+a0Da0yb0G80Dl0Li0l%260Dv01i00d0E-0391jV
                             </p>
                             </blockquote>
                         </div>

@@ -126,13 +126,13 @@
                                 actualizada en Internet: retos de la medicina actual". Haz clic en la flecha para
                                 comenzar. <br><br>
                                 <center>
-                                    <a href="#" onclick="art();remove();">
+                                    <a href="#" onclick="art();">
                                     <i class="fas fa-info-circle"></i>
                                     </a></center><br><br>
                             </div>
                             <div class="animated bounceIn retraso5">
-                                Ahora lee el siguiente texto para guiarse antes de confiar en un sitio web y luego
-                                realiza el test. Haz clic en las flechas para navegar en el contenido.
+                                Ahora lea el siguiente texto para guiarse antes de confiar en un sitio web y luego
+                                realice el test. Haz clic en las flechas para navegar en el contenido.
                                 <div id="img1">
                                     <img class="imagen" src="<?php echo base_url();?>public/assets/modulos/mod7/img/img1.png">
                                 </div>
@@ -171,11 +171,9 @@
                                 </div>
                                 </center>
                                 
-                            </div><br>
-                            <h4 class="subtEv">Referencias</h4>
-                            César Gamboa-Peñaranda Antón Zamora-Ilarionov Edén Galán-Rodas Acta Médica Costarricense
-                            vol. 56 issue 4 (2014) pp: 186-187 Published by
-                            http://creativecommons.org/licenses/by-nc-nd/3.0/
+                            </div><br><br>
+                            <h4 class="subtitle">Bibliografía:</h4>
+                            [1] GAMBOA-PENARANDA, César; ZAMORA-ILARIONOV, Antón  and  GALAN-RODAS, Edén. Acceso a información médica actualizada en Internet: retos de la medicina actual. Acta méd. costarric [online]. 2014, vol.56, n.4 [cited  2020-12-13], pp.186-187. Available from: <http://www.scielo.sa.cr/scielo.php?script=sci_arttext&pid=S0001-60022014000400011&lng=en&nrm=iso>. ISSN 0001-6002
                         </p>
                         
                         </div>

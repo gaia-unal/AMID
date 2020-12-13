@@ -124,10 +124,10 @@
                                 le considera como un fraude y pone al violador
                                 en riesgo de ser sancionado." Riesgos relacionados con el contacto en línea. Adaptado de
                                 Youth Protection Roundtable Tool Kit – Stiftung
-                                Digitale Chancen 2009<br>
+                                Digitale Chancen 2009 [1]<br>
                         </blockquote>
                         </p>
-                        <h4 class="subtEv">Código Penal Capitulo VIII de los delitos contra los derechos de autor</h4>
+                        <p>Código Penal [2] Capitulo VIII de los delitos contra los derechos de autor</p>
                         <p class="card-text">
                             El código penal en su capítulo VIII menciona los delitos y las sanciones
                             para aquellos que violen los derechos de autor, a continuación se mencionan algunos: <br>
@@ -175,6 +175,12 @@
                                     o impedir o restringir cualquier uso no autorizado de éstos.</li>
                             </ul>
                         </p>
+
+                        <h4 class="subtitle">Bibliografía:</h4>
+                        [1] UNAOC, UNESCO, "Módulo 7: Oportunidades y retos en internet; unidad 2: retos y riesgos en el mundo virtual", en <em>Media Information Literacy for Teachers</em>, 2020.
+                                <a href="http://unesco.mil-for-teachers.unaoc.org/modules/modulo-7-oportunidades-y-retos-en-internet/unidad-2-retos-y-riesgos-en-el-mundo-virtual/?lang=es" target="_blank" rel="noopener noreferrer">
+                                http://unesco.mil-for-teachers.unaoc.org/modules/modulo-7-oportunidades-y-retos-en-internet/unidad-2-retos-y-riesgos-en-el-mundo-virtual/?lang=es</a>
+                       <br> [2] Código penal Colombiano: https://www.oas.org/dil/esp/codigo_penal_colombia.pdf 
 
                         </div>
                     </div>

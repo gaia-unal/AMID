@@ -149,6 +149,8 @@
                         <div id="parte2" style="display:none;">
                             <p class="card-text">
                             <h4 class="subtitle">La cultura de consumo</h4>
+
+                            Jose Antonio Zamora [1] dice que: 
                             García Canclini define al consumo cultural como "el conjunto de procesos de apropiación y
                             usos de productos en los que el valor simbólico prevalece sobre los valores de uso y de
                             cambio, o donde al menos estos últimos se configuran subordinados a la dimensión simbólica"
@@ -161,7 +163,7 @@
                                 <li>En el tercero el consumidor mismo se convierte en producto. Lo que importa es
                                     el sentido y la identidad.</li>
                             </ol>
-                            Zamora, Jose Antonio (2012)- <i>El consumo como cultura</i>
+                          
                             </p>
                         </div>
                         <div id="parte3" style="display:none;">
@@ -211,6 +213,8 @@
                             </div>
                         </center>
                         </div>
+                        <h3 class="subtitle">Bibliografía</h3>
+							<p>[1] J. A. Zamora, "Critica," Agosto 2012. [Online]. Available: http://www.revista-critica.com/la-revista/monografico/analisis/51-el-consumo-como-cultura.</p>
                     </div>
                 </div>
 

@@ -38,18 +38,18 @@
 
                 <a href="<?php echo base_url();?>modulo4" class="list-group-item list-group-item-action bg-light">
                     Módulo 4</a>
-                
-                 <a href="<?php echo base_url();?>modulo5" class="list-group-item list-group-item-action bg-light">
-                        Módulo 5</a>
-                  
-                 <a href="<?php echo base_url();?>modulo6" class="list-group-item list-group-item-action bg-light">
+
+                <a href="<?php echo base_url();?>modulo5" class="list-group-item list-group-item-action bg-light">
+                    Módulo 5</a>
+
+                <a href="<?php echo base_url();?>modulo6" class="list-group-item list-group-item-action bg-light">
                     Módulo 6</a>
 
 
                 <div class="btn-group dropright">
 
                     <a href="<?php echo base_url();?>modulo7" class="list-group-item list-group-item-action bg-light">
-                    Módulo 7</a>
+                        Módulo 7</a>
 
                     <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">
@@ -59,13 +59,13 @@
                         <ul class="list-group-item">
                             <a href="<?php echo base_url();?>modulo7/unidad1" class="list-group-item">Unidad 1</a>
                             <a href="#" class="list-group-item">Unidad 2</a>
-                            
-                            
+
+
                         </ul>
                     </div>
                 </div>
 
-               
+
                 <a href="<?php echo base_url();?>modulo8" class="list-group-item list-group-item-action bg-light">
                     Módulo 8</a>
                 <a href="<?php echo base_url();?>modulo9" class="list-group-item list-group-item-action bg-light">
@@ -112,31 +112,28 @@
                         <center>
                             <h4 class="subtitle">Antecedentes y fundamento</h4><br>
                             <center>
-                            <p class="card-text">
-                            Haciendo "Clic" en el <b>icono</b> puede conocer los antecedentes y el fundamento para este módulo
-                
-                <div class="imgF">
-                  <center>
-                    <a href="#" onclick="opc1();">
-                    <i class="fas fa-info-circle"></i>
-                    </a>
-                  </center>
-                </div>
+                                <p class="card-text">
+                                    Haciendo "Clic" en el <b>icono</b> puede conocer los antecedentes y el fundamento
+                                    para este módulo
 
-                <br>Referencias: <a target="_blank"
-                  href="http://unesco.mil-for-teachers.unaoc.org/modules/modulo-7-oportunidades-y-retos-en-internet/?lang=es">Unesco</a>
-                <div class="animated bounceIn retraso5">
-                  <h5><br> Ya estás listo para comenzar la temática, ¡da clic en el botón siguiente!</h5>
-                </div>
-              </p>
-                           
+                                <div class="imgF">
+                                    <center>
+                                        <a href="#" onclick="opc1();">
+                                            <i class="fas fa-info-circle"></i>
+                                        </a>
+                                    </center>
+                                </div>
+                                <br>
+                                <h4 class="subtitle">Bibliografía:</h4>
+                                <p>[1] UNAOC, UNESCO, "Módulo 7: Oportunidades y retos en internet", en <em>Media Information
+                                        Literacy for Teachers</em>, 2020.
+                                    <a href="http://unesco.mil-for-teachers.unaoc.org/modules/modulo-7-oportunidades-y-retos-en-internet/?lang=es"
+                                        target="_blank" rel="noopener noreferrer">
+                                        http://unesco.mil-for-teachers.unaoc.org/modules/modulo-7-oportunidades-y-retos-en-internet/?lang=es</a>
+                                </p>
+                                </p>
                     </div>
                 </div>
-                <!-- /.card -->
-                <br>
-
-
-
             </div>
 
             <center>

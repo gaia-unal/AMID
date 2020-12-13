@@ -127,6 +127,9 @@
                         <div class="contenido">
                         <p class="card-text">
                         <div id="parte1" style="display:block;">
+
+                                <p>La UNESCO [1] define las 6 etapas:
+
                                 <dt>Etapa 1</dt>
                                 <dd>Definición de las necesidades o problemas de información ¿Qué es lo
                                     que quiero conocer? ¿Qué problema estoy tratando de resolver? ¿Entiendo la
@@ -222,6 +225,11 @@
                                 </center>
                         </p>
                         </div>
+                        <h4 class="subtitle">Bibliografía:</h4>
+                            <p>[1] UNAOC, UNESCO, "Módulo 8: Alfabetización informacional y destrezas bibliotecarias", en <em>Media Information Literacy for Teachers</em>, 2020.
+                                <a href="http://unesco.mil-for-teachers.unaoc.org/modules/modulo-8-alfabetizacion-informacional-y-destrezas-bibliotecarias/unidad-2-ambiente-de-aprendizaje-y-alfabetizacion-informacional/?lang=es" target="_blank" rel="noopener noreferrer">
+                                http://unesco.mil-for-teachers.unaoc.org/modules/modulo-8/?lang=es</a>
+                            </p>
                     </div>
                 </div>
 

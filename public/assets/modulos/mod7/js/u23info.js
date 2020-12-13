@@ -18,9 +18,8 @@ function art() {
         confirmButtonText: 'Siguiente &rarr;',
         backdrop: 'rgb(240, 255, 255)',
         progressSteps: ['1', '2', '3', '4', '5', '6']
-    }).queue([
-        {
-            text: 'La información disponible en Internet se ha incrementado sustancialmente durante las ' +
+    }).queue([{
+            text: 'Según César Gamboa Peñaranda [1]: La información disponible en Internet se ha incrementado sustancialmente durante las ' +
                 'últimas décadas, siendo la salud una de las temáticas de mayor demanda de búsqueda, es por ' +
                 'ello que en la labor del profesional de la salud y, especialmente, en la práctica diaria del ' +
                 'médico, existe la necesidad de mantenerse informado sobre las nuevas evidencias científicas, ' +
@@ -37,13 +36,13 @@ function art() {
         {
             text: 'Es por esto que es preciso acudir a fuentes o recursos de información en medicina y ' +
                 'salud, que cuenten con estándares de calidad y permitan al médico acceder datos científicos ' +
-                'serios y válidos para tomar decisiones más acertadas en la práctica clínica diaria.'
+                'serios y válidos para tomar decisiones más acertadas en la práctica clínica diaria. [1]'
         },
         {
             text: 'Se acude comúnmente a buscadores generales, como Google, Yahoo, Altavista, entre los ' +
                 'cuales definitivamente el de mayor demanda es Google (www.google. com), pero la información ' +
                 'disponible allí puede proceder de fuentes no verificables, por lo que es importante identificar ' +
-                'las páginas más indicadas.'
+                'las páginas más indicadas.[1]'
         },
         {
             text: 'Por esa razón, Google implementó desde hace algún tiempo Google Scholar (Google Académico), ' +
@@ -51,7 +50,7 @@ function art() {
                 'la etapa inicial de búsqueda, los cuales se presentan por orden de relevancia y contienen información ' +
                 'de revistas científicas, incluyendo fuente, año de publicación, autores, número de veces que han ' +
                 'sido citadas o referenciadas, artículos relacionados y otras versiones de la publicación; el contenido ' +
-                'puede encontrarse en formato php, PDF, DOC u otros.'
+                'puede encontrarse en formato php, PDF, DOC u otros. [1]'
         },
         {
             text: 'Es recomendable utilizar la opción de búsqueda avanzada, ya que permite hacer más fina la búsqueda, ' +
@@ -66,93 +65,109 @@ function avanzar() {
     }
     con++;
     switch (con) {
-        case 1: {
-            // btnF.style.display = (btnF.style.display == "none") ? "block-inline" : "none";
-            btnF.style.display = "inline-block";
-            img1.style.display = "none";
-            img2.style.display = "block";
-            break;
-        }
-        case 2: {
-            img2.style.display = "none";
-            img3.style.display = "block";
-            break;
-        }
-        case 3: {
-            img3.style.display = "none";
-            img4.style.display = "block";
-            break;
-        }
-        case 4: {
-            img4.style.display = "none";
-            img5.style.display = "block";
-            break;
-        }
-        case 5: {
-            img5.style.display = "none";
-            img6.style.display = "block";
-            break;
-        }
-        case 6: {
-            img6.style.display = "none";
-            img7.style.display = "block";
-            break;
-        }
-        case 7: {
-            img7.style.display = "none";
-            img8.style.display = "block";
-            btn.style.display = "none";
-            break;
-        }
+        case 1:
+            {
+                // btnF.style.display = (btnF.style.display == "none") ? "block-inline" : "none";
+                btnF.style.display = "inline-block";
+                img1.style.display = "none";
+                img2.style.display = "block";
+                break;
+            }
+        case 2:
+            {
+                img2.style.display = "none";
+                img3.style.display = "block";
+                break;
+            }
+        case 3:
+            {
+                img3.style.display = "none";
+                img4.style.display = "block";
+                break;
+            }
+        case 4:
+            {
+                img4.style.display = "none";
+                img5.style.display = "block";
+                break;
+            }
+        case 5:
+            {
+                img5.style.display = "none";
+                img6.style.display = "block";
+                break;
+            }
+        case 6:
+            {
+                img6.style.display = "none";
+                img7.style.display = "block";
+                break;
+            }
+        case 7:
+            {
+                img7.style.display = "none";
+                img8.style.display = "block";
+                btn.style.display = "none";
+                break;
+            }
     }
 }
+
 function volver() {
     if (con > 8) {
         con = 8;
     }
-    
+
 
     switch (con) {
-        case 1: {
-            btnF.style.display = "none";
-            img1.style.display =   "block";
-            img2.style.display =  "none";
-            break;
-        }
-        case 2: {
-            img2.style.display =  "block";
-            img3.style.display = "none";
-            break;
-        }
-        case 3: {
-            img3.style.display = "block";
-            img4.style.display = "none";
-            break;
-        }
-        case 4: {
-            img4.style.display = "block";
-            img5.style.display = "none";
-            break;
-        }
-        case 5: {
-            img5.style.display = "block";
-            img6.style.display = "none";
-            break;
-        }
-        case 6: {
-            img6.style.display = "block";
-            img7.style.display = "none";
-            break;
-        }
-        case 7: {
-            btn.style.display = "inline-block";
-            img7.style.display = "block";
-            img8.style.display = "none";
-            break;
-        }
+        case 1:
+            {
+                btnF.style.display = "none";
+                img1.style.display = "block";
+                img2.style.display = "none";
+                break;
+            }
+        case 2:
+            {
+                img2.style.display = "block";
+                img3.style.display = "none";
+                break;
+            }
+        case 3:
+            {
+                img3.style.display = "block";
+                img4.style.display = "none";
+                break;
+            }
+        case 4:
+            {
+                img4.style.display = "block";
+                img5.style.display = "none";
+                break;
+            }
+        case 5:
+            {
+                img5.style.display = "block";
+                img6.style.display = "none";
+                break;
+            }
+        case 6:
+            {
+                img6.style.display = "block";
+                img7.style.display = "none";
+                break;
+            }
+        case 7:
+            {
+                btn.style.display = "inline-block";
+                img7.style.display = "block";
+                img8.style.display = "none";
+                break;
+            }
     }
     con--;
 }
+
 function remove() {
     txt.style.display = (txt.style.display == "none") ? "inline" : "none";
 }

@@ -156,7 +156,7 @@
                             sectoriales" y por ello "usualmente cuando se habla de libertad de prensa, realmente a lo
                             que se está refiriendo es la libertad de empresa" (CERIGUA, 2003). <br>
                             A modo de síntesis, se toma de Albert (1997) las características definitorias para estos
-                            medios alternativos:
+                            medios alternativos: [1]
                             <ol type="a">
                                 <li>Las diferencias en ingresos dentro de las instituciones de medios alternativos
                                     deberían disminuir a un ritmo constante. Tampoco debería haber alguien investido con
@@ -190,15 +190,14 @@
                                     La agenda no debería ser exclusivamente la autopreservación, sino el avance de la
                                     totalidad del proyecto alternativo.</li>
                             </ol>
-                            Fleischman, Luciana. Ginesta, Xavier. Lopez Calzada, Miguel (2009) <i>Los medios
-                                alternativos e internet: un ánalisis cualitativo del sistema mediático español</i>
+                            
                             </p>
                         </div>
                         <div id="parte3" style="display:none;">
                             <h4>Tipos</h4>
                             <p class="card-text">
                                 A continuación se presentan los tipos de medios alternativos expuestos por Lamb, Hair y
-                                McDaniel (2002):
+                                McDaniel (2002) [2]:
                             <ul>
                                 <li>Faxes</li>
                                 <li>Carritos de compras con vídeo en las tiendas comerciales.</li>
@@ -240,6 +239,9 @@
                             </div>
                         </center>
                         </div>
+                        <h3 class="subtitle">Bibliografía</h3>
+							<p>[1] Fleischman, Luciana. Ginesta, Xavier. Lopez Calzada, Miguel (2009) Los medios alternativos e internet: un ánalisis cualitativo del sistema mediático español</p>
+                            <p>[2] Marketing, Sexta Edición, de Lamb Charles, Hair Joseph y McDaniel Carl, International Thomson Editores, 2002, Págs. 512 al 516.</p>
                     </div>
                 </div>
 

@@ -153,7 +153,7 @@
 							</div>
 							<div id="parte3" style="display:none;">
 								<h4 class="subtEv">¿Qué papel tiene la meta-cognición en la transferencia de aprendizaje? </h4>
-								«El objetivo de enseñar las habilidades del pensamiento no se tendría que considerar
+								Montse Tesouro [1] dice que: «El objetivo de enseñar las habilidades del pensamiento no se tendría que considerar
 								como
 								algo opuesto a enseñar el contenido convencional, sino como un complemento de éste. Las
 								personas razonan con frecuencia de una manera inferior a la óptima; por lo tanto, son
@@ -166,8 +166,7 @@
 								esquemas y facilitar el aprendizaje permanente. Finalmente, cabe destacar que una de las
 								áreas prioritarias actuales y futuras en investigación es la de las intervenciones en
 								estrategias metacognitivas, su impacto en el desarrollo cognitivo de los alumnos y la
-								transferencia y la perdurabilidad de sus efectos en el aprendizaje»<br> Escrito
-								por: Montse Tesouro. Universitat de Girona. Departamento de Pedagogia
+								transferencia y la perdurabilidad de sus efectos en el aprendizaje»<br> 
 							</div>
 							<br>
 							<center>
@@ -183,7 +182,9 @@
                                 </div>
                             </center>
 						</p>
-                       
+                        <h4 class="subtitle">Bibliografía:</h4>
+                            <p>[1] M. Tesouro, "La metacongnicion en la escuela: la importancia de enseñar a pensar," Universitat de Girona, departament de pedagogia, Girona.
+                            </p>
                         </div>
                     </div>
                 </div>
