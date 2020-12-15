@@ -70,7 +70,7 @@
                             <ul class="list-group-item">
                                 <a href="<?php echo base_url();?>modulo8/unidad3/contenidos"
                                     class="list-group-item">Contenidos</a>
-                                <a href="#" class="list-group-item">Evaluación</a>
+                                <a href="<?php echo base_url();?>modulo8/unidad3/evaluacion" class="list-group-item">Evaluación</a>
                             </ul>
                         </div>
                     </div>
@@ -141,7 +141,7 @@
                                     investigación. <br> Busque palabras claves, operaciones lógicas (por Ej. “y”, “o”) y
                                     determine a continuación qué elementos trabajan mejor y por qué</li><br>
                                 <textarea name="preg1" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea><br>
+                                    placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea><br>
                                 <li>Estudie un sitio en Internet que se utilice para dar cursos sobre educación a
                                     profesores o cualquier otro programa educativo. Revise cómo se organiza esta
                                     información y cómo se tiene acceso al sitio. <br> ¿Qué recursos de información
@@ -150,20 +150,20 @@
                                     aprendizaje y cuáles son las limitaciones. Hable sobre las ventajas y desventajas.
                                 </li><br>
                                 <textarea name="preg2" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
+                                    placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                                 <br>   Visite varios “blogs” y “wikis” que han sido creados por individuos o en colaboración
                                 con otras personas.
                                 <li>¿Qué tipo de intercambio de información se da en estos medios en línea? ¿Para qué
                                     propósito sirve la información? ¿Quién provee la información? ¿Cuáles cree usted que
                                     son las motivaciones y los motivos?</li><br>
                                 <textarea name="preg3" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
+                                    placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                                 <br> <li>Escriba a continuación, desde el punto de vista de los estudiantes, acerca de ¿qué
                                     información digital debería ser preservada? ¿Cuáles son los principales criterios de
                                     selección y las soluciones técnicas disponibles, y cómo se puede asegurar la
                                     sostenibilidad? ¿Cuáles son otros aspectos de este tema de preservación?</li><br>
                                 <textarea name="preg4" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
+                                    placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                             </ol>
                         </p>
                         </div>

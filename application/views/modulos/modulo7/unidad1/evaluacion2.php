@@ -59,7 +59,7 @@
                             <ul class="list-group-item">
                                 <a href="<?php echo base_url();?>modulo7/unidad1/contenidos"
                                     class="list-group-item">Contenidos</a>
-                                <a href="#"  class="list-group-item">Evaluación</a>
+                                <a href="<?php echo base_url();?>modulo7/unidad1/evaluacion1"  class="list-group-item">Evaluación</a>
                             </ul>
                         </div>
                     </div>
@@ -127,12 +127,12 @@
                             <img class="fondo" src="<?php echo base_url();?>public/assets/modulos/mod7/img/fondo.png" alt="fondo">
                         </div>
                         <!-- </center> -->
-                        <input class="respuesta" name="preg1" id="resp1" type="text" autofocus required/>
-                        <input class="respuesta" name="preg2" id="resp2" type="text" required/>
-                        <input class="respuesta" name="preg3" id="resp3" type="text" required/>
-                        <input class="respuesta" name="preg4" id="resp4" type="text" required/>
-                        <input class="respuesta" name="preg5" id="resp5" type="text" required/>
-                        <input class="respuesta" name="preg6" id="resp6" type="text" required/>
+                        <input class="respuesta" name="preg1" id="resp1" type="text" autofocus/>
+                        <input class="respuesta" name="preg2" id="resp2" type="text"/>
+                        <input class="respuesta" name="preg3" id="resp3" type="text"/>
+                        <input class="respuesta" name="preg4" id="resp4" type="text"/>
+                        <input class="respuesta" name="preg5" id="resp5" type="text"/>
+                        <input class="respuesta" name="preg6" id="resp6" type="text"/>
                         <br>
 
                         <!-- <input type="text" name="preg" id="preg" value="" style="display: none"> -->

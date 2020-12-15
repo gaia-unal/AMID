@@ -57,14 +57,13 @@
                         </button>
                         <div class="dropdown-menu">
                             <ul class="list-group-item">
-                                <a href="<?php echo base_url();?>modulo7/unidad1/actividad1"
-                                    class="list-group-item">Contenidos</a>
-                                <a href="#" class="list-group-item">Evaluación</a>
+                                <a href="<?php echo base_url();?>modulo7/unidad1/actividad1" class="list-group-item">Contenidos</a>
+                                <a href="<?php echo base_url();?>modulo7/unidad1/evaluacion1" class="list-group-item">Evaluación</a>
                             </ul>
                         </div>
                     </div>
 
-                    <a href="#" class="list-group-item">Unidad 2</a>
+                    <a href="<?php echo base_url();?>modulo7/unidad2" class="list-group-item">Unidad 2</a>
 
 
 
@@ -126,18 +125,18 @@
                             <b>1. ¿Qué relación tiene el derecho de la libre expresión con el derecho a la información
                                 y la protección de los datos?</b> <br>
                             <textarea name="preg1" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" autofocus></textarea>
+                                placeholder="Escriba su respuesta aquí" spellcheck="true" autofocus></textarea>
                         </div>
                         <div class="p2">
                         <b>2. ¿Deberían los niños y niñas tener igual acceso a la información, internet y nuevas
                                 tecnologías?</b> <br>
                             <textarea name="preg2" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
+                                placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                         </div>
                         <div class="p3">
                         <b>3. ¿Qué modelo de conducta propondría para niños y jóvenes con acceso a internet?</b> <br>
                             <textarea name="preg3" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
+                                placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                         </div>
 
                         </div>

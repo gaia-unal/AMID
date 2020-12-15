@@ -73,7 +73,7 @@
                     </div>
 
 
-                    <a href="#" class="list-group-item">Unidad 3</a>
+                    <a href="<?php echo base_url(); ?>modulo8/unidad3" class="list-group-item">Unidad 3</a>
                 </ul>
 
                 <a href="<?php echo base_url();?>modulo9" class="list-group-item list-group-item-action bg-light">
@@ -127,45 +127,45 @@
                             <ol>
                                 <b><li>¿Cuál de las siguientes es una etapa del Big6?</li></b>
                                 <label>
-                                <input type="radio" name="preg1" id="opc1" value = 1 required> a. Alfabetización
+                                <input type="radio" name="preg1" id="opc1" value = 1> a. Alfabetización
                                 informacional.
                                 </label>
                                 <br>
                                 <label>
-                                <input type="radio" name="preg1" id="opc2" value = 5 required> b. Definición de las
+                                <input type="radio" name="preg1" id="opc2" value = 5> b. Definición de las
                                 necesidad o problemas de información.
                                 </label>
                                 <br>
                                 <label>
-                                <input type="radio" name="preg1" id="opc3" value = 1 required> c. Compartir
+                                <input type="radio" name="preg1" id="opc3" value = 1> c. Compartir
                                 información de fuentes confiables.<br>
                                 </label>
                                 <br>
                              <b><li>¿En qué consiste la etapa 4 del Big6?</li></b>
                                 <label>
-                                <input type="radio" name="preg2" id="opc1" value = 5 required> a. Evaluación crítica
+                                <input type="radio" name="preg2" id="opc1" value = 5> a. Evaluación crítica
                                 de la información.
                                 </label>
                                 <br>
                                 <label>
-                                <input type="radio" name="preg2" id="opc2" value = 1 required> b. Busqueda de la
+                                <input type="radio" name="preg2" id="opc2" value = 1> b. Busqueda de la
                                 información.
                                 </label>
                                 <br>
                                 <label>
-                                <input type="radio" name="preg2" id="opc3" value = 1 required> c. Estrategias para
+                                <input type="radio" name="preg2" id="opc3" value = 1> c. Estrategias para
                                 buscar información.<br>
                               <br> <b><li>¿Cuál corresponde a correcta fuente de información?</li></b>
                                 <label>
-                                <input type="radio" name="preg3" id="opc1" value = 1 required> a. Wikipedia
+                                <input type="radio" name="preg3" id="opc1" value = 1> a. Wikipedia
                                 </label>
                                 <br>
                                 <label>
-                                <input type="radio" name="preg3" id="opc2" value = 1 required> b. Slash
+                                <input type="radio" name="preg3" id="opc2" value = 1> b. Slash
                                 </label>
                                 <br>
                                 <label>
-                                <input type="radio" name="preg3" id="opc3" value = 5 required> c. Asap
+                                <input type="radio" name="preg3" id="opc3" value = 5> c. Asap
                                 </label>
                                 <br>
                                 

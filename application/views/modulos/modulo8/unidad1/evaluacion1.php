@@ -69,8 +69,8 @@
                         </div>
                     </div>
 
-                    <a href="#" class="list-group-item">Unidad 2</a>
-                    <a href="#" class="list-group-item">Unidad 3</a>
+                    <a href="<?php echo base_url(); ?>modulo8/unidad2" class="list-group-item">Unidad 2</a>
+                    <a href="<?php echo base_url(); ?>modulo8/unidad3" class="list-group-item">Unidad 3</a>
                 </ul>
 
                 <a href="<?php echo base_url();?>modulo9" class="list-group-item list-group-item-action bg-light">

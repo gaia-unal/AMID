@@ -64,13 +64,13 @@
                             <ul class="list-group-item">
                                 <a href="<?php echo base_url();?>modulo8/unidad1/contenidos"
                                     class="list-group-item">Contenidos</a>
-                                <a href="#" class="list-group-item">Evaluación</a>
+                                <a href="<?php echo base_url(); ?>modulo8/unidad1/evaluacion1" class="list-group-item">Evaluación</a>
                             </ul>
                         </div>
                     </div>
 
-                    <a href="#" class="list-group-item">Unidad 2</a>
-                    <a href="#" class="list-group-item">Unidad 3</a>
+                    <a href="<?php echo base_url(); ?>modulo8/unidad2" class="list-group-item">Unidad 2</a>
+                    <a href="<?php echo base_url(); ?>modulo8/unidad3" class="list-group-item">Unidad 3</a>
                 </ul>
 
                 <a href="<?php echo base_url();?>modulo9" class="list-group-item list-group-item-action bg-light">
@@ -136,7 +136,7 @@
                                 Busque otras definiciones de información. ¿Puede encontrar otras definiciones que dan
                                 una descripción más amplia del término? <br>
                                <br> <textarea name="preg1" style="width: 100%;" rows="5" minlength="1" maxlength="200"
-                                    onkeypress="return check(event)" required placeholder="Escriba su respuesta aquí"
+                                    onkeypress="return check(event)" placeholder="Escriba su respuesta aquí"
                                     spellcheck="true"></textarea>
                             </div>
                             <div id="parte2">

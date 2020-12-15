@@ -121,7 +121,9 @@
                 </center><br>
                 <div class="card mt-4">
                     <div class="card-body">
-                        <br>
+                    <p>La UNESCO [1] menciona en su metodología AMID para la unidad 4 del módulo 11 un conjunto 
+                            de objetivos de aprendizaje que se deben alcanzar mediante la revisión de contenido y la realización de 
+                            actividades acordes a unos temas establecidos; estos se pueden observar a continuación. </p>
                         <h4 class="subtitle">Objetivos de Aprendizaje</h4><br>
 
                         <div class="contenido">
@@ -141,6 +143,31 @@
 						</ul>
 						</p>
                         </div>
+                        <h4 class="subtitle">Temas Clave</h4>
+                        <div class="contenido">
+                            <ul>
+                                <li>Medios alternativos: por qué han surgido</li>
+                                <li>Credibilidad pública de los principales medios</li>
+                                <li>Aparición de la tecnología de la información y las la comunicación</li>
+                                <li>Cambios en los hábitos mediáticos y las preferencias del consumidor</li>
+                                <li>Definición de medios alternativos (en contraste con los medios principales)</li>
+                                <li>Propiedad y control de los medios alternativos (es decir; democratizar la propiedad y el control)</li>
+                                <li>Audiencias de los medios alternativos: distintos sectores (mujeres, jóvenes, niños, obreros/ trabajadores, etc.) grupos marginados (comunidades culturales, migrantes, etc.)</li>
+                                <li>Contenido de los medios alternativos (por Ej. perspectivas de la comunidad, enfoque de participación e interactividad)</li>
+                                <li>El papel de los medios alternativos en la sociedad (por Ej. transparencia, diversidad y libertad de expresión)</li>
+                                <li>Planificación, administración y mantenimiento de un medio alternativo en distintos escenarios</li>
+                                <li>Medios alternativos en un ambiente de escuela/colegio</li>
+                                <li>Medios alternativos en una comunidad</li>
+                                <li>Modelos de ingresos para los medios alternativos.</li>
+                            </ul>
+                        </div>
+                        <h4 class="subtitle">Bibliografía:</h4>
+                                <p>[1] UNAOC, UNESCO, "Unidad 4: El nacimiento de medios alternativos", en <em>Media Information Literacy for
+                                        Teachers</em>, 2020.
+                                    <a href="http://unesco.mil-for-teachers.unaoc.org/modules/modulo-11-medios-tecnologia-y-el-mundo-global-global-village/unidad-4-el-nacimiento-de-medios-alternativos/?lang=es"
+                                        target="_blank" rel="noopener noreferrer">
+                                        http://unesco.mil-for-teachers.unaoc.org/modules/modulo-11-medios-tecnologia-y-el-mundo-global-global-village/unidad-4-el-nacimiento-de-medios-alternativos/?lang=es</a>
+                                </p>
                     </div>
                 </div>
 

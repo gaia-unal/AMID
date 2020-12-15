@@ -63,7 +63,7 @@
                             <ul class="list-group-item">
                                 <a href="<?php echo base_url();?>modulo7/unidad2/contenidos"
                                     class="list-group-item">Contenidos</a>
-                                <a href="#" class="list-group-item">Evaluación</a>
+                                <a href="<?php echo base_url(); ?>modulo7/unidad2/evaluacion" class="list-group-item">Evaluación</a>
                             </ul>
                         </div>
                     </div>
@@ -122,14 +122,14 @@
                             <!-- Pregunta 1 -->
                             <h4 class="subtEv"> 1. ¿Qué es el Phishing?</h4>
                             <label class="container" id="p1-r1">
-                                <input type="radio" name="preg1" id="opc1" value = 1 required>
+                                <input type="radio" name="preg1" id="opc1" value = 1>
                                 
                                 a. Es un estafador que intenta acceder a los correos electrónicos para
                                     enviar
                                     mensajes spam.
                             </label>
                             <label class="container" id="p1-r2">
-                                <input type="radio" name="preg1" id="opc2" value = 5 required>
+                                <input type="radio" name="preg1" id="opc2" value = 5>
                                 
                                 b. Es un delito cibernético en el que intentan adquirir información
                                     confidencial
@@ -138,7 +138,7 @@
                                 
                             </label>
                             <label class="container" id="p1-r3">
-                                <input type="radio" name="preg1" id="opc3" value = 1 required>
+                                <input type="radio" name="preg1" id="opc3" value = 1>
                                 
                                 c. Es un delito cibernético en el que un estafador vende productos
                                     engañosos.
@@ -147,7 +147,7 @@
                             <h4 class="subtEv"> 2. ¿ Los delincuentes pueden hacer Phishing por mensajes de texto o llamadas?
                             </h4>
                             <label class="container" id="p2-r1">
-                                <input type="radio" name="preg2" id="opc1" value = 5 required>
+                                <input type="radio" name="preg2" id="opc1" value = 5>
                                 
                                 a. Sí, la intención de los delincuentes es robar información personal,
                                     por lo
@@ -156,14 +156,14 @@
                                     web.
                             </label>
                             <label class="container" id="p2-r2">
-                                <input type="radio" name="preg2" id="opc2" value = 1 required>
+                                <input type="radio" name="preg2" id="opc2" value = 1>
                                 
                                 b. No porque las personas no suelen contestar llamadas de números
                                     desconocidos.
                                 
                             </label>
                             <label class="container" id="p2-r3">
-                                <input type="radio" name="preg2" id="opc3" value = 1 required>
+                                <input type="radio" name="preg2" id="opc3" value = 1>
                                 
                                 c. No, porque el Phishing solo es por internet y llega únicamente a
                                     los correos
@@ -174,19 +174,19 @@
                                 reemplazar la consulta
                                 con un médico si encuentra la información que está buscando?</h4>
                             <label class="container" id="p3-r1">
-                                <input type="radio" name="preg3" id="opc1" value = 1 required>
+                                <input type="radio" name="preg3" id="opc1" value = 1>
                                 
                                 a. Sí, siempre y cuando indiquen los medicamentos que debo tomar con
                                     sus dosis.
                                 
                             </label>
                             <label class="container" id="p3-r2">
-                                <input type="radio" name="preg3" id="opc2" value = 1 required>
+                                <input type="radio" name="preg3" id="opc2" value = 1>
                                 
                                 b. No porque de pronto la información no está actualizada.
                             </label>
                             <label class="container" id="p3-r3">
-                                <input type="radio" name="preg3" id="opc3" value = 5 required>
+                                <input type="radio" name="preg3" id="opc3" value = 5>
                                 
                                 c. No, ninguna información debe reemplazar la consulta con un médico
                                     que lo puede
@@ -198,21 +198,21 @@
                                 salud y promete curas
                                 milagrosas ¿debe confiar en ella?</h4>
                             <label class="container" id="p4-r1">
-                                <input type="radio" name="preg4" id="opc1" value = 1 required>
+                                <input type="radio" name="preg4" id="opc1" value = 1>
                                 
                                 a. Sí, siempre y cuando tenga buenas referencias y buenos comentarios
                                     de las
                                     personas.
                             </label>
                             <label class="container" id="p4-r2">
-                                <input type="radio" name="preg4" id="opc2" value = 5 required>
+                                <input type="radio" name="preg4" id="opc2" value = 5>
                                 
                                 b. No, se debe desconfiar de los sitios web que proclaman la cura a
                                     muchas
                                     enfermedades.
                             </label>
                             <label class="container" id="p4-r3">
-                                <input type="radio" name="preg4" id="opc3" value = 1 required>
+                                <input type="radio" name="preg4" id="opc3" value = 1>
                                 
                                 c. Sí porque es muy bueno encontrar tanta información en un solo
                                     lugar.
@@ -220,7 +220,7 @@
                             <!-- Pregunta 5 -->
                             <h4 class="subtEv"> 5. ¿Qué es la violación del derecho de autor?</h4>
                             <label class="container" id="p5-r1">
-                                <input type="radio" name="preg5" id="opc1" value = 1 required>
+                                <input type="radio" name="preg5" id="opc1" value = 1>
                                 
                                 a. Es un conjunto de normas jurídicas que plantean los derechos
                                     morales y
@@ -228,14 +228,14 @@
                                     los autores
                             </label>
                             <label class="container" id="p5-r2">
-                                <input type="radio" name="preg5" id="opc2" value = 1 required>
+                                <input type="radio" name="preg5" id="opc2" value = 1>
                                 
                                 b. Se da cuando una persona copia y pega un texto de otra sin cambiar
                                     absolutamente nada y no le da
                                     los créditos.
                             </label>
                             <label class="container" id="p5-r3">
-                                <input type="radio" name="preg5" id="opc3" value = 5 required>
+                                <input type="radio" name="preg5" id="opc3" value = 5>
                                 
                                 c. Es un fraude relacionado con la conducta de los usuarios que no
                                     tienen en
@@ -248,7 +248,7 @@
                                 los derechos de
                                 autor?</h4>
                             <label class="container" id="p6-r1">
-                                <input type="radio" name="preg6" id="opc1" value = 5 required>
+                                <input type="radio" name="preg6" id="opc1" value = 5>
                                 
                                 a. Inscribir en el registro de autor el nombre del autor real, con el
                                     título
@@ -256,7 +256,7 @@
                                     el texto.
                             </label>
                             <label class="container" id="p6-r2">
-                                <input type="radio" name="preg6" id="opc2" value = 1 required>
+                                <input type="radio" name="preg6" id="opc2" value = 1>
                                 
                                 b. Publicar, total o parcialmente, sin autorización previa del titular
                                     del
@@ -264,7 +264,7 @@
                                 
                             </label>
                             <label class="container" id="p6-r3">
-                                <input type="radio" name="preg6" id="opc3" value = 1 required>
+                                <input type="radio" name="preg6" id="opc3" value = 1>
                                 
                                 c. Suprimir o alterar la información esencial para la gestión
                                     electrónica de

@@ -63,7 +63,7 @@
                             <ul class="list-group-item">
                                 <a href="<?php echo base_url();?>modulo7/unidad2/contenidos"
                                     class="list-group-item">Contenidos</a>
-                                <a href="#" class="list-group-item">Evaluación</a>
+                                <a href="<?php echo base_url();?>modulo7/unidad2/evaluacion1" class="list-group-item">Evaluación</a>
                             </ul>
                         </div>
                     </div>
@@ -110,34 +110,48 @@
                 <!-- contenido -->
                 <center>
                     <h1 class="first_title"><br>Unidad 2: Retos y riesgos en el mundo virtual</h1>
-                </center><br>
+                </center>
                 <div class="card mt-4">
                     <div class="card-body">
-                        <br>
+                        <p>La UNESCO [1] menciona en su metodología AMID para la unidad 2 del módulo 7 un conjunto 
+                            de objetivos de aprendizaje que se deben alcanzar mediante la revisión de contenido y la realización de 
+                            actividades acordes a unos temas establecidos; estos se pueden observar a continuación. </p>
                         <h4 class="subtitle">Objetivos de Aprendizaje</h4><br>
-
                         <div class="contenido">
-
                             <p class="card-text">
-                            <ul>
-                                <li class="animated lightSpeedIn">Hacer una lista y describir los retos/riesgos del uso
-                                    de Internet y
-                                    dónde hay más probabilidad de que ocurran</li>
-                                <li class="animated lightSpeedIn"> Desarrollar el conocimiento sobre los riesgos y
-                                    amenazas que
-                                    potencialmente podrían acompañar las aplicaciones del Internet que han sido
-                                    recientemente
-                                    desarrolladas</li>
-                                <li class="animated lightSpeedIn retraso3">Comprender las interdependencias entre el
-                                    comportamiento de
-                                    los usuarios y la posibilidad de que sean víctimas o perpetradores</li>
-                                <li class="animated lightSpeedIn retraso3">Aplicar este conocimiento para permitir que
-                                    los profesores
-                                    utilicen Internet de una manera más responsable</li>
-                            </ul>
+                                <ul>
+                                    <li class="animated lightSpeedIn">Hacer una lista y describir los retos/riesgos del uso
+                                        de Internet y
+                                        dónde hay más probabilidad de que ocurran</li>
+                                    <li class="animated lightSpeedIn"> Desarrollar el conocimiento sobre los riesgos y
+                                        amenazas que
+                                        potencialmente podrían acompañar las aplicaciones del Internet que han sido
+                                        recientemente
+                                        desarrolladas</li>
+                                    <li class="animated lightSpeedIn retraso3">Comprender las interdependencias entre el
+                                        comportamiento de
+                                        los usuarios y la posibilidad de que sean víctimas o perpetradores</li>
+                                    <li class="animated lightSpeedIn retraso3">Aplicar este conocimiento para permitir que
+                                        los profesores
+                                        utilicen Internet de una manera más responsable</li>
+                                </ul>
                             </p>
-
                         </div>
+                        <h4 class="subtitle">Temas Clave</h4>
+                        <div class="contenido">
+                            <ul>
+                                <li>Comprender los retos y riesgos del uso de Internet</li>
+                                <li>Empoderamiento y uso responsable de Internet</li>
+                                <li>Privacidad y seguridad</li>
+                            </ul>
+                        </div>
+                        <h4 class="subtitle">Bibliografía:</h4>
+                        <p>[1] UNAOC, UNESCO, "Unidad 2: Retos y riesgos en el mundo virtual", en <em>Media Information
+                            Literacy for Teachers</em>, 2020.
+                            <a href="http://unesco.mil-for-teachers.unaoc.org/modules/modulo-7-oportunidades-y-retos-en-internet/unidad-2-retos-y-riesgos-en-el-mundo-virtual/?lang=es"
+                                target="_blank" rel="noopener noreferrer">
+                            http://unesco.mil-for-teachers.unaoc.org/modules/modulo-7-oportunidades-y-retos-en-internet/unidad-2-retos-y-riesgos-en-el-mundo-virtual/?lang=es</a>
+                        </p>
                     </div>
                 </div>
 

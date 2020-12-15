@@ -80,8 +80,8 @@
                     </div>
 
                     
-                    <a href="#" class="list-group-item">Unidad 3</a>
-                    <a href="#" class="list-group-item">Unidad 4</a>
+                    <a href="<?php echo base_url();?>modulo11/unidad3" class="list-group-item">Unidad 3</a>
+                    <a href="<?php echo base_url();?>modulo11/unidad4" class="list-group-item">Unidad 4</a>
                 </ul>
 
 
@@ -123,7 +123,9 @@
                 </center><br>
                 <div class="card mt-4">
                     <div class="card-body">
-                        <br>
+                    <p>La UNESCO [1] menciona en su metodología AMID para la unidad 2 del módulo 11 un conjunto 
+                            de objetivos de aprendizaje que se deben alcanzar mediante la revisión de contenido y la realización de 
+                            actividades acordes a unos temas establecidos; estos se pueden observar a continuación. </p>
                         <h4 class="subtitle">Objetivos de Aprendizaje</h4><br>
 
                         <div class="contenido">
@@ -141,6 +143,33 @@
 						</ul>
 						</p>
                         </div>
+                        <h4 class="subtitle">Temas Clave</h4>
+                        <div class="contenido">
+                            <ul>
+                                <li>Dimensiones socio-culturales de los medios globales</li>
+                                <li>Los medios y la cultura popular</li>
+                                <li>Estereotipos culturales, prejuicios y sesgos</li>
+                                <li>Amenaza que se percibe por la homogenización de la cultura</li>
+                                <li>Promesa de una diversidad cultural y un pluralismo</li>
+                                <li>Medios y tolerancia cultural, entendimiento y ciudadanía global</li>
+                                <li>Impacto político de los medios</li>
+                                <li>Proporcionar mecanismos para un flujo de dos vías de la información (por Ej. norte-sur, sur-sur)</li>
+                                <li>Los medios como una plataforma para ampliar la esfera pública (discurso democrático)</li>
+                                <li>Los medios como un mecanismo para la movilización política y social</li>
+                                <li>El poder de los medios para dar forma a la opinión pública y a la agenda pública</li>
+                                <li>Promover el buen gobierno a través de la transparencia y de la rendición de cuentas</li>
+                                <li>Los medios y las comunidades de migrantes</li>
+                                <li>Cómo los medios globales y la convergencia tecnológica abordan las necesidades de las comunidades de migrantes</li>
+                                <li>Estudios de caso de los canales de medios de la diáspora/ comunidades de migrantes</li>
+                            </ul>
+                        </div>
+                        <h4 class="subtitle">Bibliografía:</h4>
+                                <p>[1] UNAOC, UNESCO, "Unidad 2: Dimensiones Socio-Culturales y Políticas de los Medios Globalizados", en <em>Media Information Literacy for
+                                        Teachers</em>, 2020.
+                                    <a href="http://unesco.mil-for-teachers.unaoc.org/modules/modulo-11-medios-tecnologia-y-el-mundo-global-global-village/unidad-2-dimensiones-socio-culturales-y-politicas-de-los-medios-globalizados/?lang=es"
+                                        target="_blank" rel="noopener noreferrer">
+                                        http://unesco.mil-for-teachers.unaoc.org/modules/modulo-11-medios-tecnologia-y-el-mundo-global-global-village/unidad-2-dimensiones-socio-culturales-y-politicas-de-los-medios-globalizados/?lang=es</a>
+                                </p>
                     </div>
                 </div>
 

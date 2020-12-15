@@ -130,7 +130,7 @@
                             para que tengan acceso a la información digital (por Ej. acceso a la red y la creación de
                             documentos digitales en formatos accesibles).<br> <br> Escriba su plan a continuación <br>
                             <br><textarea name="preg1" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea><br>
+                                    placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea><br>
                             Experimente creando un blog sobre un tema relacionado con la educación en su país. Debería
                             ser un tema de actualidad que atraiga el interés y la capacidad de respuesta (por Ej.
                             mejorar el acceso a la educación primaria y secundaria para los más pobres de la sociedad,
@@ -143,7 +143,7 @@
                                     Preservación del Patrimonio Digital, archivo digital y lineamientos de preservación)
                                 </li>
                               <br>  <textarea name="preg2" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
+                                    placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                             </ul>
                             Visite el sitio en red de una Biblioteca Patrimonio de la Humanidad. Hable sobre la
                             importancia de la preservación y la promoción del patrimonio documental dentro del contexto
@@ -151,7 +151,7 @@
                             los archivistas del Archivo Nacional de Haití. Encuentre el artículo que ilustra la
                             situación de Haití después del terremoto en enero del 2010. <br>
                          <br>   <textarea name="preg3" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
+                                    placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                         </p>
                         </div>
                     </div>

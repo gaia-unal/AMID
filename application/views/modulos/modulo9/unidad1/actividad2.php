@@ -72,8 +72,8 @@
                         </div>
                     </div>
 
-                    <a href="#" class="list-group-item">Unidad 2</a>
-                    <a href="#" class="list-group-item">Unidad 3</a>
+                    <a href="<?php echo base_url();?>modulo9/unidad2" class="list-group-item">Unidad 2</a>
+                    <a href="<?php echo base_url();?>modulo9/unidad3" class="list-group-item">Unidad 3</a>
                 </ul>
 
 
@@ -126,23 +126,23 @@
 							<p>1. Según los roles identificados (Emisor, receptor...) ¿Qué rol asume usted como
 								profesor?</p>
 								<textarea name="preg1" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" autofocus></textarea>
+                                    placeholder="Escriba su respuesta aquí" spellcheck="true" autofocus></textarea>
 						</div>
 						<div>
 							<p>2. ¿Qué roles están disponibles para sus estudiantes?</p>
 							<textarea name="preg2" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
+                                    placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
 						</div>
 						<div>
 							<p>3. ¿Cómo se da forma a la experiencia de aprendizaje a través de estos roles?</p>
 							<textarea name="preg3" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
+                                    placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
 						</div>
 						<div>
 							<p>4. ¿Cómo se administra el proceso de retroalimentación en el proceso de
 								enseñanza-aprendizaje?</p>
 								<textarea name="preg4" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
+                                    placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
 						</div>
 						<div>
 							<p>5. El enseñar a través de los medios y los otros proveedores de información requiere un
@@ -153,7 +153,7 @@
 								los medios? ¿Cómo se administra el proceso de retroalimentación en el proceso de
 								enseñanza-aprendizaje?</p>
 								<textarea name="preg5" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
+                                    placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
 						</div>
                         </div>
                     </div>

@@ -129,17 +129,17 @@
 									programas y profesores de su institución. ¿Cuáles son las principales prioridades o
 									necesidades para cada grupo?</li>
 									<textarea name="preg1" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
+                                        placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
 								<li>Explique cómo este Curriculum AMI puede ayudar a enfrentar aquellas necesidades.
 								</li>
 								<textarea name="preg2" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
+                                        placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
 								<li>Identifique otros grupos de actores a quienes se podría incluir.</li>
 								<textarea name="preg3" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
+                                        placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
 								<li>¿Qué papel jugarían ellos en la promoción de AMI?</li>
 								<textarea name="preg4" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
+                                        placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
 							</ol>
 						</p>
                         </div>

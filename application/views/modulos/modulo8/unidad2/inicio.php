@@ -67,13 +67,13 @@
                             <ul class="list-group-item">
                                 <a href="<?php echo base_url();?>modulo8/unidad2/contenidos"
                                     class="list-group-item">Contenidos</a>
-                                <a href="#" class="list-group-item">Evaluación</a>
+                                <a href="<?php echo base_url(); ?>modulo8/unidad2/evaluacion" class="list-group-item">Evaluación</a>
                             </ul>
                         </div>
                     </div>
 
 
-                    <a href="#" class="list-group-item">Unidad 3</a>
+                    <a href="<?php echo base_url(); ?>modulo8/unidad3" class="list-group-item">Unidad 3</a>
                 </ul>
 
                 <a href="<?php echo base_url();?>modulo9" class="list-group-item list-group-item-action bg-light">
@@ -120,27 +120,43 @@
                 </center><br>
                 <div class="card mt-4">
                     <div class="card-body">
-                        <br>
-                        <h4 class="subtitle">Objetivos de Aprendizaje</h4><br>
-
+                        <p>La UNESCO [1] menciona en su metodología AMID para la unidad 2 del módulo 8 un conjunto 
+                            de objetivos de aprendizaje que se deben alcanzar mediante la revisión de contenido y la realización de 
+                            actividades acordes a unos temas establecidos; estos se pueden observar a continuación. </p>
+                        <h4 class="subtitle">Objetivos de Aprendizaje</h4>
                         <div class="contenido">
-                        <p class="card-text">
-                            <ul>
-                                <li class="animated lightSpeedIn">Entender las diferencias entre la transmisión de
-                                    información y la información para el aprendizaje</li>
-                                <li class="animated lightSpeedIn">Describir y demostrar un entendimiento de los aspectos
-                                    claves para organizar la información, es decir utilizar esquemas de clasificación
-                                    para localizar información y conocimiento (por Ej. clasificaciones de colecciones
-                                    bibliotecarias, índices, abstractos, bibliografías, bases de datos, etc.)</li>
-                                <li class="animated lightSpeedIn retraso3">Utilizar una biblioteca de una manera eficaz
-                                    para el aprendizaje – evaluar las oportunidades que una biblioteca presenta para
-                                    investigar un tema de actualidad</li>
-                                <li class="animated lightSpeedIn retraso5">Aplicar las seis etapas del Big6 sobre la
-                                    resolución de problemas en información
-                                </li>
-                            </ul>
-                        </p>
+                            <p class="card-text">
+                                <ul>
+                                    <li class="animated lightSpeedIn">Entender las diferencias entre la transmisión de
+                                        información y la información para el aprendizaje</li>
+                                    <li class="animated lightSpeedIn">Describir y demostrar un entendimiento de los aspectos
+                                        claves para organizar la información, es decir utilizar esquemas de clasificación
+                                        para localizar información y conocimiento (por Ej. clasificaciones de colecciones
+                                        bibliotecarias, índices, abstractos, bibliografías, bases de datos, etc.)</li>
+                                    <li class="animated lightSpeedIn retraso3">Utilizar una biblioteca de una manera eficaz
+                                        para el aprendizaje – evaluar las oportunidades que una biblioteca presenta para
+                                        investigar un tema de actualidad</li>
+                                    <li class="animated lightSpeedIn retraso5">Aplicar las seis etapas del Big6 sobre la
+                                        resolución de problemas en información
+                                    </li>
+                                </ul>
+                            </p>
                         </div>
+                        <h4 class="subtitle">Temas Clave</h4>
+                        <div class="contenido">
+                            <ul>
+                                <li>El Big6 (Gran6) – una guía a la resolución de problemas en información en seis etapas</li>
+                                <li>Uso de las bibliotecas</li>
+                                <li>Ambientes de aprendizaje y proveedores de información</li>
+                            </ul>
+                        </div>
+                        <h4 class="subtitle">Bibliografía:</h4>
+                        <p>[1] UNAOC, UNESCO, "Unidad 2: Ambiente de Aprendizaje y Alfabetización Informacional", en <em>Media Information
+                            Literacy for Teachers</em>, 2020.
+                            <a href="http://unesco.mil-for-teachers.unaoc.org/modules/modulo-8-alfabetizacion-informacional-y-destrezas-bibliotecarias/unidad-2-ambiente-de-aprendizaje-y-alfabetizacion-informacional/?lang=es"
+                                target="_blank" rel="noopener noreferrer">
+                            http://unesco.mil-for-teachers.unaoc.org/modules/modulo-8-alfabetizacion-informacional-y-destrezas-bibliotecarias/unidad-2-ambiente-de-aprendizaje-y-alfabetizacion-informacional/?lang=es</a>
+                        </p>
                     </div>
                 </div>
 

@@ -47,26 +47,25 @@
                     Módulo 8</a>
 
                 <ul class="list-group-item">
-
-                    <a href="<?php echo base_url(); ?>modulo8/unidad1" class="list-group-item list-group-item-action bg-light">Unidad 1</a>
-
-                    <a href="<?php echo base_url(); ?>modulo8/unidad2" class="list-group-item">Unidad 2</a>
-
                     <div class="btn-group dropright">
+                        <a href="<?php echo base_url();?>modulo9/unidad1"
+                            class="list-group-item list-group-item-action bg-light">Unidad 1</a>
 
-
-                        <a href="<?php echo base_url(); ?>modulo8/unidad3" class="list-group-item">Unidad 3</a>
-
-                        <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
 
                         </button>
                         <div class="dropdown-menu">
                             <ul class="list-group-item">
-                                <a href="<?php echo base_url(); ?>modulo8/unidad3/contenidos" class="list-group-item">Contenidos</a>
-                                <a href="#" class="list-group-item">Evaluación</a>
+                                <a href="<?php echo base_url();?>modulo9/unidad1/actividad1"
+                                    class="list-group-item">Actividades</a>
+                                <a href="<?php echo base_url();?>modulo9/unidad1/evaluacion" class="list-group-item">Evaluación</a>
                             </ul>
                         </div>
                     </div>
+
+                    <a href="<?php echo base_url();?>modulo9/unidad2" class="list-group-item">Unidad 2</a>
+                    <a href="<?php echo base_url();?>modulo9/unidad3" class="list-group-item">Unidad 3</a>
                 </ul>
 
                 <a href="<?php echo base_url(); ?>modulo9" class="list-group-item list-group-item-action bg-light">

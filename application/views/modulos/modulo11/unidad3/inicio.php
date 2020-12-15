@@ -78,7 +78,7 @@
                             </ul>
                         </div>
                     </div>
-                    <a href="#" class="list-group-item">Unidad 4</a>
+                    <a href="<?php echo base_url();?>modulo11/unidad4" class="list-group-item">Unidad 4</a>
                 </ul>
 
 
@@ -120,7 +120,9 @@
                 </center><br>
                 <div class="card mt-4">
                     <div class="card-body">
-                        <br>
+                    <p>La UNESCO [1] menciona en su metodología AMID para la unidad 3 del módulo 11 un conjunto 
+                            de objetivos de aprendizaje que se deben alcanzar mediante la revisión de contenido y la realización de 
+                            actividades acordes a unos temas establecidos; estos se pueden observar a continuación. </p>
                         <h4 class="subtitle">Objetivos de Aprendizaje</h4><br>
 
                         <div class="contenido">
@@ -139,6 +141,27 @@
 						</ul>
                             </p>
                         </div>
+                        <h4 class="subtitle">Temas Clave</h4>
+                        <div class="contenido">
+                            <ul>
+                                <li>La información como un producto social (público) y un commodity</li>
+                                <li>La publicidad como el alma de los medios comerciales</li>
+                                <li>Calificaciones y datos de circulación como medidores de los productos mediáticos y servicios</li>
+                                <li>La amenaza de una cultura consumista (necesidades de la audiencia vs. lo que quieren y desean)</li>
+                                <li>Estrategias y enfoques en una información de commodities</li>
+                                <li>Derechos de propiedad intelectual y la información del dominio público</li>
+                                <li>Derechos de propiedad intelectual y otros derechos de los propietarios de la información</li>
+                                <li>Información de dominio público</li>
+                                <li>Software libre y abierto (y Bienes Creativos Comunes7 )</li>
+                            </ul>
+                        </div>
+                        <h4 class="subtitle">Bibliografía:</h4>
+                                <p>[1] UNAOC, UNESCO, "Unidad 3: La información como un producto (Commodity)", en <em>Media Information Literacy for
+                                        Teachers</em>, 2020.
+                                    <a href="http://unesco.mil-for-teachers.unaoc.org/modules/modulo-11-medios-tecnologia-y-el-mundo-global-global-village/unidad-3-la-informacion-como-un-producto-commodity/?lang=es"
+                                        target="_blank" rel="noopener noreferrer">
+                                        http://unesco.mil-for-teachers.unaoc.org/modules/modulo-11-medios-tecnologia-y-el-mundo-global-global-village/unidad-3-la-informacion-como-un-producto-commodity/?lang=es</a>
+                                </p>
                     </div>
                 </div>
 

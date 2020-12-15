@@ -59,12 +59,12 @@
                             <ul class="list-group-item">
                                 <a href="<?php echo base_url();?>modulo7/unidad1/contenidos"
                                     class="list-group-item">Contenidos</a>
-                                <a href="#" class="list-group-item">Evaluación</a>
+                                <a href="<?php echo base_url();?>modulo7/unidad1/evaluacion1" class="list-group-item">Evaluación</a>
                             </ul>
                         </div>
                     </div>
 
-                    <a href="#" class="list-group-item">Unidad 2</a>
+                    <a href="<?php echo base_url();?>modulo7/unidad2" class="list-group-item">Unidad 2</a>
 
 
 
@@ -194,7 +194,7 @@
                                     dicta, ¿qué
                                     contenido agregaría a la wiki?</h4>
                                 <textarea name="preg5" style="width: 100%;" rows="7" minlength="1" maxlength="500"
-                                    onkeypress="return check(event)" required placeholder="Escriba su respuesta aquí"
+                                    onkeypress="return check(event)" placeholder="Escriba su respuesta aquí"
                                     spellcheck="true"></textarea>
                                 <br>
                             </div>

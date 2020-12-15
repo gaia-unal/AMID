@@ -69,8 +69,8 @@
                         </div>
                     </div>
 
-                    <a href="#" class="list-group-item">Unidad 2</a>
-                    <a href="#" class="list-group-item">Unidad 3</a>
+                    <a href="<?php echo base_url(); ?>modulo8/unidad2" class="list-group-item">Unidad 2</a>
+                    <a href="<?php echo base_url(); ?>modulo8/unidad3" class="list-group-item">Unidad 3</a>
                 </ul>
 
                 <a href="<?php echo base_url();?>modulo9" class="list-group-item list-group-item-action bg-light">
@@ -125,36 +125,36 @@
                                 <li>Hable sobre las actitudes culturales hacia la información. ¿Cómo se ve y se valora
                                     la información en su sociedad? </li>
                                     <textarea name="preg1" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" autofocus></textarea>
+                                    placeholder="Escriba su respuesta aquí" spellcheck="true" autofocus></textarea>
                                 <li>¿Cómo los puntos de vista de la información impresa (por Ej. de los principales
                                     periódicos) se comparan con la información generada por los medios electrónicos?
                                 </li>
                                 <textarea name="preg2" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
+                                    placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                                 <li>¿Cuál es la relación entre la información y el poder y entre los medios impresos
                                     y los medios digitales? ¿Cuál es la identidad de la(s) persona(s) detrás de la
                                     información generada? </li>
                                 <textarea name="preg3" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
+                                    placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                                 <li>Usando Internet o la biblioteca de la escuela/colegio o ambos, identifique un
                                     problema o un tema para investigar en una de las siguientes áreas: educación cívica,
                                     ciencias, estudios sociales, historia o geografía. Presente los resultados de su
                                     investigación en un texto escrito a continuación. </li>
                                 <textarea name="preg4" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
+                                    placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                                 <li>Después del texto, reflexione sobre lo siguiente: ¿De qué forma usted seleccionó
                                     lo que quería presentar de entre una gran variedad de información disponible sobre
                                     el tema? </li>
                                     <textarea name="preg5" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
+                                    placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                                 <li>¿De qué quería usted tener más información que no pudo tener acceso, o cómo
                                     afectó esto a su presentación? </li>
                                     <textarea name="preg6" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
+                                    placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                                 <li>Finalmente, ¿transformó usted la información que recopiló para aplicar su
                                     contexto particular? ¿Cómo y por qué? </li>
                                     <textarea name="preg7" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
+                                    placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                             </ol>
                         </p>
                         </div>

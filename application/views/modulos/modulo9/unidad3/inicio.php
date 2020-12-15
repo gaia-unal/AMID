@@ -68,7 +68,7 @@
                             <ul class="list-group-item">
                                 <a href="<?php echo base_url();?>modulo9/unidad3/contenidos"
                                     class="list-group-item">Contenidos</a>
-                                <a href="#" class="list-group-item">Evaluación</a>
+                                <a href="<?php echo base_url();?>modulo9/unidad3/evaluacion" class="list-group-item">Evaluación</a>
                             </ul>
                         </div>
                     </div>
@@ -118,7 +118,9 @@
                 </center><br>
                 <div class="card mt-4">
                     <div class="card-body">
-                        <br>
+                    <p>La UNESCO [1] menciona en su metodología AMID para la unidad 3 del módulo 9 un conjunto 
+                            de objetivos de aprendizaje que se deben alcanzar mediante la revisión de contenido y la realización de 
+                            actividades acordes a unos temas establecidos; estos se pueden observar a continuación. </p>
                         <h4 class="subtitle">Objetivos de Aprendizaje</h4><br>
 
                         <div class="contenido">
@@ -134,6 +136,20 @@
 						</ul>
                             </p>
                         </div>
+                        <h4 class="subtitle">Temas Clave</h4>
+                        <div class="contenido">
+                            <ul>
+                                <li>Los medios de comunicación mundiales y el impulso de la alfabetización informacional: una visión general de las acciones en el mundo, desarrollo de políticas, etc.</li>
+                                <li>El medio ambiente propicio que se requiere para adoptar AMI en las escuelas/colegios</li>
+                                <li>Retos que hay que enfrentar al integrar AMI en las escuelas/colegios y el diseño de estrategias para sobrepasar estos retos</li>
+                            </ul>
+                        </div>
+                        <h4 class="subtitle">Bibliografía:</h4>
+                            <p>[1] UNAOC, UNESCO, "Unidad 3: Manejando el Cambio Para Fomentar un Medio Ambiente Propicio para las Escuelas AMI", en <em>Media Information Literacy for Teachers</em>, 2020.
+                                <a href="http://unesco.mil-for-teachers.unaoc.org/modules/modulo-9-comunicacion-ami-y-aprendizaje-modulo-final/unidad-3-manejando-el-cambio-para-fomentar-un-medio-ambiente-propicio-para-las-escuelas-ami/?lang=es" target="_blank" rel="noopener noreferrer">
+                                http://unesco.mil-for-teachers.unaoc.org/modules/modulo-9-comunicacion-ami-y-aprendizaje-modulo-final/unidad-3-manejando-el-cambio-para-fomentar-un-medio-ambiente-propicio-para-las-escuelas-ami/?lang=es</a>
+                            </p>
+
                     </div>
                 </div>
 

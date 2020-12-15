@@ -6,7 +6,7 @@ function opc1() {
         progressSteps: ['1', '2', '3', '4']
     }).queue([
         {
-            text: 'La publicidad está relacionada con el uso pagado de los medios (impreso y electrónico) – en'+
+            html: 'En [1] se encuentra que, <br> La publicidad está relacionada con el uso pagado de los medios (impreso y electrónico) – en'+
             'términos de tiempo o espacio – para promover un mensaje, servicio o producto. Si hablamos en'+
             'general, existen dos tipos de publicidad: la publicidad comercial; y los anuncios de bien'+
             'público que a veces se los llama mercadeo social. Generalmente la publicidad comercial tiene'+

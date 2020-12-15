@@ -56,9 +56,9 @@
 
 
 
-                    <a href="#" onclick="inactivo(2)" class="list-group-item inactive">Unidad 3</a>
-                    <a href="#" onclick="inactivo(2)" class="list-group-item inactive">Unidad 4</a>
-                    <a href="#" onclick="inactivo(2)" class="list-group-item inactive">Unidad 5</a>
+                    <a href="#" class="list-group-item inactive">Unidad 3</a>
+                    <a href="#" class="list-group-item inactive">Unidad 4</a>
+                    <a href="#" class="list-group-item inactive">Unidad 5</a>
                 </ul>
                 <a href="<?php echo base_url(); ?>modulo4" class="list-group-item list-group-item-action bg-light">
                     Módulo 4</a>

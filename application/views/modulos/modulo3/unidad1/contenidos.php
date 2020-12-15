@@ -47,17 +47,17 @@
                             <ul class="list-group-item">
                                 <a href="<?php echo base_url();?>modulo3/unidad1/contenidos"
                                     class="list-group-item">Contenidos</a>
-                                <a href="#" onclick="inactivoEva()"
+                                <a href="#" 
                                     class="list-group-item">Evaluación</a>
                             </ul>
                         </div>
                     </div>
 
 
-                    <a href="#" onclick="inactivo(1)" class="list-group-item inactive">Unidad 2</a>
-                    <a href="#" onclick="inactivo(1)" class="list-group-item inactive">Unidad 3</a>
-                    <a href="#" onclick="inactivo(1)" class="list-group-item inactive">Unidad 4</a>
-					<a href="#" onclick="inactivo(1)" class="list-group-item inactive">Unidad 5</a>
+                    <a href="#" class="list-group-item inactive">Unidad 2</a>
+                    <a href="#" class="list-group-item inactive">Unidad 3</a>
+                    <a href="#" class="list-group-item inactive">Unidad 4</a>
+					<a href="#" class="list-group-item inactive">Unidad 5</a>
                 </ul>
                 <a href="<?php echo base_url(); ?>modulo4" class="list-group-item list-group-item-action bg-light">
                     Módulo 4</a>

@@ -65,7 +65,7 @@
                         </div>
                     </div>
 
-                    <a href="#" class="list-group-item">Unidad 2</a>
+                    <a href="<?php echo base_url();?>modulo7/unidad2" class="list-group-item">Unidad 2</a>
 
 
 

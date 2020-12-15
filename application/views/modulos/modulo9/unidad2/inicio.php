@@ -67,13 +67,13 @@
                             <ul class="list-group-item">
                                 <a href="<?php echo base_url();?>modulo9/unidad2/contenidos"
                                     class="list-group-item">Contenidos</a>
-                                <a href="#" class="list-group-item">Evaluación</a>
+                                <a href="<?php echo base_url();?>modulo9/unidad2/evaluacion" class="list-group-item">Evaluación</a>
                             </ul>
                         </div>
                     </div>
 
                    
-                    <a href="#" class="list-group-item">Unidad 3</a>
+                    <a href="<?php echo base_url();?>modulo9/unidad3" class="list-group-item">Unidad 3</a>
                 </ul>
 
                 <a href="<?php echo base_url();?>modulo9" class="list-group-item list-group-item-action bg-light">
@@ -120,7 +120,9 @@
                 </center><br>
                 <div class="card mt-4">
                     <div class="card-body">
-                        <br>
+                        <p>La UNESCO [1] menciona en su metodología AMID para la unidad 2 del módulo 9 un conjunto 
+                            de objetivos de aprendizaje que se deben alcanzar mediante la revisión de contenido y la realización de 
+                            actividades acordes a unos temas establecidos; estos se pueden observar a continuación. </p>
                         <h4 class="subtitle">Objetivos de Aprendizaje</h4><br>
 
                         <div class="contenido">
@@ -134,6 +136,20 @@
 						</ul>
                         </p>
                         </div>
+                        <h4 class="subtitle">Temas Clave</h4>
+                        <div class="cotenido">
+                            <ul>
+                                <li>Pedagogía y AMI</li>
+                                <li>¿Qué es meta cognición?</li>
+                                <li>Meta cognición y AMI: haciendo el vínculo</li>
+                            </ul>
+                        </div>
+                        <h4 class="subtitle">Bibliografía:</h4>
+                            <p>[1] UNAOC, UNESCO, "Unidad 2: Teorías de aprendizaje y AMI", en <em>Media Information Literacy for Teachers</em>, 2020.
+                                <a href="http://unesco.mil-for-teachers.unaoc.org/modules/modulo-9-comunicacion-ami-y-aprendizaje-modulo-final/unidad-2-teorias-de-aprendizaje-y-ami/?lang=es" target="_blank" rel="noopener noreferrer">
+                                http://unesco.mil-for-teachers.unaoc.org/modules/modulo-9-comunicacion-ami-y-aprendizaje-modulo-final/unidad-2-teorias-de-aprendizaje-y-ami/?lang=es</a>
+                            </p>
+
                     </div>
                 </div>
 

@@ -60,8 +60,8 @@
                     <div class="dropdown-menu">
                         <ul class="list-group-item">
                             <a href="<?php echo base_url();?>modulo9/unidad1" class="list-group-item">Unidad 1</a>
-                            <a href="#" class="list-group-item">Unidad 2</a>
-                            <a href="#" class="list-group-item">Unidad 3</a>
+                            <a href="<?php echo base_url();?>modulo9/unidad2" class="list-group-item">Unidad 2</a>
+                            <a href="<?php echo base_url();?>modulo9/unidad3" class="list-group-item">Unidad 3</a>
 
                         </ul>
                     </div>

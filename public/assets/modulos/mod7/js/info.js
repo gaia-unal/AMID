@@ -6,12 +6,12 @@ function opc1() {
         progressSteps: ['1', '2', '3', '4']
     }).queue([{
             title: 'Oportunidades y retos en Internet',
-            text: ' Según UNESCO [1]: Es esencial que los ciudadanos de todos los grupos de edad tomen parte en la sociedad' +
+            html: ' Según UNESCO [1]: <br> Es esencial que los ciudadanos de todos los grupos de edad tomen parte en la sociedad' +
                 ' de información. Internet provee grandes oportunidades para mejorar la vida de todos los ' +
                 'usuarios. Tiene efectos positivos en la educación, en el mundo del trabajo y en el crecimiento' +
                 ' económico. Con la fácil digitalización, el almacenamiento de la información, y el acceso a través' +
                 ' de un amplio rango de dispositivos, Internet ha incrementado de una manera dramática la información' +
-                ' y los recursos disponibles para las personas.[1]'
+                ' y los recursos disponibles para las personas.'
         },
         {
             text: 'Los niños y jóvenes a menudo tienen un gran conocimiento de sus aplicaciones y pueden' +
@@ -29,7 +29,7 @@ function opc1() {
             text: 'La mejor forma de ayudar a los jóvenes a que se mantengan lejos del peligro es' +
                 ' empoderarlos y educarlos sobre cómo evitar o administrar los riesgos relacionados con el uso' +
                 ' de Internet. Las tecnologías pueden jugar un papel útil y de apoyo en estas áreas,' +
-                ' especialmente cuando hay niños y jóvenes involucrados. [1]'
+                ' especialmente cuando hay niños y jóvenes involucrados.'
         }
     ]);
 }

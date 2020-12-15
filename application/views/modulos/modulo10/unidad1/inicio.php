@@ -70,7 +70,6 @@
                             <ul class="list-group-item">
                                 <a href="<?php echo base_url();?>modulo10/unidad1/contenidos"
                                     class="list-group-item">Contenidos</a>
-                                <a href="#" class="list-group-item">Evaluación</a>
                             </ul>
                         </div>
                     </div>
@@ -117,7 +116,9 @@
                 </center><br>
                 <div class="card mt-4">
                     <div class="card-body">
-                        <br>
+                    <p>La UNESCO [1] menciona en su metodología AMID para la unidad 1 del módulo 10 un conjunto 
+                            de objetivos de aprendizaje que se deben alcanzar mediante la revisión de contenido y la realización de 
+                            actividades acordes a unos temas establecidos; estos se pueden observar a continuación. </p>
                         <h4 class="subtitle">Objetivos de Aprendizaje</h4><br>
 
                         <div class="contenido">
@@ -141,6 +142,21 @@
                             </ul>
                             </p>
                         </div>
+                        <h4 class="subtitle">Temas Clave</h4>
+                        <div class="contenido">
+                            <ul>
+                                <li>Audiencia e investigación de mercado</li>
+                                <li>Identificación de las audiencias seleccionadas</li>
+                                <li>Cómo las audiencias negocian el significado</li>
+                            </ul>
+                        </div>
+                        <h4 class="subtitle">Bibliografía:</h4>
+                                <p>[1] UNAOC, UNESCO, "Módulo 10: Audiencia", en <em>Media Information Literacy for
+                                        Teachers</em>, 2020.
+                                    <a href="http://unesco.mil-for-teachers.unaoc.org/modules/modulo-10-audiencia/?lang=es"
+                                        target="_blank" rel="noopener noreferrer">
+                                        http://unesco.mil-for-teachers.unaoc.org/modules/modulo-10/?lang=es</a>
+                                </p>
                     </div>
                 </div>
 

@@ -43,15 +43,15 @@
                             <ul class="list-group-item">
                                 <a href="<?php echo base_url();?>modulo2/unidad2/contenidos"
                                     class="list-group-item">Contenidos</a>
-                                <a href="#" onclick="inactivoEva()" class="list-group-item">Evaluación</a>
+                                <a href="#"  class="list-group-item">Evaluación</a>
                             </ul>
                         </div>
                     </div>
 
 
 
-                    <a href="#" onclick="inactivo(2)" class="list-group-item inactive">Unidad 3</a>
-                    <a href="#" onclick="inactivo(2)" class="list-group-item inactive">Unidad 4</a>
+                    <a href="#" class="list-group-item inactive">Unidad 3</a>
+                    <a href="#" class="list-group-item inactive">Unidad 4</a>
                 </ul>
 
 

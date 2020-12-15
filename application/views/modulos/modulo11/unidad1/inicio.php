@@ -75,9 +75,9 @@
                         </div>
                     </div>
 
-                    <a href="#" class="list-group-item">Unidad 2</a>
-                    <a href="#" class="list-group-item">Unidad 3</a>
-                    <a href="#" class="list-group-item">Unidad 4</a>
+                    <a href="<?php echo base_url();?>modulo11/unidad2" class="list-group-item">Unidad 2</a>
+                    <a href="<?php echo base_url();?>modulo11/unidad3" class="list-group-item">Unidad 3</a>
+                    <a href="<?php echo base_url();?>modulo11/unidad4" class="list-group-item">Unidad 4</a>
                 </ul>
 
 
@@ -119,7 +119,9 @@
                 </center><br>
                 <div class="card mt-4">
                     <div class="card-body">
-                        <br>
+                    <p>La UNESCO [1] menciona en su metodología AMID para la unidad 1 del módulo 11 un conjunto 
+                            de objetivos de aprendizaje que se deben alcanzar mediante la revisión de contenido y la realización de 
+                            actividades acordes a unos temas establecidos; estos se pueden observar a continuación. </p>
                         <h4 class="subtitle">Objetivos de Aprendizaje</h4><br>
 
                         <div class="contenido">
@@ -141,6 +143,35 @@
 							</ul>
 						</p>
                         </div>
+                        <h4 class="subtitle">Temas Clave</h4>
+                        <div class="contenido">
+                            <ul>
+                                <li>La economía global, el comercio electrónico y la propiedad de los medios</li>
+                                <li>Patrones de comunicación, propiedad de los medios y control</li>
+                                <li>Medios privados (comerciales), medios controlados o de propiedad del gobierno, y organizaciones de medios públicos, por Ej. sistemas de difusión pública</li>
+                                <li>Medios comunitarios</li>
+                                <li>Convergencia de tecnologías (medios de masas, telecomunicaciones y computadoras) y el nacimiento de los conglomerados mediáticos</li>
+                                <li>Pluralismo y concentración (por Ej. cadenas de medios y propiedad cruzada (cross ownership)</li>
+                                <li>Adquisiciones, fusiones, sociedades conjuntas (joint ventures) y consorcios</li>
+                                <li>Transnacionalización (corporaciones mediáticas globales)</li>
+                                <li>Protocolos internacionales y nacionales sobre la propiedad de los medios</li>
+                                <li>Leyes anti-monopolio</li>
+                                <li>Limitaciones a la propiedad en el extranjero</li>
+                                <li>Otras políticas regulatorias y mecanismos</li>
+                                <li>Propiedad de los medios, desarrollo del contenido y programación</li>
+                                <li>Contenido extranjero vs. contenido local</li>
+                                <li>Externalización de servicios, deslocalización y aprovisionamiento local (home sourcing)</li>
+                                <li>Tensiones entre la independencia editorial y los intereses de los propietarios</li>
+                            </ul>
+                        </div>
+                        <h4 class="subtitle">Bibliografía:</h4>
+                                <p>[1] UNAOC, UNESCO, "Unidad 1: Propiedad de los Medios en el Mundo Global Actual", en <em>Media Information Literacy for
+                                        Teachers</em>, 2020.
+                                    <a href="http://unesco.mil-for-teachers.unaoc.org/modules/modulo-11-medios-tecnologia-y-el-mundo-global-global-village/unidad-1-propiedad-de-los-medios-en-el-mundo-global-actual/?lang=es"
+                                        target="_blank" rel="noopener noreferrer">
+                                        http://unesco.mil-for-teachers.unaoc.org/modules/modulo-11-medios-tecnologia-y-el-mundo-global-global-village/unidad-1-propiedad-de-los-medios-en-el-mundo-global-actual/?lang=es</a>
+                                </p>
+
                     </div>
                 </div>
 

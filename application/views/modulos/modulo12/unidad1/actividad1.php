@@ -127,25 +127,25 @@
                         <ol>
                             <li>¿Por qué importa la libertad de expresión?</li>
                             <textarea name="preg1" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
+                                placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                             <li>¿Cuales son las condiciones para que prospere la libertad de expresión?</li>
                             <textarea name="preg2" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
+                                placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                             <li>¿En qué momento se encuentra en riesgo la libertad de expresión?</li>
                             <textarea name="preg3" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
+                                placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                             <li>¿Cual es el papel especial de los periodistas en la libertad de expresión?</li>
                             <textarea name="preg4" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
+                                placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                             <li>¿Qué hay de la libertad de expresión en línea?</li>
                             <textarea name="preg5" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
+                                placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                             <li>¿Qué podemos hacer?</li>
                             <textarea name="preg6" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
+                                placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                             <li>¿Cuales son las limitaciones?</li>
                             <textarea name="preg7" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
+                                placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                         </ol>
                         </div>
                     </div>

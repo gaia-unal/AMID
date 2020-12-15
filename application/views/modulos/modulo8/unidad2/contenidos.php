@@ -60,13 +60,13 @@
                         <div class="dropdown-menu">
                             <ul class="list-group-item">
                                 <a href="<?php echo base_url(); ?>modulo8/unidad2/contenidos" class="list-group-item">Contenidos</a>
-                                <a href="#" class="list-group-item">Evaluación</a>
+                                <a href="<?php echo base_url(); ?>modulo8/unidad2/evaluacion" class="list-group-item">Evaluación</a>
                             </ul>
                         </div>
                     </div>
 
 
-                    <a href="#" class="list-group-item">Unidad 3</a>
+                    <a href="<?php echo base_url(); ?>modulo8/unidad3" class="list-group-item">Unidad 3</a>
                 </ul>
 
                 <a href="<?php echo base_url(); ?>modulo9" class="list-group-item list-group-item-action bg-light">

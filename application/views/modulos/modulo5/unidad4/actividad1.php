@@ -62,8 +62,6 @@
                         </button>
                         <div class="dropdown-menu">
                             <ul class="list-group-item">
-                                <a href="<?php echo base_url();?>modulo5/unidad4/temas"
-                                    class="list-group-item">Temas</a>
                                 <a href="<?php echo base_url();?>modulo5/unidad4/actividad1"
                                     class="list-group-item">Actividades</a>
                                 <a href="<?php echo base_url();?>modulo5/unidad4/evaluacion" class="list-group-item">Evaluación</a>
@@ -72,7 +70,7 @@
                     </div>
 
                    
-                    <a href="#" onclick="inactivo(4)" class="list-group-item">Unidad 5</a>
+                    <a href="<?php echo base_url();?>modulo5/unidad5" class="list-group-item">Unidad 5</a>
 
                 </ul>
 
@@ -128,7 +126,9 @@
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4 class="subtitle">La publicidad y el auspicio – ubicación, mensajes y audiencia</h4><br>
+                        Por [1] se establece:
                         <div class="contenido">
+                        <blockquote>
                         <p class="card-text">
                             Recolecte ejemplos de la propaganda política en su región. Si es necesario, haga una
                             investigación en la biblioteca local. Tome en consideración las razones por las que el
@@ -177,7 +177,15 @@
                             <textarea name="preg4" style="width: 80%;" rows="6" minlength="1" maxlength="300" onkeypress="return check(event)"
                                 required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea><br/>
                         </p>
+                        </blockquote>
                         </div>
+                        <h4 class="subtitle">Bibliografía:</h4>
+                        <p>[1] UNAOC, UNESCO, "Unidad 4: Publicidad y el campo político", en <em>Media Information Literacy for Teachers</em>, 2020.
+                            <a href="http://unesco.mil-for-teachers.unaoc.org/modules/modulo-5-publicidad/unidad-4-publicidad-y-el-campo-politico/?lang=es" 
+                            target="_blank" rel="noopener noreferrer">
+                            http://unesco.mil-for-teachers.unaoc.org/modules/modulo-5-publicidad/unidad-4-publicidad-y-el-campo-politico/?lang=es</a>
+                        </p>
+
                     </div>
                 </div>
 

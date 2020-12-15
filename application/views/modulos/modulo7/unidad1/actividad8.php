@@ -59,12 +59,12 @@
                             <ul class="list-group-item">
                                 <a href="<?php echo base_url();?>modulo7/unidad1/contenidos"
                                     class="list-group-item">Contenidos</a>
-                                <a href="#" class="list-group-item">Evaluación</a>
+                                <a href="<?php echo base_url();?>modulo7/unidad1/evaluacion1" class="list-group-item">Evaluación</a>
                             </ul>
                         </div>
                     </div>
 
-                    <a href="#" class="list-group-item">Unidad 2</a>
+                    <a href="<?php echo base_url();?>modulo7/unidad2" class="list-group-item">Unidad 2</a>
 
 
 
@@ -143,7 +143,7 @@
                             </label><br>
                          <br> <h4 class="subtEv">¿Qué mecanismo utilizaría para fomentar el correcto uso de la web?</h4>
                             <textarea name="preg2" style="width: 100%;" rows="5" minlength="1" maxlength="300" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
+                                placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                         </div> 
                         
 

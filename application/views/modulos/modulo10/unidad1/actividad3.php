@@ -70,7 +70,7 @@
                         <div class="dropdown-menu">
                             <ul class="list-group-item">
                                 <a href="<?php echo base_url();?>modulo10/unidad1/contenidos"
-                                    class="list-group-item">Conteidos</a>                                
+                                    class="list-group-item">Contenidos</a>                                
                             </ul>
                         </div>
                     </div>

@@ -65,17 +65,15 @@
                         </button>
                         <div class="dropdown-menu">
                             <ul class="list-group-item">
-                                <a href="<?php echo base_url();?>modulo9/unidad1/temas"
-                                    class="list-group-item">Temas</a>
                                 <a href="<?php echo base_url();?>modulo9/unidad1/actividad1"
                                     class="list-group-item">Actividades</a>
-                                <a href="#" class="list-group-item">Evaluación</a>
+                                <a href="<?php echo base_url();?>modulo9/unidad1/evaluacion" class="list-group-item">Evaluación</a>
                             </ul>
                         </div>
                     </div>
 
-                    <a href="#" class="list-group-item">Unidad 2</a>
-                    <a href="#" class="list-group-item">Unidad 3</a>
+                    <a href="<?php echo base_url();?>modulo9/unidad2" class="list-group-item">Unidad 2</a>
+                    <a href="<?php echo base_url();?>modulo9/unidad3" class="list-group-item">Unidad 3</a>
                 </ul>
 
 
@@ -121,11 +119,11 @@
                 </center><br>
                 <div class="card mt-4">
                     <div class="card-body">
-                        <br>
-                        <h4 class="subtitle">Objetivos de Aprendizaje</h4><br>
-
+                        <p>La UNESCO [1] menciona en su metodología AMID para la unidad 1 del módulo 9 un conjunto 
+                            de objetivos de aprendizaje que se deben alcanzar mediante la revisión de contenido y la realización de 
+                            actividades acordes a unos temas establecidos; estos se pueden observar a continuación. </p>
+                        <h4 class="subtitle">Objetivos de Aprendizaje</h4>
                         <div class="contenido">
-
                         <p class="card-text">
                         <ul>
                             <li class="animated lightSpeedIn">Demostrar un entendimiento básico de la comunicación</li>
@@ -135,6 +133,20 @@
                         </ul>
                         </p>
                         </div>
+                        <h4 class="subtitle">Temas Clave</h4>
+                        <div class="contenido">
+                            <ul>
+                                <li>Definición de comunicación</li>
+                                <li>Teorías básicas sobre la comunicación</li>
+                                <li>Explorando la enseñanza y el aprendizaje como un proceso de comunicación y cómo el conocimiento de AMI puede contribuir a este proceso</li>
+                                <li>Estrategias para enseñar a través y sobre AMI</li>
+                            </ul>
+                        </div>
+                        <h4 class="subtitle">Bibliografía:</h4>
+                            <p>[1] UNAOC, UNESCO, "Unidad 1: Comunicación, enseñanza y aprendizaje", en <em>Media Information Literacy for Teachers</em>, 2020.
+                                <a href="http://unesco.mil-for-teachers.unaoc.org/modules/modulo-9-comunicacion-ami-y-aprendizaje-modulo-final/unidad-1-comunicacion-ensenanza-y-aprendizaje/?lang=es" target="_blank" rel="noopener noreferrer">
+                                http://unesco.mil-for-teachers.unaoc.org/modules/modulo-9-comunicacion-ami-y-aprendizaje-modulo-final/unidad-1-comunicacion-ensenanza-y-aprendizaje/?lang=es</a>
+                            </p>
                     </div>
                 </div>
 

@@ -71,7 +71,7 @@
                             <ul class="list-group-item">
                                 <a href="<?php echo base_url();?>modulo9/unidad3/contenidos"
                                     class="list-group-item">Contenidos</a>
-                                <a href="#" class="list-group-item">Evaluación</a>
+                                <a href="<?php echo base_url();?>modulo9/unidad3/evaluacion" class="list-group-item">Evaluación</a>
                             </ul>
                         </div>
                     </div>
@@ -141,18 +141,18 @@
                             particular. Identifique cualquier recomendación adicional que usted haría
                             para garantizar el éxito de AMI en su departamento o institución</p>
                             <textarea name="preg1" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
+                                placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                         <p>2. Cambiaría esta lista si uno toma en cuenta los criterios de un programa
                             exitoso para los estudiantes? Identifique aquí cualquier consideración adicional.
                         </p>
                         <textarea name="preg2" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
+                                placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                         <p>3. Tomando en cuenta las necesidades de su propia comunidad educativa, ¿de qué
                             manera se podría integrar AMI a los programas existentes para profesores, o desarrollarse
                             como un programa en sí? ¿Cuáles son las ventajas y desventajas de cada uno? Cite módulos
                             específicos como ejemplos</p>
                             <textarea name="preg3" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
+                                placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                         <br>
                         </div>
                         <br>

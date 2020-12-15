@@ -73,7 +73,7 @@
                     </div>
 
 
-                    <a href="#" class="list-group-item">Unidad 3</a>
+                    <a href="<?php echo base_url(); ?>modulo8/unidad3" class="list-group-item">Unidad 3</a>
                 </ul>
 
                 <a href="<?php echo base_url();?>modulo9" class="list-group-item list-group-item-action bg-light">
@@ -132,7 +132,7 @@
                                     como se presentan?
                                 </li>
                                 <textarea name="preg1" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea> <br>
+                                    placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea> <br>
                                 Busque una revista impresa o en formato electrónico en la biblioteca de su
                                 escuela/colegio (o la principal biblioteca en su ciudad o pueblo) sobre educación (por
                                 Ej. educación de profesores, educación especial, educación comparativa, etc.). En la
@@ -142,28 +142,28 @@
                                     información es aplicable para el contexto de su país? De ser así, ¿de qué manera
                                     usted usaría esta información?</li>
                                 <textarea name="preg2" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
+                                    placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                                 <li>Evalúe el ambiente de la escuela/colegio en relación a las necesidades de
                                     alfabetización informacional y escriba recomendaciones específicas que mejorarían la
                                     alfabetización informacional de los estudiantes</li>
                                 <textarea name="preg3" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
+                                    placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                                 <li>El Big6 y la resolución de problemas en información: utilice los recursos de
                                     información en la biblioteca para explorar un tema o un tema de actualidad (por Ej.
                                     derecho al voto, democracia, VIH/SIDA, etc.). Aplique las etapas del Big6 para
                                     explorar este tema.</li>
                                 <textarea name="preg4" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
+                                    placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                                 <li>Utilice la tecnología de las computadoras para tener acceso a la información en
                                     temas de interés y presente la información (textual o numérica) en un cuadro o en un
                                     formato gráfico. Compare la cantidad, calidad y utilidad de la información de sus
                                     recursos bibliotecarios con la información del Internet</li>
                                 <textarea name="preg5" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
+                                    placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                                 <li>Escriba a continuación sobre cómo el uso de la radio y la telefonía móvil está
                                     cambiando la cara de la generación de la información y su uso en su país.</li>
                                 <textarea name="preg6" style="width: 100%;" rows="5" minlength="1" maxlength="200" onkeypress="return check(event)"
-                                required placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
+                                    placeholder="Escriba su respuesta aquí" spellcheck="true" ></textarea>
                                 <li>Escriba un ensayo sobre cómo el uso de la radio y la telefonía móvil está cambiando
                                     la cara de la generación de la información y su uso en su país. Presente sus
                                     descubrimientos por medio de una presentación en Power Point.</li>

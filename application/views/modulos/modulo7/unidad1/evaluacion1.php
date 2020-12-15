@@ -65,7 +65,7 @@
                         </div>
                     </div>
 
-                    <a href="#" class="list-group-item">Unidad 2</a>
+                    <a href="<?php echo base_url();?>modulo7/unidad2" class="list-group-item">Unidad 2</a>
 
 
 
@@ -127,61 +127,61 @@
                             <h4 class="subtEv"> 1. ¿Cuáles son los principales intereses de los niños y adolescentes en
                                 Internet?</h4>
                             <label class="container" id="p1-r1">
-                                <input type="radio" name="preg1" id="opc1" value = 1 required>
+                                <input type="radio" name="preg1" id="opc1" value = 1>
                                 a. Jugar, usar redes sociales y ver vídeos.
                             </label>
                             <label class="container" id="p1-r2">
-                                <input type="radio" name="preg1" id="opc2" value = 5 required>
+                                <input type="radio" name="preg1" id="opc2" value = 5>
                                 b. Trabajos del colegio, escuchar musica y usar redes sociales.
                             </label>
                             <label class="container" id="p1-r3">
-                                <input type="radio" name="preg1" id="opc3" value = 1 required>
+                                <input type="radio" name="preg1" id="opc3" value = 1>
                                 c. Pasar tiempo en la un mundo virtual, usar redes sociales, h
                                     trabajos del colegio.</p>
                             </label>
                             <!-- Pregunta 2 -->
                             <h4 class="subtEv"> 2. ¿Qué conductas se pueden pasar por alto en aquellos que usan Internet?</h4>
                             <label class="container" id="p2-r1">
-                                <input type="radio" name="preg2" id="opc1" value = 1 required>
+                                <input type="radio" name="preg2" id="opc1" value = 1>
                                 a. Tolerancia, diversión y buen juicio.
                             </label>
                             <label class="container" id="p2-r2">
-                                <input type="radio" name="preg2" id="opc2" value = 1 required>
+                                <input type="radio" name="preg2" id="opc2" value = 1>
                                 b. Síndrome de abstinencia, perdida de control y cambio
                                     comportamiento.</p>
                             </label>
                             <label class="container" id="p2-r3">
-                                <input type="radio" name="preg2" id="opc3" value = 5 required>
+                                <input type="radio" name="preg2" id="opc3" value = 5>
                                 c. Buen comportamiento, obediencia y acato de las normas y reglas.
                             </label>
                             <!-- Pregunta 3 -->
                             <h4 class="subtEv"> 3. ¿Qué herramientas puede utilizar para inculcar un buen comportamiento en
                                 Internet?</h4>
                             <label class="container" id="p3-r1">
-                                <input type="radio" name="preg3" id="opc1" value = 1 required>
+                                <input type="radio" name="preg3" id="opc1" value = 1>
                                 a. Wikis, redes sociales y dispositivos moviles.
                             </label>
                             <label class="container" id="p3-r2">
-                                <input type="radio" name="preg3" id="opc2" value = 1 required>
+                                <input type="radio" name="preg3" id="opc2" value = 1>
                                 b. Facebook, wikis y correo electrónico.
                             </label>
                             <label class="container" id="p3-r3">
-                                <input type="radio" name="preg3" id="opc3" value = 5 required>
+                                <input type="radio" name="preg3" id="opc3" value = 5>
                                 c. Wikis.
                             </label>
                             <!--Pregunta 4-->
                             <h4 class="subtEv"> 4. ¿Cuál corresponde al lugar más usado por los jóvenes para navegar en
                                 Internet?</h4>
                             <label class="container" id="p4-r1">
-                                <input type="radio" name="preg4" id="opc1" value = 5 required>
+                                <input type="radio" name="preg4" id="opc1" value = 5>
                                 a. Sala u otra habitación común.
                             </label>
                             <label class="container" id="p4-r2">
-                                <input type="radio" name="preg4" id="opc2" value = 1 required>
+                                <input type="radio" name="preg4" id="opc2" value = 1>
                                 b. Habitación privada.
                             </label>
                             <label class="container" id="p4-r3">
-                                <input type="radio" name="preg4" id="opc3" value = 1 required>
+                                <input type="radio" name="preg4" id="opc3" value = 1>
                                 c. Cualquier lugar que permita conexión a través de una plataf
                                     movil.</p>
                             </label>
@@ -190,30 +190,30 @@
                                 en Redes sociales?
                             </h4>
                             <label class="container" id="p5-r1">
-                                <input type="radio" name="preg5" id="opc1" value = 1 required>
+                                <input type="radio" name="preg5" id="opc1" value = 1>
                                 a. 11 años.
                             </label>
                             <label class="container" id="p5-r2">
-                                <input type="radio" name="preg5" id="opc2" value = 1 required>
+                                <input type="radio" name="preg5" id="opc2" value = 1>
                                 b. 12 años.
                             </label>
                             <label class="container" id="p5-r3">
-                                <input type="radio" name="preg5" id="opc3" value = 5 required>
+                                <input type="radio" name="preg5" id="opc3" value = 5>
                                 c. 13 años.
                             </label>
                             <!-- Pregunta 6 -->
                             <h4 class="subtEv"> 6. ¿Cuáles son los principales riesgos que se pueden encontrar en Internet?
                             </h4>
                             <label class="container" id="p6-r1">
-                                <input type="radio" name="preg6" id="opc1" value = 1 required>
+                                <input type="radio" name="preg6" id="opc1" value = 1>
                                 a. Ciberbullying, Sexting y Grooming.
                             </label>
                             <label class="container" id="p6-r2">
-                                <input type="radio" name="preg6" id="opc2" value = 5 required>
+                                <input type="radio" name="preg6" id="opc2" value = 5>
                                 b. Sexting, Sextorsión, Ciberbullying y Grooming.
                             </label>
                             <label class="container" id="p6-r3">
-                                <input type="radio" name="preg6" id="opc3" value = 1 required>
+                                <input type="radio" name="preg6" id="opc3" value = 1>
                                 c. Sexting y Sextorsión.
                             </label>
                         </p>
