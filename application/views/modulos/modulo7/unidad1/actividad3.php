@@ -175,8 +175,8 @@
                                 <center>
                                     Fuente: TigoUne y Eafit
                                 </center>
-                            </div>
-                            <h4>Referencias</h4>
+                            </div><br>
+                            <h4 class="subtitle">Bibliografía:</h4><br>
                             [1]
                             https://www.valoraanalitik.com/2018/09/05/sancionados-etb-claro-movistar-y-tigoune-por-servicios-de-internet/
                             <br> [2] Autor: María Estela Raffino. Para: Concepto.de. Disponible en:

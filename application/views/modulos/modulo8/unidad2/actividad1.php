@@ -225,10 +225,10 @@
                                 </center>
                         </p>
                         </div>
-                        <h4 class="subtitle">Bibliografía:</h4>
-                            <p>[1] UNAOC, UNESCO, "Módulo 8: Alfabetización informacional y destrezas bibliotecarias", en <em>Media Information Literacy for Teachers</em>, 2020.
+                        <h4 class="subtitle">Bibliografía:</h4> 
+                            <p>[1] UNAOC, UNESCO, "Módulo 8: Alfabetización informacional y destrezas bibliotecarias - unidad 2: Ambiente de aprendizaje y alfabetización informacional", en <em>Media Information Literacy for Teachers</em>, 2020.
                                 <a href="http://unesco.mil-for-teachers.unaoc.org/modules/modulo-8-alfabetizacion-informacional-y-destrezas-bibliotecarias/unidad-2-ambiente-de-aprendizaje-y-alfabetizacion-informacional/?lang=es" target="_blank" rel="noopener noreferrer">
-                                http://unesco.mil-for-teachers.unaoc.org/modules/modulo-8/?lang=es</a>
+                                http://unesco.mil-for-teachers.unaoc.org/modules/modulo-8-alfabetizacion-informacional-y-destrezas-bibliotecarias/unidad-2-ambiente-de-aprendizaje-y-alfabetizacion-informacional/?lang=es</a>
                             </p>
                     </div>
                 </div>

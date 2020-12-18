@@ -169,8 +169,8 @@
                                     </li>
                                 </a>
 
-                            </ul>
-                            <h4>Referencias</h4>
+                            </ul> <br>
+                            <h4 class="subtitle">Bibliografía:</h4><br>
                             [1] Autores: Julián Pérez Porto y Ana Gardey. Publicado: 2010. Actualizado: 2013.
                             Definicion.de: Definición de wiki (https://definicion.de/wiki/) <br> [2] Ejemplos de wikis.
                             https://ejemplos.net/ejemplos-de-wikis/ <br> [3] ¿Qué es un wiki?

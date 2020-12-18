@@ -139,8 +139,8 @@
                                 <a href="#" onclick="preg6();">
                                         <li><h4>Síndrome de abstinencia</h4></li>
                                     </a>
-                            </ul>
-                            <h4>Referencias y Fuente de Imágenes</h4>
+                            </ul><br>
+                            <h4 class="subtitle">Bibliografía:</h4><br>
                             [1] Labrador Encinas, F., Requesens Moll, A., & Requesens Moll, M. (2015). Guía para
                             padres y educadores sobre el uso seguro de Internet, móviles y videojuegos. Fundacion
                             Gaudium, Vol. 39, p. 72. https://doi.org/10.3916/C40-2013-03-03

@@ -156,8 +156,8 @@
                         <h4 class="subtitle">Bibliografía:</h4>
                             <p>[1] UNAOC, UNESCO, "Módulo 9: Comunicación, enseñanza y aprendizaje", en <em>Media Information Literacy for Teachers</em>, 2020.
                                 <a href="http://unesco.mil-for-teachers.unaoc.org/modules/modulo-9-comunicacion-ami-y-aprendizaje-modulo-final/unidad-1-comunicacion-ensenanza-y-aprendizaje/?lang=es" target="_blank" rel="noopener noreferrer">
-                                http://unesco.mil-for-teachers.unaoc.org/modules/modulo-9/?lang=es</a>
-                            </p>
+                                http://unesco.mil-for-teachers.unaoc.org/modules/modulo-9-comunicacion-ami-y-aprendizaje-modulo-final/unidad-1-comunicacion-ensenanza-y-aprendizaje/?lang=es</a>
+                            </p> 
                     </div>
                 </div>
 

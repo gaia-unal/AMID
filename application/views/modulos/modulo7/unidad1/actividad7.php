@@ -156,7 +156,8 @@
                             <center>
                                 <p>Fuente: https://www.diferenciador.com/diferencia-entre-internet-y-web/</p>
                             </center>
-                            <h4>Referencias</h4>
+                            <br>
+                            <h4 class="subtitle">Bibliografía:</h4><br>
                             [1]Autores: Julián Pérez Porto y María Merino. Publicado: 2010. Actualizado: 2013.
                             Definicion.de: Definición de web (https://definicion.de/web/) <br>[2] Autor: María Estela
                             Raffino. Para: Concepto.de. Disponible en: https://concepto.de/internet/. Consultado: 14 de

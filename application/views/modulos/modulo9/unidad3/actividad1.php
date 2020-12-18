@@ -159,7 +159,7 @@
                         <h4 class="subtitle">Bibliografía:</h4>
                             <p>[1] UNAOC, UNESCO, "Módulo 9: Manejando el cambio para fomentar un medio ambiente propicio para las escualas AMI", en <em>Media Information Literacy for Teachers</em>, 2020.
                                 <a href="http://unesco.mil-for-teachers.unaoc.org/modules/modulo-9-comunicacion-ami-y-aprendizaje-modulo-final/unidad-3-manejando-el-cambio-para-fomentar-un-medio-ambiente-propicio-para-las-escuelas-ami/?lang=es" target="_blank" rel="noopener noreferrer">
-                                http://unesco.mil-for-teachers.unaoc.org/modules/modulo-9/?lang=es</a>
+                                http://unesco.mil-for-teachers.unaoc.org/modules/modulo-9-comunicacion-ami-y-aprendizaje-modulo-final/unidad-3-manejando-el-cambio-para-fomentar-un-medio-ambiente-propicio-para-las-escuelas-ami/?lang=es</a>
                             </p>
                     </div>
                 </div>
