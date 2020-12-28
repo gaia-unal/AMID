@@ -33,28 +33,17 @@
                         </ul>
                     </div>
                 </div>
-                <a href="<?php echo base_url();?>modulo2" class="list-group-item list-group-item-action bg-light">
-                    Módulo 2</a>
-                <a href="<?php echo base_url();?>modulo3" class="list-group-item list-group-item-action bg-light">
-                    Módulo 3</a>
-                <a href="<?php echo base_url();?>modulo4" class="list-group-item list-group-item-action bg-light">
-                    Módulo 4</a>
-                <a href="<?php echo base_url();?>modulo5" class="list-group-item list-group-item-action bg-light">
-                    Módulo 5</a>
-                <a href="<?php echo base_url();?>modulo6" class="list-group-item list-group-item-action bg-light">
-                    Módulo 6</a>
-                <a href="<?php echo base_url();?>modulo7" class="list-group-item list-group-item-action bg-light">
-                    Módulo 7</a>
-                <a href="<?php echo base_url();?>modulo8" class="list-group-item list-group-item-action bg-light">
-                    Módulo 8</a>
-                <a href="<?php echo base_url();?>modulo9" class="list-group-item list-group-item-action bg-light">
-                    Módulo 9</a>
-                <a href="<?php echo base_url();?>modulo10" class="list-group-item list-group-item-action bg-light">
-                    Módulo 10</a>
-                <a href="<?php echo base_url();?>modulo11" class="list-group-item list-group-item-action bg-light">
-                    Módulo 11</a>
-                <a href="<?php echo base_url();?>modulo12" class="list-group-item list-group-item-action bg-light">
-                    Módulo 12</a>
+                <a href="<?php echo base_url();?>modulo2" class="list-group-item list-group-item-action bg-light">Módulo 2</a>
+                <a href="<?php echo base_url();?>modulo3" class="list-group-item list-group-item-action bg-light">Módulo 3</a>
+                <a href="<?php echo base_url();?>modulo4" class="list-group-item list-group-item-action bg-light">Módulo 4</a>
+                <a href="<?php echo base_url();?>modulo5" class="list-group-item list-group-item-action bg-light">Módulo 5</a>
+                <a href="<?php echo base_url();?>modulo6" class="list-group-item list-group-item-action bg-light">Módulo 6</a>
+                <a href="<?php echo base_url();?>modulo7" class="list-group-item list-group-item-action bg-light">Módulo 7</a>
+                <a href="<?php echo base_url();?>modulo8" class="list-group-item list-group-item-action bg-light">Módulo 8</a>
+                <a href="<?php echo base_url();?>modulo9" class="list-group-item list-group-item-action bg-light">Módulo 9</a>
+                <a href="<?php echo base_url();?>modulo10" class="list-group-item list-group-item-action bg-light">Módulo 10</a>
+                <a href="<?php echo base_url();?>modulo11" class="list-group-item list-group-item-action bg-light">Módulo 11</a>
+                <a href="<?php echo base_url();?>modulo12" class="list-group-item list-group-item-action bg-light">Módulo 12</a>
             </div>
         </div>
         <div id="page-content-wrapper">
@@ -69,6 +58,7 @@
             </nav>
             <div class="contenedor">
                 <center>
+                <?php $this->session->set_userdata('ruta','modulo1');?>
                 <h1 class="first_title"><br> Módulo 1: Ciudadanía, libertad de expresión e información, acceso a la
                     información, discurso democrático y aprendizaje a lo largo de la vida</h1></center>
                 <div class="card mt-4 contenido">

@@ -39,7 +39,7 @@
 
                     <div class="btn-group dropright">
 
-                        <a href="<?php echo base_url(); ?>modulo4/unidad3" class="list-group-item inactive">Unidad 3</a>
+                        <a href="<?php echo base_url(); ?>modulo4/unidad3" class="list-group-item">Unidad 3</a>
 
                         <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
@@ -51,7 +51,7 @@
                             </ul>
                         </div>
                     </div>
-                    <a href="#" onclick="inactivo(3)" class="list-group-item inactive">Unidad 4</a>
+                    <a href="<?php echo base_url();?>modulo4/unidad4" class="list-group-item">Unidad 4</a>
 
                 </ul>
 
@@ -103,6 +103,7 @@
                 <!-- contenido -->
 
                 <br>
+                <?php $this->session->set_userdata('ruta','modulo4/unidad3/contenidos'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <div class="contenido ">

@@ -62,6 +62,7 @@
                 <center>
                     <h1 class="first_title">Unidad 2: Uso de las Nuevas Tecnologías Mediáticas en la Sociedad – Comunicación de Masas y Digital</h1>
                 </center>
+                <?php $this->session->set_userdata('ruta','modulo6/unidad2'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <p>La UNESCO [1] menciona en su metodología AMID para la unidad 2 del módulo 6 un conjunto 

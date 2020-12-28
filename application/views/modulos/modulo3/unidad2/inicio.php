@@ -64,7 +64,7 @@
             <div class="contenedor">
                 <center>
                     <h1 class="first_title"><br>Unidad 2: Códigos de la industria sobre la diversidad y la representación</h1>
-                    <?php echo form_open('modulo3/unidad1/evaluacion');$this->session->set_userdata('idAct','m3u1a2'); ?>
+                    <?php echo form_open('modulo3/unidad1/evaluacion');$this->session->set_userdata('idAct','m3u1a2'); $this->session->set_userdata('ruta','modulo3/unidad2');?>
                 </center>
                 <div class="card mt-4">
                     <div class="card-body">

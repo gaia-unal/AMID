@@ -63,7 +63,7 @@
                 <center>
                     <h1 class="first_title">Unidad 3: Usos de las Herramientas Interactivas de Multimedia, incluyendo los Juegos Digitales en las
                     Aulas</h1>
-                    <?php echo form_open('modulo6/unidad3/evaluacion');$this->session->set_userdata('idAct','m6u3a1'); ?>
+                    <?php echo form_open('modulo6/unidad3/evaluacion');$this->session->set_userdata('idAct','m6u3a1'); $this->session->set_userdata('ruta','modulo6/unidad3/actividad1');?>
                 </center><br>
                 <div class="card mt-4">
                     <div class="card-body">

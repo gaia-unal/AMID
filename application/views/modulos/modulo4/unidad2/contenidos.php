@@ -54,15 +54,15 @@
                                     class="list-group-item">Temas</a>
                                 <a href="<?php echo base_url();?>modulo4/unidad2/actividad1"
                                     class="list-group-item">Actividades</a>
-                                    <a href="#"  class="list-group-item">Evaluación</a>
+                                    <a href="<?php echo base_url();?>modulo4/unidad2/evaluacion"  class="list-group-item">Evaluación</a>
                             </ul>
                         </div>
                     </div>
 
 
                    
-                    <a href="#" class="list-group-item inactive">Unidad 3</a>
-                    <a href="#" class="list-group-item inactive">Unidad 4</a>
+                    <a href="<?php echo base_url();?>modulo4/unidad3" class="list-group-item inactive">Unidad 3</a>
+                    <a href="<?php echo base_url();?>modulo4/unidad4" class="list-group-item inactive">Unidad 4</a>
 
                 </ul>
 
@@ -114,6 +114,7 @@
                 <!-- contenido -->
 
                 <br>
+                <?php $this->session->set_userdata('ruta','modulo4/unidad2/contenidos'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <div class="contenido ">

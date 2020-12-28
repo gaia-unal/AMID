@@ -64,7 +64,7 @@
             <div class="contenedor">
                 <center>
                     <h1 class="first_title"><br>Unidad 1: Lectura de medios y textos de información</h1>
-                    <?php echo form_open('modulo4/unidad2/inicio');$this->session->set_userdata('idAct','m4u1a8'); ?>
+                    <?php echo form_open('modulo4/unidad2/inicio');$this->session->set_userdata('idAct','m4u1a8'); $this->session->set_userdata('ruta','modulo4/unidad1/evaluacion');?>
                 </center>
                 <div class="card mt-4">
                     <div class="card-body">

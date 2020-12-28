@@ -65,7 +65,11 @@
             <div class="contenedor">
                 <center>
                     <h1 class="first_title"><br>Unidad 1: Informes de noticias y el poder de las imágenes</h1>
-                    <?php echo form_open('modulo3/unidad2/inicio');$this->session->set_userdata('idAct','m3u1'); ?>
+                    <?php 
+                        echo form_open('modulo3/unidad2/inicio');
+                        $this->session->set_userdata('idAct','m3u1'); 
+                        $this->session->set_userdata('ruta','modulo3/unidad1/evaluacion');
+                    ?>
                 </center>
                 <div class="card mt-4">
                     <div class="card-body">

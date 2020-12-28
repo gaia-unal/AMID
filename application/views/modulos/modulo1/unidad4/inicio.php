@@ -36,30 +36,17 @@
                         </div>
                     </div>
                 </ul>
-
-                <a href="<?php echo base_url();?>modulo2" class="list-group-item list-group-item-action bg-light">
-                    Módulo 2</a>
-                <a href="<?php echo base_url();?>modulo3" class="list-group-item list-group-item-action bg-light">
-                    Módulo 3</a>
-                <a href="<?php echo base_url();?>modulo4" class="list-group-item list-group-item-action bg-light">
-                    Módulo 4</a>
-                <a href="<?php echo base_url();?>modulo5" class="list-group-item list-group-item-action bg-light">
-                    Módulo 5</a>
-                <a href="<?php echo base_url();?>modulo6" class="list-group-item list-group-item-action bg-light">
-                    Módulo 6</a>
-                <a href="<?php echo base_url();?>modulo7" class="list-group-item list-group-item-action bg-light">
-                    Módulo 7</a>
-                <a href="<?php echo base_url();?>modulo8" class="list-group-item list-group-item-action bg-light">
-                    Módulo 8</a>
-                <a href="<?php echo base_url();?>modulo9" class="list-group-item list-group-item-action bg-light">
-                    Módulo 9</a>
-                <a href="<?php echo base_url();?>modulo10" class="list-group-item list-group-item-action bg-light">
-                    Módulo 10</a>
-                <a href="<?php echo base_url();?>modulo11" class="list-group-item list-group-item-action bg-light">
-                    Módulo 11</a>
-                <a href="<?php echo base_url();?>modulo12" class="list-group-item list-group-item-action bg-light">
-                    Módulo 12</a>
-
+                <a href="<?php echo base_url();?>modulo2" class="list-group-item list-group-item-action bg-light">Módulo 2</a>
+                <a href="<?php echo base_url();?>modulo3" class="list-group-item list-group-item-action bg-light">Módulo 3</a>
+                <a href="<?php echo base_url();?>modulo4" class="list-group-item list-group-item-action bg-light">Módulo 4</a>
+                <a href="<?php echo base_url();?>modulo5" class="list-group-item list-group-item-action bg-light">Módulo 5</a>
+                <a href="<?php echo base_url();?>modulo6" class="list-group-item list-group-item-action bg-light">Módulo 6</a>
+                <a href="<?php echo base_url();?>modulo7" class="list-group-item list-group-item-action bg-light">Módulo 7</a>
+                <a href="<?php echo base_url();?>modulo8" class="list-group-item list-group-item-action bg-light">Módulo 8</a>
+                <a href="<?php echo base_url();?>modulo9" class="list-group-item list-group-item-action bg-light">Módulo 9</a>
+                <a href="<?php echo base_url();?>modulo10" class="list-group-item list-group-item-action bg-light">Módulo 10</a>
+                <a href="<?php echo base_url();?>modulo11" class="list-group-item list-group-item-action bg-light">Módulo 11</a>
+                <a href="<?php echo base_url();?>modulo12" class="list-group-item list-group-item-action bg-light">Módulo 12</a>
             </div>
         </div>
         <div id="page-content-wrapper">
@@ -77,6 +64,7 @@
                 <center>
                     <h1 class="first_title"><br>Unidad 4: AMI, enseñanza y aprendizaje</h1>
                 </center><br>
+                <?php $this->session->set_userdata('ruta','modulo1/unidad4'); ?>
                 <div class="card mt-4"><br>
                     <div class="card-body">
                         <p class="card-text">La UNESCO [1] menciona en su metodología AMID para la unidad 4 del módulo 1 un conjunto 

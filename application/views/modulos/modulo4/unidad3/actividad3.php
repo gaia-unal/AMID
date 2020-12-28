@@ -65,6 +65,7 @@
                 <center>
                     <h1 class="first_title"><br>Unidad 3: Géneros de películas y de cuentos</h1>
                 </center>
+                <?php $this->session->set_userdata('ruta','modulo4/unidad3/actividad3'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4 class="subtitle">Carteles</h4>

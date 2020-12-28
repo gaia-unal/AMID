@@ -63,7 +63,7 @@
                 <center>
                     <h1 class="first_title"><br>Unidad 1: De Los Medios Tradicionales a las Nuevas Tecnologías
                         Mediáticas</h1>
-                    <?php echo form_open('modulo6/unidad1/evaluacion');$this->session->set_userdata('idAct','m6u1a2'); ?>
+                    <?php echo form_open('modulo6/unidad1/evaluacion');$this->session->set_userdata('idAct','m6u1a2'); $this->session->set_userdata('ruta','modulo6/unidad1/actividad2');?>
                 </center>
                 <div class="card mt-4">
                     <div class="card-body">

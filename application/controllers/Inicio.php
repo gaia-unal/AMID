@@ -144,13 +144,13 @@ class Inicio extends CI_Controller {
 					'lastname'  => $user->apellido,
 					'email'     => $user->correo,
 					'rol'       => $user->rol,
+					'ruta'		=> $user->ruta,
 					'login' 	=> TRUE
 				);
 
 				$this->session->set_userdata($userLogin);
 				$data['profesormodulo']=$this->profesormoduloModel->getOne();
 
-				
 				$this->load->view('inicio',$data);
 				// echo $this->session->userdata('name');
 			}else{

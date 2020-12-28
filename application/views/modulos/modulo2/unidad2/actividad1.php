@@ -65,6 +65,7 @@
                 <center>
                     <h1 class="first_title"><br>Unidad 2: Libertad, ética y responsabilidad</h1>
                 </center>
+                <?php $this->session->set_userdata('ruta','modulo2/unidad2/actividad1'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <div class="contenido">

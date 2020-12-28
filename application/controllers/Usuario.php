@@ -69,11 +69,14 @@ class Usuario extends CI_Controller {
 			$this->load->view('perfil',$data);
 
 		}else{
+			
 			$this->logout();
+		
 		}
 	}
 
 	public function logout(){
+		
 		$this->session->unset_userdata('id');
 		$this->session->unset_userdata('name');
 		$this->session->unset_userdata('lastname');
@@ -81,10 +84,32 @@ class Usuario extends CI_Controller {
 		$this->session->unset_userdata('rol');
 		$this->session->unset_userdata('login');
 		$this->session->unset_userdata('idAct');
+		$this->session->unset_userdata('ruta');
 
 		$data['instituciones']= $this->institucionModel->getAll();
-		$this->load->view('principal',$data);
+		$this->load->view('principal',$data);	
+	}
+
+	public function logout2(){
 		
+		$data= array(
+			'id'   	=> $this->session->userdata('id'),
+			'ruta' 	=> $this->session->userdata('ruta'),
+		);
+		$rt = $this->usuarioModel->update4($data);
+		if($rt){
+			$this->session->unset_userdata('id');
+			$this->session->unset_userdata('name');
+			$this->session->unset_userdata('lastname');
+			$this->session->unset_userdata('email');
+			$this->session->unset_userdata('rol');
+			$this->session->unset_userdata('login');
+			$this->session->unset_userdata('idAct');
+			$this->session->unset_userdata('ruta');
+
+			$data['instituciones']= $this->institucionModel->getAll();
+			$this->load->view('principal',$data);	
+		}
 	}
 
 }

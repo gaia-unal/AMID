@@ -80,6 +80,13 @@ class usuarioModel extends CI_Model{
 
 	}
 
+	public function update4($data){
+		$this->db->set('ruta', $data['ruta'])
+				->where('id_usuario', $data['id'])
+				->update('usuario');
+		return ($this->db->affected_rows() > 0);
+	}
+
 	public function insert($data){ 
 
 		$query=$this->db->select('*')

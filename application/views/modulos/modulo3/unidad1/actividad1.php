@@ -68,6 +68,7 @@
                 <center>
                     <h1 class="first_title"><br>Unidad 1: Informes de noticias y el poder de las imágenes</h1>
                 </center>
+                <?php $this->session->set_userdata('ruta','modulo3/unidad1/actividad1'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4 class="subtitle">Representación en los medios de información</h4><br>

@@ -66,7 +66,11 @@
                 <center>
                     <h1 class="first_title"><br>Unidad 3: Interactuándo con los medios y otros proveedores de
                         información </h1>
-						<?php echo form_open('modulo1/unidad3/evaluacion');$this->session->set_userdata('idAct','m1u3a3'); ?>
+                        <?php 
+                            echo form_open('modulo1/unidad3/evaluacion');
+                            $this->session->set_userdata('idAct','m1u3a3');
+                            $this->session->set_userdata('ruta','modulo1/unidad3/actividad3'); 
+                        ?>
                 </center><br>
                 <div class="card mt-4">
                     <div class="card-body">

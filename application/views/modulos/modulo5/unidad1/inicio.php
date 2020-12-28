@@ -63,6 +63,7 @@
                 <center>
                     <h1 class="first_title"><br>Unidad 1: Publicidad, ingresos y regulaciones</h1>
                 </center>
+                <?php $this->session->set_userdata('ruta','modulo5/unidad1'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <p>La UNESCO [1] menciona en su metodología AMID para la unidad 1 del módulo 5 un conjunto 

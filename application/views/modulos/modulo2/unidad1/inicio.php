@@ -64,6 +64,7 @@
                 <center>
                     <h1 class="first_title"><br>Unidad 1: Periodismo y sociedad</h1>
                 </center><br>
+                <?php $this->session->set_userdata('ruta','modulo2/unidad1'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <p>La UNESCO [1] menciona en su metodología AMID para la unidad 1 del módulo 2 un conjunto 

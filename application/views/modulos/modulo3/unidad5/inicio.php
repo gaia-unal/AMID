@@ -65,6 +65,7 @@
                 <center>
                     <h1 class="first_title"><br>Unidad 5: Edición digital y retoque en computadora</h1>
                 </center>
+                <?php $this->session->set_userdata('ruta','modulo3/unidad5'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <p>La UNESCO [1] menciona en su metodología AMID para la unidad 5 del módulo 3 un conjunto 

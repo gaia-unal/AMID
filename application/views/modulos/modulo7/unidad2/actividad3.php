@@ -117,7 +117,7 @@
                         <br>
                         <h4 class="subtitle">Evaluación
                         </h4>
-                        <?php echo form_open('modulo7/unidad2/actividad4');$this->session->set_userdata('idAct','m7u2a3'); ?>
+                        <?php echo form_open('modulo7/unidad2/actividad4');$this->session->set_userdata('idAct','m7u2a3'); $this->session->set_userdata('ruta','modulo7/unidad2/actividad3');?>
                    
 
                         <div class="contenido">

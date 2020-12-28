@@ -62,6 +62,7 @@
                     <h1 class="first_title">Unidad 3: Usos de las Herramientas Interactivas de Multimedia, incluyendo los Juegos Digitales en las
                     Aulas</h1>
                 </center><br>
+                <?php $this->session->set_userdata('ruta','modulo6/unidad3'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <p>La UNESCO [1] menciona en su metodología AMID para la unidad 3 del módulo 6 un conjunto 

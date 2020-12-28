@@ -64,6 +64,7 @@
             <div class="contenedor">
                 <div class="card mt-4">
                     <div class="card-body">
+                        <?php $this->session->set_userdata('ruta','modulo5/unidad4/contenidos'); ?>
                         <div class="contenido ">
                             <h1 class="first_title"><br>Contenidos unidad 4. Publicidad y el campo político</h1>
                             <p class="m-b-10">

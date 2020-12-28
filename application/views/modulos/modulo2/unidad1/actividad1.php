@@ -69,7 +69,11 @@
                     <div class="card-body">
                         <br>
                         <h4 class="subtitle">Investigue</h4><br>
-                        <?php echo form_open('modulo2/unidad1/evaluacion');$this->session->set_userdata('idAct','m2u1a1'); ?>
+                        <?php 
+                            echo form_open('modulo2/unidad1/evaluacion');
+                            $this->session->set_userdata('idAct','m2u1a1'); 
+                            $this->session->set_userdata('ruta','modulo2/unidad1/actividad1');
+                        ?>
                         <div class="contenido">
                             <p class="card-text">
                             En [1] se encuentra que:

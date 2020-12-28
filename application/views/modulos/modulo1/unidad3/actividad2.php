@@ -67,6 +67,7 @@
                      <h1 class="first_title"><br>Unidad 3: Interactuándo con los medios y otros proveedores de
                         información </h1>
                 </center><br>
+                <?php $this->session->set_userdata('ruta','modulo1/unidad3/actividad2'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <div class="contenido">

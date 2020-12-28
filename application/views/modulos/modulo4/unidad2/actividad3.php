@@ -65,7 +65,7 @@
             <div class="contenedor">
                 <center>
                     <h1 class="first_title"><br>Unidad 2: El medio y el mensaje: noticias impresas y difundidas</h1>
-                    <?php echo form_open('modulo4/unidad2/evaluacion');$this->session->set_userdata('idAct','m4u2a3'); ?>
+                    <?php echo form_open('modulo4/unidad2/evaluacion');$this->session->set_userdata('idAct','m4u2a3'); $this->session->set_userdata('ruta','modulo4/unidad2/actividad3');?>
                 </center>
                 <div class="card mt-4">
                     <div class="card-body">

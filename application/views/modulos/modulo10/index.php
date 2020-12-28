@@ -102,6 +102,7 @@ head>
                 <!-- contenido -->
                 <center>
                     <h1 class="first_title"><br>Módulo 10: Audiencia</h1>
+                    <?php $this->session->set_userdata('ruta','modulo10'); ?>
                 </center>
                 <div class="card mt-4 contenido">
                     <div class="card-body"><br>

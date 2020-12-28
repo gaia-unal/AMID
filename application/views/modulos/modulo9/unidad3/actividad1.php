@@ -116,7 +116,7 @@
                 <!-- contenido -->
                 <center>
                     <h1 class="first_title"><br>Unidad 3: Manejando el Cambio Para Fomentar un Medio Ambiente Propicio para las Escuelas AMI</h1>
-                    <?php echo form_open('modulo9/unidad3/actividad2');$this->session->set_userdata('idAct','m9u3a1'); ?>
+                    <?php echo form_open('modulo9/unidad3/actividad2');$this->session->set_userdata('idAct','m9u3a1'); $this->session->set_userdata('ruta','modulo9/unidad3/actividad1');?>
                 </center><br>
                 <div class="card mt-4">
                     <div class="card-body">

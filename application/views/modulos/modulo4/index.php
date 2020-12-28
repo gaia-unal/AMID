@@ -57,6 +57,7 @@
                 <center>
                     <h1 class="first_title"><br>Módulo 4: Lenguaje en los medios e información</h1>
                 </center>
+                <?php $this->session->set_userdata('ruta','modulo4'); ?>
                 <div class="card mt-4 contenido">
                     <div class="card-body">
                         <center><h4 class="subtitle">Antecedentes y fundamento</h4></center>

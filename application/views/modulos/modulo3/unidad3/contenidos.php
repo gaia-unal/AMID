@@ -57,8 +57,8 @@
 
 
                    
-                    <a href="#" onclick="inactivo(3)" class="list-group-item inactive">Unidad 4</a>
-                    <a href="#" onclick="inactivo(3)" class="list-group-item inactive">Unidad 5</a>
+                    <a href="<?php echo base_url();?>modulo3/unidad4" class="list-group-item inactive">Unidad 4</a>
+                    <a href="<?php echo base_url();?>modulo3/unidad5" class="list-group-item inactive">Unidad 5</a>
                 
                 </ul>
                 <a href="<?php echo base_url(); ?>modulo4" class="list-group-item list-group-item-action bg-light">
@@ -109,7 +109,7 @@
             <div class="contenedor">
 
                 <!-- contenido -->
-
+                <?php $this->session->set_userdata('ruta','modulo3/unidad3/contenidos'); ?>
                 <br>
                 <div class="card mt-4">
                     <div class="card-body">

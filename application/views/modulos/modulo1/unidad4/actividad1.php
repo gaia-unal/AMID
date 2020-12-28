@@ -65,6 +65,7 @@
                 <center>
                     <h1 class="first_title"><br>Unidad 4: AMI, enseñanza y aprendizaje</h1>
                 </center><br>
+                <?php $this->session->set_userdata('ruta','modulo1/unidad4/actividad1'); ?>
                 <div class="card mt-4"><br>
                     <div class="card-body">
                         <p class="card-text">

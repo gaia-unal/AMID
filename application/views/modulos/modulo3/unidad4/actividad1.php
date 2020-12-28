@@ -69,6 +69,7 @@
                 <center>
                     <h1 class="first_title"><br>Unidad 4: Videos musicales y su representación</h1>
                 </center>
+                <?php $this->session->set_userdata('ruta','modulo3/unidad4/actividad1'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4 class="subtitle">Recursos para este módulo</h4><br>

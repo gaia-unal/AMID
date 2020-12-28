@@ -66,6 +66,7 @@
                 <center>
                     <h1 class="first_title"><br>Unidad 4: Videos musicales y su representación</h1>
                 </center>
+                <?php $this->session->set_userdata('ruta','modulo3/unidad4'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <p>La UNESCO [1] menciona en su metodología AMID para la unidad 4 del módulo 3 un conjunto 

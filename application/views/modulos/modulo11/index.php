@@ -107,12 +107,13 @@
                 <!-- contenido -->
                 <center>
                     <h1 class="first_title"><br>Módulo 11: Medios, tecnología y el mundo global (Global Village)</h1>
+                    <?php  $this->session->set_userdata('ruta','modulo11'); ?>
                 </center>
                 <div class="card mt-4 contenido">
                     <div class="card-body"><br>
                         <center>
                             <h4 class="subtitle">Antecedentes y fundamento</h4><br>
-                            <center>
+                            </center>
                                 <p class="card-text">
                                     Haciendo "Clic" en el <b>icono</b> puede conocer los antecedentes y el fundamento
                                     para este módulo

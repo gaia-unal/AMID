@@ -68,7 +68,7 @@
             <div class="contenedor">
                 <center>
                     <h1 class="first_title"><br>Unidad 3: Géneros de películas y de cuentos</h1>
-                    <?php echo form_open('modulo4/unidad3/evaluacion');$this->session->set_userdata('idAct','m4u3a4'); ?>
+                    <?php echo form_open('modulo4/unidad3/evaluacion');$this->session->set_userdata('idAct','m4u3a4'); $this->session->set_userdata('ruta','modulo4/unidad3/actividad4');?>
                 </center>
                 <div class="card mt-4">
                     <div class="card-body">

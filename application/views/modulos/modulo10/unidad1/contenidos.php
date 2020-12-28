@@ -116,6 +116,7 @@
                                 Contenidos unidad 1. Audiencia
                             </h1>
                             <br>
+                            <?php $this->session->set_userdata('ruta','modulo10/unidad1/contenidos'); ?>
                             <p class="m-b-10">
                                 A continuación encuentras los enlaces para acceder a los diferentes contenidos y al frente
                                 se encuentra su respectiva actividades

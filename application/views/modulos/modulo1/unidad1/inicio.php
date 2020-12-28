@@ -69,6 +69,7 @@
                 <div class="card mt-4">
                     <div class="card-body">
                         <br>
+                        <?php $this->session->set_userdata('ruta','modulo1/unidad1');?>
                         <div class="contenido">
                             <p>La UNESCO [1] menciona en su metodología AMID para la unidad 1 del módulo 1 un conjunto 
                                 de objetivos de aprendizaje que se deben alcanzar mediante la revisión de contenido y la realización de 

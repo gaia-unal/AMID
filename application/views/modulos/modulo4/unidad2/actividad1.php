@@ -65,6 +65,7 @@
                 <center>
                     <h1 class="first_title"><br>Unidad 2: El medio y el mensaje: noticias impresas y difundidas</h1>
                 </center>
+                <?php $this->session->set_userdata('ruta','modulo4/unidad2/actividad1'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4 class="subtitle">Cobertura periodística y mediática</h4>

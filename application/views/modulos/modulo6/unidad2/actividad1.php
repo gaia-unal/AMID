@@ -63,7 +63,7 @@
                 <center>
                 <br>
                     <h1 class="first_title">Unidad 2: Uso de las Nuevas Tecnologías Mediáticas en la Sociedad – Comunicación de Masas y Digital</h1>
-                    <?php echo form_open('modulo6/unidad2/evaluacion');$this->session->set_userdata('idAct','m6u2a1'); ?>
+                    <?php echo form_open('modulo6/unidad2/evaluacion');$this->session->set_userdata('idAct','m6u2a1'); $this->session->set_userdata('ruta','modulo6/unidad2/actividad1');?>
                 </center>
                 <div class="card mt-4">
                     <div class="card-body">

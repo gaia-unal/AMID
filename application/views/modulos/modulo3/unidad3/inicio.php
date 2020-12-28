@@ -65,6 +65,7 @@
                 <center>
                     <h1 class="first_title"><br>Unidad 3: Televisión, películas y publicación de libros</h1>
                 </center>
+                <?php $this->session->set_userdata('ruta','modulo3/unidad3'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <p>La UNESCO [1] menciona en su metodología AMID para la unidad 3 del módulo 3 un conjunto 

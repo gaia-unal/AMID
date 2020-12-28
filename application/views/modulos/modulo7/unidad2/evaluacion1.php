@@ -111,7 +111,7 @@
                 <!-- contenido -->
                 <center>
                     <h1 class="first_title"><br>Unidad 2: Retos y riesgos en el mundo virtual</h1>
-                    <?php echo form_open('modulo7/unidad2/evaluacion2');$this->session->set_userdata('idAct','m7u21'); ?>
+                    <?php echo form_open('modulo7/unidad2/evaluacion2');$this->session->set_userdata('idAct','m7u21'); $this->session->set_userdata('ruta','modulo7/unidad2/evaluacion1');?>
                 </center><br>
                 <div class="card mt-4">
                     <div class="card-body">

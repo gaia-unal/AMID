@@ -8,7 +8,7 @@ class Modulo1 extends CI_Controller {
 	public function __construct(){
 		parent::__construct();
 		$this->load->model('institucionModel');
-		// $this->load->model('usuarioModel');
+		$this->load->model('usuarioModel');
 		$this->load->model('profesormoduloModel');
 		$this->load->model('profesoractividadModel');
 		$this->load->model('profesorunidadModel');
@@ -483,5 +483,7 @@ class Modulo1 extends CI_Controller {
 		$this->load->view('login',$data);
 	}
 
-	
+	public function consulta(){
+		return "entro";
+	}
 }

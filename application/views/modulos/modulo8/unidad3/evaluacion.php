@@ -116,7 +116,7 @@
                 <!-- contenido -->
                 <center>
                     <h1 class="first_title"><br>Unidad 3: Alfabetización Informacional Digital</h1>
-                    <?php echo form_open('modulo9');$this->session->set_userdata('idAct','m8u3'); ?>
+                    <?php echo form_open('modulo9');$this->session->set_userdata('idAct','m8u3'); $this->session->set_userdata('ruta','modulo8/unidad3/evaluacion');?>
                 </center><br>
                 <div class="card mt-4">
                     <div class="card-body">

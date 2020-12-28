@@ -40,7 +40,7 @@
                         <div class="dropdown-menu">
                             <ul class="list-group-item">
                                 <a href="<?php echo base_url(); ?>modulo3/unidad5/contenidos" class="list-group-item">Contenidos</a>
-                                <a href="#"  class="list-group-item">Evaluación</a>
+                                <a href="<?php echo base_url();?>modulo3/unidad5/evaluacion"  class="list-group-item">Evaluación</a>
                             </ul>
                         </div>
                     </div>
@@ -99,6 +99,7 @@
                 <!-- contenido -->
 
                 <br>
+                <?php $this->session->set_userdata('ruta','modulo3/unidad5/contenidos'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <div class="contenido ">

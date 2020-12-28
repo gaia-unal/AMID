@@ -108,6 +108,7 @@
                 <!-- contenido -->
 
                 <br>
+                <?php  $this->session->set_userdata('ruta','modulo12/unidad1/contenidos'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <div class="contenido ">

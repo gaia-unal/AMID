@@ -117,7 +117,7 @@
                 <!-- contenido -->
                 <center>
                     <h1 class="first_title"><br>Unidad 4: El nacimiento de medios alternativos</h1>
-                    <?php echo form_open('modulo12');$this->session->set_userdata('idAct','m11u4a2'); ?>
+                    <?php echo form_open('modulo12');$this->session->set_userdata('idAct','m11u4a2');  $this->session->set_userdata('ruta','modulo11/unidad4/actividad2');?>
                 </center><br>
                 <div class="card mt-4">
                     <div class="card-body">

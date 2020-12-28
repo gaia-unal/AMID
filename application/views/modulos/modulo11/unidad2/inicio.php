@@ -119,7 +119,7 @@
                 <!-- contenido -->
                 <center>
                     <h1 class="first_title"><br>Unidad 2: Dimensiones Socio-Culturales y Políticas de los Medios Globalizados</h1>
-
+                    <?php  $this->session->set_userdata('ruta','modulo11/unidad1'); ?>
                 </center><br>
                 <div class="card mt-4">
                     <div class="card-body">

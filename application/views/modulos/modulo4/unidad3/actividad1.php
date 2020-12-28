@@ -41,7 +41,7 @@
                             </ul>
                         </div>
                     </div>
-                    <a href="#" onclick="inactivo(3)" class="list-group-item inactive">Unidad 4</a>
+                    <a href="<?php echo base_url()?>modulo4/unidad4" class="list-group-item inactive">Unidad 4</a>
 
                 </ul>
                 <a href="<?php echo base_url();?>modulo5" class="list-group-item list-group-item-action bg-light">Módulo 5</a>
@@ -70,6 +70,7 @@
                 <center>
                     <h1 class="first_title"><br>Unidad 3: Géneros de películas y de cuentos</h1>
                 </center>
+				<?php $this->session->set_userdata('ruta','modulo4/unidad3/actividad1'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4 class="subtitle">Peliculas</h4>

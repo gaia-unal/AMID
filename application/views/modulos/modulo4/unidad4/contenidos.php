@@ -57,7 +57,7 @@
                             <ul class="list-group-item">
                                 <a href="<?php echo base_url();?>modulo4/unidad4/contenidos"
                                     class="list-group-item">Contenidos</a>
-                                <a href="#"
+                                <a href="<?php  echo base_url();?>modulo4/unidad4/evaluacion"
                                     class="list-group-item">Evaluación</a>
                             </ul>
                         </div>
@@ -113,6 +113,7 @@
                 <!-- contenido -->
 
                 <br>
+                <?php $this->session->set_userdata('ruta','modulo4/unidad4/contenidos'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <div class="contenido ">

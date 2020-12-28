@@ -61,6 +61,7 @@
                 <div class="card mt-4">
                     <div class="card-body">
                         <div class="contenido ">
+                            <?php $this->session->set_userdata('ruta','modulo6/unidad2/contenidos'); ?>
                             <h1 class="first_title"><br>
                                 Contenidos unidad 2. Uso de las Nuevas Tecnologías Mediáticas en la Sociedad – Comunicación de Masas y Digital
                             </h1>

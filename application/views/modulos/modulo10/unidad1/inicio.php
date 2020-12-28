@@ -112,7 +112,7 @@
                 <!-- contenido -->
                 <center>
                     <h1 class="first_title"><br>Unidad 1: Audiencia</h1>
-
+                    <?php $this->session->set_userdata('ruta','modulo10/unidad1'); ?>
                 </center><br>
                 <div class="card mt-4">
                     <div class="card-body">

@@ -64,7 +64,11 @@
             <div class="contenedor">
                 <center>
                     <h1 class="first_title"><br>Unidad 1: Periodismo y sociedad</h1>
-                    <?php echo form_open('modulo2/unidad2/inicio');$this->session->set_userdata('idAct','m2u1'); ?>
+                    <?php 
+                        echo form_open('modulo2/unidad2/inicio');
+                        $this->session->set_userdata('idAct','m2u1'); 
+                        $this->session->set_userdata('ruta','modulo2/unidad1/evaluacion');
+                    ?>
                 </center><br>
                 <div class="card mt-4">
                     <div class="card-body">

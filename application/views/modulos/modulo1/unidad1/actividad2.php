@@ -65,11 +65,11 @@
                     <h1 class="first_title"><br>Unidad 1: Comprender la alfabetización mediática e informacional: Una
                         orientación</h1>
                 </center>
-                <br>
-                <!--<p>Hola </p> -->
-                <?php 
-                echo $this->session->userdata('id', 'idAct');
-                echo form_open('modulo1/unidad1/actividad3');$this->session->set_userdata('idAct','m1u1a1'); ?>
+                <?php
+                    echo form_open('modulo1/unidad1/actividad3');
+                    $this->session->set_userdata('idAct','m1u1a1');
+                    $this->session->set_userdata('ruta','modulo1/unidad1/actividad2');
+                ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4 class="subtitle">Comprobación de lectura</h4><br>

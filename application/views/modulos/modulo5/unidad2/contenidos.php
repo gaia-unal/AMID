@@ -61,6 +61,7 @@
             </nav>
             <div class="contenedor">
                 <div class="card mt-4">
+                    <?php $this->session->set_userdata('ruta','modulo5/unidad2/contenidos'); ?>
                     <div class="card-body">
                         <div class="contenido ">
                             <h1 class="first_title"><br>Contenidos unidad 2. Anuncios de bien público (ABP)</h1>
