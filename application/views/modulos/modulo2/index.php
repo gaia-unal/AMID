@@ -59,6 +59,7 @@
                 <center>
                     <h1 class="first_title"><br> Módulo 2: Entendiendo las noticias, los medios y la ética de información</h1>
                 </center>
+                <?php $this->session->set_userdata('ruta','modulo2'); ?>
                 <div class="card mt-4 contenido">
                     <div class="card-body"><br>
                         <center> <h4 class="subtitle">Antecedentes y fundamento</h4></center>

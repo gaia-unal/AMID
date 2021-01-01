@@ -66,7 +66,7 @@
                     <h1 class="first_title"><br>Unidad 1: Comprender la alfabetización mediática e informacional: Una
                         orientación</h1>
                 </center>
-                <br>
+                <br><?php $this->session->set_userdata('ruta','modulo1/unidad1/actividad10');?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4 class="subtitle">La importancia que tiene AMI para los ciudadanos</h4><br>

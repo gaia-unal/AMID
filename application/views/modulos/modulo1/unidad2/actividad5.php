@@ -65,7 +65,11 @@
                 <center>
                     <h1 class="first_title"><br>Unidad 2: AMI y la participación cívica</h1>
                 </center>
-                <?php echo form_open('modulo1/unidad2/evaluacion');$this->session->set_userdata('idAct','m1u2a5'); ?>
+                <?php 
+                    echo form_open('modulo1/unidad2/evaluacion');
+                    $this->session->set_userdata('idAct','m1u2a5'); 
+                    $this->session->set_userdata('ruta','modulo1/unidad2/actividad5');
+                ?>
                 <div class="card mt-4">
                     <div class="card-body"><br>
                     <center> <h4 class="subtitle">Libertad de expresión, independencia editorial, pluralidad y diversidad</h4><center><br>

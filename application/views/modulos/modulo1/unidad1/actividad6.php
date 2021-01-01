@@ -66,7 +66,11 @@
                         orientación</h1>
                 </center>
                 <br>
-                <?php echo form_open('modulo1/unidad1/actividad7');$this->session->set_userdata('idAct','m1u1a6'); ?>
+                <?php 
+                    echo form_open('modulo1/unidad1/actividad7');
+                    $this->session->set_userdata('idAct','m1u1a6'); 
+                    $this->session->set_userdata('ruta','modulo1/unidad1/actividad6');
+                ?>
                 <div class="card mt-4">
                     <div class="card-body">
                     <h4 class="subtitle">Reflexión</h4><br>

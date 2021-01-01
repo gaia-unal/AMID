@@ -81,43 +81,43 @@
                     <h1 class="first_title">Bienvenido a AMID</h1><br>
                 </center>
                 <div class="contenido">
-                <p>Hola <?php echo $this->session->userdata('name');?>, a continuación, te explicaré como
+                <p>Hola <?php echo $this->session->userdata('name'); echo $this->session->userdata('ruta');?>, a continuación, te explicaré como
                     navegar en el sitio web: <br><br>
                     En la parte lateral izquierda podrás ver el menú “Módulos AMID” son 12 módulos divididos en
                     unidades, el número
                     de unidades varia por cada módulo, la mayoría de unidades tienen actividades y evaluaciones,
                     puedes empezar
-                    realizando cualquier módulo, el orden no interesa, pero una vez estés en un módulo es
-                    importante
-                    realizar las unidades en orden para poder avanzar.
+                    realizando cualquier módulo.
                 </p>
 
                 <p>
-                    Las evaluaciones de las unidades solo las podrás contestar una vez que hayas terminado las
-                    actividades, en la parte
+                    En la parte
                     inferior veras el botón “Siguiente”, este te ayudará a desplazarte entre los módulos de una
                     manera mas sencilla,
                     cuando estés en un módulo también podrás ver el botón “Anterior” que te permitirá regresar a
                     donde estabas anteriormente.
                 </p>
 
-                <p>
+                <!-- <p>
                     Debajo de estos botones encontraras nuevamente un menú de módulos pero esta vez te indicaran
                     tu avance en cada uno de ellos,
                     si son de color blanco es porque no has empezado el módulo, amarillo es para indicar que has
                     empezado el módulo pero no lo
                     has terminado aun y verde significa que el módulo ya se ha completado.
-                </p>
+                </p> -->
                 <p>
                     Espero que sea de gran utilidad este contenido y muchos éxitos.
                 </p>
+                <?php 
+                    $rt = $this->session->userdata('ruta');
+                    if(isset($rt)){
+                        ?><center><a href="<?php echo base_url().$rt?>" class="btn btn-primary">Continuar donde ibas</a></center>
+                    <?php }
+                ?>
                 </div>
             </div>
-
             <center><a href="<?php echo base_url();?>modulo1" class="btn btn_navegacion">Siguiente</a></center>
-
             <?php $this->load->view('initial/paginacion');?>
-
             <p class="final_contenido">Obra publicada con <a  href="https://creativecommons.org/licenses/by-sa/4.0/"> Licencia Creative
                     Commons
                     Reconocimiento Compartir igual 4.0</a></p>

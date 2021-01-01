@@ -65,6 +65,7 @@
                     <h1 class="first_title"><br>Unidad 4: El proceso de desarrollo de las noticias: más allá de 5 por qués y 1 cómo (5ws y 1h en
                     inglés)</h1>
                 </center>
+                <?php $this->session->set_userdata('ruta','modulo2/unidad4'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <p>La UNESCO [1] menciona en su metodología AMID para la unidad 4 del módulo 2 un conjunto 

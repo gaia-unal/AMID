@@ -115,7 +115,7 @@
                 <!-- contenido -->
                 <center>
                     <h1 class="first_title"><br>Unidad 1: Comunicación, enseñanza y aprendizaje</h1>
-                    <?php echo form_open('modulo9/unidad2/inicio');$this->session->set_userdata('idAct','m9u1'); ?>
+                    <?php echo form_open('modulo9/unidad2/inicio');$this->session->set_userdata('idAct','m9u1'); $this->session->set_userdata('ruta','modulo9/unidad1/evaluacion');?>
                 </center><br>
                 <div class="card mt-4">
                     <div class="card-body">

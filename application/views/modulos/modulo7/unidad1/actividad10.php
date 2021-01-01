@@ -114,7 +114,7 @@
                 <!-- contenido -->
                 <center>
                     <h1 class="first_title"><br>Unidad 1: Los jóvenes en el mundo virtual</h1>
-                    <?php echo form_open('modulo7/unidad1/evaluacion1');$this->session->set_userdata('idAct','m7u1a10'); ?>
+                    <?php echo form_open('modulo7/unidad1/evaluacion1');$this->session->set_userdata('idAct','m7u1a10'); $this->session->set_userdata('ruta','modulo7/unidad1/actividad10');?>
                 </center><br>
                 <div class="card mt-4">
                     <div class="card-body">

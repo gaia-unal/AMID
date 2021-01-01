@@ -65,7 +65,11 @@
             <div class="contenedor">
                 <center>
                     <h1 class="first_title"><br>Unidad 3: Lo que genera noticias – explorando los criterios</h1>
-                    <?php echo form_open('modulo2/unidad4/inicio');$this->session->set_userdata('idAct','m2u3'); ?>
+                    <?php 
+                        echo form_open('modulo2/unidad4/inicio');
+                        $this->session->set_userdata('idAct','m2u3'); 
+                        $this->session->set_userdata('ruta','modulo2/unidad3/evaluacion');
+                    ?>
                 </center>
                 <div class="card mt-4">
                     <div class="card-body">

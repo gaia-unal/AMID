@@ -45,8 +45,12 @@
 
                         <div class="dropdown-divider"></div>
 
-                        <a class="bt btn btn-danger dropdown-item" href="<?php echo base_url();?>inicio"><i
-                                class="fas fa-sign-out-alt"></i> Cerrar sesión</a></button>
+                        <?php
+                            echo form_open('usuario/logout2');
+                        ?>
+                        <button class="bt btn btn-danger dropdown-item" type="submit" name="submit" href="<?php echo base_url();?>inicio"><i
+                                class="fas fa-sign-out-alt"></i> Cerrar sesión</button>
+                        <?php echo form_close(); ?>
                     </div>
                 </div>
             </li>

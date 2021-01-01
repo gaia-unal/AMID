@@ -64,7 +64,11 @@
             <div class="contenedor">
                 <center>
                     <h1 class="first_title"><br>Unidad 4: AMI, enseñanza y aprendizaje</h1>
-                    <?php echo form_open('modulo2');$this->session->set_userdata('idAct','m1u4'); ?>
+                    <?php 
+                        echo form_open('modulo2');
+                        $this->session->set_userdata('idAct','m1u4'); 
+                        $this->session->set_userdata('ruta','modulo1/unidad4/evaluacion');
+                    ?>
                 </center><br>
                 <div class="card mt-4"><br>
                     <div class="card-body">

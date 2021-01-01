@@ -64,7 +64,7 @@
             <div class="contenedor">
                 <center>
                     <h1 class="first_title"><br>Unidad 4: Planos de cámara y ángulos, transmitiendo un mensaje</h1>
-                    <?php echo form_open('modulo4/unidad4/evaluacion');$this->session->set_userdata('idAct','m4u4a1'); ?>
+                    <?php echo form_open('modulo4/unidad4/evaluacion');$this->session->set_userdata('idAct','m4u4a1'); $this->session->set_userdata('ruta','modulo4/unidad4/actividad1');?>
                 </center>
                 <div class="card mt-4">
                     <div class="card-body">

@@ -61,6 +61,7 @@
             </nav>
             <div class="contenedor">
                 <div class="card mt-4">
+                    <?php $this->session->set_userdata('ruta','modulo6/unidad1/contenidos'); ?>
                     <div class="card-body">
                         <div class="contenido ">
                             <h1 class="first_title"><br>Contenidos unidad 1. De Los Medios Tradicionales a las Nuevas Tecnologías Mediáticas</h1>

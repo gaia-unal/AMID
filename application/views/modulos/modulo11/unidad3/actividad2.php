@@ -116,7 +116,7 @@
                 <!-- contenido -->
                 <center>
                     <h1 class="first_title"><br>Unidad 3: La información como un producto (Commodity)</h1>
-                    <?php echo form_open('modulo11/unidad4/inicio');$this->session->set_userdata('idAct','m11u3a2'); ?>
+                    <?php echo form_open('modulo11/unidad4/inicio');$this->session->set_userdata('idAct','m11u3a2');  $this->session->set_userdata('ruta','modulo11/unidad3/actividad2');?>
                 </center><br>
                 <div class="card mt-4">
                     <div class="card-body">

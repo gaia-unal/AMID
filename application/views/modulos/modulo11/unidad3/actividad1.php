@@ -116,7 +116,7 @@
                 <!-- contenido -->
                 <center>
                     <h1 class="first_title"><br>Unidad 3: La información como un producto (Commodity)</h1>
-
+                    <?php  $this->session->set_userdata('ruta','modulo11/unidad3/actividad1'); ?>
                 </center><br>
                 <div class="card mt-4">
                     <div class="card-body">

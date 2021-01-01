@@ -100,6 +100,13 @@ class usuarioModel extends CI_Model
 		return ($this->db->affected_rows() > 0);
 	}
 
+	public function update4($data){
+		$this->db->set('ruta', $data['ruta'])
+				->where('id_usuario', $data['id'])
+				->update('usuario');
+		return ($this->db->affected_rows() > 0);
+	}
+
 	public function updateUserToken($fp_code, $passHashE)
 	{
 		$passHash = password_hash($passHashE, PASSWORD_DEFAULT);
@@ -120,9 +127,7 @@ class usuarioModel extends CI_Model
 		return ($this->db->affected_rows() > 0);
 	}
 
-	public function insert($data)
-	{
-
+	public function insert($data){ 
 		$query = $this->db->select('*')
 			->where('correo', $data['correo'])
 			->get('usuario');

@@ -64,7 +64,7 @@
             <div class="contenedor">
                 <center>
                     <h1 class="first_title"><br>Unidad 3: Publicidad: El proceso creativo</h1>
-                    <?php echo form_open('modulo5/unidad3/evaluacion');$this->session->set_userdata('idAct','m5u3a1'); ?>
+                    <?php echo form_open('modulo5/unidad3/evaluacion');$this->session->set_userdata('idAct','m5u3a1'); $this->session->set_userdata('ruta','modulo5/unidad3/actividad1');?>
                 </center><br>
                 <div class="card mt-4">
                     <div class="card-body">

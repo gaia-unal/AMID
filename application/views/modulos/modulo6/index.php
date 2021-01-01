@@ -56,6 +56,7 @@
                 <center>
                     <h1 class="first_title"><br>Módulo 6: Medios nuevos y tradicionales</h1>
                 </center>
+                <?php $this->session->set_userdata('ruta','modulo6'); ?>
                 <div class="card mt-4 contenido">
                     <div class="card-body"><br>
                         <center>

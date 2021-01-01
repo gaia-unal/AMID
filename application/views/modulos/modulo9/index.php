@@ -102,6 +102,7 @@
                 <!-- contenido -->
                 <center>
                     <h1 class="first_title"><br>Módulo 9: Comunicación, AMI y aprendizaje</h1>
+                    <?php $this->session->set_userdata('ruta','modulo9'); ?>
                 </center>
                 <div class="card mt-4 contenido">
                     <div class="card-body"><br>

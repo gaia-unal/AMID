@@ -64,6 +64,7 @@
                 <center>
                     <h1 class="first_title"><br>Unidad 3: Lo que genera noticias – explorando los criterios</h1>
                 </center>
+                <?php $this->session->set_userdata('ruta','modulo2/unidad3/actividad1'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <div id="parte1" style="display:block;">

@@ -113,7 +113,7 @@
                 <!-- contenido -->
                 <center>
                     <h1 class="first_title"><br>Unidad 1: Conceptos y Aplicación de la Alfabetización Informacional</h1>
-                    <?php echo form_open('modulo8/unidad2/inicio');$this->session->set_userdata('idAct','m8u1'); ?>
+                    <?php echo form_open('modulo8/unidad2/inicio');$this->session->set_userdata('idAct','m8u1'); $this->session->set_userdata('ruta','modulo8/unidad1/evaluacion1');?>
                 </center><br>
                 <div class="card mt-4">
                     <div class="card-body">

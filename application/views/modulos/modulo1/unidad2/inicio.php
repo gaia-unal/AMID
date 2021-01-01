@@ -63,7 +63,7 @@
             <div class="contenedor">
                 <center>
                     <h1 class="first_title"><br>Unidad 2: AMI y la participación cívica</h1>
-                </center><br><br>
+                </center><br><?php $this->session->set_userdata('ruta','modulo1/unidad2');?>
                 <div class="card mt-4"><br>
                     <div class="card-body">
                         <p class="card-text">La UNESCO [1] menciona en su metodología AMID para la unidad 2 del módulo 1 un conjunto 

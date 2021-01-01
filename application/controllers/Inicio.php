@@ -295,6 +295,7 @@ class Inicio extends CI_Controller
 					'lastname'  => $user->apellido,
 					'email'     => $user->correo,
 					'rol'       => $user->rol,
+					'ruta'		=> $user->ruta,
 					'login' 	=> TRUE
 				);
 
@@ -302,7 +303,7 @@ class Inicio extends CI_Controller
 				$data['profesormodulo'] = $this->profesormoduloModel->getOne();
 
 
-				$this->load->view('inicio', $data);
+				$this->load->view('inicio',$data);
 				// echo $this->session->userdata('name');
 			} else {
 				$data['instituciones'] = $this->institucionModel->getAll();

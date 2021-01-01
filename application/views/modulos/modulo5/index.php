@@ -58,6 +58,7 @@
                 <center>
                     <h1 class="first_title"><br>Módulo 5: Publicidad</h1>
                 </center>
+                <?php $this->session->set_userdata('ruta','modulo5'); ?>
                 <div class="card mt-4 contenido">
                     <div class="card-body">
                         <center>

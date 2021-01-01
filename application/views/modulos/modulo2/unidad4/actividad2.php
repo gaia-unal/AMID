@@ -65,7 +65,11 @@
                 <center>
                     <h1 class="first_title"><br>Unidad 4: El proceso de desarrollo de las noticias: más allá de 5 por qués y 1 cómo (5ws y 1h en
                     inglés)</h1>
-                    <?php echo form_open('modulo2/unidad4/evaluacion');$this->session->set_userdata('idAct','m2u4a2'); ?>
+                    <?php 
+                        echo form_open('modulo2/unidad4/evaluacion');
+                        $this->session->set_userdata('idAct','m2u4a2'); 
+                        $this->session->set_userdata('ruta','modulo2/unidad4/actividad2');
+                    ?>
                 </center>
                 <div class="card mt-4">
                     <div class="card-body">

@@ -115,7 +115,7 @@
                 <!-- contenido -->
                 <center>
                     <h1 class="first_title"><br>Unidad 1: Propiedad de los Medios en el Mundo Global Actual</h1>
-
+                    <?php  $this->session->set_userdata('ruta','modulo11/unidad1'); ?>
                 </center><br>
                 <div class="card mt-4">
                     <div class="card-body">

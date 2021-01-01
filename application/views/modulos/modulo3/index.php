@@ -57,6 +57,7 @@
                 <center>
                     <h1 class="first_title"><br>Módulo 3: Representación en los medios de información</h1>
                 </center>
+                <?php $this->session->set_userdata('ruta','modulo3'); ?>
                 <div class="card mt-4 contenido">
                     <div class="card-body"><br>
                         <center>

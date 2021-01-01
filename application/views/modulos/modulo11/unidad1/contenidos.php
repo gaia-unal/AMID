@@ -114,6 +114,7 @@
                                 Contenidos unidad 1. Propiedad de los Medios en el Mundo Global Actual
                             </h1>
                             <br>
+                            <?php $this->session->set_userdata('ruta','modulo11/unidad1/contenidos'); ?>
                             <p class="m-b-10">
                                 A continuación encuentras los enlaces para acceder a los diferentes contenidos y al frente
                                 se encuentra su respectiva actividades

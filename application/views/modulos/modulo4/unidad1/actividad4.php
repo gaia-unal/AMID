@@ -66,6 +66,7 @@
                 <center>
                     <h1 class="first_title"><br>Unidad 1: Lectura de medios y textos de información</h1>
                 </center>
+                <?php $this->session->set_userdata('ruta','modulo4/unidad1/actividad4'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4 class="subtitle">Medios audiovisuales</h4><br>

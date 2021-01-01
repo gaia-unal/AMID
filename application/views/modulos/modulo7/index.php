@@ -54,6 +54,7 @@
                 <center>
                     <h1 class="first_title"><br>Módulo 7: Oportunidades y retos en internet</h1>
                 </center>
+                <?php $this->session->set_userdata('ruta','modulo7'); ?>
                 <div class="card mt-4 contenido">
                     <div class="card-body"><br>
                         <center>

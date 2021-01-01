@@ -111,6 +111,7 @@
                 <!-- contenido -->
                 <center>
                     <h1 class="first_title"><br>Unidad 2: Retos y riesgos en el mundo virtual</h1>
+                    <?php $this->session->set_userdata('ruta','modulo7/unidad2/actividad6'); ?>
                 </center><br>
                 <div class="card mt-4">
                     <div class="card-body">

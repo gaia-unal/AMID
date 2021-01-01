@@ -116,7 +116,7 @@
                 <!-- contenido -->
                 <center>
                     <h1 class="first_title"><br>Unidad 3: Alfabetización Informacional Digital</h1>
-
+                    <?php $this->session->set_userdata('ruta','modulo8/unidad3'); ?>
                 </center><br>
                 <div class="card mt-4">
                     <div class="card-body">

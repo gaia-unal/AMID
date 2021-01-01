@@ -64,7 +64,7 @@
             <div class="contenedor">
                 <center>
                     <h1 class="first_title"><br>Unidad 4: Publicidad y el campo político</h1>
-                    <?php echo form_open('modulo5/unidad5/inicio');$this->session->set_userdata('idAct','m5u4a2'); ?>
+                    <?php echo form_open('modulo5/unidad5/inicio');$this->session->set_userdata('idAct','m5u4a2'); $this->session->set_userdata('ruta','modulo5/unidad4/evaluacion');?>
                 </center>
                 <div class="card mt-4">
                     <div class="card-body">

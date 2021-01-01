@@ -118,7 +118,7 @@
                 <!-- contenido -->
                 <center>
                     <h1 class="first_title"><br>Unidad 2: Teorías de aprendizaje y AMI</h1>
-
+                    <?php $this->session->set_userdata('ruta','modulo9/unidad2/actividad1'); ?>
                 </center><br>
                 <div class="card mt-4">
                     <div class="card-body">

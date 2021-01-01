@@ -64,7 +64,7 @@
             <div class="contenedor">
                 <center>
                     <h1 class="first_title"><br>Unidad 5: Publicidad transnacional y "marcas super"</h1>
-                    <?php echo form_open('modulo5/unidad5/evaluacion');$this->session->set_userdata('idAct','m5u5a1'); ?>
+                    <?php echo form_open('modulo5/unidad5/evaluacion');$this->session->set_userdata('idAct','m5u5a1'); $this->session->set_userdata('ruta','modulo5/unidad5/actividad1');?>
                 </center>
                 <div class="card mt-4">
                     <div class="card-body">

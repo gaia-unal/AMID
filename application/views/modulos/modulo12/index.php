@@ -106,6 +106,7 @@
                 <!-- contenido -->
                 <center>
                     <h1 class="first_title"><br>Módulo 12: Libertad de expresión</h1>
+                    <?php  $this->session->set_userdata('ruta','modulo12'); ?>
                 </center>
                 <div class="card mt-4 contenido">
                     <div class="card-body"><br>

@@ -115,6 +115,7 @@
                     <h1 class="first_title"><br>Unidad 1: Los jóvenes en el mundo virtual</h1>
 
                 </center><br>
+                <?php $this->session->set_userdata('ruta','modulo7/unidad1/actividad3'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <br>

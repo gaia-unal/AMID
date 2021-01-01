@@ -65,7 +65,7 @@
             <div class="contenedor">
                 <center>
                     <h1 class="first_title"><br>Unidad 4: Videos musicales y su representación</h1>
-                    <?php echo form_open('modulo3/unidad5/inicio');$this->session->set_userdata('idAct','m3u4a3'); ?>
+                    <?php echo form_open('modulo3/unidad5/inicio');$this->session->set_userdata('idAct','m3u4a3'); $this->session->set_userdata('ruta','modulo3/unidad4/evaluacion');?>
                 </center>
                 <div class="card mt-4">
                     <div class="card-body">

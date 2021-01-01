@@ -64,7 +64,7 @@
             <div class="contenedor">
                 <center>
                     <h1 class="first_title"><br>Unidad 2: Anuncios de bien público (ABP)</h1>
-                    <?php echo form_open('modulo5/unidad2/evaluacion');$this->session->set_userdata('idAct','m5u2a1'); ?>
+                    <?php echo form_open('modulo5/unidad2/evaluacion');$this->session->set_userdata('idAct','m5u2a1'); $this->session->set_userdata('ruta','modulo5/unidad2/actividad1');?>
                 </center>
                 <div class="card mt-4">
                     <div class="card-body">

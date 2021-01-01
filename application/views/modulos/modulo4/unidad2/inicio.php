@@ -64,6 +64,7 @@
                 <center>
                     <h1 class="first_title"><br>Unidad 2: El medio y el mensaje: noticias impresas y difundidas</h1>
                 </center>
+                <?php $this->session->set_userdata('ruta','modulo4/unidad2'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <p>La UNESCO [1] menciona en su metodología AMID para la unidad 2 del módulo 4 un conjunto 

@@ -67,6 +67,7 @@
                 <center>
                     <h1 class="first_title"><br>Unidad 5: Edición digital y retoque en computadora</h1>
                 </center>
+                <?php $this->session->set_userdata('ruta','modulo3/unidad5/actividad1'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <h4 class="subtitle">Temas claves</h4><br>

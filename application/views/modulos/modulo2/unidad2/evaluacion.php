@@ -63,7 +63,11 @@
             <div class="contenedor">
                 <center>
                     <h1 class="first_title"><br>Unidad 2: Libertad, ética y responsabilidad</h1>
-                    <?php echo form_open('modulo2/unidad3/inicio');$this->session->set_userdata('idAct','m2u2'); ?>
+                    <?php 
+                        echo form_open('modulo2/unidad3/inicio');
+                        $this->session->set_userdata('idAct','m2u2'); 
+                        $this->session->set_userdata('ruta','modulo2/unidad2/evaluacion');
+                    ?>
                 </center><br>
                 <div class="card mt-4">
                     <div class="card-body">

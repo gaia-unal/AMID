@@ -63,6 +63,7 @@
                     <h1 class="first_title"><br>Unidad 1: De Los Medios Tradicionales a las Nuevas Tecnologías
                         Mediáticas</h1>
                 </center>
+                <?php $this->session->set_userdata('ruta','modulo6/unidad1/actividad1'); ?>
                 <div class="card mt-4">
                     <div class="card-body">
                         <div class="contenido">

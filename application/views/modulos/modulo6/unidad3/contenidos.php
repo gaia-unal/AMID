@@ -64,6 +64,7 @@
                             <h1 class="first_title"><br>
                                 Contenidos unidad 3. Usos de las Herramientas Interactivas de Multimedia, incluyendo los Juegos Digitales en las Aulas
                             </h1>
+                            <?php $this->session->set_userdata('ruta','modulo6/unidad3/contenidos'); ?>
                             <br>
                             <p class="m-b-10">
                                 A continuación encuentras los enlaces para acceder a los diferentes contenidos y al frente

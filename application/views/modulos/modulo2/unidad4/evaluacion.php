@@ -68,7 +68,11 @@
                 </center><br>
                 <div class="card mt-4">
                     <div class="card-body">
-                    <?php echo form_open('modulo3');$this->session->set_userdata('idAct','m2u4'); ?>
+                    <?php 
+                        echo form_open('modulo3');
+                        $this->session->set_userdata('idAct','m2u4'); 
+                        $this->session->set_userdata('ruta','modulo2/unidad4/evaluacion');
+                    ?>
                         <br>
                         <div class="contenido">
                             <p class="card-text">
