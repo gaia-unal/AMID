@@ -178,8 +178,8 @@ class Inicio extends CI_Controller
 						$mail->isSMTP();
 						$mail->Host = 'smtp.gmail.com';
 						$mail->SMTPAuth = true;
-						$mail->Username = 'l.edilia75@gmail.com';
-						$mail->Password = 'febrero1934';
+						$mail->Username = 'correoGAIA@gmail.com';
+						$mail->Password = 'contraseñaGAIA';
 						$mail->SMTPSecure = 'tls';
 						$mail->Port = 587;
 						$mail->CharSet = 'UTF-8';
