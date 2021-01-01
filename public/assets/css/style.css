@@ -951,3 +951,7 @@ blockquote {
 .titImg {
     font-size: 0.8em !important;
 }
+
+.preguntaSeguridad {
+    visibility: hidden;
+}

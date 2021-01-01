@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <link href="<?php echo base_url();?>public/assets/css/styleInicio.css" rel="stylesheet">
-  <link href="<?php echo base_url();?>public/assets/css/style.css" rel="stylesheet">
+  <link href="<?php echo base_url(); ?>public/assets/css/styleInicio.css" rel="stylesheet">
+  <link href="<?php echo base_url(); ?>public/assets/css/style.css" rel="stylesheet">
 
   <?php $this->load->view('initial/linkGenerico'); ?>
   <title>AMID</title>
@@ -15,7 +15,7 @@
 </head>
 
 <body id="body">
-  <nav class="navbar navbar-expand-lg navbar-dark  fixed-top nav-color" >
+  <nav class="navbar navbar-expand-lg navbar-dark  fixed-top nav-color">
     <?php
     $name = $this->session->userdata('name');
     $lastname = $this->session->userdata('lastname');
@@ -127,7 +127,7 @@
                     Actividades
                   </div>
                 </b>
-                <p>  que te ayudaran a entender mejor el papel de los medios de comuncación y la tecnología
+                <p> que te ayudaran a entender mejor el papel de los medios de comuncación y la tecnología
                   en la actualidad</p>
               </center>
 
@@ -136,7 +136,7 @@
         </div>
         <br><br>
         <p>
-        <br>
+          <br>
           Para darte una mejor idea de lo que esta herramienta quiere lograr te mostramos algunas temáticas que
           son útiles para la formación en AMID.
         </p>
@@ -148,8 +148,8 @@
         <figure>
           <img src="<?php echo base_url(); ?>public/assets/img/Libertad de expresión.png" class='frontal' style="width: 100%; height: 255px">
           <figcaption class="trasera text-justify pt-2" style="font-size: 1.1vw; width: 100%; height: 100%">
-          La libertad de expresión es visto como la base de los demás derechos.
-          <br><br> ¿Cuál es el papel de los medios para promover la libertad de expresión?
+            La libertad de expresión es visto como la base de los demás derechos.
+            <br><br> ¿Cuál es el papel de los medios para promover la libertad de expresión?
           </figcaption>
         </figure>
       </div>
@@ -158,9 +158,9 @@
           <img src="<?php echo base_url(); ?>public/assets/img/formas de comunicacion.png" class='frontal' style="width: 100%; height: 255px">
           <figcaption class="trasera text-justify pt-2" style="font-size: 1.1vw; width: 100%; height: 100%">
             Los medios utilizan diversas formas de comunicación como gráficas, códigos, blogs, redes sociales, etc.
-            Por ello es importante reconocer y entender el contexto de cada una de tal forma que  la información
-             puede ser asimilada de forma correcta.
-        </figcaption>
+            Por ello es importante reconocer y entender el contexto de cada una de tal forma que la información
+            puede ser asimilada de forma correcta.
+          </figcaption>
         </figure>
       </div>
       <div class="col-4 contenedor_tarjeta">
@@ -170,7 +170,7 @@
             Internet provee grandes cantidades de información para el aprendizaje de niños y jóvenes pero a su vez
             representa grandes amenazas para su desarrollo. De ahí que sea tan importante el acompañamiento
             de personas que sean capaces de empoderarlos y educarlos.
-        </figcaption>
+          </figcaption>
         </figure>
       </div>
     </div>
