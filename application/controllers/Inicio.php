@@ -186,7 +186,7 @@ class Inicio extends CI_Controller
 						$mail->setFrom('l.edilia75@gmail.com', 'Luz Edilia Castaño Arango');
 						$mail->addAddress($_POST['email']);
 
-						$resetPassLink = 'http://localhost/AMID/inicio/resetPassword?fp_code=' . $uniqidStr;
+						$resetPassLink = 'http://gaia.manizales.unal.edu.co/AMID/AMID/inicio/resetPassword?fp_code=' . $uniqidStr;
 						//send reset password email
 						$mail->isHTML(true);
 						$mail->Subject = "Solicitud de Cambio de Contraseña";
