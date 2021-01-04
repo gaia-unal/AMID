@@ -32,13 +32,16 @@ class profesorunidadModel extends CI_Model{
 					    ->get('profesorunidad');
 
 		$result=($query->num_rows()>0)? true : false;
+		$res = $query->result_array();
+		$intent = $res[0]['notaevaluacion2'];
 
-		if($result){
-			$this->update($data);
-		}else{
-			$this->insert($data);
+		if($data['notaevaluacion'] != 0 && isset($intent)){
+			if($result){
+				$this->update($data);
+			}else{
+				$this->insert($data);
+			}
 		}
-
 	}
 
 	public function insert($data){
@@ -51,7 +54,7 @@ class profesorunidadModel extends CI_Model{
 
 		$this->db->set('desempeñounidad',$data['desempeñounidad'])
 				 ->set('fecharealizacion',$data['fecharealizacion'])
-				 ->set('notaevaluacion',$data['notaevaluacion'])
+				 ->set('notaevaluacion2',$data['notaevaluacion'])
 				 ->where('id_profesor',$data['id_profesor'])
 				 ->where('id_unidad',$data['id_unidad'])
 				 ->update('profesorunidad');

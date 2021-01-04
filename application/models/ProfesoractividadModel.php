@@ -34,8 +34,13 @@ class profesoractividadModel extends CI_Model{
 		$result=($query->num_rows()>0)? true : false;
 
 		if($result){
-			$this->update($data);
+			$res = $query->result_array();
+			$intent = $res[0]['intentos'];
+			$intent += 1;
+			$data['intentos'] = $intent;
+			$this->insert($data);
 		}else{
+			$data['intentos'] = 1;
 			$this->insert($data);
 		}
 

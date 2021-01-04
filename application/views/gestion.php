@@ -25,18 +25,18 @@
             
         </p>
 
-        <div class="card shadow  p-4">
+        <div class="card shadow p-4">
             <div class="row ">
 				<div class="col-md-6">
 					<h2>Ubicaciones</h2>
 					
 					<div class="table-responsive">
-					<table class="table table-hover table-border">
+					<table class="table table-hover table-border table-responsive">
 						<thead>
 							<tr class="clr-table">
 								<th scope="col">Id</th>
-								<th scope="col">Municipio</th>
-								<th scope="col">Departamento</th>
+								<th scope="col-2">Municipio</th>
+								<th scope="col-2">Departamento</th>
 								<th scope="col">Actualizar</th>
 								<th scope="col">Eliminar</th>
 							</tr>
@@ -49,18 +49,16 @@
 										echo "<th scope='row'>$ubicacion->id_ubicacion</th>";
 										echo "<td>$ubicacion->municipio</td>";
 										echo "<td>$ubicacion->departamento</td>";
-										echo "<td>Actualizar</td>";
-										echo "<td>Eliminar</td>";
+										echo "<td><i class='fas fa-highlighter'></i></td>";
+										echo "<td><i class='fas fa-trash'></i></td>";
 									echo "</tr>";
 								}
 							}
 						?>
 						<tr>
-							<th><input type="text" name="" id=""></th>
-							<th><input type="text" name="" id=""></th>
-							<th><input type="text" name="" id=""></th>
-							<th><input type="text" name="" id=""></th>
-							<th><input type="text" name="" id=""></th>
+							<th><input type="text" name="" id="" class="col-1"></th>
+							<th><input type="text" name="" id="" class="col"></th>
+							<th><input type="text" name="" id="" class="col"></th>
 						</tr>
 						</tbody>
 					</table>
@@ -69,7 +67,7 @@
 				</div>
 					
 				</div>
-<!-- -------------------------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------------------------------->
 				<div class="col-md-6">
 					<h2>Instituciones</h2>
 

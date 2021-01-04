@@ -30,7 +30,7 @@
                             <ul class="list-group-item">
                                 <a href="<?php echo base_url();?>modulo2/unidad3/contenidos"
                                     class="list-group-item">Contenidos</a>
-                                <a href="#"  class="list-group-item">Evaluación</a>
+                                <a href="<?php echo base_url(); ?>modulo2/unidad3/evaluacion"  class="list-group-item">Evaluación</a>
                             </ul>
                         </div>
                     </div>

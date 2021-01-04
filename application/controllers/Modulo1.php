@@ -456,8 +456,8 @@ class Modulo1 extends CI_Controller {
 			'id_profesor' 	   => $this->id,
 			'notaevaluacion'   => $nota,
 			'desempeñounidad'  => $des,
-			'fecharealizacion' => $this->time
-			
+			'fecharealizacion' => $this->time,
+			'intentos'		   => 0
 		);	
 
 		$this->profesorunidadModel->consult($data);
