@@ -113,7 +113,13 @@
                 <!-- contenido -->
                 <center>
                     <h1 class="first_title"><br>Unidad 1: Los jóvenes en el mundo virtual</h1>
-                    <?php echo form_open('modulo7/unidad2/inicio');$this->session->set_userdata('idAct','m7u12'); $this->session->set_userdata('ruta','modulo7/unidad1/evaluacion2');?>
+                    <?php 
+                    $this->session->set_userdata('idAct','m7u12');
+        $this->session->set_userdata('ruta','modulo7/unidad1/evaluacion2');
+        $var = $this->session->userdata('objeto')['controller']->consulta();
+        if(!$var){
+            echo form_open('modulo7/unidad2/inicio');
+?>
                 </center><br>
                 <div class="card mt-4">
                     <div class="card-body">
@@ -150,7 +156,27 @@
                 <a href="<?php echo base_url();?>modulo7/unidad1/evaluacion1" class="btn btn_navegacion">Anterior</a>
                 <button id="btn-siguiente" class="btn btn_navegacion" name="submit" type="submit">Siguiente</button>
             </center>
-            <?php echo form_close(); ?>
+			<?php echo form_close(); }
+                else {
+                    ?>
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h4 class="subtitle">Evaluación</h4><br>
+                    <div class="contenido">
+                        <p class="card-text">
+                            Solo puedes realizar la evaluación 2 veces. Recuerda que puedes ver tus resultados en los reportes.
+                            <center><h4 class="subtitle">¡Continúa aprendiendo!</h4></center>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <center>
+            <a href="<?php echo base_url();?>modulo7/unidad1/evaluacion1" class="btn btn_navegacion">Anterior</a>
+            <a href="<?php echo base_url();?>modulo7/unidad2" class="btn btn_navegacion">Siguiente</a>
+        </center>
+            <?php } ?>
             <?php $this->load->view('initial/paginacion');?>
 
 

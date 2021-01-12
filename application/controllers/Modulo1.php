@@ -17,6 +17,8 @@ class Modulo1 extends CI_Controller {
 		date_default_timezone_set('America/Bogota');
 		$this->time = date("d-m-Y",time());
 		$this->id = $this->session->userdata('id');
+		$object['controller'] = $this;
+		$this->session->set_userdata('objeto',$object);
 	}
 	
 	public function index(){
@@ -484,6 +486,10 @@ class Modulo1 extends CI_Controller {
 	}
 
 	public function consulta(){
-		return "entro";
+		$info = $this->profesorunidadModel->valida($this->id, $this->session->userdata('idAct'));
+		if(isset($info[0]['notaevaluacion']) and isset($info[0]['notaevaluacion2'])){
+			return true;
+		} 
+		else return false;
 	}
 }

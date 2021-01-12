@@ -35,8 +35,8 @@ class profesorunidadModel extends CI_Model{
 		$res = $query->result_array();
 		$intent = $res[0]['notaevaluacion2'];
 
-		if($data['notaevaluacion'] != 0 && isset($intent)){
-			if($result){
+		if($data['notaevaluacion'] != 0){
+			if($result && !isset($intent)){
 				$this->update($data);
 			}else{
 				$this->insert($data);
@@ -62,5 +62,13 @@ class profesorunidadModel extends CI_Model{
 		return ($this->db->affected_rows() > 0);
 	}
 
-
+	public function valida($id, $idAct){
+		$query=$this->db->select('notaevaluacion')
+						->select('notaevaluacion2')
+						->where('id_profesor',$id)
+						->where('id_unidad', $idAct)
+						->get('profesorunidad');
+		
+        return ($query->num_rows()>0)?$query->result_array(): false;
+	}
 }

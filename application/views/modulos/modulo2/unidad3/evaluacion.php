@@ -66,9 +66,11 @@
                 <center>
                     <h1 class="first_title"><br>Unidad 3: Lo que genera noticias – explorando los criterios</h1>
                     <?php 
-                        echo form_open('modulo2/unidad4/inicio');
                         $this->session->set_userdata('idAct','m2u3'); 
                         $this->session->set_userdata('ruta','modulo2/unidad3/evaluacion');
+                        $var = $this->session->userdata('objeto')['controller']->consulta();
+                        if(!$var){
+                            echo form_open('modulo2/unidad4/inicio');
                     ?>
                 </center>
                 <div class="card mt-4">
@@ -104,7 +106,27 @@
                 <a href="<?php echo base_url();?>modulo2/unidad3/actividad3" class="btn btn_navegacion">Anterior</a>
                 <button id="btn-siguiente" class="btn btn_navegacion" name="submit" type="submit">Siguiente</button>
             </center>
-            <?php echo form_close(); ?>
+			<?php echo form_close(); }
+                else {
+                    ?>
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h4 class="subtitle">Evaluación</h4><br>
+                    <div class="contenido">
+                        <p class="card-text">
+                            Solo puedes realizar la evaluación 2 veces. Recuerda que puedes ver tus resultados en los reportes.
+                            <center><h4 class="subtitle">¡Continúa aprendiendo!</h4></center>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <center>
+            <a href="<?php echo base_url();?>modulo2/unidad3/actividad3" class="btn btn_navegacion">Anterior</a>
+            <a href="<?php echo base_url();?>modulo2/unidad4" class="btn btn_navegacion">Siguiente</a>
+        </center>
+            <?php } ?>
             <?php $this->load->view('initial/paginacion');?>
             <p class="final_contenido">Obra publicada con <a href="https://creativecommons.org/licenses/by-sa/4.0/">
                 Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
