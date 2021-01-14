@@ -175,23 +175,23 @@ class Inicio extends CI_Controller
 							)
 						);
 						$mail->SMTPDebug = 0;
-						$mail->isSMTP();
+						//$mail->isSMTP();
 						$mail->Host = 'smtp.gmail.com';
 						$mail->SMTPAuth = true;
-						$mail->Username = 'correoGAIA@gmail.com';
-						$mail->Password = 'contraseñaGAIA';
+						$mail->Username = 'modulo3diplomadoamid@gmail.com';
+						$mail->Password = 'gaia2020';
 						$mail->SMTPSecure = 'tls';
 						$mail->Port = 587;
 						$mail->CharSet = 'UTF-8';
-						$mail->setFrom('l.edilia75@gmail.com', 'Luz Edilia Castaño Arango');
+						$mail->setFrom('modulo3diplomadoamid@gmail.com', 'AMID');
 						$mail->addAddress($_POST['email']);
 
-						$resetPassLink = 'http://gaia.manizales.unal.edu.co/AMID/AMID/inicio/resetPassword?fp_code=' . $uniqidStr;
+						$resetPassLink = 'http://gaia.manizales.unal.edu.co/AMID/inicio/resetPassword?fp_code=' . $uniqidStr;
 						//send reset password email
 						$mail->isHTML(true);
 						$mail->Subject = "Solicitud de Cambio de Contraseña";
-						$mail->Body = 'Estimad@ usuari@, 
-					<br/><br/>Recientemente se envió una solicitud para restablecer una contraseña para su cuenta en el software AMID. Si esto fue un error, simplemente ignore este correo electrónico.
+						$mail->Body = '<h2>¡Hola!</h2>, 
+					<br/>Recientemente se envió una solicitud para restablecer una contraseña para su cuenta en el software AMID. Si esto fue un error, simplemente ignore este correo electrónico.
 					<br/>Para restablecer su contraseña, visite el siguiente enlace: <a href="' . $resetPassLink . '">' . $resetPassLink . '</a>
 					<br/><br/>Saludos';;
 						//send email
