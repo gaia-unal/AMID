@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
-require 'C:\xampp\htdocs\AMID\vendor\autoload.php';
+require '/var/www/html/AMID/vendor/autoload.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 
