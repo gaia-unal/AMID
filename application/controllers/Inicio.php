@@ -176,6 +176,7 @@ class Inicio extends CI_Controller
 						);
 						$mail->SMTPDebug = 0;
 						$mail->isSMTP();
+						$mail->SMTPAuth = true;
 						$mail->Host = 'smtp.gmail.com';
 						$mail->SMTPAuth = true;
 						$mail->Username = 'modulo3diplomadoamid@gmail.com';
