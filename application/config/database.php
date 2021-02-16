@@ -77,9 +77,8 @@ $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
 	'username' => 'postgres',
-	
-	'password' => '75211',
-	
+	'password' => '%froac$',
+	'password' => '%froac$',
 	'database' => 'amid',
 	'dbdriver' => 'postgre',
 	'port' => 5432,

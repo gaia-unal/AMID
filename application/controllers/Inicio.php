@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
-require 'C:\xampp\htdocs\AMID\vendor\autoload.php';
+require '/var/www/html/AMID/vendor/autoload.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 
@@ -175,7 +175,7 @@ class Inicio extends CI_Controller
 							)
 						);
 						$mail->SMTPDebug = 0;
-						//$mail->isSMTP();
+						$mail->isSMTP();
 						$mail->Host = 'smtp.gmail.com';
 						$mail->SMTPAuth = true;
 						$mail->Username = 'modulo3diplomadoamid@gmail.com';

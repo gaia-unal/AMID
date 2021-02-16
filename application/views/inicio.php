@@ -81,7 +81,7 @@
                     <h1 class="first_title">Bienvenido a AMID</h1><br>
                 </center>
                 <div class="contenido">
-                <p>Hola <?php echo $this->session->userdata('name'); echo $this->session->userdata('ruta');?>, a continuación, te explicaré como
+                <p>Hola <?php echo $this->session->userdata('name');?>, a continuación, te explicaré como
                     navegar en el sitio web: <br><br>
                     En la parte lateral izquierda podrás ver el menú “Módulos AMID” son 12 módulos divididos en
                     unidades, el número
